@@ -1,12 +1,9 @@
+import { battlePlaces } from "./locations";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
 export const mapAnchors = [
-  { id: "van-kiep", name: "Vạn Kiếp", position: [-4, .8, -7] },
-  { id: "van-don", name: "Vân Đồn", position: [8, .8, -4] },
-  { id: "trang-kenh", name: "Tràng Kênh", position: [-5, 1, 1] },
-  { id: "yen-giang", name: "Yên Giang", position: [5, .8, 5] },
-  { id: "bach-dang", name: "Bạch Đằng", position: [1, .6, 3] },
+  ...battlePlaces.map(({ id, name, position }) => ({ id, name, position })),
   { id: "tran-hung-dao", name: "Trần Hưng Đạo", position: [-5, 3.5, 4] },
   { id: "o-ma-nhi", name: "Ô Mã Nhi", position: [0, 3.5, -2] },
   { id: "thoat-hoan", name: "Thoát Hoan", position: [-4, 3.5, -7] },
@@ -57,18 +54,18 @@ type CreateBattleSceneProps = { host: HTMLDivElement; pins: HTMLDivElement };
 
 export const createBattleScene = ({ host, pins }: CreateBattleSceneProps) => {
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, powerPreference: "low-power" });
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.7));
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
   renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFShadowMap;
   renderer.setClearColor("#142827"); renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.05;
   renderer.domElement.setAttribute("aria-label", "Sa bàn Bạch Đằng 3D: địa hình, thuyền chiến, đội quân và bãi cọc");
   host.appendChild(renderer.domElement);
-  const scene = new THREE.Scene(); scene.fog = new THREE.FogExp2("#142827", .013);
+  const scene = new THREE.Scene(); scene.fog = new THREE.FogExp2("#142827", .008);
   const camera = new THREE.PerspectiveCamera(38, 1, .1, 100);
   camera.position.set(18, 22, 25);
   const controls = new OrbitControls(camera, renderer.domElement);
   controls.target.set(0, 0, 0); controls.enableDamping = true; controls.enablePan = false; controls.enableZoom = false;
-  controls.minPolarAngle = .35; controls.maxPolarAngle = 1.25; controls.minDistance = 17; controls.maxDistance = 46;
+  controls.minPolarAngle = .35; controls.maxPolarAngle = 1.25; controls.minDistance = 17; controls.maxDistance = 110;
   controls.touches = { ONE: THREE.TOUCH.ROTATE, TWO: THREE.TOUCH.DOLLY_ROTATE };
   controls.update();
   scene.add(new THREE.HemisphereLight("#d7e8d7", "#29332a", 2.7));
@@ -115,6 +112,27 @@ export const createBattleScene = ({ host, pins }: CreateBattleSceneProps) => {
     const z = -8 + ((i * 3.71) % 16);
     const tree = new THREE.Mesh(new THREE.ConeGeometry(.24, .9 + (i % 3) * .2, 5), foliage); tree.position.set(x, .9, z); tree.castShadow = true; scene.add(tree);
   }
+  // A walled citadel and northern gateway orient the campaign at a glance.
+  const citadel = new THREE.Group();
+  const masonry = material("#a29370", .15, .75);
+  const plinth = new THREE.Mesh(new THREE.BoxGeometry(2.5, .25, 2.2), material("#6e7255")); plinth.position.y = .35; citadel.add(plinth);
+  for (const side of [-1, 1]) {
+    const wall = new THREE.Mesh(new THREE.BoxGeometry(2.3, .65, .16), masonry); wall.position.set(0, .78, side); wall.castShadow = true; citadel.add(wall);
+    const crossWall = new THREE.Mesh(new THREE.BoxGeometry(.16, .65, 2), masonry); crossWall.position.set(side * 1.1, .78, 0); crossWall.castShadow = true; citadel.add(crossWall);
+    for (const end of [-1, 1]) {
+      const tower = new THREE.Mesh(new THREE.BoxGeometry(.4, 1, .4), masonry); tower.position.set(side * 1.1, .9, end); tower.castShadow = true; citadel.add(tower);
+      const roof = new THREE.Mesh(new THREE.ConeGeometry(.4, .4, 4), material("#744b35")); roof.rotation.y = Math.PI / 4; roof.position.set(side * 1.1, 1.6, end); citadel.add(roof);
+    }
+  }
+  const palace = new THREE.Mesh(new THREE.BoxGeometry(.9, .9, .8), material("#bd9b62")); palace.position.y = .9; citadel.add(palace);
+  const palaceRoof = new THREE.Mesh(new THREE.ConeGeometry(.85, .55, 4), material("#934c37")); palaceRoof.position.y = 1.65; palaceRoof.rotation.y = Math.PI / 4; citadel.add(palaceRoof);
+  citadel.position.set(-9, 0, 7); scene.add(citadel);
+  const border = new THREE.Group(); scene.add(border);
+  for (let i = 0; i < 12; i++) {
+    const wall = new THREE.Mesh(new THREE.BoxGeometry(.7, .4, .16), masonry); wall.position.set(-10 + i * 1.7, .65, -9.5 + Math.sin(i * .6) * .3); border.add(wall);
+  }
+  const invasionPath = new THREE.CatmullRomCurve3([new THREE.Vector3(1, .75, -9), new THREE.Vector3(-9, .75, -8.5), new THREE.Vector3(-10, .75, 0), new THREE.Vector3(-9, .75, 7), new THREE.Vector3(-4, .75, -7)]);
+  const invasion = new THREE.Line(new THREE.BufferGeometry().setFromPoints(invasionPath.getPoints(100)), new THREE.LineDashedMaterial({ color: "#e9a184", dashSize: .3, gapSize: .2, transparent: true, opacity: .8 })); invasion.computeLineDistances(); scene.add(invasion);
   const enemy = new THREE.Group(); const home = new THREE.Group(); const stakes = new THREE.Group(); const supply = new THREE.Group(); const routes = new THREE.Group();
   scene.add(enemy, home, stakes, supply, routes);
   const enemyShips = Array.from({ length: 5 }, () => { const model = ship("#a44435"); model.scale.setScalar(.82); enemy.add(model); return model; });
@@ -136,24 +154,34 @@ export const createBattleScene = ({ host, pins }: CreateBattleSceneProps) => {
     const t = i / 50; const center = riverPath.getPoint(t); const points = Array.from({ length: 8 }, (_, j) => new THREE.Vector3(center.x - .5 + j * .2, .08, center.z + Math.sin(j * .8 + i) * .06));
     scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(points), waveMaterial));
   }
-  for (const anchor of mapAnchors.slice(0, 5)) {
+  for (const anchor of battlePlaces) {
     const ring = new THREE.Mesh(new THREE.TorusGeometry(.24, .025, 6, 24), material("#e0c58a", .6)); ring.rotation.x = Math.PI / 2; ring.position.set(anchor.position[0], .52, anchor.position[2]); scene.add(ring);
   }
   const pinElements = mapAnchors.map((anchor) => ({ element: pins.querySelector<HTMLElement>(`[data-anchor="${anchor.id}"]`), point: new THREE.Vector3(...anchor.position), projected: new THREE.Vector3() }));
   let stage = 0; let visible = true; let previousTime = 0; let alive = true; let fleetProgress = .12;
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-  const resize = () => { const width = host.clientWidth; const height = host.clientHeight; renderer.setSize(width, height); camera.aspect = width / Math.max(height, 1); camera.updateProjectionMatrix(); };
+  const fitCamera = () => {
+    controls.target.set(0, 0, 0);
+    const scale = Math.max(1.12, 1.4 / Math.max(camera.aspect, .35));
+    camera.position.set(18 * scale, 22 * scale, 25 * scale);
+    controls.update();
+  };
+  const resize = () => {
+    const width = host.clientWidth; const height = host.clientHeight;
+    renderer.setSize(width, height); camera.aspect = width / Math.max(height, 1);
+    camera.updateProjectionMatrix(); fitCamera();
+  };
   const resizeObserver = new ResizeObserver(resize); resizeObserver.observe(host); resize();
   const intersection = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; }); intersection.observe(host);
-  const setStage = (next: number) => { stage = next; stakes.visible = stage >= 4; stakes.position.y = stage === 4 ? -.8 : 0; troops.visible = stage >= 4; home.visible = stage >= 1; supply.visible = stage === 2; routes.visible = stage >= 3; };
+  const setStage = (next: number) => { stage = next; invasion.visible = stage >= 1 && stage <= 3; stakes.visible = stage >= 4; stakes.position.y = stage === 4 ? -.8 : 0; troops.visible = stage >= 4; home.visible = stage >= 1; supply.visible = stage === 2; routes.visible = stage >= 3; };
   setStage(0);
   renderer.setAnimationLoop((milliseconds) => {
     if (!alive || !visible || document.hidden || milliseconds - previousTime < 33) return;
     previousTime = milliseconds;
     const time = reducedMotion.matches ? 0 : milliseconds * .001;
     controls.update();
-    const desiredProgress = stage < 3 ? .12 : stage < 5 ? .4 : .7;
-    fleetProgress = reducedMotion.matches ? desiredProgress : THREE.MathUtils.lerp(fleetProgress, desiredProgress, .035);
+    const desiredProgress = [.06, .18, .28, .4, .52, .76, .9][stage] ?? .06;
+    fleetProgress = reducedMotion.matches ? desiredProgress : THREE.MathUtils.lerp(fleetProgress, desiredProgress, .09);
     enemyShips.forEach((model, i) => {
       const target = Math.min(.96, fleetProgress + i * .05);
       const point = riverPath.getPoint(Math.max(0, target + Math.sin(time * .2 + i) * .008));
@@ -163,21 +191,29 @@ export const createBattleScene = ({ host, pins }: CreateBattleSceneProps) => {
       model.visible = stage !== 6 || i < 2;
     });
     homeShips.forEach((model, i) => { model.position.y = .2 + Math.sin(time + i) * .03; });
+    // Fixed offsets stay attached to world anchors; never repack pins per frame.
     pinElements.forEach(({ element, point, projected }, index) => {
       if (!element) return;
-      if (mapAnchors[index].id === "o-ma-nhi") point.copy(enemyShips[2].position).add(new THREE.Vector3(0, 3.2, 0));
+      const id = mapAnchors[index].id;
+      if (id === "o-ma-nhi") {
+        // Follow the fleet's eased route position, without the ships' wave bobbing.
+        point.copy(riverPath.getPoint(Math.min(.96, fleetProgress + .1)));
+        point.x -= .35; point.y += 3.2;
+      }
       projected.copy(point).project(camera);
-      const x = THREE.MathUtils.clamp((projected.x * .5 + .5) * host.clientWidth, element.offsetWidth / 2 + 5, host.clientWidth - element.offsetWidth / 2 - 5);
-      const y = THREE.MathUtils.clamp((-projected.y * .5 + .5) * host.clientHeight, element.offsetHeight + 8, host.clientHeight - 12);
+      const offsetX = id === "tran-hung-dao" ? -22 : id === "o-ma-nhi" ? 34 : id === "thoat-hoan" ? -26 : 0;
+      const offsetY = id === "thoat-hoan" ? -28 : 0;
+      const x = (projected.x * .5 + .5) * host.clientWidth + offsetX;
+      const y = (-projected.y * .5 + .5) * host.clientHeight + offsetY;
       element.style.transform = `translate(${x}px, ${y}px) translate(-50%, -100%)`;
-      element.style.visibility = projected.z > 1 ? "hidden" : "visible";
+      element.style.visibility = projected.z < -1 || projected.z > 1 ? "hidden" : "visible";
     });
     renderer.render(scene, camera);
   });
   return {
     setStage,
-    zoom: (factor: number) => { const offset = camera.position.clone().sub(controls.target).multiplyScalar(factor); offset.clampLength(17, 46); camera.position.copy(controls.target).add(offset); controls.update(); },
-    reset: () => { camera.position.set(18, 22, 25); controls.target.set(0, 0, 0); controls.update(); },
+    zoom: (factor: number) => { const offset = camera.position.clone().sub(controls.target).multiplyScalar(factor); offset.clampLength(17, 110); camera.position.copy(controls.target).add(offset); controls.update(); },
+    reset: fitCamera,
     dispose: () => {
       alive = false; renderer.setAnimationLoop(null); resizeObserver.disconnect(); intersection.disconnect(); controls.dispose();
       const geometries = new Set<THREE.BufferGeometry>(); const materials = new Set<THREE.Material>();

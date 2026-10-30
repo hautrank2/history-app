@@ -25,6 +25,7 @@ Bản đồ địa hình kể lịch sử theo từng giai đoạn. Việt Nam t
 
 ## Component
 
+- Ưu tiên component shadcn/ui trong `src/components/ui` cho các thành phần UI phổ biến; dùng Select của shadcn thay cho select native trong giao diện mới/chỉnh sửa. Giữ theme của dự án khi tùy biến.
 - Arrow function: `export const Foo = (props: FooProps) => …`.
 - Props là `<ComponentName>Props`, hook là `Use<ComponentName>Props`.
 - Component phức tạp tách `index.tsx` / `hook.ts` / `type.ts`.

@@ -1,0 +1,712 @@
+{
+  "Hùng king": {
+    "src": "/images/overview/01.jpg",
+    "title": "Tượng_Hùng_Vương_tại_Đền_Hùng,_Tao_Đàn,_tháng_12_năm_2021_(12).jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:T%C6%B0%E1%BB%A3ng_H%C3%B9ng_V%C6%B0%C6%A1ng_t%E1%BA%A1i_%C4%90%E1%BB%81n_H%C3%B9ng,_Tao_%C4%90%C3%A0n,_th%C3%A1ng_12_n%C4%83m_2021_(12).jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/T%C6%B0%E1%BB%A3ng_H%C3%B9ng_V%C6%B0%C6%A1ng_t%E1%BA%A1i_%C4%90%E1%BB%81n_H%C3%B9ng%2C_Tao_%C4%90%C3%A0n%2C_th%C3%A1ng_12_n%C4%83m_2021_%2812%29.jpg/500px-T%C6%B0%E1%BB%A3ng_H%C3%B9ng_V%C6%B0%C6%A1ng_t%E1%BA%A1i_%C4%90%E1%BB%81n_H%C3%B9ng%2C_Tao_%C4%90%C3%A0n%2C_th%C3%A1ng_12_n%C4%83m_2021_%2812%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "article": "https://en.wikipedia.org/wiki/H%C3%B9ng_king",
+    "author": "Phương Huy",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "An Dương Vương": {
+    "src": "/images/overview/02.jpg",
+    "article": "https://en.wikipedia.org/wiki/An_D%C6%B0%C6%A1ng_V%C6%B0%C6%A1ng",
+    "file": "https://commons.wikimedia.org/wiki/File:T%C6%B0%E1%BB%A3ng_vua_An_D%C6%B0%C6%A1ng_V%C6%B0%C6%A1ng_t%E1%BA%A1i_%C4%91%E1%BB%81n_C%E1%BB%95_Loa,_%C4%90%C3%B4ng_Anh,_H%C3%A0_N%E1%BB%99i.jpg",
+    "title": "Tượng_vua_An_Dương_Vương_tại_đền_Cổ_Loa,_Đông_Anh,_Hà_Nội.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/T%C6%B0%E1%BB%A3ng_vua_An_D%C6%B0%C6%A1ng_V%C6%B0%C6%A1ng_t%E1%BA%A1i_%C4%91%E1%BB%81n_C%E1%BB%95_Loa%2C_%C4%90%C3%B4ng_Anh%2C_H%C3%A0_N%E1%BB%99i.jpg/500px-T%C6%B0%E1%BB%A3ng_vua_An_D%C6%B0%C6%A1ng_V%C6%B0%C6%A1ng_t%E1%BA%A1i_%C4%91%E1%BB%81n_C%E1%BB%95_Loa%2C_%C4%90%C3%B4ng_Anh%2C_H%C3%A0_N%E1%BB%99i.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Dantri.com.vn",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:T%C6%B0%E1%BB%A3ng_vua_An_D%C6%B0%C6%A1ng_V%C6%B0%C6%A1ng_t%E1%BA%A1i_%C4%91%E1%BB%81n_C%E1%BB%95_Loa,_%C4%90%C3%B4ng_Anh,_H%C3%A0_N%E1%BB%99i.jpg"
+  },
+  "Zhao Tuo": {
+    "src": "/images/overview/03.jpg",
+    "article": "https://en.wikipedia.org/wiki/Zhao_Tuo",
+    "file": "https://commons.wikimedia.org/wiki/File:A_statue_of_Zhao_Tuo.jpg",
+    "title": "A_statue_of_Zhao_Tuo.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/A_statue_of_Zhao_Tuo.jpg/500px-A_statue_of_Zhao_Tuo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "David Chen (Iamdavidtheking 11:50, 10 September 2007 (UTC))",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "Emperor Wu of Han": {
+    "src": "/images/overview/04.jpg",
+    "article": "https://en.wikipedia.org/wiki/Emperor_Wu_of_Han",
+    "file": "https://commons.wikimedia.org/wiki/File:%E6%BC%A2%E6%AD%A6%E5%B8%9D.jpg",
+    "title": "漢武帝.jpg",
+    "remote": "https://upload.wikimedia.org/wikipedia/commons/e/e9/%E6%BC%A2%E6%AD%A6%E5%B8%9D.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:%E6%BC%A2%E6%AD%A6%E5%B8%9D.jpg"
+  },
+  "Trưng sisters": {
+    "src": "/images/overview/05.jpg",
+    "article": "https://en.wikipedia.org/wiki/Tr%C6%B0ng_sisters",
+    "file": "https://commons.wikimedia.org/wiki/File:Hai_B%C3%A0_Tr%C6%B0ng_(tranh_%C4%90%C3%B4ng_H%E1%BB%93).jpeg",
+    "title": "Hai_Bà_Trưng_(tranh_Đông_Hồ).jpeg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Hai_B%C3%A0_Tr%C6%B0ng_%28tranh_%C4%90%C3%B4ng_H%E1%BB%93%29.jpeg/500px-Hai_B%C3%A0_Tr%C6%B0ng_%28tranh_%C4%90%C3%B4ng_H%E1%BB%93%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Xem trang nguồn",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Hai_B%C3%A0_Tr%C6%B0ng_(tranh_%C4%90%C3%B4ng_H%E1%BB%93).jpeg"
+  },
+  "Ma Yuan (Han dynasty)": {
+    "src": "/images/overview/06.jpg",
+    "title": "Ma-Yuan.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Ma-Yuan.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Ma-Yuan.jpg/500px-Ma-Yuan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "article": "https://en.wikipedia.org/wiki/Ma_Yuan_(Han_dynasty)",
+    "author": "Wayne Chen",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  "Lady Triệu": {
+    "src": "/images/overview/07.jpg",
+    "article": "https://en.wikipedia.org/wiki/Lady_Tri%E1%BB%87u",
+    "file": "https://commons.wikimedia.org/wiki/File:Ba_trieu_cuoi_voi.jpg",
+    "title": "Ba_trieu_cuoi_voi.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Ba_trieu_cuoi_voi.jpg/500px-Ba_trieu_cuoi_voi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Nghệ nhân tranh Đông Hồ",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ba_trieu_cuoi_voi.jpg"
+  },
+  "Lý Nam Đế": {
+    "src": "/images/overview/09.jpg",
+    "article": "https://en.wikipedia.org/wiki/L%C3%BD_Nam_%C4%90%E1%BA%BF",
+    "file": "https://commons.wikimedia.org/wiki/File:Emperor_Ly_Nam_De.jpg",
+    "title": "Emperor_Ly_Nam_De.jpg",
+    "remote": "https://upload.wikimedia.org/wikipedia/commons/9/91/Emperor_Ly_Nam_De.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Emperor_Ly_Nam_De.jpg"
+  },
+  "Emperor Wu of Chen": {
+    "src": "/images/overview/11.jpg",
+    "article": "https://en.wikipedia.org/wiki/Emperor_Wu_of_Chen",
+    "file": "https://commons.wikimedia.org/wiki/File:Emperor_Wu_of_Chen2.jpg",
+    "title": "Emperor_Wu_of_Chen2.jpg",
+    "remote": "https://upload.wikimedia.org/wikipedia/commons/2/20/Emperor_Wu_of_Chen2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Emperor_Wu_of_Chen2.jpg"
+  },
+  "Mai Thúc Loan": {
+    "src": "/images/overview/12.png",
+    "article": "https://en.wikipedia.org/wiki/Mai_Th%C3%BAc_Loan",
+    "file": "https://commons.wikimedia.org/wiki/File:Mai_h%E1%BA%AFc_%C4%91%E1%BA%BF.png",
+    "title": "Mai_hắc_đế.png",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Mai_h%E1%BA%AFc_%C4%91%E1%BA%BF.png/500px-Mai_h%E1%BA%AFc_%C4%91%E1%BA%BF.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Bảo bảo 123456789",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Phùng Hưng": {
+    "src": "/images/overview/13.jpg",
+    "article": "https://en.wikipedia.org/wiki/Ph%C3%B9ng_H%C6%B0ng",
+    "file": "https://commons.wikimedia.org/wiki/File:TuongPhungHung.jpg",
+    "title": "TuongPhungHung.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/TuongPhungHung.jpg/500px-TuongPhungHung.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Doãn Hiệu at Vietnamese Wikipedia",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "Ngô Quyền": {
+    "src": "/images/overview/17.jpg",
+    "article": "https://en.wikipedia.org/wiki/Ng%C3%B4_Quy%E1%BB%81n",
+    "file": "https://commons.wikimedia.org/wiki/File:T%C6%B0%E1%BB%A3ng_Ng%C3%B4_Quy%E1%BB%81n.jpg",
+    "title": "Tượng_Ngô_Quyền.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/T%C6%B0%E1%BB%A3ng_Ng%C3%B4_Quy%E1%BB%81n.jpg/500px-T%C6%B0%E1%BB%A3ng_Ng%C3%B4_Quy%E1%BB%81n.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Bùi Thụy Đào Nguyên",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Đinh Bộ Lĩnh": {
+    "src": "/images/overview/19.jpg",
+    "article": "https://en.wikipedia.org/wiki/%C4%90inh_B%E1%BB%99_L%C4%A9nh",
+    "file": "https://commons.wikimedia.org/wiki/File:VuaDinhTienHoang.jpg",
+    "title": "VuaDinhTienHoang.jpg",
+    "remote": "https://upload.wikimedia.org/wikipedia/commons/e/e2/VuaDinhTienHoang.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "author": "Hungquoc at Vietnamese Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:VuaDinhTienHoang.jpg"
+  },
+  "Dương Vân Nga": {
+    "src": "/images/overview/20.jpg",
+    "article": "https://en.wikipedia.org/wiki/D%C6%B0%C6%A1ng_V%C3%A2n_Nga",
+    "file": "https://commons.wikimedia.org/wiki/File:D%C6%B0%C6%A1ng_V%C3%A2n_Nga.JPG",
+    "title": "Dương_Vân_Nga.JPG",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/D%C6%B0%C6%A1ng_V%C3%A2n_Nga.JPG/500px-D%C6%B0%C6%A1ng_V%C3%A2n_Nga.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "unknown / Nguyễn Thanh Quang",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:D%C6%B0%C6%A1ng_V%C3%A2n_Nga.JPG"
+  },
+  "Lê Hoàn": {
+    "src": "/images/overview/21.jpg",
+    "article": "https://en.wikipedia.org/wiki/L%C3%AA_Ho%C3%A0n",
+    "file": "https://commons.wikimedia.org/wiki/File:Ledaihanh.jpg",
+    "title": "Ledaihanh.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Ledaihanh.jpg/500px-Ledaihanh.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Kien1980v at Vietnamese Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ledaihanh.jpg"
+  },
+  "Lý Thái Tổ": {
+    "src": "/images/overview/22.jpg",
+    "article": "https://en.wikipedia.org/wiki/L%C3%BD_Th%C3%A1i_T%E1%BB%95",
+    "file": "https://commons.wikimedia.org/wiki/File:T%C6%B0%E1%BB%A3ng_L%C3%BD_Th%C3%A1i_T%E1%BB%95_2.jpg",
+    "title": "Tượng_Lý_Thái_Tổ_2.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/T%C6%B0%E1%BB%A3ng_L%C3%BD_Th%C3%A1i_T%E1%BB%95_2.jpg/500px-T%C6%B0%E1%BB%A3ng_L%C3%BD_Th%C3%A1i_T%E1%BB%95_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "William Whyte from Dublin, Ireland",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  "Ỷ Lan": {
+    "src": "/images/overview/23.png",
+    "article": "https://en.wikipedia.org/wiki/%E1%BB%B6_Lan",
+    "file": "https://commons.wikimedia.org/wiki/File:Statue_of_Queen_Mother_%E1%BB%B6_Lan,_2013.png",
+    "title": "Statue_of_Queen_Mother_Ỷ_Lan,_2013.png",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Statue_of_Queen_Mother_%E1%BB%B6_Lan%2C_2013.png/500px-Statue_of_Queen_Mother_%E1%BB%B6_Lan%2C_2013.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Aogiapvang",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Statue_of_Queen_Mother_%E1%BB%B6_Lan,_2013.png"
+  },
+  "Lý Thánh Tông": {
+    "src": "/images/overview/24.jpg",
+    "article": "https://en.wikipedia.org/wiki/L%C3%BD_Th%C3%A1nh_T%C3%B4ng",
+    "file": "https://commons.wikimedia.org/wiki/File:L%C3%BD_Th%C3%A1nh_T%C3%B4ng.JPG",
+    "title": "Lý_Thánh_Tông.JPG",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/L%C3%BD_Th%C3%A1nh_T%C3%B4ng.JPG/500px-L%C3%BD_Th%C3%A1nh_T%C3%B4ng.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Nguyễn Thanh Quang",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Lý Thường Kiệt": {
+    "src": "/images/overview/25.jpg",
+    "article": "https://en.wikipedia.org/wiki/L%C3%BD_Th%C6%B0%E1%BB%9Dng_Ki%E1%BB%87t",
+    "file": "https://commons.wikimedia.org/wiki/File:T%C6%B0%E1%BB%A3ng_L%C3%BD_Th%C6%B0%E1%BB%9Dng_Ki%E1%BB%87t_t%E1%BA%A1i_B%E1%BA%A3o_t%C3%A0ng_l%E1%BB%8Bch_s%E1%BB%AD_qu%C3%A2n_s%E1%BB%B1_Vi%E1%BB%87t_Nam,_H%C3%A0_N%E1%BB%99i_n%C4%83m_2017_(2).jpg",
+    "title": "Tượng_Lý_Thường_Kiệt_tại_Bảo_tàng_lịch_sử_quân_sự_Việt_Nam,_Hà_Nội_năm_2017_(2).jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/T%C6%B0%E1%BB%A3ng_L%C3%BD_Th%C6%B0%E1%BB%9Dng_Ki%E1%BB%87t_t%E1%BA%A1i_B%E1%BA%A3o_t%C3%A0ng_l%E1%BB%8Bch_s%E1%BB%AD_qu%C3%A2n_s%E1%BB%B1_Vi%E1%BB%87t_Nam%2C_H%C3%A0_N%E1%BB%99i_n%C4%83m_2017_%282%29.jpg/500px-T%C6%B0%E1%BB%A3ng_L%C3%BD_Th%C6%B0%E1%BB%9Dng_Ki%E1%BB%87t_t%E1%BA%A1i_B%E1%BA%A3o_t%C3%A0ng_l%E1%BB%8Bch_s%E1%BB%AD_qu%C3%A2n_s%E1%BB%B1_Vi%E1%BB%87t_Nam%2C_H%C3%A0_N%E1%BB%99i_n%C4%83m_2017_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Phương Huy",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Lý Nhân Tông": {
+    "src": "/images/overview/26.jpg",
+    "article": "https://en.wikipedia.org/wiki/L%C3%BD_Nh%C3%A2n_T%C3%B4ng",
+    "file": "https://commons.wikimedia.org/wiki/File:L%C3%BD_Nh%C3%A2n_T%C3%B4ng.JPG",
+    "title": "Lý_Nhân_Tông.JPG",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/L%C3%BD_Nh%C3%A2n_T%C3%B4ng.JPG/500px-L%C3%BD_Nh%C3%A2n_T%C3%B4ng.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Nguyễn Thanh Quang",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Lý Chiêu Hoàng": {
+    "src": "/images/overview/27.jpg",
+    "article": "https://en.wikipedia.org/wiki/L%C3%BD_Chi%C3%AAu_Ho%C3%A0ng",
+    "file": "https://commons.wikimedia.org/wiki/File:Statue_L%C3%BD_Chi%C3%AAu_Ho%C3%A0ng.jpg",
+    "title": "Statue_Lý_Chiêu_Hoàng.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Statue_L%C3%BD_Chi%C3%AAu_Ho%C3%A0ng.jpg/500px-Statue_L%C3%BD_Chi%C3%AAu_Ho%C3%A0ng.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Sử dụng hợp lí",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "Trần Hưng Đạo": {
+    "src": "/images/overview/30.jpg",
+    "article": "https://en.wikipedia.org/wiki/Tr%E1%BA%A7n_H%C6%B0ng_%C4%90%E1%BA%A1o",
+    "file": "https://commons.wikimedia.org/wiki/File:Hung_Dao_Vuong.pdf",
+    "title": "Hung_Dao_Vuong.pdf",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Hung_Dao_Vuong.pdf/page1-500px-Hung_Dao_Vuong.pdf.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Lê Văn Phúc (?-?) Phan Kế Bính (1875–1921)",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Hung_Dao_Vuong.pdf"
+  },
+  "Trần Nhân Tông": {
+    "src": "/images/overview/31.png",
+    "article": "https://en.wikipedia.org/wiki/Tr%E1%BA%A7n_Nh%C3%A2n_T%C3%B4ng",
+    "file": "https://commons.wikimedia.org/wiki/File:Portrait_of_Emperor_Tr%E1%BA%A7n_Nh%C3%A2n_T%C3%B4ng.png",
+    "title": "Portrait_of_Emperor_Trần_Nhân_Tông.png",
+    "remote": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Portrait_of_Emperor_Tr%E1%BA%A7n_Nh%C3%A2n_T%C3%B4ng.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Portrait_of_Emperor_Tr%E1%BA%A7n_Nh%C3%A2n_T%C3%B4ng.png"
+  },
+  "Huyền Trân": {
+    "src": "/images/overview/34.jpg",
+    "article": "https://en.wikipedia.org/wiki/Huy%E1%BB%81n_Tr%C3%A2n",
+    "file": "https://commons.wikimedia.org/wiki/File:HuyenTran.jpg",
+    "title": "HuyenTran.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/HuyenTran.jpg/500px-HuyenTran.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Lưu Ly",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:HuyenTran.jpg"
+  },
+  "Chu Văn An": {
+    "src": "/images/overview/35.jpg",
+    "article": "https://en.wikipedia.org/wiki/Chu_V%C4%83n_An",
+    "file": "https://commons.wikimedia.org/wiki/File:Van_Mieu_Hanoi_21.jpg",
+    "title": "Van_Mieu_Hanoi_21.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Van_Mieu_Hanoi_21.jpg/500px-Van_Mieu_Hanoi_21.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Gryffindor",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Lê Lợi": {
+    "src": "/images/overview/42.jpg",
+    "article": "https://en.wikipedia.org/wiki/L%C3%AA_L%E1%BB%A3i",
+    "file": "https://commons.wikimedia.org/wiki/File:Le_Loi_statue.JPG",
+    "title": "Le_Loi_statue.JPG",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Le_Loi_statue.JPG/500px-Le_Loi_statue.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Nguyễn Thanh Quang",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "Nguyễn Trãi": {
+    "src": "/images/overview/43.jpg",
+    "article": "https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_Tr%C3%A3i",
+    "file": "https://commons.wikimedia.org/wiki/File:Nguyen_Trai.jpg",
+    "title": "Nguyen_Trai.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Nguyen_Trai.jpg/500px-Nguyen_Trai.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Nguyen_Trai.jpg"
+  },
+  "Lê Thánh Tông": {
+    "src": "/images/overview/45.png",
+    "article": "https://en.wikipedia.org/wiki/L%C3%AA_Th%C3%A1nh_T%C3%B4ng",
+    "file": "https://commons.wikimedia.org/wiki/File:Le_Thanh_Tong_(cropped).png",
+    "title": "Le_Thanh_Tong_(cropped).png",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Le_Thanh_Tong_%28cropped%29.png/500px-Le_Thanh_Tong_%28cropped%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Unknown artist",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Mạc Đăng Dung": {
+    "src": "/images/overview/48.jpg",
+    "article": "https://en.wikipedia.org/wiki/M%E1%BA%A1c_%C4%90%C4%83ng_Dung",
+    "file": "https://commons.wikimedia.org/wiki/File:An_Nan_Lai_Wei_Tu_Ce.JPG",
+    "title": "An_Nan_Lai_Wei_Tu_Ce.JPG",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/An_Nan_Lai_Wei_Tu_Ce.JPG/500px-An_Nan_Lai_Wei_Tu_Ce.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Feng Shi Yang (馮時暘), Liang Tian Xi (梁天錫), Jiang Mei Zhong (江美中)",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:An_Nan_Lai_Wei_Tu_Ce.JPG"
+  },
+  "Nguyễn Bỉnh Khiêm": {
+    "src": "/images/overview/49.jpg",
+    "article": "https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_B%E1%BB%89nh_Khi%C3%AAm",
+    "file": "https://commons.wikimedia.org/wiki/File:Tr%E1%BA%A1ng_Tr%C3%ACnh_Nguy%E1%BB%85n_B%E1%BB%89nh_Khi%C3%AAm_n.jpg",
+    "title": "Trạng_Trình_Nguyễn_Bỉnh_Khiêm_n.jpg",
+    "remote": "https://upload.wikimedia.org/wikipedia/commons/6/60/Tr%E1%BA%A1ng_Tr%C3%ACnh_Nguy%E1%BB%85n_B%E1%BB%89nh_Khi%C3%AAm_n.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "author": "Experience - sell no one buy, buy no one sell (discuss) Kinh nghiệm - bán không ai mua, mua không ai bán (thảo luận)",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Tr%E1%BA%A1ng_Tr%C3%ACnh_Nguy%E1%BB%85n_B%E1%BB%89nh_Khi%C3%AAm_n.jpg"
+  },
+  "Trịnh Tùng": {
+    "src": "/images/overview/52.png",
+    "article": "https://en.wikipedia.org/wiki/Tr%E1%BB%8Bnh_T%C3%B9ng",
+    "file": "https://commons.wikimedia.org/wiki/File:Tr%E1%BB%8Bnh_T%C3%B9ng.png",
+    "title": "Trịnh_Tùng.png",
+    "remote": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Tr%E1%BB%8Bnh_T%C3%B9ng.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "author": "Trịnh Như Tấu",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Tr%E1%BB%8Bnh_T%C3%B9ng.png"
+  },
+  "Nguyễn Hoàng": {
+    "src": "/images/overview/53.jpg",
+    "article": "https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_Ho%C3%A0ng",
+    "file": "https://commons.wikimedia.org/wiki/File:Nguyen_hoang.jpg",
+    "title": "Nguyen_hoang.jpg",
+    "remote": "https://upload.wikimedia.org/wikipedia/commons/6/67/Nguyen_hoang.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "author": "Nguyễn Hoàng Quý",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Đào Duy Từ": {
+    "src": "/images/overview/55.jpg",
+    "article": "https://en.wikipedia.org/wiki/%C4%90%C3%A0o_Duy_T%E1%BB%AB",
+    "file": "https://commons.wikimedia.org/wiki/File:T%C6%B0%E1%BB%A3ng_%C4%90%C3%A0o_Duy_T%E1%BB%AB_t%E1%BA%A1i_T%E1%BB%AB_%C4%91%C6%B0%E1%BB%9Dng_%C4%90%C3%A0o_t%E1%BB%99c_%C4%90%C3%B4ng_Trang_mi%E1%BB%81n_Nam,_104_%C4%90%C3%A0o_S%C6%B0_T%C3%ADch,_D%C4%A9_An,_B%C3%ACnh_D%C6%B0%C6%A1ng.jpg",
+    "title": "Tượng_Đào_Duy_Từ_tại_Từ_đường_Đào_tộc_Đông_Trang_miền_Nam,_104_Đào_Sư_Tích,_Dĩ_An,_Bình_Dương.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/T%C6%B0%E1%BB%A3ng_%C4%90%C3%A0o_Duy_T%E1%BB%AB_t%E1%BA%A1i_T%E1%BB%AB_%C4%91%C6%B0%E1%BB%9Dng_%C4%90%C3%A0o_t%E1%BB%99c_%C4%90%C3%B4ng_Trang_mi%E1%BB%81n_Nam%2C_104_%C4%90%C3%A0o_S%C6%B0_T%C3%ADch%2C_D%C4%A9_An%2C_B%C3%ACnh_D%C6%B0%C6%A1ng.jpg/500px-T%C6%B0%E1%BB%A3ng_%C4%90%C3%A0o_Duy_T%E1%BB%AB_t%E1%BA%A1i_T%E1%BB%AB_%C4%91%C6%B0%E1%BB%9Dng_%C4%90%C3%A0o_t%E1%BB%99c_%C4%90%C3%B4ng_Trang_mi%E1%BB%81n_Nam%2C_104_%C4%90%C3%A0o_S%C6%B0_T%C3%ADch%2C_D%C4%A9_An%2C_B%C3%ACnh_D%C6%B0%C6%A1ng.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Daoduyan09",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Alexandre de Rhodes": {
+    "src": "/images/overview/56.jpg",
+    "article": "https://en.wikipedia.org/wiki/Alexandre_de_Rhodes",
+    "file": "https://commons.wikimedia.org/wiki/File:Derhodes.jpg",
+    "title": "Derhodes.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Derhodes.jpg/500px-Derhodes.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "http://en.wikipedia.org/wiki/Image:Derhodes.jpg#filelinks",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Derhodes.jpg"
+  },
+  "Quang Trung": {
+    "src": "/images/overview/57.jpg",
+    "article": "https://en.wikipedia.org/wiki/Quang_Trung",
+    "file": "https://commons.wikimedia.org/wiki/File:Quang_Trung_statue_02.jpg",
+    "title": "Quang_Trung_statue_02.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Quang_Trung_statue_02.jpg/500px-Quang_Trung_statue_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Tượng_đài_Quang_Trung_tại_Bảo_tàng_Quang_Trung.JPG: The original uploader was Liftold at Vietnamese Wikipedia. derivative work: Phó Nháy (talk)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Nguyễn Nhạc": {
+    "src": "/images/overview/58.jpg",
+    "article": "https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_Nh%E1%BA%A1c",
+    "file": "https://commons.wikimedia.org/wiki/File:NguyenNhac.jpg",
+    "title": "NguyenNhac.jpg",
+    "remote": "https://upload.wikimedia.org/wikipedia/commons/4/4c/NguyenNhac.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "author": "The original uploader was Newone at Vietnamese Wikipedia.",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Rama I": {
+    "src": "/images/overview/59.jpg",
+    "article": "https://en.wikipedia.org/wiki/Rama_I",
+    "file": "https://commons.wikimedia.org/wiki/File:King_Rama_I_of_Siam_(Yodfa_Chulalok)_Portrait.jpg",
+    "title": "King_Rama_I_of_Siam_(Yodfa_Chulalok)_Portrait.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/King_Rama_I_of_Siam_%28Yodfa_Chulalok%29_Portrait.jpg/500px-King_Rama_I_of_Siam_%28Yodfa_Chulalok%29_Portrait.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:King_Rama_I_of_Siam_(Yodfa_Chulalok)_Portrait.jpg"
+  },
+  "Bùi Thị Xuân": {
+    "src": "/images/overview/60.jpg",
+    "article": "https://en.wikipedia.org/wiki/B%C3%B9i_Th%E1%BB%8B_Xu%C3%A2n",
+    "file": "https://commons.wikimedia.org/wiki/File:B%C3%B9i_Th%E1%BB%8B_Xu%C3%A2n.jpg",
+    "title": "Bùi_Thị_Xuân.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/B%C3%B9i_Th%E1%BB%8B_Xu%C3%A2n.jpg/500px-B%C3%B9i_Th%E1%BB%8B_Xu%C3%A2n.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Bùi Thụy Đào Nguyên",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Sun Shiyi": {
+    "src": "/images/overview/62.jpg",
+    "article": "https://en.wikipedia.org/wiki/Sun_Shiyi",
+    "file": "https://commons.wikimedia.org/wiki/File:Sun_Shiyi.jpg",
+    "title": "Sun_Shiyi.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Sun_Shiyi.jpg/500px-Sun_Shiyi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Sun_Shiyi.jpg"
+  },
+  "Gia Long": {
+    "src": "/images/overview/63.jpg",
+    "article": "https://en.wikipedia.org/wiki/Gia_Long",
+    "file": "https://commons.wikimedia.org/wiki/File:Emperor_Gia_Long.jpg",
+    "title": "Emperor_Gia_Long.jpg",
+    "remote": "https://upload.wikimedia.org/wikipedia/commons/8/86/Emperor_Gia_Long.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "author": "Unknown authorUnknown author, restored by Nguyễn Phước Vĩnh Khánh ([1])",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Emperor_Gia_Long.jpg"
+  },
+  "Minh Mạng": {
+    "src": "/images/overview/64.jpg",
+    "article": "https://en.wikipedia.org/wiki/Minh_M%E1%BA%A1ng",
+    "file": "https://commons.wikimedia.org/wiki/File:Minh_Mang.gif",
+    "title": "Minh_Mang.gif",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Minh_Mang.gif/500px-Minh_Mang.gif?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Unknown, there is a line below the picture in the book that says: Drawn by a Chinese.",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Minh_Mang.gif"
+  },
+  "Nguyễn Du": {
+    "src": "/images/overview/65.jpg",
+    "article": "https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_Du",
+    "file": "https://commons.wikimedia.org/wiki/File:T%C6%B0%E1%BB%A3ng_%C4%91%C3%A0i_c%E1%BB%A5_Nguy%E1%BB%85n_Du.jpg",
+    "title": "Tượng_đài_cụ_Nguyễn_Du.jpg",
+    "remote": "https://upload.wikimedia.org/wikipedia/commons/e/e3/T%C6%B0%E1%BB%A3ng_%C4%91%C3%A0i_c%E1%BB%A5_Nguy%E1%BB%85n_Du.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "author": "Vienvo03",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Lê Văn Duyệt": {
+    "src": "/images/overview/66.jpg",
+    "article": "https://en.wikipedia.org/wiki/L%C3%AA_V%C4%83n_Duy%E1%BB%87t",
+    "file": "https://commons.wikimedia.org/wiki/File:T%C6%B0%E1%BB%A3ng_L%C3%AA_V%C4%83n_Duy%E1%BB%87t.jpg",
+    "title": "Tượng_Lê_Văn_Duyệt.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/T%C6%B0%E1%BB%A3ng_L%C3%AA_V%C4%83n_Duy%E1%BB%87t.jpg/500px-T%C6%B0%E1%BB%A3ng_L%C3%AA_V%C4%83n_Duy%E1%BB%87t.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Bùi Thụy Đào Nguyên",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Tự Đức": {
+    "src": "/images/overview/67.jpg",
+    "article": "https://en.wikipedia.org/wiki/T%E1%BB%B1_%C4%90%E1%BB%A9c",
+    "file": "https://commons.wikimedia.org/wiki/File:Vua_Tu_Duc.jpg",
+    "title": "Vua_Tu_Duc.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Vua_Tu_Duc.jpg/500px-Vua_Tu_Duc.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "The original uploader was Docteur Rieux at Vietnamese Wikipedia.",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Vua_Tu_Duc.jpg"
+  },
+  "Trương Định": {
+    "src": "/images/overview/68.jpg",
+    "article": "https://en.wikipedia.org/wiki/Tr%C6%B0%C6%A1ng_%C4%90%E1%BB%8Bnh",
+    "file": "https://commons.wikimedia.org/wiki/File:Truong_Dinh.JPG",
+    "title": "Truong_Dinh.JPG",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Truong_Dinh.JPG/500px-Truong_Dinh.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Nguyễn Phan Quang & Lê Hữu Phước (2001). Khởi nghĩa Trương Định. Hồ Chí Minh City : Trẻ Publishing House. or Nguyễn Phan Quang (2002), Việt Nam thế kỷ 19, Hồ Chí Minh Publishing House, p. 427.",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Truong_Dinh.JPG"
+  },
+  "Tôn Thất Thuyết": {
+    "src": "/images/overview/69.jpg",
+    "article": "https://en.wikipedia.org/wiki/T%C3%B4n_Th%E1%BA%A5t_Thuy%E1%BA%BFt",
+    "file": "https://commons.wikimedia.org/wiki/File:Ph%E1%BB%A5_ch%C3%ADnh_%C4%91%E1%BA%A1i_th%E1%BA%A7n_T%C3%B4n_Th%E1%BA%A5t_Thuy%E1%BA%BFt.jpg",
+    "title": "Phụ_chính_đại_thần_Tôn_Thất_Thuyết.jpg",
+    "remote": "https://upload.wikimedia.org/wikipedia/commons/9/99/Ph%E1%BB%A5_ch%C3%ADnh_%C4%91%E1%BA%A1i_th%E1%BA%A7n_T%C3%B4n_Th%E1%BA%A5t_Thuy%E1%BA%BFt.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ph%E1%BB%A5_ch%C3%ADnh_%C4%91%E1%BA%A1i_th%E1%BA%A7n_T%C3%B4n_Th%E1%BA%A5t_Thuy%E1%BA%BFt.jpg"
+  },
+  "Charles Rigault de Genouilly": {
+    "src": "/images/overview/70.jpg",
+    "article": "https://en.wikipedia.org/wiki/Charles_Rigault_de_Genouilly",
+    "file": "https://commons.wikimedia.org/wiki/File:Amiral_Charles_Rigault_de_Genouilly.jpg",
+    "title": "Amiral_Charles_Rigault_de_Genouilly.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Amiral_Charles_Rigault_de_Genouilly.jpg/500px-Amiral_Charles_Rigault_de_Genouilly.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Pierre Louis Pierson",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Amiral_Charles_Rigault_de_Genouilly.jpg"
+  },
+  "Hàm Nghi": {
+    "src": "/images/overview/71.jpg",
+    "article": "https://en.wikipedia.org/wiki/H%C3%A0m_Nghi",
+    "file": "https://commons.wikimedia.org/wiki/File:Vua_H%C3%A0m_Nghi_n%C4%83m_1900.jpg",
+    "title": "Vua_Hàm_Nghi_năm_1900.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Vua_H%C3%A0m_Nghi_n%C4%83m_1900.jpg/500px-Vua_H%C3%A0m_Nghi_n%C4%83m_1900.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Vua_H%C3%A0m_Nghi_n%C4%83m_1900.jpg"
+  },
+  "Phan Bội Châu": {
+    "src": "/images/overview/72.jpg",
+    "article": "https://en.wikipedia.org/wiki/Phan_B%E1%BB%99i_Ch%C3%A2u",
+    "file": "https://commons.wikimedia.org/wiki/File:Phan_Boi_Chau.jpg",
+    "title": "Phan_Boi_Chau.jpg",
+    "remote": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Phan_Boi_Chau.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Phan_Boi_Chau.jpg"
+  },
+  "Phan Châu Trinh": {
+    "src": "/images/overview/73.jpg",
+    "article": "https://en.wikipedia.org/wiki/Phan_Ch%C3%A2u_Trinh",
+    "file": "https://commons.wikimedia.org/wiki/File:Phan_Chau_Trinh.jpg",
+    "title": "Phan_Chau_Trinh.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Phan_Chau_Trinh.jpg/500px-Phan_Chau_Trinh.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Khánh Ký",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Phan_Chau_Trinh.jpg"
+  },
+  "Paul Doumer": {
+    "src": "/images/overview/74.jpg",
+    "article": "https://en.wikipedia.org/wiki/Paul_Doumer",
+    "file": "https://commons.wikimedia.org/wiki/File:Paul-Doumer_(cropped).jpg",
+    "title": "Paul-Doumer_(cropped).jpg",
+    "remote": "https://upload.wikimedia.org/wikipedia/commons/6/62/Paul-Doumer_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "author": "Anonymous, National Library of France",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Paul-Doumer_(cropped).jpg"
+  },
+  "Ho Chi Minh": {
+    "src": "/images/overview/75.jpg",
+    "article": "https://en.wikipedia.org/wiki/Ho_Chi_Minh",
+    "file": "https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_-_1946_Portrait_(cropped).jpg",
+    "title": "Ho_Chi_Minh_-_1946_Portrait_(cropped).jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Ho_Chi_Minh_-_1946_Portrait_%28cropped%29.jpg/500px-Ho_Chi_Minh_-_1946_Portrait_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_-_1946_Portrait_(cropped).jpg"
+  },
+  "Bảo Đại": {
+    "src": "/images/overview/76.jpg",
+    "article": "https://en.wikipedia.org/wiki/B%E1%BA%A3o_%C4%90%E1%BA%A1i",
+    "file": "https://commons.wikimedia.org/wiki/File:Emperor_B%E1%BA%A3o_%C4%90%E1%BA%A1i_on_his_throne_(cropped).jpg",
+    "title": "Emperor_Bảo_Đại_on_his_throne_(cropped).jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Emperor_B%E1%BA%A3o_%C4%90%E1%BA%A1i_on_his_throne_%28cropped%29.jpg/500px-Emperor_B%E1%BA%A3o_%C4%90%E1%BA%A1i_on_his_throne_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Emperor_B%E1%BA%A3o_%C4%90%E1%BA%A1i_on_his_throne_(cropped).jpg"
+  },
+  "Nam Phương": {
+    "src": "/images/overview/77.jpg",
+    "article": "https://en.wikipedia.org/wiki/Nam_Ph%C6%B0%C6%A1ng",
+    "file": "https://commons.wikimedia.org/wiki/File:Portrait_of_Empress_Nam_Phuong_during_her_Wedding_Day,_1934.jpg",
+    "title": "Portrait_of_Empress_Nam_Phuong_during_her_Wedding_Day,_1934.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Portrait_of_Empress_Nam_Phuong_during_her_Wedding_Day%2C_1934.jpg/500px-Portrait_of_Empress_Nam_Phuong_during_her_Wedding_Day%2C_1934.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Unknown, restored and uploaded by A",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Portrait_of_Empress_Nam_Phuong_during_her_Wedding_Day,_1934.jpg"
+  },
+  "Yuitsu Tsuchihashi": {
+    "src": "/images/overview/78.jpg",
+    "article": "https://en.wikipedia.org/wiki/Yuitsu_Tsuchihashi",
+    "file": "https://commons.wikimedia.org/wiki/File:Yuitsu_Tsuchihashi.jpg",
+    "title": "Yuitsu_Tsuchihashi.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Yuitsu_Tsuchihashi.jpg/500px-Yuitsu_Tsuchihashi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Yuitsu_Tsuchihashi.jpg"
+  },
+  "Võ Nguyên Giáp": {
+    "src": "/images/overview/79.jpg",
+    "article": "https://en.wikipedia.org/wiki/V%C3%B5_Nguy%C3%AAn_Gi%C3%A1p",
+    "file": "https://commons.wikimedia.org/wiki/File:Mr._Vo_Nguyen_Giap_(cropped).jpg",
+    "title": "Mr._Vo_Nguyen_Giap_(cropped).jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Mr._Vo_Nguyen_Giap_%28cropped%29.jpg/500px-Mr._Vo_Nguyen_Giap_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Mr._Vo_Nguyen_Giap_(cropped).jpg"
+  },
+  "Christian de Castries": {
+    "src": "/images/overview/80.jpg",
+    "article": "https://en.wikipedia.org/wiki/Christian_de_Castries",
+    "file": "https://commons.wikimedia.org/wiki/File:Dien_Bien_Phu001.jpg",
+    "title": "Dien_Bien_Phu001.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Dien_Bien_Phu001.jpg/500px-Dien_Bien_Phu001.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Dien_Bien_Phu001.jpg"
+  },
+  "Nguyễn Thị Bình": {
+    "src": "/images/overview/81.jpg",
+    "article": "https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_Th%E1%BB%8B_B%C3%ACnh",
+    "file": "https://commons.wikimedia.org/wiki/File:Nguyen_Thi_Binh.jpg",
+    "title": "Nguyen_Thi_Binh.jpg",
+    "remote": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Nguyen_Thi_Binh.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "author": "President's Secretariat",
+    "license": "GODL-India",
+    "licenseUrl": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf"
+  },
+  "Nguyễn Văn Thiệu": {
+    "src": "/images/overview/82.jpg",
+    "article": "https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_V%C4%83n_Thi%E1%BB%87u",
+    "file": "https://commons.wikimedia.org/wiki/File:Official_Portrait_of_Nguy%E1%BB%85n_V%C4%83n_Thi%E1%BB%87u,_President_of_the_Republic_of_Vietnam_(cropped).jpg",
+    "title": "Official_Portrait_of_Nguyễn_Văn_Thiệu,_President_of_the_Republic_of_Vietnam_(cropped).jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Official_Portrait_of_Nguy%E1%BB%85n_V%C4%83n_Thi%E1%BB%87u%2C_President_of_the_Republic_of_Vietnam_%28cropped%29.jpg/500px-Official_Portrait_of_Nguy%E1%BB%85n_V%C4%83n_Thi%E1%BB%87u%2C_President_of_the_Republic_of_Vietnam_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "JUSPAO and President's Office arranged for photography. Portrait selected by the President, Printing by RSC, Manila",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Official_Portrait_of_Nguy%E1%BB%85n_V%C4%83n_Thi%E1%BB%87u,_President_of_the_Republic_of_Vietnam_(cropped).jpg"
+  },
+  "William Westmoreland": {
+    "src": "/images/overview/83.jpg",
+    "article": "https://en.wikipedia.org/wiki/William_Westmoreland",
+    "file": "https://commons.wikimedia.org/wiki/File:Gen_William_C_Westmoreland_b.jpg",
+    "title": "Gen_William_C_Westmoreland_b.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Gen_William_C_Westmoreland_b.jpg/500px-Gen_William_C_Westmoreland_b.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "File:Gen William C Westmoreland.jpg: Unknown authorUnknown author derivative work: Georgfotoart",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Gen_William_C_Westmoreland_b.jpg"
+  },
+  "Văn Tiến Dũng": {
+    "src": "/images/overview/84.jpg",
+    "article": "https://en.wikipedia.org/wiki/V%C4%83n_Ti%E1%BA%BFn_D%C5%A9ng",
+    "file": "https://commons.wikimedia.org/wiki/File:Van_Tien_Dung_1954.jpg",
+    "title": "Van_Tien_Dung_1954.jpg",
+    "remote": "https://upload.wikimedia.org/wikipedia/commons/3/37/Van_Tien_Dung_1954.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "author": "Unknown author from LIFE",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Van_Tien_Dung_1954.jpg"
+  },
+  "Dương Văn Minh": {
+    "src": "/images/overview/85.jpg",
+    "article": "https://en.wikipedia.org/wiki/D%C6%B0%C6%A1ng_V%C4%83n_Minh",
+    "file": "https://commons.wikimedia.org/wiki/File:Portrait_of_D%C6%B0%C6%A1ng_V%C4%83n_Minh,_Vietnam_Fights_and_Builds_No.1,_July_1964.jpg",
+    "title": "Portrait_of_Dương_Văn_Minh,_Vietnam_Fights_and_Builds_No.1,_July_1964.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Portrait_of_D%C6%B0%C6%A1ng_V%C4%83n_Minh%2C_Vietnam_Fights_and_Builds_No.1%2C_July_1964.jpg/500px-Portrait_of_D%C6%B0%C6%A1ng_V%C4%83n_Minh%2C_Vietnam_Fights_and_Builds_No.1%2C_July_1964.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "The Republic of Vietnam",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Portrait_of_D%C6%B0%C6%A1ng_V%C4%83n_Minh,_Vietnam_Fights_and_Builds_No.1,_July_1964.jpg"
+  },
+  "Tôn Đức Thắng": {
+    "src": "/images/overview/86.jpg",
+    "article": "https://en.wikipedia.org/wiki/T%C3%B4n_%C4%90%E1%BB%A9c_Th%E1%BA%AFng",
+    "file": "https://commons.wikimedia.org/wiki/File:Mr._Ton_Duc_Thang.jpg",
+    "title": "Mr._Ton_Duc_Thang.jpg",
+    "remote": "https://upload.wikimedia.org/wikipedia/commons/1/15/Mr._Ton_Duc_Thang.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Mr._Ton_Duc_Thang.jpg"
+  },
+  "Lê Duẩn": {
+    "src": "/images/overview/87.png",
+    "article": "https://en.wikipedia.org/wiki/L%C3%AA_Du%E1%BA%A9n",
+    "file": "https://commons.wikimedia.org/wiki/File:Le_duan.png",
+    "title": "Le_duan.png",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Le_duan.png/500px-Le_duan.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Le_duan.png"
+  },
+  "Pol Pot": {
+    "src": "/images/overview/88.png",
+    "article": "https://en.wikipedia.org/wiki/Pol_Pot",
+    "file": "https://commons.wikimedia.org/wiki/File:Pol_Pot_in_1978.png",
+    "title": "Pol_Pot_in_1978.png",
+    "remote": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Pol_Pot_in_1978.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "author": "Editura Politică",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Pol_Pot_in_1978.png"
+  },
+  "Deng Xiaoping": {
+    "src": "/images/overview/89.jpg",
+    "article": "https://en.wikipedia.org/wiki/Deng_Xiaoping",
+    "file": "https://commons.wikimedia.org/wiki/File:Deng_Xiaoping_at_the_arrival_ceremony_for_the_Vice_Premier_of_China_(cropped).jpg",
+    "title": "Deng_Xiaoping_at_the_arrival_ceremony_for_the_Vice_Premier_of_China_(cropped).jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Deng_Xiaoping_at_the_arrival_ceremony_for_the_Vice_Premier_of_China_%28cropped%29.jpg/500px-Deng_Xiaoping_at_the_arrival_ceremony_for_the_Vice_Premier_of_China_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Deng_Xiaoping_at_the_arrival_ceremony_for_the_Vice_Premier_of_China_(cropped).jpg"
+  },
+  "Nguyễn Văn Linh": {
+    "src": "/images/overview/90.jpg",
+    "article": "https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_V%C4%83n_Linh",
+    "file": "https://commons.wikimedia.org/wiki/File:T%C3%A1m_L%C3%AA_Thanh_v%C3%A0_Nguy%E1%BB%85n_V%C4%83n_Linh_(cropped)_(2).jpg",
+    "title": "Tám_Lê_Thanh_và_Nguyễn_Văn_Linh_(cropped)_(2).jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/T%C3%A1m_L%C3%AA_Thanh_v%C3%A0_Nguy%E1%BB%85n_V%C4%83n_Linh_%28cropped%29_%282%29.jpg/500px-T%C3%A1m_L%C3%AA_Thanh_v%C3%A0_Nguy%E1%BB%85n_V%C4%83n_Linh_%28cropped%29_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "CalCoWSpiBudSu",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "Võ Văn Kiệt": {
+    "src": "/images/overview/91.jpg",
+    "article": "https://en.wikipedia.org/wiki/V%C3%B5_V%C4%83n_Ki%E1%BB%87t",
+    "file": "https://commons.wikimedia.org/wiki/File:Mr._Vo_Van_Kiet.jpg",
+    "title": "Mr._Vo_Van_Kiet.jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Mr._Vo_Van_Kiet.jpg/500px-Mr._Vo_Van_Kiet.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "国立公文書館 - 内閣官房内閣広報室",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "Toghon (prince)": {
+    "src": "/images/overview/32.jpg",
+    "article": "https://vi.wikipedia.org/wiki/Tho%C3%A1t_Hoan",
+    "file": "https://commons.wikimedia.org/wiki/File:%C4%90%E1%BB%81n_th%E1%BB%9D_%C4%90%E1%BB%A9c_Th%C3%A1nh_Tr%E1%BA%A7n,_Qu%E1%BA%ADn_1,_th%C3%A1ng_12_n%C4%83m_2021_(ph%C3%B9_%C4%91i%C3%AAu_Tho%C3%A1t_Hoan_chui_%E1%BB%91ng_%C4%91%E1%BB%93ng)_(1).jpg",
+    "title": "Đền_thờ_Đức_Thánh_Trần,_Quận_1,_tháng_12_năm_2021_(phù_điêu_Thoát_Hoan_chui_ống_đồng)_(1).jpg",
+    "remote": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/%C4%90%E1%BB%81n_th%E1%BB%9D_%C4%90%E1%BB%A9c_Th%C3%A1nh_Tr%E1%BA%A7n%2C_Qu%E1%BA%ADn_1%2C_th%C3%A1ng_12_n%C4%83m_2021_%28ph%C3%B9_%C4%91i%C3%AAu_Tho%C3%A1t_Hoan_chui_%E1%BB%91ng_%C4%91%E1%BB%93ng%29_%281%29.jpg/500px-%C4%90%E1%BB%81n_th%E1%BB%9D_%C4%90%E1%BB%A9c_Th%C3%A1nh_Tr%E1%BA%A7n%2C_Qu%E1%BA%ADn_1%2C_th%C3%A1ng_12_n%C4%83m_2021_%28ph%C3%B9_%C4%91i%C3%AAu_Tho%C3%A1t_Hoan_chui_%E1%BB%91ng_%C4%91%E1%BB%93ng%29_%281%29.jpg?utm_source=vi.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "author": "Phương Huy",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Zhang Fu (Ming dynasty)": {
+    "src": "/images/overview/39.jpg",
+    "article": "https://vi.wikipedia.org/wiki/Tr%C6%B0%C6%A1ng_Ph%E1%BB%A5",
+    "file": "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E8%BC%94.jpg",
+    "title": "張輔.jpg",
+    "remote": "https://upload.wikimedia.org/wikipedia/commons/4/4a/%E5%BC%B5%E8%BC%94.jpg?utm_source=vi.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "author": "明王圻辑《三才图会》",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:%E5%BC%B5%E8%BC%94.jpg"
+  },
+  "Lê Trang Tông": {
+    "src": "/images/overview/51.jpg",
+    "article": "https://vi.wikipedia.org/wiki/L%C3%AA_Trang_T%C3%B4ng",
+    "file": "https://commons.wikimedia.org/wiki/File:Toda_No._65_%E5%85%83%E5%92%8C%E9%80%9A%E5%AF%B6.gif",
+    "title": "Toda_No._65_元和通寶.gif",
+    "remote": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Toda_No._65_%E5%85%83%E5%92%8C%E9%80%9A%E5%AF%B6.gif?utm_source=vi.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "author": "Eduardo Toda y Güell",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Toda_No._65_%E5%85%83%E5%92%8C%E9%80%9A%E5%AF%B6.gif"
+  }
+}
