@@ -1,8 +1,11 @@
 "use client";
 
-import Image from "next/image";
+import { Image } from "@/components/ui/image";
 import Link from "next/link";
 import { useState } from "react";
+
+import { battlePortraitFor, characterHref } from "~/data/characters";
+import { NationalFlag } from "~/components/national-flag";
 
 import type { StoryModel } from "~/types";
 
@@ -26,7 +29,7 @@ export const BachDangExperience = ({ story }: BachDangExperienceProps) => {
     <main className="bd-experience bd-map-first">
       <header className="bd-header">
         <Link className="bd-brand" href="/"><span className="bd-brand-symbol">H</span><span>HISTORY ATLAS<small>DẤU ẤN NGÀN NĂM</small></span></Link>
-        <h1 id="battle-title" className="bd-battle-title">Bạch Đằng <span>1288</span></h1>
+        <nav className="bd-page-navigation" aria-label="Điều hướng lịch sử"><Link href="/vietnam/overview#tran-bach-dang"><NationalFlag /> Tổng quan Việt Nam</Link><Link href="/characters">Nhân vật</Link></nav><h1 id="battle-title" className="bd-battle-title">Bạch Đằng <span>1288</span></h1>
       </header>
 
       <section id="story" className="bd-story" aria-label="Diễn biến trận chiến">
@@ -43,7 +46,7 @@ export const BachDangExperience = ({ story }: BachDangExperienceProps) => {
             <div className="bd-chapter-meta"><span>CHƯƠNG {String(i + 1).padStart(2, "0")}</span><span>{chapter.date}</span></div>
             <h3>{chapter.title}<span>.</span></h3><p>{chapter.text}</p>
             {i === 4 || i === 5 ? <div className="bd-tide"><div><span>NHỊP THỦY TRIỀU</span><strong>{i === 4 ? "Nước lên · giấu trận địa" : "Nước rút · lộ bãi cọc"}</strong></div><svg viewBox="0 0 240 45" role="img" aria-label={i === 4 ? "Minh họa triều lên" : "Minh họa triều xuống"}><path d={i === 4 ? "M0 38 Q60 38 100 15 T240 8" : "M0 8 Q70 8 120 30 T240 38"} fill="none" stroke="currentColor" strokeWidth="2" /></svg></div> : null}
-            <div className="bd-chapter-people">{chapter.characters?.map((person) => <span key={person.name} data-side={person.side} className={`bd-person-card bd-commander-${person.portrait ?? "unknown"}`}>{person.portrait ? <span className="bd-pin-portrait"><Image src={person.portrait === "tran-hung-dao" ? "/images/bach-dang-cinematic.png" : "/images/yuan-commanders.png"} alt="" fill sizes="256px" quality={90} /></span> : <i />}<span>{person.name}<small>{person.role}</small></span></span>)}</div>
+            <div className="bd-chapter-people">{chapter.characters?.map((person) => <Link href={characterHref(person.name)} key={person.name} data-character-id={person.id} data-side={person.side} className={`bd-person-card bd-commander-${person.portrait ?? "unknown"}`}>{person.portrait ? <span className="bd-pin-portrait"><Image preview={false} src={battlePortraitFor(person.name)?.src ?? ""} alt="" fill sizes="256px" quality={90} /></span> : <i />}<span>{person.name}<small>{person.role}</small></span></Link>)}</div>
             <span className="bd-chapter-index">{String(i + 1).padStart(2, "0")}</span>
           </article>)}</aside>
         </div>

@@ -1,0 +1,266 @@
+[
+  {
+    "id": "hai-ba-trung",
+    "title": "Khởi nghĩa Hai Bà Trưng",
+    "years": "40–43",
+    "sceneIds": [
+      "bac-thuoc-han",
+      "hai-ba-trung"
+    ],
+    "leaderIds": [
+      "trung-trac",
+      "trung-nhi"
+    ],
+    "location": "Hát Môn · Mê Linh",
+    "at": [
+      105.58,
+      21.15
+    ],
+    "summary": "Từ Hát Môn, nghĩa quân mở rộng hoạt động và giành quyền tự chủ; Trưng Trắc được suy tôn làm vua.",
+    "outcome": "Nhà Hán tái chiếm năm 43, chính quyền Trưng Vương chấm dứt.",
+    "sources": [
+      {
+        "title": "Khởi nghĩa Hai Bà Trưng",
+        "url": "https://vi.wikipedia.org/wiki/Khởi_nghĩa_Hai_Bà_Trưng"
+      }
+    ]
+  },
+  {
+    "id": "ba-trieu",
+    "title": "Khởi nghĩa Bà Triệu",
+    "years": "248",
+    "sceneIds": [
+      "bac-thuoc-2"
+    ],
+    "leaderIds": [
+      "ba-trieu"
+    ],
+    "location": "Núi Nưa · Thanh Hóa",
+    "at": [
+      105.62,
+      19.63
+    ],
+    "summary": "Triệu Thị Trinh tập hợp nghĩa quân chống chính quyền Đông Ngô tại vùng Cửu Chân.",
+    "outcome": "Bị quân Đông Ngô đàn áp; Bà Triệu mất năm 248.",
+    "sources": [
+      {
+        "title": "Khởi nghĩa Bà Triệu",
+        "url": "https://vi.wikipedia.org/wiki/Khởi_nghĩa_Bà_Triệu"
+      }
+    ]
+  },
+  {
+    "id": "ly-bi",
+    "title": "Khởi nghĩa Lý Bí",
+    "years": "542–544",
+    "sceneIds": [
+      "bac-thuoc-2",
+      "van-xuan"
+    ],
+    "leaderIds": [
+      "ly-nam-de"
+    ],
+    "location": "Thái Bình (địa danh cổ) · vùng Bắc Bộ",
+    "at": [
+      105.5,
+      21.1
+    ],
+    "summary": "Lý Bí tập hợp hào kiệt, đánh đuổi quan quân nhà Lương. Vị trí khởi phát còn có các cách xác định khác nhau.",
+    "outcome": "Lập nước Vạn Xuân năm 544; chiến sự chống Lương tiếp diễn.",
+    "sources": [
+      {
+        "title": "Khởi nghĩa Lý Bí",
+        "url": "https://vi.wikipedia.org/wiki/Khởi_nghĩa_Lý_Bí"
+      },
+      {
+        "title": "Tạp chí Chiến lược và Lịch sử Quốc phòng · Khởi nghĩa Lý Bí",
+        "url": "https://tcclvlsqpvn.vn/vn/qpvn/vi/article/view/257"
+      }
+    ]
+  },
+  {
+    "id": "mai-thuc-loan",
+    "title": "Khởi nghĩa Mai Thúc Loan",
+    "years": "Đầu TK VIII – 722",
+    "sceneIds": [
+      "bac-thuoc-3"
+    ],
+    "leaderIds": [
+      "mai-thuc-loan"
+    ],
+    "location": "Hoan Châu · Nam Đàn",
+    "at": [
+      105.5,
+      18.71
+    ],
+    "summary": "Mai Thúc Loan xây dựng căn cứ ở Hoan Châu và mở rộng lực lượng chống nhà Đường; niên đại khởi phát còn được thảo luận.",
+    "outcome": "Quân Đường đàn áp năm 722; chính quyền tự chủ không duy trì được.",
+    "sources": [
+      {
+        "title": "Khởi nghĩa Mai Thúc Loan",
+        "url": "https://nghiencuulichsu.com/2012/09/29/khao-cuu-lai-cuoc-khoi-nghia-cua-mai-thuc-loan-phan-huy-le/"
+      }
+    ]
+  },
+  {
+    "id": "phung-hung",
+    "title": "Khởi nghĩa Phùng Hưng",
+    "years": "Cuối TK VIII – 791",
+    "sceneIds": [
+      "bac-thuoc-3"
+    ],
+    "leaderIds": [
+      "phung-hung"
+    ],
+    "location": "Đường Lâm · Tống Bình",
+    "at": [
+      105.47,
+      21.16
+    ],
+    "summary": "Phùng Hưng nổi dậy ở Đường Lâm, giành quyền kiểm soát Tống Bình. Mốc khởi phát khác nhau giữa các tài liệu.",
+    "outcome": "Sau khi Phùng Hưng mất, Phùng An nối quyền; nhà Đường khôi phục cai trị năm 791.",
+    "sources": [
+      {
+        "title": "Khởi nghĩa Phùng Hưng",
+        "url": "https://vi.wikipedia.org/wiki/Khởi_nghĩa_Phùng_Hưng"
+      }
+    ]
+  },
+  {
+    "id": "bai-say",
+    "title": "Khởi nghĩa Bãi Sậy",
+    "years": "1883–1892",
+    "sceneIds": [
+      "nguyen-xam-luoc",
+      "phap-thuoc"
+    ],
+    "leaderIds": [
+      "nguyen-thien-thuat"
+    ],
+    "location": "Bãi Sậy · Hưng Yên",
+    "at": [
+      106.04,
+      20.86
+    ],
+    "summary": "Nghĩa quân tận dụng vùng đầm lầy, tổ chức các toán nhỏ chống quân Pháp; Nguyễn Thiện Thuật giữ vai trò lãnh đạo từ năm 1885.",
+    "outcome": "Phong trào suy yếu sau khi lãnh đạo rời căn cứ; các toán còn lại bị đàn áp.",
+    "sources": [
+      {
+        "title": "Khởi nghĩa Bãi Sậy",
+        "url": "https://vi.wikipedia.org/wiki/Khởi_nghĩa_Bãi_Sậy"
+      },
+      {
+        "title": "Thông tấn xã Việt Nam · Khởi nghĩa Bãi Sậy",
+        "url": "https://nvsk.vnanet.vn/print/khoi-nghia-bai-say-1883-1892-34908.vna"
+      }
+    ]
+  },
+  {
+    "id": "ba-dinh",
+    "title": "Khởi nghĩa Ba Đình",
+    "years": "1886–1887",
+    "sceneIds": [
+      "phap-thuoc"
+    ],
+    "leaderIds": [
+      "dinh-cong-trang",
+      "pham-banh"
+    ],
+    "location": "Ba Đình · Nga Sơn",
+    "at": [
+      105.97,
+      20.02
+    ],
+    "summary": "Nghĩa quân xây dựng hệ thống phòng thủ ở ba làng thuộc Nga Sơn, hưởng ứng phong trào Cần Vương.",
+    "outcome": "Căn cứ bị quân Pháp đánh chiếm đầu năm 1887; lực lượng còn lại rút đi.",
+    "sources": [
+      {
+        "title": "Khởi nghĩa Ba Đình",
+        "url": "https://vi.wikipedia.org/wiki/Khởi_nghĩa_Ba_Đình"
+      },
+      {
+        "title": "Trung tâm Lưu trữ quốc gia I · Khởi nghĩa Ba Đình",
+        "url": "https://www.archives.org.vn/gioi-thieu-tai-lieu-nghiep-vu/di-tim-dau-vet-cuoc-khoi-nghia-ba-dinh-1886-%E2%80%93-1887-trong-tai-lieu-luu-tru-thoi-phap-thuoc.htm"
+      }
+    ]
+  },
+  {
+    "id": "huong-khe",
+    "title": "Khởi nghĩa Hương Khê",
+    "years": "1885–1896",
+    "sceneIds": [
+      "phap-thuoc"
+    ],
+    "leaderIds": [
+      "phan-dinh-phung",
+      "cao-thang"
+    ],
+    "location": "Vụ Quang · Hà Tĩnh",
+    "at": [
+      105.43,
+      18.38
+    ],
+    "summary": "Phan Đình Phùng và Cao Thắng tổ chức lực lượng, xây căn cứ, chế tạo vũ khí và chiến đấu trong phong trào Cần Vương.",
+    "outcome": "Cao Thắng mất năm 1893, Phan Đình Phùng mất năm 1895; phong trào bị dập tắt năm 1896.",
+    "sources": [
+      {
+        "title": "Khởi nghĩa Hương Khê",
+        "url": "https://vi.wikipedia.org/wiki/Khởi_nghĩa_Hương_Khê"
+      },
+      {
+        "title": "Bảo tàng Lịch sử Quốc gia · Súng trường Cao Thắng",
+        "url": "https://baotanglichsu.vn/VI/Articles/1002/13780/sung-truong-do-cao-thang-che-tao-trong-cuoc-khoi-nghia-huong-khe-1885-1896.html"
+      }
+    ]
+  },
+  {
+    "id": "yen-the",
+    "title": "Khởi nghĩa Yên Thế",
+    "years": "1884–1913",
+    "sceneIds": [
+      "nguyen-xam-luoc",
+      "phap-thuoc"
+    ],
+    "leaderIds": [
+      "luong-van-nam",
+      "hoang-hoa-tham"
+    ],
+    "location": "Yên Thế · vùng Bắc Giang",
+    "at": [
+      106.12,
+      21.47
+    ],
+    "summary": "Nông dân và các toán nghĩa quân bảo vệ vùng cư trú; sau Đề Nắm, Hoàng Hoa Thám trở thành thủ lĩnh chủ chốt.",
+    "outcome": "Sau nhiều đợt chiến đấu và hòa hoãn, lực lượng tan rã; Hoàng Hoa Thám bị sát hại năm 1913.",
+    "sources": [
+      {
+        "title": "Khởi nghĩa Yên Thế",
+        "url": "https://thcsbcyenthe.hcm.edu.vn/gioi-thieu/khoi-nghia-yen-the/ctmb/12803/116316"
+      }
+    ]
+  },
+  {
+    "id": "yen-bai",
+    "title": "Khởi nghĩa Yên Bái",
+    "years": "1930",
+    "sceneIds": [
+      "phap-thuoc"
+    ],
+    "leaderIds": [
+      "nguyen-thai-hoc"
+    ],
+    "location": "Yên Bái",
+    "at": [
+      104.87,
+      21.7
+    ],
+    "summary": "Việt Nam Quốc dân Đảng tổ chức nổi dậy, trong đó binh lính người Việt tại Yên Bái đánh đồn đêm 9 rạng 10/2/1930.",
+    "outcome": "Khởi nghĩa thất bại; Nguyễn Thái Học cùng các đồng chí bị xử tử tháng 6/1930.",
+    "sources": [
+      {
+        "title": "Khởi nghĩa Yên Bái",
+        "url": "https://vi.wikipedia.org/wiki/Khởi_nghĩa_Yên_Bái"
+      }
+    ]
+  }
+]

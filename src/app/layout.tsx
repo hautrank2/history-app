@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Be_Vietnam_Pro, Playfair_Display } from "next/font/google";
 import type { ReactNode } from "react";
 
@@ -17,8 +17,26 @@ const heading = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  applicationName: "History Atlas",
   title: { default: "History Atlas", template: "%s | History Atlas" },
   description: "Lịch sử kể trên bản đồ địa hình.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", type: "image/x-icon" },
+      { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
+      { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon.svg", type: "image/svg+xml", sizes: "any" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#0d1919",
+  colorScheme: "dark",
 };
 
 type RootLayoutProps = { children: ReactNode };

@@ -236,3 +236,87 @@ html:has(.vo-page), body:has(.vo-page) { height: 100%; overflow: hidden; overscr
   .vo-tabs button { font-size: 9px; gap: 3px; }
 }
 @media (prefers-reduced-motion: reduce) { .vo-page *, .vo-page *::before, .vo-page *::after { animation: none !important; scroll-behavior: auto !important; transition: none !important; } }
+.vo-reading-body { overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: var(--atlas-gold) transparent; scroll-snap-type: y proximity; position: relative; }
+.vo-reading-page { height: auto; min-height: 100%; padding-bottom: 24px; scroll-snap-align: start; animation: none; }
+.vo-reading-page + .vo-reading-page { padding-top: 16px; border-top: 1px solid var(--atlas-line); }
+.vo-person { min-height: 150px; }
+.vo-person-source { color: var(--atlas-muted); font-size: 10px; display: block; }
+.vo-character-nav { position: absolute; z-index: 6; top: 20px; left: 190px; padding: 12px; border-radius: 6px; color: var(--atlas-gold); font-size: 12px; }
+.vo-relief { opacity: .7; pointer-events: none; filter: sepia(.3) brightness(.65) saturate(.6); }
+[data-map-variant="terrain"] .vo-countries path { fill-opacity: .18; }
+[data-map-variant="terrain"] .vo-territory { fill-opacity: .45; }
+.vo-archipelago path { fill: var(--atlas-gold); stroke: var(--atlas-paper); stroke-width: .6; }
+.vo-archipelago text { fill: var(--atlas-gold); font-size: 11px; text-anchor: middle; letter-spacing: 1px; paint-order: stroke; stroke: var(--vo-map-water); stroke-width: 3px; }
+.vo-archipelago .vo-island-country { font-size: 8px; }
+.vo-map-variants { position: absolute; z-index: 3; left: 24px; bottom: calc(var(--vo-dock) + 142px); display: flex; padding: 5px; border-radius: 6px; }
+.vo-map-variants button { padding: 8px 12px; font-size: 11px; color: var(--atlas-muted); }
+.vo-map-variants button[aria-pressed="true"] { background: var(--accent); color: var(--atlas-gold); }
+.vo-islands-inset { position: absolute; left: 24px; top: 230px; padding: 12px; border-radius: 6px; display: grid; gap: 8px; color: var(--atlas-gold); font-size: 12px; max-width: 250px; pointer-events: none; }
+.vo-islands-inset strong { font-size: 9px; letter-spacing: .1em; }
+.vo-islands-inset small { font-size: 8px; color: var(--atlas-muted); }
+.vo-place-navigation { display: grid; gap: 8px; color: var(--atlas-gold); font-size: 12px; margin-top: 12px; }
+.vo-place-list { flex-wrap: wrap; max-height: 140px; overflow-y: auto; }
+.vo-place-detail { max-height: 45dvh; overflow-y: auto; }
+.vo-uprisings { padding: 16px 0; }
+.vo-uprisings h3 { font-family: var(--font-heading), serif; font-size: 22px; color: var(--atlas-gold); }
+.vo-uprising-card { border-top: 1px solid var(--atlas-line); padding: 14px 0; font-size: 12px; line-height: 1.8; }
+.vo-uprising-card a { display: block; color: var(--atlas-gold); font-size: 16px; }
+.vo-uprising-card small { color: var(--atlas-muted); }
+.vo-country-stats { bottom: calc(var(--vo-dock) + 30px); }
+.vo-back .national-flag { flex-shrink: 0; }
+@media (max-width: 760px) {
+ .vo-character-nav { left: 132px; top: 12px; padding: 10px; font-size: 10px; }
+ .vo-back { gap: 6px; }
+ .vo-back .national-flag { width: 21px; height: 14px; }
+ .vo-islands-inset { top: 122px; left: 12px; padding: 7px 9px; gap: 4px; max-width: 190px; font-size: 9px; }
+ .vo-islands-inset strong { font-size: 7px; }
+ .vo-islands-inset small { font-size: 6px; }
+ .vo-map-variants { left: 12px; top: 225px; bottom: auto; }
+ .vo-map-variants button { font-size: 9px; padding: 5px 8px; }
+ .vo-map-markers.is-dense .vo-map-pin { min-width: 34px; max-width: 120px; }
+ .vo-map-markers.is-dense .vo-pin-label strong { font-size: 9px; }
+ .vo-map-markers.is-dense .vo-pin-label small { display: none; }
+ .vo-map-markers.is-dense .vo-pin-symbol { width: 32px; height: 32px; flex-basis: 32px; }
+ .vo-map-markers.is-dense .vo-map-pin.is-compact .vo-pin-label { display: block; }
+ .vo-person { min-height: 125px; }
+}
+.vo-map-focus { position:absolute;z-index:6;left:24px;top:355px;padding:10px 12px;border-radius:6px;font-size:11px;color:var(--atlas-gold); }
+.vo-terrain-credit { position:absolute;z-index:3;bottom:7px;left:24px;font-size:8px;color:var(--atlas-muted); }
+.vo-map-markers.is-dense .vo-map-pin { min-height:44px; }
+@media(max-width:760px){
+ .vo-back { top:10px;left:12px;padding:7px 10px;min-height:32px;font-size:10px; }
+ .vo-character-nav { top:10px;left:135px;padding:8px;font-size:9px; }
+ .vo-visibility { top:50px;left:12px;right:12px;gap:5px; }
+ .vo-visibility > button { flex:1;min-height:32px;padding:0 5px;font-size:9px; }
+ .vo-visibility > button > span { font-size:13px; }
+ .vo-visibility .vo-clean-view { flex:0 0 32px; }
+ .vo-country-stats { top:90px; }
+ .vo-islands-inset { top:156px; }
+ .vo-map-variants { top:228px; }
+ .vo-map-focus { top:270px;left:12px;padding:7px;font-size:9px; }
+ .vo-page[data-content="true"] .vo-map-focus { top:151px;right:12px;left:auto;width:110px;white-space:normal;line-height:1.5; }
+ .vo-page[data-content="true"] .vo-islands-inset { display:none; }
+ .vo-page[data-content="true"] .vo-map-variants { top:190px; }
+ .vo-page[data-content="true"] .vo-map-markers.is-dense { visibility:hidden; }
+ .vo-page[data-content="false"] .vo-map-markers.is-dense .vo-pin-symbol { width:28px;height:28px;flex-basis:28px; }
+ .vo-page[data-content="false"] .vo-map-markers.is-dense .vo-map-pin { gap:4px; }
+ .vo-page[data-content="false"] .vo-map-markers.is-dense .vo-pin-label strong { font-size:9px; }
+ .vo-page[data-content="false"] .vo-map-markers.is-dense .vo-pin-label > span { font-size:8px; }
+ .vo-page[data-content="false"] .vo-map-badge { display:none; }
+ .vo-terrain-credit { font-size:6px;left:12px; }
+ .vo-place-detail { top:155px;max-height:40dvh; }
+}
+@media(max-width:760px){
+ .vo-page[data-content="true"] .vo-islands-inset { display:grid;top:151px;gap:3px;max-width:180px;padding:6px 8px; }
+ .vo-page[data-content="true"] .vo-islands-inset small { display:none; }
+ .vo-page[data-content="true"] .vo-story-panel { max-height:calc(100dvh - var(--vo-dock) - 244px); }
+ .vo-page[data-content="true"] .vo-map-variants { top:209px; }
+ .vo-page[data-content="false"] .vo-map-focus { top:210px;right:12px;left:auto;max-width:145px;white-space:normal; }
+}
+.vo-page .vo-map-focus { font-size:11px;line-height:1.5; }
+.vo-page[data-content="false"] .vo-map-focus { display:none; }
+@media(max-width:760px){
+ .vo-page[data-content="true"] .vo-map-focus { top:155px;right:12px;width:210px;min-height:36px;height:auto;padding:8px;font-size:10px; }
+ .vo-page[data-clean="true"] .vo-islands-inset { top:100px; }
+ .vo-page[data-clean="true"] .vo-map-variants { top:195px; }
+}

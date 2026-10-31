@@ -1,0 +1,1 @@
+export const NationalFlag = ({ className = "" }: { className?: string }) => <svg className={`national-flag ${className}`} viewBox="0 0 30 20" role="img" aria-label="Quốc kỳ Việt Nam hiện nay" width="30" height="20"><path fill="#da251d" d="M0 0h30v20H0z" /><path fill="#ff0" d="m15 4 1.35 4.15h4.36l-3.53 2.56 1.35 4.15L15 12.3l-3.53 2.56 1.35-4.15-3.53-2.56h4.36Z" /></svg>;

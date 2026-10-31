@@ -1,0 +1,15 @@
+.character-page { max-width: 1120px; margin: auto; padding: 32px 24px 80px; color: var(--atlas-paper); font-family: var(--font-body), sans-serif; }
+.character-page a { color: var(--atlas-gold); }.character-page a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.character-breadcrumbs, .character-pagination { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; font-size: 13px; padding: 20px 0; border-bottom: 1px solid var(--atlas-line); }
+.character-page h1 { font-family: var(--font-heading), serif; font-size: clamp(38px, 6vw, 72px); margin: 20px 0; line-height: 1.15; }
+.character-page h2 { font-family: var(--font-heading), serif; font-size: 30px; margin: 28px 0 16px; }.character-page h3 { font-size: 21px; margin: 8px 0; }
+.character-page p { line-height: 1.9; color: var(--atlas-muted); }.character-eyebrow { margin-top: 28px; font-size: 11px; letter-spacing: .15em; color: var(--atlas-gold) !important; }
+.character-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 16px; margin-top: 32px; }
+.character-directory-card { padding: 24px; border: 1px solid var(--atlas-line); border-radius: 8px; background: var(--card); }.character-directory-card h2 { margin: 0; font-size: 24px; }.character-directory-card span { display: block; margin-top: 18px; font-size: 12px; }
+.character-hero { display: grid; grid-template-columns: minmax(220px,360px) 1fr; gap: 48px; align-items: center; padding: 40px 0; }.character-hero:not(:has(figure)) { grid-template-columns: 1fr; }
+.character-portrait img { width: 100%; height: 420px; object-fit: cover; border-radius: 8px; }.character-portrait figcaption { font-size: 10px; line-height: 1.7; margin-top: 10px; color: var(--atlas-muted); }
+.character-facts { display: grid; grid-template-columns: auto 1fr; gap: 12px 24px; font-size: 13px; margin: 24px 0; }.character-facts dt { color: var(--atlas-muted); }
+.character-scene { padding: 20px 0; border-top: 1px solid var(--atlas-line); }.character-scene small { color: var(--atlas-muted); }.character-sources a { display: block; margin: 10px 0; font-size: 13px; }
+.character-pagination { border-top: 1px solid var(--atlas-line); border-bottom: 0; margin-top: 36px; }
+.bd-page-navigation { display: flex; gap: 20px; align-items: center; color: var(--atlas-gold); font-size: 12px; }.bd-page-navigation a { display: flex; align-items: center; gap: 8px; }
+@media(max-width:760px) { .character-hero { grid-template-columns: 1fr; gap: 24px; }.character-portrait { max-width: 360px; }.bd-page-navigation { gap: 10px; font-size: 10px; }.bd-page-navigation .national-flag { display: none; } }

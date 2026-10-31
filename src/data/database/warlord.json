@@ -1,0 +1,98 @@
+[
+  {
+    "characterId": "tran-lam",
+    "name": "Bố Hải Khẩu",
+    "at": [
+      106.34,
+      20.44
+    ]
+  },
+  {
+    "characterId": "ngo-xuong-xi",
+    "name": "Bình Kiều",
+    "at": [
+      105.61,
+      19.83
+    ]
+  },
+  {
+    "characterId": "do-canh-thac",
+    "name": "Đỗ Động Giang",
+    "at": [
+      105.66,
+      20.94
+    ]
+  },
+  {
+    "characterId": "kieu-cong-han",
+    "name": "Phong Châu",
+    "at": [
+      105.43,
+      21.31
+    ]
+  },
+  {
+    "characterId": "kieu-thuan",
+    "name": "Hồi Hồ",
+    "at": [
+      105.13,
+      21.42
+    ]
+  },
+  {
+    "characterId": "nguyen-khoan",
+    "name": "Tam Đái",
+    "at": [
+      105.49,
+      21.23
+    ]
+  },
+  {
+    "characterId": "nguyen-thu-tiep",
+    "name": "Tiên Du",
+    "at": [
+      106.02,
+      21.13
+    ]
+  },
+  {
+    "characterId": "nguyen-sieu",
+    "name": "Tây Phù Liệt",
+    "at": [
+      105.84,
+      20.94
+    ]
+  },
+  {
+    "characterId": "ly-khue",
+    "name": "Siêu Loại",
+    "at": [
+      106.08,
+      21.04
+    ]
+  },
+  {
+    "characterId": "lu-duong",
+    "name": "Tế Giang",
+    "at": [
+      105.93,
+      20.94
+    ]
+  },
+  {
+    "characterId": "pham-bach-ho",
+    "name": "Đằng Châu",
+    "at": [
+      106.06,
+      20.68
+    ]
+  },
+  {
+    "characterId": "ngo-nhat-khanh",
+    "name": "Đường Lâm",
+    "at": [
+      105.47,
+      21.16
+    ]
+  }
+]

@@ -50,7 +50,7 @@ export const useVietnamOverview = () => {
   useEffect(() => {
     const element = body.current;
     if (!element) return;
-    // Reading pages fit the floating panel instead of introducing a scrollbar.
+    // Keep pagination responsive while every page remains in the scroll container.
     const observer = new ResizeObserver(([entry]) => {
       const { width, height } = entry.contentRect;
       if (width < 1 || height < 1) return;
@@ -59,7 +59,7 @@ export const useVietnamOverview = () => {
     });
     observer.observe(element);
     return () => observer.disconnect();
-  }, []);
+  }, [index, tab, contentVisible]);
 
   useEffect(() => {
     if (!playing) return;

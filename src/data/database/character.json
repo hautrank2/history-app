@@ -1,0 +1,1766 @@
+[
+  {
+    "id": "hung-vuong",
+    "name": "Hùng Vương",
+    "aliases": [],
+    "wiki": "Hùng king",
+    "role": "Danh xưng các vua trong truyền thống dựng nước",
+    "biography": "Danh xưng các vua trong truyền thống dựng nước.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Hùng Vương",
+        "url": "https://en.wikipedia.org/wiki/H%C3%B9ng_king"
+      }
+    ]
+  },
+  {
+    "id": "an-duong-vuong",
+    "name": "An Dương Vương",
+    "aliases": [],
+    "wiki": "An Dương Vương",
+    "role": "Vua Âu Lạc, xây thành Cổ Loa",
+    "biography": "Vua Âu Lạc, xây thành Cổ Loa.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "An Dương Vương",
+        "url": "https://en.wikipedia.org/wiki/An_D%C6%B0%C6%A1ng_V%C6%B0%C6%A1ng"
+      }
+    ]
+  },
+  {
+    "id": "trieu-da",
+    "name": "Triệu Đà",
+    "aliases": [],
+    "wiki": "Zhao Tuo",
+    "role": "Người đứng đầu Nam Việt, thôn tính Âu Lạc",
+    "biography": "Người đứng đầu Nam Việt, thôn tính Âu Lạc.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Triệu Đà",
+        "url": "https://en.wikipedia.org/wiki/Zhao_Tuo"
+      }
+    ]
+  },
+  {
+    "id": "han-vu-de",
+    "name": "Hán Vũ Đế",
+    "aliases": [],
+    "wiki": "Emperor Wu of Han",
+    "role": "Hoàng đế ra lệnh chinh phục Nam Việt",
+    "biography": "Hoàng đế ra lệnh chinh phục Nam Việt.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Hán Vũ Đế",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Wu_of_Han"
+      }
+    ]
+  },
+  {
+    "id": "trung-trac",
+    "name": "Trưng Trắc",
+    "aliases": [],
+    "wiki": "Trưng sisters",
+    "role": "Trưng Nữ Vương, lãnh đạo khởi nghĩa năm 40",
+    "biography": "Trưng Trắc cùng em gái Trưng Nhị lãnh đạo cuộc nổi dậy chống nhà Hán năm 40, giành quyền tự chủ và đặt trung tâm tại Mê Linh. Bà được suy tôn làm vua. Chính quyền Trưng Vương chấm dứt sau cuộc tái chinh phục của quân Đông Hán năm 43.",
+    "lifespan": "Không rõ năm sinh – 43",
+    "sources": [
+      {
+        "title": "Trưng Trắc",
+        "url": "https://en.wikipedia.org/wiki/Tr%C6%B0ng_sisters"
+      }
+    ]
+  },
+  {
+    "id": "ma-vien",
+    "name": "Mã Viện",
+    "aliases": [],
+    "wiki": "Ma Yuan (Han dynasty)",
+    "role": "Tướng Đông Hán chỉ huy cuộc tái chinh phục",
+    "biography": "Tướng Đông Hán chỉ huy cuộc tái chinh phục.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Mã Viện",
+        "url": "https://en.wikipedia.org/wiki/Ma_Yuan_(Han_dynasty)"
+      }
+    ]
+  },
+  {
+    "id": "ba-trieu",
+    "name": "Bà Triệu",
+    "aliases": [],
+    "wiki": "Lady Triệu",
+    "role": "Thủ lĩnh khởi nghĩa ở Cửu Chân năm 248",
+    "biography": "Thủ lĩnh khởi nghĩa ở Cửu Chân năm 248.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Bà Triệu",
+        "url": "https://en.wikipedia.org/wiki/Lady_Tri%E1%BB%87u"
+      }
+    ]
+  },
+  {
+    "id": "si-nhiep",
+    "name": "Sĩ Nhiếp",
+    "aliases": [],
+    "wiki": "Shi Xie",
+    "role": "Quan cai trị Giao Chỉ cuối thời Đông Hán",
+    "biography": "Quan cai trị Giao Chỉ cuối thời Đông Hán.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Sĩ Nhiếp",
+        "url": "https://vi.wikipedia.org/wiki/Sĩ_Nhiếp"
+      }
+    ]
+  },
+  {
+    "id": "ly-nam-de",
+    "name": "Lý Nam Đế",
+    "aliases": [],
+    "wiki": "Lý Nam Đế",
+    "role": "Người lập nước Vạn Xuân",
+    "biography": "Người lập nước Vạn Xuân.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Lý Nam Đế",
+        "url": "https://en.wikipedia.org/wiki/L%C3%BD_Nam_%C4%90%E1%BA%BF"
+      }
+    ]
+  },
+  {
+    "id": "trieu-viet-vuong",
+    "name": "Triệu Việt Vương",
+    "aliases": [],
+    "wiki": "Triệu Việt Vương",
+    "role": "Triệu Quang Phục, kháng chiến ở Dạ Trạch",
+    "biography": "Triệu Quang Phục, kháng chiến ở Dạ Trạch.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Triệu Việt Vương",
+        "url": "https://vi.wikipedia.org/wiki/Triệu_Việt_Vương"
+      }
+    ]
+  },
+  {
+    "id": "tran-ba-tien",
+    "name": "Trần Bá Tiên",
+    "aliases": [],
+    "wiki": "Emperor Wu of Chen",
+    "role": "Tướng nhà Lương tiến đánh Vạn Xuân",
+    "biography": "Tướng nhà Lương tiến đánh Vạn Xuân.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Trần Bá Tiên",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Wu_of_Chen"
+      }
+    ]
+  },
+  {
+    "id": "mai-thuc-loan",
+    "name": "Mai Thúc Loan",
+    "aliases": [],
+    "wiki": "Mai Thúc Loan",
+    "role": "Mai Hắc Đế, thủ lĩnh khởi nghĩa",
+    "biography": "Mai Hắc Đế, thủ lĩnh khởi nghĩa.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Mai Thúc Loan",
+        "url": "https://en.wikipedia.org/wiki/Mai_Th%C3%BAc_Loan"
+      }
+    ]
+  },
+  {
+    "id": "phung-hung",
+    "name": "Phùng Hưng",
+    "aliases": [],
+    "wiki": "Phùng Hưng",
+    "role": "Thủ lĩnh chống chính quyền Đường",
+    "biography": "Thủ lĩnh chống chính quyền Đường.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Phùng Hưng",
+        "url": "https://en.wikipedia.org/wiki/Ph%C3%B9ng_H%C6%B0ng"
+      }
+    ]
+  },
+  {
+    "id": "cao-bien",
+    "name": "Cao Biền",
+    "aliases": [],
+    "wiki": "Gao Pian",
+    "role": "Tướng Đường tái chiếm An Nam từ Nam Chiếu",
+    "biography": "Tướng Đường tái chiếm An Nam từ Nam Chiếu.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Cao Biền",
+        "url": "https://vi.wikipedia.org/wiki/Cao_Biền"
+      }
+    ]
+  },
+  {
+    "id": "khuc-thua-du",
+    "name": "Khúc Thừa Dụ",
+    "aliases": [],
+    "wiki": "Khúc Thừa Dụ",
+    "role": "Người mở đầu thời tự chủ",
+    "biography": "Người mở đầu thời tự chủ.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Khúc Thừa Dụ",
+        "url": "https://vi.wikipedia.org/wiki/Khúc_Thừa_Dụ"
+      }
+    ]
+  },
+  {
+    "id": "duong-dinh-nghe",
+    "name": "Dương Đình Nghệ",
+    "aliases": [],
+    "wiki": "Dương Đình Nghệ",
+    "role": "Giành lại Đại La năm 931",
+    "biography": "Giành lại Đại La năm 931.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Dương Đình Nghệ",
+        "url": "https://vi.wikipedia.org/wiki/Dương_Đình_Nghệ"
+      }
+    ]
+  },
+  {
+    "id": "ngo-quyen",
+    "name": "Ngô Quyền",
+    "aliases": [],
+    "wiki": "Ngô Quyền",
+    "role": "Vua sáng lập, người chỉ huy trận Bạch Đằng",
+    "biography": "Vua sáng lập, người chỉ huy trận Bạch Đằng.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Ngô Quyền",
+        "url": "https://en.wikipedia.org/wiki/Ng%C3%B4_Quy%E1%BB%81n"
+      }
+    ]
+  },
+  {
+    "id": "duong-tam-kha",
+    "name": "Dương Tam Kha",
+    "aliases": [],
+    "wiki": "Dương Tam Kha",
+    "role": "Nắm quyền sau khi Ngô Quyền mất",
+    "biography": "Nắm quyền sau khi Ngô Quyền mất.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Dương Tam Kha",
+        "url": "https://vi.wikipedia.org/wiki/Dương_Tam_Kha"
+      }
+    ]
+  },
+  {
+    "id": "dinh-bo-linh",
+    "name": "Đinh Bộ Lĩnh",
+    "aliases": [
+      "Đinh Tiên Hoàng"
+    ],
+    "wiki": "Đinh Bộ Lĩnh",
+    "role": "Thủ lĩnh Hoa Lư, người thống nhất đất nước",
+    "biography": "Đinh Bộ Lĩnh, tức Đinh Tiên Hoàng, gây dựng lực lượng tại Hoa Lư và liên kết với Trần Lãm. Sau khi thu phục các sứ quân, năm 968 ông xưng hoàng đế, đặt quốc hiệu Đại Cồ Việt, đóng đô Hoa Lư. Ông bị sát hại năm 979; biến động kế vị dẫn tới sự chuyển giao sang nhà Tiền Lê.",
+    "lifespan": "924–979",
+    "sources": [
+      {
+        "title": "Đinh Bộ Lĩnh",
+        "url": "https://en.wikipedia.org/wiki/%C4%90inh_B%E1%BB%99_L%C4%A9nh"
+      },
+      {
+        "title": "Bảo tàng Lịch sử Quốc gia · Tầm nhìn chiến lược của Đinh Bộ Lĩnh",
+        "url": "https://baotanglichsu.vn/VI/Articles/3096/14529/tam-nhin-chien-luoc-cua-djinh-bo-linh.html"
+      }
+    ]
+  },
+  {
+    "id": "tran-lam",
+    "name": "Trần Lãm",
+    "aliases": [],
+    "wiki": "Trần Lãm",
+    "role": "Sứ quân Bố Hải Khẩu, liên minh với Đinh Bộ Lĩnh",
+    "biography": "Sứ quân Bố Hải Khẩu, liên minh với Đinh Bộ Lĩnh.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Trần Lãm",
+        "url": "https://vi.wikipedia.org/wiki/Trần_Lãm"
+      },
+      {
+        "title": "Bảo tàng Lịch sử Quốc gia · Đinh Bộ Lĩnh",
+        "url": "https://baotanglichsu.vn/VI/Articles/3096/14529/tam-nhin-chien-luoc-cua-djinh-bo-linh.html"
+      }
+    ]
+  },
+  {
+    "id": "ngo-xuong-xi",
+    "name": "Ngô Xương Xí",
+    "aliases": [],
+    "wiki": "Ngô Xương Xí",
+    "role": "Hậu duệ nhà Ngô, giữ Bình Kiều",
+    "biography": "Hậu duệ nhà Ngô, giữ Bình Kiều.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Ngô Xương Xí",
+        "url": "https://vi.wikipedia.org/wiki/Ngô_Xương_Xí"
+      },
+      {
+        "title": "Bảo tàng Lịch sử Quốc gia · Đinh Bộ Lĩnh",
+        "url": "https://baotanglichsu.vn/VI/Articles/3096/14529/tam-nhin-chien-luoc-cua-djinh-bo-linh.html"
+      }
+    ]
+  },
+  {
+    "id": "do-canh-thac",
+    "name": "Đỗ Cảnh Thạc",
+    "aliases": [],
+    "wiki": "Đỗ Cảnh Thạc",
+    "role": "Sứ quân giữ Đỗ Động Giang",
+    "biography": "Sứ quân giữ Đỗ Động Giang.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Đỗ Cảnh Thạc",
+        "url": "https://vi.wikipedia.org/wiki/Đỗ_Cảnh_Thạc"
+      },
+      {
+        "title": "Bảo tàng Lịch sử Quốc gia · Đinh Bộ Lĩnh",
+        "url": "https://baotanglichsu.vn/VI/Articles/3096/14529/tam-nhin-chien-luoc-cua-djinh-bo-linh.html"
+      }
+    ]
+  },
+  {
+    "id": "duong-van-nga",
+    "name": "Dương Vân Nga",
+    "aliases": [],
+    "wiki": "Dương Vân Nga",
+    "role": "Hoàng hậu, nhân vật trong chuyển giao Đinh – Lê",
+    "biography": "Hoàng hậu, nhân vật trong chuyển giao Đinh – Lê.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Dương Vân Nga",
+        "url": "https://en.wikipedia.org/wiki/D%C6%B0%C6%A1ng_V%C3%A2n_Nga"
+      }
+    ]
+  },
+  {
+    "id": "le-dai-hanh",
+    "name": "Lê Đại Hành",
+    "aliases": [],
+    "wiki": "Lê Hoàn",
+    "role": "Lê Hoàn, vua sáng lập nhà Tiền Lê",
+    "biography": "Lê Hoàn, vua sáng lập nhà Tiền Lê.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Lê Đại Hành",
+        "url": "https://en.wikipedia.org/wiki/L%C3%AA_Ho%C3%A0n"
+      }
+    ]
+  },
+  {
+    "id": "ly-thai-to",
+    "name": "Lý Thái Tổ",
+    "aliases": [],
+    "wiki": "Lý Thái Tổ",
+    "role": "Lý Công Uẩn, người dời đô",
+    "biography": "Lý Công Uẩn, người dời đô.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Lý Thái Tổ",
+        "url": "https://en.wikipedia.org/wiki/L%C3%BD_Th%C3%A1i_T%E1%BB%95"
+      }
+    ]
+  },
+  {
+    "id": "y-lan",
+    "name": "Ỷ Lan",
+    "aliases": [],
+    "wiki": "Ỷ Lan",
+    "role": "Nguyên phi, từng nhiếp chính",
+    "biography": "Nguyên phi, từng nhiếp chính.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Ỷ Lan",
+        "url": "https://en.wikipedia.org/wiki/%E1%BB%B6_Lan"
+      }
+    ]
+  },
+  {
+    "id": "ly-thanh-tong",
+    "name": "Lý Thánh Tông",
+    "aliases": [],
+    "wiki": "Lý Thánh Tông",
+    "role": "Vua đặt quốc hiệu Đại Việt",
+    "biography": "Vua đặt quốc hiệu Đại Việt.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Lý Thánh Tông",
+        "url": "https://en.wikipedia.org/wiki/L%C3%BD_Th%C3%A1nh_T%C3%B4ng"
+      }
+    ]
+  },
+  {
+    "id": "ly-thuong-kiet",
+    "name": "Lý Thường Kiệt",
+    "aliases": [],
+    "wiki": "Lý Thường Kiệt",
+    "role": "Tướng chỉ huy kháng Tống",
+    "biography": "Tướng chỉ huy kháng Tống.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Lý Thường Kiệt",
+        "url": "https://en.wikipedia.org/wiki/L%C3%BD_Th%C6%B0%E1%BB%9Dng_Ki%E1%BB%87t"
+      }
+    ]
+  },
+  {
+    "id": "ly-nhan-tong",
+    "name": "Lý Nhân Tông",
+    "aliases": [],
+    "wiki": "Lý Nhân Tông",
+    "role": "Hoàng đế thời chiến tranh Tống – Việt",
+    "biography": "Hoàng đế thời chiến tranh Tống – Việt.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Lý Nhân Tông",
+        "url": "https://en.wikipedia.org/wiki/L%C3%BD_Nh%C3%A2n_T%C3%B4ng"
+      }
+    ]
+  },
+  {
+    "id": "ly-chieu-hoang",
+    "name": "Lý Chiêu Hoàng",
+    "aliases": [],
+    "wiki": "Lý Chiêu Hoàng",
+    "role": "Nữ hoàng cuối cùng của nhà Lý",
+    "biography": "Nữ hoàng cuối cùng của nhà Lý.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Lý Chiêu Hoàng",
+        "url": "https://en.wikipedia.org/wiki/L%C3%BD_Chi%C3%AAu_Ho%C3%A0ng"
+      }
+    ]
+  },
+  {
+    "id": "tran-thai-tong",
+    "name": "Trần Thái Tông",
+    "aliases": [],
+    "wiki": "Trần Thái Tông",
+    "role": "Trần Cảnh, hoàng đế đầu triều Trần",
+    "biography": "Trần Cảnh, hoàng đế đầu triều Trần.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Trần Thái Tông",
+        "url": "https://vi.wikipedia.org/wiki/Trần_Thái_Tông"
+      }
+    ]
+  },
+  {
+    "id": "tran-thu-do",
+    "name": "Trần Thủ Độ",
+    "aliases": [],
+    "wiki": "Trần Thủ Độ",
+    "role": "Thái sư, tổ chức nền chính trị đầu triều",
+    "biography": "Thái sư, tổ chức nền chính trị đầu triều.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Trần Thủ Độ",
+        "url": "https://vi.wikipedia.org/wiki/Trần_Thủ_Độ"
+      }
+    ]
+  },
+  {
+    "id": "tran-hung-dao",
+    "name": "Trần Hưng Đạo",
+    "aliases": [
+      "Trần Quốc Tuấn",
+      "Hưng Đạo Đại Vương"
+    ],
+    "wiki": "Trần Hưng Đạo",
+    "role": "Quốc công tiết chế Trần Quốc Tuấn",
+    "biography": "Trần Hưng Đạo (Trần Quốc Tuấn) là danh tướng nhà Trần, giữ chức Quốc công Tiết chế. Ông tổ chức kháng chiến chống quân Nguyên, kết hợp bảo toàn lực lượng, cắt tiếp tế và phản công. Năm 1288, quân Đại Việt giành thắng lợi trên sông Bạch Đằng, bắt Ô Mã Nhi. Hịch tướng sĩ gắn với tên tuổi ông.",
+    "lifespan": "Khoảng 1228–1300",
+    "sources": [
+      {
+        "title": "Trần Hưng Đạo",
+        "url": "https://en.wikipedia.org/wiki/Tr%E1%BA%A7n_H%C6%B0ng_%C4%90%E1%BA%A1o"
+      },
+      {
+        "title": "Trường THPT chuyên Trần Hưng Đạo · Tiểu sử",
+        "url": "https://www.thd.edu.vn/article/view/43/Tiểu-sử-Trần-Hưng-Đạo"
+      }
+    ],
+    "battlePortrait": {
+      "src": "/images/bach-dang-cinematic.png",
+      "generated": true
+    }
+  },
+  {
+    "id": "tran-nhan-tong",
+    "name": "Trần Nhân Tông",
+    "aliases": [],
+    "wiki": "Trần Nhân Tông",
+    "role": "Hoàng đế lãnh đạo kháng chiến",
+    "biography": "Hoàng đế lãnh đạo kháng chiến.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Trần Nhân Tông",
+        "url": "https://en.wikipedia.org/wiki/Tr%E1%BA%A7n_Nh%C3%A2n_T%C3%B4ng"
+      }
+    ]
+  },
+  {
+    "id": "thoat-hoan",
+    "name": "Thoát Hoan",
+    "aliases": [],
+    "wiki": "Toghon (prince)",
+    "role": "Hoàng tử nhà Nguyên, chỉ huy xâm lược",
+    "biography": "Hoàng tử nhà Nguyên, chỉ huy xâm lược.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Thoát Hoan",
+        "url": "https://vi.wikipedia.org/wiki/Tho%C3%A1t_Hoan"
+      }
+    ],
+    "battlePortrait": {
+      "src": "/images/yuan-commanders.png",
+      "generated": true
+    }
+  },
+  {
+    "id": "o-ma-nhi",
+    "name": "Ô Mã Nhi",
+    "aliases": [],
+    "wiki": "Omar (Yuan dynasty)",
+    "role": "Tướng thủy quân Nguyên, bị bắt năm 1288",
+    "biography": "Tướng thủy quân Nguyên, bị bắt năm 1288.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Ô Mã Nhi",
+        "url": "https://vi.wikipedia.org/wiki/Ô_Mã_Nhi"
+      }
+    ],
+    "battlePortrait": {
+      "src": "/images/yuan-commanders.png",
+      "generated": true
+    }
+  },
+  {
+    "id": "huyen-tran",
+    "name": "Huyền Trân",
+    "aliases": [],
+    "wiki": "Huyền Trân",
+    "role": "Công chúa trong hôn nhân ngoại giao năm 1306",
+    "biography": "Công chúa trong hôn nhân ngoại giao năm 1306.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Huyền Trân",
+        "url": "https://en.wikipedia.org/wiki/Huy%E1%BB%81n_Tr%C3%A2n"
+      }
+    ]
+  },
+  {
+    "id": "chu-van-an",
+    "name": "Chu Văn An",
+    "aliases": [],
+    "wiki": "Chu Văn An",
+    "role": "Nhà giáo, quan Quốc Tử Giám",
+    "biography": "Nhà giáo, quan Quốc Tử Giám.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Chu Văn An",
+        "url": "https://en.wikipedia.org/wiki/Chu_V%C4%83n_An"
+      }
+    ]
+  },
+  {
+    "id": "che-bong-nga",
+    "name": "Chế Bồng Nga",
+    "aliases": [],
+    "wiki": "Chế Bồng Nga",
+    "role": "Vua Champa nhiều lần tiến đánh Đại Việt",
+    "biography": "Vua Champa nhiều lần tiến đánh Đại Việt.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Chế Bồng Nga",
+        "url": "https://vi.wikipedia.org/wiki/Chế_Bồng_Nga"
+      }
+    ]
+  },
+  {
+    "id": "ho-quy-ly",
+    "name": "Hồ Quý Ly",
+    "aliases": [],
+    "wiki": "Hồ Quý Ly",
+    "role": "Người sáng lập triều Hồ, chủ trương cải cách",
+    "biography": "Người sáng lập triều Hồ, chủ trương cải cách.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Hồ Quý Ly",
+        "url": "https://vi.wikipedia.org/wiki/Hồ_Quý_Ly"
+      }
+    ]
+  },
+  {
+    "id": "ho-nguyen-trung",
+    "name": "Hồ Nguyên Trừng",
+    "aliases": [],
+    "wiki": "Hồ Nguyên Trừng",
+    "role": "Tướng, người gắn với kỹ thuật hỏa khí",
+    "biography": "Tướng, người gắn với kỹ thuật hỏa khí.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Hồ Nguyên Trừng",
+        "url": "https://vi.wikipedia.org/wiki/Hồ_Nguyên_Trừng"
+      }
+    ]
+  },
+  {
+    "id": "truong-phu",
+    "name": "Trương Phụ",
+    "aliases": [],
+    "wiki": "Zhang Fu (Ming dynasty)",
+    "role": "Tướng Minh chỉ huy xâm lược",
+    "biography": "Tướng Minh chỉ huy xâm lược.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Trương Phụ",
+        "url": "https://vi.wikipedia.org/wiki/Tr%C6%B0%C6%A1ng_Ph%E1%BB%A5"
+      }
+    ]
+  },
+  {
+    "id": "trung-quang-de",
+    "name": "Trùng Quang Đế",
+    "aliases": [],
+    "wiki": "Trùng Quang Đế",
+    "role": "Trần Quý Khoáng, vua Hậu Trần",
+    "biography": "Trần Quý Khoáng, vua Hậu Trần.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Trùng Quang Đế",
+        "url": "https://vi.wikipedia.org/wiki/Trùng_Quang_Đế"
+      }
+    ]
+  },
+  {
+    "id": "dang-dung",
+    "name": "Đặng Dung",
+    "aliases": [],
+    "wiki": "Đặng Dung",
+    "role": "Tướng Hậu Trần, tác giả Cảm hoài",
+    "biography": "Tướng Hậu Trần, tác giả Cảm hoài.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Đặng Dung",
+        "url": "https://vi.wikipedia.org/wiki/Đặng_Dung"
+      }
+    ]
+  },
+  {
+    "id": "le-loi",
+    "name": "Lê Lợi",
+    "aliases": [],
+    "wiki": "Lê Lợi",
+    "role": "Bình Định vương, lãnh đạo khởi nghĩa",
+    "biography": "Bình Định vương, lãnh đạo khởi nghĩa.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Lê Lợi",
+        "url": "https://en.wikipedia.org/wiki/L%C3%AA_L%E1%BB%A3i"
+      }
+    ]
+  },
+  {
+    "id": "nguyen-trai",
+    "name": "Nguyễn Trãi",
+    "aliases": [],
+    "wiki": "Nguyễn Trãi",
+    "role": "Mưu sĩ, nhà ngoại giao và tác giả đại cáo",
+    "biography": "Mưu sĩ, nhà ngoại giao và tác giả đại cáo.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Nguyễn Trãi",
+        "url": "https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_Tr%C3%A3i"
+      }
+    ]
+  },
+  {
+    "id": "vuong-thong",
+    "name": "Vương Thông",
+    "aliases": [],
+    "wiki": "Wang Tong (Ming dynasty)",
+    "role": "Tướng Minh giữ Đông Quan, chấp nhận rút quân",
+    "biography": "Tướng Minh giữ Đông Quan, chấp nhận rút quân.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Vương Thông",
+        "url": "https://vi.wikipedia.org/wiki/Vương_Thông"
+      }
+    ]
+  },
+  {
+    "id": "le-thanh-tong",
+    "name": "Lê Thánh Tông",
+    "aliases": [],
+    "wiki": "Lê Thánh Tông",
+    "role": "Hoàng đế thời Hồng Đức",
+    "biography": "Hoàng đế thời Hồng Đức.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Lê Thánh Tông",
+        "url": "https://en.wikipedia.org/wiki/L%C3%AA_Th%C3%A1nh_T%C3%B4ng"
+      }
+    ]
+  },
+  {
+    "id": "nguyen-thi-anh",
+    "name": "Nguyễn Thị Anh",
+    "aliases": [],
+    "wiki": "Nguyễn Thị Anh",
+    "role": "Hoàng thái hậu, nhiếp chính đầu thời Lê Nhân Tông",
+    "biography": "Hoàng thái hậu, nhiếp chính đầu thời Lê Nhân Tông.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Nguyễn Thị Anh",
+        "url": "https://vi.wikipedia.org/wiki/Nguyễn_Thị_Anh"
+      }
+    ]
+  },
+  {
+    "id": "ngo-si-lien",
+    "name": "Ngô Sĩ Liên",
+    "aliases": [],
+    "wiki": "Ngô Sĩ Liên",
+    "role": "Sử quan biên soạn Đại Việt sử ký toàn thư",
+    "biography": "Sử quan biên soạn Đại Việt sử ký toàn thư.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Ngô Sĩ Liên",
+        "url": "https://vi.wikipedia.org/wiki/Ngô_Sĩ_Liên"
+      }
+    ]
+  },
+  {
+    "id": "mac-dang-dung",
+    "name": "Mạc Đăng Dung",
+    "aliases": [],
+    "wiki": "Mạc Đăng Dung",
+    "role": "Hoàng đế sáng lập triều Mạc",
+    "biography": "Hoàng đế sáng lập triều Mạc.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Mạc Đăng Dung",
+        "url": "https://en.wikipedia.org/wiki/M%E1%BA%A1c_%C4%90%C4%83ng_Dung"
+      }
+    ]
+  },
+  {
+    "id": "nguyen-binh-khiem",
+    "name": "Nguyễn Bỉnh Khiêm",
+    "aliases": [],
+    "wiki": "Nguyễn Bỉnh Khiêm",
+    "role": "Trạng nguyên, nhà thơ và học giả",
+    "biography": "Trạng nguyên, nhà thơ và học giả.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Nguyễn Bỉnh Khiêm",
+        "url": "https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_B%E1%BB%89nh_Khi%C3%AAm"
+      }
+    ]
+  },
+  {
+    "id": "nguyen-kim",
+    "name": "Nguyễn Kim",
+    "aliases": [],
+    "wiki": "Nguyễn Kim",
+    "role": "Người tổ chức lực lượng trung hưng nhà Lê",
+    "biography": "Người tổ chức lực lượng trung hưng nhà Lê.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Nguyễn Kim",
+        "url": "https://vi.wikipedia.org/wiki/Nguyễn_Kim"
+      }
+    ]
+  },
+  {
+    "id": "le-trang-tong",
+    "name": "Lê Trang Tông",
+    "aliases": [],
+    "wiki": "Lê Trang Tông",
+    "role": "Vua mở đầu thời Lê trung hưng",
+    "biography": "Vua mở đầu thời Lê trung hưng.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Lê Trang Tông",
+        "url": "https://vi.wikipedia.org/wiki/L%C3%AA_Trang_T%C3%B4ng"
+      }
+    ]
+  },
+  {
+    "id": "trinh-tung",
+    "name": "Trịnh Tùng",
+    "aliases": [],
+    "wiki": "Trịnh Tùng",
+    "role": "Chúa Trịnh, đưa vua Lê về Thăng Long",
+    "biography": "Chúa Trịnh, đưa vua Lê về Thăng Long.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Trịnh Tùng",
+        "url": "https://en.wikipedia.org/wiki/Tr%E1%BB%8Bnh_T%C3%B9ng"
+      }
+    ]
+  },
+  {
+    "id": "nguyen-hoang",
+    "name": "Nguyễn Hoàng",
+    "aliases": [],
+    "wiki": "Nguyễn Hoàng",
+    "role": "Người đặt nền tảng chính quyền họ Nguyễn ở phía nam",
+    "biography": "Người đặt nền tảng chính quyền họ Nguyễn ở phía nam.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Nguyễn Hoàng",
+        "url": "https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_Ho%C3%A0ng"
+      }
+    ]
+  },
+  {
+    "id": "nguyen-phuc-khoat",
+    "name": "Nguyễn Phúc Khoát",
+    "aliases": [],
+    "wiki": "Nguyễn Phúc Khoát",
+    "role": "Chúa Nguyễn định chế ở Đàng Trong",
+    "biography": "Chúa Nguyễn định chế ở Đàng Trong.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Nguyễn Phúc Khoát",
+        "url": "https://vi.wikipedia.org/wiki/Nguyễn_Phúc_Khoát"
+      }
+    ]
+  },
+  {
+    "id": "dao-duy-tu",
+    "name": "Đào Duy Từ",
+    "aliases": [],
+    "wiki": "Đào Duy Từ",
+    "role": "Mưu sĩ họ Nguyễn, tổ chức phòng thủ",
+    "biography": "Mưu sĩ họ Nguyễn, tổ chức phòng thủ.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Đào Duy Từ",
+        "url": "https://en.wikipedia.org/wiki/%C4%90%C3%A0o_Duy_T%E1%BB%AB"
+      }
+    ]
+  },
+  {
+    "id": "alexandre-de-rhodes",
+    "name": "Alexandre de Rhodes",
+    "aliases": [],
+    "wiki": "Alexandre de Rhodes",
+    "role": "Giáo sĩ, biên soạn từ điển năm 1651",
+    "biography": "Giáo sĩ, biên soạn từ điển năm 1651.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Alexandre de Rhodes",
+        "url": "https://en.wikipedia.org/wiki/Alexandre_de_Rhodes"
+      }
+    ]
+  },
+  {
+    "id": "nguyen-hue",
+    "name": "Nguyễn Huệ",
+    "aliases": [
+      "Quang Trung"
+    ],
+    "wiki": "Quang Trung",
+    "role": "Tướng Tây Sơn chỉ huy trận Rạch Gầm – Xoài Mút",
+    "biography": "Tướng Tây Sơn chỉ huy trận Rạch Gầm – Xoài Mút.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Nguyễn Huệ",
+        "url": "https://en.wikipedia.org/wiki/Quang_Trung"
+      }
+    ]
+  },
+  {
+    "id": "nguyen-nhac",
+    "name": "Nguyễn Nhạc",
+    "aliases": [],
+    "wiki": "Nguyễn Nhạc",
+    "role": "Lãnh tụ khởi nghĩa, xưng đế năm 1778",
+    "biography": "Lãnh tụ khởi nghĩa, xưng đế năm 1778.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Nguyễn Nhạc",
+        "url": "https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_Nh%E1%BA%A1c"
+      }
+    ]
+  },
+  {
+    "id": "rama-i",
+    "name": "Rama I",
+    "aliases": [],
+    "wiki": "Rama I",
+    "role": "Vua Xiêm ra lệnh can thiệp",
+    "biography": "Vua Xiêm ra lệnh can thiệp.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Rama I",
+        "url": "https://en.wikipedia.org/wiki/Rama_I"
+      }
+    ]
+  },
+  {
+    "id": "bui-thi-xuan",
+    "name": "Bùi Thị Xuân",
+    "aliases": [],
+    "wiki": "Bùi Thị Xuân",
+    "role": "Nữ tướng Tây Sơn",
+    "biography": "Nữ tướng Tây Sơn.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Bùi Thị Xuân",
+        "url": "https://en.wikipedia.org/wiki/B%C3%B9i_Th%E1%BB%8B_Xu%C3%A2n"
+      }
+    ]
+  },
+  {
+    "id": "nguyen-thiep",
+    "name": "Nguyễn Thiếp",
+    "aliases": [],
+    "wiki": "Nguyễn Thiếp",
+    "role": "La Sơn phu tử, nhà giáo và cố vấn",
+    "biography": "La Sơn phu tử, nhà giáo và cố vấn.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Nguyễn Thiếp",
+        "url": "https://vi.wikipedia.org/wiki/Nguyễn_Thiếp"
+      }
+    ]
+  },
+  {
+    "id": "ton-si-nghi",
+    "name": "Tôn Sĩ Nghị",
+    "aliases": [],
+    "wiki": "Sun Shiyi",
+    "role": "Tổng chỉ huy quân Thanh can thiệp năm 1788",
+    "biography": "Tổng chỉ huy quân Thanh can thiệp năm 1788.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Tôn Sĩ Nghị",
+        "url": "https://en.wikipedia.org/wiki/Sun_Shiyi"
+      }
+    ]
+  },
+  {
+    "id": "gia-long",
+    "name": "Gia Long",
+    "aliases": [],
+    "wiki": "Gia Long",
+    "role": "Nguyễn Ánh, hoàng đế sáng lập triều Nguyễn",
+    "biography": "Nguyễn Ánh, hoàng đế sáng lập triều Nguyễn.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Gia Long",
+        "url": "https://en.wikipedia.org/wiki/Gia_Long"
+      }
+    ]
+  },
+  {
+    "id": "minh-mang",
+    "name": "Minh Mạng",
+    "aliases": [],
+    "wiki": "Minh Mạng",
+    "role": "Hoàng đế tiến hành cải cách hành chính",
+    "biography": "Hoàng đế tiến hành cải cách hành chính.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Minh Mạng",
+        "url": "https://en.wikipedia.org/wiki/Minh_M%E1%BA%A1ng"
+      }
+    ]
+  },
+  {
+    "id": "nguyen-du",
+    "name": "Nguyễn Du",
+    "aliases": [],
+    "wiki": "Nguyễn Du",
+    "role": "Đại thi hào, tác giả Truyện Kiều",
+    "biography": "Đại thi hào, tác giả Truyện Kiều.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Nguyễn Du",
+        "url": "https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_Du"
+      }
+    ]
+  },
+  {
+    "id": "le-van-duyet",
+    "name": "Lê Văn Duyệt",
+    "aliases": [],
+    "wiki": "Lê Văn Duyệt",
+    "role": "Tổng trấn Gia Định",
+    "biography": "Tổng trấn Gia Định.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Lê Văn Duyệt",
+        "url": "https://en.wikipedia.org/wiki/L%C3%AA_V%C4%83n_Duy%E1%BB%87t"
+      }
+    ]
+  },
+  {
+    "id": "tu-duc",
+    "name": "Tự Đức",
+    "aliases": [],
+    "wiki": "Tự Đức",
+    "role": "Hoàng đế trong giai đoạn Pháp xâm lược",
+    "biography": "Hoàng đế trong giai đoạn Pháp xâm lược.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Tự Đức",
+        "url": "https://en.wikipedia.org/wiki/T%E1%BB%B1_%C4%90%E1%BB%A9c"
+      }
+    ]
+  },
+  {
+    "id": "truong-dinh",
+    "name": "Trương Định",
+    "aliases": [],
+    "wiki": "Trương Định",
+    "role": "Thủ lĩnh kháng Pháp ở Nam Bộ",
+    "biography": "Thủ lĩnh kháng Pháp ở Nam Bộ.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Trương Định",
+        "url": "https://en.wikipedia.org/wiki/Tr%C6%B0%C6%A1ng_%C4%90%E1%BB%8Bnh"
+      }
+    ]
+  },
+  {
+    "id": "ton-that-thuyet",
+    "name": "Tôn Thất Thuyết",
+    "aliases": [],
+    "wiki": "Tôn Thất Thuyết",
+    "role": "Phụ chính đại thần, phát động Cần Vương",
+    "biography": "Phụ chính đại thần, phát động Cần Vương.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Tôn Thất Thuyết",
+        "url": "https://en.wikipedia.org/wiki/T%C3%B4n_Th%E1%BA%A5t_Thuy%E1%BA%BFt"
+      }
+    ]
+  },
+  {
+    "id": "rigault-de-genouilly",
+    "name": "Rigault de Genouilly",
+    "aliases": [],
+    "wiki": "Charles Rigault de Genouilly",
+    "role": "Đô đốc Pháp chỉ huy tiến công năm 1858",
+    "biography": "Đô đốc Pháp chỉ huy tiến công năm 1858.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Rigault de Genouilly",
+        "url": "https://en.wikipedia.org/wiki/Charles_Rigault_de_Genouilly"
+      }
+    ]
+  },
+  {
+    "id": "ham-nghi",
+    "name": "Hàm Nghi",
+    "aliases": [],
+    "wiki": "Hàm Nghi",
+    "role": "Hoàng đế gắn với phong trào Cần Vương",
+    "biography": "Hoàng đế gắn với phong trào Cần Vương.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Hàm Nghi",
+        "url": "https://en.wikipedia.org/wiki/H%C3%A0m_Nghi"
+      }
+    ]
+  },
+  {
+    "id": "phan-boi-chau",
+    "name": "Phan Bội Châu",
+    "aliases": [],
+    "wiki": "Phan Bội Châu",
+    "role": "Nhà hoạt động phong trào Đông Du",
+    "biography": "Nhà hoạt động phong trào Đông Du.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Phan Bội Châu",
+        "url": "https://en.wikipedia.org/wiki/Phan_B%E1%BB%99i_Ch%C3%A2u"
+      }
+    ]
+  },
+  {
+    "id": "phan-chau-trinh",
+    "name": "Phan Châu Trinh",
+    "aliases": [],
+    "wiki": "Phan Châu Trinh",
+    "role": "Nhà tư tưởng và vận động cải cách",
+    "biography": "Nhà tư tưởng và vận động cải cách.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Phan Châu Trinh",
+        "url": "https://en.wikipedia.org/wiki/Phan_Ch%C3%A2u_Trinh"
+      }
+    ]
+  },
+  {
+    "id": "paul-doumer",
+    "name": "Paul Doumer",
+    "aliases": [],
+    "wiki": "Paul Doumer",
+    "role": "Toàn quyền Đông Dương 1897–1902",
+    "biography": "Toàn quyền Đông Dương 1897–1902.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Paul Doumer",
+        "url": "https://en.wikipedia.org/wiki/Paul_Doumer"
+      }
+    ]
+  },
+  {
+    "id": "ho-chi-minh",
+    "name": "Hồ Chí Minh",
+    "aliases": [],
+    "wiki": "Ho Chi Minh",
+    "role": "Chủ tịch Chính phủ lâm thời, đọc Tuyên ngôn Độc lập",
+    "biography": "Chủ tịch Chính phủ lâm thời, đọc Tuyên ngôn Độc lập.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Hồ Chí Minh",
+        "url": "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+      }
+    ]
+  },
+  {
+    "id": "bao-dai",
+    "name": "Bảo Đại",
+    "aliases": [],
+    "wiki": "Bảo Đại",
+    "role": "Vị hoàng đế cuối cùng, thoái vị năm 1945",
+    "biography": "Vị hoàng đế cuối cùng, thoái vị năm 1945.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Bảo Đại",
+        "url": "https://en.wikipedia.org/wiki/B%E1%BA%A3o_%C4%90%E1%BA%A1i"
+      }
+    ]
+  },
+  {
+    "id": "nam-phuong",
+    "name": "Nam Phương",
+    "aliases": [],
+    "wiki": "Nam Phương",
+    "role": "Hoàng hậu cuối cùng của triều Nguyễn",
+    "biography": "Hoàng hậu cuối cùng của triều Nguyễn.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Nam Phương",
+        "url": "https://en.wikipedia.org/wiki/Nam_Ph%C6%B0%C6%A1ng"
+      }
+    ]
+  },
+  {
+    "id": "yuitsu-tsuchihashi",
+    "name": "Yuitsu Tsuchihashi",
+    "aliases": [],
+    "wiki": "Yuitsu Tsuchihashi",
+    "role": "Tướng Nhật chỉ huy đảo chính Pháp",
+    "biography": "Tướng Nhật chỉ huy đảo chính Pháp.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Yuitsu Tsuchihashi",
+        "url": "https://en.wikipedia.org/wiki/Yuitsu_Tsuchihashi"
+      }
+    ]
+  },
+  {
+    "id": "vo-nguyen-giap",
+    "name": "Võ Nguyên Giáp",
+    "aliases": [],
+    "wiki": "Võ Nguyên Giáp",
+    "role": "Tổng tư lệnh, chỉ huy chiến dịch Điện Biên Phủ",
+    "biography": "Tổng tư lệnh, chỉ huy chiến dịch Điện Biên Phủ.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Võ Nguyên Giáp",
+        "url": "https://en.wikipedia.org/wiki/V%C3%B5_Nguy%C3%AAn_Gi%C3%A1p"
+      }
+    ]
+  },
+  {
+    "id": "christian-de-castries",
+    "name": "Christian de Castries",
+    "aliases": [],
+    "wiki": "Christian de Castries",
+    "role": "Chỉ huy cứ điểm Pháp tại Điện Biên Phủ",
+    "biography": "Chỉ huy cứ điểm Pháp tại Điện Biên Phủ.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Christian de Castries",
+        "url": "https://en.wikipedia.org/wiki/Christian_de_Castries"
+      }
+    ]
+  },
+  {
+    "id": "nguyen-thi-binh",
+    "name": "Nguyễn Thị Bình",
+    "aliases": [],
+    "wiki": "Nguyễn Thị Bình",
+    "role": "Nhà ngoại giao, tham gia đàm phán Paris",
+    "biography": "Nhà ngoại giao, tham gia đàm phán Paris.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Nguyễn Thị Bình",
+        "url": "https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_Th%E1%BB%8B_B%C3%ACnh"
+      }
+    ]
+  },
+  {
+    "id": "nguyen-van-thieu",
+    "name": "Nguyễn Văn Thiệu",
+    "aliases": [],
+    "wiki": "Nguyễn Văn Thiệu",
+    "role": "Tổng thống Việt Nam Cộng hòa 1967–1975",
+    "biography": "Tổng thống Việt Nam Cộng hòa 1967–1975.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Nguyễn Văn Thiệu",
+        "url": "https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_V%C4%83n_Thi%E1%BB%87u"
+      }
+    ]
+  },
+  {
+    "id": "william-westmoreland",
+    "name": "William Westmoreland",
+    "aliases": [],
+    "wiki": "William Westmoreland",
+    "role": "Tướng chỉ huy quân Mỹ ở miền Nam",
+    "biography": "Tướng chỉ huy quân Mỹ ở miền Nam.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "William Westmoreland",
+        "url": "https://en.wikipedia.org/wiki/William_Westmoreland"
+      }
+    ]
+  },
+  {
+    "id": "van-tien-dung",
+    "name": "Văn Tiến Dũng",
+    "aliases": [],
+    "wiki": "Văn Tiến Dũng",
+    "role": "Chỉ huy Chiến dịch Hồ Chí Minh",
+    "biography": "Chỉ huy Chiến dịch Hồ Chí Minh.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Văn Tiến Dũng",
+        "url": "https://en.wikipedia.org/wiki/V%C4%83n_Ti%E1%BA%BFn_D%C5%A9ng"
+      }
+    ]
+  },
+  {
+    "id": "duong-van-minh",
+    "name": "Dương Văn Minh",
+    "aliases": [],
+    "wiki": "Dương Văn Minh",
+    "role": "Tổng thống Việt Nam Cộng hòa, tuyên bố đầu hàng",
+    "biography": "Tổng thống Việt Nam Cộng hòa, tuyên bố đầu hàng.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Dương Văn Minh",
+        "url": "https://en.wikipedia.org/wiki/D%C6%B0%C6%A1ng_V%C4%83n_Minh"
+      }
+    ]
+  },
+  {
+    "id": "ton-duc-thang",
+    "name": "Tôn Đức Thắng",
+    "aliases": [],
+    "wiki": "Tôn Đức Thắng",
+    "role": "Chủ tịch nước trong giai đoạn thống nhất",
+    "biography": "Chủ tịch nước trong giai đoạn thống nhất.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Tôn Đức Thắng",
+        "url": "https://en.wikipedia.org/wiki/T%C3%B4n_%C4%90%E1%BB%A9c_Th%E1%BA%AFng"
+      }
+    ]
+  },
+  {
+    "id": "le-duan",
+    "name": "Lê Duẩn",
+    "aliases": [],
+    "wiki": "Lê Duẩn",
+    "role": "Tổng Bí thư trong giai đoạn hậu chiến",
+    "biography": "Tổng Bí thư trong giai đoạn hậu chiến.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Lê Duẩn",
+        "url": "https://en.wikipedia.org/wiki/L%C3%AA_Du%E1%BA%A9n"
+      }
+    ]
+  },
+  {
+    "id": "pol-pot",
+    "name": "Pol Pot",
+    "aliases": [],
+    "wiki": "Pol Pot",
+    "role": "Lãnh đạo Khmer Đỏ, gây chiến ở biên giới Tây Nam",
+    "biography": "Lãnh đạo Khmer Đỏ, gây chiến ở biên giới Tây Nam.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Pol Pot",
+        "url": "https://en.wikipedia.org/wiki/Pol_Pot"
+      }
+    ]
+  },
+  {
+    "id": "dang-tieu-binh",
+    "name": "Đặng Tiểu Bình",
+    "aliases": [],
+    "wiki": "Deng Xiaoping",
+    "role": "Lãnh đạo Trung Quốc khi tiến công Việt Nam năm 1979",
+    "biography": "Lãnh đạo Trung Quốc khi tiến công Việt Nam năm 1979.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Đặng Tiểu Bình",
+        "url": "https://en.wikipedia.org/wiki/Deng_Xiaoping"
+      }
+    ]
+  },
+  {
+    "id": "nguyen-van-linh",
+    "name": "Nguyễn Văn Linh",
+    "aliases": [],
+    "wiki": "Nguyễn Văn Linh",
+    "role": "Tổng Bí thư gắn với giai đoạn đầu Đổi Mới",
+    "biography": "Tổng Bí thư gắn với giai đoạn đầu Đổi Mới.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Nguyễn Văn Linh",
+        "url": "https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_V%C4%83n_Linh"
+      }
+    ]
+  },
+  {
+    "id": "vo-van-kiet",
+    "name": "Võ Văn Kiệt",
+    "aliases": [],
+    "wiki": "Võ Văn Kiệt",
+    "role": "Thủ tướng, thúc đẩy cải cách và các công trình phát triển",
+    "biography": "Thủ tướng, thúc đẩy cải cách và các công trình phát triển.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Võ Văn Kiệt",
+        "url": "https://en.wikipedia.org/wiki/V%C3%B5_V%C4%83n_Ki%E1%BB%87t"
+      }
+    ]
+  },
+  {
+    "id": "kieu-cong-han",
+    "name": "Kiều Công Hãn",
+    "aliases": [],
+    "wiki": "Kiều Công Hãn",
+    "role": "Sứ quân giữ Phong Châu",
+    "biography": "Một trong mười hai sứ quân thế kỷ X, xây dựng căn cứ tại Phong Châu. Cục diện cát cứ chấm dứt khi Đinh Bộ Lĩnh thống nhất đất nước năm 968.",
+    "lifespan": "Thế kỷ X",
+    "sources": [
+      {
+        "title": "Bảo tàng Lịch sử Quốc gia · Đinh Bộ Lĩnh",
+        "url": "https://baotanglichsu.vn/VI/Articles/3096/14529/tam-nhin-chien-luoc-cua-djinh-bo-linh.html"
+      }
+    ]
+  },
+  {
+    "id": "kieu-thuan",
+    "name": "Kiều Thuận",
+    "aliases": [],
+    "wiki": "Kiều Thuận",
+    "role": "Sứ quân giữ Hồi Hồ",
+    "biography": "Một trong mười hai sứ quân thế kỷ X, xây dựng căn cứ tại Hồi Hồ. Cục diện cát cứ chấm dứt khi Đinh Bộ Lĩnh thống nhất đất nước năm 968.",
+    "lifespan": "Thế kỷ X",
+    "sources": [
+      {
+        "title": "Bảo tàng Lịch sử Quốc gia · Đinh Bộ Lĩnh",
+        "url": "https://baotanglichsu.vn/VI/Articles/3096/14529/tam-nhin-chien-luoc-cua-djinh-bo-linh.html"
+      }
+    ]
+  },
+  {
+    "id": "nguyen-khoan",
+    "name": "Nguyễn Khoan",
+    "aliases": [],
+    "wiki": "Nguyễn Khoan",
+    "role": "Sứ quân giữ Tam Đái",
+    "biography": "Một trong mười hai sứ quân thế kỷ X, xây dựng căn cứ tại Tam Đái. Cục diện cát cứ chấm dứt khi Đinh Bộ Lĩnh thống nhất đất nước năm 968.",
+    "lifespan": "Thế kỷ X",
+    "sources": [
+      {
+        "title": "Bảo tàng Lịch sử Quốc gia · Đinh Bộ Lĩnh",
+        "url": "https://baotanglichsu.vn/VI/Articles/3096/14529/tam-nhin-chien-luoc-cua-djinh-bo-linh.html"
+      }
+    ]
+  },
+  {
+    "id": "nguyen-thu-tiep",
+    "name": "Nguyễn Thủ Tiệp",
+    "aliases": [],
+    "wiki": "Nguyễn Thủ Tiệp",
+    "role": "Sứ quân giữ Tiên Du",
+    "biography": "Một trong mười hai sứ quân thế kỷ X, xây dựng căn cứ tại Tiên Du. Cục diện cát cứ chấm dứt khi Đinh Bộ Lĩnh thống nhất đất nước năm 968.",
+    "lifespan": "Thế kỷ X",
+    "sources": [
+      {
+        "title": "Bảo tàng Lịch sử Quốc gia · Đinh Bộ Lĩnh",
+        "url": "https://baotanglichsu.vn/VI/Articles/3096/14529/tam-nhin-chien-luoc-cua-djinh-bo-linh.html"
+      }
+    ]
+  },
+  {
+    "id": "nguyen-sieu",
+    "name": "Nguyễn Siêu",
+    "aliases": [],
+    "wiki": "Nguyễn Siêu",
+    "role": "Sứ quân giữ Tây Phù Liệt",
+    "biography": "Một trong mười hai sứ quân thế kỷ X, xây dựng căn cứ tại Tây Phù Liệt. Cục diện cát cứ chấm dứt khi Đinh Bộ Lĩnh thống nhất đất nước năm 968.",
+    "lifespan": "Thế kỷ X",
+    "sources": [
+      {
+        "title": "Bảo tàng Lịch sử Quốc gia · Đinh Bộ Lĩnh",
+        "url": "https://baotanglichsu.vn/VI/Articles/3096/14529/tam-nhin-chien-luoc-cua-djinh-bo-linh.html"
+      }
+    ]
+  },
+  {
+    "id": "ly-khue",
+    "name": "Lý Khuê",
+    "aliases": [],
+    "wiki": "Lý Khuê",
+    "role": "Sứ quân giữ Siêu Loại",
+    "biography": "Một trong mười hai sứ quân thế kỷ X, xây dựng căn cứ tại Siêu Loại. Cục diện cát cứ chấm dứt khi Đinh Bộ Lĩnh thống nhất đất nước năm 968.",
+    "lifespan": "Thế kỷ X",
+    "sources": [
+      {
+        "title": "Bảo tàng Lịch sử Quốc gia · Đinh Bộ Lĩnh",
+        "url": "https://baotanglichsu.vn/VI/Articles/3096/14529/tam-nhin-chien-luoc-cua-djinh-bo-linh.html"
+      }
+    ]
+  },
+  {
+    "id": "lu-duong",
+    "name": "Lữ Đường",
+    "aliases": [],
+    "wiki": "Lữ Đường",
+    "role": "Sứ quân giữ Tế Giang",
+    "biography": "Một trong mười hai sứ quân thế kỷ X, xây dựng căn cứ tại Tế Giang. Cục diện cát cứ chấm dứt khi Đinh Bộ Lĩnh thống nhất đất nước năm 968.",
+    "lifespan": "Thế kỷ X",
+    "sources": [
+      {
+        "title": "Bảo tàng Lịch sử Quốc gia · Đinh Bộ Lĩnh",
+        "url": "https://baotanglichsu.vn/VI/Articles/3096/14529/tam-nhin-chien-luoc-cua-djinh-bo-linh.html"
+      }
+    ]
+  },
+  {
+    "id": "pham-bach-ho",
+    "name": "Phạm Bạch Hổ",
+    "aliases": [],
+    "wiki": "Phạm Bạch Hổ",
+    "role": "Sứ quân giữ Đằng Châu",
+    "biography": "Một trong mười hai sứ quân thế kỷ X, xây dựng căn cứ tại Đằng Châu. Cục diện cát cứ chấm dứt khi Đinh Bộ Lĩnh thống nhất đất nước năm 968.",
+    "lifespan": "Thế kỷ X",
+    "sources": [
+      {
+        "title": "Bảo tàng Lịch sử Quốc gia · Đinh Bộ Lĩnh",
+        "url": "https://baotanglichsu.vn/VI/Articles/3096/14529/tam-nhin-chien-luoc-cua-djinh-bo-linh.html"
+      }
+    ]
+  },
+  {
+    "id": "ngo-nhat-khanh",
+    "name": "Ngô Nhật Khánh",
+    "aliases": [],
+    "wiki": "Ngô Nhật Khánh",
+    "role": "Sứ quân giữ Đường Lâm",
+    "biography": "Một trong mười hai sứ quân thế kỷ X, xây dựng căn cứ tại Đường Lâm. Cục diện cát cứ chấm dứt khi Đinh Bộ Lĩnh thống nhất đất nước năm 968.",
+    "lifespan": "Thế kỷ X",
+    "sources": [
+      {
+        "title": "Bảo tàng Lịch sử Quốc gia · Đinh Bộ Lĩnh",
+        "url": "https://baotanglichsu.vn/VI/Articles/3096/14529/tam-nhin-chien-luoc-cua-djinh-bo-linh.html"
+      }
+    ]
+  },
+  {
+    "id": "trung-nhi",
+    "name": "Trưng Nhị",
+    "aliases": [],
+    "wiki": "Trưng Nhị",
+    "role": "Cùng Trưng Trắc lãnh đạo khởi nghĩa Hai Bà Trưng",
+    "biography": "Cùng Trưng Trắc lãnh đạo khởi nghĩa Hai Bà Trưng.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Trưng Nhị",
+        "url": "https://vi.wikipedia.org/wiki/Trưng_Nhị"
+      }
+    ]
+  },
+  {
+    "id": "phan-dinh-phung",
+    "name": "Phan Đình Phùng",
+    "aliases": [],
+    "wiki": "Phan Đình Phùng",
+    "role": "Lãnh đạo khởi nghĩa Hương Khê",
+    "biography": "Lãnh đạo khởi nghĩa Hương Khê.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Phan Đình Phùng",
+        "url": "https://vi.wikipedia.org/wiki/Phan_Đình_Phùng"
+      }
+    ]
+  },
+  {
+    "id": "cao-thang",
+    "name": "Cao Thắng",
+    "aliases": [],
+    "wiki": "Cao Thắng",
+    "role": "Tướng lĩnh khởi nghĩa Hương Khê",
+    "biography": "Tướng lĩnh khởi nghĩa Hương Khê.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Cao Thắng",
+        "url": "https://vi.wikipedia.org/wiki/Cao_Thắng"
+      }
+    ]
+  },
+  {
+    "id": "hoang-hoa-tham",
+    "name": "Hoàng Hoa Thám",
+    "aliases": [],
+    "wiki": "Hoàng Hoa Thám",
+    "role": "Lãnh đạo khởi nghĩa Yên Thế",
+    "biography": "Lãnh đạo khởi nghĩa Yên Thế.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Hoàng Hoa Thám",
+        "url": "https://vi.wikipedia.org/wiki/Hoàng_Hoa_Thám"
+      }
+    ]
+  },
+  {
+    "id": "luong-van-nam",
+    "name": "Lương Văn Nắm",
+    "aliases": [],
+    "wiki": "Lương Văn Nắm",
+    "role": "Thủ lĩnh đầu tiên của khởi nghĩa Yên Thế",
+    "biography": "Thủ lĩnh đầu tiên của khởi nghĩa Yên Thế.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Lương Văn Nắm",
+        "url": "https://vi.wikipedia.org/wiki/Lương_Văn_Nắm"
+      }
+    ]
+  },
+  {
+    "id": "nguyen-thai-hoc",
+    "name": "Nguyễn Thái Học",
+    "aliases": [],
+    "wiki": "Nguyễn Thái Học",
+    "role": "Lãnh đạo Việt Nam Quốc dân Đảng",
+    "biography": "Lãnh đạo Việt Nam Quốc dân Đảng.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Nguyễn Thái Học",
+        "url": "https://vi.wikipedia.org/wiki/Nguyễn_Thái_Học"
+      }
+    ]
+  },
+  {
+    "id": "nguyen-thien-thuat",
+    "name": "Nguyễn Thiện Thuật",
+    "aliases": [],
+    "wiki": "Nguyễn Thiện Thuật",
+    "role": "Lãnh đạo khởi nghĩa Bãi Sậy",
+    "biography": "Lãnh đạo khởi nghĩa Bãi Sậy.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Nguyễn Thiện Thuật",
+        "url": "https://vi.wikipedia.org/wiki/Nguyễn_Thiện_Thuật"
+      }
+    ]
+  },
+  {
+    "id": "dinh-cong-trang",
+    "name": "Đinh Công Tráng",
+    "aliases": [],
+    "wiki": "Đinh Công Tráng",
+    "role": "Lãnh đạo khởi nghĩa Ba Đình",
+    "biography": "Lãnh đạo khởi nghĩa Ba Đình.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Đinh Công Tráng",
+        "url": "https://vi.wikipedia.org/wiki/Đinh_Công_Tráng"
+      }
+    ]
+  },
+  {
+    "id": "pham-banh",
+    "name": "Phạm Bành",
+    "aliases": [],
+    "wiki": "Phạm Bành",
+    "role": "Lãnh đạo khởi nghĩa Ba Đình",
+    "biography": "Lãnh đạo khởi nghĩa Ba Đình.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Phạm Bành",
+        "url": "https://vi.wikipedia.org/wiki/Phạm_Bành"
+      }
+    ]
+  },
+  {
+    "id": "tran-khanh-du",
+    "name": "Trần Khánh Dư",
+    "aliases": [],
+    "wiki": "Trần Khánh Dư",
+    "role": "Tướng giữ Vân Đồn",
+    "biography": "Tướng giữ Vân Đồn trong chiến dịch chống quân Nguyên năm 1288.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Trần Khánh Dư",
+        "url": "https://vi.wikipedia.org/wiki/Trần_Khánh_Dư"
+      }
+    ]
+  },
+  {
+    "id": "truong-van-ho",
+    "name": "Trương Văn Hổ",
+    "aliases": [],
+    "wiki": "Trương Văn Hổ",
+    "role": "Chỉ huy đoàn thuyền lương",
+    "biography": "Chỉ huy đoàn thuyền lương trong chiến dịch chống quân Nguyên năm 1288.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Trương Văn Hổ",
+        "url": "https://vi.wikipedia.org/wiki/Trương_Văn_Hổ"
+      }
+    ]
+  },
+  {
+    "id": "nguyen-khoai",
+    "name": "Nguyễn Khoái",
+    "aliases": [],
+    "wiki": "Nguyễn Khoái",
+    "role": "Tướng dụ địch",
+    "biography": "Tướng dụ địch trong chiến dịch chống quân Nguyên năm 1288.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Nguyễn Khoái",
+        "url": "https://vi.wikipedia.org/wiki/Nguyễn_Khoái"
+      }
+    ]
+  }
+]

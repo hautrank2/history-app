@@ -1,10 +1,13 @@
 "use client";
 
 import { useEffect, useId, useRef, useState } from "react";
+import Link from "next/link";
 
 import geography from "~/data/geo/southeast-asia.json";
 import { Button } from "~/components/ui/button";
 import { Card } from "~/components/ui/card";
+import { Image } from "@/components/ui/image";
+import { characterHref } from "~/data/characters";
 import type { OverviewSceneModel } from "~/data/vietnam-overview";
 
 import { MapMarkers, PlaceIcon, placeSubtitle } from "./map-markers";
@@ -15,6 +18,8 @@ type GeometryModel = { type: string; coordinates: number[][][] | number[][][][] 
 
 const width = 760;
 const height = 700;
+// Tạm tắt lựa chọn địa hình; bật lại tại đây khi cần mở lại.
+const terrainEnabled = false;
 const project = ([longitude, latitude]: number[]) => [(longitude - 96) * 38, (26 - latitude) * 36];
 const ringPath = (ring: number[][]) => `${ring.map((point, index) => `${index ? "L" : "M"}${project(point).map((value) => value.toFixed(1)).join(",")}`).join("")}Z`;
 const geometryPath = (geometry: GeometryModel) => {
@@ -47,7 +52,8 @@ const northNeighbor = (year: number) => {
 export const HistoryMap = ({ scene, selectedPlace, contentVisible, timelineVisible, placesVisible, onSelectPlace, onHidePlaces }: HistoryMapProps) => {
   const id = useId().replaceAll(":", "");
   const [zoom, setZoom] = useState(1);
-  const [modernBorders, setModernBorders] = useState(false);
+  const [modernBorders, setModernBorders] = useState(true);
+  const [variant, setVariant] = useState<"terrain" | "simple">(terrainEnabled ? "terrain" : "simple");
   const [pan, setPan] = useState<[number, number]>([0, 0]);
   const [drag, setDrag] = useState<{ x: number; y: number; pan: [number, number] } | null>(null);
   const svg = useRef<SVGSVGElement>(null);
@@ -96,7 +102,7 @@ export const HistoryMap = ({ scene, selectedPlace, contentVisible, timelineVisib
   const westLabel = year < 1353 ? (year < 600 ? "CÁC CỘNG ĐỒNG PHÍA TÂY" : "CÁC MƯỜNG TAI") : year < 1707 ? "LAN XANG" : year < 1893 ? "CÁC VƯƠNG QUỐC LÀO" : "LÀO";
   const southLabel = year < 192 ? "VĂN HÓA SA HUỲNH" : year < 1471 ? "CHAMPA" : year < 1832 ? "CHAMPA · PANDURANGA" : "";
 
-  return <section className="vo-map-panel" aria-label="Bản đồ lịch sử hai chiều">
+  return <section className="vo-map-panel" data-map-variant={variant} aria-label="Bản đồ lịch sử hai chiều">
     <div ref={stage} className="vo-map-stage">
       <svg ref={svg} className={`vo-map ${drag ? "is-dragging" : ""}`} viewBox={`${centerX - viewWidth / (2 * zoom)} ${centerY - viewHeight / (2 * zoom)} ${viewWidth / zoom} ${viewHeight / zoom}`} role="group" aria-labelledby={`${id}-title ${id}-desc`}
         onPointerDown={(event) => { if ((event.target as Element).closest("[data-place]")) return; event.currentTarget.setPointerCapture(event.pointerId); setDrag({ x: event.clientX, y: event.clientY, pan }); }}
@@ -113,6 +119,7 @@ export const HistoryMap = ({ scene, selectedPlace, contentVisible, timelineVisib
           <radialGradient id={`${id}-glow`}><stop stopColor="var(--atlas-gold)" stopOpacity=".08" /><stop offset="1" stopColor="var(--atlas-gold)" stopOpacity="0" /></radialGradient>
         </defs>
         <rect x="-1500" y="-1500" width="4000" height="4000" className="vo-water" />
+        {variant === "terrain" ? <foreignObject className="vo-relief" x="0" y="0" width="1140" height="936"><Image src="/maps/vietnam-relief.jpg" alt="Địa hình Đông Nam Á · Esri World Shaded Relief" preview={false} width={1500} height={1300} style={{ width: "100%", height: "100%" }} /></foreignObject> : null}
         <g className={modernBorders ? "vo-countries has-borders" : "vo-countries"}>{countries.map((country) => <path key={country.name} d={country.path} data-country={country.name} />)}</g>
         <rect x="-1500" y="-1500" width="4000" height="4000" fill={`url(#${id}-grid)`} />
         <circle cx={capitalX} cy={capitalY} r="240" fill={`url(#${id}-glow)`} />
@@ -135,16 +142,23 @@ export const HistoryMap = ({ scene, selectedPlace, contentVisible, timelineVisib
           {scene.territory === "split" ? <><text x="470" y="212" className="vo-zone-label">ĐÀNG NGOÀI</text><text x="570" y="485" className="vo-zone-label">ĐÀNG TRONG</text></> : null}
         </g>
         <g className="vo-rivers" aria-hidden="true"><path d="M328 104Q354 136 380 158T430 194" /><path d="M235 298Q218 350 264 398T331 474T419 550" /></g>
+        <g className="vo-vietnam-islands" aria-label="Hoàng Sa và Trường Sa thuộc lãnh thổ Việt Nam hiện nay">
+          <title>Hai quần đảo của Việt Nam · lớp tham chiếu hiện đại; không biểu thị phạm vi kiểm soát của từng triều đại</title>
+          {([{ name: "HOÀNG SA", at: [112, 16.5], islands: [[111.2, 15.8], [111.6, 16.5], [112.3, 16.9], [112.7, 16.6]] }, { name: "TRƯỜNG SA", at: [114, 10], islands: [[111.9, 8.65], [112.5, 9], [113.3, 9.6], [114.3, 10.2], [114.5, 11.4], [115.8, 10.7]] }]).map((group) => { const [x, y] = project(group.at); return <g key={group.name} className="vo-archipelago" data-territory="vietnam"><text x={x} y={y - 14}>{group.name}</text><text className="vo-island-country" x={x} y={y}>VIỆT NAM</text>{group.islands.map((at) => { const [cx, cy] = project(at); return <path key={at.join(",")} d={`M${cx - 3},${cy}l3,-2 3,2 -1,3 -4,0Z`} />; })}</g>; })}
+        </g>
         <g className="vo-compass" transform="translate(690 620)" aria-hidden="true"><text y="-30" textAnchor="middle">B</text><path d="M0-20L7 8 0 3-7 8Z" /><path d="M0 3V20" /></g>
       </svg>
       <MapMarkers points={scene.places.map((place) => { const [x, y] = project(place.at); return { place, x: (x - centerX + viewWidth / (2 * zoom)) / (viewWidth / zoom) * viewport.width, y: (y - centerY + viewHeight / (2 * zoom)) / (viewHeight / zoom) * viewport.height }; })} selectedPlace={selectedPlace} viewport={viewport} contentVisible={contentVisible} timelineVisible={timelineVisible} onSelectPlace={onSelectPlace} />
       <div className="vo-map-badge"><span><i /> KHÔNG GIAN LỊCH SỬ / 2D</span><strong>{scene.nation}</strong><small>{scene.years}</small></div>
       <Card className="vo-map-tools vo-glass" aria-label="Điều khiển bản đồ"><Button variant="atlas" size="atlas" type="button" aria-label="Phóng to bản đồ" disabled={zoom >= 2.5} onClick={() => setZoom((value) => Math.min(2.5, value + .5))}>+</Button><Button variant="atlas" size="atlas" type="button" aria-label="Thu nhỏ bản đồ" disabled={zoom <= .5} onClick={() => setZoom((value) => Math.max(.5, value - .5))}>−</Button><Button variant="atlas" size="atlas" type="button" aria-label="Đặt lại góc nhìn bản đồ" onClick={() => { setZoom(1); setPan([0, 0]); }}>↺</Button><Button variant="atlas" size="atlas" type="button" aria-label="Biên giới hiện đại" aria-pressed={modernBorders} onClick={() => setModernBorders((value) => !value)}>▱</Button></Card>
+      <div className="vo-map-variants vo-glass" role="group" aria-label="Kiểu bản đồ">{terrainEnabled ? <Button className="vo-variant-terrain" variant="atlas" size="atlas" aria-pressed={variant === "terrain"} onClick={() => setVariant("terrain")}>Địa hình</Button> : null}<Button className="vo-variant-simple" variant="atlas" size="atlas" aria-pressed={variant === "simple"} onClick={() => setVariant("simple")}>Đơn giản</Button></div>
+      <aside className="vo-islands-inset vo-glass" aria-label="Lãnh thổ biển đảo Việt Nam"><strong>BIỂN ĐẢO VIỆT NAM</strong><span>✦ Hoàng Sa · Việt Nam</span><span>✦ Trường Sa · Việt Nam</span><small>Lớp tham chiếu hiện đại · đảo phóng đại để định vị</small></aside>
       <span className="vo-map-hint">Lăn chuột để thu phóng · Kéo để di chuyển · Chọn điểm để tìm hiểu</span>
     </div>
     <Card role="complementary" id="vo-places" className="vo-place-detail vo-glass" data-open={placesVisible} inert={!placesVisible} aria-label="Các địa điểm trong cảnh">
       <div className="vo-panel-heading"><span>⌖ ĐỊA ĐIỂM TRÊN BẢN ĐỒ</span><Button variant="atlas" size="atlas" type="button" aria-label="Ẩn địa điểm" onClick={onHidePlaces}>×</Button></div>
       {currentPlace ? <><strong>{currentPlace.name}</strong><small className="vo-place-subtitle">{placeSubtitle(currentPlace)}{currentPlace.leader ? ` · ${currentPlace.leader.name}` : ""}</small><p>{currentPlace.detail}</p>{currentPortrait ? <a className="vo-pin-credit" href={currentPortrait.file} target="_blank" rel="noreferrer" title={portraitCaption(currentPortrait)}>{currentPortrait.generated ? "Minh họa AI · Tái hiện nghệ thuật" : `Ảnh: ${currentPortrait.author} · ${currentPortrait.license}`} ↗</a> : null}</> : null}
+      <nav className="vo-place-navigation" aria-label="Tìm hiểu địa điểm">{currentPlace?.leader ? <Link href={characterHref(currentPlace.leader.id)}>Hồ sơ {currentPlace.leader.name} →</Link> : null}{currentPlace?.eventId ? <Link href={`/vietnam/${currentPlace.eventId}`}>Xem cuộc khởi nghĩa →</Link> : null}{scene.id === "tran-bach-dang" ? <Link href="/vietnam/bach-dang-1288">Khám phá trận Bạch Đằng 1288 →</Link> : null}</nav>
       <div className="vo-place-list">{scene.places.map((point, index) => <Button variant="atlas" size="atlas" key={point.name} type="button" aria-label={point.name} title={`${point.name} · ${placeSubtitle(point)}`} aria-pressed={selectedPlace === index} onClick={() => onSelectPlace(index)}><PlaceIcon kind={point.kind} /></Button>)}</div>
     </Card>
   </section>;

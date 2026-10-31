@@ -24,6 +24,7 @@ export type MapRouteModel = {
 };
 
 export type CharacterModel = {
+  id: string;
   name: string;
   role: string;
   side: SideModel;

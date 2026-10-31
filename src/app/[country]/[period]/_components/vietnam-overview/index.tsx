@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { ImageGroup, Image } from "@/components/ui/image";
 import Link from "next/link";
 import type { CSSProperties } from "react";
 
@@ -14,6 +14,10 @@ import { vietnamOverview, wikiUrl } from "~/data/vietnam-overview";
 import type { OverviewPersonModel } from "~/data/vietnam-overview";
 import { geographyArticles, overviewDetails } from "~/data/vietnam-overview-details";
 import type { OverviewArticleModel } from "~/data/vietnam-overview-details";
+
+import { characterHref, getCharacter } from "~/data/characters";
+import { historicalEvents } from "~/data/events";
+import { NationalFlag } from "~/components/national-flag";
 
 import { CountryStats } from "./country-stats";
 import { HistoryMap } from "./history-map";
@@ -41,18 +45,25 @@ const articlePages = (sections: OverviewArticleModel[], budget: number) => secti
 type PersonCardProps = { person: OverviewPersonModel };
 const PersonCard = ({ person }: PersonCardProps) => {
   const portrait = portraitFor(person.wiki);
-  const article = portrait?.article ?? `https://en.wikipedia.org/wiki/${encodeURIComponent(person.wiki.replaceAll(" ", "_"))}`;
-  return <article className={`vo-person ${person.side === "opponent" ? "is-opponent" : ""}`}>
-    <a className="vo-person-image" href={portrait?.file ?? article} target="_blank" rel="noreferrer" aria-label={`Nguồn hình ảnh ${person.name}`}>
+  const article = getCharacter(person.id).sources[0]?.url ?? portrait?.article;
+  return <article data-character-id={person.id} className={`vo-person ${person.side === "opponent" ? "is-opponent" : ""}`}>
+    <div className="vo-person-image">
       {portrait ? <><Image src={portrait.src} alt={portrait.generated ? `Minh họa AI tái hiện ${person.name}, không phải chân dung xác thực` : `Hình ảnh ${person.name}; có thể là tranh hoặc tượng tái hiện về sau`} fill sizes="130px" style={{ objectPosition: portrait.position }} />{portrait.generated ? <small className="vo-illustration-badge">MINH HỌA AI</small> : null}</> : <span className="vo-person-missing">◇<small>Chưa có ảnh tư liệu</small></span>}
-    </a>
-    <div className="vo-person-copy"><span className="vo-person-side">{person.side === "opponent" ? "PHÍA ĐỐI PHƯƠNG" : "NHÂN VẬT LỊCH SỬ"}</span><a className="vo-person-name" href={article} target="_blank" rel="noreferrer">{person.name} ↗</a><p>{person.role}</p></div>
+    </div>
+    <div className="vo-person-copy"><span className="vo-person-side">{person.side === "opponent" ? "PHÍA ĐỐI PHƯƠNG" : "NHÂN VẬT LỊCH SỬ"}</span><Link className="vo-person-name" href={characterHref(person.id)}>{person.name} →</Link><a className="vo-person-source" href={article} target="_blank" rel="noreferrer">Nguồn tư liệu ↗</a><p>{person.role}</p></div>
   </article>;
 };
 
 export const VietnamOverview = () => {
-  const { index, scene, selectedPlace, setSelectedPlace, playing, setPlaying, playbackMs, setPlaybackMs, tab, changeTab, page, setPage, query, setQuery, contentVisible, setContentVisible, timelineVisible, setTimelineVisible, placesVisible, setPlacesVisible, textBudget, rail, body, go } = useVietnamOverview();
+  const { index, scene, selectedPlace, setSelectedPlace, playing, setPlaying, playbackMs, setPlaybackMs, tab, changeTab, page, setPage: updatePage, query, setQuery, contentVisible, setContentVisible, timelineVisible, setTimelineVisible, placesVisible, setPlacesVisible, textBudget, rail, body, go } = useVietnamOverview();
   if (!scene) return null;
+  const setPage = (next: number) => {
+    updatePage(next);
+    const element = body.current;
+    const target = element?.querySelector<HTMLElement>(`[data-reading-page="${next}"]`);
+    if (element && target) element.scrollTo({ top: target.offsetTop, behavior: "instant" });
+  };
+  const sceneEvents = historicalEvents.filter((event) => event.sceneIds.includes(scene.id));
   const eraIndex = eras.indexOf(scene.era);
   const eraScenes = vietnamOverview.filter((item) => item.era === scene.era);
   const filteredEras = eras.filter((era) => normalize(vietnamOverview.filter((item) => item.era === era).map((item) => `${item.era} ${item.title} ${item.people.map((person) => person.name).join(" ")}`).join(" ")).includes(normalize(query)));
@@ -66,22 +77,21 @@ export const VietnamOverview = () => {
   const geographyPages = articlePages(geographySections, textBudget);
   const sections = tab === "culture" ? cultureSections : geographySections;
   const articles = tab === "culture" ? culturePages : geographyPages;
-  const mapNotes = `${scene.extent} Lược đồ gần đúng trên nền địa lý hiện đại, không dùng để đo diện tích hay xác định chủ quyền. Chưa thể hiện đầy đủ các đảo và quần đảo. Tóm lược biên soạn lại từ các nguồn được liên kết. Dân số có mốc năm và phạm vi riêng; số hồi dựng không phải tổng điều tra. Ảnh có nhãn AI là tái hiện nghệ thuật, không phải chân dung xác thực; ảnh tư liệu giữ ghi công gốc.`;
+  const mapNotes = `${scene.extent} Lược đồ gần đúng trên nền địa lý hiện đại, không dùng để đo diện tích hay xác định chủ quyền. Hoàng Sa và Trường Sa được thể hiện trong lớp tham chiếu lãnh thổ Việt Nam hiện nay, độc lập với vùng tô lịch sử. Tóm lược biên soạn lại từ các nguồn được liên kết. Dân số có mốc năm và phạm vi riêng; số hồi dựng không phải tổng điều tra. Ảnh có nhãn AI là tái hiện nghệ thuật, không phải chân dung xác thực; ảnh tư liệu giữ ghi công gốc.`;
   const notesPages = textPages(mapNotes, Math.max(90, textBudget - 30));
-  const sources = [...new Map([...cultureSections, ...geographySections].flatMap((section) => section.sources).map((source) => [source.url, source])).values()];
+  const sources = [...new Map([...cultureSections.flatMap((section) => section.sources), ...geographySections.flatMap((section) => section.sources), ...sceneEvents.flatMap((event) => event.sources)].map((source) => [source.url, source])).values()];
   const sourcePageCount = sources.length;
-  const pageCount = tab === "story" ? storyPages.length : tab === "culture" ? culturePages.length : tab === "geography" ? geographyPages.length : tab === "people" ? scene.people.length : sourcePageCount + notesPages.length;
+  const pageCount = tab === "story" ? storyPages.length + sceneEvents.length : tab === "culture" ? culturePages.length : tab === "geography" ? geographyPages.length : tab === "people" ? scene.people.length : sourcePageCount + notesPages.length;
   const currentPage = Math.min(page, pageCount - 1);
-  const story = storyPages[currentPage];
   const readingArticle = articles[currentPage];
   const personPortrait = tab === "people" && scene.people[currentPage] ? portraitFor(scene.people[currentPage].wiki) : undefined;
   const allHidden = !contentVisible && !timelineVisible && !placesVisible;
 
-  return <TooltipProvider delayDuration={250}><main className="atlas-page vo-page" data-content={contentVisible} data-timeline={timelineVisible} data-clean={allHidden}>
+  return <TooltipProvider delayDuration={250}><main className="atlas-page vo-page" data-scene-id={scene.id} data-content={contentVisible} data-timeline={timelineVisible} data-clean={allHidden}>
     <h1 className="vo-sr-only">Lịch sử Việt Nam — từ Hùng Vương đến hiện đại</h1>
     <HistoryMap key={scene.id} scene={scene} selectedPlace={selectedPlace} contentVisible={contentVisible} timelineVisible={timelineVisible} placesVisible={placesVisible} onSelectPlace={(next) => { setSelectedPlace(next); setPlacesVisible(true); setPlaying(false); }} onHidePlaces={() => setPlacesVisible(false)} />
-    <CountryStats scene={scene} />
-    <Link className="vo-back vo-glass" href="/vietnam" aria-label="Về trang Việt Nam">← <span>Việt Nam</span></Link>
+    <CountryStats scene={scene} />{scene.id === "loan-12-su-quan" ? <Button className="vo-map-focus vo-glass" variant="atlas" size="atlas" onClick={() => { setContentVisible(false); setTimelineVisible(false); setPlacesVisible(false); }}>Xem đủ 12 sứ quân trên bản đồ ⛶</Button> : null}
+    <Link className="vo-back vo-glass" href="/vietnam" aria-label="Về trang Việt Nam">← <NationalFlag /><span>Việt Nam</span></Link><Link className="vo-character-nav vo-glass" href="/characters">Nhân vật →</Link>
     <div className="vo-visibility" aria-label="Ẩn hiện các bảng trên bản đồ">
       <Button variant="atlas" size="atlas" type="button" className="vo-glass" aria-expanded={contentVisible} aria-controls="vo-content" onClick={() => setContentVisible((value) => !value)}><span>≋</span> Nội dung</Button>
       <Button variant="atlas" size="atlas" type="button" className="vo-glass" aria-expanded={placesVisible} aria-controls="vo-places" onClick={() => setPlacesVisible((value) => !value)}><span>⌖</span> Địa điểm</Button>
@@ -94,13 +104,25 @@ export const VietnamOverview = () => {
       <div className="vo-facts"><div><span>QUỐC HIỆU / CHÍNH QUYỀN</span><strong>{scene.nation}</strong></div><div><span>KINH ĐÔ / TRUNG TÂM</span><strong>{scene.capital}</strong></div></div>
       <TabsList className="vo-tabs" variant="line" aria-label="Nội dung lịch sử">{tabs.map((item) => <TabsTrigger key={item.id} id={`vo-tab-${item.id}`} value={item.id} aria-controls="vo-reading-panel"><span aria-hidden="true">{item.icon}</span>{item.label}</TabsTrigger>)}</TabsList>
       {tab === "culture" || tab === "geography" ? <div className="vo-topic-picker"><span>{sections.length} CHỦ ĐỀ</span><Select value={String(readingArticle?.topic ?? 0)} onValueChange={(value) => { setPage(articles.findIndex((item) => item.topic === Number(value))); setPlaying(false); }}><SelectTrigger className="vo-topic-trigger" aria-label={tab === "culture" ? "Chọn chủ đề văn hóa" : "Chọn chủ đề địa lý"}><SelectValue /></SelectTrigger><SelectContent className="vo-select-content" position="popper" align="end" collisionPadding={12}>{sections.map((section, topic) => <SelectItem key={section.title} value={String(topic)}>{topic + 1}. {section.title}</SelectItem>)}</SelectContent></Select></div> : null}
-      <TabsContent value={tab} ref={body} className="vo-reading-body" id="vo-reading-panel" aria-labelledby={`vo-tab-${tab}`}>
-        <div key={`${scene.id}-${tab}-${currentPage}`} className="vo-reading-page" aria-live="polite">
-          {tab === "story" && story ? <div className={story.conflict ? "vo-narrative is-conflict" : "vo-narrative"}><span className="vo-content-label">{story.conflict ? "⚑" : "≋"} {story.label}</span>{story.title ? <h3>{story.title}</h3> : null}<p>{story.text}</p></div> : null}
-          {(tab === "culture" || tab === "geography") && readingArticle ? <div className="vo-narrative vo-culture"><span className="vo-content-label">{tab === "culture" ? "◇ VĂN HÓA & ĐỜI SỐNG" : "⌖ ĐỊA LÝ & DÂN CƯ"} · MỤC {readingArticle.topic + 1}/{sections.length}</span><p>{readingArticle.text}</p></div> : null}
-          {tab === "people" && scene.people[currentPage] ? <PersonCard person={scene.people[currentPage]} /> : null}
-          {tab === "sources" ? <div className="vo-narrative vo-source-content"><span className="vo-content-label">{currentPage < sourcePageCount ? "↗ TƯ LIỆU THAM KHẢO" : "⌖ VỀ LƯỢC ĐỒ & SỐ LIỆU"}</span>{currentPage < sourcePageCount ? <ul>{sources.slice(currentPage, currentPage + 1).map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.title}<span>↗</span></a></li>)}</ul> : <p>{notesPages[currentPage - sourcePageCount]}</p>}</div> : null}
-        </div>
+      <TabsContent key={`${scene.id}-${tab}`} value={tab} ref={body} className="vo-reading-body" id="vo-reading-panel" aria-labelledby={`vo-tab-${tab}`} tabIndex={0} onScroll={(event) => {
+        const element = event.currentTarget;
+        const pages = Array.from(element.querySelectorAll<HTMLElement>("[data-reading-page]"));
+        const nearest = pages.reduce((best, item) => Math.abs(item.offsetTop - element.scrollTop) < Math.abs(best.offsetTop - element.scrollTop) ? item : best, pages[0]);
+        if (nearest) { updatePage(Number(nearest.dataset.readingPage)); setPlaying(false); }
+      }}>
+        <ImageGroup>{Array.from({ length: pageCount }, (_, readingIndex) => {
+          const story = storyPages[readingIndex];
+          const readingArticle = articles[readingIndex];
+          const uprising = sceneEvents[readingIndex - storyPages.length];
+          return <div key={`${scene.id}-${tab}-${readingIndex}`} data-reading-page={readingIndex} className="vo-reading-page">
+            {tab === "story" && story ? <div className={story.conflict ? "vo-narrative is-conflict" : "vo-narrative"}><span className="vo-content-label">{story.label}</span>{story.title ? <h3>{story.title}</h3> : null}<p>{story.text}</p></div> : null}
+            {(tab === "culture" || tab === "geography") && readingArticle ? <div className="vo-narrative vo-culture"><span className="vo-content-label">{tab === "culture" ? "◇ VĂN HÓA & ĐỜI SỐNG" : "⌖ ĐỊA LÝ & DÂN CƯ"} · MỤC {readingArticle.topic + 1}/{sections.length}</span><h3>{readingArticle.title}</h3><p>{readingArticle.text}</p></div> : null}
+            {tab === "story" && uprising ? <article className="vo-uprising-card" data-event-id={uprising.id}><span className="vo-content-label">KHỞI NGHĨA · {uprising.years}</span><Link href={`/vietnam/${uprising.id}`}>{uprising.title} →</Link><small>{uprising.location}</small><p>{uprising.summary}</p><p><strong>Kết quả:</strong> {uprising.outcome}</p></article> : null}
+            {tab === "people" && scene.people[readingIndex] ? <PersonCard person={scene.people[readingIndex]} /> : null}
+            {tab === "sources" ? <div className="vo-narrative vo-source-content"><span className="vo-content-label">{readingIndex < sourcePageCount ? "↗ TƯ LIỆU THAM KHẢO" : "⌖ VỀ LƯỢC ĐỒ & SỐ LIỆU"}</span>{readingIndex < sourcePageCount ? <ul>{sources.slice(readingIndex, readingIndex + 1).map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.title}<span>↗</span></a></li>)}</ul> : <p>{notesPages[readingIndex - sourcePageCount]}</p>}</div> : null}
+          </div>;
+        })}</ImageGroup>
+
       </TabsContent>
       <div className="vo-reading-footer"><span>{tab === "people" ? "NHÂN VẬT" : "TRANG"} {String(currentPage + 1).padStart(2, "0")} <i>/ {String(pageCount).padStart(2, "0")}</i></span>{(tab === "culture" || tab === "geography") && readingArticle?.sources[0] ? <a className="vo-footer-credit" href={readingArticle.sources[0].url} target="_blank" rel="noreferrer" title={readingArticle.sources.map((source) => source.title).join(" · ")}>Nguồn: {readingArticle.sources[0].title} ↗</a> : null}{personPortrait ? <a className="vo-footer-credit" href={personPortrait.file} target="_blank" rel="noreferrer" title={portraitCaption(personPortrait)}>{personPortrait.author} · {personPortrait.license} ↗</a> : null}<div>{scene.id === "tran-bach-dang" && tab === "sources" ? <Link href="/vietnam/bach-dang-1288" className="vo-battle-link">Vào trận ↗</Link> : null}<Button variant="atlas" size="atlas" type="button" aria-label="Trang nội dung trước" disabled={currentPage === 0} onClick={() => { setPage(currentPage - 1); setPlaying(false); }}>←</Button><Button variant="atlas" size="atlas" type="button" aria-label="Trang nội dung tiếp theo" disabled={currentPage >= pageCount - 1} onClick={() => { setPage(currentPage + 1); setPlaying(false); }}>→</Button></div></div>
     </Card></Tabs>

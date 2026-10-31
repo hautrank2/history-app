@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { Image } from "@/components/ui/image";
 import Link from "next/link";
 
 import { countriesData } from "~/data";
@@ -11,7 +11,7 @@ const HomePage = () => (
     <section className="atlas-countries" aria-label="Chọn quốc gia">{Object.values(countriesData).map((country) => {
       if (!country) return null;
       const visual = countryPresentation[country.slug];
-      return <Link key={country.slug} href={`/${country.slug}`} className={`atlas-country atlas-country-${country.slug}`}><Image src={visual.image} alt={`Minh họa lịch sử ${country.name}`} fill priority sizes="(max-width: 760px) 100vw, 33vw" /><div className="atlas-country-shade" /><div className="atlas-country-top"><span>{visual.numeral} / {visual.english}</span><span>{country.periods.length} GIAI ĐOẠN</span></div><div className="atlas-country-copy"><span>{visual.subtitle}</span><h2>{country.name}</h2><p>{visual.description}</p><div className="atlas-country-cta">Khám phá dòng thời gian <b>↗</b></div></div></Link>;
+      return <Link key={country.slug} href={`/${country.slug}`} className={`atlas-country atlas-country-${country.slug}`}><Image preview={false} src={visual.image} alt={`Minh họa lịch sử ${country.name}`} fill priority sizes="(max-width: 760px) 100vw, 33vw" /><div className="atlas-country-shade" /><div className="atlas-country-top"><span>{visual.numeral} / {visual.english}</span><span>{country.periods.length} GIAI ĐOẠN</span></div><div className="atlas-country-copy"><span>{visual.subtitle}</span><h2>{country.name}</h2><p>{visual.description}</p><div className="atlas-country-cta">Khám phá dòng thời gian <b>↗</b></div></div></Link>;
     })}</section>
     <aside className="atlas-feature"><span className="atlas-feature-mark">1288</span><div><p className="atlas-eyebrow">CÂU CHUYỆN ĐANG MỞ</p><h2>Bạch Đằng — Khi dòng sông viết sử.</h2><p>Bảy chương, một thế trận. Trải nghiệm chiến thắng qua bản đồ và mô hình 3D.</p></div><Link href="/vietnam/bach-dang-1288">Bước vào trận chiến <span>↗</span></Link></aside>
     <footer className="atlas-footer"><span>HISTORY ATLAS</span><p>Lịch sử để khám phá. Câu chuyện để nhớ.</p><span>03 QUỐC GIA · 01 TRẬN CHIẾN ĐANG MỞ</span></footer>

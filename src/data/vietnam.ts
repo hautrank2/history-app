@@ -1,3 +1,4 @@
+import { getCharacter } from "~/data/characters";
 import type { CharacterModel, CountryModel, LngLatModel, StoryModel, TerritoryModel } from "~/types";
 
 const thangLong: LngLatModel = [105.84, 21.03];
@@ -22,9 +23,9 @@ const daiViet1288: TerritoryModel = {
   seaClosure: [[108.6, 16.9], [109.2, 19.5], [108.8, 21.5]],
 };
 
-const thoatHoan: CharacterModel = { name: "Thoát Hoan", role: "Trấn Nam vương, tổng chỉ huy", side: "enemy", portrait: "thoat-hoan" };
-const oMaNhi: CharacterModel = { name: "Ô Mã Nhi", role: "Chỉ huy thủy quân", side: "enemy", portrait: "o-ma-nhi" };
-const tranHungDao: CharacterModel = { name: "Trần Hưng Đạo", role: "Quốc công Tiết chế", side: "home", portrait: "tran-hung-dao" };
+const thoatHoan: CharacterModel = { ...getCharacter("thoat-hoan"), role: "Trấn Nam vương, tổng chỉ huy", side: "enemy", portrait: "thoat-hoan" };
+const oMaNhi: CharacterModel = { ...getCharacter("o-ma-nhi"), role: "Chỉ huy thủy quân", side: "enemy", portrait: "o-ma-nhi" };
+const tranHungDao: CharacterModel = { ...getCharacter("tran-hung-dao"), role: "Quốc công Tiết chế", side: "home", portrait: "tran-hung-dao" };
 
 const landRetreat: LngLatModel[] = [vanKiep, [106.45, 21.35], [106.6, 21.6], langSon, [106.75, 22.0]];
 const fleetRetreat: LngLatModel[] = [
@@ -77,7 +78,7 @@ const bachDang1288: StoryModel = {
       routes: [
         { path: [[106.75, 22.0], langSon, [106.55, 21.5], vanKiep, [106.1, 21.08], thangLong], side: "enemy", unit: "cavalry" },
       ],
-      characters: [thoatHoan, { name: "Trần Nhân Tông", role: "Vua Đại Việt", side: "home" }],
+      characters: [thoatHoan, { ...getCharacter("tran-nhan-tong"), role: "Vua Đại Việt", side: "home" }],
     },
     {
       title: "Mất đoàn thuyền lương",
@@ -87,8 +88,8 @@ const bachDang1288: StoryModel = {
       points: [{ at: vanDon, label: "Vân Đồn", kind: "battle", side: "home" }],
       routes: [{ path: [[107.95, 21.32], [107.65, 21.12], vanDon], side: "enemy", unit: "fleet" }],
       characters: [
-        { name: "Trần Khánh Dư", role: "Tướng giữ Vân Đồn", side: "home" },
-        { name: "Trương Văn Hổ", role: "Chỉ huy đoàn thuyền lương", side: "enemy" },
+        { ...getCharacter("tran-khanh-du"), role: "Tướng giữ Vân Đồn", side: "home" },
+        { ...getCharacter("truong-van-ho"), role: "Chỉ huy đoàn thuyền lương", side: "enemy" },
       ],
     },
     {
@@ -135,7 +136,7 @@ const bachDang1288: StoryModel = {
         { path: [yenGiang, [106.781, 20.941]], side: "home" },
         { path: [[106.79, 20.9], [106.78, 20.93]], side: "home", unit: "fleet" },
       ],
-      characters: [tranHungDao, { name: "Nguyễn Khoái", role: "Tướng dụ địch", side: "home" }, oMaNhi],
+      characters: [tranHungDao, { ...getCharacter("nguyen-khoai"), role: "Tướng dụ địch", side: "home" }, oMaNhi],
     },
     {
       title: "Kết cục",
