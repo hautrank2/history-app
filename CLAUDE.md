@@ -12,7 +12,7 @@ Bản đồ địa hình kể lịch sử theo từng giai đoạn. Việt Nam t
 ## Stack
 
 - Next.js 16 (App Router, RSC mặc định), React 19, TypeScript `strict`.
-- Tailwind CSS v4, cấu hình CSS-first trong `src/app/globals.css` (`@theme inline`).
+- Tailwind CSS v4, cấu hình CSS-first trong `src/styles/globals.css` (`@theme inline`).
 - MapLibre GL JS cho bản đồ địa hình 3D. pnpm. Dev ở cổng **8081** (theo package.json).
 - Trang công khai là tĩnh, dữ liệu lấy từ `src/data/`. Không database, không fetch dữ liệu phía client.
 - Kiểm tra thư viện đã cài trước khi thêm dependency mới.
@@ -38,6 +38,8 @@ Bản đồ địa hình kể lịch sử theo từng giai đoạn. Việt Nam t
 - Đọc và tuân theo `.claude/rules/ui-locations.md`: className ngữ nghĩa và ID ổn định để chỉ vị trí trên giao diện.
 - Đọc và tuân theo `.claude/rules/history-data.md`: database JSON dùng chung, quan hệ nhân vật/sự kiện và bản đồ biển đảo.
 - Đọc và tuân theo `.claude/rules/image.md`: mọi ảnh đi qua `@/components/ui/image`; ảnh nội dung click để xem, nhiều ảnh dùng ImageGroup.
+- Đọc và tuân theo `.claude/rules/game-experience.md`: theme arena, con trỏ native và âm thanh/nhạc nền có cài đặt lưu localStorage.
+- Đọc và tuân theo `.claude/rules/styles.md`: mọi CSS/SCSS nằm trong `src/styles`, panel cuộn rõ ràng và marker gom cụm.
 - Không tạo skill trùng các rule này. Các bảng và API dùng chung được mô tả ở `src/data/database/README.md`.
 
 ## Đặt tên file
@@ -69,6 +71,8 @@ Chạy các kiểm tra sau trước khi báo xong:
 ```bash
 npx tsc --noEmit
 node scripts/validate-history.mjs
+node scripts/validate-game-audio.mjs
+node scripts/validate-map-ui.mjs
 pnpm lint
 pnpm build
 ```

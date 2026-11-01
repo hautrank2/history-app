@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 
 import { vietnamOverview } from "~/data/vietnam-overview";
+import { playGameSound } from "~/lib/game-audio";
 
 export type OverviewTab = "story" | "culture" | "geography" | "people" | "sources";
 
@@ -12,28 +13,27 @@ export const useVietnamOverview = () => {
   const [playing, setPlaying] = useState(false);
   const [playbackMs, setPlaybackMs] = useState(6000);
   const [tab, setTab] = useState<OverviewTab>("story");
-  const [page, setPage] = useState(0);
   const [query, setQuery] = useState("");
   const [contentVisible, setContentVisible] = useState(true);
   const [timelineVisible, setTimelineVisible] = useState(true);
   const [placesVisible, setPlacesVisible] = useState(false);
-  const [textBudget, setTextBudget] = useState(220);
   const rail = useRef<HTMLDivElement>(null);
-  const body = useRef<HTMLDivElement>(null);
   const scene = vietnamOverview[index];
 
   const go = (next: number) => {
     const safeIndex = Math.max(0, Math.min(vietnamOverview.length - 1, next));
-    setIndex(safeIndex); setSelectedPlace(0); setPage(0);
+    setIndex(safeIndex); setSelectedPlace(0);
+    if (safeIndex !== index) playGameSound("navigate");
     window.history.replaceState(null, "", `#${vietnamOverview[safeIndex].id}`);
+    window.dispatchEvent(new Event("atlas:scene-change"));
     if (safeIndex === vietnamOverview.length - 1) setPlaying(false);
   };
-  const changeTab = (next: OverviewTab) => { setTab(next); setPage(0); setPlaying(false); };
+  const changeTab = (next: OverviewTab) => { setTab(next); setPlaying(false); };
 
   useEffect(() => {
     const syncHash = () => {
       const next = vietnamOverview.findIndex((item) => item.id === window.location.hash.slice(1));
-      if (next >= 0) { setIndex(next); setSelectedPlace(0); setPage(0); }
+      if (next >= 0) { setIndex(next); setSelectedPlace(0); }
     };
     syncHash(); window.addEventListener("hashchange", syncHash);
     return () => window.removeEventListener("hashchange", syncHash);
@@ -48,30 +48,18 @@ export const useVietnamOverview = () => {
   }, [index, query, timelineVisible]);
 
   useEffect(() => {
-    const element = body.current;
-    if (!element) return;
-    // Keep pagination responsive while every page remains in the scroll container.
-    const observer = new ResizeObserver(([entry]) => {
-      const { width, height } = entry.contentRect;
-      if (width < 1 || height < 1) return;
-      const lines = Math.max(2, Math.floor((height - 22) / 22));
-      setTextBudget(Math.max(90, Math.min(560, lines * Math.floor(width / 7))));
-    });
-    observer.observe(element);
-    return () => observer.disconnect();
-  }, [index, tab, contentVisible]);
-
-  useEffect(() => {
     if (!playing) return;
     const timer = window.setTimeout(() => {
       const next = index + 1;
       if (next >= vietnamOverview.length) { setPlaying(false); return; }
-      setIndex(next); setSelectedPlace(0); setPage(0);
+      setIndex(next); setSelectedPlace(0);
+      playGameSound("navigate");
       window.history.replaceState(null, "", `#${vietnamOverview[next].id}`);
+      window.dispatchEvent(new Event("atlas:scene-change"));
       if (next === vietnamOverview.length - 1) setPlaying(false);
     }, playbackMs);
     return () => window.clearTimeout(timer);
   }, [index, playbackMs, playing]);
 
-  return { index, scene, selectedPlace, setSelectedPlace, playing, setPlaying, playbackMs, setPlaybackMs, tab, changeTab, page, setPage, query, setQuery, contentVisible, setContentVisible, timelineVisible, setTimelineVisible, placesVisible, setPlacesVisible, textBudget, rail, body, go };
+  return { index, scene, selectedPlace, setSelectedPlace, playing, setPlaying, playbackMs, setPlaybackMs, tab, changeTab, query, setQuery, contentVisible, setContentVisible, timelineVisible, setTimelineVisible, placesVisible, setPlacesVisible, rail, go };
 };

@@ -1,0 +1,25 @@
+import assert from "node:assert/strict";
+import { readdirSync, readFileSync } from "node:fs";
+import vm from "node:vm";
+import ts from "typescript";
+
+const compiled = ts.transpileModule(readFileSync("src/lib/map-clusters.ts", "utf8"), { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } }).outputText;
+const clusterModule = { exports: {} };
+vm.runInNewContext(compiled, { module: clusterModule, exports: clusterModule.exports, Map, Math });
+const { clusterMapPoints } = clusterModule.exports;
+const points = [{ index: 0, x: 100, y: 100 }, { index: 1, x: 100, y: 100 }, { index: 2, x: 135, y: 100 }, { index: 3, x: 170, y: 100 }, { index: 4, x: 500, y: 500 }];
+const groups = clusterMapPoints(points, 40);
+assert.equal(clusterMapPoints([]).length, 0);
+assert.equal(groups.length, 2, "Coincident and connected nearby points must share a cluster");
+assert.equal(groups[0].id, "0-1-2-3");
+assert.equal(groups[0].x, 126.25);
+assert.equal(groups[0].y, 100);
+assert.equal(groups[1].id, "4");
+assert.equal(clusterMapPoints([...points].reverse(), 40).map((group) => group.id).sort().join(), groups.map((group) => group.id).sort().join(), "Membership must not depend on input order");
+const zoomed = clusterMapPoints(points.map((point) => ({ ...point, x: point.x * 3, y: point.y * 3 })), 40);
+assert.equal(zoomed.length, 4, "Zoom separates nearby points while coincident locations stay selectable together");
+assert.equal(zoomed.flatMap((group) => [...group.indices]).sort().join(), "0,1,2,3,4", "Clustering must never drop or duplicate locations");
+const walk = (directory) => readdirSync(directory, { withFileTypes: true }).flatMap((entry) => entry.isDirectory() ? walk(`${directory}/${entry.name}`) : [`${directory}/${entry.name}`]);
+const misplaced = walk("src").filter((path) => /\.(css|scss)$/.test(path) && !path.startsWith("src/styles/"));
+assert.deepEqual(misplaced, [], "All owned CSS/SCSS must live in src/styles");
+console.log("Map clustering and stylesheet location checks passed.");

@@ -1,0 +1,1066 @@
+{
+  "scenes": {
+    "van-lang": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "ethereal"
+    },
+    "au-lac": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "ethereal"
+    },
+    "nam-viet": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "dramatic"
+    },
+    "bac-thuoc-han": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "hai-ba-trung": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "majestic"
+    },
+    "bac-thuoc-2": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "dramatic"
+    },
+    "van-xuan": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "majestic"
+    },
+    "bac-thuoc-3": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "dramatic"
+    },
+    "khuc-duong": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "majestic"
+    },
+    "ngo": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "majestic"
+    },
+    "loan-12-su-quan": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "dramatic"
+    },
+    "dinh": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "majestic"
+    },
+    "tien-le": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "majestic"
+    },
+    "ly-thang-long": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "majestic"
+    },
+    "ly-nhu-nguyet": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "dramatic"
+    },
+    "tran-dung-nuoc": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "dramatic"
+    },
+    "tran-bach-dang": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "majestic"
+    },
+    "tran-van-hoa": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ho": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "dramatic"
+    },
+    "hau-tran": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "lam-son": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "majestic"
+    },
+    "le-so": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "majestic"
+    },
+    "mac": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "dramatic"
+    },
+    "le-trung-hung": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "trinh-nguyen": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "dramatic"
+    },
+    "tay-son-rach-gam": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "majestic"
+    },
+    "tay-son-quang-trung": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "majestic"
+    },
+    "nguyen-doc-lap": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "majestic"
+    },
+    "nguyen-xam-luoc": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "dramatic"
+    },
+    "phap-thuoc": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "cach-mang-1945": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "majestic"
+    },
+    "dien-bien-phu": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "majestic"
+    },
+    "chia-cat": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "dramatic"
+    },
+    "thong-nhat": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "majestic"
+    },
+    "bien-gioi": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "dramatic"
+    },
+    "doi-moi": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    }
+  },
+  "events": {
+    "hai-ba-trung": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "majestic"
+    },
+    "ba-trieu": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "dramatic"
+    },
+    "ly-bi": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "majestic"
+    },
+    "mai-thuc-loan": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "dramatic"
+    },
+    "phung-hung": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "dramatic"
+    },
+    "bai-say": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "dramatic"
+    },
+    "ba-dinh": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "dramatic"
+    },
+    "huong-khe": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "dramatic"
+    },
+    "yen-the": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "dramatic"
+    },
+    "yen-bai": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "dramatic"
+    }
+  },
+  "characters": {
+    "hung-vuong": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "ethereal"
+    },
+    "an-duong-vuong": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "ethereal"
+    },
+    "trieu-da": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "han-vu-de": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "trung-trac": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ma-vien": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ba-trieu": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "si-nhiep": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ly-nam-de": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "trieu-viet-vuong": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tran-ba-tien": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "mai-thuc-loan": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "phung-hung": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "cao-bien": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "khuc-thua-du": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "duong-dinh-nghe": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ngo-quyen": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "duong-tam-kha": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "dinh-bo-linh": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tran-lam": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ngo-xuong-xi": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "do-canh-thac": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "duong-van-nga": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "le-dai-hanh": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ly-thai-to": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "y-lan": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ly-thanh-tong": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ly-thuong-kiet": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ly-nhan-tong": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ly-chieu-hoang": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tran-thai-tong": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tran-thu-do": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tran-hung-dao": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tran-nhan-tong": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "thoat-hoan": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "o-ma-nhi": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "huyen-tran": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "chu-van-an": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "che-bong-nga": {
+      "country": "atlas",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ho-quy-ly": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ho-nguyen-trung": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "truong-phu": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "trung-quang-de": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "dang-dung": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "le-loi": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "nguyen-trai": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "vuong-thong": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "le-thanh-tong": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "nguyen-thi-anh": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ngo-si-lien": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "mac-dang-dung": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "nguyen-binh-khiem": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "nguyen-kim": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "le-trang-tong": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "trinh-tung": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "nguyen-hoang": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "nguyen-phuc-khoat": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "dao-duy-tu": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "alexandre-de-rhodes": {
+      "country": "atlas",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "nguyen-hue": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "nguyen-nhac": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "rama-i": {
+      "country": "atlas",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "bui-thi-xuan": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "nguyen-thiep": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ton-si-nghi": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "gia-long": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "minh-mang": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "nguyen-du": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "le-van-duyet": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tu-duc": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "truong-dinh": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "ton-that-thuyet": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "rigault-de-genouilly": {
+      "country": "atlas",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "ham-nghi": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "phan-boi-chau": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "phan-chau-trinh": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "paul-doumer": {
+      "country": "atlas",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "ho-chi-minh": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "bao-dai": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "nam-phuong": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "yuitsu-tsuchihashi": {
+      "country": "atlas",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "vo-nguyen-giap": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "christian-de-castries": {
+      "country": "atlas",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "nguyen-thi-binh": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "nguyen-van-thieu": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "william-westmoreland": {
+      "country": "atlas",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "van-tien-dung": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "duong-van-minh": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "ton-duc-thang": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "le-duan": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "pol-pot": {
+      "country": "atlas",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "dang-tieu-binh": {
+      "country": "china",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "nguyen-van-linh": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "vo-van-kiet": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "kieu-cong-han": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "kieu-thuan": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "nguyen-khoan": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "nguyen-thu-tiep": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "nguyen-sieu": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ly-khue": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "lu-duong": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "pham-bach-ho": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ngo-nhat-khanh": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "trung-nhi": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "phan-dinh-phung": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "cao-thang": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "hoang-hoa-tham": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "luong-van-nam": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "nguyen-thai-hoc": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "nguyen-thien-thuat": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "dinh-cong-trang": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "pham-banh": {
+      "country": "vietnam",
+      "era": "modern",
+      "mood": "reflective"
+    },
+    "tran-khanh-du": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "truong-van-ho": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "nguyen-khoai": {
+      "country": "vietnam",
+      "era": "monarchy",
+      "mood": "reflective"
+    }
+  },
+  "periods": {
+    "vietnam": {
+      "van-lang": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "ethereal"
+      },
+      "au-lac": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "ethereal"
+      },
+      "nam-viet": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "bac-thuoc-han": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "reflective"
+      },
+      "hai-ba-trung": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "bac-thuoc-2": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "van-xuan": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "bac-thuoc-3": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "khuc-duong": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "ngo": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "loan-12-su-quan": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "dinh": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "tien-le": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "ly-thang-long": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "ly-nhu-nguyet": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "tran-dung-nuoc": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "tran-bach-dang": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "tran-van-hoa": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "reflective"
+      },
+      "ho": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "hau-tran": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "reflective"
+      },
+      "lam-son": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "le-so": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "mac": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "le-trung-hung": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "reflective"
+      },
+      "trinh-nguyen": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "tay-son-rach-gam": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "tay-son-quang-trung": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "nguyen-doc-lap": {
+        "country": "vietnam",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "nguyen-xam-luoc": {
+        "country": "vietnam",
+        "era": "modern",
+        "mood": "dramatic"
+      },
+      "phap-thuoc": {
+        "country": "vietnam",
+        "era": "modern",
+        "mood": "reflective"
+      },
+      "cach-mang-1945": {
+        "country": "vietnam",
+        "era": "modern",
+        "mood": "majestic"
+      },
+      "dien-bien-phu": {
+        "country": "vietnam",
+        "era": "modern",
+        "mood": "majestic"
+      },
+      "chia-cat": {
+        "country": "vietnam",
+        "era": "modern",
+        "mood": "dramatic"
+      },
+      "thong-nhat": {
+        "country": "vietnam",
+        "era": "modern",
+        "mood": "majestic"
+      },
+      "bien-gioi": {
+        "country": "vietnam",
+        "era": "modern",
+        "mood": "dramatic"
+      },
+      "doi-moi": {
+        "country": "vietnam",
+        "era": "modern",
+        "mood": "reflective"
+      }
+    },
+    "england": {
+      "anglo-saxon": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "norman-plantagenet": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "tudor": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "stuart": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "modern-britain": {
+        "country": "england",
+        "era": "modern",
+        "mood": "reflective"
+      }
+    },
+    "china": {
+      "qin-han": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "three-kingdoms": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "sui-tang": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "song-yuan": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "ming-qing": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "reflective"
+      },
+      "modern-china": {
+        "country": "china",
+        "era": "modern",
+        "mood": "reflective"
+      },
+      "republic": {
+        "country": "china",
+        "era": "modern",
+        "mood": "dramatic"
+      },
+      "people-republic": {
+        "country": "china",
+        "era": "modern",
+        "mood": "majestic"
+      }
+    }
+  }
+}

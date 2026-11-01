@@ -7,7 +7,7 @@ import { historicalEvents } from "~/data/events";
 import { portraitCaption, portraitFor } from "~/data/portraits";
 import { vietnamOverview } from "~/data/vietnam-overview";
 import { vietnamData } from "~/data/vietnam";
-import "../characters.css";
+import "~/styles/characters.css";
 
 type Props = { params: Promise<{ name: string }> };
 export const generateStaticParams = () => characters.map((person) => ({ name: person.id }));

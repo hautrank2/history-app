@@ -40,7 +40,7 @@ export type OverviewSceneModel = {
 
 export const wikiUrl = (title: string) => `https://vi.wikipedia.org/wiki/${encodeURIComponent(title.replaceAll(" ", "_"))}`;
 
-const place = (name: string, at: [number, number], kind: OverviewPlaceModel["kind"], detail: string, options: Pick<OverviewPlaceModel, "subtitle" | "leader"> = {}): OverviewPlaceModel => ({ name, at, kind, detail, ...options });
+const place = (name: string, at: [number, number], kind: OverviewPlaceModel["kind"], detail: string, options: Pick<OverviewPlaceModel, "subtitle" | "leader" | "eventId"> = {}): OverviewPlaceModel => ({ name, at, kind, detail, ...options });
 const person = (id: string, role: string, side?: "opponent"): OverviewPersonModel => ({ ...getCharacter(id), role, side });
 const thangLong = place("Thăng Long", [105.84, 21.03], "capital", "Trung tâm chính trị ở đồng bằng sông Hồng; nay là Hà Nội.", { subtitle: "Thủ đô" });
 const hoaLu = place("Hoa Lư", [105.91, 20.28], "capital", "Kinh đô nhà Đinh và Tiền Lê, được bảo vệ bởi núi đá vôi.");
@@ -86,7 +86,7 @@ const scenes: OverviewSceneModel[] = [
     culture: { title: "Chữ Hán, kỹ thuật sắt và giao lưu", text: "Chữ Hán, thiết chế hành chính và tư tưởng từ phương bắc dần đi vào đời sống. Sự tiếp nhận diễn ra không đồng đều; tiếng nói, tập tục và cấu trúc làng bản địa vẫn tồn tại." },
     conflict: { title: "Chính quyền đô hộ Hán", text: "Thái thú Tô Định là đại diện chính quyền ở Giao Chỉ trước khởi nghĩa năm 40. Sử truyền mô tả sự cai trị hà khắc của ông như một nguyên nhân trực tiếp làm bùng nổ khởi nghĩa Hai Bà Trưng." },
     people: [person("trung-trac", "Thủ lĩnh bản địa, chuẩn bị khởi nghĩa")],
-    places: [place("Luy Lâu", [106.07, 21.04], "heritage", "Trung tâm hành chính và giao thương quan trọng ở Bắc Ninh."), place("Mê Linh", [105.73, 21.18], "heritage", "Quê hương và địa bàn khởi nghĩa Hai Bà Trưng.")], sources: ["Bắc thuộc lần thứ nhất", "Tô Định"],
+    places: [place("Luy Lâu", [106.07, 21.04], "heritage", "Trung tâm hành chính và giao thương quan trọng ở Bắc Ninh."), place("Mê Linh · Khởi nghĩa Hai Bà Trưng", [105.73, 21.18], "heritage", "Quê hương và địa bàn khởi nghĩa Hai Bà Trưng.", { eventId: "hai-ba-trung" })], sources: ["Bắc thuộc lần thứ nhất", "Tô Định"],
   },
   {
     id: "hai-ba-trung", era: "Trưng Nữ Vương", years: "40–43", year: 40,
@@ -95,7 +95,7 @@ const scenes: OverviewSceneModel[] = [
     culture: { title: "Ký ức về những nữ thủ lĩnh", text: "Hai Bà cùng các nữ tướng trở thành biểu tượng trong tín ngưỡng thờ anh hùng và lễ hội địa phương. Hệ thống đền thờ được xây dựng qua nhiều thời kỳ về sau, không phải đều xuất hiện ngay trong thế kỷ I." },
     conflict: { title: "Mã Viện tái lập ách cai trị Đông Hán", text: "Mã Viện dẫn quân tiến vào Giao Chỉ, đánh bại lực lượng Trưng Vương. Sau chiến tranh, chính quyền Hán củng cố bộ máy và tăng kiểm soát đối với các thủ lĩnh bản địa." },
     people: [person("trung-trac", "Trưng Trắc và Trưng Nhị, lãnh đạo khởi nghĩa"), person("ma-vien", "Tướng Đông Hán chỉ huy cuộc tái chinh phục", "opponent")],
-    places: [place("Mê Linh", [105.73, 21.18], "capital", "Trung tâm chính quyền Trưng Vương."), place("Hát Môn", [105.58, 21.15], "heritage", "Địa điểm gắn với cuộc khởi nghĩa, nay có đền thờ Hai Bà.")], sources: ["Khởi nghĩa Hai Bà Trưng", "Mã Viện"],
+    places: [place("Mê Linh · Khởi nghĩa Hai Bà Trưng", [105.73, 21.18], "capital", "Trung tâm chính quyền Trưng Vương.", { eventId: "hai-ba-trung" }), place("Hát Môn", [105.58, 21.15], "heritage", "Địa điểm gắn với cuộc khởi nghĩa, nay có đền thờ Hai Bà.")], sources: ["Khởi nghĩa Hai Bà Trưng", "Mã Viện"],
   },
   {
     id: "bac-thuoc-2", era: "Bắc thuộc II", years: "43–544", year: 248,
@@ -375,5 +375,9 @@ const scenes: OverviewSceneModel[] = [
 export const vietnamOverview: OverviewSceneModel[] = scenes.map((scene) => {
   const events = historicalEvents.filter((event) => event.sceneIds.includes(scene.id));
   const leaders = events.flatMap((event) => event.leaderIds).concat(scene.id === "loan-12-su-quan" ? warlords.map((base) => base.characterId) : []);
-  return { ...scene, people: [...scene.people, ...[...new Set(leaders)].filter((id) => !scene.people.some((person) => person.id === id)).map((id) => getCharacter(id))], places: [...scene.places, ...events.map((event): OverviewPlaceModel => ({ name: event.title, at: event.at, kind: "battle", subtitle: event.years, detail: `${event.summary} Kết quả: ${event.outcome}`, eventId: event.id, leader: getCharacter(event.leaderIds[0]) }))] };
+  const places = scene.places.map((place) => {
+    const event = events.find((event) => event.id === place.eventId);
+    return event ? { ...place, subtitle: event.years, detail: `${place.detail} ${event.summary} Kết quả: ${event.outcome}`, leader: getCharacter(event.leaderIds[0]) } : place;
+  });
+  return { ...scene, people: [...scene.people, ...[...new Set(leaders)].filter((id) => !scene.people.some((person) => person.id === id)).map((id) => getCharacter(id))], places: [...places, ...events.filter((event) => !places.some((place) => place.eventId === event.id)).map((event): OverviewPlaceModel => ({ name: event.title, at: event.at, kind: "battle", subtitle: event.years, detail: `${event.summary} Kết quả: ${event.outcome}`, eventId: event.id, leader: getCharacter(event.leaderIds[0]) }))] };
 });

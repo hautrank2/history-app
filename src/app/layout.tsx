@@ -1,9 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import { Be_Vietnam_Pro, Playfair_Display } from "next/font/google";
 import type { ReactNode } from "react";
+import { GameAudio } from "~/components/game-audio";
 
-import "./globals.css";
-import "./atlas.css";
+import "~/styles/globals.css";
+import "~/styles/atlas.css";
+import "~/styles/game-theme.css";
 
 // Cả hai font đều có bộ chữ tiếng Việt đầy đủ dấu
 const body = Be_Vietnam_Pro({
@@ -35,15 +37,15 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#0d1919",
+  themeColor: "#071222",
   colorScheme: "dark",
 };
 
 type RootLayoutProps = { children: ReactNode };
 
 const RootLayout = ({ children }: RootLayoutProps) => (
-  <html lang="vi" data-scroll-behavior="smooth" className={`${body.variable} ${heading.variable}`}>
-    <body className="antialiased">{children}</body>
+  <html lang="vi" data-theme="arena" data-scroll-behavior="smooth" className={`${body.variable} ${heading.variable}`}>
+    <body className="antialiased">{children}<GameAudio /></body>
   </html>
 );
 

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { characterHref, getCharacter } from "~/data/characters";
 import type { HistoricalEventModel } from "~/data/events";
-import "~/app/characters/characters.css";
+import "~/styles/characters.css";
 
 export const EventDetail = ({ event }: { event: HistoricalEventModel }) => <main className="character-page event-detail" data-event-id={event.id}>
   <nav className="character-breadcrumbs"><Link href={`/vietnam/overview#${event.sceneIds[0]}`}>← Về bản đồ thời kỳ</Link><Link href="/characters">Nhân vật</Link></nav>

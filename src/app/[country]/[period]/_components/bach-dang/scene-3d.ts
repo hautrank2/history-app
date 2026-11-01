@@ -56,11 +56,11 @@ export const createBattleScene = ({ host, pins }: CreateBattleSceneProps) => {
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, powerPreference: "low-power" });
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
   renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFShadowMap;
-  renderer.setClearColor("#142827"); renderer.outputColorSpace = THREE.SRGBColorSpace;
+  renderer.setClearColor("#0b1e35"); renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.05;
   renderer.domElement.setAttribute("aria-label", "Sa bàn Bạch Đằng 3D: địa hình, thuyền chiến, đội quân và bãi cọc");
   host.appendChild(renderer.domElement);
-  const scene = new THREE.Scene(); scene.fog = new THREE.FogExp2("#142827", .008);
+  const scene = new THREE.Scene(); scene.fog = new THREE.FogExp2("#0b1e35", .008);
   const camera = new THREE.PerspectiveCamera(38, 1, .1, 100);
   camera.position.set(18, 22, 25);
   const controls = new OrbitControls(camera, renderer.domElement);
@@ -68,25 +68,25 @@ export const createBattleScene = ({ host, pins }: CreateBattleSceneProps) => {
   controls.minPolarAngle = .35; controls.maxPolarAngle = 1.25; controls.minDistance = 17; controls.maxDistance = 110;
   controls.touches = { ONE: THREE.TOUCH.ROTATE, TWO: THREE.TOUCH.DOLLY_ROTATE };
   controls.update();
-  scene.add(new THREE.HemisphereLight("#d7e8d7", "#29332a", 2.7));
+  scene.add(new THREE.HemisphereLight("#d9eafa", "#1a2d45", 2.7));
   const sun = new THREE.DirectionalLight("#ffe0a0", 4); sun.position.set(-8, 19, 9); sun.castShadow = true;
   sun.shadow.mapSize.set(1024, 1024); sun.shadow.camera.left = -16; sun.shadow.camera.right = 16; sun.shadow.camera.top = 16; sun.shadow.camera.bottom = -16; sun.shadow.normalBias = .05; scene.add(sun);
-  const fill = new THREE.DirectionalLight("#73c5c0", 1.3); fill.position.set(10, 8, -10); scene.add(fill);
+  const fill = new THREE.DirectionalLight("#81cfff", 1.3); fill.position.set(10, 8, -10); scene.add(fill);
 
-  const base = new THREE.Mesh(new THREE.BoxGeometry(24.3, 1, 20.3), material("#2a3029", .2)); base.position.y = -.65; base.receiveShadow = true; scene.add(base);
-  const trim = new THREE.Mesh(new THREE.BoxGeometry(24.5, .08, 20.5), material("#9a8050", .6)); trim.position.y = -1.14; scene.add(trim);
-  const water = new THREE.Mesh(new THREE.PlaneGeometry(24, 20, 45, 45), new THREE.MeshStandardMaterial({ color: "#28665e", roughness: .25, metalness: .4 })); water.rotation.x = -Math.PI / 2; water.position.y = .03; water.receiveShadow = true; scene.add(water);
+  const base = new THREE.Mesh(new THREE.BoxGeometry(24.3, 1, 20.3), material("#13283e", .2)); base.position.y = -.65; base.receiveShadow = true; scene.add(base);
+  const trim = new THREE.Mesh(new THREE.BoxGeometry(24.5, .08, 20.5), material("#b99a60", .6)); trim.position.y = -1.14; scene.add(trim);
+  const water = new THREE.Mesh(new THREE.PlaneGeometry(24, 20, 45, 45), new THREE.MeshStandardMaterial({ color: "#175376", roughness: .25, metalness: .4 })); water.rotation.x = -Math.PI / 2; water.position.y = .03; water.receiveShadow = true; scene.add(water);
   const terrainCanvas = document.createElement("canvas"); terrainCanvas.width = 512; terrainCanvas.height = 512;
   const terrainContext = terrainCanvas.getContext("2d");
   if (terrainContext) {
-    terrainContext.fillStyle = "#829479"; terrainContext.fillRect(0, 0, 512, 512);
-    terrainContext.strokeStyle = "#d6d8ab26"; terrainContext.lineWidth = 1.2;
+    terrainContext.fillStyle = "#8a9da9"; terrainContext.fillRect(0, 0, 512, 512);
+    terrainContext.strokeStyle = "#c2dded26"; terrainContext.lineWidth = 1.2;
     for (let row = 0; row < 46; row++) {
       terrainContext.beginPath();
       for (let x = 0; x <= 512; x += 4) { const y = row * 14 + Math.sin(x * .015 + row * .2) * 22 + Math.sin(x * .032) * 7; if (x === 0) terrainContext.moveTo(x, y); else terrainContext.lineTo(x, y); }
       terrainContext.stroke();
     }
-    for (let i = 0; i < 2200; i++) { terrainContext.fillStyle = i % 2 ? "#263d2733" : "#c3c99f22"; terrainContext.fillRect((i * 79.31) % 512, (i * 117.79) % 512, 2, 2); }
+    for (let i = 0; i < 2200; i++) { terrainContext.fillStyle = i % 2 ? "#19365033" : "#c4dcf022"; terrainContext.fillRect((i * 79.31) % 512, (i * 117.79) % 512, 2, 2); }
   }
   const terrainTexture = new THREE.CanvasTexture(terrainCanvas); terrainTexture.colorSpace = THREE.SRGBColorSpace; terrainTexture.wrapS = THREE.RepeatWrapping; terrainTexture.wrapT = THREE.RepeatWrapping; terrainTexture.repeat.set(.09, .09);
   const land = (points: number[][], color: string) => {
@@ -94,9 +94,9 @@ export const createBattleScene = ({ host, pins }: CreateBattleSceneProps) => {
     const landMaterial = material(color); landMaterial.map = terrainTexture;
     const mesh = new THREE.Mesh(new THREE.ExtrudeGeometry(shape, { depth: .35, bevelEnabled: true, bevelSegments: 2, bevelSize: .15, bevelThickness: .12, steps: 1 }), landMaterial); mesh.rotation.x = -Math.PI / 2; mesh.receiveShadow = true; scene.add(mesh);
   };
-  land([[-12, -10], [-3, -10], [-4, -7], [-2, -4], [-1, 0], [1, 3], [0, 5], [3, 10], [-12, 10]], "#3d5943");
-  land([[6, -10], [12, -10], [12, 10], [7, 10], [3, 5], [4, 2], [2, -1], [2, -4], [4, -7]], "#485f43");
-  const rockMaterial = material("#6c745a");
+  land([[-12, -10], [-3, -10], [-4, -7], [-2, -4], [-1, 0], [1, 3], [0, 5], [3, 10], [-12, 10]], "#3b5769");
+  land([[6, -10], [12, -10], [12, 10], [7, 10], [3, 5], [4, 2], [2, -1], [2, -4], [4, -7]], "#426175");
+  const rockMaterial = material("#667f91");
   for (let i = 0; i < 22; i++) {
     const height = 1.1 + (Math.sin(i * 8.3) + 1) * 1.4;
     const rockGeometry = new THREE.CylinderGeometry(.35 + (i % 2) * .15, .75 + (i % 3) * .2, height, 6, 3);
@@ -106,7 +106,7 @@ export const createBattleScene = ({ host, pins }: CreateBattleSceneProps) => {
     const mountain = new THREE.Mesh(rockGeometry, rockMaterial);
     mountain.position.set(-10 + (i % 4) * 1.8, height / 2 + .3, -7.5 + Math.floor(i / 4) * 2.8); mountain.rotation.y = i * .65; mountain.castShadow = true; mountain.receiveShadow = true; scene.add(mountain);
   }
-  const foliage = material("#254834");
+  const foliage = material("#25465d");
   for (let i = 0; i < 42; i++) {
     const x = i < 24 ? -11 + (i % 5) * 1.4 : 7 + (i % 4) * 1.2;
     const z = -8 + ((i * 3.71) % 16);
@@ -115,7 +115,7 @@ export const createBattleScene = ({ host, pins }: CreateBattleSceneProps) => {
   // A walled citadel and northern gateway orient the campaign at a glance.
   const citadel = new THREE.Group();
   const masonry = material("#a29370", .15, .75);
-  const plinth = new THREE.Mesh(new THREE.BoxGeometry(2.5, .25, 2.2), material("#6e7255")); plinth.position.y = .35; citadel.add(plinth);
+  const plinth = new THREE.Mesh(new THREE.BoxGeometry(2.5, .25, 2.2), material("#536a7d")); plinth.position.y = .35; citadel.add(plinth);
   for (const side of [-1, 1]) {
     const wall = new THREE.Mesh(new THREE.BoxGeometry(2.3, .65, .16), masonry); wall.position.set(0, .78, side); wall.castShadow = true; citadel.add(wall);
     const crossWall = new THREE.Mesh(new THREE.BoxGeometry(.16, .65, 2), masonry); crossWall.position.set(side * 1.1, .78, 0); crossWall.castShadow = true; citadel.add(crossWall);
@@ -149,7 +149,7 @@ export const createBattleScene = ({ host, pins }: CreateBattleSceneProps) => {
   const routePoints = [new THREE.Vector3(-2.7, .2, -9), new THREE.Vector3(-1.6, .2, -5), new THREE.Vector3(.3, .2, -1), new THREE.Vector3(1.4, .2, 2), new THREE.Vector3(2.5, .2, 4.5)];
   const riverPath = new THREE.CatmullRomCurve3(routePoints);
   const route = new THREE.Line(new THREE.BufferGeometry().setFromPoints(riverPath.getPoints(80)), new THREE.LineDashedMaterial({ color: "#df8d6e", dashSize: .35, gapSize: .25, transparent: true, opacity: .65 })); route.computeLineDistances(); routes.add(route);
-  const waveMaterial = new THREE.LineBasicMaterial({ color: "#91c4ac", transparent: true, opacity: .15 });
+  const waveMaterial = new THREE.LineBasicMaterial({ color: "#93d6f4", transparent: true, opacity: .15 });
   for (let i = 0; i < 50; i++) {
     const t = i / 50; const center = riverPath.getPoint(t); const points = Array.from({ length: 8 }, (_, j) => new THREE.Vector3(center.x - .5 + j * .2, .08, center.z + Math.sin(j * .8 + i) * .06));
     scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(points), waveMaterial));

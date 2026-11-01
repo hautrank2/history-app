@@ -1,0 +1,213 @@
+/* Arena-inspired UI. Existing layout selectors stay stable across themes. */
+html[data-theme="arena"] {
+  --background: #071222;
+  --foreground: #e8eff9;
+  --card: #10243c;
+  --card-foreground: #e8eff9;
+  --popover: #0d213b;
+  --popover-foreground: #e8eff9;
+  --muted: #122b46;
+  --muted-foreground: #a6b8d0;
+  --border: #826e4b;
+  --primary: #e2c181;
+  --primary-foreground: #142238;
+  --secondary: #142d4b;
+  --secondary-foreground: #dceafa;
+  --accent: #1b4265;
+  --accent-foreground: #d5f4ff;
+  --input: #385776;
+  --ring: #7ddcff;
+  --home: #edca80;
+  --enemy: #f48c85;
+  --atlas-base: #071222;
+  --atlas-gold: #e2c181;
+  --atlas-paper: #e8eff9;
+  --atlas-muted: #a6b8d0;
+  --atlas-line: #8baacc30;
+  --arena-cyan: #7ddcff;
+  --arena-gold-line: #c7a86b80;
+  --arena-panel: linear-gradient(135deg, #18314bec, #0b192ef5 55%, #0d2039f5);
+  --arena-button: linear-gradient(180deg, #244565, #10263e);
+  --arena-selected: linear-gradient(135deg, #a5783c, #edcf91 50%, #b68d50);
+  --arena-frame-shadow: 0 16px 44px #01071080, inset 0 0 0 1px #e6ca8d0d, inset 0 1px #fff0cc20;
+  background: var(--background);
+  scrollbar-color: #bda06a #0b1d32;
+}
+
+html[data-theme="arena"] body {
+  background: radial-gradient(ellipse at 70% 0, #1c4266 0, transparent 48%), radial-gradient(ellipse at 0 60%, #112a46 0, transparent 60%), var(--background);
+  background-attachment: fixed;
+}
+html[data-theme="arena"] ::selection { background: #379dc566; color: #fff2d2; }
+html[data-theme="arena"] ::-webkit-scrollbar-track { background: #0b1d32; }
+html[data-theme="arena"] ::-webkit-scrollbar-thumb { background: linear-gradient(#7f6847, #ecd29b); border-color: #0b1d32; border-radius: 2px; }
+html[data-theme="arena"] :is(a, button, input, select, [tabindex]):focus-visible { outline: 2px solid var(--arena-cyan); outline-offset: 4px; }
+
+/* Lobby, country selection and campaign cards. */
+html[data-theme="arena"] .atlas-page { background: radial-gradient(ellipse at 80% 0, #1b4264a0, transparent 55%), linear-gradient(135deg, #0a1b30, #071222 65%); }
+html[data-theme="arena"] :is(.atlas-header, .bd-header) { border-bottom: 1px solid var(--arena-gold-line); background: linear-gradient(180deg, #142d48ed, #08172bec); box-shadow: 0 4px 30px #0006, inset 0 -2px #07101d; }
+html[data-theme="arena"] :is(.atlas-logo > span, .bd-brand-symbol) { background: linear-gradient(135deg, #234664, #09182a); color: #ffe2a2; border-color: #d8b977; text-shadow: 0 0 15px #edca8050; box-shadow: inset 0 0 0 3px #0b1d32, 0 0 15px #d5b57020; }
+html[data-theme="arena"] :is(.atlas-eyebrow, .character-eyebrow) { color: var(--arena-cyan); letter-spacing: .2em; }
+html[data-theme="arena"] :is(.atlas-intro h1, .atlas-country-hero h1, .character-page h1) { font-weight: 600; color: #f0e5cf; text-shadow: 0 3px 20px #0008; }
+html[data-theme="arena"] :is(.atlas-intro h1 em, .atlas-country-copy > span) { color: var(--atlas-gold); }
+html[data-theme="arena"] .atlas-intro::after { content: ""; display: block; width: 160px; height: 1px; margin-top: 32px; background: linear-gradient(90deg, var(--arena-cyan), #c5a36980, transparent); box-shadow: 0 0 10px #7ddcff55; }
+html[data-theme="arena"] .atlas-country { border: 1px solid var(--arena-gold-line); border-radius: 3px; box-shadow: inset 0 0 0 4px #08172b, 0 12px 40px #0005; }
+html[data-theme="arena"] .atlas-country::after { content: ""; position: absolute; inset: 7px; z-index: -1; border: 1px solid #e2c18135; pointer-events: none; }
+html[data-theme="arena"] .atlas-country:hover { border-color: #f8dfa4; box-shadow: 0 0 28px #6fcaff25, inset 0 0 0 4px #112b44; }
+html[data-theme="arena"] .atlas-country-shade { background: linear-gradient(0deg, #061123 0%, #07162bf0 26%, #0b1d3010 75%, #07122255); }
+html[data-theme="arena"] .atlas-period-hero-shade { background: linear-gradient(90deg, #071222f0, #0c203980 55%, #0b1d3030), linear-gradient(0deg, #071222, transparent 65%); }
+html[data-theme="arena"] .atlas-country-top { color: #d0e3f6; text-shadow: 0 2px 4px #000; }
+html[data-theme="arena"] .atlas-country-copy > p { color: #c8d5e6; }
+html[data-theme="arena"] .atlas-country-cta { color: #ffe6b1; border-top-color: #d8b97765; }
+html[data-theme="arena"] :is(.atlas-featured-period, .atlas-coming-banner) { background: var(--arena-panel); border-color: var(--arena-gold-line); box-shadow: var(--arena-frame-shadow); }
+html[data-theme="arena"] .atlas-feature { background: linear-gradient(100deg, #122e49, #09172b); border-block-color: var(--arena-gold-line); }
+html[data-theme="arena"] :is(.atlas-feature > a, .atlas-header-link, .atlas-outline-link) { background: var(--arena-button); border: 1px solid var(--arena-gold-line); border-radius: 2px; padding: 12px 20px; color: #f9dda4; box-shadow: inset 0 1px #e5f2ff18; transition: background .18s, box-shadow .18s; }
+html[data-theme="arena"] :is(.atlas-feature > a, .atlas-header-link, .atlas-outline-link):hover { background: #244b6a; box-shadow: 0 0 20px #7ddcff20; }
+html[data-theme="arena"] .atlas-period-grid > li { border-color: var(--atlas-line); }
+html[data-theme="arena"] .atlas-footer { background: #061020; color: var(--atlas-muted); border-top: 1px solid var(--atlas-line); }
+
+/* Map HUD. Specificity keeps the theme independent from route CSS load order. */
+html[data-theme="arena"] .vo-page { --vo-territory: #967b42; --vo-map-water: #08182b; --vo-map-land: #1c354b; --vo-coral: #f8a08c; --vo-secondary: #72c9df; }
+html[data-theme="arena"] .vo-glass { background: var(--arena-panel); border-color: var(--arena-gold-line); border-radius: 2px; box-shadow: var(--arena-frame-shadow); backdrop-filter: blur(14px); }
+html[data-theme="arena"] :is(.vo-story-panel, .vo-timeline, .vo-place-detail) { border-top: 2px solid #d7b477; }
+html[data-theme="arena"] :is(.vo-story-panel, .vo-place-detail)::before { content: ""; position: absolute; width: 34px; height: 3px; top: 0; right: 12px; background: #95e8ff; box-shadow: 0 0 12px #7ddcff99; pointer-events: none; }
+html[data-theme="arena"] .vo-scene-copy h2 { color: #f3e5c7; font-weight: 600; text-shadow: 0 2px 12px #0006; }
+html[data-theme="arena"] .vo-scene-years { color: #9bdef5; font-style: normal; letter-spacing: .04em; }
+html[data-theme="arena"] .vo-panel-heading { color: #d8bc87; }
+html[data-theme="arena"] .vo-panel-heading i { background: #89e4ff; box-shadow: 0 0 10px #7ddcff80; transform: rotate(45deg); border-radius: 0; }
+html[data-theme="arena"] .vo-content-label { color: #83d8f3; }
+html[data-theme="arena"] :is(.vo-narrative > p, .vo-place-detail > p, .vo-person p) { color: #c6d5e8; }
+html[data-theme="arena"] .vo-facts { background: #06142750; border-color: var(--atlas-line); }
+html[data-theme="arena"] .vo-tabs { gap: 2px; border-bottom-color: #b9a16c66; }
+html[data-theme="arena"] .vo-tabs button { color: #9fb4cd; border-radius: 2px 2px 0 0; }
+html[data-theme="arena"] .vo-tabs button[aria-selected="true"] { background: linear-gradient(0deg, #23769b55, #193b5610); border-bottom-color: #89e4ff; color: #d7f5ff; text-shadow: 0 0 10px #7ddcff44; }
+html[data-theme="arena"] .vo-tabs button[aria-selected="true"] > span { color: #94e7ff; }
+html[data-theme="arena"] :is(.vo-visibility > button, .vo-map-focus, .vo-back, .vo-character-nav) { border-radius: 2px; background: var(--arena-button); }
+html[data-theme="arena"] .vo-visibility > button[aria-expanded="true"] { background: linear-gradient(180deg, #2d536b, #15334c); border-color: #e0c181bb; color: #f7dfaa; box-shadow: inset 0 -2px #d8b57455; }
+html[data-theme="arena"] :is(.vo-reading-footer button, .vo-map-tools button, .vo-place-list > button) { border: 1px solid #7d9bb644; background: var(--arena-button); border-radius: 2px; color: #f4dca5; }
+html[data-theme="arena"] :is(.vo-reading-footer button, .vo-map-tools button, .vo-place-list > button):hover:enabled { border-color: #91d9ed; background: #214968; box-shadow: 0 0 12px #7ddcff22; }
+html[data-theme="arena"] .vo-reading-footer { border-top-color: #b99b6255; }
+html[data-theme="arena"] .vo-map-tools { gap: 3px; padding: 5px; }
+html[data-theme="arena"] :is(.vo-country-stats dt, .vo-map-badge > span) { color: #90c9e4; }
+html[data-theme="arena"] .vo-country-stats dd > :is(a, span) { color: #f3d797; text-shadow: 0 0 15px #d8b57418; }
+html[data-theme="arena"] .vo-country-stats { border-left: 3px solid #d8b574; }
+html[data-theme="arena"] .vo-islands-inset { border-color: #668daf66; border-left: 2px solid #84d4f0; }
+html[data-theme="arena"] .vo-islands-inset > span { color: #f3d797; }
+html[data-theme="arena"] .vo-countries path { fill: #203b51; stroke: #6689a155; }
+html[data-theme="arena"] .vo-countries path[data-country="China"] { fill: #1e3449; }
+html[data-theme="arena"] .vo-countries path[data-country="Cambodia"] { fill: #233e53; }
+html[data-theme="arena"] .vo-countries path[data-country="Vietnam"] { fill: #2d5263; }
+html[data-theme="arena"] .vo-countries.has-borders path { stroke: #8eb8cc88; }
+html[data-theme="arena"] .vo-grid-line { stroke: #4c9dcd1c; }
+html[data-theme="arena"] .vo-territory { fill: var(--vo-territory); stroke: #edce8b; filter: drop-shadow(0 0 14px #dfc17a35); }
+html[data-theme="arena"] .vo-rivers { stroke: #77d3f399; }
+html[data-theme="arena"] .vo-country-labels text { fill: #b1c7ddaa; }
+html[data-theme="arena"] .vo-country-labels .vo-sea-label { fill: #76afd488; }
+html[data-theme="arena"] .vo-map-pin { --pin-color: #e2c181; background: linear-gradient(105deg, #14324bed, #0b1c32f5); border: 1px solid #7aa6cc50; border-radius: 24px 2px 2px 24px; box-shadow: 0 4px 15px #0007, inset 0 1px #ddedff0d; }
+html[data-theme="arena"] :is(.vo-map-pin.is-camp, .vo-map-pin.is-heritage) { --pin-color: #8bdbef; }
+html[data-theme="arena"] .vo-map-pin.is-battle { --pin-color: #f2a18d; }
+html[data-theme="arena"] .vo-map-pin:hover { background: #1f4665; border-color: #a3e6ff; }
+html[data-theme="arena"] .vo-map-pin.is-selected { border-color: #e8c886; box-shadow: 0 0 18px #d5b57030; }
+html[data-theme="arena"] :is(.vo-pin-symbol, .vo-pin-rank, .vo-pin-ai) { background: #0c2139; }
+html[data-theme="arena"] .vo-timeline-top { background: linear-gradient(90deg, #16334f80, #0b1c3233); border-color: #af966455; }
+html[data-theme="arena"] .vo-era-strip > button[aria-current="step"] { background: radial-gradient(ellipse at center, #4b86a530, transparent 75%); }
+html[data-theme="arena"] .vo-era-strip > button[aria-current="step"] strong { color: #ffe5ad; text-shadow: 0 0 14px #dfbb6844; }
+html[data-theme="arena"] .vo-era-node b { background: #0e233c; border-color: #8daec9; }
+html[data-theme="arena"] .vo-era-strip > button[aria-current="step"] .vo-era-node b { background: var(--arena-selected); color: #15263b; border-color: #ffe8b6; box-shadow: 0 0 16px #e2c18155; }
+html[data-theme="arena"] .vo-timeline-progress > span { background: linear-gradient(90deg, #79cde9, #e8cb87); }
+html[data-theme="arena"] :is(.vo-select-content, .vo-stat-tooltip) { background: #0c2038; border-color: #be9e66; color: #e0eafb; }
+html[data-theme="arena"] .vo-search input { color: #e1effa; }
+html[data-theme="arena"] :is(.vo-person-image, .character-portrait img) { border: 1px solid #bc9a5b88; border-radius: 2px; box-shadow: 0 0 0 4px #08192d, 0 0 0 5px #6385a52b; }
+
+/* Battle controls and character codex use the same HUD materials. */
+html[data-theme="arena"] .bd-experience { --bd-gold: #e2c181; --bd-text: #e8eff9; --bd-muted: #a6b8d0; background: #071222; }
+html[data-theme="arena"] :is(.bd-map-panel, .bd-chapters, .bd-commander-tooltip) { background: var(--arena-panel); border: 1px solid var(--arena-gold-line); border-radius: 2px; box-shadow: var(--arena-frame-shadow); }
+html[data-theme="arena"] .bd-map-panel { padding-inline: 14px; }
+html[data-theme="arena"] :is(.bd-map-info, .bd-script-heading) { background: #102942; border-color: #6486a250; }
+html[data-theme="arena"] :is(.bd-map-top, .bd-chapter-meta) { color: #a0d8ef; }
+html[data-theme="arena"] .bd-chapter h3 { color: #f3e3c0; font-weight: 600; }
+html[data-theme="arena"] .bd-chapter > p { color: #c6d5e8; }
+html[data-theme="arena"] :is(.bd-3d-stage, .bd-3d-canvas, .bd-battle-map) { background: #0b1e35; border-color: #7493ae55; }
+html[data-theme="arena"] :is(.bd-3d-place, .bd-pin-name) { background: #0d2340f5; border-color: #d2b27388; }
+html[data-theme="arena"] :is(.bd-pin-portrait, .bd-3d-commander .bd-pin-portrait) { background: #102b47; border-color: #e4c587; }
+html[data-theme="arena"] :is(.bd-playback-buttons button, .bd-map-mode button, .bd-3d-tools button) { background: var(--arena-button); border: 1px solid #b79c6666; color: #e6d4ae; border-radius: 2px; }
+html[data-theme="arena"] :is(.bd-playback-buttons .bd-play-button, .bd-map-mode button[aria-pressed="true"]) { background: var(--arena-selected); color: #142238; border-color: #f5dba5; box-shadow: inset 0 1px #fff0cb, 0 0 15px #d5b57018; }
+html[data-theme="arena"] .bd-playback-buttons button:hover:enabled { filter: brightness(1.12); }
+html[data-theme="arena"] .bd-chapter-dots button.is-active { color: #a3e6ff; border-color: #83d9f3; background: linear-gradient(0deg, #29729933, transparent); }
+html[data-theme="arena"] .bd-tide { background: #15395455; border-left-color: #7ddcff; }
+html[data-theme="arena"] .bd-footer { background: #061020; border-color: #7396b533; }
+html[data-theme="arena"] .character-page h2 { color: #f1dba9; }
+html[data-theme="arena"] :is(.character-directory-card, .character-scene) { background: var(--arena-panel); border: 1px solid var(--arena-gold-line); border-radius: 2px; padding: 24px; margin-bottom: 16px; box-shadow: var(--arena-frame-shadow); }
+html[data-theme="arena"] .character-directory-card { transition: border-color .2s, box-shadow .2s, transform .2s; }
+html[data-theme="arena"] .character-directory-card:hover { border-color: #9fddf4; transform: translateY(-3px); box-shadow: 0 0 25px #7ddcff18; text-decoration: none; }
+html[data-theme="arena"] .character-directory-card > span { color: #8cdef7; }
+html[data-theme="arena"] .character-facts { border-left: 2px solid #e2c181; padding: 16px 20px; background: #112c4580; }
+html[data-theme="arena"] .character-breadcrumbs { border-color: var(--arena-gold-line); }
+
+/* Native cursors retain precise hotspots and avoid a JavaScript cursor overlay. */
+@media (hover: hover) and (pointer: fine) {
+  html[data-theme="arena"], html[data-theme="arena"] body { cursor: url("/cursors/arena-default.svg") 3 2, auto; }
+  html[data-theme="arena"] :is(a, button, summary, select, label[for], [role="button"], [role="tab"], [role="option"], [role="slider"], [role="combobox"]) { cursor: url("/cursors/arena-pointer.svg") 4 2, pointer; }
+  html[data-theme="arena"] :is(input:not([type="range"]), textarea, [contenteditable="true"]) { cursor: url("/cursors/arena-text.svg") 16 16, text; }
+  html[data-theme="arena"] :is(.vo-map, .maplibregl-canvas, .bd-3d-canvas canvas, .image-preview-photo) { cursor: url("/cursors/arena-grab.svg") 16 16, grab; }
+  html[data-theme="arena"] :is(.vo-map.is-dragging, .maplibregl-canvas:active, .bd-3d-canvas canvas:active, .image-preview-photo:active) { cursor: url("/cursors/arena-grabbing.svg") 16 16, grabbing; }
+  html[data-theme="arena"] :is(button:disabled, [aria-disabled="true"]) { cursor: not-allowed; }
+  html[data-theme="arena"] input[type="range"] { cursor: url("/cursors/arena-pointer.svg") 4 2, ew-resize; }
+}
+
+@media (max-width: 760px) {
+  html[data-theme="arena"] .atlas-header-link { padding: 8px 10px; }
+  html[data-theme="arena"] .bd-map-panel { padding-inline: 8px; }
+  html[data-theme="arena"] .vo-glass { backdrop-filter: none; background: linear-gradient(130deg, #152c46fa, #0a192dfa); }
+  html[data-theme="arena"] :is(.character-directory-card, .character-scene) { padding: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html[data-theme="arena"] *, html[data-theme="arena"] *::before, html[data-theme="arena"] *::after { animation: none !important; scroll-behavior: auto !important; transition: none !important; }
+}
+
+/* The audio dock remains separate from map gestures and content scrolling. */
+.game-audio { position: fixed; right: 20px; top: 20px; z-index: 45; color: var(--atlas-gold); font-family: var(--font-body), sans-serif; }
+ .game-audio-trigger { position: relative; display: grid; place-items: center; width: 42px; height: 42px; background: var(--arena-panel); border: 1px solid var(--arena-gold-line); color: var(--atlas-gold); border-radius: 2px; box-shadow: var(--arena-frame-shadow); transition: background .18s, border-color .18s; }
+.game-audio-trigger:hover, .game-audio-trigger[aria-expanded="true"] { background: #21415e; border-color: #a1deef; color: #d2f4ff; }
+.game-audio-indicator { position: absolute; width: 4px; height: 4px; right: 5px; bottom: 5px; background: #85d8ed; border-radius: 50%; }
+.game-audio[data-enabled="false"] .game-audio-indicator { background: #7689a1; }
+.game-audio-panel { position: absolute; top: 52px; right: 0; width: 250px; padding: 18px; background: #0d213bf7; border: 1px solid #c7a86b99; box-shadow: 0 12px 32px #0008; border-top: 2px solid #d8b779; }
+.game-audio-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 10px; letter-spacing: .1em; }
+.game-audio-heading span { color: var(--arena-cyan); font-size: 11px; letter-spacing: 0; }
+.game-audio-volume { display: grid; gap: 12px; margin: 18px 0 12px; color: #c6d5e8; font-size: 12px; }
+.game-audio-volume input { width: 100%; accent-color: #e2c181; }
+.game-audio-panel p { color: #9db5d0; font-size: 10px; line-height: 1.7; }
+.game-audio-preview { display: block; width: 100%; min-height: 36px; margin-top: 14px; color: #f5ddb0; background: var(--arena-button); border: 1px solid #b99b6366; font-size: 11px; }
+.game-audio-preview:disabled { opacity: .4; }
+html[data-theme="arena"] .vo-visibility { right: 78px; }
+html[data-theme="arena"] :is(.atlas-header, .bd-header) { padding-right: 82px; }
+
+@media (hover: hover) and (pointer: fine) {
+ html[data-theme="arena"] { --arena-preview-cursor: url("/cursors/arena-pointer.svg") 4 2, zoom-in; }
+}
+@media (max-width: 760px) {
+ .game-audio { top: 10px; right: 12px; }
+ .game-audio-trigger { width: 34px; height: 34px; }
+ .game-audio-panel { top: 44px; max-width: calc(100vw - 24px); }
+ html[data-theme="arena"] .vo-visibility { right: 12px; }
+ html[data-theme="arena"] :is(.atlas-header, .bd-header) { padding-right: 60px; }
+}
+.game-audio-panel { width: 290px; max-height: min(620px, 75dvh); overflow-y: auto; overscroll-behavior: contain; }
+.game-audio-effects { margin-top: 20px; border: 0; padding: 0; }
+.game-audio-effects legend { color: #93d8f4; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 8px; }
+.game-audio-effects > label, .game-audio-music-toggle { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 36px; font-size: 12px; color: #d1dfef; }
+.game-audio-panel input[type="checkbox"] { accent-color: #e2c181; width: 16px; height: 16px; }
+.game-audio-volume > span { display: flex; justify-content: space-between; gap: 12px; }
+.game-audio-volume output { color: #e2c181; font-size: 11px; }
+.game-audio-music { border-top: 1px solid #89a9c333; margin-top: 18px; padding-top: 12px; }
+.game-audio-music-toggle { color: #f2d69d; font-weight: 600; }
+.game-audio-panel .game-audio-track { border-left: 2px solid #75d4f0; padding-left: 10px; margin-top: 7px; }
+.game-audio-track strong { display: block; font-size: 12px; color: #c7eaff; font-weight: 500; }
+.game-audio-track span { display: block; font-size: 10px; color: #9db6ce; margin-top: 3px; }
+.game-audio-panel .game-audio-saved { margin-top: 12px; font-size: 9px; color: #a5b9d0; }
+@media (hover: hover) and (pointer: fine) {
+ html[data-theme="arena"] .game-audio-panel label { cursor: url("/cursors/arena-pointer.svg") 4 2, pointer; }
+ html[data-theme="arena"] .game-audio-panel input[type="checkbox"] { cursor: url("/cursors/arena-pointer.svg") 4 2, pointer; }
+}
+
+.game-audio-master { display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:42px;margin-top:14px;padding-bottom:10px;border-bottom:1px solid #89a9c333;color:#e7d5ac;font-size:12px; }

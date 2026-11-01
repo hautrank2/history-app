@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { characters } from "~/data/characters";
-import "./characters.css";
+import "~/styles/characters.css";
 
 export const metadata = { title: "Nhân vật lịch sử | History Atlas" };
 const CharactersPage = () => <main className="character-page character-directory">

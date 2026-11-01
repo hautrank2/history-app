@@ -8,17 +8,17 @@ export const BattleMap = ({ stage, selected, onSelect }: BattleMapProps) => (
     <defs>
       <pattern id="map-grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#77917d" strokeOpacity=".09" /></pattern>
       <pattern id="water-lines" width="18" height="16" patternUnits="userSpaceOnUse"><path d="M2 8h8" stroke="#7ca7a5" strokeOpacity=".13" /></pattern>
-      <linearGradient id="river-depth" x2="1" y2="1"><stop stopColor="#245252" /><stop offset="1" stopColor="#102f35" /></linearGradient>
+      <linearGradient id="river-depth" x2="1" y2="1"><stop stopColor="#1a5174" /><stop offset="1" stopColor="#0d2948" /></linearGradient>
       <radialGradient id="map-glow"><stop stopColor="#b5a16c" stopOpacity=".16" /><stop offset="1" stopColor="#b5a16c" stopOpacity="0" /></radialGradient>
       <marker id="arrow-red" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0 0L6 3L0 6" fill="none" stroke="#df8068" /></marker>
       <marker id="arrow-gold" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0 0L6 3L0 6" fill="none" stroke="#d6bc80" /></marker>
-      <g id="mountain"><path d="M-23 15L-14-8L-7-3L2-26L10-16L15-2L26 15Z" fill="#273d35" stroke="#7f8a65" strokeOpacity=".35" /><path d="M2-26L1 3L10 15M-14-8L-11 9" fill="none" stroke="#8b9474" strokeOpacity=".3" /></g>
+      <g id="mountain"><path d="M-23 15L-14-8L-7-3L2-26L10-16L15-2L26 15Z" fill="#203e56" stroke="#7098b6" strokeOpacity=".35" /><path d="M2-26L1 3L10 15M-14-8L-11 9" fill="none" stroke="#89abc3" strokeOpacity=".3" /></g>
       <g id="ship"><path d="M-12 5Q0 16 12 5Z" fill="currentColor" /><path d="M0 5V-17L9-1H2M-3-12L-10 1H-3Z" fill="currentColor" opacity=".8" /></g>
     </defs>
-    <rect width="600" height="520" fill="#192c29" /><rect width="600" height="520" fill="url(#map-grid)" />
-    <path d="M210-30C200 40 235 80 268 125S330 185 325 230S287 285 325 330S368 410 405 450L470 550H610V-30Z" fill="url(#river-depth)" stroke="#789c8a" strokeOpacity=".35" />
+    <rect width="600" height="520" fill="#122a41" /><rect width="600" height="520" fill="url(#map-grid)" />
+    <path d="M210-30C200 40 235 80 268 125S330 185 325 230S287 285 325 330S368 410 405 450L470 550H610V-30Z" fill="url(#river-depth)" stroke="#7db8d9" strokeOpacity=".35" />
     <path d="M210-30C200 40 235 80 268 125S330 185 325 230S287 285 325 330S368 410 405 450L470 550H610V-30Z" fill="url(#water-lines)" />
-    <path d="M610 180Q470 200 350 233M610 330Q470 280 338 290M395 520Q300 410 325 330" fill="none" stroke="#254b49" strokeWidth="29" /><path d="M610 180Q470 200 350 233M610 330Q470 280 338 290" fill="none" stroke="#7c9a83" strokeOpacity=".2" />
+    <path d="M610 180Q470 200 350 233M610 330Q470 280 338 290M395 520Q300 410 325 330" fill="none" stroke="#194364" strokeWidth="29" /><path d="M610 180Q470 200 350 233M610 330Q470 280 338 290" fill="none" stroke="#7c9a83" strokeOpacity=".2" />
     <path d="M45 82Q180 25 275 76T560 74" fill="none" stroke="#d4b477" strokeOpacity=".35" strokeDasharray="4 6" />
     <g className={`bd-campaign-route ${stage >= 1 ? "visible" : ""}`}><path d="M350 52L130 62L95 115M105 145Q135 160 178 116" fill="none" stroke="#df8068" strokeWidth="2" strokeDasharray="6 7" markerEnd="url(#arrow-red)" /></g>
     <g transform="translate(82 135)" fill="#d4b477" stroke="#d4b477"><path d="M-14 6V-10h5v5h5v-5h8v5h5v-5h5V6Z" fill="#5b593b"/><path d="M-3 6V0a3 3 0 016 0v6" fill="#142827"/></g>

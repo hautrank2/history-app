@@ -70,31 +70,33 @@ export const HistoryMap = ({ scene, selectedPlace, contentVisible, timelineVisib
   const viewHeight = height + (timelineVisible ? 250 : 0);
   const viewWidth = viewHeight * viewport.width / Math.max(1, viewport.height);
   const [capitalX, capitalY] = project(scene.places[0]?.at ?? [106, 17]);
-  const centerX = (mobile ? 440 : width / 2 + (contentVisible ? 190 : 0)) + (zoom - 1) / zoom * (capitalX - width / 2) + pan[0];
-  const centerY = height / 2 + (timelineVisible ? 100 : 0) + (mobile && contentVisible ? 35 : 0) + (zoom - 1) / zoom * (capitalY - height / 2) + pan[1];
+  const baseCenterX = (mobile ? 440 : width / 2 + (contentVisible ? 190 : 0));
+  const baseCenterY = height / 2 + (timelineVisible ? 100 : 0) + (mobile && contentVisible ? 35 : 0);
+  const centerX = capitalX + (baseCenterX - capitalX) / zoom + pan[0];
+  const centerY = capitalY + (baseCenterY - capitalY) / zoom + pan[1];
   useEffect(() => {
     const element = stage.current;
     if (!element) return;
     const handleWheel = (event: WheelEvent) => {
       const map = svg.current;
-      if (!map || !event.deltaY || (event.target instanceof Element && event.target.closest(".vo-map-tools"))) return;
+      if (!map || !event.deltaY || (event.target instanceof Element && event.target.closest(".vo-map-tools, .vo-cluster-popup, .vo-map-directory-trigger"))) return;
       event.preventDefault();
       const bounds = map.getBoundingClientRect();
       if (!bounds.width || !bounds.height) return;
       const delta = event.deltaY * (event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? bounds.height : 1);
-      const next = Math.max(.5, Math.min(2.5, zoom * Math.exp(-Math.max(-240, Math.min(240, delta)) * .002)));
+      const next = Math.max(.5, Math.min(8, zoom * Math.exp(-Math.max(-240, Math.min(240, delta)) * .002)));
       if (next === zoom) return;
       const view = map.viewBox.baseVal;
       const pointerX = view.x + (event.clientX - bounds.left) / bounds.width * view.width;
       const pointerY = view.y + (event.clientY - bounds.top) / bounds.height * view.height;
-      const focusChange = (next - 1) / next - (zoom - 1) / zoom;
+      const focusChange = 1 / next - 1 / zoom;
       // Compensate for the button zoom's capital focus so the point under the cursor stays put.
-      setPan((previous) => [previous[0] + (pointerX - view.x - view.width / 2) * (1 - zoom / next) - focusChange * (capitalX - width / 2), previous[1] + (pointerY - view.y - view.height / 2) * (1 - zoom / next) - focusChange * (capitalY - height / 2)]);
+      setPan((previous) => [previous[0] + (pointerX - view.x - view.width / 2) * (1 - zoom / next) - focusChange * (baseCenterX - capitalX), previous[1] + (pointerY - view.y - view.height / 2) * (1 - zoom / next) - focusChange * (baseCenterY - capitalY)]);
       setZoom(next);
     };
     element.addEventListener("wheel", handleWheel, { passive: false });
     return () => element.removeEventListener("wheel", handleWheel);
-  }, [capitalX, capitalY, zoom]);
+  }, [baseCenterX, baseCenterY, capitalX, capitalY, zoom]);
   const southY = project([106, southernLatitude[scene.territory]])[1];
   const currentPlace = scene.places[selectedPlace] ?? scene.places[0];
   const currentPortrait = currentPlace ? placePortrait(currentPlace) : undefined;
@@ -148,9 +150,9 @@ export const HistoryMap = ({ scene, selectedPlace, contentVisible, timelineVisib
         </g>
         <g className="vo-compass" transform="translate(690 620)" aria-hidden="true"><text y="-30" textAnchor="middle">B</text><path d="M0-20L7 8 0 3-7 8Z" /><path d="M0 3V20" /></g>
       </svg>
-      <MapMarkers points={scene.places.map((place) => { const [x, y] = project(place.at); return { place, x: (x - centerX + viewWidth / (2 * zoom)) / (viewWidth / zoom) * viewport.width, y: (y - centerY + viewHeight / (2 * zoom)) / (viewHeight / zoom) * viewport.height }; })} selectedPlace={selectedPlace} viewport={viewport} contentVisible={contentVisible} timelineVisible={timelineVisible} onSelectPlace={onSelectPlace} />
+      <MapMarkers points={scene.places.map((place) => { const [x, y] = project(place.at); return { place, x: (x - centerX + viewWidth / (2 * zoom)) / (viewWidth / zoom) * viewport.width, y: (y - centerY + viewHeight / (2 * zoom)) / (viewHeight / zoom) * viewport.height }; })} selectedPlace={selectedPlace} viewport={viewport} onSelectPlace={onSelectPlace} />
       <div className="vo-map-badge"><span><i /> KHÔNG GIAN LỊCH SỬ / 2D</span><strong>{scene.nation}</strong><small>{scene.years}</small></div>
-      <Card className="vo-map-tools vo-glass" aria-label="Điều khiển bản đồ"><Button variant="atlas" size="atlas" type="button" aria-label="Phóng to bản đồ" disabled={zoom >= 2.5} onClick={() => setZoom((value) => Math.min(2.5, value + .5))}>+</Button><Button variant="atlas" size="atlas" type="button" aria-label="Thu nhỏ bản đồ" disabled={zoom <= .5} onClick={() => setZoom((value) => Math.max(.5, value - .5))}>−</Button><Button variant="atlas" size="atlas" type="button" aria-label="Đặt lại góc nhìn bản đồ" onClick={() => { setZoom(1); setPan([0, 0]); }}>↺</Button><Button variant="atlas" size="atlas" type="button" aria-label="Biên giới hiện đại" aria-pressed={modernBorders} onClick={() => setModernBorders((value) => !value)}>▱</Button></Card>
+      <Card className="vo-map-tools vo-glass" aria-label="Điều khiển bản đồ"><Button variant="atlas" size="atlas" type="button" aria-label="Phóng to bản đồ" disabled={zoom >= 8} onClick={() => setZoom((value) => Math.min(8, value + .5))}>+</Button><Button variant="atlas" size="atlas" type="button" aria-label="Thu nhỏ bản đồ" disabled={zoom <= .5} onClick={() => setZoom((value) => Math.max(.5, value - .5))}>−</Button><Button variant="atlas" size="atlas" type="button" aria-label="Đặt lại góc nhìn bản đồ" onClick={() => { setZoom(1); setPan([0, 0]); }}>↺</Button><Button variant="atlas" size="atlas" type="button" aria-label="Biên giới hiện đại" aria-pressed={modernBorders} onClick={() => setModernBorders((value) => !value)}>▱</Button></Card>
       <div className="vo-map-variants vo-glass" role="group" aria-label="Kiểu bản đồ">{terrainEnabled ? <Button className="vo-variant-terrain" variant="atlas" size="atlas" aria-pressed={variant === "terrain"} onClick={() => setVariant("terrain")}>Địa hình</Button> : null}<Button className="vo-variant-simple" variant="atlas" size="atlas" aria-pressed={variant === "simple"} onClick={() => setVariant("simple")}>Đơn giản</Button></div>
       <aside className="vo-islands-inset vo-glass" aria-label="Lãnh thổ biển đảo Việt Nam"><strong>BIỂN ĐẢO VIỆT NAM</strong><span>✦ Hoàng Sa · Việt Nam</span><span>✦ Trường Sa · Việt Nam</span><small>Lớp tham chiếu hiện đại · đảo phóng đại để định vị</small></aside>
       <span className="vo-map-hint">Lăn chuột để thu phóng · Kéo để di chuyển · Chọn điểm để tìm hiểu</span>

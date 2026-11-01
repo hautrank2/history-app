@@ -41,8 +41,8 @@ Các đường dẫn dưới đây tính từ gốc repo.
 | `src/data/world.ts` | Dữ liệu giai đoạn Anh/Trung Quốc và `countryPresentation` chứa ảnh, mô tả, tên tiếng Anh, số thứ tự của cả ba nước |
 | `src/data/index.ts` | Registry `countriesData`; `defaultCountrySlug` vẫn được export nhưng trang chủ hiện không redirect |
 | `src/types/index.ts` | Model chung: Country, Period, Story, Chapter, Character, v.v. |
-| `src/app/globals.css` | Theme gốc, MapLibre và stylesheet Bạch Đằng từ lượt thiết kế đầu |
-| `src/app/atlas.css` | Trang quốc gia/giai đoạn, scrollbar, chỉnh cỡ chữ, điều khiển và 3D; được import sau `globals.css` nên có các rule ghi đè |
+| `src/styles/globals.css` | Theme gốc, MapLibre và stylesheet Bạch Đằng từ lượt thiết kế đầu |
+| `src/styles/atlas.css` | Trang quốc gia/giai đoạn, scrollbar, chỉnh cỡ chữ, điều khiển và 3D; được import sau `globals.css` nên có các rule ghi đè |
 | `src/app/layout.tsx` | Font Be Vietnam Pro + Playfair Display; import cả hai CSS; `data-scroll-behavior="smooth"` |
 | `public/images/` | Asset được lưu trong repo, không tham chiếu thư mục ảnh tạm của công cụ |
 | `package.json`, `pnpm-lock.yaml` | Bổ sung `three` và `@types/three`; không dùng React Three Fiber |
