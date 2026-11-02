@@ -11,7 +11,7 @@ type AudioSettings = {
   effects: { click: boolean; navigate: boolean; units: boolean };
 };
 
-const defaults: AudioSettings = { enabled: false, volume: .3, music: true, musicVolume: .22, effects: { click: true, navigate: true, units: true } };
+const defaults: AudioSettings = { enabled: true, volume: .3, music: true, musicVolume: .22, effects: { click: true, navigate: true, units: true } };
 const storageKey = "history-atlas-audio";
 const listeners = new Set<() => void>();
 const activeSources = new Set<AudioScheduledSourceNode>();

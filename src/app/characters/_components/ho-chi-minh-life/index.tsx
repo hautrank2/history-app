@@ -93,7 +93,7 @@ export const HoChiMinhLife = () => {
             <section className="hcm-meaning"><h3>Dấu mốc của một cuộc đời</h3><p>{scene.meaning}</p></section>
             {scene.people.length ? <section className="hcm-people-preview"><h3>Những người trong bối cảnh này</h3><div>{scene.people.map((person) => <button type="button" key={person.characterId} data-character-id={person.characterId} data-relation={person.kind} onClick={() => showPerson(person.characterId)}><span className="hcm-actor-mini"><LifePortrait characterId={person.characterId} /></span><span><strong>{getCharacter(person.characterId).name}</strong><small>{relationLabels[person.kind]}</small></span><ArrowRight size={14} /></button>)}</div></section> : null}
             <section className="hcm-context-note"><h3>Đọc cùng bối cảnh</h3><p>{scene.context}</p></section>
-            {scene.overviewId ? <Link className="hcm-overview-link" href={`/vietnam/overview#${scene.overviewId}`}>Đặt vào dòng lịch sử Việt Nam<ArrowRight size={15} /></Link> : null}
+            {scene.overviewId ? <Link className="hcm-overview-link" href={`/vietnam#${scene.overviewId}`}>Đặt vào dòng lịch sử Việt Nam<ArrowRight size={15} /></Link> : null}
             <button className="hcm-inline-source" type="button" onClick={() => setTab("sources")}><Check size={13} />{sceneSources.length} nguồn cho mốc này · Mở tư liệu</button>
           </> : null}
           {activeTab === "people" ? <>
@@ -127,7 +127,7 @@ export const HoChiMinhLife = () => {
     <header className="hcm-header">
       <Link className="hcm-back" href="/characters"><ArrowLeft size={16} /><span>Nhân vật</span></Link>
       <div className="hcm-heading"><span className="hcm-header-portrait"><LifePortrait characterId="ho-chi-minh" /></span><div><p>CHỦ TỊCH HỒ CHÍ MINH · 1890–1969</p><h1>Một cuộc đời vì non sông</h1><span>Theo dấu hành trình · Hiểu con người · Đọc bối cảnh thế giới</span></div></div>
-      <nav className="hcm-header-actions" aria-label="Điều hướng chuyên trang"><Link href="/vietnam/overview">Tổng quan Việt Nam<ExternalLink size={14} /></Link><button className="hcm-share-button" type="button" onClick={copyShareUrl} aria-label="Sao chép liên kết bản đồ"><Share2 size={16} /><span>{shareStatus === "copied" ? "Đã sao chép" : "Chia sẻ bản đồ"}</span></button></nav>
+      <nav className="hcm-header-actions" aria-label="Điều hướng chuyên trang"><Link href="/vietnam">Tổng quan Việt Nam<ExternalLink size={14} /></Link><button className="hcm-share-button" type="button" onClick={copyShareUrl} aria-label="Sao chép liên kết bản đồ"><Share2 size={16} /><span>{shareStatus === "copied" ? "Đã sao chép" : "Chia sẻ bản đồ"}</span></button></nav>
       {shareStatus === "manual" ? <div className="hcm-share-fallback"><label htmlFor="hcm-share-url">Sao chép liên kết này để chia sẻ đúng bản đồ đang xem</label><Input id="hcm-share-url" readOnly value={shareUrl()} onFocus={(event) => event.target.select()} /><button type="button" aria-label="Đóng liên kết chia sẻ" onClick={() => setShareStatus("idle")}><X size={16} /></button></div> : null}
     </header>
     <div className="hcm-experience">

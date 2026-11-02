@@ -21,10 +21,10 @@
 .character-card-avatar img { width: 100%; height: 100%; object-fit: cover; }
 .character-card-avatar b { font-family: var(--font-heading),serif; font-size: 25px; }
 .character-card-content { min-width: 0; transform: translateZ(16px); }
-.character-card-years { color: var(--atlas-muted); font-size: 10px; }
+.character-card-years { color: var(--atlas-muted); font-size: 11px; }
 .character-directory-card .character-card-content h2 { font-size: 23px; line-height: 1.35; margin: 5px 0 9px; }
 .character-directory-card .character-card-content p { font-size: 12px; line-height: 1.7; }
-.character-directory-card .character-card-link { font-size: 10px; margin-top: 16px; }
+.character-directory-card .character-card-link { font-size: 11px; margin-top: 16px; }
 .character-recent { margin-top: 30px; border-bottom: 1px solid var(--atlas-line); padding-bottom: 26px; }
 .character-recent-heading { display: flex; align-items: baseline; flex-wrap: wrap; gap: 10px 20px; }
 .character-recent-heading h2 { font-size: 25px; margin: 0; }
@@ -37,9 +37,9 @@
 }
 @media(prefers-reduced-motion:reduce) { .character-page a.character-directory-card { transform: none; transition: none; }.character-directory-card::before { transition: none; }.character-card-content,.character-directory-card .character-card-avatar { transform: none; } }
 .character-hero { display: grid; grid-template-columns: minmax(220px,360px) 1fr; gap: 48px; align-items: center; padding: 40px 0; }.character-hero:not(:has(figure)) { grid-template-columns: 1fr; }
-.character-portrait img { width: 100%; height: 420px; object-fit: cover; border-radius: 8px; }.character-portrait figcaption { font-size: 10px; line-height: 1.7; margin-top: 10px; color: var(--atlas-muted); }
+.character-portrait img { width: 100%; height: 420px; object-fit: cover; border-radius: 8px; }.character-portrait figcaption { font-size: 11px; line-height: 1.7; margin-top: 10px; color: var(--atlas-muted); }
 .character-facts { display: grid; grid-template-columns: auto 1fr; gap: 12px 24px; font-size: 13px; margin: 24px 0; }.character-facts dt { color: var(--atlas-muted); }
 .character-scene { padding: 20px 0; border-top: 1px solid var(--atlas-line); }.character-scene small { color: var(--atlas-muted); }.character-sources a { display: block; margin: 10px 0; font-size: 13px; }
 .character-pagination { border-top: 1px solid var(--atlas-line); border-bottom: 0; margin-top: 36px; }
 .bd-page-navigation { display: flex; gap: 20px; align-items: center; color: var(--atlas-gold); font-size: 12px; }.bd-page-navigation a { display: flex; align-items: center; gap: 8px; }
-@media(max-width:760px) { .character-hero { grid-template-columns: 1fr; gap: 24px; }.character-portrait { max-width: 360px; }.bd-page-navigation { gap: 10px; font-size: 10px; }.bd-page-navigation .national-flag { display: none; } }
+@media(max-width:760px) { .character-hero { grid-template-columns: 1fr; gap: 24px; }.character-portrait { max-width: 360px; }.bd-page-navigation { gap: 10px; font-size: 11px; }.bd-page-navigation .national-flag { display: none; } }

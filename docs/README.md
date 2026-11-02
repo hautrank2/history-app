@@ -13,4 +13,4 @@ Cập nhật: 19/10/2026. Đây là điểm bắt đầu cho agent tiếp quản
 
 Đọc thêm quy ước dự án ở [CLAUDE.md](../CLAUDE.md). Một số thông tin trong đó có trước các thay đổi này: cổng thực tế trong `package.json` là **8081** và sa bàn Bạch Đằng mới dùng **Three.js**, trong khi bộ kể chuyện MapLibre cũ vẫn được giữ lại.
 
-Việt Nam có trải nghiệm riêng **Bạch Đằng 1288** và trang **tổng quan lịch sử** ở `/vietnam/overview`. Việt Nam, Anh và Trung Quốc đều có trang chọn giai đoạn; các trận chiến khác chưa có trải nghiệm riêng.
+Việt Nam có trải nghiệm riêng **Bạch Đằng 1288** và bản đồ **tổng quan lịch sử** ngay tại `/vietnam`. URL cũ `/vietnam/overview` chuyển hướng vĩnh viễn về `/vietnam`. Anh và Trung Quốc có trang chọn giai đoạn; các trận chiến khác chưa có trải nghiệm riêng.

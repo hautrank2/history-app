@@ -16,12 +16,13 @@ for (const country of ["vietnam", "china", "england"]) {
   for (const era of ["monarchy", "modern"]) for (const mood of ["majestic", "ethereal", "dramatic", "reflective"]) assert.ok(soundtracks[`${country}-${era}-${mood}`]);
 }
 const cases = [
-  ["/vietnam/overview", "#tran-bach-dang", "vietnam-monarchy-majestic"],
-  ["/vietnam/overview", "#loan-12-su-quan", "vietnam-monarchy-dramatic"],
   ["/vietnam/overview", "#doi-moi", "vietnam-modern-reflective"],
-  ["/vietnam/overview", "#dien-bien-phu", "vietnam-modern-majestic"],
-  ["/vietnam/overview", "#chia-cat", "vietnam-modern-dramatic"],
-  ["/vietnam/overview", "#not-a-scene", "vietnam-monarchy-ethereal"],
+  ["/vietnam", "#tran-bach-dang", "vietnam-monarchy-majestic"],
+  ["/vietnam", "#loan-12-su-quan", "vietnam-monarchy-dramatic"],
+  ["/vietnam", "#doi-moi", "vietnam-modern-reflective"],
+  ["/vietnam", "#dien-bien-phu", "vietnam-modern-majestic"],
+  ["/vietnam", "#chia-cat", "vietnam-modern-dramatic"],
+  ["/vietnam", "#not-a-scene", "vietnam-monarchy-ethereal"],
   ["/vietnam/bach-dang-1288", "", "vietnam-monarchy-ethereal"],
   ["/vietnam/yen-bai", "", "vietnam-modern-dramatic"],
   ["/vietnam/ly-bi", "", "vietnam-monarchy-majestic"],
@@ -106,9 +107,12 @@ const loadEngine = (saved = null, blockedStorage = false, recorded = false) => {
 
 const engine = loadEngine();
 assert.equal(engine.contexts.length, 0, "No audio context before interaction");
-assert.equal(engine.api.getAudioSettings().enabled, false, "Audio is off by default");
+assert.equal(engine.api.getAudioSettings().enabled, true, "Master audio is on by default");
+assert.equal(engine.api.getAudioSettings().music, true, "Music is on by default");
+assert.ok(Object.values(engine.api.getAudioSettings().effects).every(Boolean), "Every effect category is on by default");
+engine.api.updateAudioSettings({ enabled: false });
 await engine.api.unlockGameAudio();
-assert.equal(engine.contexts.length, 0, "Muted defaults must not initialize audio");
+assert.equal(engine.contexts.length, 0, "Muting before the first gesture must not initialize audio");
 engine.api.updateAudioSettings({ enabled: true });
 engine.api.setGameMusicPath("/vietnam");
 engine.api.updateAudioSettings({ music: false });
@@ -135,23 +139,23 @@ engine.api.setGameMusicPath("/china");
 assert.equal(engine.api.getCurrentSoundtrack().id, "china-monarchy-ethereal");
 assert.equal(engine.timers.size, 1);
 for (const scene of ["tran-bach-dang", "van-lang", "doi-moi", "chia-cat"]) {
-  engine.api.setGameMusicPath("/vietnam/overview", `#${scene}`);
+  engine.api.setGameMusicPath("/vietnam", `#${scene}`);
   await new Promise((resolve) => setImmediate(resolve));
   assert.equal(engine.timers.size, 0, "Vietnam uses the selected recordings");
   assert.equal(engine.sources.filter((source) => source.loop && !source.stopped).length, 1);
 }
 const sameEraSourceCount = engine.sources.length;
-engine.api.setGameMusicPath("/vietnam/overview", "#doi-moi");
+engine.api.setGameMusicPath("/vietnam", "#doi-moi");
 await new Promise((resolve) => setImmediate(resolve));
 assert.equal(engine.sources.length, sameEraSourceCount, "Changing scenes within an era must keep the recording playing");
 for (const scene of ["van-lang", "doi-moi"]) {
-  const track = soundtrackForPath("/vietnam/overview", `#${scene}`);
+  const track = soundtrackForPath("/vietnam", `#${scene}`);
   assert.ok(existsSync(`public${track.audioSrc}`));
   assert.equal(readFileSync(`public${track.audioSrc}`).subarray(4, 8).toString(), "ftyp");
 }
 const pendingMusic = loadEngine();
 pendingMusic.api.updateAudioSettings({ enabled: true });
-pendingMusic.api.setGameMusicPath("/vietnam/overview", "#ngo");
+pendingMusic.api.setGameMusicPath("/vietnam", "#ngo");
 await pendingMusic.api.unlockGameAudio();
 pendingMusic.doc.hidden = true;
 pendingMusic.api.suspendGameAudio();
@@ -169,6 +173,10 @@ engine.api.playGameSound("battle");
 assert.equal(engine.sources.length, hiddenCount);
 const broken = loadEngine("{invalid-json");
 assert.equal(broken.api.getAudioSettings().volume, .3);
+assert.equal(broken.api.getAudioSettings().enabled, true, "Invalid saved settings fall back to enabled audio");
+const savedMute = loadEngine(JSON.stringify({ enabled: false, volume: .3, music: false }));
+assert.equal(savedMute.api.getAudioSettings().enabled, false, "Keep an existing saved master mute");
+assert.equal(savedMute.api.getAudioSettings().music, false, "Keep an existing saved music preference");
 const blocked = loadEngine(null, true);
 assert.doesNotThrow(() => blocked.api.updateAudioSettings({ music: false }));
 const clamped = loadEngine(JSON.stringify({ enabled: true, volume: 4, musicVolume: -3 }));

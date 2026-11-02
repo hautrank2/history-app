@@ -1,6 +1,6 @@
 # Tổng quan lịch sử Việt Nam
 
-Trang `/vietnam` có nút **Xem lịch sử các triều đại** dẫn đến `/vietnam/overview`.
+Bản đồ tổng quan mở trực tiếp tại `/vietnam`. Các liên kết nội bộ dùng `/vietnam#<scene-id>` để đi đến từng cảnh; URL cũ `/vietnam/overview` chuyển hướng vĩnh viễn về `/vietnam`.
 
 ## Nội dung và tương tác
 

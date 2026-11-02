@@ -37,7 +37,7 @@ export const soundtrackForPath = (pathname: string, hash = "", playback: MusicPl
     const chapter = playback.chapter ?? 0;
     return resolve({ country, era: "monarchy", mood: battleMoods[chapter] ?? "dramatic" });
   }
-  if (country === "vietnam" && page === "overview") return resolve(sceneContexts[scene] ?? sceneContexts["van-lang"]);
+  if (country === "vietnam" && (!page || page === "overview")) return resolve(sceneContexts[scene] ?? sceneContexts["van-lang"]);
   if (country === "vietnam" && page && eventContexts[page]) return resolve(eventContexts[page]);
   const period = periodContexts[country]?.[page || scene];
   if (period) return resolve(period);

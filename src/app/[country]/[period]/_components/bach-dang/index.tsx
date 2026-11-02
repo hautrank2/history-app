@@ -29,7 +29,7 @@ export const BachDangExperience = ({ story }: BachDangExperienceProps) => {
     <main className="bd-experience bd-map-first">
       <header className="bd-header">
         <Link className="bd-brand" href="/"><span className="bd-brand-symbol">H</span><span>HISTORY ATLAS<small>DẤU ẤN NGÀN NĂM</small></span></Link>
-        <nav className="bd-page-navigation" aria-label="Điều hướng lịch sử"><Link href="/vietnam/overview#tran-bach-dang"><NationalFlag /> Tổng quan Việt Nam</Link><Link href="/characters">Nhân vật</Link></nav><h1 id="battle-title" className="bd-battle-title">Bạch Đằng <span>1288</span></h1>
+        <nav className="bd-page-navigation" aria-label="Điều hướng lịch sử"><Link href="/vietnam#tran-bach-dang"><NationalFlag /> Tổng quan Việt Nam</Link><Link href="/characters">Nhân vật</Link></nav><h1 id="battle-title" className="bd-battle-title">Bạch Đằng <span>1288</span></h1>
       </header>
 
       <section id="story" className="bd-story" aria-label="Diễn biến trận chiến">

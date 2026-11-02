@@ -5,5 +5,5 @@
 .atlas-overview-cta small { display: block; margin-top: 5px; font-size: 11px; opacity: .8; }
 .atlas-overview-cta > b { font-size: 30px; font-weight: 400; }
 .atlas-country-hero-copy > .atlas-outline-link { display: block; width: fit-content; }
-@media (max-width: 760px) { .atlas-overview-cta { gap: 20px; padding: 17px 18px; max-width: 100%; }.atlas-overview-cta strong { font-size: 15px; }.atlas-overview-cta small { font-size: 9px; }.atlas-country-hero:has(.atlas-overview-cta) { min-height: 610px; }.atlas-country-hero:has(.atlas-overview-cta) .atlas-hero-number { pointer-events: none; } }
+@media (max-width: 760px) { .atlas-overview-cta { gap: 20px; padding: 17px 18px; max-width: 100%; }.atlas-overview-cta strong { font-size: 15px; }.atlas-overview-cta small { font-size: 11px; }.atlas-country-hero:has(.atlas-overview-cta) { min-height: 610px; }.atlas-country-hero:has(.atlas-overview-cta) .atlas-hero-number { pointer-events: none; } }
 @media (prefers-reduced-motion: reduce) { .atlas-overview-cta { transition: none; } }

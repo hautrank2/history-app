@@ -24,7 +24,7 @@ export const useLifeMapUrl = () => {
     if (!ready) return;
     // Keep dragging smooth while making the final camera position shareable.
     const timer = setTimeout(() => {
-      const next = writeLifeMapUrl(new URL(window.location.href), state);
+      const next = writeLifeMapUrl(new URL(window.location.href), state, stopIds[0]);
       if (next.href !== window.location.href) {
         window.history.replaceState(null, "", next);
         window.dispatchEvent(new Event("atlas:scene-change"));
@@ -32,6 +32,6 @@ export const useLifeMapUrl = () => {
     }, 180);
     return () => clearTimeout(timer);
   }, [ready, state]);
-  const shareUrl = useCallback(() => writeLifeMapUrl(new URL(window.location.href), state).href, [state]);
+  const shareUrl = useCallback(() => writeLifeMapUrl(new URL(window.location.href), state, stopIds[0]).href, [state]);
   return { state, update, shareUrl };
 };

@@ -35,7 +35,7 @@ export const VietnamOverview = () => {
     <h1 className="vo-sr-only">Lịch sử Việt Nam — từ Hùng Vương đến hiện đại</h1>
     <HistoryMap key={`map-${scene.id}`} scene={scene} selectedPlace={selectedPlace} contentVisible={contentVisible} timelineVisible={timelineVisible} placesVisible={placesVisible} onSelectPlace={(next) => { setSelectedPlace(next); setPlacesVisible(true); setPlaying(false); }} onHidePlaces={() => setPlacesVisible(false)} />
     <CountryStats scene={scene} />
-    <Link className="vo-back vo-glass" href="/vietnam" aria-label="Về trang Việt Nam">← <NationalFlag /><span>Việt Nam</span></Link><Link className="vo-character-nav vo-glass" href="/characters">Nhân vật →</Link>
+    <Link className="vo-back vo-glass" href="/" aria-label="Về trang chủ">← <NationalFlag /><span>Trang chủ</span></Link><Link className="vo-character-nav vo-glass" href="/characters">Nhân vật →</Link>
     <div className="vo-visibility" aria-label="Ẩn hiện các bảng trên bản đồ">
       <Button variant="atlas" size="atlas" type="button" className="vo-glass" aria-expanded={contentVisible} aria-controls="vo-content" onClick={() => setContentVisible((value) => !value)}><span>≋</span> Nội dung</Button>
       <Button variant="atlas" size="atlas" type="button" className="vo-glass" aria-expanded={placesVisible} aria-controls="vo-places" onClick={() => setPlacesVisible((value) => !value)}><span>⌖</span> Địa điểm</Button>
