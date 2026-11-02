@@ -1196,12 +1196,13 @@
   {
     "id": "ho-chi-minh",
     "name": "Hồ Chí Minh",
-    "aliases": [],
+    "aliases": ["Bác Hồ", "Nguyễn Sinh Cung", "Nguyễn Tất Thành", "Nguyễn Ái Quốc", "Văn Ba", "Lý Thụy", "Tống Văn Sơ"],
     "wiki": "Ho Chi Minh",
-    "role": "Chủ tịch Chính phủ lâm thời, đọc Tuyên ngôn Độc lập",
-    "biography": "Chủ tịch Chính phủ lâm thời, đọc Tuyên ngôn Độc lập.",
-    "lifespan": "Không xác định",
+    "role": "Lãnh tụ cách mạng Việt Nam, Chủ tịch nước Việt Nam Dân chủ Cộng hòa",
+    "biography": "Chủ tịch Hồ Chí Minh (1890–1969) dành cuộc đời cho sự nghiệp giải phóng dân tộc Việt Nam. Người ra đi tìm đường cứu nước năm 1911, chủ trì thành lập Đảng Cộng sản Việt Nam năm 1930, trở về nước năm 1941 và đọc Tuyên ngôn Độc lập tại Ba Đình ngày 2/9/1945. Từ đó, Người lãnh đạo đất nước qua kháng chiến, xây dựng nhà nước và hoạt động ngoại giao cho đến khi qua đời năm 1969.",
+    "lifespan": "19/5/1890 – 2/9/1969",
     "sources": [
+      {"title":"Tiểu sử Chủ tịch Hồ Chí Minh · tư liệu Bảo tàng Hồ Chí Minh","url":"https://khcn.tphcm.gov.vn/khong-gian-van-hoa-ho-chi-minh/gioi-thieu/tieu-su"},
       {
         "title": "Hồ Chí Minh",
         "url": "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
@@ -1762,5 +1763,32 @@
         "url": "https://vi.wikipedia.org/wiki/Nguyễn_Khoái"
       }
     ]
+  },
+  {
+    "id":"vladimir-lenin","name":"Vladimir Ilyich Lenin","aliases":["V. I. Lênin", "Lênin"],"wiki":"Vladimir Lenin","role":"Lãnh tụ Cách mạng Tháng Mười Nga, nhà lý luận cách mạng","biography":"Lenin là nhà cách mạng và người đứng đầu chính phủ Nga Xô viết, sau đó là Liên Xô. Luận cương về vấn đề dân tộc và thuộc địa của ông có ảnh hưởng quan trọng đến sự lựa chọn con đường cách mạng của Nguyễn Ái Quốc; không đồng nghĩa với một cuộc gặp trực tiếp.","lifespan":"1870–1924","sources":[{"title":"Lenin và con đường cứu nước của Nguyễn Ái Quốc","url":"https://baotanghochiminh.vn/bao-tang-ho-chi-minh-khai-mac-trung-bay-chuyen-de-dau-chan-ho-chi-minh-tren-que-huong-cach-mang-thang-muoi.htm"},{"title":"Vladimir Lenin","url":"https://en.wikipedia.org/wiki/Vladimir_Lenin"}]
+  },
+  {
+    "id":"joseph-stalin","name":"Joseph Stalin","aliases":["I. V. Stalin","Xtalin","Stalin"],"wiki":"Joseph Stalin","role":"Lãnh đạo Liên Xô trong giai đoạn cuối thập niên 1920–1953","biography":"Stalin lãnh đạo Liên Xô cho đến năm 1953. Hồ Chí Minh trực tiếp làm việc với ông tại Mátxcơva trong chuyến ngoại giao năm 1950 để vận động sự ủng hộ và viện trợ cho kháng chiến chống Pháp. Quan hệ được trình bày theo từng sự kiện, không phải sự đồng nhất mọi quan điểm.","lifespan":"1878–1953","sources":[{"title":"Tư liệu thư từ chuyến ngoại giao năm 1950","url":"https://baotanghochiminh.vn/mot-buc-thu-trong-chuyen-ngoai-giao-bi-mat-nam-1950-cua-chu-tich-ho-chi-minh.htm"},{"title":"Joseph Stalin","url":"https://en.wikipedia.org/wiki/Joseph_Stalin"}]
+  },
+  {
+    "id":"mao-trach-dong","name":"Mao Trạch Đông","aliases":["Mao Zedong","Mao"],"wiki":"Mao Zedong","role":"Lãnh đạo Đảng Cộng sản Trung Quốc, Chủ tịch nước CHND Trung Hoa 1949–1959","biography":"Mao Trạch Đông là lãnh đạo chủ chốt của Trung Quốc từ năm 1949 đến năm 1976. Tháng 2/1950, ông cùng Hồ Chí Minh và các lãnh đạo Liên Xô có mặt tại Mátxcơva trong các hoạt động ngoại giao liên quan đến hợp tác và hỗ trợ kháng chiến Việt Nam.","lifespan":"1893–1976","sources":[{"title":"Biên niên ngày 16/2/1950 tại Mátxcơva","url":"https://baotanghochiminh.vn/chu-tich-ho-chi-minh-du-dai-tiec-do-chinh-phu-lien-xo-to-chuc-de-mung-thang-loi-hiep-uoc-huu-nghi-tuong-tro-dong-minh-xo-trung-vua-duoc-ky-ket-tai-matxcova.htm"},{"title":"Mao Zedong","url":"https://en.wikipedia.org/wiki/Mao_Zedong"}]
+  },
+  {
+    "id":"chu-an-lai","name":"Chu Ân Lai","aliases":["Zhou Enlai"],"wiki":"Zhou Enlai","role":"Thủ tướng nước CHND Trung Hoa 1949–1976","biography":"Chu Ân Lai là nhà lãnh đạo và nhà ngoại giao Trung Quốc, giữ chức Thủ tướng từ năm 1949 đến năm 1976. Ông tham gia các hoạt động ngoại giao liên quan đến Hồ Chí Minh trong chuyến đi Trung Quốc và Liên Xô đầu năm 1950.","lifespan":"1898–1976","sources":[{"title":"Chuyến công du Xuân Canh Dần 1950","url":"https://hochiminh.vn/ho-chi-minh-va-the-gioi/hoat-dong-quoc-te-cua-ho-chi-minh/bac-ho-voi-chuyen-cong-du-xuan-canh-dan-1950-44"},{"title":"Zhou Enlai","url":"https://en.wikipedia.org/wiki/Zhou_Enlai"}]
+  },
+  {
+    "id":"francis-loseby","name":"Francis Henry Loseby","aliases":["Frank Loseby","Luật sư Loseby"],"wiki":"Francis Henry Loseby","role":"Luật sư bảo vệ Nguyễn Ái Quốc trong vụ án Hồng Kông","biography":"Luật sư người Anh Francis Henry Loseby cùng gia đình đã giúp bảo vệ Nguyễn Ái Quốc trong vụ án Hồng Kông từ năm 1931 và hỗ trợ Người rời nơi này. Tình bạn của hai người được duy trì trong những năm sau đó.","lifespan":"1883–1967","sources":[{"title":"Tình bạn Hồ Chí Minh và luật sư Loseby","url":"https://btllang.bqp.vn/tin-tuc/tin-tong-hop/1656-b-c-tranh-theu-va-tinh-b-n-th-y-chung.html"}]
+  },
+  {
+    "id":"tuong-gioi-thach","name":"Tưởng Giới Thạch","aliases":["Chiang Kai-shek"],"wiki":"Chiang Kai-shek","role":"Lãnh đạo Quốc dân Đảng và chính quyền Trung Hoa Dân quốc","biography":"Tưởng Giới Thạch lãnh đạo Quốc dân Đảng và chính quyền Trung Hoa Dân quốc. Năm 1942–1943, Hồ Chí Minh bị bộ máy chính quyền địa phương Quốc dân Đảng giam giữ ở Quảng Tây. Không từ đó suy ra hai người đã gặp nhau hoặc việc bắt giữ do mệnh lệnh cá nhân của ông.","lifespan":"1887–1975","sources":[{"title":"Hồ Chí Minh Toàn tập · Tập 3","url":"https://baotanghochiminh.vn/ho-chi-minh-toan-tap_xuat-ban-lan-3_tap-3.htm"},{"title":"Chiang Kai-shek","url":"https://en.wikipedia.org/wiki/Chiang_Kai-shek"}]
+  },
+  {
+    "id":"jean-sainteny","name":"Jean Sainteny","aliases":["Sainteny"],"wiki":"Jean Sainteny","role":"Đại diện Pháp ký Hiệp định Sơ bộ ngày 6/3/1946","biography":"Jean Sainteny là nhà ngoại giao Pháp, đại diện phía Pháp ký Hiệp định Sơ bộ với Hồ Chí Minh và Vũ Hồng Khanh tại Hà Nội ngày 6/3/1946. Quan hệ này thể hiện nỗ lực đàm phán giữa hai bên có những lợi ích và lập trường đối lập.","lifespan":"1907–1978","sources":[{"title":"Hiệp định Sơ bộ Việt Nam–Pháp 6/3/1946","url":"https://hcmcpv.org.vn/tin-tuc/tim-kiem/hiep-dinh-so-bo-viet-nam-phap-6-3-1946-ky-tich-khoi-dau-lich-su-dau-tranh-ngoai-giao-cua-nuoc-viet-1454411071"},{"title":"Jean Sainteny","url":"https://en.wikipedia.org/wiki/Jean_Sainteny"}]
+  },
+  {
+    "id":"harry-truman","name":"Harry S. Truman","aliases":["Truman"],"wiki":"Harry S. Truman","role":"Tổng thống Hoa Kỳ 1945–1953","biography":"Harry S. Truman là Tổng thống Hoa Kỳ trong những năm đầu sau Chiến tranh thế giới thứ hai. Hồ Chí Minh gửi thư và điện đề nghị Hoa Kỳ ủng hộ độc lập Việt Nam. Theo Cơ quan Lưu trữ Quốc gia Hoa Kỳ, Truman không trả lời những thư này.","lifespan":"1884–1972","sources":[{"title":"Remembering Vietnam · National Archives","url":"https://www.archives.gov/exhibits/remembering-vietnam-online-exhibit-episodes-1-4"},{"title":"Harry S. Truman","url":"https://en.wikipedia.org/wiki/Harry_S._Truman"}]
+  },
+  {
+    "id":"lyndon-johnson","name":"Lyndon B. Johnson","aliases":["LBJ","Johnson"],"wiki":"Lyndon B. Johnson","role":"Tổng thống Hoa Kỳ 1963–1969, giai đoạn leo thang chiến tranh Việt Nam","biography":"Lyndon B. Johnson là Tổng thống Hoa Kỳ trong giai đoạn Hoa Kỳ mở rộng can thiệp quân sự ở Việt Nam. Tháng 2/1967, ông và Hồ Chí Minh trao đổi thư về việc chấm dứt chiến tranh; đây là liên hệ thư tín, không phải cuộc gặp trực tiếp.","lifespan":"1908–1973","sources":[{"title":"Thư Hồ Chí Minh gửi Tổng thống Johnson, 15/2/1967","url":"https://docsteach.org/document/ho-chi-minh-to-johnson/"},{"title":"Lyndon B. Johnson","url":"https://en.wikipedia.org/wiki/Lyndon_B._Johnson"}]
   }
 ]

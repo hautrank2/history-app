@@ -1,0 +1,1288 @@
+{
+  "sources": [
+    {
+      "id": "biography",
+      "title": "Tiểu sử Chủ tịch Hồ Chí Minh (1890–1969)",
+      "publisher": "Sở Khoa học và Công nghệ TP.HCM · tư liệu Bảo tàng Hồ Chí Minh",
+      "url": "https://khcn.tphcm.gov.vn/khong-gian-van-hoa-ho-chi-minh/gioi-thieu/tieu-su"
+    },
+    {
+      "id": "departure",
+      "title": "Bến Nhà Rồng — nơi ra đi tìm đường cứu nước",
+      "publisher": "Cục Du lịch Quốc gia Việt Nam",
+      "url": "https://vietnamtourism.vn/index.php/tourism/items/2925/3"
+    },
+    {
+      "id": "journey",
+      "title": "Nhớ về 112 năm hành trình tìm đường cứu nước",
+      "publisher": "Bảo tàng Hồ Chí Minh",
+      "url": "https://baotanghochiminh.vn/nho-ve-112-nam-hanh-trinh-tim-duong-cuu-nuoc-cua-nguyen-ai-quoc-ho-chi-minh.htm"
+    },
+    {
+      "id": "russia",
+      "title": "Dấu chân Hồ Chí Minh trên quê hương Cách mạng Tháng Mười",
+      "publisher": "Bảo tàng Hồ Chí Minh",
+      "url": "https://baotanghochiminh.vn/bao-tang-ho-chi-minh-khai-mac-trung-bay-chuyen-de-dau-chan-ho-chi-minh-tren-que-huong-cach-mang-thang-muoi.htm"
+    },
+    {
+      "id": "guangzhou",
+      "title": "Quyết định về chuyến đi Quảng Châu năm 1924",
+      "publisher": "Bảo tàng Hồ Chí Minh · biên niên",
+      "url": "https://baotanghochiminh.vn/nguyen-ai-quoc-duoc-ban-chap-hanh-quoc-te-cong-san-ra-quyet-dinh-ve-chuyen-di-quang-chau.htm"
+    },
+    {
+      "id": "party",
+      "title": "Nguyễn Ái Quốc chủ trì Hội nghị hợp nhất, thành lập Đảng",
+      "publisher": "Bảo tàng Hồ Chí Minh · biên niên",
+      "url": "https://baotanghochiminh.vn/nguyen-ai-quoc-chu-tri-hoi-nghi-hop-nhat-thanh-lap-dang-cong-san-viet-nam.htm"
+    },
+    {
+      "id": "loseby",
+      "title": "Bức tranh thêu và tình bạn thủy chung",
+      "publisher": "Ban Quản lý Lăng Chủ tịch Hồ Chí Minh",
+      "url": "https://btllang.bqp.vn/tin-tuc/tin-tong-hop/1656-b-c-tranh-theu-va-tinh-b-n-th-y-chung.html"
+    },
+    {
+      "id": "pacbo",
+      "title": "Nguyễn Ái Quốc với phong trào thanh niên Cao Bằng 1941–1945",
+      "publisher": "Bảo tàng Hồ Chí Minh",
+      "url": "https://baotanghochiminh.vn/lanh-tu-nguyen-ai-quoc-voi-cong-tac-phat-trien-phong-trao-thanh-nien-tai-cao-bang-thoi-ky-1941-1945.htm"
+    },
+    {
+      "id": "prison",
+      "title": "Hồ Chí Minh Toàn tập · Tập 3 · 1930–1945",
+      "publisher": "Bảo tàng Hồ Chí Minh",
+      "url": "https://baotanghochiminh.vn/ho-chi-minh-toan-tap_xuat-ban-lan-3_tap-3.htm"
+    },
+    {
+      "id": "independence",
+      "title": "Hành trình đến Độc lập, Tự do",
+      "publisher": "Bảo tàng Hồ Chí Minh",
+      "url": "https://baotanghochiminh.vn/hanh-trinh-den-doc-lap-tu-do.htm"
+    },
+    {
+      "id": "truman",
+      "title": "Điện Hồ Chí Minh gửi Tổng thống Truman, 28/2/1946",
+      "publisher": "U.S. National Archives · bản lưu trữ gốc",
+      "url": "https://www.archives.gov/files/historical-docs/doc-content/images/ho-chi-minh-telegram-truman.pdf"
+    },
+    {
+      "id": "archives",
+      "title": "Remembering Vietnam · Episodes 1–4",
+      "publisher": "U.S. National Archives",
+      "url": "https://www.archives.gov/exhibits/remembering-vietnam-online-exhibit-episodes-1-4"
+    },
+    {
+      "id": "sainteny",
+      "title": "Hiệp định Sơ bộ Việt Nam–Pháp 6/3/1946",
+      "publisher": "Thành ủy TP.HCM · hồi ký Hoàng Minh Giám",
+      "url": "https://hcmcpv.org.vn/tin-tuc/tim-kiem/hiep-dinh-so-bo-viet-nam-phap-6-3-1946-ky-tich-khoi-dau-lich-su-dau-tranh-ngoai-giao-cua-nuoc-viet-1454411071"
+    },
+    {
+      "id": "recognition",
+      "title": "Hồ Chí Minh với quan hệ ngoại giao Việt Nam, Liên Xô và Trung Quốc",
+      "publisher": "Bảo tàng Hồ Chí Minh",
+      "url": "https://baotanghochiminh.vn/chu-tich-ho-chi-minh-voi-quan-he-ngoai-giao-giua-viet-nam-lien-xo-va-trung-quoc.htm"
+    },
+    {
+      "id": "moscow",
+      "title": "Bữa tiệc tại Mátxcơva ngày 16/2/1950",
+      "publisher": "Bảo tàng Hồ Chí Minh · biên niên",
+      "url": "https://baotanghochiminh.vn/chu-tich-ho-chi-minh-du-dai-tiec-do-chinh-phu-lien-xo-to-chuc-de-mung-thang-loi-hiep-uoc-huu-nghi-tuong-tro-dong-minh-xo-trung-vua-duoc-ky-ket-tai-matxcova.htm"
+    },
+    {
+      "id": "stalin",
+      "title": "Bức thư trong chuyến ngoại giao bí mật năm 1950",
+      "publisher": "Bảo tàng Hồ Chí Minh · tư liệu lưu trữ",
+      "url": "https://baotanghochiminh.vn/mot-buc-thu-trong-chuyen-ngoai-giao-bi-mat-nam-1950-cua-chu-tich-ho-chi-minh.htm"
+    },
+    {
+      "id": "tour1950",
+      "title": "Chuyến công du Xuân Canh Dần 1950",
+      "publisher": "Chuyên trang Hồ Chí Minh · Báo điện tử Đảng Cộng sản Việt Nam",
+      "url": "https://hochiminh.vn/ho-chi-minh-va-the-gioi/hoat-dong-quoc-te-cua-ho-chi-minh/bac-ho-voi-chuyen-cong-du-xuan-canh-dan-1950-44"
+    },
+    {
+      "id": "johnson",
+      "title": "Thư Hồ Chí Minh gửi Tổng thống Johnson, 15/2/1967",
+      "publisher": "DocsTeach · tư liệu Thư viện Tổng thống Lyndon B. Johnson",
+      "url": "https://docsteach.org/document/ho-chi-minh-to-johnson/"
+    },
+    {
+      "id": "testament",
+      "title": "Bác Hồ viết Di chúc — văn kiện lịch sử",
+      "publisher": "Cổng Thông tin điện tử Chính phủ",
+      "url": "https://thanglong.chinhphu.vn/bac-ho-viet-di-chuc-van-kien-lich-su-vo-gia-10327191.htm"
+    },
+    {
+      "id": "ship1911",
+      "title": "Hành trình con tàu Amiral Latouche-Tréville năm 1911",
+      "publisher": "Bảo tàng Hồ Chí Minh",
+      "url": "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm"
+    },
+    {
+      "id": "international",
+      "title": "Những cống hiến đối với Quốc tế Cộng sản",
+      "publisher": "Bảo tàng Hồ Chí Minh",
+      "url": "https://baotanghochiminh.vn/nhung-cong-hien-doi-voi-quoc-te-cong-san-cua-nguyen-ai-quoc-ho-chi-minh.htm"
+    },
+    {
+      "id": "new-york",
+      "title": "Nguyễn Tất Thành đến nước Mỹ — thư đề tại New York năm 1912",
+      "publisher": "Bảo tàng Hồ Chí Minh",
+      "url": "https://baotanghochiminh.vn/nguyen-tat-thanh-den-nuoc-my.htm"
+    },
+    {
+      "id": "siam-phichit",
+      "title": "Bản Đông, Phichit — hoạt động ở Xiêm năm 1928",
+      "publisher": "Bảo tàng Hồ Chí Minh",
+      "url": "https://baotanghochiminh.vn/bao-tang-ban-dong-ho-chi-minh-xa-pamakab-tinh-phichit-thai-lan.htm"
+    },
+    {
+      "id": "siam-udon",
+      "title": "Nguyễn Ái Quốc đến Udon — biên niên tháng 8/1928",
+      "publisher": "Bảo tàng Hồ Chí Minh",
+      "url": "https://baotanghochiminh.vn/nguyen-ai-quoc-den-udon-nguoi-den-noong-bua-la-noi-viet-kieu-dong-nhat-trong-tinh.htm"
+    },
+    {
+      "id": "siam-nakhon",
+      "title": "Làng Nachok và Nakhon Phanom — những năm 1928–1930",
+      "publisher": "Bảo tàng Hồ Chí Minh",
+      "url": "https://baotanghochiminh.vn/khu-tuong-niem-chu-tich-ho-chi-minh-tai-lang-nachok-ban-may-tinh-nakhon-phanom-thai-lan.htm"
+    },
+    {
+      "id": "study1934",
+      "title": "Chủ tịch Hồ Chí Minh và những năm học tập 1934–1938",
+      "publisher": "Bảo tàng Hồ Chí Minh",
+      "url": "https://baotanghochiminh.vn/chu-tich-ho-chi-minh-va-dau-an-dac-biet-trong-nhung-nam-hoi.htm"
+    },
+    {
+      "id": "kunming",
+      "title": "Dấu mốc trước khi Nguyễn Ái Quốc về nước năm 1941",
+      "publisher": "Bảo tàng Hồ Chí Minh",
+      "url": "https://baotanghochiminh.vn/ky-niem-82-nam-ngay-lanh-tu-nguyen-ai-quoc-ve-nuoc-dau-moc-quan-trong-trong-lich-su-dang-va-cach-mang-viet-nam.htm"
+    },
+    {
+      "id": "paris1946",
+      "title": "Biên niên — những ngày ở Paris, tháng 9/1946",
+      "publisher": "Bảo tàng Hồ Chí Minh",
+      "url": "https://baotanghochiminh.vn/bien-nien-tieu-su/p-393.htm"
+    },
+    {
+      "id": "haiphong1946",
+      "title": "Biên niên — trở về Hải Phòng ngày 20/10/1946",
+      "publisher": "Bảo tàng Hồ Chí Minh",
+      "url": "https://baotanghochiminh.vn/bien-nien-tieu-su/p-380.htm"
+    },
+    {
+      "id": "india1958",
+      "title": "Biên niên — chuyến thăm Ấn Độ, tháng 2/1958",
+      "publisher": "Bảo tàng Hồ Chí Minh",
+      "url": "https://baotanghochiminh.vn/danh-sach-bien-nien-tieu-su/p-611.htm"
+    },
+    {
+      "id": "asia-photos",
+      "title": "Tư liệu ảnh Chủ tịch Hồ Chí Minh với quốc tế",
+      "publisher": "Chuyên trang Hồ Chí Minh · tư liệu ảnh",
+      "url": "https://hochiminh.vn/tu-lieu-anh/tu-lieu-anh-chu-tich-ho-chi-minh-voi-quoc-te.html"
+    },
+    {
+      "id": "indonesia1959",
+      "title": "Chuyến thăm Indonesia từ 27/2 đến 8/3/1959",
+      "publisher": "Bảo tàng Hồ Chí Minh",
+      "url": "https://baotanghochiminh.vn/ky-niem-60-nam-chuyen-tham-cua-bac-ho-va-tong-thong-sukarno.htm"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "que-huong",
+      "chapter": "01 · Cội nguồn",
+      "date": "19.05.1890",
+      "year": 1890,
+      "name": "Nguyễn Sinh Cung",
+      "title": "Từ một làng quê xứ Nghệ",
+      "location": {
+        "name": "Hoàng Trù · Nam Đàn",
+        "country": "Việt Nam",
+        "at": [
+          105.697,
+          18.915
+        ]
+      },
+      "summary": "Chủ tịch Hồ Chí Minh sinh tại làng Hoàng Trù, trong gia đình nhà nho Nguyễn Sinh Sắc và bà Hoàng Thị Loan. Tên thời thơ ấu của Người là Nguyễn Sinh Cung.",
+      "meaning": "Quê hương và gia đình là điểm khởi đầu để hiểu con người phía sau một cuộc đời hoạt động cách mạng.",
+      "context": "Nước Việt Nam lúc này nằm dưới chế độ thuộc địa của Pháp. Bản đồ dùng địa danh để định vị, không tái hiện ranh giới hành chính năm 1890.",
+      "people": [],
+      "sourceIds": [
+        "biography"
+      ]
+    },
+    {
+      "id": "ben-nha-rong",
+      "chapter": "02 · Tìm đường cứu nước",
+      "date": "05.06.1911",
+      "year": 1911,
+      "name": "Nguyễn Tất Thành · Văn Ba",
+      "title": "Một chuyến đi vì tương lai dân tộc",
+      "location": {
+        "name": "Bến Nhà Rồng · Sài Gòn",
+        "country": "Việt Nam",
+        "at": [
+          106.707,
+          10.768
+        ]
+      },
+      "summary": "Với tên Văn Ba, Nguyễn Tất Thành làm phụ bếp trên tàu Amiral Latouche-Tréville, rời cảng Sài Gòn để ra nước ngoài tìm con đường giải phóng dân tộc.",
+      "meaning": "Hành trình bắt đầu từ lao động và quan sát thực tế ở nước ngoài, mang theo câu hỏi về độc lập của quê hương.",
+      "context": "Đường nối trên bản đồ chỉ liên kết các mốc tiêu biểu. Những cảng trung chuyển và nhiều chặng ở châu Phi, châu Mỹ chưa được biểu diễn đầy đủ.",
+      "people": [],
+      "sourceIds": [
+        "departure",
+        "journey"
+      ]
+    },
+    {
+      "id": "singapore-1911",
+      "date": "08.06.1911",
+      "year": 1911,
+      "title": "Chặng dừng ở cảng Keppel",
+      "name": "Nguyễn Tất Thành · Văn Ba",
+      "chapter": "02 · Tìm đường cứu nước",
+      "location": {
+        "name": "Singapore",
+        "country": "Thuộc địa Anh thời kỳ này",
+        "at": [
+          103.84,
+          1.27
+        ]
+      },
+      "summary": "Tàu Amiral Latouche-Tréville chở Nguyễn Tất Thành cập cảng Keppel, Singapore, ba ngày sau khi rời Sài Gòn.",
+      "meaning": "Đọc mốc này cùng các điểm trước và sau để theo dõi thứ tự hành trình.",
+      "context": "Định vị cảng gần đúng theo hồ sơ hành trình con tàu; đường nối không tái dựng từng đoạn hải trình.",
+      "people": [],
+      "sourceIds": [
+        "ship1911"
+      ]
+    },
+    {
+      "id": "colombo-1911",
+      "date": "06.1911",
+      "year": 1911,
+      "title": "Qua Ấn Độ Dương",
+      "name": "Nguyễn Tất Thành · Văn Ba",
+      "chapter": "02 · Tìm đường cứu nước",
+      "location": {
+        "name": "Colombo · Sri Lanka",
+        "country": "Ceylon thuộc Anh thời kỳ này",
+        "at": [
+          79.84,
+          6.95
+        ]
+      },
+      "summary": "Hành trình năm 1911 đưa Nguyễn Tất Thành qua Sri Lanka trên đường từ Singapore tới Pháp.",
+      "meaning": "Đọc mốc này cùng các điểm trước và sau để theo dõi thứ tự hành trình.",
+      "context": "Colombo được ghi trong tư liệu tổng thuật. Không gán một ngày cập cảng cụ thể khi nguồn ở đây chưa xác định ngày.",
+      "people": [],
+      "sourceIds": [
+        "international",
+        "ship1911"
+      ]
+    },
+    {
+      "id": "port-said-1911",
+      "date": "06–07.1911",
+      "year": 1911,
+      "title": "Từ kênh Suez ra Địa Trung Hải",
+      "name": "Nguyễn Tất Thành · Văn Ba",
+      "chapter": "02 · Tìm đường cứu nước",
+      "location": {
+        "name": "Port Said",
+        "country": "Ai Cập",
+        "at": [
+          32.3,
+          31.26
+        ]
+      },
+      "summary": "Tàu đi qua Biển Đỏ và kênh Suez, cập Port Said trước khi tới Marseille.",
+      "meaning": "Đọc mốc này cùng các điểm trước và sau để theo dõi thứ tự hành trình.",
+      "context": "Điểm cảng đại diện cho chặng tàu đi qua Ai Cập, không khẳng định hoạt động riêng trên bờ của Nguyễn Tất Thành.",
+      "people": [],
+      "sourceIds": [
+        "ship1911"
+      ]
+    },
+    {
+      "id": "marseille-1911",
+      "date": "06.07.1911",
+      "year": 1911,
+      "title": "Đặt chân tới nước Pháp",
+      "name": "Nguyễn Tất Thành · Văn Ba",
+      "chapter": "02 · Tìm đường cứu nước",
+      "location": {
+        "name": "Marseille",
+        "country": "Pháp",
+        "at": [
+          5.37,
+          43.3
+        ]
+      },
+      "summary": "Tàu tới Marseille ngày 6/7/1911, rồi tiếp tục đi về phía bắc nước Pháp.",
+      "meaning": "Đọc mốc này cùng các điểm trước và sau để theo dõi thứ tự hành trình.",
+      "context": "Đây là một chặng của chuyến đi năm 1911, không phải nơi Người ở suốt những năm sau đó.",
+      "people": [],
+      "sourceIds": [
+        "ship1911"
+      ]
+    },
+    {
+      "id": "le-havre-1911",
+      "date": "15.07.1911",
+      "year": 1911,
+      "title": "Tới miền bắc nước Pháp",
+      "name": "Nguyễn Tất Thành · Văn Ba",
+      "chapter": "02 · Tìm đường cứu nước",
+      "location": {
+        "name": "Le Havre",
+        "country": "Pháp",
+        "at": [
+          0.108,
+          49.49
+        ]
+      },
+      "summary": "Tàu cập Le Havre ngày 15/7/1911. Hồ sơ của chuyến tàu cũng ghi nhận chặng Dunkerque sau đó.",
+      "meaning": "Đọc mốc này cùng các điểm trước và sau để theo dõi thứ tự hành trình.",
+      "context": "Bản đồ nối các cảng đã có tư liệu, không suy ra nơi ở thường xuyên của Người từ một lần cập cảng.",
+      "people": [],
+      "sourceIds": [
+        "ship1911"
+      ]
+    },
+    {
+      "id": "dunkerque-1911",
+      "date": "26.07.1911",
+      "year": 1911,
+      "title": "Một dấu vết trong sổ nhập cảng",
+      "name": "Nguyễn Tất Thành · Văn Ba",
+      "chapter": "02 · Tìm đường cứu nước",
+      "location": {
+        "name": "Dunkerque",
+        "country": "Pháp",
+        "at": [
+          2.37,
+          51.04
+        ]
+      },
+      "summary": "Tư liệu Bảo tàng Hồ Chí Minh giới thiệu sổ nhập cảng của tàu Amiral Latouche-Tréville tại Dunkerque ngày 26/7/1911.",
+      "meaning": "Đọc mốc này cùng các điểm trước và sau để theo dõi thứ tự hành trình.",
+      "context": "Đây là điểm trong hồ sơ hành trình con tàu. Không mặc định ngày nhập cảng là ngày Nguyễn Tất Thành bắt đầu lưu trú trên bờ.",
+      "people": [],
+      "sourceIds": [
+        "ship1911"
+      ]
+    },
+    {
+      "id": "new-york-1912",
+      "date": "Cuối 1912 – đầu 1913",
+      "year": 1912,
+      "title": "Dấu chân ở bên kia Đại Tây Dương",
+      "name": "Nguyễn Tất Thành",
+      "chapter": "02 · Tìm đường cứu nước",
+      "location": {
+        "name": "New York",
+        "country": "Hoa Kỳ",
+        "at": [
+          -74.006,
+          40.713
+        ]
+      },
+      "summary": "Tư liệu về bức thư đề tại New York ngày 15/12/1912 là một căn cứ cho thời gian Nguyễn Tất Thành có mặt ở Hoa Kỳ.",
+      "meaning": "Đọc mốc này cùng các điểm trước và sau để theo dõi thứ tự hành trình.",
+      "context": "Nguồn xác nhận địa điểm và khoảng thời gian; không dựng công việc, địa chỉ cư trú hoặc ngày đến, ngày đi chưa xác minh.",
+      "people": [],
+      "sourceIds": [
+        "new-york"
+      ]
+    },
+    {
+      "id": "london",
+      "chapter": "02 · Tìm đường cứu nước",
+      "date": "1913–1917",
+      "year": 1913,
+      "name": "Nguyễn Tất Thành",
+      "title": "Những năm lao động ở nước Anh",
+      "location": {
+        "name": "London",
+        "country": "Vương quốc Anh",
+        "at": [
+          -0.128,
+          51.507
+        ]
+      },
+      "summary": "Nguyễn Tất Thành sống và làm việc tại Anh trước khi trở lại Pháp. Những trải nghiệm lao động ở phương Tây góp phần mở rộng hiểu biết của Người về đời sống người lao động.",
+      "meaning": "Cuộc tìm đường diễn ra trong đời sống thường ngày, qua công việc, học hỏi và tiếp xúc với nhiều xã hội.",
+      "context": "Điểm London đại diện cho giai đoạn ở Anh; không khẳng định một địa chỉ làm việc duy nhất cho toàn bộ thời gian này.",
+      "people": [],
+      "sourceIds": [
+        "journey",
+        "biography"
+      ]
+    },
+    {
+      "id": "paris-1919",
+      "chapter": "02 · Tìm đường cứu nước",
+      "date": "06.1919",
+      "year": 1919,
+      "name": "Nguyễn Ái Quốc",
+      "title": "Đưa tiếng nói dân tộc ra thế giới",
+      "location": {
+        "name": "Paris",
+        "country": "Pháp",
+        "at": [
+          2.352,
+          48.857
+        ]
+      },
+      "summary": "Bản Yêu sách của nhân dân An Nam được gửi tới Hội nghị Versailles, ký tên Nguyễn Ái Quốc, đòi các quyền tự do, dân chủ và bình đẳng cho người Việt Nam.",
+      "meaning": "Câu chuyện độc lập Việt Nam bước vào không gian báo chí và vận động chính trị quốc tế.",
+      "context": "Bác hoạt động ở Paris. Hội nghị diễn ra ở Versailles; vị trí bản đồ không có nghĩa Người là đại biểu chính thức của hội nghị.",
+      "people": [
+        {
+          "characterId": "phan-chau-trinh",
+          "kind": "companion",
+          "connection": "Cùng thuộc môi trường những người Việt Nam yêu nước tại Pháp; lựa chọn con đường cứu nước có những khác biệt.",
+          "place": "Paris",
+          "at": [
+            2.352,
+            48.857
+          ],
+          "locationNote": "Định vị theo cộng đồng hoạt động tại Paris, không khẳng định cùng một cuộc họp.",
+          "sourceIds": [
+            "journey"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "journey"
+      ]
+    },
+    {
+      "id": "tours-1920",
+      "chapter": "02 · Tìm đường cứu nước",
+      "date": "12.1920",
+      "year": 1920,
+      "name": "Nguyễn Ái Quốc",
+      "title": "Lựa chọn con đường cách mạng",
+      "location": {
+        "name": "Tours",
+        "country": "Pháp",
+        "at": [
+          0.684,
+          47.394
+        ]
+      },
+      "summary": "Sau khi đọc luận cương của Lênin về vấn đề dân tộc và thuộc địa, Nguyễn Ái Quốc tham gia Đại hội Tours, tán thành Quốc tế Cộng sản và tham gia sáng lập Đảng Cộng sản Pháp.",
+      "meaning": "Từ lòng yêu nước, Người lựa chọn gắn giải phóng dân tộc với phong trào cách mạng vô sản.",
+      "context": "Ảnh hưởng của Lênin ở mốc này là qua tư tưởng và văn bản. Không có căn cứ để biểu diễn một cuộc gặp trực tiếp giữa hai người.",
+      "people": [
+        {
+          "characterId": "vladimir-lenin",
+          "kind": "influence",
+          "connection": "Luận cương về dân tộc và thuộc địa là một ảnh hưởng tư tưởng quan trọng; không biểu diễn như người cùng dự Đại hội Tours.",
+          "sourceIds": [
+            "russia",
+            "journey"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "russia",
+        "journey"
+      ]
+    },
+    {
+      "id": "moscow-1923",
+      "chapter": "03 · Gây dựng lực lượng",
+      "date": "1923–1924",
+      "year": 1923,
+      "name": "Nguyễn Ái Quốc",
+      "title": "Đặt vấn đề thuộc địa giữa phong trào quốc tế",
+      "location": {
+        "name": "Mátxcơva",
+        "country": "Liên Xô thời kỳ này",
+        "at": [
+          37.617,
+          55.756
+        ]
+      },
+      "summary": "Nguyễn Ái Quốc tới Liên Xô, tham gia hoạt động của Quốc tế Cộng sản và dự Đại hội V năm 1924. Người đề cao vai trò của các dân tộc thuộc địa trong cuộc đấu tranh cách mạng.",
+      "meaning": "Tích lũy kiến thức và quan hệ quốc tế để chuẩn bị cho hoạt động tổ chức cách mạng Việt Nam.",
+      "context": "Lênin mất tháng 1/1924. Chuyên trang không dựng cuộc gặp với Lênin hay tự suy ra cuộc gặp với Stalin trong giai đoạn này.",
+      "people": [],
+      "sourceIds": [
+        "russia",
+        "independence"
+      ]
+    },
+    {
+      "id": "quang-chau",
+      "chapter": "03 · Gây dựng lực lượng",
+      "date": "1924–1927",
+      "year": 1924,
+      "name": "Nguyễn Ái Quốc · Lý Thụy",
+      "title": "Từ tư tưởng đến những lớp cán bộ đầu tiên",
+      "location": {
+        "name": "Quảng Châu",
+        "country": "Trung Quốc",
+        "at": [
+          113.264,
+          23.129
+        ]
+      },
+      "summary": "Tại Quảng Châu, Nguyễn Ái Quốc mở lớp huấn luyện, xây dựng Hội Việt Nam Cách mạng Thanh niên năm 1925 và chuẩn bị lực lượng cho phong trào trong nước.",
+      "meaning": "Công tác đào tạo, tổ chức và truyền bá tư tưởng tạo nền tảng cho một chính đảng cách mạng.",
+      "context": "Quảng Châu là một trung tâm hoạt động cách mạng quốc tế lúc bấy giờ, không phải lãnh thổ do tổ chức Việt Nam kiểm soát.",
+      "people": [],
+      "sourceIds": [
+        "guangzhou",
+        "independence",
+        "party"
+      ]
+    },
+    {
+      "id": "phichit-1928",
+      "date": "07.1928",
+      "year": 1928,
+      "title": "Hoạt động giữa cộng đồng Việt kiều ở Xiêm",
+      "name": "Nguyễn Ái Quốc · Thầu Chín",
+      "chapter": "03 · Gây dựng lực lượng",
+      "location": {
+        "name": "Bản Đông · Phichit",
+        "country": "Xiêm · Thái Lan ngày nay",
+        "at": [
+          100.35,
+          16.44
+        ]
+      },
+      "summary": "Nguyễn Ái Quốc tới Bản Đông thuộc Phichit vào đầu tháng 7/1928, trong thời gian hoạt động ở Xiêm.",
+      "meaning": "Đọc mốc này cùng các điểm trước và sau để theo dõi thứ tự hành trình.",
+      "context": "Tọa độ đại diện khu vực Phichit; không dùng điểm này để suy ra hành trình từng ngày giữa các làng.",
+      "people": [],
+      "sourceIds": [
+        "siam-phichit"
+      ]
+    },
+    {
+      "id": "udon-1928",
+      "date": "08.1928",
+      "year": 1928,
+      "title": "Xây dựng tổ chức ở Udon",
+      "name": "Nguyễn Ái Quốc · Thầu Chín",
+      "chapter": "03 · Gây dựng lực lượng",
+      "location": {
+        "name": "Udon Thani",
+        "country": "Xiêm · Thái Lan ngày nay",
+        "at": [
+          102.79,
+          17.41
+        ]
+      },
+      "summary": "Tại Udon, Nguyễn Ái Quốc làm việc với tổ chức thanh niên và cộng đồng Việt kiều, chú trọng tuyên truyền và huấn luyện cán bộ.",
+      "meaning": "Đọc mốc này cùng các điểm trước và sau để theo dõi thứ tự hành trình.",
+      "context": "Biên niên đặt hoạt động này vào tháng 8/1928. Điểm bản đồ định vị thành phố, không phải một căn nhà đã xác định.",
+      "people": [],
+      "sourceIds": [
+        "siam-udon"
+      ]
+    },
+    {
+      "id": "nakhon-phanom-1929",
+      "date": "1929",
+      "year": 1929,
+      "title": "Cùng Việt kiều bên bờ sông Mekong",
+      "name": "Nguyễn Ái Quốc · Thầu Chín",
+      "chapter": "03 · Gây dựng lực lượng",
+      "location": {
+        "name": "Nakhon Phanom · Bản Mạy",
+        "country": "Xiêm · Thái Lan ngày nay",
+        "at": [
+          104.75,
+          17.4
+        ]
+      },
+      "summary": "Nguyễn Ái Quốc hoạt động ở Nakhon Phanom trong giai đoạn ở Xiêm. Làng Nachok, còn gọi Bản Mạy, lưu giữ dấu tích về Người.",
+      "meaning": "Đọc mốc này cùng các điểm trước và sau để theo dõi thứ tự hành trình.",
+      "context": "Tư liệu mô tả nhiều chặng qua Udon và Sakon Nakhon trước khi tới Nakhon Phanom; sơ đồ không biểu diễn đầy đủ từng làng trung chuyển.",
+      "people": [],
+      "sourceIds": [
+        "siam-nakhon"
+      ]
+    },
+    {
+      "id": "hong-kong-1930",
+      "chapter": "03 · Gây dựng lực lượng",
+      "date": "Đầu năm 1930",
+      "year": 1930,
+      "name": "Nguyễn Ái Quốc",
+      "title": "Hợp nhất các tổ chức cộng sản",
+      "location": {
+        "name": "Cửu Long · Hồng Kông",
+        "country": "Thuộc địa Anh thời kỳ này",
+        "at": [
+          114.174,
+          22.319
+        ]
+      },
+      "summary": "Nguyễn Ái Quốc chủ trì hội nghị hợp nhất các tổ chức cộng sản, thành lập Đảng Cộng sản Việt Nam. Ngày 3/2 được chọn làm ngày kỷ niệm thành lập Đảng.",
+      "meaning": "Một bước chuyển từ những tổ chức phân tán sang sự lãnh đạo thống nhất.",
+      "context": "Dùng mốc “đầu năm 1930” vì các tư liệu biên niên có cách ghi khác nhau về khoảng thời gian hội nghị; không khẳng định một địa chỉ họp chính xác.",
+      "people": [],
+      "sourceIds": [
+        "party"
+      ]
+    },
+    {
+      "id": "hong-kong-1931",
+      "chapter": "03 · Gây dựng lực lượng",
+      "date": "1931–1933",
+      "year": 1931,
+      "name": "Tống Văn Sơ",
+      "title": "Một vụ án và tình bạn vượt biên giới",
+      "location": {
+        "name": "Hồng Kông",
+        "country": "Thuộc địa Anh thời kỳ này",
+        "at": [
+          114.17,
+          22.3
+        ]
+      },
+      "summary": "Nguyễn Ái Quốc bị bắt tại Hồng Kông năm 1931. Luật sư Francis Henry Loseby và gia đình giúp bảo vệ Người trước nguy cơ bị trục xuất và tìm đường rời Hồng Kông.",
+      "meaning": "Bên cạnh hoạt động chính trị là những con người đã giúp đỡ Người trong hiểm nguy.",
+      "context": "Vai trò của Loseby là bảo vệ pháp lý và hỗ trợ; không đồng nhất ông với một tổ chức cách mạng Việt Nam.",
+      "people": [
+        {
+          "characterId": "francis-loseby",
+          "kind": "companion",
+          "connection": "Luật sư bào chữa trong vụ án ở Hồng Kông, cùng gia đình giúp Người thoát khỏi sự truy bắt.",
+          "place": "Hồng Kông",
+          "at": [
+            114.17,
+            22.3
+          ],
+          "locationNote": "Vị trí thành phố diễn ra vụ án.",
+          "sourceIds": [
+            "loseby"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "loseby"
+      ]
+    },
+    {
+      "id": "moscow-1934",
+      "date": "1934–1938",
+      "year": 1934,
+      "title": "Trở lại học tập và nghiên cứu tại Liên Xô",
+      "name": "Nguyễn Ái Quốc",
+      "chapter": "03 · Gây dựng lực lượng",
+      "location": {
+        "name": "Mátxcơva",
+        "country": "Liên Xô thời kỳ này",
+        "at": [
+          37.617,
+          55.756
+        ]
+      },
+      "summary": "Nguyễn Ái Quốc học tập và nghiên cứu tại Mátxcơva trong những năm 1934–1938, trước khi trở lại Trung Quốc.",
+      "meaning": "Đọc mốc này cùng các điểm trước và sau để theo dõi thứ tự hành trình.",
+      "context": "Đây là lần trở lại Mátxcơva, khác với mốc 1923–1924 và chuyến ngoại giao năm 1950. Các lần đến được giữ thành mốc riêng để đọc đúng thứ tự.",
+      "people": [],
+      "sourceIds": [
+        "study1934"
+      ]
+    },
+    {
+      "id": "con-minh-1940",
+      "date": "06.1940",
+      "year": 1940,
+      "title": "Chuẩn bị con đường trở về nước",
+      "name": "Nguyễn Ái Quốc",
+      "chapter": "03 · Gây dựng lực lượng",
+      "location": {
+        "name": "Côn Minh · Vân Nam",
+        "country": "Trung Quốc",
+        "at": [
+          102.712,
+          25.04
+        ]
+      },
+      "summary": "Ở Côn Minh, Nguyễn Ái Quốc gặp Võ Nguyên Giáp và Phạm Văn Đồng từ trong nước sang, nghe báo cáo tình hình và chuẩn bị trở về Việt Nam.",
+      "meaning": "Đọc mốc này cùng các điểm trước và sau để theo dõi thứ tự hành trình.",
+      "context": "Tư liệu xác nhận cuộc gặp tại khu vực công viên Thúy Hồ. Tọa độ chỉ định vị thành phố, không tái dựng chính xác vị trí cuộc gặp.",
+      "people": [],
+      "sourceIds": [
+        "kunming"
+      ]
+    },
+    {
+      "id": "pac-bo-1941",
+      "chapter": "04 · Trở về giành độc lập",
+      "date": "28.01.1941",
+      "year": 1941,
+      "name": "Nguyễn Ái Quốc",
+      "title": "Trở về sau ba mươi năm xa Tổ quốc",
+      "location": {
+        "name": "Pác Bó · Cao Bằng",
+        "country": "Việt Nam",
+        "at": [
+          106.047,
+          22.98
+        ]
+      },
+      "summary": "Nguyễn Ái Quốc về nước qua biên giới Cao Bằng. Tháng 5/1941, Người chủ trì Hội nghị Trung ương VIII, đặt nhiệm vụ giải phóng dân tộc lên hàng đầu; Mặt trận Việt Minh được thành lập.",
+      "meaning": "Từ hành trình quốc tế, trọng tâm chuyển về xây dựng căn cứ và tập hợp sức mạnh trong nước.",
+      "context": "Điểm bản đồ là khu vực Pác Bó. Không diễn giải những người hoạt động trong cùng phong trào là cùng vượt biên đúng ngày 28/1.",
+      "people": [],
+      "sourceIds": [
+        "pacbo"
+      ]
+    },
+    {
+      "id": "quang-tay-1942",
+      "chapter": "04 · Trở về giành độc lập",
+      "date": "1942–1943",
+      "year": 1942,
+      "name": "Hồ Chí Minh",
+      "title": "Giữ ý chí qua những nhà lao Quảng Tây",
+      "location": {
+        "name": "Quảng Tây · điểm đại diện Tĩnh Tây",
+        "country": "Trung Quốc",
+        "at": [
+          106.418,
+          23.134
+        ]
+      },
+      "summary": "Sang Trung Quốc để liên hệ lực lượng Đồng minh, Hồ Chí Minh bị chính quyền địa phương Quốc dân Đảng bắt và giải qua nhiều nhà lao. Nhật ký trong tù ra đời trong thời gian bị giam giữ.",
+      "meaning": "Một chặng thử thách cho thấy đời hoạt động có cả những quãng bị gián đoạn và tù đày.",
+      "context": "Điểm Tĩnh Tây chỉ đại diện cho giai đoạn giam giữ ở nhiều nơi, không phải vị trí liên tục của Bác. Việc bắt giữ do chính quyền địa phương thực hiện; không suy ra mệnh lệnh cá nhân của Tưởng Giới Thạch.",
+      "people": [
+        {
+          "characterId": "tuong-gioi-thach",
+          "kind": "opponent",
+          "connection": "Người đứng đầu chính quyền Quốc dân Đảng; bộ máy địa phương của chính quyền này giam giữ Hồ Chí Minh. Không xác nhận hai người gặp nhau.",
+          "sourceIds": [
+            "prison"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "prison"
+      ]
+    },
+    {
+      "id": "tan-trao-1945",
+      "chapter": "04 · Trở về giành độc lập",
+      "date": "08.1945",
+      "year": 1945,
+      "name": "Hồ Chí Minh",
+      "title": "Tân Trào — trước thời khắc quyết định",
+      "location": {
+        "name": "Tân Trào · Tuyên Quang",
+        "country": "Việt Nam",
+        "at": [
+          105.466,
+          21.775
+        ]
+      },
+      "summary": "Tân Trào trở thành trung tâm chỉ đạo cách mạng trước Tổng khởi nghĩa. Quốc dân Đại hội tán thành chủ trương khởi nghĩa, bầu Ủy ban Dân tộc giải phóng do Hồ Chí Minh làm Chủ tịch.",
+      "meaning": "Chuẩn bị chính trị và lực lượng đi tới thời cơ giành chính quyền khi Nhật đầu hàng Đồng minh.",
+      "context": "Võ Nguyên Giáp gắn với lực lượng vũ trang và các quyết định quân sự. Định vị ở khu căn cứ theo giai đoạn, không phải theo dõi từng ngày.",
+      "people": [
+        {
+          "characterId": "vo-nguyen-giap",
+          "kind": "companion",
+          "connection": "Lãnh đạo lực lượng vũ trang cách mạng, cùng chuẩn bị và thực hiện Tổng khởi nghĩa.",
+          "place": "Khu căn cứ Tân Trào",
+          "at": [
+            105.466,
+            21.775
+          ],
+          "locationNote": "Định vị theo khu vực hoạt động của giai đoạn.",
+          "sourceIds": [
+            "independence",
+            "biography"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "independence"
+      ],
+      "overviewId": "cach-mang-1945"
+    },
+    {
+      "id": "ba-dinh-1945",
+      "chapter": "05 · Lãnh đạo đất nước",
+      "date": "02.09.1945",
+      "year": 1945,
+      "name": "Chủ tịch Hồ Chí Minh",
+      "title": "Tuyên ngôn Độc lập tại Ba Đình",
+      "location": {
+        "name": "Quảng trường Ba Đình · Hà Nội",
+        "country": "Việt Nam",
+        "at": [
+          105.834,
+          21.037
+        ]
+      },
+      "summary": "Trước cuộc mít tinh ở Ba Đình, Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập, tuyên bố thành lập nước Việt Nam Dân chủ Cộng hòa.",
+      "meaning": "Từ mục tiêu tìm đường cứu nước đến sự ra đời của một nhà nước độc lập.",
+      "context": "Chính quyền mới phải đối mặt với nạn đói, khó khăn tài chính, nạn mù chữ và sự trở lại của các lực lượng nước ngoài.",
+      "people": [],
+      "sourceIds": [
+        "independence",
+        "archives"
+      ],
+      "overviewId": "cach-mang-1945"
+    },
+    {
+      "id": "truman-1946",
+      "chapter": "05 · Lãnh đạo đất nước",
+      "date": "28.02.1946",
+      "year": 1946,
+      "name": "Chủ tịch Hồ Chí Minh",
+      "title": "Một bức điện từ Hà Nội tới Washington",
+      "location": {
+        "name": "Hà Nội",
+        "country": "Việt Nam",
+        "at": [
+          105.854,
+          21.028
+        ]
+      },
+      "summary": "Hồ Chí Minh gửi điện tới Tổng thống Harry S. Truman, đề nghị Hoa Kỳ ủng hộ nền độc lập Việt Nam. Bản điện được lưu tại Cơ quan Lưu trữ Quốc gia Hoa Kỳ.",
+      "meaning": "Vận động ngoại giao được mở ra với nhiều bên để bảo vệ nền độc lập còn non trẻ.",
+      "context": "Truman không trả lời các thư vận động này. Đường nét đứt là liên hệ thư tín, không phải chuyến đi của Bác tới Washington hay một cuộc gặp trực tiếp.",
+      "people": [
+        {
+          "characterId": "harry-truman",
+          "kind": "diplomacy",
+          "connection": "Người nhận điện đề nghị hỗ trợ; không có cuộc gặp trực tiếp ở mốc này.",
+          "place": "Washington, D.C.",
+          "at": [
+            -77.037,
+            38.898
+          ],
+          "locationNote": "Trung tâm chính quyền Hoa Kỳ, không khẳng định chỗ ở theo ngày.",
+          "sourceIds": [
+            "truman",
+            "archives"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "truman",
+        "archives"
+      ]
+    },
+    {
+      "id": "so-bo-1946",
+      "chapter": "05 · Lãnh đạo đất nước",
+      "date": "06.03.1946",
+      "year": 1946,
+      "name": "Chủ tịch Hồ Chí Minh",
+      "title": "Đàm phán để giữ một cơ hội hòa bình",
+      "location": {
+        "name": "Hà Nội",
+        "country": "Việt Nam",
+        "at": [
+          105.854,
+          21.028
+        ]
+      },
+      "summary": "Hồ Chí Minh ký Hiệp định Sơ bộ với đại diện Pháp Jean Sainteny. Đàm phán là một nỗ lực giải quyết quan hệ Việt–Pháp trong hoàn cảnh chính trị và quân sự đặc biệt khó khăn.",
+      "meaning": "Phía đối đầu quân sự cũng có thể là đối tác trên bàn đàm phán; quan hệ lịch sử cần đọc theo từng sự kiện.",
+      "context": "Hiệp định chưa đem lại nền hòa bình lâu dài. Cuối năm 1946, chiến tranh Việt–Pháp bùng nổ trên phạm vi cả nước.",
+      "people": [
+        {
+          "characterId": "jean-sainteny",
+          "kind": "diplomacy",
+          "connection": "Đại diện Chính phủ Pháp ký Hiệp định Sơ bộ với Hồ Chí Minh tại Hà Nội; đại diện phía Pháp trong cuộc đàm phán.",
+          "place": "Hà Nội",
+          "at": [
+            105.854,
+            21.028
+          ],
+          "locationNote": "Cùng thành phố diễn ra sự kiện ký kết.",
+          "sourceIds": [
+            "sainteny"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "sainteny",
+        "archives"
+      ]
+    },
+    {
+      "id": "paris-1946",
+      "date": "06–09.1946",
+      "year": 1946,
+      "title": "Trở lại Pháp với cương vị Chủ tịch nước",
+      "name": "Chủ tịch Hồ Chí Minh",
+      "chapter": "05 · Lãnh đạo đất nước",
+      "location": {
+        "name": "Paris",
+        "country": "Pháp",
+        "at": [
+          2.352,
+          48.857
+        ]
+      },
+      "summary": "Hồ Chí Minh ở Pháp với tư cách thượng khách, tiếp xúc và vận động ngoại giao. Tại Paris, Người ký Tạm ước ngày 14/9/1946 với Bộ trưởng Marius Moutet.",
+      "meaning": "Đọc mốc này cùng các điểm trước và sau để theo dõi thứ tự hành trình.",
+      "context": "Khác với lần hoạt động năm 1919: đây là chuyến đi của người đứng đầu nhà nước. Hội nghị Fontainebleau do phái đoàn Việt Nam tham dự, không đồng nhất với mọi hoạt động của Bác tại Paris.",
+      "people": [],
+      "sourceIds": [
+        "paris1946"
+      ]
+    },
+    {
+      "id": "hai-phong-1946",
+      "date": "20.10.1946",
+      "year": 1946,
+      "title": "Trở về sau chuyến ngoại giao ở Pháp",
+      "name": "Chủ tịch Hồ Chí Minh",
+      "chapter": "05 · Lãnh đạo đất nước",
+      "location": {
+        "name": "Hải Phòng",
+        "country": "Việt Nam",
+        "at": [
+          106.68,
+          20.86
+        ]
+      },
+      "summary": "Hồ Chí Minh về tới cảng Hải Phòng ngày 20/10/1946 sau chuyến đi Pháp.",
+      "meaning": "Đọc mốc này cùng các điểm trước và sau để theo dõi thứ tự hành trình.",
+      "context": "Bản đồ nối Paris và Hải Phòng để biểu diễn thứ tự các mốc, không vẽ thay cho tuyến tàu trở về và mọi điểm dừng dọc đường.",
+      "people": [],
+      "sourceIds": [
+        "haiphong1946"
+      ]
+    },
+    {
+      "id": "bac-kinh-1950",
+      "chapter": "06 · Kháng chiến & ngoại giao",
+      "date": "01–02.1950",
+      "year": 1950,
+      "name": "Chủ tịch Hồ Chí Minh",
+      "title": "Mở thế bao vây ngoại giao",
+      "location": {
+        "name": "Bắc Kinh",
+        "country": "Trung Quốc",
+        "at": [
+          116.407,
+          39.904
+        ]
+      },
+      "summary": "Hồ Chí Minh sang Trung Quốc, tiếp tục vận động sự công nhận và hỗ trợ quốc tế. Trung Quốc công nhận Việt Nam Dân chủ Cộng hòa ngày 18/1, Liên Xô ngày 30/1/1950.",
+      "meaning": "Quan hệ với các nước xã hội chủ nghĩa mở thêm nguồn hỗ trợ cho cuộc kháng chiến chống Pháp.",
+      "context": "Mao Trạch Đông đang ở Mátxcơva trong giai đoạn này. Không đặt Mao ở Bắc Kinh cùng Bác; cuộc gặp được trình bày ở mốc Mátxcơva kế tiếp.",
+      "people": [],
+      "sourceIds": [
+        "recognition",
+        "tour1950"
+      ]
+    },
+    {
+      "id": "moscow-1950",
+      "chapter": "06 · Kháng chiến & ngoại giao",
+      "date": "02.1950",
+      "year": 1950,
+      "name": "Chủ tịch Hồ Chí Minh",
+      "title": "Hồ Chí Minh, Stalin và Mao Trạch Đông",
+      "location": {
+        "name": "Mátxcơva",
+        "country": "Liên Xô thời kỳ này",
+        "at": [
+          37.617,
+          55.756
+        ]
+      },
+      "summary": "Tại Mátxcơva, Hồ Chí Minh làm việc với lãnh đạo Liên Xô và trao đổi với lãnh đạo Trung Quốc. Biên niên ghi nhận Người cùng Stalin, Mao Trạch Đông và Chu Ân Lai dự tiệc ngày 16/2/1950.",
+      "meaning": "Vận động viện trợ, đào tạo cán bộ và hỗ trợ quốc tế cho kháng chiến. Hợp tác trong sự kiện này không có nghĩa mọi quan điểm của các bên đều đồng nhất.",
+      "context": "Các chân dung được gom tại cùng thành phố vì có tư liệu về sự hiện diện ở đây. Không dựng chi tiết phòng họp, lộ trình hay nội dung phát biểu chưa được kiểm chứng.",
+      "people": [
+        {
+          "characterId": "joseph-stalin",
+          "kind": "ally",
+          "connection": "Lãnh đạo Liên Xô, trực tiếp làm việc với Hồ Chí Minh trong chuyến đi năm 1950; tư liệu thư từ đề cập hỗ trợ và cố vấn.",
+          "place": "Mátxcơva",
+          "at": [
+            37.617,
+            55.756
+          ],
+          "locationNote": "Cùng thành phố; có ghi nhận gặp trực tiếp.",
+          "sourceIds": [
+            "moscow",
+            "stalin"
+          ]
+        },
+        {
+          "characterId": "mao-trach-dong",
+          "kind": "ally",
+          "connection": "Lãnh đạo Trung Quốc, có mặt tại Mátxcơva; trao đổi về hỗ trợ kháng chiến Việt Nam. Cùng dự tiệc ngày 16/2/1950.",
+          "place": "Mátxcơva",
+          "at": [
+            37.617,
+            55.756
+          ],
+          "locationNote": "Địa điểm ở thời điểm này là Mátxcơva, không phải Bắc Kinh.",
+          "sourceIds": [
+            "moscow",
+            "recognition"
+          ]
+        },
+        {
+          "characterId": "chu-an-lai",
+          "kind": "ally",
+          "connection": "Thủ tướng Trung Quốc, cùng hiện diện trong hoạt động ngoại giao Xô–Trung–Việt tháng 2/1950.",
+          "place": "Mátxcơva",
+          "at": [
+            37.617,
+            55.756
+          ],
+          "locationNote": "Cùng dự tiệc theo ghi chép biên niên ngày 16/2/1950.",
+          "sourceIds": [
+            "moscow",
+            "tour1950"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "moscow",
+        "stalin",
+        "recognition",
+        "tour1950"
+      ]
+    },
+    {
+      "id": "dien-bien-1954",
+      "chapter": "06 · Kháng chiến & ngoại giao",
+      "date": "1953–1954",
+      "year": 1954,
+      "name": "Chủ tịch Hồ Chí Minh",
+      "title": "Từ An toàn khu tới Điện Biên Phủ",
+      "location": {
+        "name": "An toàn khu Định Hóa · Thái Nguyên",
+        "country": "Việt Nam",
+        "at": [
+          105.566,
+          21.907
+        ]
+      },
+      "summary": "Từ căn cứ Việt Bắc, Hồ Chí Minh cùng Trung ương lãnh đạo kháng chiến. Võ Nguyên Giáp trực tiếp chỉ huy Chiến dịch Điện Biên Phủ; thắng lợi tháng 5/1954 tạo bước ngoặt quan trọng.",
+      "meaning": "Phân biệt vị trí của người lãnh đạo ở căn cứ với vị trí của người chỉ huy ngoài mặt trận.",
+      "context": "Các điểm đại diện cho địa bàn hoạt động của cả chiến dịch. Không đặt Bác tại Điện Biên Phủ như người trực tiếp chỉ huy tại trận; Hiệp định Genève dẫn tới việc tạm thời chia hai vùng tập kết.",
+      "people": [
+        {
+          "characterId": "vo-nguyen-giap",
+          "kind": "companion",
+          "connection": "Tổng tư lệnh, trực tiếp chỉ huy chiến dịch Điện Biên Phủ.",
+          "place": "Mường Phăng · Điện Biên",
+          "at": [
+            103.108,
+            21.435
+          ],
+          "locationNote": "Khu vực sở chỉ huy chiến dịch, đại diện theo giai đoạn.",
+          "sourceIds": [
+            "biography",
+            "archives"
+          ]
+        },
+        {
+          "characterId": "christian-de-castries",
+          "kind": "opponent",
+          "connection": "Chỉ huy tập đoàn cứ điểm của Pháp ở Điện Biên Phủ, phía đối đầu quân sự trong chiến dịch.",
+          "place": "Điện Biên Phủ",
+          "at": [
+            103.01,
+            21.386
+          ],
+          "locationNote": "Định vị tập đoàn cứ điểm trong chiến dịch, không phải cuộc gặp với Bác.",
+          "sourceIds": [
+            "archives"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "biography",
+        "archives"
+      ],
+      "overviewId": "dien-bien-phu"
+    },
+    {
+      "id": "ha-noi-1958",
+      "chapter": "07 · Những năm cuối & Di chúc",
+      "date": "1954–1964",
+      "year": 1958,
+      "name": "Chủ tịch Hồ Chí Minh",
+      "title": "Trở lại Hà Nội, tiếp tục một sự nghiệp",
+      "location": {
+        "name": "Khu Phủ Chủ tịch · Hà Nội",
+        "country": "Việt Nam",
+        "at": [
+          105.834,
+          21.04
+        ]
+      },
+      "summary": "Sau kháng chiến chống Pháp, Hồ Chí Minh trở lại Hà Nội. Từ năm 1958, Người sống và làm việc ở nhà sàn trong khu Phủ Chủ tịch, tiếp tục đảm nhiệm cương vị Chủ tịch nước.",
+      "meaning": "Xây dựng miền Bắc diễn ra song song với mục tiêu hòa bình và thống nhất đất nước.",
+      "context": "Việt Nam vẫn bị chia cắt. Điểm nhà sàn là địa điểm làm việc tiêu biểu, không đại diện cho mọi hoạt động và chuyến thăm trong mười năm này.",
+      "people": [],
+      "sourceIds": [
+        "biography",
+        "testament"
+      ]
+    },
+    {
+      "id": "new-delhi-1958",
+      "date": "02.1958",
+      "year": 1958,
+      "title": "Thắt chặt quan hệ hữu nghị Việt Nam–Ấn Độ",
+      "name": "Chủ tịch Hồ Chí Minh",
+      "chapter": "07 · Những năm cuối & Di chúc",
+      "location": {
+        "name": "New Delhi",
+        "country": "Ấn Độ",
+        "at": [
+          77.21,
+          28.614
+        ]
+      },
+      "summary": "Chủ tịch Hồ Chí Minh thăm chính thức Ấn Độ vào tháng 2/1958; New Delhi là một địa điểm được ghi trong biên niên chuyến đi.",
+      "meaning": "Đọc mốc này cùng các điểm trước và sau để theo dõi thứ tự hành trình.",
+      "context": "New Delhi đại diện cho một phần chuyến thăm. Những địa điểm khác của chuyến đi chưa được gộp thành vị trí liên tục ở thủ đô.",
+      "people": [],
+      "sourceIds": [
+        "india1958"
+      ]
+    },
+    {
+      "id": "rangoon-1958",
+      "date": "02.1958",
+      "year": 1958,
+      "title": "Chuyến thăm Miến Điện",
+      "name": "Chủ tịch Hồ Chí Minh",
+      "chapter": "07 · Những năm cuối & Di chúc",
+      "location": {
+        "name": "Rangoon · Yangon",
+        "country": "Miến Điện · Myanmar ngày nay",
+        "at": [
+          96.16,
+          16.8
+        ]
+      },
+      "summary": "Tư liệu ảnh ghi lại chuyến thăm và lễ tiễn Chủ tịch Hồ Chí Minh tại Miến Điện tháng 2/1958.",
+      "meaning": "Đọc mốc này cùng các điểm trước và sau để theo dõi thứ tự hành trình.",
+      "context": "Yangon là điểm đại diện cho chuyến thăm, không phải khẳng định vị trí của Người từng ngày.",
+      "people": [],
+      "sourceIds": [
+        "asia-photos"
+      ]
+    },
+    {
+      "id": "jakarta-1959",
+      "date": "27.02–08.03.1959",
+      "year": 1959,
+      "title": "Chuyến thăm hữu nghị Indonesia",
+      "name": "Chủ tịch Hồ Chí Minh",
+      "chapter": "07 · Những năm cuối & Di chúc",
+      "location": {
+        "name": "Jakarta",
+        "country": "Indonesia",
+        "at": [
+          106.845,
+          -6.208
+        ]
+      },
+      "summary": "Hồ Chí Minh thăm Indonesia từ 27/2 đến 8/3/1959, góp phần phát triển tình hữu nghị giữa Việt Nam và Indonesia.",
+      "meaning": "Đọc mốc này cùng các điểm trước và sau để theo dõi thứ tự hành trình.",
+      "context": "Jakarta định vị trung tâm chính trị của chuyến thăm, không có nghĩa mọi hoạt động trong cả chuyến đi đều diễn ra ở thủ đô.",
+      "people": [],
+      "sourceIds": [
+        "indonesia1959"
+      ]
+    },
+    {
+      "id": "johnson-1967",
+      "chapter": "07 · Những năm cuối & Di chúc",
+      "date": "15.02.1967",
+      "year": 1967,
+      "name": "Chủ tịch Hồ Chí Minh",
+      "title": "Giữa chiến tranh, những trao đổi ngoại giao",
+      "location": {
+        "name": "Hà Nội",
+        "country": "Việt Nam",
+        "at": [
+          105.854,
+          21.028
+        ]
+      },
+      "summary": "Hồ Chí Minh trả lời thư Tổng thống Lyndon B. Johnson giữa lúc chiến tranh Việt Nam leo thang. Văn bản thể hiện lập trường của Việt Nam Dân chủ Cộng hòa về chấm dứt chiến tranh.",
+      "meaning": "Lãnh đạo hai phía đối đầu vẫn có kênh trao đổi bằng thư; cần phân biệt ngoại giao với gặp gỡ trực tiếp.",
+      "context": "Vị trí Washington biểu thị trung tâm chính quyền Hoa Kỳ. Đường liên hệ không phải chuyến công du và không có cuộc gặp Hồ Chí Minh–Johnson ở mốc này.",
+      "people": [
+        {
+          "characterId": "lyndon-johnson",
+          "kind": "opponent",
+          "connection": "Tổng thống Hoa Kỳ trong giai đoạn leo thang chiến tranh; trao đổi thư với Hồ Chí Minh tháng 2/1967.",
+          "place": "Washington, D.C.",
+          "at": [
+            -77.037,
+            38.898
+          ],
+          "locationNote": "Địa điểm đại diện chính quyền, không khẳng định vị trí cá nhân theo ngày.",
+          "sourceIds": [
+            "johnson"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "johnson"
+      ]
+    },
+    {
+      "id": "di-chuc-1969",
+      "chapter": "07 · Những năm cuối & Di chúc",
+      "date": "02.09.1969",
+      "year": 1969,
+      "name": "Chủ tịch Hồ Chí Minh",
+      "title": "Một cuộc đời, một di sản để lại",
+      "location": {
+        "name": "Khu Phủ Chủ tịch · Hà Nội",
+        "country": "Việt Nam",
+        "at": [
+          105.834,
+          21.04
+        ]
+      },
+      "summary": "Chủ tịch Hồ Chí Minh qua đời tại Hà Nội ngày 2/9/1969. Bản Di chúc được Người viết từ năm 1965, tiếp tục sửa và bổ sung trong những năm cuối đời.",
+      "meaning": "Di chúc gửi gắm sự chăm lo đối với con người, việc xây dựng đất nước và mong muốn hòa bình, thống nhất.",
+      "context": "Sự kiện thống nhất đất nước năm 1975 diễn ra sau khi Người qua đời. Hành trình ở đây dừng năm 1969 để giữ đúng niên đại cuộc đời.",
+      "people": [
+        {
+          "characterId": "le-duan",
+          "kind": "companion",
+          "connection": "Bí thư thứ nhất Trung ương Đảng; chứng kiến bản Di chúc đánh máy năm 1965.",
+          "sourceIds": [
+            "testament"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "testament",
+        "biography"
+      ]
+    }
+  ]
+}

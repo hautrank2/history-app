@@ -18,7 +18,7 @@ type MusicContextModel = { country: string; era: string; mood: string };
 export const soundtracks: Record<string, SoundtrackModel> = Object.fromEntries(catalog.map((row) => {
   const recording = row.countryId === "vietnam" ? row.eraId === "modern"
     ? { title: "Nỗi Đau Giữa Hoà Bình Piano", audioSrc: "/audio/music/noi-dau-giua-hoa-binh.m4a" }
-    : { title: "Hào Khí Việt Nam", audioSrc: "/audio/music/hao-khi-viet-nam.m4a" } : {};
+    : { title: "Hào Khí Việt Nam Piano", audioSrc: "/audio/music/hao-khi-viet-nam-piano.m4a" } : {};
   return [row.id, { ...row, ...recording } as SoundtrackModel];
 }));
 const sceneContexts: Record<string, MusicContextModel> = contexts.scenes;

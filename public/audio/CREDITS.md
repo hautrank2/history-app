@@ -18,7 +18,7 @@ Bản giấy phép gốc nằm cạnh file âm thanh trong `sfx/KENNEY-*-LICENSE
 
 Nhạc Việt Nam dùng hai bản thu do người dùng chọn, lưu cục bộ trong `music/`:
 
-- Thời vua: **Hào Khí Việt Nam** — [bản thu nguồn](https://www.youtube.com/watch?v=y5Q5llsmi-Q), `hao-khi-viet-nam.m4a`.
+- Thời vua: **Hào Khí Việt Nam Piano** — [bản thu nguồn](https://www.youtube.com/watch?v=kv3oiAnKvkY), `hao-khi-viet-nam-piano.m4a`.
 - Thời hiện đại: **Nỗi Đau Giữa Hoà Bình Piano** — [bản thu nguồn](https://www.youtube.com/watch?v=-m2ceAUeYac), `noi-dau-giua-hoa-binh.m4a`.
 
 Các bản thu này không thuộc giấy phép CC0 của hiệu ứng Kenney.

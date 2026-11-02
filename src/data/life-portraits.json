@@ -1,0 +1,58 @@
+{
+  "Vladimir Lenin": {
+    "src": "/images/life/vladimir-lenin.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Lenin_in_1920_(cropped).jpg",
+    "article": "https://en.wikipedia.org/wiki/Vladimir_Lenin",
+    "author": "Unknown, presumably official",
+    "license": "Public domain"
+  },
+  "Joseph Stalin": {
+    "src": "/images/life/joseph-stalin.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:StalinCropped1943.jpg",
+    "article": "https://en.wikipedia.org/wiki/Joseph_Stalin",
+    "author": "Franklin D. Roosevelt Library Public Domain Photographs",
+    "license": "Public domain"
+  },
+  "Mao Zedong": {
+    "src": "/images/life/mao-zedong.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Mao_Zedong_1950_Portrait_(3x4_cropped)(2).jpg",
+    "article": "https://en.wikipedia.org/wiki/Mao_Zedong",
+    "author": "Chen Zhengqing (1917–1966)",
+    "license": "Public domain"
+  },
+  "Zhou Enlai": {
+    "src": "/images/life/zhou-enlai.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Premier_Chou_En-Lai_in_the_Great_Hall_of_the_People%27s_Banquet_Hall_-_DPLA_-_a40021a8100507bc7a244420481bf488.jpg",
+    "article": "https://en.wikipedia.org/wiki/Zhou_Enlai",
+    "author": "President (1969-1974 : Nixon). White House Photo Office. 1969-1974; General Services Administration. National Archives and Records Service. Office of Presidential Libraries. Office of Presidential Papers. 1/20/1969-ca. 12/1974",
+    "license": "Public domain"
+  },
+  "Chiang Kai-shek": {
+    "src": "/images/life/chiang-kai-shek.png",
+    "file": "https://commons.wikimedia.org/wiki/File:%E8%94%A3%E4%B8%AD%E6%AD%A3%E7%B8%BD%E7%B5%B1%E7%8E%89%E7%85%A7.png",
+    "article": "https://en.wikipedia.org/wiki/Chiang_Kai-shek",
+    "author": "Unknown photographer",
+    "license": "Attribution"
+  },
+  "Jean Sainteny": {
+    "src": "/images/life/jean-sainteny.png",
+    "file": "https://commons.wikimedia.org/wiki/File:1946_Ho_Chi_Minh_Leclerc_Sainteny_2.png",
+    "article": "https://en.wikipedia.org/wiki/Jean_Sainteny",
+    "author": "Service Cinématographique des Armées / French Army Cinematographic Service",
+    "license": "Public domain"
+  },
+  "Harry S. Truman": {
+    "src": "/images/life/harry-s-truman.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:TRUMAN_58-766-06_(cropped).jpg",
+    "article": "https://en.wikipedia.org/wiki/Harry_S._Truman",
+    "author": "National Archives and Records Administration. Office of Presidential Libraries. Harry S. Truman Library.",
+    "license": "Public domain"
+  },
+  "Lyndon B. Johnson": {
+    "src": "/images/life/lyndon-b-johnson.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Lyndon_B._Johnson,_photo_portrait,_color_(3x4_cropped)(2).jpg",
+    "article": "https://en.wikipedia.org/wiki/Lyndon_B._Johnson",
+    "author": "Arnold Newman",
+    "license": "Public domain"
+  }
+}

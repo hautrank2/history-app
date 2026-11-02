@@ -5,6 +5,12 @@
 .character-page h2 { font-family: var(--font-heading), serif; font-size: 30px; margin: 28px 0 16px; }.character-page h3 { font-size: 21px; margin: 8px 0; }
 .character-page p { line-height: 1.9; color: var(--atlas-muted); }.character-eyebrow { margin-top: 28px; font-size: 11px; letter-spacing: .15em; color: var(--atlas-gold) !important; }
 .character-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 16px; margin-top: 32px; }
+.character-filter { margin-top: 30px; padding: 20px; border: 1px solid var(--atlas-line); background: color-mix(in srgb, var(--card) 80%, transparent); }
+.character-filter > label { display: block; font-size: 12px; color: var(--atlas-gold); margin-bottom: 10px; }
+.character-search-field { display: flex; align-items: center; gap: 10px; max-width: 620px; color: var(--atlas-muted); }
+.character-search-field > svg { flex-shrink: 0; }.character-search-field input { min-height: 42px; }.character-search-field button { padding: 10px; cursor: pointer; }
+.character-page .character-filter > p { font-size: 11px; margin-top: 10px; }.character-filter-empty { text-align: center; padding: 40px 20px; border: 1px dashed var(--atlas-line); margin-top: 30px; }.character-filter-empty button { color: var(--atlas-gold); margin-top: 20px; padding: 10px 20px; border: 1px solid var(--arena-gold-line); cursor: pointer; }
+.character-directory-card[data-character-id="ho-chi-minh"] { border-color: var(--atlas-gold); background: linear-gradient(135deg, color-mix(in srgb, var(--atlas-gold) 12%, var(--card)), var(--card)); }
 .character-directory-card { padding: 24px; border: 1px solid var(--atlas-line); border-radius: 8px; background: var(--card); }.character-directory-card h2 { margin: 0; font-size: 24px; }.character-directory-card span { display: block; margin-top: 18px; font-size: 12px; }
 .character-hero { display: grid; grid-template-columns: minmax(220px,360px) 1fr; gap: 48px; align-items: center; padding: 40px 0; }.character-hero:not(:has(figure)) { grid-template-columns: 1fr; }
 .character-portrait img { width: 100%; height: 420px; object-fit: cover; border-radius: 8px; }.character-portrait figcaption { font-size: 10px; line-height: 1.7; margin-top: 10px; color: var(--atlas-muted); }
