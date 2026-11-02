@@ -1,14 +1,14 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, BookOpen, Check, ExternalLink, MapPin, Maximize2, Pause, Play, Search, Share2, Users, X } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, Check, ExternalLink, MapPin, Pause, Play, Search, Share2, Users, X } from "lucide-react";
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 
-import { ImageGroup } from "@/components/ui/image";
+import { Image, ImageGroup } from "@/components/ui/image";
 import { Input } from "~/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "~/components/ui/select";
 import { getCharacter } from "~/data/characters";
-import { lifeChapters, lifeScenes, lifeSources, matchesLifeScene, relationLabels } from "~/data/ho-chi-minh";
+import { lifeChapters, lifeImageFor, lifeScenes, lifeSources, matchesLifeScene, relationLabels } from "~/data/ho-chi-minh";
 import { portraitCaption, portraitFor } from "~/data/portraits";
 
 import { JourneyMap } from "./journey-map";
@@ -25,16 +25,20 @@ export const HoChiMinhLife = () => {
   const [playing, setPlaying] = useState(false);
   const query = mapState.q;
   const setQuery = (q: string) => updateMap({ q });
-  const reading = mapState.view === "story";
+  const [popupOpen, setPopupOpen] = useState(true);
   const [shareStatus, setShareStatus] = useState<"idle" | "copied" | "manual">("idle");
   const [selectedPerson, setSelectedPerson] = useState<string | null>(null);
   const rail = useRef<HTMLDivElement>(null);
   const scene = lifeScenes[index];
+  const activeTab = tab === "people" && !scene.people.length ? "story" : tab;
   const portrait = portraitFor(getCharacter("ho-chi-minh").wiki);
+  const eventImage = lifeImageFor(scene);
   const go = useCallback((next: number) => {
     const bounded = Math.max(0, Math.min(lifeScenes.length - 1, next));
     updateMap((previous) => ({ stop: lifeScenes[bounded].id, ...(previous.map === "focus" ? { camera: { zoom: 1, x: 0, y: 0 } } : {}) }));
     setSelectedPerson(null);
+    if (!lifeScenes[bounded].people.length) setTab((previous) => previous === "people" ? "story" : previous);
+    setPopupOpen(true);
   }, [updateMap]);
   const choose = (next: number) => { setPlaying(false); go(next); };
   useEffect(() => {
@@ -55,9 +59,9 @@ export const HoChiMinhLife = () => {
     rail.current?.querySelector<HTMLElement>("[aria-current=step]")?.scrollIntoView({ block: "nearest", inline: "center", behavior: "instant" });
   }, [index]);
   useEffect(() => {
-    if (!selectedPerson || tab !== "people") return;
+    if (!selectedPerson || activeTab !== "people") return;
     document.querySelector<HTMLElement>(`.hcm-person-card[data-character-id="${selectedPerson}"]`)?.scrollIntoView({ block: "nearest", behavior: "instant" });
-  }, [selectedPerson, tab]);
+  }, [selectedPerson, activeTab]);
   useEffect(() => {
     if (!playing) return;
     const timer = setTimeout(() => { if (index < lifeScenes.length - 1) go(index + 1); else setPlaying(false); }, 14000);
@@ -65,33 +69,25 @@ export const HoChiMinhLife = () => {
     document.addEventListener("visibilitychange", pause);
     return () => { clearTimeout(timer); document.removeEventListener("visibilitychange", pause); };
   }, [go, index, playing]);
-  const showPerson = (id: string) => { setPlaying(false); setSelectedPerson(id); setTab("people"); updateMap({ view: "story" }); };
+  const showPerson = (id: string) => { setPlaying(false); setSelectedPerson(id); setTab("people"); setPopupOpen(true); };
   const filtered = lifeScenes.map((item, sceneIndex) => ({ item, sceneIndex })).filter(({ item }) => matchesLifeScene(item, query));
   const sceneSources = lifeSources.filter((source) => scene.sourceIds.includes(source.id));
 
-  return <main className="hcm-life" data-character-id="ho-chi-minh" data-scene-id={scene.id} data-reading={reading} onKeyDown={(event) => {
-    if (event.altKey || event.ctrlKey || event.metaKey || event.target instanceof HTMLElement && event.target.closest("input, textarea, [role=combobox], [role=dialog], .hcm-map-stage, .hcm-timeline-rail")) return;
-    if (event.key === "ArrowRight") { event.preventDefault(); choose(index + 1); }
-    if (event.key === "ArrowLeft") { event.preventDefault(); choose(index - 1); }
-  }}>
-    <header className="hcm-header">
-      <Link className="hcm-back" href="/characters"><ArrowLeft size={16} /><span>Nhân vật</span></Link>
-      <div className="hcm-heading"><span className="hcm-header-portrait"><LifePortrait characterId="ho-chi-minh" /></span><div><p>CHỦ TỊCH HỒ CHÍ MINH · 1890–1969</p><h1>Một cuộc đời vì non sông</h1><span>Theo dấu hành trình · Hiểu con người · Đọc bối cảnh thế giới</span></div></div>
-      <nav className="hcm-header-actions" aria-label="Điều hướng chuyên trang"><Link href="/vietnam/overview">Tổng quan Việt Nam<ExternalLink size={14} /></Link><button type="button" aria-pressed={!reading} aria-label={reading ? "Xem toàn bộ bản đồ hành trình" : "Mở câu chuyện của mốc đang chọn"} onClick={() => { updateMap({ view: reading ? "map" : "story" }); setPlaying(false); }}><Maximize2 size={16} /><span>{reading ? "Toàn bộ bản đồ" : "Mở câu chuyện"}</span></button><button className="hcm-share-button" type="button" onClick={copyShareUrl} aria-label="Sao chép liên kết bản đồ"><Share2 size={16} /><span>{shareStatus === "copied" ? "Đã sao chép" : "Chia sẻ bản đồ"}</span></button></nav>
-      {shareStatus === "manual" ? <div className="hcm-share-fallback"><label htmlFor="hcm-share-url">Sao chép liên kết này để chia sẻ đúng bản đồ đang xem</label><Input id="hcm-share-url" readOnly value={shareUrl()} onFocus={(event) => event.target.select()} /><button type="button" aria-label="Đóng liên kết chia sẻ" onClick={() => setShareStatus("idle")}><X size={16} /></button></div> : null}
-    </header>
-    <div className="hcm-experience">
-      <aside className="hcm-reader" aria-label="Câu chuyện cuộc đời" hidden={!reading}>
-        <div className="hcm-scene-heading"><p>{scene.chapter}<span>{String(index + 1).padStart(2, "0")} / {lifeScenes.length}</span></p><div className="hcm-scene-date">{scene.date}</div><h2>{scene.title}</h2><span className="hcm-scene-place"><MapPin size={14} />{scene.location.name} · {scene.location.country}</span></div>
-        <div className="hcm-reading-tabs" role="tablist" aria-label="Nội dung mốc cuộc đời">{([{ id: "story", label: "Câu chuyện", icon: <BookOpen size={14} /> }, { id: "people", label: `Nhân vật (${scene.people.length})`, icon: <Users size={14} /> }, { id: "sources", label: "Tư liệu", icon: <ExternalLink size={13} /> }] as const).map((item) => <button type="button" key={item.id} id={`hcm-tab-${item.id}`} role="tab" aria-selected={tab === item.id} aria-controls={`hcm-panel-${item.id}`} tabIndex={tab === item.id ? 0 : -1} onClick={() => { setTab(item.id); setPlaying(false); }} onKeyDown={(event) => {
-          const tabs: ReadingTab[] = ["story", "people", "sources"];
+  const readingTabs = ([{ id: "story", label: "Câu chuyện", icon: <BookOpen size={14} /> }, { id: "people", label: `Nhân vật (${scene.people.length})`, icon: <Users size={14} /> }, { id: "sources", label: "Tư liệu", icon: <ExternalLink size={13} /> }] as const).filter((item) => item.id !== "people" || scene.people.length > 0);
+
+  const infoPanel = popupOpen ? <aside className="hcm-map-selection" aria-label={`Thông tin mốc ${scene.date}`} data-scene-id={scene.id}>
+        <div className="hcm-selection-heading"><small>MỐC {index + 1} / {lifeScenes.length} · {scene.date}</small><button type="button" aria-label="Đóng thông tin mốc" onClick={() => setPopupOpen(false)}><X size={16} /></button></div>
+        <div className="hcm-scene-heading"><p>{scene.chapter}</p><h2>{scene.title}</h2><span className="hcm-scene-place"><MapPin size={14} />{scene.location.name} · {scene.location.country}</span></div>
+        <div className="hcm-reading-tabs" role="tablist" aria-label="Nội dung mốc cuộc đời">{readingTabs.map((item) => <button type="button" key={item.id} id={`hcm-tab-${item.id}`} role="tab" aria-selected={activeTab === item.id} aria-controls={`hcm-panel-${item.id}`} tabIndex={activeTab === item.id ? 0 : -1} onClick={() => { setTab(item.id); setPlaying(false); }} onKeyDown={(event) => {
+          const tabs = readingTabs.map((item) => item.id);
           if (!["ArrowRight", "ArrowLeft", "Home", "End"].includes(event.key)) return;
           event.preventDefault(); event.stopPropagation();
-          const next = event.key === "Home" ? "story" : event.key === "End" ? "sources" : tabs[(tabs.indexOf(tab) + (event.key === "ArrowRight" ? 1 : 2)) % tabs.length];
+          const next = event.key === "Home" ? "story" : event.key === "End" ? "sources" : tabs[(tabs.indexOf(activeTab) + (event.key === "ArrowRight" ? 1 : tabs.length - 1)) % tabs.length];
           setTab(next); setPlaying(false); document.getElementById(`hcm-tab-${next}`)?.focus();
         }}>{item.icon}{item.label}</button>)}</div>
-        <div className="hcm-reading-body" key={`${scene.id}-${tab}`} id={`hcm-panel-${tab}`} role="tabpanel" aria-labelledby={`hcm-tab-${tab}`} tabIndex={0} onPointerDown={() => setPlaying(false)} onWheel={() => setPlaying(false)}>
-          {tab === "story" ? <>
+        <div className="hcm-reading-body" key={`${scene.id}-${activeTab}`} id={`hcm-panel-${activeTab}`} role="tabpanel" aria-labelledby={`hcm-tab-${activeTab}`} tabIndex={0} onPointerDown={() => setPlaying(false)} onWheel={() => setPlaying(false)}>
+          {activeTab === "story" ? <>
+            {eventImage ? <figure className="hcm-selection-photo"><Image src={eventImage.src} alt={eventImage.caption} width={600} height={360} /><figcaption><a href={eventImage.source} target="_blank" rel="noreferrer">{eventImage.caption} ↗</a><span>{eventImage.note}</span></figcaption></figure> : null}
             <div className="hcm-identity"><span className="hcm-identity-icon"><MapPin size={18} /></span><div><small>BÁC Ở ĐÂU, MANG TÊN GÌ?</small><strong>{scene.name}</strong><span>{scene.location.name} · {scene.date}</span></div></div>
             <p className="hcm-story-summary">{scene.summary}</p>
             <section className="hcm-meaning"><h3>Dấu mốc của một cuộc đời</h3><p>{scene.meaning}</p></section>
@@ -100,7 +96,7 @@ export const HoChiMinhLife = () => {
             {scene.overviewId ? <Link className="hcm-overview-link" href={`/vietnam/overview#${scene.overviewId}`}>Đặt vào dòng lịch sử Việt Nam<ArrowRight size={15} /></Link> : null}
             <button className="hcm-inline-source" type="button" onClick={() => setTab("sources")}><Check size={13} />{sceneSources.length} nguồn cho mốc này · Mở tư liệu</button>
           </> : null}
-          {tab === "people" ? <>
+          {activeTab === "people" ? <>
             <p className="hcm-section-intro">Quan hệ được ghi theo sự kiện và thời điểm. Chân dung dùng để nhận diện nhân vật, không mặc định được chụp vào năm {scene.year}.</p>
             <ImageGroup>{scene.people.map((relation) => {
               const person = getCharacter(relation.characterId);
@@ -112,18 +108,30 @@ export const HoChiMinhLife = () => {
                 {photo ? <p className="hcm-photo-credit">{portraitCaption(photo)} · <a href={photo.file} target="_blank" rel="noreferrer">Nguồn ảnh ↗</a></p> : null}
               </article>;
             })}</ImageGroup>
-            {!scene.people.length ? <div className="hcm-no-people"><Users size={26} /><h3>Tập trung vào hành trình của Bác</h3><p>Mốc này chưa gán nhân vật khác. Chọn mốc Mátxcơva 1950 để xem Stalin, Mao Trạch Đông và Chu Ân Lai.</p><button type="button" onClick={() => choose(lifeScenes.findIndex((item) => item.id === "moscow-1950"))}>Đến Mátxcơva 1950<ArrowRight size={15} /></button></div> : null}
           </> : null}
-          {tab === "sources" ? <>
+          {activeTab === "sources" ? <>
             <p className="hcm-section-intro">Đối chiếu mốc {scene.date} qua tư liệu bảo tàng, cơ quan lưu trữ và cơ quan nghiên cứu. Chọn nguồn để đọc trong trang gốc.</p>
             <ol className="hcm-source-list">{sceneSources.map((source, i) => <li key={source.id}><span>{String(i + 1).padStart(2, "0")}</span><a href={source.url} target="_blank" rel="noreferrer"><small>{source.publisher}</small><strong>{source.title}<ExternalLink size={13} /></strong></a></li>)}</ol>
-            <section className="hcm-context-note"><h3>Cách đọc lược đồ</h3><p>Địa điểm và tọa độ chỉ gần đúng. Một mốc có thể đại diện cho cả giai đoạn. Đường vàng nối các mốc tiêu biểu, không tái dựng hải trình hay tuyến đi thực tế. Nét đứt tới nhân vật là mối liên hệ theo sự kiện.</p><p>Biên giới nền phục vụ định vị hiện đại; không biểu thị chủ quyền, phạm vi kiểm soát hay đường biên lịch sử ở năm đang xem.</p></section>
+            <section className="hcm-context-note"><h3>Cách đọc lược đồ</h3><a className="hcm-map-attribution" href="https://www.naturalearthdata.com/about/terms-of-use/" target="_blank" rel="noreferrer">Dữ liệu bản đồ: Natural Earth ↗</a><p>Địa điểm và tọa độ chỉ gần đúng. Một mốc có thể đại diện cho cả giai đoạn. Đường vàng nối các mốc tiêu biểu, không tái dựng hải trình hay tuyến đi thực tế. Nét đứt tới nhân vật là mối liên hệ theo sự kiện.</p><p>Biên giới nền phục vụ định vị hiện đại; không biểu thị chủ quyền, phạm vi kiểm soát hay đường biên lịch sử ở năm đang xem.</p></section>
             {portrait ? <section className="hcm-source-portrait"><span className="hcm-source-photo"><LifePortrait characterId="ho-chi-minh" preview /></span><div><h3>Chân dung Chủ tịch Hồ Chí Minh</h3><p>Ảnh tư liệu năm 1946 · {portrait.license}</p><a href={portrait.file} target="_blank" rel="noreferrer">Ghi công & bản gốc ↗</a></div></section> : null}
           </> : null}
         </div>
         <div className="hcm-reader-navigation"><button type="button" disabled={index === 0} onClick={() => choose(index - 1)}><ArrowLeft size={15} />Mốc trước</button><span>{index + 1} / {lifeScenes.length}</span><button type="button" disabled={index === lifeScenes.length - 1} onClick={() => choose(index + 1)}>Mốc tiếp<ArrowRight size={15} /></button></div>
-      </aside>
-      <JourneyMap scene={scene} index={index} state={mapState} onChange={updateMap} onGo={choose} onPerson={showPerson} onRead={() => { setTab("story"); updateMap({ view: "story" }); setPlaying(false); }} />
+      </aside> : null;
+
+  return <main className="hcm-life" data-character-id="ho-chi-minh" data-scene-id={scene.id} data-reading="false" onKeyDown={(event) => {
+    if (event.altKey || event.ctrlKey || event.metaKey || event.target instanceof HTMLElement && event.target.closest("input, textarea, [role=combobox], [role=dialog], .hcm-map-stage, .hcm-timeline-rail")) return;
+    if (event.key === "ArrowRight") { event.preventDefault(); choose(index + 1); }
+    if (event.key === "ArrowLeft") { event.preventDefault(); choose(index - 1); }
+  }}>
+    <header className="hcm-header">
+      <Link className="hcm-back" href="/characters"><ArrowLeft size={16} /><span>Nhân vật</span></Link>
+      <div className="hcm-heading"><span className="hcm-header-portrait"><LifePortrait characterId="ho-chi-minh" /></span><div><p>CHỦ TỊCH HỒ CHÍ MINH · 1890–1969</p><h1>Một cuộc đời vì non sông</h1><span>Theo dấu hành trình · Hiểu con người · Đọc bối cảnh thế giới</span></div></div>
+      <nav className="hcm-header-actions" aria-label="Điều hướng chuyên trang"><Link href="/vietnam/overview">Tổng quan Việt Nam<ExternalLink size={14} /></Link><button className="hcm-share-button" type="button" onClick={copyShareUrl} aria-label="Sao chép liên kết bản đồ"><Share2 size={16} /><span>{shareStatus === "copied" ? "Đã sao chép" : "Chia sẻ bản đồ"}</span></button></nav>
+      {shareStatus === "manual" ? <div className="hcm-share-fallback"><label htmlFor="hcm-share-url">Sao chép liên kết này để chia sẻ đúng bản đồ đang xem</label><Input id="hcm-share-url" readOnly value={shareUrl()} onFocus={(event) => event.target.select()} /><button type="button" aria-label="Đóng liên kết chia sẻ" onClick={() => setShareStatus("idle")}><X size={16} /></button></div> : null}
+    </header>
+    <div className="hcm-experience">
+      <JourneyMap scene={scene} index={index} state={mapState} onChange={updateMap} onGo={choose} onPerson={showPerson} infoPanel={infoPanel} />
     </div>
     <section className="hcm-timeline" aria-label="Dòng thời gian cuộc đời Hồ Chí Minh">
       <div className="hcm-timeline-toolbar"><div className="hcm-transport"><button type="button" disabled={index === 0} aria-label="Mốc cuộc đời trước" onClick={() => choose(index - 1)}><ArrowLeft size={17} /></button><button className="hcm-play" type="button" aria-label={playing ? "Tạm dừng hành trình" : "Tự chuyển mốc mỗi 14 giây"} aria-pressed={playing} onClick={() => { if (!playing && index === lifeScenes.length - 1) go(0); setQuery(""); setPlaying((value) => !value); }}>{playing ? <Pause size={17} /> : <Play size={17} />}</button><button type="button" disabled={index === lifeScenes.length - 1} aria-label="Mốc cuộc đời tiếp theo" onClick={() => choose(index + 1)}><ArrowRight size={17} /></button><span>{playing ? "Đang tự chuyển · 14 giây / mốc" : `${lifeScenes.length} mốc cuộc đời · 1890–1969`}</span></div>

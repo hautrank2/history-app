@@ -4,10 +4,10 @@ import vm from "node:vm";
 import ts from "typescript";
 
 const load = (file) => {
-  const module = { exports: {} };
+  const loadedModule = { exports: {} };
   const code = ts.transpileModule(readFileSync(file, "utf8"), { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } }).outputText;
-  vm.runInNewContext(code, { module, exports: module.exports, URL, Number, Map });
-  return module.exports;
+  vm.runInNewContext(code, { module: loadedModule, exports: loadedModule.exports, URL, Number, Map });
+  return loadedModule.exports;
 };
 const plain = (value) => JSON.parse(JSON.stringify(value));
 const life = JSON.parse(readFileSync("src/data/database/ho-chi-minh-life.json", "utf8"));
@@ -17,6 +17,11 @@ const defaults = readLifeMapUrl(new URL("https://atlas.example/characters/ho-chi
 assert.equal(defaults.view, "map", "The complete route must be the initial view");
 assert.equal(defaults.map, "world");
 assert.equal(defaults.stop, ids[0]);
+assert.equal(defaults.routes, false, "Route lines start hidden");
+assert.equal(defaults.points, false, "Unselected points start hidden");
+assert.equal(defaults.borders, true, "Modern borders remain visible");
+const visibleLayers = { ...defaults, routes: true, points: true };
+assert.deepEqual(plain(readLifeMapUrl(writeLifeMapUrl(new URL("https://atlas.example/characters/ho-chi-minh"), visibleLayers), ids)), plain(visibleLayers), "Explicitly enabled lines and points survive sharing and reload");
 const shared = new URL("https://atlas.example/characters/ho-chi-minh?view=map&stop=moscow-1950&map=focus&q=Mao+Tr%E1%BA%A1ch+%C4%90%C3%B4ng&z=2.4&x=42&y=-12&routes=0&borders=0&utm_source=test");
 const state = readLifeMapUrl(shared, ids);
 assert.equal(state.stop, "moscow-1950");

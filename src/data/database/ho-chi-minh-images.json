@@ -1,0 +1,210 @@
+{
+  "departure": {
+    "src": "/images/life/scenes/departure.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/8b219715031b6e426b2fa4fbb8d2a20dBH.479_resize.jpg",
+    "source": "https://hochiminh.vn/photo/tu-lieu-anh-chu-tich-ho-chi-minh-truoc-nam-1930-1",
+    "caption": "Tàu Latouche-Tréville · tư liệu về chuyến đi năm 1911",
+    "note": "Ảnh tàu rời Sài Gòn năm 1911, minh họa chặng đầu tìm đường cứu nước; không xác nhận phương tiện tại các mốc sau.",
+    "position": "50% 35%"
+  },
+  "paris": {
+    "src": "/images/life/scenes/paris.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/32b3d9e6c006efe7c27829196070c7ccHCM-23-_2_.jpg",
+    "source": "https://hochiminh.vn/photo/tu-lieu-anh-chu-tich-ho-chi-minh-truoc-nam-1930-1",
+    "caption": "Yêu sách của nhân dân An Nam · 1919",
+    "note": "Tư liệu văn bản gắn với mốc.",
+    "position": "50% 35%"
+  },
+  "tours": {
+    "src": "/images/life/scenes/tours.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/07bf6aa6ead33dac6fa18bde7e39e13dHCM-25.jpg",
+    "source": "https://hochiminh.vn/photo/tu-lieu-anh-chu-tich-ho-chi-minh-truoc-nam-1930-1",
+    "caption": "Toàn cảnh Đại hội Tours · 12/1920",
+    "note": "Nguyễn Ái Quốc ngồi ở dãy bàn thứ hai.",
+    "position": "50% 35%"
+  },
+  "moscow": {
+    "src": "/images/life/scenes/moscow.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/0253afddbbe2147362e92f0a9481f691BH.416_resize.jpg",
+    "source": "https://hochiminh.vn/photo/tu-lieu-anh-chu-tich-ho-chi-minh-truoc-nam-1930-1",
+    "caption": "Nguyễn Ái Quốc tại Liên Xô · 1923",
+    "note": "Ảnh chân dung cùng năm.",
+    "position": "50% 35%"
+  },
+  "guangzhou": {
+    "src": "/images/life/scenes/guangzhou.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/e95413f17145348c78f7967cde998419BH.572_resize.jpg",
+    "source": "https://hochiminh.vn/photo/tu-lieu-anh-chu-tich-ho-chi-minh-truoc-nam-1930-1",
+    "caption": "Nguyễn Ái Quốc và các đại biểu Quốc tế Cộng sản · 1924",
+    "note": "Ảnh cùng năm tại Liên Xô; không phải ảnh ở Quảng Châu.",
+    "position": "50% 35%"
+  },
+  "siam": {
+    "src": "/images/life/scenes/siam.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/cf20d3c8f4e4883f5703b9bc8f6afd04BH.760_resize.jpg",
+    "source": "https://hochiminh.vn/photo/tu-lieu-anh-chu-tich-ho-chi-minh-truoc-nam-1930-1",
+    "caption": "Đường Kách mệnh · 1927",
+    "note": "Hiện vật về công tác huấn luyện; chưa có ảnh xác thực tại từng mốc ở Xiêm.",
+    "position": "50% 35%"
+  },
+  "hongkong": {
+    "src": "/images/life/scenes/hongkong.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/a293be13285bdaf3deb4c2db06f1775943.jpg",
+    "source": "https://hochiminh.vn/tu-lieu-anh/tu-lieu-anh-chu-tich-ho-chi-minh-tu-nam-1930-1945.html",
+    "caption": "Nguyễn Ái Quốc · 1930",
+    "note": "Ảnh chân dung cùng năm.",
+    "position": "50% 35%"
+  },
+  "arrest": {
+    "src": "/images/life/scenes/arrest.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/13051fbafdb899c85750653dc9c28d7d29.JPG",
+    "source": "https://hochiminh.vn/tu-lieu-anh/tu-lieu-anh-chu-tich-ho-chi-minh-voi-quoc-te.html",
+    "caption": "Nguyễn Ái Quốc khi bị bắt tại Hồng Kông · 6/1931",
+    "note": "Ảnh gắn với mốc.",
+    "position": "50% 35%"
+  },
+  "return-russia": {
+    "src": "/images/life/scenes/return-russia.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/ce51e952e1e9310f21796d93b25b148728.JPG",
+    "source": "https://hochiminh.vn/tu-lieu-anh/tu-lieu-anh-chu-tich-ho-chi-minh-voi-quoc-te.html",
+    "caption": "Nguyễn Ái Quốc cải trang để đi Liên Xô · 5/1934",
+    "note": "Tư liệu trước khi trở lại Liên Xô.",
+    "position": "50% 35%"
+  },
+  "kunming": {
+    "src": "/images/life/scenes/kunming.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/4b81a9405193777be933831f6f1826a731.jpg",
+    "source": "https://hochiminh.vn/tu-lieu-anh/tu-lieu-anh-chu-tich-ho-chi-minh-tu-nam-1930-1945.html",
+    "caption": "Nậm Quang · nơi huấn luyện cán bộ cuối 1940–đầu 1941",
+    "note": "Ảnh địa điểm liên quan trong giai đoạn chuẩn bị về nước; không phải Côn Minh.",
+    "position": "50% 35%"
+  },
+  "pacbo": {
+    "src": "/images/life/scenes/pacbo.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/1d41966034eecacee0859a925f5f8c8727.jpg",
+    "source": "https://hochiminh.vn/tu-lieu-anh/tu-lieu-anh-chu-tich-ho-chi-minh-tu-nam-1930-1945.html",
+    "caption": "Pác Bó · căn cứ hoạt động từ 1941",
+    "note": "Ảnh địa điểm; không phải ảnh chụp Bác năm 1941.",
+    "position": "50% 35%"
+  },
+  "prison": {
+    "src": "/images/life/scenes/prison.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/44b2b39be7b8fcd480889baa4d2598f623.jpg",
+    "source": "https://hochiminh.vn/tu-lieu-anh/tu-lieu-anh-chu-tich-ho-chi-minh-tu-nam-1930-1945.html",
+    "caption": "Nhật ký trong tù · 1942–1943",
+    "note": "Tư liệu bản thảo gắn với thời gian bị giam.",
+    "position": "50% 35%"
+  },
+  "tantrao": {
+    "src": "/images/life/scenes/tantrao.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/906f17b27a8c32cb2b24fc459b86c00f26.JPG",
+    "source": "https://hochiminh.vn/tu-lieu-anh/tu-lieu-anh-chu-tich-ho-chi-minh-voi-quoc-te.html",
+    "caption": "Hồ Chí Minh, Việt Minh và biệt đội Con Nai · 1945",
+    "note": "Ảnh hoạt động tại chiến khu trong cùng năm.",
+    "position": "50% 35%"
+  },
+  "independence": {
+    "src": "/images/life/scenes/independence.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/f4fce6430c5a04ed65f2a3cae22eff3d51.jpg",
+    "source": "https://hochiminh.vn/tu-lieu-anh/tu-lieu-anh-chu-tich-ho-chi-minh-tu-nam-1930-1945.html",
+    "caption": "Hồ Chí Minh đọc Tuyên ngôn Độc lập · 2/9/1945",
+    "note": "Ảnh gắn với mốc Ba Đình.",
+    "position": "50% 35%"
+  },
+  "hanoi-1946": {
+    "src": "/images/life/scenes/hanoi-1946.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/271c5eaab916b394ea4f9c65ee4fd68fBH.466_resize.jpg",
+    "source": "https://hochiminh.vn/tu-lieu-anh/tu-lieu-anh-chu-tich-ho-chi-minh-tu-nam-1945-1954.html",
+    "caption": "Hồ Chí Minh làm việc tại Hà Nội · 1946",
+    "note": "Ảnh cùng năm; không phải ảnh gửi điện Truman.",
+    "position": "50% 35%"
+  },
+  "agreement": {
+    "src": "/images/life/scenes/agreement.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/2672a2e13d1d2021c9bb702d952b164521.JPG",
+    "source": "https://hochiminh.vn/tu-lieu-anh/tu-lieu-anh-chu-tich-ho-chi-minh-voi-quoc-te.html",
+    "caption": "Sau lễ ký Hiệp định Sơ bộ · 6/3/1946",
+    "note": "Hồ Chí Minh cùng đại diện Pháp và Đồng minh.",
+    "position": "50% 35%"
+  },
+  "france": {
+    "src": "/images/life/scenes/france.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/24603f06d7a20d1032a28ef2f5a1b26b17.JPG",
+    "source": "https://hochiminh.vn/tu-lieu-anh/tu-lieu-anh-chu-tich-ho-chi-minh-voi-quoc-te.html",
+    "caption": "Lễ đón Hồ Chí Minh tại Pháp · 2/7/1946",
+    "note": "Ảnh trong chuyến thăm Pháp năm 1946.",
+    "position": "50% 35%"
+  },
+  "return-1946": {
+    "src": "/images/life/scenes/return-1946.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/11e988cd8b037c9f82dff2e0f304622dLSD.80_resize.jpg",
+    "source": "https://hochiminh.vn/tu-lieu-anh/tu-lieu-anh-chu-tich-ho-chi-minh-tu-nam-1945-1954.html",
+    "caption": "Hồ Chí Minh sau Tạm ước · 9/1946",
+    "note": "Ảnh cùng chuyến ngoại giao; không phải ảnh tại Hải Phòng.",
+    "position": "50% 35%"
+  },
+  "1950": {
+    "src": "/images/life/scenes/1950.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/f3c3a25f25cbe36975596cc32623742dHCM-99.jpg",
+    "source": "https://hochiminh.vn/tu-lieu-anh/tu-lieu-anh-chu-tich-ho-chi-minh-tu-nam-1945-1954.html",
+    "caption": "Hồ Chí Minh họp về Chiến dịch Biên giới · 1950",
+    "note": "Ảnh hoạt động cùng năm ở Việt Nam; không phải ảnh chuyến đi Bắc Kinh / Moskva.",
+    "position": "50% 35%"
+  },
+  "dienbien": {
+    "src": "/images/life/scenes/dienbien.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/af5b6ab1f7dcd6749c4babd5e5ac8b03HCM-120.jpg",
+    "source": "https://hochiminh.vn/tu-lieu-anh/tu-lieu-anh-chu-tich-ho-chi-minh-tu-nam-1945-1954.html",
+    "caption": "Họp bàn chiến cuộc Đông Xuân · cuối 1953",
+    "note": "Hoạt động chuẩn bị Chiến dịch Điện Biên Phủ.",
+    "position": "50% 35%"
+  },
+  "hanoi-1958": {
+    "src": "/images/life/scenes/hanoi-1958.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/8fea85d2d515fb1b58eb542b6a702fbf122.jpg",
+    "source": "https://hochiminh.vn/tu-lieu-anh/tu-lieu-anh-chu-tich-ho-chi-minh-tu-nam-1954-1969.html",
+    "caption": "Hồ Chí Minh thăm lớp học Hàng Than · 31/12/1958",
+    "note": "Ảnh hoạt động tại Hà Nội cùng năm.",
+    "position": "50% 35%"
+  },
+  "india": {
+    "src": "/images/life/scenes/india.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/7b1ef8e96c18632346c038e46325ea1745.jpg",
+    "source": "https://hochiminh.vn/tu-lieu-anh/tu-lieu-anh-chu-tich-ho-chi-minh-voi-quoc-te.html",
+    "caption": "Nhân dân Delhi đón Hồ Chí Minh · 4/2/1958",
+    "note": "Ảnh trong chuyến thăm Ấn Độ.",
+    "position": "50% 35%"
+  },
+  "burma": {
+    "src": "/images/life/scenes/burma.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/5d4ba289ab60e6ba2c1497b0a494bf27q24.JPG",
+    "source": "https://hochiminh.vn/tu-lieu-anh/tu-lieu-anh-chu-tich-ho-chi-minh-voi-quoc-te.html",
+    "caption": "Hồ Chí Minh và Tổng thống Miến Điện · 2/1958",
+    "note": "Ảnh đón tiếp tại sân bay.",
+    "position": "50% 35%"
+  },
+  "indonesia": {
+    "src": "/images/life/scenes/indonesia.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/8ead03b1ccf8906dee1483b066f0e628q16.JPG",
+    "source": "https://hochiminh.vn/tu-lieu-anh/tu-lieu-anh-chu-tich-ho-chi-minh-voi-quoc-te.html",
+    "caption": "Hồ Chí Minh nhận bằng danh dự tại Bandung · 3/1959",
+    "note": "Ảnh trong chuyến thăm Indonesia; địa điểm chụp là Bandung.",
+    "position": "50% 35%"
+  },
+  "1967": {
+    "src": "/images/life/scenes/1967.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/49c74af11c2af1788e350aa50864917935.jpg",
+    "source": "https://hochiminh.vn/tu-lieu-anh/tu-lieu-anh-chu-tich-ho-chi-minh-voi-quoc-te.html",
+    "caption": "Hồ Chí Minh tiếp trí thức Mỹ · 17/1/1967",
+    "note": "Ảnh hoạt động ngoại giao cùng năm; không phải cuộc gặp Johnson.",
+    "position": "50% 35%"
+  },
+  "1969": {
+    "src": "/images/life/scenes/1969.jpg",
+    "original": "https://hochiminh.vn/upload/3000001/20251024/e4c3e8ca9258b700792f2cb624c42acf40.jpg",
+    "source": "https://hochiminh.vn/tu-lieu-anh/tu-lieu-anh-chu-tich-ho-chi-minh-tu-nam-1954-1969.html",
+    "caption": "Hồ Chí Minh gặp cán bộ toàn quân · 11/5/1969",
+    "note": "Ảnh hoạt động trong năm cuối cuộc đời.",
+    "position": "50% 35%"
+  }
+}

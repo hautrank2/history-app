@@ -8,6 +8,7 @@ import { portraitCaption, portraitFor } from "~/data/portraits";
 import { vietnamOverview } from "~/data/vietnam-overview";
 import { vietnamData } from "~/data/vietnam";
 import { lifeScenes } from "~/data/ho-chi-minh";
+import { CharacterVisit } from "../_components/character-visit";
 import { HoChiMinhLife } from "../_components/ho-chi-minh-life";
 import "~/styles/characters.css";
 
@@ -17,7 +18,7 @@ export const generateMetadata = async ({ params }: Props): Promise<Metadata> => 
 const CharacterPage = async ({ params }: Props) => {
   const person = findCharacter((await params).name);
   if (!person) notFound();
-  if (person.id === "ho-chi-minh") return <HoChiMinhLife />;
+  if (person.id === "ho-chi-minh") return <><CharacterVisit id={person.id} /><HoChiMinhLife /></>;
   const lifeConnections = lifeScenes.filter((scene) => scene.people.some((item) => item.characterId === person.id));
   const portrait = portraitFor(person.wiki);
   const scenes = vietnamOverview.filter((scene) => scene.people.some((item) => item.id === person.id) || scene.places.some((place) => place.leader?.id === person.id));
@@ -25,6 +26,7 @@ const CharacterPage = async ({ params }: Props) => {
   const battleChapters = vietnamData.periods.find((period) => period.slug === "bach-dang-1288")?.story?.chapters.filter((chapter) => chapter.characters?.some((character) => character.id === person.id)) ?? [];
   const index = characters.indexOf(person);
   return <main className="character-page character-profile" data-character-id={person.id}>
+    <CharacterVisit id={person.id} />
     <nav className="character-breadcrumbs" aria-label="Điều hướng nhân vật"><Link href="/characters">← Tất cả nhân vật</Link><Link href="/vietnam/overview">Tổng quan Việt Nam</Link></nav>
     <header className="character-hero">{portrait ? <figure className="character-portrait"><Image src={portrait.src} alt={portrait.generated ? `Minh họa AI ${person.name}, không phải chân dung xác thực` : `Hình ảnh tái hiện ${person.name}`} width={360} height={440} style={{ objectPosition: portrait.position }} /><figcaption>{portraitCaption(portrait)} · <a href={portrait.file} target="_blank" rel="noreferrer">Nguồn ảnh ↗</a></figcaption></figure> : null}<div><p className="character-eyebrow">NHÂN VẬT LỊCH SỬ</p><h1>{person.name}</h1><p className="character-role">{person.role}</p><dl className="character-facts"><dt>Niên đại</dt><dd>{person.lifespan}</dd>{person.aliases.length ? <><dt>Tên gọi khác</dt><dd>{person.aliases.join(" · ")}</dd></> : null}</dl><p className="character-biography">{person.biography}</p></div></header>
     <section className="character-related-scenes"><h2>Dấu ấn trong lịch sử</h2>{scenes.length ? scenes.map((scene) => <article className="character-scene" key={scene.id}><Link href={`/vietnam/overview#${scene.id}`}><small>{scene.years} · {scene.era}</small><h3>{scene.title} →</h3></Link><p>{scene.summary}</p><p>{scene.people.find((item) => item.id === person.id)?.role}</p>{scene.id === "tran-bach-dang" ? <Link className="character-battle-link" href="/vietnam/bach-dang-1288">Vào sa bàn Bạch Đằng 1288 →</Link> : null}</article>) : <p>Chưa có cảnh liên quan.</p>}</section>
