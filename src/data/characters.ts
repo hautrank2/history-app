@@ -2,7 +2,7 @@ import rows from "~/data/database/character.json";
 
 export type HistoricalCharacterModel = {
   battlePortrait?: { src: string; generated: boolean };
-  id: string; name: string; aliases: string[]; wiki: string; role: string;
+  id: string; name: string; countryId: string; aliases: string[]; wiki: string; role: string;
   biography: string; lifespan: string; sources: { title: string; url: string }[];
 };
 export const characters: HistoricalCharacterModel[] = rows;

@@ -4,6 +4,7 @@ import { join } from "node:path";
 
 const table = (name) => JSON.parse(readFileSync(`src/data/database/${name}.json`, "utf8"));
 const characters = table("character");
+const countryIds = new Set([...readFileSync("src/data/character-countries.ts", "utf8").matchAll(/\{ id: "([^"]+)"/g)].map((match) => match[1]));
 const events = table("event");
 const warlords = table("warlord");
 const ids = new Set(characters.map((person) => person.id));
@@ -14,6 +15,7 @@ assert.equal(new Set(warlords.map((row) => row.characterId)).size, 12);
 const overview = readFileSync("src/data/vietnam-overview.ts", "utf8");
 const sceneIds = new Set([...overview.matchAll(/id: "([a-z0-9-]+)", era:/g)].map((match) => match[1]));
 for (const person of characters) {
+  assert.ok(countryIds.has(person.countryId), `Unknown or missing character country: ${person.id}: ${person.countryId}`);
   assert.match(person.id, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
   assert.ok(person.sources.length, `Missing sources: ${person.id}`);
   assert.ok(person.biography && person.role && person.lifespan);

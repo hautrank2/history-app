@@ -2,6 +2,7 @@
 
 import "maplibre-gl/dist/maplibre-gl.css";
 import Link from "next/link";
+import { HomeLink } from "~/components/home-link";
 
 import type { SideModel } from "~/types";
 
@@ -29,11 +30,12 @@ export const StoryMap = ({ story, backHref }: StoryMapProps) => {
 
       <header className="pointer-events-none absolute inset-x-0 top-0 flex items-start justify-between gap-4 bg-linear-to-b from-background to-transparent p-4 pb-12">
         <div>
+          <HomeLink className="pointer-events-auto text-xs text-primary" back />
           <Link
             href={backHref}
             className="pointer-events-auto text-xs tracking-widest text-primary uppercase hover:underline"
           >
-            ◀ Dòng thời gian
+            Dòng thời gian
           </Link>
           <h1 className="mt-1 font-display text-3xl font-bold">{story.title}</h1>
           <p className="text-sm text-muted-foreground">{story.subtitle}</p>

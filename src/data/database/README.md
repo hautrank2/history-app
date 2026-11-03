@@ -2,7 +2,7 @@
 
 | Bảng | Khóa chính | Quan hệ |
 | --- | --- | --- |
-| `character.json` | `id` | Tên, bí danh, vai trò chung, tiểu sử, niên đại, nguồn |
+| `character.json` | `id` | `countryId` → `character-countries.ts`; tên, bí danh, vai trò chung, tiểu sử, niên đại, nguồn |
 | `event.json` | `id` | `leaderIds` → nhân vật; `sceneIds` → cảnh overview |
 | `warlord.json` | `characterId` | Đúng 12 sứ quân, căn cứ và tọa độ gần đúng |
 | `soundtrack.json` | `id` | Chủ đề nhạc theo quốc gia, thời kỳ, sắc thái; giai điệu và phối khí nguyên bản |

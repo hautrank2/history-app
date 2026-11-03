@@ -2,6 +2,7 @@
 
 import { ArrowLeft, ArrowRight, BookOpen, Check, ExternalLink, MapPin, Pause, Play, Search, Share2, Users, X } from "lucide-react";
 import Link from "next/link";
+import { HomeLink } from "~/components/home-link";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 import { Image, ImageGroup } from "@/components/ui/image";
@@ -125,9 +126,9 @@ export const HoChiMinhLife = () => {
     if (event.key === "ArrowLeft") { event.preventDefault(); choose(index - 1); }
   }}>
     <header className="hcm-header">
-      <Link className="hcm-back" href="/characters"><ArrowLeft size={16} /><span>Nhân vật</span></Link>
+      <HomeLink className="hcm-back" back />
       <div className="hcm-heading"><span className="hcm-header-portrait"><LifePortrait characterId="ho-chi-minh" /></span><div><p>CHỦ TỊCH HỒ CHÍ MINH · 1890–1969</p><h1>Một cuộc đời vì non sông</h1><span>Theo dấu hành trình · Hiểu con người · Đọc bối cảnh thế giới</span></div></div>
-      <nav className="hcm-header-actions" aria-label="Điều hướng chuyên trang"><Link href="/vietnam">Tổng quan Việt Nam<ExternalLink size={14} /></Link><button className="hcm-share-button" type="button" onClick={copyShareUrl} aria-label="Sao chép liên kết bản đồ"><Share2 size={16} /><span>{shareStatus === "copied" ? "Đã sao chép" : "Chia sẻ bản đồ"}</span></button></nav>
+      <nav className="hcm-header-actions" aria-label="Điều hướng chuyên trang"><Link href="/characters">Nhân vật</Link><Link href="/vietnam">Tổng quan Việt Nam<ExternalLink size={14} /></Link><button className="hcm-share-button" type="button" onClick={copyShareUrl} aria-label="Sao chép liên kết bản đồ"><Share2 size={16} /><span>{shareStatus === "copied" ? "Đã sao chép" : "Chia sẻ bản đồ"}</span></button></nav>
       {shareStatus === "manual" ? <div className="hcm-share-fallback"><label htmlFor="hcm-share-url">Sao chép liên kết này để chia sẻ đúng bản đồ đang xem</label><Input id="hcm-share-url" readOnly value={shareUrl()} onFocus={(event) => event.target.select()} /><button type="button" aria-label="Đóng liên kết chia sẻ" onClick={() => setShareStatus("idle")}><X size={16} /></button></div> : null}
     </header>
     <div className="hcm-experience">

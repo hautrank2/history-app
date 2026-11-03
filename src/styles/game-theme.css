@@ -137,10 +137,7 @@ html[data-theme="arena"] .bd-chapter-dots button.is-active { color: #a3e6ff; bor
 html[data-theme="arena"] .bd-tide { background: #15395455; border-left-color: #7ddcff; }
 html[data-theme="arena"] .bd-footer { background: #061020; border-color: #7396b533; }
 html[data-theme="arena"] .character-page h2 { color: #f1dba9; }
-html[data-theme="arena"] :is(.character-directory-card, .character-scene) { background: var(--arena-panel); border: 1px solid var(--arena-gold-line); border-radius: 2px; padding: 24px; margin-bottom: 16px; box-shadow: var(--arena-frame-shadow); }
-html[data-theme="arena"] .character-directory-card { transition: border-color .2s, box-shadow .2s, transform .2s; }
-html[data-theme="arena"] .character-directory-card:hover { border-color: #9fddf4; transform: translateY(-3px); box-shadow: 0 0 25px #7ddcff18; text-decoration: none; }
-html[data-theme="arena"] .character-directory-card > span { color: #8cdef7; }
+html[data-theme="arena"] .character-scene { background: var(--arena-panel); border: 1px solid var(--arena-gold-line); border-radius: 2px; padding: 24px; margin-bottom: 16px; box-shadow: var(--arena-frame-shadow); }
 html[data-theme="arena"] .character-facts { border-left: 2px solid #e2c181; padding: 16px 20px; background: #112c4580; }
 html[data-theme="arena"] .character-breadcrumbs { border-color: var(--arena-gold-line); }
 
@@ -159,7 +156,7 @@ html[data-theme="arena"] .character-breadcrumbs { border-color: var(--arena-gold
   html[data-theme="arena"] .atlas-header-link { padding: 8px 10px; }
   html[data-theme="arena"] .bd-map-panel { padding-inline: 8px; }
   html[data-theme="arena"] .vo-glass { backdrop-filter: none; background: linear-gradient(130deg, #152c46fa, #0a192dfa); }
-  html[data-theme="arena"] :is(.character-directory-card, .character-scene) { padding: 18px; }
+  html[data-theme="arena"] .character-scene { padding: 18px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html[data-theme="arena"] *, html[data-theme="arena"] *::before, html[data-theme="arena"] *::after { animation: none !important; scroll-behavior: auto !important; transition: none !important; }

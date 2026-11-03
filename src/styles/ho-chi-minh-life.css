@@ -236,7 +236,7 @@
 @media(max-width:760px) {
   .hcm-life { min-height: 900px; overflow: visible; }
   .hcm-header { min-height: 104px; padding: 13px 66px 13px 14px; gap: 10px; }
-  .hcm-back { align-self: start; margin-top: 1px; }.hcm-back span { display: none; }
+  .hcm-back { align-self: start; margin-top: 1px; }.hcm-back > span:first-child { display: none; }
   .hcm-heading { gap: 10px; }.hcm-header-portrait { width: 42px; height: 56px; }.hcm-heading p { font-size: 11px; letter-spacing: .07em; }.hcm-heading h1 { font-size: clamp(19px,5vw,27px); }.hcm-heading > div > span { font-size: 11px; line-height: 1.6; display: block; }
   .hcm-header-actions { position: absolute; top: 74px; right: 12px; }.hcm-header-actions button { padding: 5px; border: none; background: none; }.hcm-header-actions button > span { display: none; }
   .hcm-experience { display: flex; flex-direction: column; gap: 10px; padding: 10px; min-height: 0; }

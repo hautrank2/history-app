@@ -57,7 +57,6 @@ export const HistoryMap = ({ scene, selectedPlace, contentVisible, timelineVisib
   const [pan, setPan] = useState<[number, number]>([0, 0]);
   const [drag, setDrag] = useState<{ x: number; y: number; pan: [number, number] } | null>(null);
   const svg = useRef<SVGSVGElement>(null);
-  const stage = useRef<HTMLDivElement>(null);
   const [viewport, setViewport] = useState({ width: 1400, height: 900 });
   useEffect(() => {
     const element = svg.current;
@@ -75,7 +74,7 @@ export const HistoryMap = ({ scene, selectedPlace, contentVisible, timelineVisib
   const centerX = capitalX + (baseCenterX - capitalX) / zoom + pan[0];
   const centerY = capitalY + (baseCenterY - capitalY) / zoom + pan[1];
   useEffect(() => {
-    const element = stage.current;
+    const element = svg.current;
     if (!element) return;
     const handleWheel = (event: WheelEvent) => {
       const map = svg.current;
@@ -105,7 +104,6 @@ export const HistoryMap = ({ scene, selectedPlace, contentVisible, timelineVisib
   const southLabel = year < 192 ? "VĂN HÓA SA HUỲNH" : year < 1471 ? "CHAMPA" : year < 1832 ? "CHAMPA · PANDURANGA" : "";
 
   return <section className="vo-map-panel" data-map-variant={variant} aria-label="Bản đồ lịch sử hai chiều">
-    <div ref={stage} className="vo-map-stage">
       <svg ref={svg} className={`vo-map ${drag ? "is-dragging" : ""}`} viewBox={`${centerX - viewWidth / (2 * zoom)} ${centerY - viewHeight / (2 * zoom)} ${viewWidth / zoom} ${viewHeight / zoom}`} role="group" aria-labelledby={`${id}-title ${id}-desc`}
         onPointerDown={(event) => { if ((event.target as Element).closest("[data-place]")) return; event.currentTarget.setPointerCapture(event.pointerId); setDrag({ x: event.clientX, y: event.clientY, pan }); }}
         onPointerMove={(event) => { if (!drag) return; const ratio = viewWidth / event.currentTarget.getBoundingClientRect().width / zoom; setPan([Math.max(-700, Math.min(700, drag.pan[0] - (event.clientX - drag.x) * ratio)), Math.max(-700, Math.min(700, drag.pan[1] - (event.clientY - drag.y) * ratio))]); }}
@@ -155,8 +153,6 @@ export const HistoryMap = ({ scene, selectedPlace, contentVisible, timelineVisib
       <Card className="vo-map-tools vo-glass" aria-label="Điều khiển bản đồ"><Button variant="atlas" size="atlas" type="button" aria-label="Phóng to bản đồ" disabled={zoom >= 8} onClick={() => setZoom((value) => Math.min(8, value + .5))}>+</Button><Button variant="atlas" size="atlas" type="button" aria-label="Thu nhỏ bản đồ" disabled={zoom <= .5} onClick={() => setZoom((value) => Math.max(.5, value - .5))}>−</Button><Button variant="atlas" size="atlas" type="button" aria-label="Đặt lại góc nhìn bản đồ" onClick={() => { setZoom(1); setPan([0, 0]); }}>↺</Button><Button variant="atlas" size="atlas" type="button" aria-label="Biên giới hiện đại" aria-pressed={modernBorders} onClick={() => setModernBorders((value) => !value)}>▱</Button></Card>
       <div className="vo-map-variants vo-glass" role="group" aria-label="Kiểu bản đồ">{terrainEnabled ? <Button className="vo-variant-terrain" variant="atlas" size="atlas" aria-pressed={variant === "terrain"} onClick={() => setVariant("terrain")}>Địa hình</Button> : null}<Button className="vo-variant-simple" variant="atlas" size="atlas" aria-pressed={variant === "simple"} onClick={() => setVariant("simple")}>Đơn giản</Button></div>
       <aside className="vo-islands-inset vo-glass" aria-label="Lãnh thổ biển đảo Việt Nam"><strong>BIỂN ĐẢO VIỆT NAM</strong><span>✦ Hoàng Sa · Việt Nam</span><span>✦ Trường Sa · Việt Nam</span><small>Lớp tham chiếu hiện đại · đảo phóng đại để định vị</small></aside>
-      <span className="vo-map-hint">Lăn chuột để thu phóng · Kéo để di chuyển · Chọn điểm để tìm hiểu</span>
-    </div>
     <Card role="complementary" id="vo-places" className="vo-place-detail vo-glass" data-open={placesVisible} inert={!placesVisible} aria-label="Các địa điểm trong cảnh">
       <div className="vo-panel-heading"><span>⌖ ĐỊA ĐIỂM TRÊN BẢN ĐỒ</span><Button variant="atlas" size="atlas" type="button" aria-label="Ẩn địa điểm" onClick={onHidePlaces}>×</Button></div>
       {currentPlace ? <><strong>{currentPlace.name}</strong><small className="vo-place-subtitle">{placeSubtitle(currentPlace)}{currentPlace.leader ? ` · ${currentPlace.leader.name}` : ""}</small><p>{currentPlace.detail}</p>{currentPortrait ? <a className="vo-pin-credit" href={currentPortrait.file} target="_blank" rel="noreferrer" title={portraitCaption(currentPortrait)}>{currentPortrait.generated ? "Minh họa AI · Tái hiện nghệ thuật" : `Ảnh: ${currentPortrait.author} · ${currentPortrait.license}`} ↗</a> : null}</> : null}

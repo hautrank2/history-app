@@ -1,10 +1,11 @@
 import Link from "next/link";
+import { HomeLink } from "~/components/home-link";
 import { characterHref, getCharacter } from "~/data/characters";
 import type { HistoricalEventModel } from "~/data/events";
 import "~/styles/characters.css";
 
 export const EventDetail = ({ event }: { event: HistoricalEventModel }) => <main className="character-page event-detail" data-event-id={event.id}>
-  <nav className="character-breadcrumbs"><Link href={`/vietnam#${event.sceneIds[0]}`}>← Về bản đồ thời kỳ</Link><Link href="/characters">Nhân vật</Link></nav>
+  <nav className="character-breadcrumbs"><HomeLink back /><Link href={`/vietnam#${event.sceneIds[0]}`}>Về thời kỳ</Link><Link href="/characters">Nhân vật</Link></nav>
   <p className="character-eyebrow">KHỞI NGHĨA · {event.years}</p><h1>{event.title}</h1>
   <dl className="character-facts"><dt>Địa điểm</dt><dd>{event.location}</dd><dt>Định vị gần đúng</dt><dd>{event.at[1]}°B, {event.at[0]}°Đ</dd><dt>Lãnh đạo</dt><dd>{event.leaderIds.map((id) => <Link className="event-leader" style={{ marginRight: 20 }} key={id} href={characterHref(id)}>{getCharacter(id).name} →</Link>)}</dd></dl>
   <section className="event-narrative"><h2>Diễn biến</h2><p>{event.summary}</p><h2>Kết quả</h2><p>{event.outcome}</p></section>

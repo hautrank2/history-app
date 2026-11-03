@@ -249,3 +249,8 @@ html:has(.bd-experience) { scroll-behavior: smooth; scroll-padding-top: 90px; }
 
 .bd-page-navigation { display:flex;gap:20px;align-items:center;color:var(--atlas-gold);font-size:12px; }.bd-page-navigation a { display:flex;align-items:center;gap:8px; }
 @media(max-width:760px){.bd-page-navigation{gap:8px;font-size:11px}.bd-page-navigation .national-flag{display:none}}
+
+.home-link { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 36px; color: var(--atlas-gold); font-family: var(--font-body), sans-serif; font-size: 12px; white-space: nowrap; }
+.home-link > svg { flex-shrink: 0; }
+.home-link:focus-visible { outline: 2px solid var(--ring); outline-offset: 4px; }
+.country-flag { display: inline-block; flex-shrink: 0; width: 30px; height: 20px; vertical-align: middle; border-radius: 2px; }

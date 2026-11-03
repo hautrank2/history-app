@@ -1,6 +1,7 @@
 [
   {
     "id": "hung-vuong",
+    "countryId": "vietnam",
     "name": "Hùng Vương",
     "aliases": [],
     "wiki": "Hùng king",
@@ -16,6 +17,7 @@
   },
   {
     "id": "an-duong-vuong",
+    "countryId": "vietnam",
     "name": "An Dương Vương",
     "aliases": [],
     "wiki": "An Dương Vương",
@@ -31,6 +33,7 @@
   },
   {
     "id": "trieu-da",
+    "countryId": "nanyue",
     "name": "Triệu Đà",
     "aliases": [],
     "wiki": "Zhao Tuo",
@@ -46,6 +49,7 @@
   },
   {
     "id": "han-vu-de",
+    "countryId": "china",
     "name": "Hán Vũ Đế",
     "aliases": [],
     "wiki": "Emperor Wu of Han",
@@ -61,6 +65,7 @@
   },
   {
     "id": "trung-trac",
+    "countryId": "vietnam",
     "name": "Trưng Trắc",
     "aliases": [],
     "wiki": "Trưng sisters",
@@ -76,6 +81,7 @@
   },
   {
     "id": "ma-vien",
+    "countryId": "china",
     "name": "Mã Viện",
     "aliases": [],
     "wiki": "Ma Yuan (Han dynasty)",
@@ -91,6 +97,7 @@
   },
   {
     "id": "ba-trieu",
+    "countryId": "vietnam",
     "name": "Bà Triệu",
     "aliases": [],
     "wiki": "Lady Triệu",
@@ -106,6 +113,7 @@
   },
   {
     "id": "si-nhiep",
+    "countryId": "china",
     "name": "Sĩ Nhiếp",
     "aliases": [],
     "wiki": "Shi Xie",
@@ -121,6 +129,7 @@
   },
   {
     "id": "ly-nam-de",
+    "countryId": "vietnam",
     "name": "Lý Nam Đế",
     "aliases": [],
     "wiki": "Lý Nam Đế",
@@ -136,6 +145,7 @@
   },
   {
     "id": "trieu-viet-vuong",
+    "countryId": "vietnam",
     "name": "Triệu Việt Vương",
     "aliases": [],
     "wiki": "Triệu Việt Vương",
@@ -151,6 +161,7 @@
   },
   {
     "id": "tran-ba-tien",
+    "countryId": "china",
     "name": "Trần Bá Tiên",
     "aliases": [],
     "wiki": "Emperor Wu of Chen",
@@ -166,6 +177,7 @@
   },
   {
     "id": "mai-thuc-loan",
+    "countryId": "vietnam",
     "name": "Mai Thúc Loan",
     "aliases": [],
     "wiki": "Mai Thúc Loan",
@@ -181,6 +193,7 @@
   },
   {
     "id": "phung-hung",
+    "countryId": "vietnam",
     "name": "Phùng Hưng",
     "aliases": [],
     "wiki": "Phùng Hưng",
@@ -196,6 +209,7 @@
   },
   {
     "id": "cao-bien",
+    "countryId": "china",
     "name": "Cao Biền",
     "aliases": [],
     "wiki": "Gao Pian",
@@ -211,6 +225,7 @@
   },
   {
     "id": "khuc-thua-du",
+    "countryId": "vietnam",
     "name": "Khúc Thừa Dụ",
     "aliases": [],
     "wiki": "Khúc Thừa Dụ",
@@ -226,6 +241,7 @@
   },
   {
     "id": "duong-dinh-nghe",
+    "countryId": "vietnam",
     "name": "Dương Đình Nghệ",
     "aliases": [],
     "wiki": "Dương Đình Nghệ",
@@ -241,6 +257,7 @@
   },
   {
     "id": "ngo-quyen",
+    "countryId": "vietnam",
     "name": "Ngô Quyền",
     "aliases": [],
     "wiki": "Ngô Quyền",
@@ -256,6 +273,7 @@
   },
   {
     "id": "duong-tam-kha",
+    "countryId": "vietnam",
     "name": "Dương Tam Kha",
     "aliases": [],
     "wiki": "Dương Tam Kha",
@@ -271,6 +289,7 @@
   },
   {
     "id": "dinh-bo-linh",
+    "countryId": "vietnam",
     "name": "Đinh Bộ Lĩnh",
     "aliases": [
       "Đinh Tiên Hoàng"
@@ -292,6 +311,7 @@
   },
   {
     "id": "tran-lam",
+    "countryId": "vietnam",
     "name": "Trần Lãm",
     "aliases": [],
     "wiki": "Trần Lãm",
@@ -311,6 +331,7 @@
   },
   {
     "id": "ngo-xuong-xi",
+    "countryId": "vietnam",
     "name": "Ngô Xương Xí",
     "aliases": [],
     "wiki": "Ngô Xương Xí",
@@ -330,6 +351,7 @@
   },
   {
     "id": "do-canh-thac",
+    "countryId": "vietnam",
     "name": "Đỗ Cảnh Thạc",
     "aliases": [],
     "wiki": "Đỗ Cảnh Thạc",
@@ -349,6 +371,7 @@
   },
   {
     "id": "duong-van-nga",
+    "countryId": "vietnam",
     "name": "Dương Vân Nga",
     "aliases": [],
     "wiki": "Dương Vân Nga",
@@ -364,6 +387,7 @@
   },
   {
     "id": "le-dai-hanh",
+    "countryId": "vietnam",
     "name": "Lê Đại Hành",
     "aliases": [],
     "wiki": "Lê Hoàn",
@@ -379,6 +403,7 @@
   },
   {
     "id": "ly-thai-to",
+    "countryId": "vietnam",
     "name": "Lý Thái Tổ",
     "aliases": [],
     "wiki": "Lý Thái Tổ",
@@ -394,6 +419,7 @@
   },
   {
     "id": "y-lan",
+    "countryId": "vietnam",
     "name": "Ỷ Lan",
     "aliases": [],
     "wiki": "Ỷ Lan",
@@ -409,6 +435,7 @@
   },
   {
     "id": "ly-thanh-tong",
+    "countryId": "vietnam",
     "name": "Lý Thánh Tông",
     "aliases": [],
     "wiki": "Lý Thánh Tông",
@@ -424,6 +451,7 @@
   },
   {
     "id": "ly-thuong-kiet",
+    "countryId": "vietnam",
     "name": "Lý Thường Kiệt",
     "aliases": [],
     "wiki": "Lý Thường Kiệt",
@@ -439,6 +467,7 @@
   },
   {
     "id": "ly-nhan-tong",
+    "countryId": "vietnam",
     "name": "Lý Nhân Tông",
     "aliases": [],
     "wiki": "Lý Nhân Tông",
@@ -454,6 +483,7 @@
   },
   {
     "id": "ly-chieu-hoang",
+    "countryId": "vietnam",
     "name": "Lý Chiêu Hoàng",
     "aliases": [],
     "wiki": "Lý Chiêu Hoàng",
@@ -469,6 +499,7 @@
   },
   {
     "id": "tran-thai-tong",
+    "countryId": "vietnam",
     "name": "Trần Thái Tông",
     "aliases": [],
     "wiki": "Trần Thái Tông",
@@ -484,6 +515,7 @@
   },
   {
     "id": "tran-thu-do",
+    "countryId": "vietnam",
     "name": "Trần Thủ Độ",
     "aliases": [],
     "wiki": "Trần Thủ Độ",
@@ -499,6 +531,7 @@
   },
   {
     "id": "tran-hung-dao",
+    "countryId": "vietnam",
     "name": "Trần Hưng Đạo",
     "aliases": [
       "Trần Quốc Tuấn",
@@ -525,6 +558,7 @@
   },
   {
     "id": "tran-nhan-tong",
+    "countryId": "vietnam",
     "name": "Trần Nhân Tông",
     "aliases": [],
     "wiki": "Trần Nhân Tông",
@@ -540,6 +574,7 @@
   },
   {
     "id": "thoat-hoan",
+    "countryId": "china",
     "name": "Thoát Hoan",
     "aliases": [],
     "wiki": "Toghon (prince)",
@@ -559,6 +594,7 @@
   },
   {
     "id": "o-ma-nhi",
+    "countryId": "china",
     "name": "Ô Mã Nhi",
     "aliases": [],
     "wiki": "Omar (Yuan dynasty)",
@@ -578,6 +614,7 @@
   },
   {
     "id": "huyen-tran",
+    "countryId": "vietnam",
     "name": "Huyền Trân",
     "aliases": [],
     "wiki": "Huyền Trân",
@@ -593,6 +630,7 @@
   },
   {
     "id": "chu-van-an",
+    "countryId": "vietnam",
     "name": "Chu Văn An",
     "aliases": [],
     "wiki": "Chu Văn An",
@@ -608,6 +646,7 @@
   },
   {
     "id": "che-bong-nga",
+    "countryId": "champa",
     "name": "Chế Bồng Nga",
     "aliases": [],
     "wiki": "Chế Bồng Nga",
@@ -623,6 +662,7 @@
   },
   {
     "id": "ho-quy-ly",
+    "countryId": "vietnam",
     "name": "Hồ Quý Ly",
     "aliases": [],
     "wiki": "Hồ Quý Ly",
@@ -638,6 +678,7 @@
   },
   {
     "id": "ho-nguyen-trung",
+    "countryId": "vietnam",
     "name": "Hồ Nguyên Trừng",
     "aliases": [],
     "wiki": "Hồ Nguyên Trừng",
@@ -653,6 +694,7 @@
   },
   {
     "id": "truong-phu",
+    "countryId": "china",
     "name": "Trương Phụ",
     "aliases": [],
     "wiki": "Zhang Fu (Ming dynasty)",
@@ -668,6 +710,7 @@
   },
   {
     "id": "trung-quang-de",
+    "countryId": "vietnam",
     "name": "Trùng Quang Đế",
     "aliases": [],
     "wiki": "Trùng Quang Đế",
@@ -683,6 +726,7 @@
   },
   {
     "id": "dang-dung",
+    "countryId": "vietnam",
     "name": "Đặng Dung",
     "aliases": [],
     "wiki": "Đặng Dung",
@@ -698,6 +742,7 @@
   },
   {
     "id": "le-loi",
+    "countryId": "vietnam",
     "name": "Lê Lợi",
     "aliases": [],
     "wiki": "Lê Lợi",
@@ -713,6 +758,7 @@
   },
   {
     "id": "nguyen-trai",
+    "countryId": "vietnam",
     "name": "Nguyễn Trãi",
     "aliases": [],
     "wiki": "Nguyễn Trãi",
@@ -728,6 +774,7 @@
   },
   {
     "id": "vuong-thong",
+    "countryId": "china",
     "name": "Vương Thông",
     "aliases": [],
     "wiki": "Wang Tong (Ming dynasty)",
@@ -743,6 +790,7 @@
   },
   {
     "id": "le-thanh-tong",
+    "countryId": "vietnam",
     "name": "Lê Thánh Tông",
     "aliases": [],
     "wiki": "Lê Thánh Tông",
@@ -758,6 +806,7 @@
   },
   {
     "id": "nguyen-thi-anh",
+    "countryId": "vietnam",
     "name": "Nguyễn Thị Anh",
     "aliases": [],
     "wiki": "Nguyễn Thị Anh",
@@ -773,6 +822,7 @@
   },
   {
     "id": "ngo-si-lien",
+    "countryId": "vietnam",
     "name": "Ngô Sĩ Liên",
     "aliases": [],
     "wiki": "Ngô Sĩ Liên",
@@ -788,6 +838,7 @@
   },
   {
     "id": "mac-dang-dung",
+    "countryId": "vietnam",
     "name": "Mạc Đăng Dung",
     "aliases": [],
     "wiki": "Mạc Đăng Dung",
@@ -803,6 +854,7 @@
   },
   {
     "id": "nguyen-binh-khiem",
+    "countryId": "vietnam",
     "name": "Nguyễn Bỉnh Khiêm",
     "aliases": [],
     "wiki": "Nguyễn Bỉnh Khiêm",
@@ -818,6 +870,7 @@
   },
   {
     "id": "nguyen-kim",
+    "countryId": "vietnam",
     "name": "Nguyễn Kim",
     "aliases": [],
     "wiki": "Nguyễn Kim",
@@ -833,6 +886,7 @@
   },
   {
     "id": "le-trang-tong",
+    "countryId": "vietnam",
     "name": "Lê Trang Tông",
     "aliases": [],
     "wiki": "Lê Trang Tông",
@@ -848,6 +902,7 @@
   },
   {
     "id": "trinh-tung",
+    "countryId": "vietnam",
     "name": "Trịnh Tùng",
     "aliases": [],
     "wiki": "Trịnh Tùng",
@@ -863,6 +918,7 @@
   },
   {
     "id": "nguyen-hoang",
+    "countryId": "vietnam",
     "name": "Nguyễn Hoàng",
     "aliases": [],
     "wiki": "Nguyễn Hoàng",
@@ -878,6 +934,7 @@
   },
   {
     "id": "nguyen-phuc-khoat",
+    "countryId": "vietnam",
     "name": "Nguyễn Phúc Khoát",
     "aliases": [],
     "wiki": "Nguyễn Phúc Khoát",
@@ -893,6 +950,7 @@
   },
   {
     "id": "dao-duy-tu",
+    "countryId": "vietnam",
     "name": "Đào Duy Từ",
     "aliases": [],
     "wiki": "Đào Duy Từ",
@@ -908,6 +966,7 @@
   },
   {
     "id": "alexandre-de-rhodes",
+    "countryId": "france",
     "name": "Alexandre de Rhodes",
     "aliases": [],
     "wiki": "Alexandre de Rhodes",
@@ -923,6 +982,7 @@
   },
   {
     "id": "nguyen-hue",
+    "countryId": "vietnam",
     "name": "Nguyễn Huệ",
     "aliases": [
       "Quang Trung"
@@ -940,6 +1000,7 @@
   },
   {
     "id": "nguyen-nhac",
+    "countryId": "vietnam",
     "name": "Nguyễn Nhạc",
     "aliases": [],
     "wiki": "Nguyễn Nhạc",
@@ -955,6 +1016,7 @@
   },
   {
     "id": "rama-i",
+    "countryId": "thailand",
     "name": "Rama I",
     "aliases": [],
     "wiki": "Rama I",
@@ -970,6 +1032,7 @@
   },
   {
     "id": "bui-thi-xuan",
+    "countryId": "vietnam",
     "name": "Bùi Thị Xuân",
     "aliases": [],
     "wiki": "Bùi Thị Xuân",
@@ -985,6 +1048,7 @@
   },
   {
     "id": "nguyen-thiep",
+    "countryId": "vietnam",
     "name": "Nguyễn Thiếp",
     "aliases": [],
     "wiki": "Nguyễn Thiếp",
@@ -1000,6 +1064,7 @@
   },
   {
     "id": "ton-si-nghi",
+    "countryId": "china",
     "name": "Tôn Sĩ Nghị",
     "aliases": [],
     "wiki": "Sun Shiyi",
@@ -1015,6 +1080,7 @@
   },
   {
     "id": "gia-long",
+    "countryId": "vietnam",
     "name": "Gia Long",
     "aliases": [],
     "wiki": "Gia Long",
@@ -1030,6 +1096,7 @@
   },
   {
     "id": "minh-mang",
+    "countryId": "vietnam",
     "name": "Minh Mạng",
     "aliases": [],
     "wiki": "Minh Mạng",
@@ -1045,6 +1112,7 @@
   },
   {
     "id": "nguyen-du",
+    "countryId": "vietnam",
     "name": "Nguyễn Du",
     "aliases": [],
     "wiki": "Nguyễn Du",
@@ -1060,6 +1128,7 @@
   },
   {
     "id": "le-van-duyet",
+    "countryId": "vietnam",
     "name": "Lê Văn Duyệt",
     "aliases": [],
     "wiki": "Lê Văn Duyệt",
@@ -1075,6 +1144,7 @@
   },
   {
     "id": "tu-duc",
+    "countryId": "vietnam",
     "name": "Tự Đức",
     "aliases": [],
     "wiki": "Tự Đức",
@@ -1090,6 +1160,7 @@
   },
   {
     "id": "truong-dinh",
+    "countryId": "vietnam",
     "name": "Trương Định",
     "aliases": [],
     "wiki": "Trương Định",
@@ -1105,6 +1176,7 @@
   },
   {
     "id": "ton-that-thuyet",
+    "countryId": "vietnam",
     "name": "Tôn Thất Thuyết",
     "aliases": [],
     "wiki": "Tôn Thất Thuyết",
@@ -1120,6 +1192,7 @@
   },
   {
     "id": "rigault-de-genouilly",
+    "countryId": "france",
     "name": "Rigault de Genouilly",
     "aliases": [],
     "wiki": "Charles Rigault de Genouilly",
@@ -1135,6 +1208,7 @@
   },
   {
     "id": "ham-nghi",
+    "countryId": "vietnam",
     "name": "Hàm Nghi",
     "aliases": [],
     "wiki": "Hàm Nghi",
@@ -1150,6 +1224,7 @@
   },
   {
     "id": "phan-boi-chau",
+    "countryId": "vietnam",
     "name": "Phan Bội Châu",
     "aliases": [],
     "wiki": "Phan Bội Châu",
@@ -1165,6 +1240,7 @@
   },
   {
     "id": "phan-chau-trinh",
+    "countryId": "vietnam",
     "name": "Phan Châu Trinh",
     "aliases": [],
     "wiki": "Phan Châu Trinh",
@@ -1180,6 +1256,7 @@
   },
   {
     "id": "paul-doumer",
+    "countryId": "france",
     "name": "Paul Doumer",
     "aliases": [],
     "wiki": "Paul Doumer",
@@ -1195,6 +1272,7 @@
   },
   {
     "id": "ho-chi-minh",
+    "countryId": "vietnam",
     "name": "Hồ Chí Minh",
     "aliases": ["Bác Hồ", "Nguyễn Sinh Cung", "Nguyễn Tất Thành", "Nguyễn Ái Quốc", "Văn Ba", "Lý Thụy", "Tống Văn Sơ"],
     "wiki": "Ho Chi Minh",
@@ -1211,6 +1289,7 @@
   },
   {
     "id": "bao-dai",
+    "countryId": "vietnam",
     "name": "Bảo Đại",
     "aliases": [],
     "wiki": "Bảo Đại",
@@ -1226,6 +1305,7 @@
   },
   {
     "id": "nam-phuong",
+    "countryId": "vietnam",
     "name": "Nam Phương",
     "aliases": [],
     "wiki": "Nam Phương",
@@ -1241,6 +1321,7 @@
   },
   {
     "id": "yuitsu-tsuchihashi",
+    "countryId": "japan",
     "name": "Yuitsu Tsuchihashi",
     "aliases": [],
     "wiki": "Yuitsu Tsuchihashi",
@@ -1256,6 +1337,7 @@
   },
   {
     "id": "vo-nguyen-giap",
+    "countryId": "vietnam",
     "name": "Võ Nguyên Giáp",
     "aliases": [],
     "wiki": "Võ Nguyên Giáp",
@@ -1271,6 +1353,7 @@
   },
   {
     "id": "christian-de-castries",
+    "countryId": "france",
     "name": "Christian de Castries",
     "aliases": [],
     "wiki": "Christian de Castries",
@@ -1286,6 +1369,7 @@
   },
   {
     "id": "nguyen-thi-binh",
+    "countryId": "vietnam",
     "name": "Nguyễn Thị Bình",
     "aliases": [],
     "wiki": "Nguyễn Thị Bình",
@@ -1301,6 +1385,7 @@
   },
   {
     "id": "nguyen-van-thieu",
+    "countryId": "vietnam",
     "name": "Nguyễn Văn Thiệu",
     "aliases": [],
     "wiki": "Nguyễn Văn Thiệu",
@@ -1316,6 +1401,7 @@
   },
   {
     "id": "william-westmoreland",
+    "countryId": "usa",
     "name": "William Westmoreland",
     "aliases": [],
     "wiki": "William Westmoreland",
@@ -1331,6 +1417,7 @@
   },
   {
     "id": "van-tien-dung",
+    "countryId": "vietnam",
     "name": "Văn Tiến Dũng",
     "aliases": [],
     "wiki": "Văn Tiến Dũng",
@@ -1346,6 +1433,7 @@
   },
   {
     "id": "duong-van-minh",
+    "countryId": "vietnam",
     "name": "Dương Văn Minh",
     "aliases": [],
     "wiki": "Dương Văn Minh",
@@ -1361,6 +1449,7 @@
   },
   {
     "id": "ton-duc-thang",
+    "countryId": "vietnam",
     "name": "Tôn Đức Thắng",
     "aliases": [],
     "wiki": "Tôn Đức Thắng",
@@ -1376,6 +1465,7 @@
   },
   {
     "id": "le-duan",
+    "countryId": "vietnam",
     "name": "Lê Duẩn",
     "aliases": [],
     "wiki": "Lê Duẩn",
@@ -1391,6 +1481,7 @@
   },
   {
     "id": "pol-pot",
+    "countryId": "cambodia",
     "name": "Pol Pot",
     "aliases": [],
     "wiki": "Pol Pot",
@@ -1406,6 +1497,7 @@
   },
   {
     "id": "dang-tieu-binh",
+    "countryId": "china",
     "name": "Đặng Tiểu Bình",
     "aliases": [],
     "wiki": "Deng Xiaoping",
@@ -1421,6 +1513,7 @@
   },
   {
     "id": "nguyen-van-linh",
+    "countryId": "vietnam",
     "name": "Nguyễn Văn Linh",
     "aliases": [],
     "wiki": "Nguyễn Văn Linh",
@@ -1436,6 +1529,7 @@
   },
   {
     "id": "vo-van-kiet",
+    "countryId": "vietnam",
     "name": "Võ Văn Kiệt",
     "aliases": [],
     "wiki": "Võ Văn Kiệt",
@@ -1451,6 +1545,7 @@
   },
   {
     "id": "kieu-cong-han",
+    "countryId": "vietnam",
     "name": "Kiều Công Hãn",
     "aliases": [],
     "wiki": "Kiều Công Hãn",
@@ -1466,6 +1561,7 @@
   },
   {
     "id": "kieu-thuan",
+    "countryId": "vietnam",
     "name": "Kiều Thuận",
     "aliases": [],
     "wiki": "Kiều Thuận",
@@ -1481,6 +1577,7 @@
   },
   {
     "id": "nguyen-khoan",
+    "countryId": "vietnam",
     "name": "Nguyễn Khoan",
     "aliases": [],
     "wiki": "Nguyễn Khoan",
@@ -1496,6 +1593,7 @@
   },
   {
     "id": "nguyen-thu-tiep",
+    "countryId": "vietnam",
     "name": "Nguyễn Thủ Tiệp",
     "aliases": [],
     "wiki": "Nguyễn Thủ Tiệp",
@@ -1511,6 +1609,7 @@
   },
   {
     "id": "nguyen-sieu",
+    "countryId": "vietnam",
     "name": "Nguyễn Siêu",
     "aliases": [],
     "wiki": "Nguyễn Siêu",
@@ -1526,6 +1625,7 @@
   },
   {
     "id": "ly-khue",
+    "countryId": "vietnam",
     "name": "Lý Khuê",
     "aliases": [],
     "wiki": "Lý Khuê",
@@ -1541,6 +1641,7 @@
   },
   {
     "id": "lu-duong",
+    "countryId": "vietnam",
     "name": "Lữ Đường",
     "aliases": [],
     "wiki": "Lữ Đường",
@@ -1556,6 +1657,7 @@
   },
   {
     "id": "pham-bach-ho",
+    "countryId": "vietnam",
     "name": "Phạm Bạch Hổ",
     "aliases": [],
     "wiki": "Phạm Bạch Hổ",
@@ -1571,6 +1673,7 @@
   },
   {
     "id": "ngo-nhat-khanh",
+    "countryId": "vietnam",
     "name": "Ngô Nhật Khánh",
     "aliases": [],
     "wiki": "Ngô Nhật Khánh",
@@ -1586,6 +1689,7 @@
   },
   {
     "id": "trung-nhi",
+    "countryId": "vietnam",
     "name": "Trưng Nhị",
     "aliases": [],
     "wiki": "Trưng Nhị",
@@ -1601,6 +1705,7 @@
   },
   {
     "id": "phan-dinh-phung",
+    "countryId": "vietnam",
     "name": "Phan Đình Phùng",
     "aliases": [],
     "wiki": "Phan Đình Phùng",
@@ -1616,6 +1721,7 @@
   },
   {
     "id": "cao-thang",
+    "countryId": "vietnam",
     "name": "Cao Thắng",
     "aliases": [],
     "wiki": "Cao Thắng",
@@ -1631,6 +1737,7 @@
   },
   {
     "id": "hoang-hoa-tham",
+    "countryId": "vietnam",
     "name": "Hoàng Hoa Thám",
     "aliases": [],
     "wiki": "Hoàng Hoa Thám",
@@ -1646,6 +1753,7 @@
   },
   {
     "id": "luong-van-nam",
+    "countryId": "vietnam",
     "name": "Lương Văn Nắm",
     "aliases": [],
     "wiki": "Lương Văn Nắm",
@@ -1661,6 +1769,7 @@
   },
   {
     "id": "nguyen-thai-hoc",
+    "countryId": "vietnam",
     "name": "Nguyễn Thái Học",
     "aliases": [],
     "wiki": "Nguyễn Thái Học",
@@ -1676,6 +1785,7 @@
   },
   {
     "id": "nguyen-thien-thuat",
+    "countryId": "vietnam",
     "name": "Nguyễn Thiện Thuật",
     "aliases": [],
     "wiki": "Nguyễn Thiện Thuật",
@@ -1691,6 +1801,7 @@
   },
   {
     "id": "dinh-cong-trang",
+    "countryId": "vietnam",
     "name": "Đinh Công Tráng",
     "aliases": [],
     "wiki": "Đinh Công Tráng",
@@ -1706,6 +1817,7 @@
   },
   {
     "id": "pham-banh",
+    "countryId": "vietnam",
     "name": "Phạm Bành",
     "aliases": [],
     "wiki": "Phạm Bành",
@@ -1721,6 +1833,7 @@
   },
   {
     "id": "tran-khanh-du",
+    "countryId": "vietnam",
     "name": "Trần Khánh Dư",
     "aliases": [],
     "wiki": "Trần Khánh Dư",
@@ -1736,6 +1849,7 @@
   },
   {
     "id": "truong-van-ho",
+    "countryId": "china",
     "name": "Trương Văn Hổ",
     "aliases": [],
     "wiki": "Trương Văn Hổ",
@@ -1751,6 +1865,7 @@
   },
   {
     "id": "nguyen-khoai",
+    "countryId": "vietnam",
     "name": "Nguyễn Khoái",
     "aliases": [],
     "wiki": "Nguyễn Khoái",
@@ -1765,30 +1880,30 @@
     ]
   },
   {
-    "id":"vladimir-lenin","name":"Vladimir Ilyich Lenin","aliases":["V. I. Lênin", "Lênin"],"wiki":"Vladimir Lenin","role":"Lãnh tụ Cách mạng Tháng Mười Nga, nhà lý luận cách mạng","biography":"Lenin là nhà cách mạng và người đứng đầu chính phủ Nga Xô viết, sau đó là Liên Xô. Luận cương về vấn đề dân tộc và thuộc địa của ông có ảnh hưởng quan trọng đến sự lựa chọn con đường cách mạng của Nguyễn Ái Quốc; không đồng nghĩa với một cuộc gặp trực tiếp.","lifespan":"1870–1924","sources":[{"title":"Lenin và con đường cứu nước của Nguyễn Ái Quốc","url":"https://baotanghochiminh.vn/bao-tang-ho-chi-minh-khai-mac-trung-bay-chuyen-de-dau-chan-ho-chi-minh-tren-que-huong-cach-mang-thang-muoi.htm"},{"title":"Vladimir Lenin","url":"https://en.wikipedia.org/wiki/Vladimir_Lenin"}]
+    "id":"vladimir-lenin","countryId": "soviet-union","name":"Vladimir Ilyich Lenin","aliases":["V. I. Lênin", "Lênin"],"wiki":"Vladimir Lenin","role":"Lãnh tụ Cách mạng Tháng Mười Nga, nhà lý luận cách mạng","biography":"Lenin là nhà cách mạng và người đứng đầu chính phủ Nga Xô viết, sau đó là Liên Xô. Luận cương về vấn đề dân tộc và thuộc địa của ông có ảnh hưởng quan trọng đến sự lựa chọn con đường cách mạng của Nguyễn Ái Quốc; không đồng nghĩa với một cuộc gặp trực tiếp.","lifespan":"1870–1924","sources":[{"title":"Lenin và con đường cứu nước của Nguyễn Ái Quốc","url":"https://baotanghochiminh.vn/bao-tang-ho-chi-minh-khai-mac-trung-bay-chuyen-de-dau-chan-ho-chi-minh-tren-que-huong-cach-mang-thang-muoi.htm"},{"title":"Vladimir Lenin","url":"https://en.wikipedia.org/wiki/Vladimir_Lenin"}]
   },
   {
-    "id":"joseph-stalin","name":"Joseph Stalin","aliases":["I. V. Stalin","Xtalin","Stalin"],"wiki":"Joseph Stalin","role":"Lãnh đạo Liên Xô trong giai đoạn cuối thập niên 1920–1953","biography":"Stalin lãnh đạo Liên Xô cho đến năm 1953. Hồ Chí Minh trực tiếp làm việc với ông tại Mátxcơva trong chuyến ngoại giao năm 1950 để vận động sự ủng hộ và viện trợ cho kháng chiến chống Pháp. Quan hệ được trình bày theo từng sự kiện, không phải sự đồng nhất mọi quan điểm.","lifespan":"1878–1953","sources":[{"title":"Tư liệu thư từ chuyến ngoại giao năm 1950","url":"https://baotanghochiminh.vn/mot-buc-thu-trong-chuyen-ngoai-giao-bi-mat-nam-1950-cua-chu-tich-ho-chi-minh.htm"},{"title":"Joseph Stalin","url":"https://en.wikipedia.org/wiki/Joseph_Stalin"}]
+    "id":"joseph-stalin","countryId": "soviet-union","name":"Joseph Stalin","aliases":["I. V. Stalin","Xtalin","Stalin"],"wiki":"Joseph Stalin","role":"Lãnh đạo Liên Xô trong giai đoạn cuối thập niên 1920–1953","biography":"Stalin lãnh đạo Liên Xô cho đến năm 1953. Hồ Chí Minh trực tiếp làm việc với ông tại Mátxcơva trong chuyến ngoại giao năm 1950 để vận động sự ủng hộ và viện trợ cho kháng chiến chống Pháp. Quan hệ được trình bày theo từng sự kiện, không phải sự đồng nhất mọi quan điểm.","lifespan":"1878–1953","sources":[{"title":"Tư liệu thư từ chuyến ngoại giao năm 1950","url":"https://baotanghochiminh.vn/mot-buc-thu-trong-chuyen-ngoai-giao-bi-mat-nam-1950-cua-chu-tich-ho-chi-minh.htm"},{"title":"Joseph Stalin","url":"https://en.wikipedia.org/wiki/Joseph_Stalin"}]
   },
   {
-    "id":"mao-trach-dong","name":"Mao Trạch Đông","aliases":["Mao Zedong","Mao"],"wiki":"Mao Zedong","role":"Lãnh đạo Đảng Cộng sản Trung Quốc, Chủ tịch nước CHND Trung Hoa 1949–1959","biography":"Mao Trạch Đông là lãnh đạo chủ chốt của Trung Quốc từ năm 1949 đến năm 1976. Tháng 2/1950, ông cùng Hồ Chí Minh và các lãnh đạo Liên Xô có mặt tại Mátxcơva trong các hoạt động ngoại giao liên quan đến hợp tác và hỗ trợ kháng chiến Việt Nam.","lifespan":"1893–1976","sources":[{"title":"Biên niên ngày 16/2/1950 tại Mátxcơva","url":"https://baotanghochiminh.vn/chu-tich-ho-chi-minh-du-dai-tiec-do-chinh-phu-lien-xo-to-chuc-de-mung-thang-loi-hiep-uoc-huu-nghi-tuong-tro-dong-minh-xo-trung-vua-duoc-ky-ket-tai-matxcova.htm"},{"title":"Mao Zedong","url":"https://en.wikipedia.org/wiki/Mao_Zedong"}]
+    "id":"mao-trach-dong","countryId": "china","name":"Mao Trạch Đông","aliases":["Mao Zedong","Mao"],"wiki":"Mao Zedong","role":"Lãnh đạo Đảng Cộng sản Trung Quốc, Chủ tịch nước CHND Trung Hoa 1949–1959","biography":"Mao Trạch Đông là lãnh đạo chủ chốt của Trung Quốc từ năm 1949 đến năm 1976. Tháng 2/1950, ông cùng Hồ Chí Minh và các lãnh đạo Liên Xô có mặt tại Mátxcơva trong các hoạt động ngoại giao liên quan đến hợp tác và hỗ trợ kháng chiến Việt Nam.","lifespan":"1893–1976","sources":[{"title":"Biên niên ngày 16/2/1950 tại Mátxcơva","url":"https://baotanghochiminh.vn/chu-tich-ho-chi-minh-du-dai-tiec-do-chinh-phu-lien-xo-to-chuc-de-mung-thang-loi-hiep-uoc-huu-nghi-tuong-tro-dong-minh-xo-trung-vua-duoc-ky-ket-tai-matxcova.htm"},{"title":"Mao Zedong","url":"https://en.wikipedia.org/wiki/Mao_Zedong"}]
   },
   {
-    "id":"chu-an-lai","name":"Chu Ân Lai","aliases":["Zhou Enlai"],"wiki":"Zhou Enlai","role":"Thủ tướng nước CHND Trung Hoa 1949–1976","biography":"Chu Ân Lai là nhà lãnh đạo và nhà ngoại giao Trung Quốc, giữ chức Thủ tướng từ năm 1949 đến năm 1976. Ông tham gia các hoạt động ngoại giao liên quan đến Hồ Chí Minh trong chuyến đi Trung Quốc và Liên Xô đầu năm 1950.","lifespan":"1898–1976","sources":[{"title":"Chuyến công du Xuân Canh Dần 1950","url":"https://hochiminh.vn/ho-chi-minh-va-the-gioi/hoat-dong-quoc-te-cua-ho-chi-minh/bac-ho-voi-chuyen-cong-du-xuan-canh-dan-1950-44"},{"title":"Zhou Enlai","url":"https://en.wikipedia.org/wiki/Zhou_Enlai"}]
+    "id":"chu-an-lai","countryId": "china","name":"Chu Ân Lai","aliases":["Zhou Enlai"],"wiki":"Zhou Enlai","role":"Thủ tướng nước CHND Trung Hoa 1949–1976","biography":"Chu Ân Lai là nhà lãnh đạo và nhà ngoại giao Trung Quốc, giữ chức Thủ tướng từ năm 1949 đến năm 1976. Ông tham gia các hoạt động ngoại giao liên quan đến Hồ Chí Minh trong chuyến đi Trung Quốc và Liên Xô đầu năm 1950.","lifespan":"1898–1976","sources":[{"title":"Chuyến công du Xuân Canh Dần 1950","url":"https://hochiminh.vn/ho-chi-minh-va-the-gioi/hoat-dong-quoc-te-cua-ho-chi-minh/bac-ho-voi-chuyen-cong-du-xuan-canh-dan-1950-44"},{"title":"Zhou Enlai","url":"https://en.wikipedia.org/wiki/Zhou_Enlai"}]
   },
   {
-    "id":"francis-loseby","name":"Francis Henry Loseby","aliases":["Frank Loseby","Luật sư Loseby"],"wiki":"Francis Henry Loseby","role":"Luật sư bảo vệ Nguyễn Ái Quốc trong vụ án Hồng Kông","biography":"Luật sư người Anh Francis Henry Loseby cùng gia đình đã giúp bảo vệ Nguyễn Ái Quốc trong vụ án Hồng Kông từ năm 1931 và hỗ trợ Người rời nơi này. Tình bạn của hai người được duy trì trong những năm sau đó.","lifespan":"1883–1967","sources":[{"title":"Tình bạn Hồ Chí Minh và luật sư Loseby","url":"https://btllang.bqp.vn/tin-tuc/tin-tong-hop/1656-b-c-tranh-theu-va-tinh-b-n-th-y-chung.html"}]
+    "id":"francis-loseby","countryId": "england","name":"Francis Henry Loseby","aliases":["Frank Loseby","Luật sư Loseby"],"wiki":"Francis Henry Loseby","role":"Luật sư bảo vệ Nguyễn Ái Quốc trong vụ án Hồng Kông","biography":"Luật sư người Anh Francis Henry Loseby cùng gia đình đã giúp bảo vệ Nguyễn Ái Quốc trong vụ án Hồng Kông từ năm 1931 và hỗ trợ Người rời nơi này. Tình bạn của hai người được duy trì trong những năm sau đó.","lifespan":"1883–1967","sources":[{"title":"Tình bạn Hồ Chí Minh và luật sư Loseby","url":"https://btllang.bqp.vn/tin-tuc/tin-tong-hop/1656-b-c-tranh-theu-va-tinh-b-n-th-y-chung.html"}]
   },
   {
-    "id":"tuong-gioi-thach","name":"Tưởng Giới Thạch","aliases":["Chiang Kai-shek"],"wiki":"Chiang Kai-shek","role":"Lãnh đạo Quốc dân Đảng và chính quyền Trung Hoa Dân quốc","biography":"Tưởng Giới Thạch lãnh đạo Quốc dân Đảng và chính quyền Trung Hoa Dân quốc. Năm 1942–1943, Hồ Chí Minh bị bộ máy chính quyền địa phương Quốc dân Đảng giam giữ ở Quảng Tây. Không từ đó suy ra hai người đã gặp nhau hoặc việc bắt giữ do mệnh lệnh cá nhân của ông.","lifespan":"1887–1975","sources":[{"title":"Hồ Chí Minh Toàn tập · Tập 3","url":"https://baotanghochiminh.vn/ho-chi-minh-toan-tap_xuat-ban-lan-3_tap-3.htm"},{"title":"Chiang Kai-shek","url":"https://en.wikipedia.org/wiki/Chiang_Kai-shek"}]
+    "id":"tuong-gioi-thach","countryId": "china","name":"Tưởng Giới Thạch","aliases":["Chiang Kai-shek"],"wiki":"Chiang Kai-shek","role":"Lãnh đạo Quốc dân Đảng và chính quyền Trung Hoa Dân quốc","biography":"Tưởng Giới Thạch lãnh đạo Quốc dân Đảng và chính quyền Trung Hoa Dân quốc. Năm 1942–1943, Hồ Chí Minh bị bộ máy chính quyền địa phương Quốc dân Đảng giam giữ ở Quảng Tây. Không từ đó suy ra hai người đã gặp nhau hoặc việc bắt giữ do mệnh lệnh cá nhân của ông.","lifespan":"1887–1975","sources":[{"title":"Hồ Chí Minh Toàn tập · Tập 3","url":"https://baotanghochiminh.vn/ho-chi-minh-toan-tap_xuat-ban-lan-3_tap-3.htm"},{"title":"Chiang Kai-shek","url":"https://en.wikipedia.org/wiki/Chiang_Kai-shek"}]
   },
   {
-    "id":"jean-sainteny","name":"Jean Sainteny","aliases":["Sainteny"],"wiki":"Jean Sainteny","role":"Đại diện Pháp ký Hiệp định Sơ bộ ngày 6/3/1946","biography":"Jean Sainteny là nhà ngoại giao Pháp, đại diện phía Pháp ký Hiệp định Sơ bộ với Hồ Chí Minh và Vũ Hồng Khanh tại Hà Nội ngày 6/3/1946. Quan hệ này thể hiện nỗ lực đàm phán giữa hai bên có những lợi ích và lập trường đối lập.","lifespan":"1907–1978","sources":[{"title":"Hiệp định Sơ bộ Việt Nam–Pháp 6/3/1946","url":"https://hcmcpv.org.vn/tin-tuc/tim-kiem/hiep-dinh-so-bo-viet-nam-phap-6-3-1946-ky-tich-khoi-dau-lich-su-dau-tranh-ngoai-giao-cua-nuoc-viet-1454411071"},{"title":"Jean Sainteny","url":"https://en.wikipedia.org/wiki/Jean_Sainteny"}]
+    "id":"jean-sainteny","countryId": "france","name":"Jean Sainteny","aliases":["Sainteny"],"wiki":"Jean Sainteny","role":"Đại diện Pháp ký Hiệp định Sơ bộ ngày 6/3/1946","biography":"Jean Sainteny là nhà ngoại giao Pháp, đại diện phía Pháp ký Hiệp định Sơ bộ với Hồ Chí Minh và Vũ Hồng Khanh tại Hà Nội ngày 6/3/1946. Quan hệ này thể hiện nỗ lực đàm phán giữa hai bên có những lợi ích và lập trường đối lập.","lifespan":"1907–1978","sources":[{"title":"Hiệp định Sơ bộ Việt Nam–Pháp 6/3/1946","url":"https://hcmcpv.org.vn/tin-tuc/tim-kiem/hiep-dinh-so-bo-viet-nam-phap-6-3-1946-ky-tich-khoi-dau-lich-su-dau-tranh-ngoai-giao-cua-nuoc-viet-1454411071"},{"title":"Jean Sainteny","url":"https://en.wikipedia.org/wiki/Jean_Sainteny"}]
   },
   {
-    "id":"harry-truman","name":"Harry S. Truman","aliases":["Truman"],"wiki":"Harry S. Truman","role":"Tổng thống Hoa Kỳ 1945–1953","biography":"Harry S. Truman là Tổng thống Hoa Kỳ trong những năm đầu sau Chiến tranh thế giới thứ hai. Hồ Chí Minh gửi thư và điện đề nghị Hoa Kỳ ủng hộ độc lập Việt Nam. Theo Cơ quan Lưu trữ Quốc gia Hoa Kỳ, Truman không trả lời những thư này.","lifespan":"1884–1972","sources":[{"title":"Remembering Vietnam · National Archives","url":"https://www.archives.gov/exhibits/remembering-vietnam-online-exhibit-episodes-1-4"},{"title":"Harry S. Truman","url":"https://en.wikipedia.org/wiki/Harry_S._Truman"}]
+    "id":"harry-truman","countryId": "usa","name":"Harry S. Truman","aliases":["Truman"],"wiki":"Harry S. Truman","role":"Tổng thống Hoa Kỳ 1945–1953","biography":"Harry S. Truman là Tổng thống Hoa Kỳ trong những năm đầu sau Chiến tranh thế giới thứ hai. Hồ Chí Minh gửi thư và điện đề nghị Hoa Kỳ ủng hộ độc lập Việt Nam. Theo Cơ quan Lưu trữ Quốc gia Hoa Kỳ, Truman không trả lời những thư này.","lifespan":"1884–1972","sources":[{"title":"Remembering Vietnam · National Archives","url":"https://www.archives.gov/exhibits/remembering-vietnam-online-exhibit-episodes-1-4"},{"title":"Harry S. Truman","url":"https://en.wikipedia.org/wiki/Harry_S._Truman"}]
   },
   {
-    "id":"lyndon-johnson","name":"Lyndon B. Johnson","aliases":["LBJ","Johnson"],"wiki":"Lyndon B. Johnson","role":"Tổng thống Hoa Kỳ 1963–1969, giai đoạn leo thang chiến tranh Việt Nam","biography":"Lyndon B. Johnson là Tổng thống Hoa Kỳ trong giai đoạn Hoa Kỳ mở rộng can thiệp quân sự ở Việt Nam. Tháng 2/1967, ông và Hồ Chí Minh trao đổi thư về việc chấm dứt chiến tranh; đây là liên hệ thư tín, không phải cuộc gặp trực tiếp.","lifespan":"1908–1973","sources":[{"title":"Thư Hồ Chí Minh gửi Tổng thống Johnson, 15/2/1967","url":"https://docsteach.org/document/ho-chi-minh-to-johnson/"},{"title":"Lyndon B. Johnson","url":"https://en.wikipedia.org/wiki/Lyndon_B._Johnson"}]
+    "id":"lyndon-johnson","countryId": "usa","name":"Lyndon B. Johnson","aliases":["LBJ","Johnson"],"wiki":"Lyndon B. Johnson","role":"Tổng thống Hoa Kỳ 1963–1969, giai đoạn leo thang chiến tranh Việt Nam","biography":"Lyndon B. Johnson là Tổng thống Hoa Kỳ trong giai đoạn Hoa Kỳ mở rộng can thiệp quân sự ở Việt Nam. Tháng 2/1967, ông và Hồ Chí Minh trao đổi thư về việc chấm dứt chiến tranh; đây là liên hệ thư tín, không phải cuộc gặp trực tiếp.","lifespan":"1908–1973","sources":[{"title":"Thư Hồ Chí Minh gửi Tổng thống Johnson, 15/2/1967","url":"https://docsteach.org/document/ho-chi-minh-to-johnson/"},{"title":"Lyndon B. Johnson","url":"https://en.wikipedia.org/wiki/Lyndon_B._Johnson"}]
   }
 ]
