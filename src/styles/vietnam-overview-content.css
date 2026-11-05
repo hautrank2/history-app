@@ -46,7 +46,6 @@ html[data-theme="arena"] .vo-cluster-popup {
 .vo-page #vo-content .vo-article-sources { display: flex; flex-wrap: wrap; gap: 5px 10px; list-style: none; margin: 12px 0 0; padding: 0; }
 .vo-page #vo-content .vo-article-sources a { font-size: 11px; line-height: 1.7; color: #9dbbd1; text-decoration: underline; text-decoration-color: rgb(157 187 209 / 30%); text-underline-offset: 3px; }
 .vo-page #vo-content .vo-source-list { list-style: none; display: grid; gap: 0; margin: 0; padding: 0; }
-.vo-page #vo-content .vo-source-list a { display: block; padding: 12px 0; border-bottom: 1px solid var(--atlas-line); color: var(--atlas-gold); font-size: 12px; line-height: 1.7; overflow-wrap: anywhere; }
 .vo-page #vo-content .vo-reading-footer { display: flex; align-items: center; justify-content: space-between; flex: 0 0 auto; gap: 12px; margin: 0; padding: 12px 20px; border-top: 1px solid rgb(177 207 230 / 18%); background: rgb(4 16 29 / 24%); }
 .vo-page #vo-content .vo-reading-status { display: grid; gap: 3px; }
 .vo-page #vo-content .vo-reading-status strong { font-size: 12px; line-height: 1.4; font-weight: 500; color: var(--atlas-gold); }

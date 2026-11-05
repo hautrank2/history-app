@@ -8,6 +8,8 @@ paths:
 
 # CSS / SCSS nằm trong src/styles
 
+- Ưu tiên Tailwind utility trong component cho layout, màu sắc, typography, responsive và trạng thái tương tác; giữ className ngữ nghĩa để dev định vị component theo `ui-locations.md`.
+- Class định vị không yêu cầu CSS riêng. Chỉ thêm CSS/SCSS khi Tailwind không phù hợp (token/theme dùng chung, keyframes phức tạp, tích hợp thư viện); khi chuyển một vùng sang utility, xóa rule CSS tương ứng không còn dùng để tránh chồng styling.
 - Tất cả file CSS/SCSS do dự án sở hữu phải đặt trong `src/styles/`. Không tạo stylesheet cạnh page/component hoặc trong `src/app/`.
 - Import qua `~/styles/<ten-file>.css` hoặc `@/styles/<ten-file>.scss`. Tên file kebab-case theo chức năng (vietnam-overview-content.css, characters.css).
 - CSS của package bên thứ ba vẫn import trực tiếp từ package (ví dụ `maplibre-gl/dist/maplibre-gl.css`); không copy vào source.

@@ -1,0 +1,44 @@
+{
+  "Phan Đình Phùng": {
+    "src": "/images/characters/phan-dinh-phung.png",
+    "file": "https://commons.wikimedia.org/wiki/File:Portrait_of_Phan_%C4%90%C3%ACnh_Ph%C3%B9ng.png",
+    "article": "https://en.wikipedia.org/wiki/Phan_%C4%90%C3%ACnh_Ph%C3%B9ng",
+    "author": "unknown",
+    "license": "Public domain"
+  },
+  "Cao Thắng": {
+    "src": "/images/characters/cao-thang.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Cao_Th%E1%BA%AFng.jpg",
+    "article": "https://en.wikipedia.org/wiki/Cao_Th%E1%BA%AFng",
+    "author": "Khánh Hữu",
+    "license": "CC BY-SA 4.0"
+  },
+  "Hoàng Hoa Thám": {
+    "src": "/images/characters/hoang-hoa-tham.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:%C4%90%E1%BB%81_Th%C3%A1m.jpg",
+    "article": "https://en.wikipedia.org/wiki/Ho%C3%A0ng_Hoa_Th%C3%A1m",
+    "author": "Pierre Dieulefils",
+    "license": "Public domain"
+  },
+  "Nguyễn Thái Học": {
+    "src": "/images/characters/nguyen-thai-hoc.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Nguy%E1%BB%85n_Th%C3%A1i_H%E1%BB%8Dc.jpg",
+    "article": "https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_Th%C3%A1i_H%E1%BB%8Dc",
+    "author": "Bảo Ngậu",
+    "license": "Public domain"
+  },
+  "Nguyễn Thiện Thuật": {
+    "src": "/images/characters/nguyen-thien-thuat.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:NguyenThienThuat.jpg",
+    "article": "https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_Thi%E1%BB%87n_Thu%E1%BA%ADt",
+    "author": "The Vietnamese government",
+    "license": "Public domain"
+  },
+  "Đinh Công Tráng": {
+    "src": "/images/characters/dinh-cong-trang.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:%C4%90inh_C%C3%B4ng_Tr%C3%A1ng.jpg",
+    "article": "https://en.wikipedia.org/wiki/%C4%90inh_C%C3%B4ng_Tr%C3%A1ng",
+    "author": "Khánh Hữu",
+    "license": "CC BY-SA 4.0"
+  }
+}

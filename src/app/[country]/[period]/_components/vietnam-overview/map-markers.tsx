@@ -26,6 +26,7 @@ type MarkerModel = { place: OverviewPlaceModel; x: number; y: number };
 type MapMarkersProps = {
   points: MarkerModel[]; selectedPlace: number; viewport: { width: number; height: number };
   onSelectPlace: (index: number) => void;
+  showMarkers?: boolean;
 };
 
 const PlaceSymbol = ({ place }: { place: OverviewPlaceModel }) => {
@@ -33,7 +34,13 @@ const PlaceSymbol = ({ place }: { place: OverviewPlaceModel }) => {
   return <span className="vo-point-symbol">{portrait ? <Image src={portrait.src} alt="" preview={false} fill sizes="36px" title={portraitCaption(portrait)} style={{ objectPosition: portrait.position }} /> : <PlaceIcon kind={place.kind} />}</span>;
 };
 
-export const MapMarkers = ({ points, selectedPlace, viewport, onSelectPlace }: MapMarkersProps) => {
+export const MapMarkers = ({
+  points,
+  selectedPlace,
+  viewport,
+  onSelectPlace,
+  showMarkers = true,
+}: MapMarkersProps) => {
   const [expanded, setExpanded] = useState<string | null>(null);
   const clusters = clusterMapPoints(points.map((point, index) => ({ index, x: point.x, y: point.y })), viewport.width <= 760 ? 48 : 58);
   const choose = (index: number) => { setExpanded(null); onSelectPlace(index); };
@@ -53,7 +60,7 @@ export const MapMarkers = ({ points, selectedPlace, viewport, onSelectPlace }: M
   </Popover.Root>;
 
   return <div className="vo-map-markers vo-cluster-layer" data-place-count={points.length}>
-    {clusters.filter((cluster) => cluster.x >= -24 && cluster.y >= 64 && cluster.x <= viewport.width + 24 && cluster.y <= viewport.height - 24).map((cluster) => {
+    {showMarkers ? clusters.filter((cluster) => cluster.x >= -24 && cluster.y >= 64 && cluster.x <= viewport.width + 24 && cluster.y <= viewport.height - 24).map((cluster) => {
       if (cluster.indices.length === 1) {
         const index = cluster.indices[0]; const place = points[index].place;
         return <button key={cluster.id} className={`vo-map-point is-${place.kind} ${selectedPlace === index ? "is-selected" : ""}`} data-place-id={place.eventId ?? place.leader?.id ?? index} type="button" style={{ left: cluster.x, top: cluster.y }} aria-label={`${place.name} · ${place.leader?.name ?? placeSubtitle(place)}`} aria-pressed={selectedPlace === index} title={`${place.name} · ${place.leader?.name ?? placeSubtitle(place)}`} onClick={() => choose(index)}>
@@ -72,7 +79,7 @@ export const MapMarkers = ({ points, selectedPlace, viewport, onSelectPlace }: M
         })}
         {cluster.indices.length > 3 ? picker(cluster.id, "Địa điểm trong cụm", cluster.indices, <button className="vo-cluster-place vo-cluster-more" type="button" aria-label={`Xem thêm ${cluster.indices.length - 3} địa điểm`} title={`Xem thêm ${cluster.indices.length - 3} địa điểm`}>+{cluster.indices.length - 3}</button>) : null}
       </div>;
-    })}
+    }) : null}
     {picker("all", `Tất cả ${points.length} địa điểm`, points.map((_, index) => index), <button type="button" className="vo-map-directory-trigger vo-glass" aria-label={`Danh sách ${points.length} địa điểm`}><List size={15} /><span>{points.length} địa điểm</span></button>)}
   </div>;
 };

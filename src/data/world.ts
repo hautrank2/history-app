@@ -1,3 +1,4 @@
+import { chinaPeriods } from "~/data/china-overview";
 import type { CountryModel } from "~/types";
 
 export const englandData: CountryModel = {
@@ -13,13 +14,7 @@ export const englandData: CountryModel = {
 
 export const chinaData: CountryModel = {
   slug: "china", name: "Trung Quốc",
-  periods: [
-    { slug: "qin-han", years: "221 TCN – 220", title: "Tần – Hán", blurb: "Thống nhất lãnh thổ và nền móng của nhà nước đế chế." },
-    { slug: "three-kingdoms", years: "220 – 280", title: "Tam Quốc", blurb: "Ngụy, Thục, Ngô và một thời đại phân tranh." },
-    { slug: "sui-tang", years: "581 – 907", title: "Tùy – Đường", blurb: "Tái thống nhất, đô thị phồn thịnh và giao lưu trên Con đường Tơ lụa." },
-    { slug: "song-yuan", years: "960 – 1368", title: "Tống – Nguyên", blurb: "Những phát minh, thương mại và biến động của các vương triều." },
-    { slug: "ming-qing", years: "1368 – 1912", title: "Minh – Thanh", blurb: "Cung điện, hải trình và những chương cuối của thời đế chế." },
-  ],
+  periods: chinaPeriods,
 };
 
 export const countryPresentation: Record<string, { english: string; numeral: string; image: string; subtitle: string; description: string }> = {

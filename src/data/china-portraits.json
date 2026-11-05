@@ -1,0 +1,415 @@
+{
+  "Qin Shi Huang": {
+    "src": "/images/china/tan-thuy-hoang.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:QinShiHuang19century.jpg",
+    "article": "https://en.wikipedia.org/wiki/Qin_Shi_Huang",
+    "author": "Unknown (18??–18??)",
+    "license": "Public domain"
+  },
+  "Liu Bei": {
+    "src": "/images/china/luu-bi.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Liu_Bei_Tang.jpg",
+    "article": "https://en.wikipedia.org/wiki/Liu_Bei",
+    "author": "Yan Liben (閻立本)",
+    "license": "Public domain"
+  },
+  "Emperor Taizong of Tang": {
+    "src": "/images/china/duong-thai-tong.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:TangTaizong.jpg",
+    "article": "https://en.wikipedia.org/wiki/Emperor_Taizong_of_Tang",
+    "author": "Unknown artistUnknown artist",
+    "license": "Public domain"
+  },
+  "Kublai Khan": {
+    "src": "/images/china/hot-tat-liet.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumKhubilaiPortrait.jpg",
+    "article": "https://en.wikipedia.org/wiki/Kublai_Khan",
+    "author": "Araniko",
+    "license": "Public domain"
+  },
+  "Hongwu Emperor": {
+    "src": "/images/china/minh-thai-to.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Portrait_assis_de_l%27empereur_Ming_Taizu.jpg",
+    "article": "https://en.wikipedia.org/wiki/Hongwu_Emperor",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain"
+  },
+  "Yu the Great": {
+    "src": "/images/china/ha-vu.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E7%A6%B9%E6%B2%BB%E6%B0%B4%E5%9C%96.jpg",
+    "article": "https://en.wikipedia.org/wiki/Yu_the_Great",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain"
+  },
+  "Tang of Shang": {
+    "src": "/images/china/thanh-thang.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:King_Tang_of_Shang.jpg",
+    "article": "https://en.wikipedia.org/wiki/Tang_of_Shang",
+    "author": "Ma Lin",
+    "license": "Public domain"
+  },
+  "King Zhou of Shang": {
+    "src": "/images/china/tru-vuong.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:%E7%B5%B5%E6%9C%AC%E4%B8%89%E5%9B%BD%E5%A6%96%E5%A9%A6%E4%BC%9D_%E6%AE%B7%E7%B4%82%E7%8E%8B.jpg",
+    "article": "https://en.wikipedia.org/wiki/King_Zhou_of_Shang",
+    "author": "高井 伴寛、蹄斎 北馬 (Hiroshi Takai, Hossai Hokuma)",
+    "license": "Public domain"
+  },
+  "King Wen of Zhou": {
+    "src": "/images/china/co-xuong.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:King_Wen_of_Zhou_(cropped).jpg",
+    "article": "https://en.wikipedia.org/wiki/King_Wen_of_Zhou",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain"
+  },
+  "King Wu of Zhou": {
+    "src": "/images/china/co-phat.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:King_Wu_of_Zhou.jpg",
+    "article": "https://en.wikipedia.org/wiki/King_Wu_of_Zhou",
+    "author": "Ma Lin",
+    "license": "Public domain"
+  },
+  "Jiang Ziya": {
+    "src": "/images/china/khuong-tu-nha.png",
+    "file": "https://commons.wikimedia.org/wiki/File:Jiang_Ziya.png",
+    "article": "https://en.wikipedia.org/wiki/Jiang_Ziya",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain"
+  },
+  "Confucius": {
+    "src": "/images/china/khong-tu.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Confucius,_fresco_from_a_Western_Han_tomb_of_Dongping_County,_Shandong_province,_China_(cropped).jpg",
+    "article": "https://en.wikipedia.org/wiki/Confucius",
+    "author": "Anonymous Chinese painter of the Western Han period",
+    "license": "Public domain"
+  },
+  "Sun Tzu": {
+    "src": "/images/china/ton-vu.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:%E5%90%B4%E5%8F%B8%E9%A9%AC%E5%AD%99%E6%AD%A6.jpg",
+    "article": "https://en.wikipedia.org/wiki/Sun_Tzu",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain"
+  },
+  "Shang Yang": {
+    "src": "/images/china/thuong-uong.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Statue_of_Shang_Yang.jpg",
+    "article": "https://en.wikipedia.org/wiki/Shang_Yang",
+    "author": "Taken by Fanghong",
+    "license": "CC BY 2.5"
+  },
+  "Emperor Gaozu of Han": {
+    "src": "/images/china/luu-bang.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Liu-bang.jpg",
+    "article": "https://en.wikipedia.org/wiki/Emperor_Gaozu_of_Han",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain"
+  },
+  "Xiang Yu": {
+    "src": "/images/china/hang-vu.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Portraits_of_Famous_Men_-_Xiang_Wang.jpg",
+    "article": "https://en.wikipedia.org/wiki/Xiang_Yu",
+    "author": "Unknown Chinese artist",
+    "license": "Public domain"
+  },
+  "Han Xin": {
+    "src": "/images/china/han-tin.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:%E6%B1%89%E6%B7%AE%E9%98%B4%E4%BE%AF%E9%9F%A9%E4%BF%A1.jpg",
+    "article": "https://en.wikipedia.org/wiki/Han_Xin",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain"
+  },
+  "Xiao He": {
+    "src": "/images/china/tieu-ha.png",
+    "file": "https://commons.wikimedia.org/wiki/File:Xiao_He.png",
+    "article": "https://en.wikipedia.org/wiki/Xiao_He",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain"
+  },
+  "Zhang Liang (Western Han)": {
+    "src": "/images/china/truong-luong.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:%E5%BC%A0%E8%89%AF%E5%83%8F.jpg",
+    "article": "https://en.wikipedia.org/wiki/Zhang_Liang_(Western_Han)",
+    "author": "西汉画家",
+    "license": "CC BY-SA 4.0"
+  },
+  "Wang Mang": {
+    "src": "/images/china/vuong-mang.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:WUL-he21_01467_%E6%96%B0%E9%90%AB%E7%B9%AA%E5%83%8F%E6%9D%B1%E8%A5%BF%E6%BC%A2%E5%85%A8%E5%82%B3_01_(%E7%8E%8B%E8%8E%BD).jpg",
+    "article": "https://en.wikipedia.org/wiki/Wang_Mang",
+    "author": "鍾 惺, 1574-1624",
+    "license": "Public domain"
+  },
+  "Emperor Guangwu of Han": {
+    "src": "/images/china/han-quang-vu.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Han_Guangwu_Di.jpg",
+    "article": "https://en.wikipedia.org/wiki/Emperor_Guangwu_of_Han",
+    "author": "Yan Li-pen",
+    "license": "Public domain"
+  },
+  "Cao Cao": {
+    "src": "/images/china/tao-thao.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Cao_Cao_scth.jpg",
+    "article": "https://en.wikipedia.org/wiki/Cao_Cao",
+    "author": "Wang Qi",
+    "license": "Public domain"
+  },
+  "Cao Pi": {
+    "src": "/images/china/tao-phi.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Cao_Pi_Tang.jpg",
+    "article": "https://en.wikipedia.org/wiki/Cao_Pi",
+    "author": "Yan Li-pen",
+    "license": "Public domain"
+  },
+  "Sun Quan": {
+    "src": "/images/china/ton-quyen.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Sun_Quan_Tang.jpg",
+    "article": "https://en.wikipedia.org/wiki/Sun_Quan",
+    "author": "Yan Liben",
+    "license": "Public domain"
+  },
+  "Sima Yi": {
+    "src": "/images/china/tu-ma-y.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:%E9%AD%8F%C2%B7%E5%A4%AA%E5%82%85_%E5%8F%B8%E9%A6%AC%E6%87%BF.jpg",
+    "article": "https://en.wikipedia.org/wiki/Sima_Yi",
+    "author": "Ming Zhu Tianran",
+    "license": "Public domain"
+  },
+  "Emperor Wu of Jin": {
+    "src": "/images/china/tu-ma-viem.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Jin_Wu_Di.jpg",
+    "article": "https://en.wikipedia.org/wiki/Emperor_Wu_of_Jin",
+    "author": "Yan Li-pen",
+    "license": "Public domain"
+  },
+  "Emperor Yuan of Jin": {
+    "src": "/images/china/tu-ma-due.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Sima_Rui_(Jin_Yuandi).jpg",
+    "article": "https://en.wikipedia.org/wiki/Emperor_Yuan_of_Jin",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain"
+  },
+  "Li Xiong": {
+    "src": "/images/china/ly-hung.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Harvard_drs_49802792_%E7%B9%A1%E5%83%8F%E4%B8%89%E5%9C%8B%E6%BC%94%E7%BE%A9%E7%BA%8C%E7%B7%A8_v.1_(%E8%9C%80%E4%B8%BB%E6%9D%8E%E9%9B%84).jpg",
+    "article": "https://en.wikipedia.org/wiki/Li_Xiong",
+    "author": "see below",
+    "license": "Public domain"
+  },
+  "Shi Le": {
+    "src": "/images/china/thach-lac.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Shi_Le_(Emperor_Ming_of_Later_Zhao).jpg",
+    "article": "https://en.wikipedia.org/wiki/Shi_Le",
+    "author": "Qian Xuan (formerly attributed), Freer Gallery of Art (owner)",
+    "license": "CC0"
+  },
+  "Murong Chui": {
+    "src": "/images/china/mo-dung-thuy.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Harvard_drs_49802792_%E7%B9%A1%E5%83%8F%E4%B8%89%E5%9C%8B%E6%BC%94%E7%BE%A9%E7%BA%8C%E7%B7%A8_v.1_(%E6%85%95%E5%AE%B9%E5%9E%82).jpg",
+    "article": "https://en.wikipedia.org/wiki/Murong_Chui",
+    "author": "see below",
+    "license": "Public domain"
+  },
+  "Yao Chang": {
+    "src": "/images/china/dieu-truong.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Harvard_drs_49802792_%E7%B9%A1%E5%83%8F%E4%B8%89%E5%9C%8B%E6%BC%94%E7%BE%A9%E7%BA%8C%E7%B7%A8_v.1_(%E5%A7%9A%E8%90%87).jpg",
+    "article": "https://en.wikipedia.org/wiki/Yao_Chang",
+    "author": "see below",
+    "license": "Public domain"
+  },
+  "Lü Guang": {
+    "src": "/images/china/lu-quang.png",
+    "file": "https://commons.wikimedia.org/wiki/File:L%C3%BC_Guang_%E5%91%82%E5%85%89.png",
+    "article": "https://en.wikipedia.org/wiki/L%C3%BC_Guang",
+    "author": "Jin, Shengtan, 1608-1661, creator Chen shi Chihuo zhai, ping shi. Guang bai song zhai 金人瑞, 1608-1661 陳氏尺蠖齋, 評釋.",
+    "license": "Public domain"
+  },
+  "Murong De": {
+    "src": "/images/china/mo-dung-duc.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Harvard_drs_49802792_%E7%B9%A1%E5%83%8F%E4%B8%89%E5%9C%8B%E6%BC%94%E7%BE%A9%E7%BA%8C%E7%B7%A8_v.1_(%E6%85%95%E5%AE%B9%E5%BE%B7).jpg",
+    "article": "https://en.wikipedia.org/wiki/Murong_De",
+    "author": "see below",
+    "license": "Public domain"
+  },
+  "Li Gao": {
+    "src": "/images/china/ly-cao.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:%E6%9D%8E%E6%9A%A0.jpg",
+    "article": "https://en.wikipedia.org/wiki/Li_Gao",
+    "author": "1917年修《安徽黟县鹤山李氏宗谱》",
+    "license": "Public domain"
+  },
+  "Emperor Gao of Southern Qi": {
+    "src": "/images/china/tieu-dao-thanh.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Xiao_Daocheng_(Qi_Gaodi).jpg",
+    "article": "https://en.wikipedia.org/wiki/Emperor_Gao_of_Southern_Qi",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain"
+  },
+  "Emperor Wu of Liang": {
+    "src": "/images/china/tieu-dien.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Liang_Wudi.jpg",
+    "article": "https://en.wikipedia.org/wiki/Emperor_Wu_of_Liang",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain"
+  },
+  "Emperor Wenxuan of Northern Qi": {
+    "src": "/images/china/cao-duong.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:%E5%B8%9D%E9%89%B4%E5%9B%BE%E8%AF%B4_%E9%AB%98%E6%B8%85_(page_131_%E9%AB%98%E6%B4%8B).jpg",
+    "article": "https://en.wikipedia.org/wiki/Emperor_Wenxuan_of_Northern_Qi",
+    "author": "张居正",
+    "license": "Public domain"
+  },
+  "Emperor Wen of Sui": {
+    "src": "/images/china/tuy-van-de.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Sui_Wendi_Tang.jpg",
+    "article": "https://en.wikipedia.org/wiki/Emperor_Wen_of_Sui",
+    "author": "Yan Li-pen",
+    "license": "Public domain"
+  },
+  "Emperor Gaozu of Tang": {
+    "src": "/images/china/duong-cao-to.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:TangGaozu.jpg",
+    "article": "https://en.wikipedia.org/wiki/Emperor_Gaozu_of_Tang",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain"
+  },
+  "Wu Zetian": {
+    "src": "/images/china/vo-tac-thien.png",
+    "file": "https://commons.wikimedia.org/wiki/File:%E5%94%90%E5%90%8E%E8%A1%8C%E5%BE%9E%E5%9C%96_(%E5%B1%80%E9%83%A8)_-_%E6%AD%A6%E5%89%87%E5%A4%A9.png",
+    "article": "https://en.wikipedia.org/wiki/Wu_Zetian",
+    "author": "Likely to be Zhang Xuan (张萱)",
+    "license": "Public domain"
+  },
+  "Emperor Xuanzong of Tang": {
+    "src": "/images/china/duong-huyen-tong.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:%E6%9D%8E%E9%9A%86%E5%9F%BA%E5%83%8F.jpg",
+    "article": "https://en.wikipedia.org/wiki/Emperor_Xuanzong_of_Tang",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain"
+  },
+  "Zhu Wen": {
+    "src": "/images/china/chu-on.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Zhu_Wen_(Liang_Taizu).jpg",
+    "article": "https://en.wikipedia.org/wiki/Zhu_Wen",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain"
+  },
+  "Li Cunxu": {
+    "src": "/images/china/ly-ton-huc.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Zhuangzong_of_Later_Tang.jpg",
+    "article": "https://en.wikipedia.org/wiki/Li_Cunxu",
+    "author": "Unknown artistUnknown artist",
+    "license": "Public domain"
+  },
+  "Shi Jingtang": {
+    "src": "/images/china/thach-kinh-duong.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Shi_Jingtang_(Jin_Gaozu).jpg",
+    "article": "https://en.wikipedia.org/wiki/Shi_Jingtang",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain"
+  },
+  "Liu Zhiyuan": {
+    "src": "/images/china/luu-tri-vien.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:%E5%BE%8C%E6%BC%A2%E9%AB%98%E7%A5%96%E5%83%8F.jpg",
+    "article": "https://en.wikipedia.org/wiki/Liu_Zhiyuan",
+    "author": "王圻 王思義輯",
+    "license": "Public domain"
+  },
+  "Guo Wei": {
+    "src": "/images/china/quach-uy.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Guo_Wei_(Zhou_Taizu).jpg",
+    "article": "https://en.wikipedia.org/wiki/Guo_Wei",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain"
+  },
+  "Qian Liu": {
+    "src": "/images/china/tien-luu.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Qian_Liu_(King_Wusu_of_Wuyue).jpg",
+    "article": "https://en.wikipedia.org/wiki/Qian_Liu",
+    "author": "Ming dynasty Painter",
+    "license": "CC BY-SA 4.0"
+  },
+  "Wang Shenzhi": {
+    "src": "/images/china/vuong-tham-tri.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Uong_Sing-di.JPG",
+    "article": "https://en.wikipedia.org/wiki/Wang_Shenzhi",
+    "author": "LuHungnguong",
+    "license": "CC BY-SA 3.0"
+  },
+  "Wang Jian (Former Shu)": {
+    "src": "/images/china/vuong-kien.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E5%BB%BA%E5%83%8F03430.jpg",
+    "article": "https://en.wikipedia.org/wiki/Wang_Jian_(Former_Shu)",
+    "author": "Augusthaiho",
+    "license": "CC BY-SA 4.0"
+  },
+  "Emperor Taizu of Song": {
+    "src": "/images/china/trieu-khuong-dan.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Song_Taizu.jpg",
+    "article": "https://en.wikipedia.org/wiki/Emperor_Taizu_of_Song",
+    "author": "AnonymousUnknown author",
+    "license": "Public domain"
+  },
+  "Emperor Taizu of Jin": {
+    "src": "/images/china/hoan-nhan-a-cot-da.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Wanggiyan_Aguda.jpg",
+    "article": "https://en.wikipedia.org/wiki/Emperor_Taizu_of_Jin",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain"
+  },
+  "Emperor Gaozong of Song": {
+    "src": "/images/china/trieu-cau.png",
+    "file": "https://commons.wikimedia.org/wiki/File:Song_Gaozong.png",
+    "article": "https://en.wikipedia.org/wiki/Emperor_Gaozong_of_Song",
+    "author": "anonymous",
+    "license": "Public domain"
+  },
+  "Toghon Temür": {
+    "src": "/images/china/nguyen-thuan-de.png",
+    "file": "https://commons.wikimedia.org/wiki/File:%E5%85%83%E9%A0%86%E5%B8%9D%E5%A6%A5%E6%AD%A1%E5%B8%96%E6%9C%A8%E5%85%92_Emperor_Shun_of_Yuan_Toghon_Tem%C3%BCr.png",
+    "article": "https://en.wikipedia.org/wiki/Toghon_Tem%C3%BCr",
+    "author": "松照庵",
+    "license": "Public domain"
+  },
+  "Nurhaci": {
+    "src": "/images/china/no-nhi-cap.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:%E6%B8%85_%E4%BD%9A%E5%90%8D_%E3%80%8A%E6%B8%85%E5%A4%AA%E7%A5%96%E5%A4%A9%E5%91%BD%E7%9A%87%E5%B8%9D%E6%9C%9D%E6%9C%8D%E5%83%8F%E3%80%8B_1361x1869.jpg",
+    "article": "https://en.wikipedia.org/wiki/Nurhaci",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain"
+  },
+  "Hong Taiji": {
+    "src": "/images/china/hoang-thai-cuc.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:%E6%B8%85%E4%BA%BA%E7%94%BB%E7%9A%87%E5%A4%AA%E6%9E%81%E6%9C%9D%E6%9C%8D%E5%83%8F%E8%BD%B4_2418_x_3564.jpg",
+    "article": "https://en.wikipedia.org/wiki/Hong_Taiji",
+    "author": "Anonymous Qing Dynasty Court Painter",
+    "license": "Public domain"
+  },
+  "Puyi": {
+    "src": "/images/china/pho-nghi.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Puyi,_Manchukuo_period_(cropped).jpg",
+    "article": "https://en.wikipedia.org/wiki/Puyi",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain"
+  },
+  "Sun Yat-sen": {
+    "src": "/images/china/ton-trung-son.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:%E5%AD%99%E4%B8%AD%E5%B1%B1%E8%82%96%E5%83%8F.jpg",
+    "article": "https://en.wikipedia.org/wiki/Sun_Yat-sen",
+    "author": "上海波尔照相馆",
+    "license": "Public domain"
+  },
+  "Liu Yuan (Han-Zhao)": {
+    "src": "/images/china/luu-uyen.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Harvard_drs_49802792_%E7%B9%A1%E5%83%8F%E4%B8%89%E5%9C%8B%E6%BC%94%E7%BE%A9%E7%BA%8C%E7%B7%A8_v.1_(%E5%8A%89%E6%B7%B5).jpg",
+    "article": "https://en.wikipedia.org/wiki/Liu_Yuan_(Han-Zhao)",
+    "author": "see below",
+    "license": "Public domain"
+  },
+  "Emperor Wu of Song": {
+    "src": "/images/china/luu-du.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Liu_Yu_(Song_Wudi).jpg",
+    "article": "https://en.wikipedia.org/wiki/Emperor_Wu_of_Song",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain"
+  }
+}

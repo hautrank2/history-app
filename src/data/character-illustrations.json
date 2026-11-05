@@ -1,0 +1,262 @@
+{
+  "Shi Xie": {
+    "src": "/images/characters/generated/si-nhiep.jpg",
+    "position": "50% 25%"
+  },
+  "Gao Pian": {
+    "src": "/images/characters/generated/cao-bien.jpg",
+    "position": "50% 25%"
+  },
+  "Khúc Thừa Dụ": {
+    "src": "/images/characters/generated/khuc-thua-du.jpg",
+    "position": "50% 25%"
+  },
+  "Dương Đình Nghệ": {
+    "src": "/images/characters/generated/duong-dinh-nghe.jpg",
+    "position": "50% 25%"
+  },
+  "Dương Tam Kha": {
+    "src": "/images/characters/generated/duong-tam-kha.jpg",
+    "position": "50% 25%"
+  },
+  "Trần Thái Tông": {
+    "src": "/images/characters/generated/tran-thai-tong.jpg",
+    "position": "50% 25%"
+  },
+  "Trần Thủ Độ": {
+    "src": "/images/characters/generated/tran-thu-do.jpg",
+    "position": "50% 25%"
+  },
+  "Omar (Yuan dynasty)": {
+    "src": "/images/characters/generated/o-ma-nhi.jpg",
+    "position": "50% 25%"
+  },
+  "Chế Bồng Nga": {
+    "src": "/images/characters/generated/che-bong-nga.jpg",
+    "position": "50% 25%"
+  },
+  "Hồ Quý Ly": {
+    "src": "/images/characters/generated/ho-quy-ly.jpg",
+    "position": "50% 25%"
+  },
+  "Hồ Nguyên Trừng": {
+    "src": "/images/characters/generated/ho-nguyen-trung.jpg",
+    "position": "50% 25%"
+  },
+  "Trùng Quang Đế": {
+    "src": "/images/characters/generated/trung-quang-de.jpg",
+    "position": "50% 25%"
+  },
+  "Đặng Dung": {
+    "src": "/images/characters/generated/dang-dung.jpg",
+    "position": "50% 25%"
+  },
+  "Wang Tong (Ming dynasty)": {
+    "src": "/images/characters/generated/vuong-thong.jpg",
+    "position": "50% 25%"
+  },
+  "Nguyễn Thị Anh": {
+    "src": "/images/characters/generated/nguyen-thi-anh.jpg",
+    "position": "50% 25%"
+  },
+  "Ngô Sĩ Liên": {
+    "src": "/images/characters/generated/ngo-si-lien.jpg",
+    "position": "50% 25%"
+  },
+  "Nguyễn Kim": {
+    "src": "/images/characters/generated/nguyen-kim.jpg",
+    "position": "50% 25%"
+  },
+  "Nguyễn Phúc Khoát": {
+    "src": "/images/characters/generated/nguyen-phuc-khoat.jpg",
+    "position": "50% 25%"
+  },
+  "Nguyễn Thiếp": {
+    "src": "/images/characters/generated/nguyen-thiep.jpg",
+    "position": "50% 25%"
+  },
+  "Kiều Công Hãn": {
+    "src": "/images/characters/generated/kieu-cong-han.jpg",
+    "position": "50% 25%"
+  },
+  "Kiều Thuận": {
+    "src": "/images/characters/generated/kieu-thuan.jpg",
+    "position": "50% 25%"
+  },
+  "Nguyễn Khoan": {
+    "src": "/images/characters/generated/nguyen-khoan.jpg",
+    "position": "50% 25%"
+  },
+  "Nguyễn Thủ Tiệp": {
+    "src": "/images/characters/generated/nguyen-thu-tiep.jpg",
+    "position": "50% 25%"
+  },
+  "Nguyễn Siêu": {
+    "src": "/images/characters/generated/nguyen-sieu.jpg",
+    "position": "50% 25%"
+  },
+  "Lý Khuê": {
+    "src": "/images/characters/generated/ly-khue.jpg",
+    "position": "50% 25%"
+  },
+  "Lữ Đường": {
+    "src": "/images/characters/generated/lu-duong.jpg",
+    "position": "50% 25%"
+  },
+  "Phạm Bạch Hổ": {
+    "src": "/images/characters/generated/pham-bach-ho.jpg",
+    "position": "50% 25%"
+  },
+  "Ngô Nhật Khánh": {
+    "src": "/images/characters/generated/ngo-nhat-khanh.jpg",
+    "position": "50% 25%"
+  },
+  "Trưng Nhị": {
+    "src": "/images/characters/generated/trung-nhi.jpg",
+    "position": "50% 25%"
+  },
+  "Lương Văn Nắm": {
+    "src": "/images/characters/generated/luong-van-nam.jpg",
+    "position": "50% 25%"
+  },
+  "Phạm Bành": {
+    "src": "/images/characters/generated/pham-banh.jpg",
+    "position": "50% 25%"
+  },
+  "Trần Khánh Dư": {
+    "src": "/images/characters/generated/tran-khanh-du.jpg",
+    "position": "50% 25%"
+  },
+  "Trương Văn Hổ": {
+    "src": "/images/characters/generated/truong-van-ho.jpg",
+    "position": "50% 25%"
+  },
+  "Nguyễn Khoái": {
+    "src": "/images/characters/generated/nguyen-khoai.jpg",
+    "position": "50% 25%"
+  },
+  "Francis Henry Loseby": {
+    "src": "/images/characters/generated/francis-loseby.jpg",
+    "position": "50% 25%"
+  },
+  "Zhang Gui": {
+    "src": "/images/characters/generated/truong-quy.jpg",
+    "position": "50% 30%"
+  },
+  "Murong Huang": {
+    "src": "/images/characters/generated/mo-dung-hoang.jpg",
+    "position": "50% 30%"
+  },
+  "Fu Jian (317–355)": {
+    "src": "/images/characters/generated/phu-kien-kien-lap.jpg",
+    "position": "50% 30%"
+  },
+  "Qifu Guoren": {
+    "src": "/images/characters/generated/khat-phuc-quoc-nhan.jpg",
+    "position": "50% 30%"
+  },
+  "Tufa Wugu": {
+    "src": "/images/characters/generated/thac-bat-o-co.jpg",
+    "position": "50% 30%"
+  },
+  "Duan Ye": {
+    "src": "/images/characters/generated/doan-nghiep.jpg",
+    "position": "50% 30%"
+  },
+  "Helian Bobo": {
+    "src": "/images/characters/generated/hach-lien-bot-bot.jpg",
+    "position": "50% 30%"
+  },
+  "Feng Ba": {
+    "src": "/images/characters/generated/phung-bat.jpg",
+    "position": "50% 30%"
+  },
+  "Murong Hong": {
+    "src": "/images/characters/generated/mo-dung-hong.jpg",
+    "position": "50% 30%"
+  },
+  "Ran Min": {
+    "src": "/images/characters/generated/nhiem-man.jpg",
+    "position": "50% 30%"
+  },
+  "Tuoba Yilu": {
+    "src": "/images/characters/generated/thac-bat-y-lo.jpg",
+    "position": "50% 30%"
+  },
+  "Zhai Liao": {
+    "src": "/images/characters/generated/dich-lieu.jpg",
+    "position": "50% 30%"
+  },
+  "Huan Xuan": {
+    "src": "/images/characters/generated/hoan-huyen.jpg",
+    "position": "50% 30%"
+  },
+  "Qiao Zong": {
+    "src": "/images/characters/generated/tieu-tung.jpg",
+    "position": "50% 30%"
+  },
+  "Emperor Daowu of Northern Wei": {
+    "src": "/images/characters/generated/thac-bat-khue.jpg",
+    "position": "50% 30%"
+  },
+  "Emperor Xiaojing of Eastern Wei": {
+    "src": "/images/characters/generated/nguyen-thien.jpg",
+    "position": "50% 30%"
+  },
+  "Emperor Wen of Western Wei": {
+    "src": "/images/characters/generated/nguyen-bao-cu.jpg",
+    "position": "50% 30%"
+  },
+  "Emperor Xiaomin of Northern Zhou": {
+    "src": "/images/characters/generated/vu-van-giac.jpg",
+    "position": "50% 30%"
+  },
+  "Emperor Xuan of Western Liang": {
+    "src": "/images/characters/generated/tieu-sat.jpg",
+    "position": "50% 30%"
+  },
+  "Yang Xingmi": {
+    "src": "/images/characters/generated/duong-hanh-mat.jpg",
+    "position": "50% 30%"
+  },
+  "Liu Yan (emperor)": {
+    "src": "/images/characters/generated/luu-nghiem.jpg",
+    "position": "50% 30%"
+  },
+  "Ma Yin": {
+    "src": "/images/characters/generated/ma-an.jpg",
+    "position": "50% 30%"
+  },
+  "Liu Chong": {
+    "src": "/images/characters/generated/luu-sung.jpg",
+    "position": "50% 30%"
+  },
+  "Gao Jixing": {
+    "src": "/images/characters/generated/cao-quy-hung.jpg",
+    "position": "50% 30%"
+  },
+  "Meng Zhixiang": {
+    "src": "/images/characters/generated/manh-tri-tuong.jpg",
+    "position": "50% 30%"
+  },
+  "Li Bian": {
+    "src": "/images/characters/generated/ly-bien.jpg",
+    "position": "50% 30%"
+  },
+  "Abaoji": {
+    "src": "/images/characters/generated/da-luat-a-bao-co.jpg",
+    "position": "50% 30%"
+  },
+  "Emperor Jingzong of Western Xia": {
+    "src": "/images/characters/generated/ly-nguyen-hao.jpg",
+    "position": "50% 30%"
+  },
+  "Yelü Dashi": {
+    "src": "/images/characters/generated/da-luat-dai-thach.jpg",
+    "position": "50% 30%"
+  },
+  "Hongguang Emperor": {
+    "src": "/images/characters/generated/hoang-quang-de.jpg",
+    "position": "50% 30%"
+  }
+}

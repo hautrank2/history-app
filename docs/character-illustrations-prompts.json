@@ -1,0 +1,461 @@
+{
+  "mode": "Built-in ImageGen",
+  "note": "Minh họa AI, tái hiện nghệ thuật; không phải chân dung xác thực.",
+  "portraits": [
+    {
+      "id": "si-nhiep",
+      "name": "Sĩ Nhiếp",
+      "asset": "/images/characters/generated/si-nhiep.jpg",
+      "prompt": "Use case: historical-scene. Asset: one portrait avatar for the Vietnamese history website History Atlas. Paint an original artistic reconstruction of Shi Xie (Sĩ Nhiếp), a scholarly Chinese administrator of Jiaozhi in the late Eastern Han around 200 CE. An older East Asian man with a thoughtful face, fine grey beard, dark period scholar headwear and modest layered Han-era official robes, not an emperor. Bust portrait, face clearly visible and centered in the upper half, head fully inside frame, shoulders and chest visible, vertical 2:3 composition, dark navy and muted gold painterly background, warm restrained museum illustration, detailed realistic painterly rendering. One person only, no text, letters, labels, watermark, logos, grid, collage, or modern items. This is clearly an artistic reconstruction rather than a claim of an authenticated likeness. Output a single finished portrait.",
+      "original": "exec-c8dd84c8-a52e-4bd2-b24e-cb254fe0731e.png"
+    },
+    {
+      "id": "cao-bien",
+      "name": "Cao Biền",
+      "asset": "/images/characters/generated/cao-bien.jpg",
+      "prompt": "Use case: historical-scene. Asset: individual historical portrait avatar for History Atlas. Create an original artistic reconstruction of Cao Biền (Gao Pian): a mature Chinese Tang-dynasty general of the ninth century, angular face, trimmed dark beard, modest lamellar armor and a plain dark military cap. Single person, face and upper chest clearly visible, complete head inside frame, centered bust portrait, vertical 2:3 composition, face in the upper half so it survives card cropping. Detailed realistic painterly museum illustration, warm soft light, muted dark navy and gold background, restrained historically inspired clothing. Distinct individual face, natural human anatomy, dignified expression. No text, lettering, frame, watermark, logos, grid, collage, fantasy armor, modern objects, or extra people. An artistic reconstruction, not an authenticated likeness.",
+      "original": "exec-349ce6bd-00e3-41ec-b700-4be8ccec7a28.png"
+    },
+    {
+      "id": "khuc-thua-du",
+      "name": "Khúc Thừa Dụ",
+      "asset": "/images/characters/generated/khuc-thua-du.jpg",
+      "prompt": "Use case: historical-scene. Asset: individual historical portrait avatar for History Atlas. Create an original artistic reconstruction of Khúc Thừa Dụ: an elderly Vietnamese local lord around 905 CE, kind lined face, white beard, simple early-medieval layered robes and plain cloth headwrap. Single person, face and upper chest clearly visible, complete head inside frame, centered bust portrait, vertical 2:3 composition, face in the upper half so it survives card cropping. Detailed realistic painterly museum illustration, warm soft light, muted dark navy and gold background, restrained historically inspired clothing. Distinct individual face, natural human anatomy, dignified expression. No text, lettering, frame, watermark, logos, grid, collage, fantasy armor, modern objects, or extra people. An artistic reconstruction, not an authenticated likeness.",
+      "original": "exec-09b06a13-595c-48d8-ac3f-9c6fc2a8b740.png"
+    },
+    {
+      "id": "duong-dinh-nghe",
+      "name": "Dương Đình Nghệ",
+      "asset": "/images/characters/generated/duong-dinh-nghe.jpg",
+      "prompt": "Use case: historical-scene. Asset: individual historical portrait avatar for History Atlas. Create an original artistic reconstruction of Dương Đình Nghệ: a powerful middle-aged Vietnamese military leader around 931 CE, broad face, strong eyebrows, short beard, practical early-medieval armor and dark cloth headwrap. Single person, face and upper chest clearly visible, complete head inside frame, centered bust portrait, vertical 2:3 composition, face in the upper half so it survives card cropping. Detailed realistic painterly museum illustration, warm soft light, muted dark navy and gold background, restrained historically inspired clothing. Distinct individual face, natural human anatomy, dignified expression. No text, lettering, frame, watermark, logos, grid, collage, fantasy armor, modern objects, or extra people. An artistic reconstruction, not an authenticated likeness.",
+      "original": "exec-45ab2a93-1e50-4143-afea-d16d7a99f4df.png"
+    },
+    {
+      "id": "duong-tam-kha",
+      "name": "Dương Tam Kha",
+      "asset": "/images/characters/generated/duong-tam-kha.jpg",
+      "prompt": "Use case: historical-scene. Asset: individual historical portrait avatar for History Atlas. Create an original artistic reconstruction of Dương Tam Kha: a mature Vietnamese ruler around 945 CE, solemn long face, short greying beard, restrained tenth-century court robes and dark headwear. Single person, face and upper chest clearly visible, complete head inside frame, centered bust portrait, vertical 2:3 composition, face in the upper half so it survives card cropping. Detailed realistic painterly museum illustration, warm soft light, muted dark navy and gold background, restrained historically inspired clothing. Distinct individual face, natural human anatomy, dignified expression. No text, lettering, frame, watermark, logos, grid, collage, fantasy armor, modern objects, or extra people. An artistic reconstruction, not an authenticated likeness.",
+      "original": "exec-355cff1a-b50a-42f1-82cd-968b0ae7a9d6.png"
+    },
+    {
+      "id": "tran-thai-tong",
+      "name": "Trần Thái Tông",
+      "asset": "/images/characters/generated/tran-thai-tong.jpg",
+      "prompt": "Use case: historical-scene. Asset: individual historical portrait avatar for History Atlas. Create an original artistic reconstruction of Trần Thái Tông (Trần Cảnh): a Vietnamese emperor in his thirties in the thirteenth century, thoughtful youthful face, restrained Vietnamese Tran-dynasty court robes and period royal headwear. Single person, face and upper chest clearly visible, complete head inside frame, centered bust portrait, vertical 2:3 composition, face in the upper half so it survives card cropping. Detailed realistic painterly museum illustration, warm soft light, muted dark navy and gold background, restrained historically inspired clothing. Distinct individual face, natural human anatomy, dignified expression. No text, lettering, frame, watermark, logos, grid, collage, fantasy armor, modern objects, or extra people. An artistic reconstruction, not an authenticated likeness.",
+      "original": "exec-b3cd936e-6913-48f7-aa49-5ee9d8fd6713.png"
+    },
+    {
+      "id": "tran-thu-do",
+      "name": "Trần Thủ Độ",
+      "asset": "/images/characters/generated/tran-thu-do.jpg",
+      "prompt": "Use case: historical-scene. Asset: individual historical portrait avatar for History Atlas. Create an original artistic reconstruction of Trần Thủ Độ: a stern mature Vietnamese grand preceptor in the thirteenth century, square face, thick eyebrows, greying moustache, dark Tran-dynasty official robes and black ceremonial headwear. Single person, face and upper chest clearly visible, complete head inside frame, centered bust portrait, vertical 2:3 composition, face in the upper half so it survives card cropping. Detailed realistic painterly museum illustration, warm soft light, muted dark navy and gold background, restrained historically inspired clothing. Distinct individual face, natural human anatomy, dignified expression. No text, lettering, frame, watermark, logos, grid, collage, fantasy armor, modern objects, or extra people. An artistic reconstruction, not an authenticated likeness.",
+      "original": "exec-b373fde6-bbc5-416e-b4c6-cb4b27e0b12f.png"
+    },
+    {
+      "id": "o-ma-nhi",
+      "name": "Ô Mã Nhi",
+      "asset": "/images/characters/generated/o-ma-nhi.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Ô Mã Nhi (Omar): a mature Yuan-era military commander of the late thirteenth century, Central Asian features, short dark beard, practical Yuan naval commander armor and plain dark helmet. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-bea0973e-a9a6-40f3-a4ad-22e82936ec90.png"
+    },
+    {
+      "id": "che-bong-nga",
+      "name": "Chế Bồng Nga",
+      "asset": "/images/characters/generated/che-bong-nga.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Chế Bồng Nga: a mature Cham king in fourteenth-century Champa, Southeast Asian face, wavy dark hair, restrained gold Cham royal diadem and richly woven period court textiles; no Chinese imperial robe. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-336a4f1f-e079-4007-a356-ee4efe54bc23.png"
+    },
+    {
+      "id": "ho-quy-ly",
+      "name": "Hồ Quý Ly",
+      "asset": "/images/characters/generated/ho-quy-ly.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Hồ Quý Ly: an older Vietnamese ruler and reformer around1400, lean lined face, greying long beard, dark green late-Tran/Ho-period court robe and restrained official headwear. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-a80aa95d-a260-4f83-ba1d-cc5b125971d9.png"
+    },
+    {
+      "id": "ho-nguyen-trung",
+      "name": "Hồ Nguyên Trừng",
+      "asset": "/images/characters/generated/ho-nguyen-trung.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Hồ Nguyên Trừng: a middle-aged Vietnamese engineer and military official of the early fifteenth century, thoughtful broad face, short beard, practical plain layered robes and dark headwrap. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-70d90367-d7dd-4a95-b648-e45e44512332.png"
+    },
+    {
+      "id": "trung-quang-de",
+      "name": "Trùng Quang Đế",
+      "asset": "/images/characters/generated/trung-quang-de.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Trùng Quang Đế (Trần Quý Khoáng): a Vietnamese resistance emperor in his thirties around1410, determined young face, restrained late-Tran court robe and dark ceremonial cap. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-d909d419-00e1-4f37-b237-031d2fbd6c28.png"
+    },
+    {
+      "id": "dang-dung",
+      "name": "Đặng Dung",
+      "asset": "/images/characters/generated/dang-dung.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Đặng Dung: a mature Vietnamese general and poet around1413, weathered angular face, greying beard, restrained practical armor under a dark blue outer robe. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-097bbacb-998a-44aa-93d5-a62291adab7a.png"
+    },
+    {
+      "id": "vuong-thong",
+      "name": "Vương Thông",
+      "asset": "/images/characters/generated/vuong-thong.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Vương Thông (Wang Tong): a mature Chinese Ming military commander around1427, broad face and black moustache, realistic simple Ming lamellar armor and dark military headwear. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-4e2daa34-1706-454f-ade2-0b5c1c5abcca.png"
+    },
+    {
+      "id": "nguyen-thi-anh",
+      "name": "Nguyễn Thị Anh",
+      "asset": "/images/characters/generated/nguyen-thi-anh.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Nguyễn Thị Anh: a dignified Vietnamese queen dowager in her forties in the fifteenth-century early Le court, oval face, carefully arranged dark hair, restrained embroidered court robe, understated gold ornaments. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-60433b7a-3444-45ef-b258-b280e5401612.png"
+    },
+    {
+      "id": "ngo-si-lien",
+      "name": "Ngô Sĩ Liên",
+      "asset": "/images/characters/generated/ngo-si-lien.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Ngô Sĩ Liên: an elderly Vietnamese fifteenth-century historian, gentle lined face, narrow grey beard, dark scholarly official robes and simple period scholar headwear. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-ac9ea22d-9ab3-4610-a5d3-5efadc9c18c1.png"
+    },
+    {
+      "id": "nguyen-kim",
+      "name": "Nguyễn Kim",
+      "asset": "/images/characters/generated/nguyen-kim.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Nguyễn Kim: a mature Vietnamese military nobleman of the sixteenth century, high cheekbones, greying moustache, restrained period armor and dark official headwear. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-39461871-3558-4bc2-b242-8478bbcaa489.png"
+    },
+    {
+      "id": "nguyen-phuc-khoat",
+      "name": "Nguyễn Phúc Khoát",
+      "asset": "/images/characters/generated/nguyen-phuc-khoat.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Nguyễn Phúc Khoát: a mature eighteenth-century Vietnamese Nguyen lord of DangTrong, full face, neat moustache, dignified silk court robe and Vietnamese ceremonial headwear. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-71834a30-133e-438d-9f01-7ccd19e9ae14.png"
+    },
+    {
+      "id": "nguyen-thiep",
+      "name": "Nguyễn Thiếp",
+      "asset": "/images/characters/generated/nguyen-thiep.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Nguyễn Thiếp (La Sơn phu tử): an elderly eighteenth-century Vietnamese scholar and teacher, serene lined face, long white beard, plain earth-colored scholar robes and a simple cloth headwrap. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-b3fa7731-363c-48d6-9648-f1d5069c5919.png"
+    },
+    {
+      "id": "kieu-cong-han",
+      "name": "Kiều Công Hãn",
+      "asset": "/images/characters/generated/kieu-cong-han.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Kiều Công Hãn: a Vietnamese tenth-century regional warlord at PhongChau, middle-aged long face, arched eyebrows, thin beard, dark reddish-brown layered robes over restrained period armor. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-8f4f7725-69ba-456a-8f92-8b3817698d6c.png"
+    },
+    {
+      "id": "kieu-thuan",
+      "name": "Kiều Thuận",
+      "asset": "/images/characters/generated/kieu-thuan.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Kiều Thuận: an older Vietnamese tenth-century regional lord at HoiHo, broad lined face, long grey moustache, plain dark green robe, simple early-medieval headwrap. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-172bff01-f7ea-4d62-bc0e-05a8c8b6b1bf.png"
+    },
+    {
+      "id": "nguyen-khoan",
+      "name": "Nguyễn Khoan",
+      "asset": "/images/characters/generated/nguyen-khoan.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Nguyễn Khoan: a middle-aged Vietnamese tenth-century regional warlord at TamDai, round face, short black beard, dark blue layered robes and restrained early-medieval shoulder armor. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-3c990e94-a83f-4f96-ab16-283c12da7a78.png"
+    },
+    {
+      "id": "nguyen-thu-tiep",
+      "name": "Nguyễn Thủ Tiệp",
+      "asset": "/images/characters/generated/nguyen-thu-tiep.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Nguyễn Thủ Tiệp: a strong middle-aged Vietnamese tenth-century regional warlord at TienDu, broad square face, thick eyebrows, full short beard, brown early-medieval armor and dark cloth headwrap. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-621e0c4b-c885-4ebc-900a-5887d088397d.png"
+    },
+    {
+      "id": "nguyen-sieu",
+      "name": "Nguyễn Siêu",
+      "asset": "/images/characters/generated/nguyen-sieu.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Nguyễn Siêu, tenth-century warlord of Tây Phù Liệt, NOT the nineteenth-century scholar: a mature Vietnamese tenth-century regional warlord, long face with strong jaw, swept-back dark hair tied beneath cloth headwrap, short greying beard, muted bronze early-medieval armor. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-1f79223c-e181-4ace-a156-d5ff0b3b0996.png"
+    },
+    {
+      "id": "ly-khue",
+      "name": "Lý Khuê",
+      "asset": "/images/characters/generated/ly-khue.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Lý Khuê: a middle-aged Vietnamese tenth-century regional lord of SieuLoai, calm oval face, fine moustache, modest ochre layered robes, simple dark headwrap. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-9e0c76b5-1e06-424c-9488-07960af42424.png"
+    },
+    {
+      "id": "lu-duong",
+      "name": "Lữ Đường",
+      "asset": "/images/characters/generated/lu-duong.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Lữ Đường: a mature Vietnamese tenth-century regional lord of TeGiang, narrow weathered face, straight eyebrows and greying beard, plain burgundy robe and simple early-medieval cloth cap. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-7470709a-4ee1-4f8a-812e-f735f3326684.png"
+    },
+    {
+      "id": "pham-bach-ho",
+      "name": "Phạm Bạch Hổ",
+      "asset": "/images/characters/generated/pham-bach-ho.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Phạm Bạch Hổ: a formidable older Vietnamese tenth-century general and lord of DangChau, square face, thick salt-and-pepper beard, practical early-medieval lamellar armor with modest dark cloth headwrap. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-f25f79d4-046b-4d37-9279-698bfe2cafe7.png"
+    },
+    {
+      "id": "ngo-nhat-khanh",
+      "name": "Ngô Nhật Khánh",
+      "asset": "/images/characters/generated/ngo-nhat-khanh.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Ngô Nhật Khánh: a younger Vietnamese tenth-century nobleman and regional lord of DuongLam, sharp angular face, sparse dark moustache, muted blue-green layered robes with restrained period military details. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-0071758b-4180-4bf9-991b-548d020b3265.png"
+    },
+    {
+      "id": "trung-nhi",
+      "name": "Trưng Nhị",
+      "asset": "/images/characters/generated/trung-nhi.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Trưng Nhị: a determined young adult Vietnamese woman resistance leader in the first century CE, Southeast Asian face, dark hair tied firmly, historically inspired early Vietnamese woven clothing and modest bronze protective details; no Chinese imperial crown. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-82b43c7d-5914-4649-9893-af1d9593983d.png"
+    },
+    {
+      "id": "luong-van-nam",
+      "name": "Lương Văn Nắm",
+      "asset": "/images/characters/generated/luong-van-nam.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Lương Văn Nắm (Đề Nắm): an older Vietnamese peasant resistance leader of YenThe in the late nineteenth century, sun-weathered face, short grey beard, plain dark indigo rural clothes and cloth headwrap. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-e5a407cb-efb7-497e-859f-750a7e8969a0.png"
+    },
+    {
+      "id": "pham-banh",
+      "name": "Phạm Bành",
+      "asset": "/images/characters/generated/pham-banh.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Phạm Bành: an older Vietnamese scholar and resistance leader of BaDinh in the late nineteenth century, long white beard, lined face, plain dark traditional robe and black cloth turban. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-d27934a9-4825-4e73-8631-39958ec51f74.png"
+    },
+    {
+      "id": "tran-khanh-du",
+      "name": "Trần Khánh Dư",
+      "asset": "/images/characters/generated/tran-khanh-du.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Trần Khánh Dư: a seasoned mature Vietnamese Tran-dynasty naval general around1288, sun-weathered face, trimmed beard, practical thirteenth-century armor and dark cloth headwrap. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-a2fc92fd-7952-4d89-be63-8a522b4cb6f3.png"
+    },
+    {
+      "id": "truong-van-ho",
+      "name": "Trương Văn Hổ",
+      "asset": "/images/characters/generated/truong-van-ho.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Trương Văn Hổ: a mature Yuan naval supply commander around1288, broad East Asian face, short dark beard, simple Yuan military robe with restrained armor and a practical dark cap. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-291250ea-e2d3-4843-ac7c-d14843ca90aa.png"
+    },
+    {
+      "id": "nguyen-khoai",
+      "name": "Nguyễn Khoái",
+      "asset": "/images/characters/generated/nguyen-khoai.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Nguyễn Khoái: a mature Vietnamese Tran-dynasty military commander around1288, alert angular face, straight eyebrows, short beard, dark blue layered garment over restrained lamellar armor. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-0315ee28-ed05-4419-a7ef-52321796fa85.png"
+    },
+    {
+      "id": "francis-loseby",
+      "name": "Francis Henry Loseby",
+      "asset": "/images/characters/generated/francis-loseby.jpg",
+      "prompt": "Use case: historical-scene. Asset: one individual portrait avatar for History Atlas. Paint an original artistic reconstruction of Francis Henry Loseby: an elderly British solicitor active in HongKong in the1930s, European face, thinning grey hair and round spectacles, dignified dark1930s suit, white shirt and sober tie; original artistic reconstruction, do not imitate another named person. One person only. Centered head-and-chest portrait, complete head inside frame, face clearly visible in upper half, vertical2:3 composition suitable for a portrait card. Detailed realistic painterly museum illustration, warm soft lighting, restrained dark navy and muted gold background. Give this person a distinct natural face and an appropriate period appearance. Do not claim an authenticated likeness. No text, lettering, labels, watermarks, logos, borders, grid, collage, extra people, fantasy styling or modern objects except the solicitor's specified period clothing.",
+      "original": "exec-436c29ac-36d5-4b35-8a48-a153321b42f2.png"
+    },
+    {
+      "id": "truong-quy",
+      "name": "Trương Quỹ",
+      "asset": "/images/characters/generated/truong-quy.jpg",
+      "prompt": "Use case: historical-scene. Asset type: an individual square avatar for a Vietnamese educational history website. Create a head-and-shoulders painted portrait of Zhang Gui (Trương Quỹ, 255–314), late Western Jin governor of Liangzhou, foundational figure of Former Liang. Middle aged East Asian man, serious calm expression, short black beard with some gray, dark modest late Jin civil-official robe and period cloth cap. Traditional ink and muted mineral-pigment portrait illustration, subtle aged parchment background, clear individual human face occupying 60% of square. Historically plausible artistic reconstruction, not claimed to be authentic. One person only, no words, letters, borders, watermark, no modern clothing, no fantasy armor. Save image output locally.",
+      "original": "exec-3c01222a-f1a3-4f7e-9314-a6ada220e082.png"
+    },
+    {
+      "id": "mo-dung-hoang",
+      "name": "Mộ Dung Hoảng",
+      "asset": "/images/characters/generated/mo-dung-hoang.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Murong Huang (297–348), founding prince of Former Yan, middle aged Xianbei ruler, brown early fourth century northern Chinese robe, simple tall cloth cap, thin mustache. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-4940bde3-8414-4ba1-b3e3-882de9d0c993.png"
+    },
+    {
+      "id": "phu-kien-kien-lap",
+      "name": "Phù Kiện · Tiền Tần",
+      "asset": "/images/characters/generated/phu-kien-kien-lap.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Fu Jian (317–355), founding emperor of Former Qin, middle aged Di-origin northern Chinese ruler, early fourth century dark formal robe, modest court cap, broad face and trimmed beard. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-226ee812-d11e-4948-a9d8-ade2cc2c9974.png"
+    },
+    {
+      "id": "khat-phuc-quoc-nhan",
+      "name": "Khất Phục Quốc Nhân",
+      "asset": "/images/characters/generated/khat-phuc-quoc-nhan.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Qifu Guoren (died 388), founding prince of Western Qin, Xianbei ruler in Gansu, fourth century belted wool robe and fur edged cap, short beard. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-367e012d-030c-4655-8b78-e90ecc43114e.png"
+    },
+    {
+      "id": "thac-bat-o-co",
+      "name": "Thốc Phát Ô Cô",
+      "asset": "/images/characters/generated/thac-bat-o-co.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Tufa Wugu (died 399), founding prince of Southern Liang, Xianbei ruler in Gansu, dark fourth century northern robe and simple cap, middle aged with mustache. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-4c806aa3-384c-48e0-bee5-4201c744cdfb.png"
+    },
+    {
+      "id": "doan-nghiep",
+      "name": "Đoàn Nghiệp",
+      "asset": "/images/characters/generated/doan-nghiep.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Duan Ye (died 401), founding ruler of Northern Liang, late fourth century civil official from northern China, dark formal robe and cloth cap, narrow face and short beard. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-16528fe4-a519-4fb1-a3e9-d1457afe47de.png"
+    },
+    {
+      "id": "hach-lien-bot-bot",
+      "name": "Hách Liên Bột Bột",
+      "asset": "/images/characters/generated/hach-lien-bot-bot.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Helian Bobo (381–425), founder of Hu Xia, Xiongnu ruler in early fifth century northern China, dark belted robe with small fur collar, strong broad face and mustache. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-b7c4012d-6e12-490a-801f-3d4ec635af53.png"
+    },
+    {
+      "id": "phung-bat",
+      "name": "Phùng Bạt",
+      "asset": "/images/characters/generated/phung-bat.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Feng Ba (died 430), ruler of Northern Yan, early fifth century northern Chinese official ruler, dark red-brown robe and modest black court cap, lined face and dark beard. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-48ef22b8-2fdb-4ea4-8173-3945c203cb9d.png"
+    },
+    {
+      "id": "mo-dung-hong",
+      "name": "Mộ Dung Hoằng",
+      "asset": "/images/characters/generated/mo-dung-hong.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Murong Hong (died 384), founder of Western Yan, young adult Xianbei military noble in fourth century northern China, dark robe with modest lamellar shoulder visible, short mustache. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-dd6c6da0-ee69-4362-ac6c-f2090776eb7c.png"
+    },
+    {
+      "id": "nhiem-man",
+      "name": "Nhiễm Mẫn",
+      "asset": "/images/characters/generated/nhiem-man.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Ran Min (died 352), ruler of Ran Wei, fourth century northern Chinese military leader, stern middle aged man with dark mustache, sober dark robe and modest lamellar armor, no fantasy. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-119aef08-bcef-4cce-828e-59db4785be84.png"
+    },
+    {
+      "id": "thac-bat-y-lo",
+      "name": "Thác Bạt Y Lư",
+      "asset": "/images/characters/generated/thac-bat-y-lo.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Tuoba Yilu (died 316), first prince of Dai, Xianbei ruler of early fourth century northern China, belted wool robe and fur edged cap, mature man with short beard. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-8e8383cb-531b-42a9-918b-730d317746fa.png"
+    },
+    {
+      "id": "dich-lieu",
+      "name": "Địch Liêu",
+      "asset": "/images/characters/generated/dich-lieu.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Zhai Liao (died 391), Dingling founder of Zhai Wei in fourth century northern China, mature man with mustache, modest belted wool robe, simple dark cap. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-e86d33fa-2876-47ff-8651-5b897db5561f.png"
+    },
+    {
+      "id": "hoan-huyen",
+      "name": "Hoàn Huyền",
+      "asset": "/images/characters/generated/hoan-huyen.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Huan Xuan (369–404), Eastern Jin aristocrat who briefly founded Huan Chu, early fifth century southeastern Chinese noble, refined face with thin mustache, dark flowing court robe and black cloth official cap. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-7e224cdf-9a53-4dcf-af9c-d1caa7aea191.png"
+    },
+    {
+      "id": "tieu-tung",
+      "name": "Tiếu Túng",
+      "asset": "/images/characters/generated/tieu-tung.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Qiao Zong (died 413), founder of Western Shu at Chengdu, early fifth century southwestern Chinese military governor, mature man with beard, dark modest court robe and cloth official cap. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-c06e5c69-4002-4ce4-8f2a-69aabbca5706.png"
+    },
+    {
+      "id": "thac-bat-khue",
+      "name": "Thác Bạt Khuê",
+      "asset": "/images/characters/generated/thac-bat-khue.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Tuoba Gui (371–409), founding emperor Daowu of Northern Wei, Xianbei ruler, late fourth century dark northern court robe and simple formal cap, serious adult man with mustache. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-e59131c5-7911-44b6-9402-9ed28a098423.png"
+    },
+    {
+      "id": "nguyen-thien",
+      "name": "Nguyên Thiện Kiến · Đông Ngụy Hiếu Tĩnh Đế",
+      "asset": "/images/characters/generated/nguyen-thien.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Yuan Shanjian (524–552), Emperor Xiaojing of Eastern Wei, youthful East Asian man in sixth century northern Chinese court robe and black court cap, clean dignified face with small mustache. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-8a21daea-3e37-4e4d-94ad-84ded456175e.png"
+    },
+    {
+      "id": "nguyen-bao-cu",
+      "name": "Nguyên Bảo Cự · Tây Ngụy Văn Đế",
+      "asset": "/images/characters/generated/nguyen-bao-cu.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Yuan Baoju (507–551), Emperor Wen of Western Wei, sixth century northern Chinese imperial ruler, middle aged with thin beard, dark court robe and black ceremonial cap. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-6625b93f-e5ba-456f-9059-13f55c962c2f.png"
+    },
+    {
+      "id": "vu-van-giac",
+      "name": "Vũ Văn Giác",
+      "asset": "/images/characters/generated/vu-van-giac.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Yuwen Jue (542–557), Emperor Xiaomin of Northern Zhou, fifteen year old adolescent boy, youthful smooth clean shaven face, sober sixth century northern Chinese royal robe and small black court cap, no adult beard. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-b4f8bda8-bab7-4ebc-b1c1-509bc622a156.png"
+    },
+    {
+      "id": "tieu-sat",
+      "name": "Tiêu Sát",
+      "asset": "/images/characters/generated/tieu-sat.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Xiao Cha (519–562), Emperor Xuan of Western Liang at Jiangling, sixth century southern Chinese royal court robe and cap, adult man with narrow face and small beard. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-1b66dbaf-8c76-4974-b47f-91526f023444.png"
+    },
+    {
+      "id": "duong-hanh-mat",
+      "name": "Dương Hành Mật",
+      "asset": "/images/characters/generated/duong-hanh-mat.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Yang Xingmi (852–905), founding figure of Yang Wu in Jiangnan, mature Chinese military ruler in late Tang dark robe and simple formal cap, weathered face and short beard. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-782f48fe-2be2-47fa-967c-2ddfe1b219c5.png"
+    },
+    {
+      "id": "luu-nghiem",
+      "name": "Lưu Nghiễm",
+      "asset": "/images/characters/generated/luu-nghiem.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Liu Yan (889–942), founding emperor of Southern Han at Guangzhou, mature Chinese ruler of tenth century southern court, red-brown formal silk robe and black court cap, short beard. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-6f22354a-1c5b-4f3f-b6c4-468b5a99c734.png"
+    },
+    {
+      "id": "ma-an",
+      "name": "Mã Ân",
+      "asset": "/images/characters/generated/ma-an.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Ma Yin (853–930), founder of Ma Chu in Hunan, older Chinese military ruler of early tenth century, dark formal robe, modest court cap, lined face and gray mustache. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-e2d948fe-653f-4d44-b203-9a9feb00264e.png"
+    },
+    {
+      "id": "luu-sung",
+      "name": "Lưu Sùng",
+      "asset": "/images/characters/generated/luu-sung.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Liu Chong (895–954), founder of Northern Han, Shatuo ruler in tenth century northern China, mature man with dark mustache and short beard, dark formal robe and court cap. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-6ad32741-c7cb-4fa2-876b-e772a4cfa3da.png"
+    },
+    {
+      "id": "cao-quy-hung",
+      "name": "Cao Quý Hưng",
+      "asset": "/images/characters/generated/cao-quy-hung.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Gao Jixing (858–929), founder of Jingnan, older Chinese military ruler in early tenth century, dark formal robe and simple official cap, narrow weathered face and gray beard. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-ca28d712-ea25-4df3-a2b3-325067cf4f10.png"
+    },
+    {
+      "id": "manh-tri-tuong",
+      "name": "Mạnh Tri Tường",
+      "asset": "/images/characters/generated/manh-tri-tuong.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Meng Zhixiang (874–934), founder of Later Shu at Chengdu, older Chinese ruler of tenth century, dark red-brown formal robe and black court cap, gray mustache and beard. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-af513266-b6a7-4d48-967e-a02680192621.png"
+    },
+    {
+      "id": "ly-bien",
+      "name": "Lý Biện",
+      "asset": "/images/characters/generated/ly-bien.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Li Bian (889–943), founder of Southern Tang, mature Chinese ruler of tenth century Jiangnan, refined face and neat black beard, sober red-brown formal silk robe and black court cap. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-f51ceed0-7e7a-49e4-8bea-fed70267336b.png"
+    },
+    {
+      "id": "da-luat-a-bao-co",
+      "name": "Da Luật A Bảo Cơ",
+      "asset": "/images/characters/generated/da-luat-a-bao-co.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Yelü Abaoji (872–926), Khitan founder of Liao, mature Khitan ruler of tenth century northern China, belted brown robe with fur edged collar and simple cap, broad face and mustache, no modern hairstyle. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-3f5a04cd-a981-4b94-be51-1a884d8ddef9.png"
+    },
+    {
+      "id": "ly-nguyen-hao",
+      "name": "Lý Nguyên Hạo",
+      "asset": "/images/characters/generated/ly-nguyen-hao.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Li Yuanhao (1003–1048), Tangut founder of Western Xia, mature Tangut ruler of eleventh century northwestern China, sober formal robe and dark cap, broad adult face with small mustache. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-f2c86bdd-d93a-4f00-8ff3-a707bf3c993e.png"
+    },
+    {
+      "id": "da-luat-dai-thach",
+      "name": "Da Luật Đại Thạch",
+      "asset": "/images/characters/generated/da-luat-dai-thach.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Yelü Dashi (1087–1143), Khitan founder of Western Liao in Central Asia, mature twelfth century ruler, belted dark wool-silk robe and modest fur edged cap, lined face with neat beard. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-d3fdebf4-96fb-4363-b6d5-d6f36d0cb7d1.png"
+    },
+    {
+      "id": "hoang-quang-de",
+      "name": "Hoằng Quang Đế",
+      "asset": "/images/characters/generated/hoang-quang-de.jpg",
+      "prompt": "Use case: historical-scene. Asset type: one square individual avatar for an educational Chinese history website. Subject: Zhu Yousong (1607–1646), Hongguang emperor and first ruler of Southern Ming, adult Chinese man in late Ming red formal court robe and black winged official cap, short black mustache and beard. Create a historically plausible painted head-and-shoulders portrait with a clearly recognizable individual human face, centered face filling 60 percent of the square, subtle aged parchment background, traditional ink and muted mineral pigment illustration. This is an artistic reconstruction, not an authentic likeness. One person only, no text, no writing, no borders, no watermark, no modern clothes, no fantasy.",
+      "original": "exec-b124b983-be99-42a4-a6b1-25cc5f81e405.png"
+    }
+  ]
+}

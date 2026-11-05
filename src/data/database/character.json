@@ -1274,13 +1274,24 @@
     "id": "ho-chi-minh",
     "countryId": "vietnam",
     "name": "Hồ Chí Minh",
-    "aliases": ["Bác Hồ", "Nguyễn Sinh Cung", "Nguyễn Tất Thành", "Nguyễn Ái Quốc", "Văn Ba", "Lý Thụy", "Tống Văn Sơ"],
+    "aliases": [
+      "Bác Hồ",
+      "Nguyễn Sinh Cung",
+      "Nguyễn Tất Thành",
+      "Nguyễn Ái Quốc",
+      "Văn Ba",
+      "Lý Thụy",
+      "Tống Văn Sơ"
+    ],
     "wiki": "Ho Chi Minh",
     "role": "Lãnh tụ cách mạng Việt Nam, Chủ tịch nước Việt Nam Dân chủ Cộng hòa",
     "biography": "Chủ tịch Hồ Chí Minh (1890–1969) dành cuộc đời cho sự nghiệp giải phóng dân tộc Việt Nam. Người ra đi tìm đường cứu nước năm 1911, chủ trì thành lập Đảng Cộng sản Việt Nam năm 1930, trở về nước năm 1941 và đọc Tuyên ngôn Độc lập tại Ba Đình ngày 2/9/1945. Từ đó, Người lãnh đạo đất nước qua kháng chiến, xây dựng nhà nước và hoạt động ngoại giao cho đến khi qua đời năm 1969.",
     "lifespan": "19/5/1890 – 2/9/1969",
     "sources": [
-      {"title":"Tiểu sử Chủ tịch Hồ Chí Minh · tư liệu Bảo tàng Hồ Chí Minh","url":"https://khcn.tphcm.gov.vn/khong-gian-van-hoa-ho-chi-minh/gioi-thieu/tieu-su"},
+      {
+        "title": "Tiểu sử Chủ tịch Hồ Chí Minh · tư liệu Bảo tàng Hồ Chí Minh",
+        "url": "https://khcn.tphcm.gov.vn/khong-gian-van-hoa-ho-chi-minh/gioi-thieu/tieu-su"
+      },
       {
         "title": "Hồ Chí Minh",
         "url": "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
@@ -1880,30 +1891,1675 @@
     ]
   },
   {
-    "id":"vladimir-lenin","countryId": "soviet-union","name":"Vladimir Ilyich Lenin","aliases":["V. I. Lênin", "Lênin"],"wiki":"Vladimir Lenin","role":"Lãnh tụ Cách mạng Tháng Mười Nga, nhà lý luận cách mạng","biography":"Lenin là nhà cách mạng và người đứng đầu chính phủ Nga Xô viết, sau đó là Liên Xô. Luận cương về vấn đề dân tộc và thuộc địa của ông có ảnh hưởng quan trọng đến sự lựa chọn con đường cách mạng của Nguyễn Ái Quốc; không đồng nghĩa với một cuộc gặp trực tiếp.","lifespan":"1870–1924","sources":[{"title":"Lenin và con đường cứu nước của Nguyễn Ái Quốc","url":"https://baotanghochiminh.vn/bao-tang-ho-chi-minh-khai-mac-trung-bay-chuyen-de-dau-chan-ho-chi-minh-tren-que-huong-cach-mang-thang-muoi.htm"},{"title":"Vladimir Lenin","url":"https://en.wikipedia.org/wiki/Vladimir_Lenin"}]
+    "id": "vladimir-lenin",
+    "countryId": "soviet-union",
+    "name": "Vladimir Ilyich Lenin",
+    "aliases": [
+      "V. I. Lênin",
+      "Lênin"
+    ],
+    "wiki": "Vladimir Lenin",
+    "role": "Lãnh tụ Cách mạng Tháng Mười Nga, nhà lý luận cách mạng",
+    "biography": "Lenin là nhà cách mạng và người đứng đầu chính phủ Nga Xô viết, sau đó là Liên Xô. Luận cương về vấn đề dân tộc và thuộc địa của ông có ảnh hưởng quan trọng đến sự lựa chọn con đường cách mạng của Nguyễn Ái Quốc; không đồng nghĩa với một cuộc gặp trực tiếp.",
+    "lifespan": "1870–1924",
+    "sources": [
+      {
+        "title": "Lenin và con đường cứu nước của Nguyễn Ái Quốc",
+        "url": "https://baotanghochiminh.vn/bao-tang-ho-chi-minh-khai-mac-trung-bay-chuyen-de-dau-chan-ho-chi-minh-tren-que-huong-cach-mang-thang-muoi.htm"
+      },
+      {
+        "title": "Vladimir Lenin",
+        "url": "https://en.wikipedia.org/wiki/Vladimir_Lenin"
+      }
+    ]
   },
   {
-    "id":"joseph-stalin","countryId": "soviet-union","name":"Joseph Stalin","aliases":["I. V. Stalin","Xtalin","Stalin"],"wiki":"Joseph Stalin","role":"Lãnh đạo Liên Xô trong giai đoạn cuối thập niên 1920–1953","biography":"Stalin lãnh đạo Liên Xô cho đến năm 1953. Hồ Chí Minh trực tiếp làm việc với ông tại Mátxcơva trong chuyến ngoại giao năm 1950 để vận động sự ủng hộ và viện trợ cho kháng chiến chống Pháp. Quan hệ được trình bày theo từng sự kiện, không phải sự đồng nhất mọi quan điểm.","lifespan":"1878–1953","sources":[{"title":"Tư liệu thư từ chuyến ngoại giao năm 1950","url":"https://baotanghochiminh.vn/mot-buc-thu-trong-chuyen-ngoai-giao-bi-mat-nam-1950-cua-chu-tich-ho-chi-minh.htm"},{"title":"Joseph Stalin","url":"https://en.wikipedia.org/wiki/Joseph_Stalin"}]
+    "id": "joseph-stalin",
+    "countryId": "soviet-union",
+    "name": "Joseph Stalin",
+    "aliases": [
+      "I. V. Stalin",
+      "Xtalin",
+      "Stalin"
+    ],
+    "wiki": "Joseph Stalin",
+    "role": "Lãnh đạo Liên Xô trong giai đoạn cuối thập niên 1920–1953",
+    "biography": "Stalin lãnh đạo Liên Xô cho đến năm 1953. Hồ Chí Minh trực tiếp làm việc với ông tại Mátxcơva trong chuyến ngoại giao năm 1950 để vận động sự ủng hộ và viện trợ cho kháng chiến chống Pháp. Quan hệ được trình bày theo từng sự kiện, không phải sự đồng nhất mọi quan điểm.",
+    "lifespan": "1878–1953",
+    "sources": [
+      {
+        "title": "Tư liệu thư từ chuyến ngoại giao năm 1950",
+        "url": "https://baotanghochiminh.vn/mot-buc-thu-trong-chuyen-ngoai-giao-bi-mat-nam-1950-cua-chu-tich-ho-chi-minh.htm"
+      },
+      {
+        "title": "Joseph Stalin",
+        "url": "https://en.wikipedia.org/wiki/Joseph_Stalin"
+      }
+    ]
   },
   {
-    "id":"mao-trach-dong","countryId": "china","name":"Mao Trạch Đông","aliases":["Mao Zedong","Mao"],"wiki":"Mao Zedong","role":"Lãnh đạo Đảng Cộng sản Trung Quốc, Chủ tịch nước CHND Trung Hoa 1949–1959","biography":"Mao Trạch Đông là lãnh đạo chủ chốt của Trung Quốc từ năm 1949 đến năm 1976. Tháng 2/1950, ông cùng Hồ Chí Minh và các lãnh đạo Liên Xô có mặt tại Mátxcơva trong các hoạt động ngoại giao liên quan đến hợp tác và hỗ trợ kháng chiến Việt Nam.","lifespan":"1893–1976","sources":[{"title":"Biên niên ngày 16/2/1950 tại Mátxcơva","url":"https://baotanghochiminh.vn/chu-tich-ho-chi-minh-du-dai-tiec-do-chinh-phu-lien-xo-to-chuc-de-mung-thang-loi-hiep-uoc-huu-nghi-tuong-tro-dong-minh-xo-trung-vua-duoc-ky-ket-tai-matxcova.htm"},{"title":"Mao Zedong","url":"https://en.wikipedia.org/wiki/Mao_Zedong"}]
+    "id": "mao-trach-dong",
+    "countryId": "china",
+    "name": "Mao Trạch Đông",
+    "aliases": [
+      "Mao Zedong",
+      "Mao"
+    ],
+    "wiki": "Mao Zedong",
+    "role": "Lãnh đạo Đảng Cộng sản Trung Quốc, Chủ tịch nước CHND Trung Hoa 1949–1959",
+    "biography": "Mao Trạch Đông là lãnh đạo chủ chốt của Trung Quốc từ năm 1949 đến năm 1976. Tháng 2/1950, ông cùng Hồ Chí Minh và các lãnh đạo Liên Xô có mặt tại Mátxcơva trong các hoạt động ngoại giao liên quan đến hợp tác và hỗ trợ kháng chiến Việt Nam.",
+    "lifespan": "1893–1976",
+    "sources": [
+      {
+        "title": "Biên niên ngày 16/2/1950 tại Mátxcơva",
+        "url": "https://baotanghochiminh.vn/chu-tich-ho-chi-minh-du-dai-tiec-do-chinh-phu-lien-xo-to-chuc-de-mung-thang-loi-hiep-uoc-huu-nghi-tuong-tro-dong-minh-xo-trung-vua-duoc-ky-ket-tai-matxcova.htm"
+      },
+      {
+        "title": "Mao Zedong",
+        "url": "https://en.wikipedia.org/wiki/Mao_Zedong"
+      }
+    ]
   },
   {
-    "id":"chu-an-lai","countryId": "china","name":"Chu Ân Lai","aliases":["Zhou Enlai"],"wiki":"Zhou Enlai","role":"Thủ tướng nước CHND Trung Hoa 1949–1976","biography":"Chu Ân Lai là nhà lãnh đạo và nhà ngoại giao Trung Quốc, giữ chức Thủ tướng từ năm 1949 đến năm 1976. Ông tham gia các hoạt động ngoại giao liên quan đến Hồ Chí Minh trong chuyến đi Trung Quốc và Liên Xô đầu năm 1950.","lifespan":"1898–1976","sources":[{"title":"Chuyến công du Xuân Canh Dần 1950","url":"https://hochiminh.vn/ho-chi-minh-va-the-gioi/hoat-dong-quoc-te-cua-ho-chi-minh/bac-ho-voi-chuyen-cong-du-xuan-canh-dan-1950-44"},{"title":"Zhou Enlai","url":"https://en.wikipedia.org/wiki/Zhou_Enlai"}]
+    "id": "chu-an-lai",
+    "countryId": "china",
+    "name": "Chu Ân Lai",
+    "aliases": [
+      "Zhou Enlai"
+    ],
+    "wiki": "Zhou Enlai",
+    "role": "Thủ tướng nước CHND Trung Hoa 1949–1976",
+    "biography": "Chu Ân Lai là nhà lãnh đạo và nhà ngoại giao Trung Quốc, giữ chức Thủ tướng từ năm 1949 đến năm 1976. Ông tham gia các hoạt động ngoại giao liên quan đến Hồ Chí Minh trong chuyến đi Trung Quốc và Liên Xô đầu năm 1950.",
+    "lifespan": "1898–1976",
+    "sources": [
+      {
+        "title": "Chuyến công du Xuân Canh Dần 1950",
+        "url": "https://hochiminh.vn/ho-chi-minh-va-the-gioi/hoat-dong-quoc-te-cua-ho-chi-minh/bac-ho-voi-chuyen-cong-du-xuan-canh-dan-1950-44"
+      },
+      {
+        "title": "Zhou Enlai",
+        "url": "https://en.wikipedia.org/wiki/Zhou_Enlai"
+      }
+    ]
   },
   {
-    "id":"francis-loseby","countryId": "england","name":"Francis Henry Loseby","aliases":["Frank Loseby","Luật sư Loseby"],"wiki":"Francis Henry Loseby","role":"Luật sư bảo vệ Nguyễn Ái Quốc trong vụ án Hồng Kông","biography":"Luật sư người Anh Francis Henry Loseby cùng gia đình đã giúp bảo vệ Nguyễn Ái Quốc trong vụ án Hồng Kông từ năm 1931 và hỗ trợ Người rời nơi này. Tình bạn của hai người được duy trì trong những năm sau đó.","lifespan":"1883–1967","sources":[{"title":"Tình bạn Hồ Chí Minh và luật sư Loseby","url":"https://btllang.bqp.vn/tin-tuc/tin-tong-hop/1656-b-c-tranh-theu-va-tinh-b-n-th-y-chung.html"}]
+    "id": "francis-loseby",
+    "countryId": "england",
+    "name": "Francis Henry Loseby",
+    "aliases": [
+      "Frank Loseby",
+      "Luật sư Loseby"
+    ],
+    "wiki": "Francis Henry Loseby",
+    "role": "Luật sư bảo vệ Nguyễn Ái Quốc trong vụ án Hồng Kông",
+    "biography": "Luật sư người Anh Francis Henry Loseby cùng gia đình đã giúp bảo vệ Nguyễn Ái Quốc trong vụ án Hồng Kông từ năm 1931 và hỗ trợ Người rời nơi này. Tình bạn của hai người được duy trì trong những năm sau đó.",
+    "lifespan": "1883–1967",
+    "sources": [
+      {
+        "title": "Tình bạn Hồ Chí Minh và luật sư Loseby",
+        "url": "https://btllang.bqp.vn/tin-tuc/tin-tong-hop/1656-b-c-tranh-theu-va-tinh-b-n-th-y-chung.html"
+      }
+    ]
   },
   {
-    "id":"tuong-gioi-thach","countryId": "china","name":"Tưởng Giới Thạch","aliases":["Chiang Kai-shek"],"wiki":"Chiang Kai-shek","role":"Lãnh đạo Quốc dân Đảng và chính quyền Trung Hoa Dân quốc","biography":"Tưởng Giới Thạch lãnh đạo Quốc dân Đảng và chính quyền Trung Hoa Dân quốc. Năm 1942–1943, Hồ Chí Minh bị bộ máy chính quyền địa phương Quốc dân Đảng giam giữ ở Quảng Tây. Không từ đó suy ra hai người đã gặp nhau hoặc việc bắt giữ do mệnh lệnh cá nhân của ông.","lifespan":"1887–1975","sources":[{"title":"Hồ Chí Minh Toàn tập · Tập 3","url":"https://baotanghochiminh.vn/ho-chi-minh-toan-tap_xuat-ban-lan-3_tap-3.htm"},{"title":"Chiang Kai-shek","url":"https://en.wikipedia.org/wiki/Chiang_Kai-shek"}]
+    "id": "tuong-gioi-thach",
+    "countryId": "china",
+    "name": "Tưởng Giới Thạch",
+    "aliases": [
+      "Chiang Kai-shek"
+    ],
+    "wiki": "Chiang Kai-shek",
+    "role": "Lãnh đạo Quốc dân Đảng và chính quyền Trung Hoa Dân quốc",
+    "biography": "Tưởng Giới Thạch lãnh đạo Quốc dân Đảng và chính quyền Trung Hoa Dân quốc. Năm 1942–1943, Hồ Chí Minh bị bộ máy chính quyền địa phương Quốc dân Đảng giam giữ ở Quảng Tây. Không từ đó suy ra hai người đã gặp nhau hoặc việc bắt giữ do mệnh lệnh cá nhân của ông.",
+    "lifespan": "1887–1975",
+    "sources": [
+      {
+        "title": "Hồ Chí Minh Toàn tập · Tập 3",
+        "url": "https://baotanghochiminh.vn/ho-chi-minh-toan-tap_xuat-ban-lan-3_tap-3.htm"
+      },
+      {
+        "title": "Chiang Kai-shek",
+        "url": "https://en.wikipedia.org/wiki/Chiang_Kai-shek"
+      }
+    ]
   },
   {
-    "id":"jean-sainteny","countryId": "france","name":"Jean Sainteny","aliases":["Sainteny"],"wiki":"Jean Sainteny","role":"Đại diện Pháp ký Hiệp định Sơ bộ ngày 6/3/1946","biography":"Jean Sainteny là nhà ngoại giao Pháp, đại diện phía Pháp ký Hiệp định Sơ bộ với Hồ Chí Minh và Vũ Hồng Khanh tại Hà Nội ngày 6/3/1946. Quan hệ này thể hiện nỗ lực đàm phán giữa hai bên có những lợi ích và lập trường đối lập.","lifespan":"1907–1978","sources":[{"title":"Hiệp định Sơ bộ Việt Nam–Pháp 6/3/1946","url":"https://hcmcpv.org.vn/tin-tuc/tim-kiem/hiep-dinh-so-bo-viet-nam-phap-6-3-1946-ky-tich-khoi-dau-lich-su-dau-tranh-ngoai-giao-cua-nuoc-viet-1454411071"},{"title":"Jean Sainteny","url":"https://en.wikipedia.org/wiki/Jean_Sainteny"}]
+    "id": "jean-sainteny",
+    "countryId": "france",
+    "name": "Jean Sainteny",
+    "aliases": [
+      "Sainteny"
+    ],
+    "wiki": "Jean Sainteny",
+    "role": "Đại diện Pháp ký Hiệp định Sơ bộ ngày 6/3/1946",
+    "biography": "Jean Sainteny là nhà ngoại giao Pháp, đại diện phía Pháp ký Hiệp định Sơ bộ với Hồ Chí Minh và Vũ Hồng Khanh tại Hà Nội ngày 6/3/1946. Quan hệ này thể hiện nỗ lực đàm phán giữa hai bên có những lợi ích và lập trường đối lập.",
+    "lifespan": "1907–1978",
+    "sources": [
+      {
+        "title": "Hiệp định Sơ bộ Việt Nam–Pháp 6/3/1946",
+        "url": "https://hcmcpv.org.vn/tin-tuc/tim-kiem/hiep-dinh-so-bo-viet-nam-phap-6-3-1946-ky-tich-khoi-dau-lich-su-dau-tranh-ngoai-giao-cua-nuoc-viet-1454411071"
+      },
+      {
+        "title": "Jean Sainteny",
+        "url": "https://en.wikipedia.org/wiki/Jean_Sainteny"
+      }
+    ]
   },
   {
-    "id":"harry-truman","countryId": "usa","name":"Harry S. Truman","aliases":["Truman"],"wiki":"Harry S. Truman","role":"Tổng thống Hoa Kỳ 1945–1953","biography":"Harry S. Truman là Tổng thống Hoa Kỳ trong những năm đầu sau Chiến tranh thế giới thứ hai. Hồ Chí Minh gửi thư và điện đề nghị Hoa Kỳ ủng hộ độc lập Việt Nam. Theo Cơ quan Lưu trữ Quốc gia Hoa Kỳ, Truman không trả lời những thư này.","lifespan":"1884–1972","sources":[{"title":"Remembering Vietnam · National Archives","url":"https://www.archives.gov/exhibits/remembering-vietnam-online-exhibit-episodes-1-4"},{"title":"Harry S. Truman","url":"https://en.wikipedia.org/wiki/Harry_S._Truman"}]
+    "id": "harry-truman",
+    "countryId": "usa",
+    "name": "Harry S. Truman",
+    "aliases": [
+      "Truman"
+    ],
+    "wiki": "Harry S. Truman",
+    "role": "Tổng thống Hoa Kỳ 1945–1953",
+    "biography": "Harry S. Truman là Tổng thống Hoa Kỳ trong những năm đầu sau Chiến tranh thế giới thứ hai. Hồ Chí Minh gửi thư và điện đề nghị Hoa Kỳ ủng hộ độc lập Việt Nam. Theo Cơ quan Lưu trữ Quốc gia Hoa Kỳ, Truman không trả lời những thư này.",
+    "lifespan": "1884–1972",
+    "sources": [
+      {
+        "title": "Remembering Vietnam · National Archives",
+        "url": "https://www.archives.gov/exhibits/remembering-vietnam-online-exhibit-episodes-1-4"
+      },
+      {
+        "title": "Harry S. Truman",
+        "url": "https://en.wikipedia.org/wiki/Harry_S._Truman"
+      }
+    ]
   },
   {
-    "id":"lyndon-johnson","countryId": "usa","name":"Lyndon B. Johnson","aliases":["LBJ","Johnson"],"wiki":"Lyndon B. Johnson","role":"Tổng thống Hoa Kỳ 1963–1969, giai đoạn leo thang chiến tranh Việt Nam","biography":"Lyndon B. Johnson là Tổng thống Hoa Kỳ trong giai đoạn Hoa Kỳ mở rộng can thiệp quân sự ở Việt Nam. Tháng 2/1967, ông và Hồ Chí Minh trao đổi thư về việc chấm dứt chiến tranh; đây là liên hệ thư tín, không phải cuộc gặp trực tiếp.","lifespan":"1908–1973","sources":[{"title":"Thư Hồ Chí Minh gửi Tổng thống Johnson, 15/2/1967","url":"https://docsteach.org/document/ho-chi-minh-to-johnson/"},{"title":"Lyndon B. Johnson","url":"https://en.wikipedia.org/wiki/Lyndon_B._Johnson"}]
+    "id": "lyndon-johnson",
+    "countryId": "usa",
+    "name": "Lyndon B. Johnson",
+    "aliases": [
+      "LBJ",
+      "Johnson"
+    ],
+    "wiki": "Lyndon B. Johnson",
+    "role": "Tổng thống Hoa Kỳ 1963–1969, giai đoạn leo thang chiến tranh Việt Nam",
+    "biography": "Lyndon B. Johnson là Tổng thống Hoa Kỳ trong giai đoạn Hoa Kỳ mở rộng can thiệp quân sự ở Việt Nam. Tháng 2/1967, ông và Hồ Chí Minh trao đổi thư về việc chấm dứt chiến tranh; đây là liên hệ thư tín, không phải cuộc gặp trực tiếp.",
+    "lifespan": "1908–1973",
+    "sources": [
+      {
+        "title": "Thư Hồ Chí Minh gửi Tổng thống Johnson, 15/2/1967",
+        "url": "https://docsteach.org/document/ho-chi-minh-to-johnson/"
+      },
+      {
+        "title": "Lyndon B. Johnson",
+        "url": "https://en.wikipedia.org/wiki/Lyndon_B._Johnson"
+      }
+    ]
+  },
+  {
+    "id": "tan-thuy-hoang",
+    "countryId": "china",
+    "name": "Tần Thủy Hoàng",
+    "aliases": [
+      "Doanh Chính",
+      "Qin Shi Huang"
+    ],
+    "wiki": "Qin Shi Huang",
+    "role": "Hoàng đế đầu tiên của nhà Tần, thống nhất các nước Chiến Quốc",
+    "biography": "Tần Thủy Hoàng hoàn thành việc chinh phục các nước Chiến Quốc năm 221 TCN và xưng hoàng đế. Triều Tần xây dựng bộ máy tập quyền và thúc đẩy chuẩn hóa chữ viết, tiền tệ, đo lường.",
+    "lifespan": "259–210 TCN",
+    "sources": [
+      {
+        "title": "Qin Shi Huang",
+        "url": "https://en.wikipedia.org/wiki/Qin_Shi_Huang"
+      }
+    ]
+  },
+  {
+    "id": "luu-bi",
+    "countryId": "china",
+    "name": "Lưu Bị",
+    "aliases": [
+      "Lưu Huyền Đức",
+      "Liu Bei"
+    ],
+    "wiki": "Liu Bei",
+    "role": "Người sáng lập Thục Hán thời Tam Quốc",
+    "biography": "Lưu Bị là một thủ lĩnh cuối thời Đông Hán, sau đó lập nhà Thục Hán và xưng đế năm 221. Chính quyền của ông đặt trung tâm tại Thành Đô, cùng tồn tại với Ngụy và Ngô trong cục diện Tam Quốc.",
+    "lifespan": "161–223",
+    "sources": [
+      {
+        "title": "Liu Bei",
+        "url": "https://en.wikipedia.org/wiki/Liu_Bei"
+      }
+    ]
+  },
+  {
+    "id": "duong-thai-tong",
+    "countryId": "china",
+    "name": "Đường Thái Tông",
+    "aliases": [
+      "Lý Thế Dân",
+      "Emperor Taizong of Tang"
+    ],
+    "wiki": "Emperor Taizong of Tang",
+    "role": "Hoàng đế nhà Đường, trị vì 626–649",
+    "biography": "Đường Thái Tông, tên thật Lý Thế Dân, là hoàng đế thứ hai của nhà Đường. Thời kỳ trị vì của ông thường được gọi là Trinh Quán, gắn với việc củng cố bộ máy cai trị đầu triều Đường.",
+    "lifespan": "598–649",
+    "sources": [
+      {
+        "title": "Emperor Taizong of Tang",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Taizong_of_Tang"
+      }
+    ]
+  },
+  {
+    "id": "hot-tat-liet",
+    "countryId": "china",
+    "name": "Hốt Tất Liệt",
+    "aliases": [
+      "Kublai Khan",
+      "Nguyên Thế Tổ"
+    ],
+    "wiki": "Kublai Khan",
+    "role": "Đại hãn Mông Cổ, người đặt quốc hiệu Nguyên năm 1271",
+    "biography": "Hốt Tất Liệt là cháu Thành Cát Tư Hãn, đặt quốc hiệu Nguyên năm 1271 và xây dựng trung tâm cai trị tại Đại Đô. Dưới thời ông, quân Nguyên chinh phục Nam Tống năm 1279 và tiến hành nhiều chiến dịch ra bên ngoài.",
+    "lifespan": "1215–1294",
+    "sources": [
+      {
+        "title": "Kublai Khan",
+        "url": "https://en.wikipedia.org/wiki/Kublai_Khan"
+      }
+    ]
+  },
+  {
+    "id": "minh-thai-to",
+    "countryId": "china",
+    "name": "Minh Thái Tổ",
+    "aliases": [
+      "Chu Nguyên Chương",
+      "Hongwu Emperor"
+    ],
+    "wiki": "Hongwu Emperor",
+    "role": "Người sáng lập nhà Minh, trị vì 1368–1398",
+    "biography": "Minh Thái Tổ, tên thật Chu Nguyên Chương, lập nhà Minh năm 1368 sau quá trình nổi dậy chống nhà Nguyên. Ông đặt kinh đô tại Nam Kinh và tổ chức lại bộ máy nhà nước trong những thập niên đầu của triều Minh.",
+    "lifespan": "1328–1398",
+    "sources": [
+      {
+        "title": "Hongwu Emperor",
+        "url": "https://en.wikipedia.org/wiki/Hongwu_Emperor"
+      }
+    ]
+  },
+  {
+    "id": "ha-vu",
+    "countryId": "china",
+    "name": "Hạ Vũ",
+    "aliases": [],
+    "wiki": "Yu the Great",
+    "role": "Người được truyền thống sử học tôn là người lập nhà Hạ",
+    "biography": "Người được truyền thống sử học tôn là người lập nhà Hạ; nhân vật gắn với truyền thuyết trị thủy, chưa có bằng chứng cùng thời xác nhận đầy đủ.",
+    "lifespan": "Không rõ năm sinh · Nhân vật trong truyền thống thời thượng cổ",
+    "sources": [
+      {
+        "title": "Hạ Vũ",
+        "url": "https://en.wikipedia.org/wiki/Yu_the_Great"
+      }
+    ]
+  },
+  {
+    "id": "thanh-thang",
+    "countryId": "china",
+    "name": "Thành Thang",
+    "aliases": [],
+    "wiki": "Tang of Shang",
+    "role": "Vị vua được truyền thống sử học ghi là người lật đổ nhà Hạ và lập nhà Thương.",
+    "biography": "Vị vua được truyền thống sử học ghi là người lật đổ nhà Hạ và lập nhà Thương.",
+    "lifespan": "Không rõ năm sinh · Niên đại thời Thương còn có cách tính khác nhau",
+    "sources": [
+      {
+        "title": "Thành Thang",
+        "url": "https://en.wikipedia.org/wiki/Tang_of_Shang"
+      }
+    ]
+  },
+  {
+    "id": "tru-vuong",
+    "countryId": "china",
+    "name": "Trụ Vương",
+    "aliases": [],
+    "wiki": "King Zhou of Shang",
+    "role": "Vị vua cuối nhà Thương, bị liên quân do Chu Vũ Vương chỉ huy đánh bại",
+    "biography": "Vị vua cuối nhà Thương, bị liên quân do Chu Vũ Vương chỉ huy đánh bại; cần phân biệt sử liệu với hình tượng trong Phong thần diễn nghĩa.",
+    "lifespan": "Không rõ năm sinh · Mất khoảng 1046 TCN",
+    "sources": [
+      {
+        "title": "Trụ Vương",
+        "url": "https://en.wikipedia.org/wiki/King_Zhou_of_Shang"
+      }
+    ]
+  },
+  {
+    "id": "co-xuong",
+    "countryId": "china",
+    "name": "Cơ Xương · Chu Văn Vương",
+    "aliases": [
+      "Cơ Xương",
+      "Chu Văn Vương"
+    ],
+    "wiki": "King Wen of Zhou",
+    "role": "Người xây dựng nền tảng quyền lực của Chu trước cuộc chinh phục nhà Thương",
+    "biography": "Người xây dựng nền tảng quyền lực của Chu trước cuộc chinh phục nhà Thương; được truy tôn là Chu Văn Vương.",
+    "lifespan": "Khoảng 1152–1050 TCN · Niên đại truyền thống",
+    "sources": [
+      {
+        "title": "Cơ Xương · Chu Văn Vương",
+        "url": "https://en.wikipedia.org/wiki/King_Wen_of_Zhou"
+      }
+    ]
+  },
+  {
+    "id": "co-phat",
+    "countryId": "china",
+    "name": "Cơ Phát · Chu Vũ Vương",
+    "aliases": [
+      "Cơ Phát",
+      "Chu Vũ Vương"
+    ],
+    "wiki": "King Wu of Zhou",
+    "role": "Con Cơ Xương, lãnh đạo cuộc chinh phục nhà Thương và thiết lập vương triều Chu.",
+    "biography": "Con Cơ Xương, lãnh đạo cuộc chinh phục nhà Thương và thiết lập vương triều Chu.",
+    "lifespan": "Không rõ năm sinh · Mất khoảng 1043 TCN",
+    "sources": [
+      {
+        "title": "Cơ Phát · Chu Vũ Vương",
+        "url": "https://en.wikipedia.org/wiki/King_Wu_of_Zhou"
+      }
+    ]
+  },
+  {
+    "id": "khuong-tu-nha",
+    "countryId": "china",
+    "name": "Khương Tử Nha",
+    "aliases": [],
+    "wiki": "Jiang Ziya",
+    "role": "Nhân vật được sử học truyền thống ghi là người giúp Chu Văn Vương và Chu Vũ Vương",
+    "biography": "Nhân vật được sử học truyền thống ghi là người giúp Chu Văn Vương và Chu Vũ Vương; thủy tổ nước Tề. Các chuyện thần phép thuộc văn học về sau.",
+    "lifespan": "Không rõ năm sinh · Hoạt động cuối Thương, đầu Chu",
+    "sources": [
+      {
+        "title": "Khương Tử Nha",
+        "url": "https://en.wikipedia.org/wiki/Jiang_Ziya"
+      }
+    ]
+  },
+  {
+    "id": "khong-tu",
+    "countryId": "china",
+    "name": "Khổng Tử",
+    "aliases": [],
+    "wiki": "Confucius",
+    "role": "Nhà tư tưởng cuối thời Xuân Thu, có ảnh hưởng lâu dài tới giáo dục, đạo đức và chính trị Đông Á.",
+    "biography": "Nhà tư tưởng cuối thời Xuân Thu, có ảnh hưởng lâu dài tới giáo dục, đạo đức và chính trị Đông Á.",
+    "lifespan": "Khoảng 551–479 TCN",
+    "sources": [
+      {
+        "title": "Khổng Tử",
+        "url": "https://en.wikipedia.org/wiki/Confucius"
+      }
+    ]
+  },
+  {
+    "id": "ton-vu",
+    "countryId": "china",
+    "name": "Tôn Vũ",
+    "aliases": [],
+    "wiki": "Sun Tzu",
+    "role": "Nhà quân sự theo truyền thống gắn với nước Ngô cuối thời Xuân Thu và tác phẩm Binh pháp Tôn Tử",
+    "biography": "Nhà quân sự theo truyền thống gắn với nước Ngô cuối thời Xuân Thu và tác phẩm Binh pháp Tôn Tử; thân thế và quá trình hình thành văn bản còn được nghiên cứu.",
+    "lifespan": "Không rõ năm sinh · Thân thế còn được tranh luận",
+    "sources": [
+      {
+        "title": "Tôn Vũ",
+        "url": "https://en.wikipedia.org/wiki/Sun_Tzu"
+      }
+    ]
+  },
+  {
+    "id": "thuong-uong",
+    "countryId": "china",
+    "name": "Thương Ưởng",
+    "aliases": [],
+    "wiki": "Shang Yang",
+    "role": "Nhà cải cách nước Tần thời Chiến Quốc, gắn với các cải cách hành chính, pháp luật và quân sự.",
+    "biography": "Nhà cải cách nước Tần thời Chiến Quốc, gắn với các cải cách hành chính, pháp luật và quân sự.",
+    "lifespan": "Khoảng 390–338 TCN",
+    "sources": [
+      {
+        "title": "Thương Ưởng",
+        "url": "https://en.wikipedia.org/wiki/Shang_Yang"
+      }
+    ]
+  },
+  {
+    "id": "luu-bang",
+    "countryId": "china",
+    "name": "Lưu Bang · Hán Cao Tổ",
+    "aliases": [
+      "Lưu Bang",
+      "Hán Cao Tổ"
+    ],
+    "wiki": "Emperor Gaozu of Han",
+    "role": "Được phong Hán vương năm 206 TCN, đánh bại Hạng Vũ rồi xưng hoàng đế năm 202 TCN, mở đầu đế chế Hán.",
+    "biography": "Được phong Hán vương năm 206 TCN, đánh bại Hạng Vũ rồi xưng hoàng đế năm 202 TCN, mở đầu đế chế Hán.",
+    "lifespan": "256 hoặc 247–195 TCN",
+    "sources": [
+      {
+        "title": "Lưu Bang · Hán Cao Tổ",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Gaozu_of_Han"
+      }
+    ]
+  },
+  {
+    "id": "hang-vu",
+    "countryId": "china",
+    "name": "Hạng Vũ",
+    "aliases": [],
+    "wiki": "Xiang Yu",
+    "role": "Tây Sở Bá vương, tổ chức phân phong sau khi nhà Tần sụp đổ và tranh quyền với Lưu Bang trong chiến tranh Hán–Sở.",
+    "biography": "Tây Sở Bá vương, tổ chức phân phong sau khi nhà Tần sụp đổ và tranh quyền với Lưu Bang trong chiến tranh Hán–Sở.",
+    "lifespan": "Khoảng 232–202 TCN",
+    "sources": [
+      {
+        "title": "Hạng Vũ",
+        "url": "https://en.wikipedia.org/wiki/Xiang_Yu"
+      }
+    ]
+  },
+  {
+    "id": "han-tin",
+    "countryId": "china",
+    "name": "Hàn Tín",
+    "aliases": [],
+    "wiki": "Han Xin",
+    "role": "Tướng của Lưu Bang, chỉ huy nhiều chiến dịch quyết định trong chiến tranh Hán–Sở và góp phần lập nhà Hán.",
+    "biography": "Tướng của Lưu Bang, chỉ huy nhiều chiến dịch quyết định trong chiến tranh Hán–Sở và góp phần lập nhà Hán.",
+    "lifespan": "Khoảng 231–196 TCN",
+    "sources": [
+      {
+        "title": "Hàn Tín",
+        "url": "https://en.wikipedia.org/wiki/Han_Xin"
+      }
+    ]
+  },
+  {
+    "id": "tieu-ha",
+    "countryId": "china",
+    "name": "Tiêu Hà",
+    "aliases": [],
+    "wiki": "Xiao He",
+    "role": "Trọng thần của Lưu Bang, tổ chức hành chính và hậu cần, giữ vai trò quan trọng trong quá trình dựng nhà Hán.",
+    "biography": "Trọng thần của Lưu Bang, tổ chức hành chính và hậu cần, giữ vai trò quan trọng trong quá trình dựng nhà Hán.",
+    "lifespan": "257–193 TCN",
+    "sources": [
+      {
+        "title": "Tiêu Hà",
+        "url": "https://en.wikipedia.org/wiki/Xiao_He"
+      }
+    ]
+  },
+  {
+    "id": "truong-luong",
+    "countryId": "china",
+    "name": "Trương Lương",
+    "aliases": [],
+    "wiki": "Zhang Liang (Western Han)",
+    "role": "Mưu sĩ của Lưu Bang trong chiến tranh chống Tần và Hán–Sở",
+    "biography": "Mưu sĩ của Lưu Bang trong chiến tranh chống Tần và Hán–Sở; một trong những công thần đầu nhà Hán.",
+    "lifespan": "Khoảng 251–189 TCN",
+    "sources": [
+      {
+        "title": "Trương Lương",
+        "url": "https://en.wikipedia.org/wiki/Zhang_Liang_(Western_Han)"
+      }
+    ]
+  },
+  {
+    "id": "vuong-mang",
+    "countryId": "china",
+    "name": "Vương Mãng",
+    "aliases": [],
+    "wiki": "Wang Mang",
+    "role": "Người lập nhà Tân năm 9, thực hiện nhiều cải cách và bị lật đổ năm 23.",
+    "biography": "Người lập nhà Tân năm 9, thực hiện nhiều cải cách và bị lật đổ năm 23.",
+    "lifespan": "45 TCN – 23",
+    "sources": [
+      {
+        "title": "Vương Mãng",
+        "url": "https://en.wikipedia.org/wiki/Wang_Mang"
+      }
+    ]
+  },
+  {
+    "id": "han-quang-vu",
+    "countryId": "china",
+    "name": "Lưu Tú · Hán Quang Vũ Đế",
+    "aliases": [
+      "Lưu Tú",
+      "Hán Quang Vũ Đế"
+    ],
+    "wiki": "Emperor Guangwu of Han",
+    "role": "Hoàng đế khôi phục nhà Hán năm 25, mở đầu Đông Hán với kinh đô Lạc Dương.",
+    "biography": "Hoàng đế khôi phục nhà Hán năm 25, mở đầu Đông Hán với kinh đô Lạc Dương.",
+    "lifespan": "6 TCN – 57",
+    "sources": [
+      {
+        "title": "Lưu Tú · Hán Quang Vũ Đế",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Guangwu_of_Han"
+      }
+    ]
+  },
+  {
+    "id": "tao-thao",
+    "countryId": "china",
+    "name": "Tào Tháo",
+    "aliases": [],
+    "wiki": "Cao Cao",
+    "role": "Lãnh tụ quân sự cuối Đông Hán, đặt nền tảng cho nước Ngụy",
+    "biography": "Lãnh tụ quân sự cuối Đông Hán, đặt nền tảng cho nước Ngụy; không trực tiếp xưng hoàng đế, được Tào Phi truy tôn Ngụy Vũ Đế.",
+    "lifespan": "155–220",
+    "sources": [
+      {
+        "title": "Tào Tháo",
+        "url": "https://en.wikipedia.org/wiki/Cao_Cao"
+      }
+    ]
+  },
+  {
+    "id": "tao-phi",
+    "countryId": "china",
+    "name": "Tào Phi",
+    "aliases": [],
+    "wiki": "Cao Pi",
+    "role": "Con Tào Tháo, nhận ngôi từ Hán Hiến Đế năm 220 và lập Tào Ngụy.",
+    "biography": "Con Tào Tháo, nhận ngôi từ Hán Hiến Đế năm 220 và lập Tào Ngụy.",
+    "lifespan": "187–226",
+    "sources": [
+      {
+        "title": "Tào Phi",
+        "url": "https://en.wikipedia.org/wiki/Cao_Pi"
+      }
+    ]
+  },
+  {
+    "id": "ton-quyen",
+    "countryId": "china",
+    "name": "Tôn Quyền",
+    "aliases": [],
+    "wiki": "Sun Quan",
+    "role": "Người củng cố thế lực Giang Đông và xưng hoàng đế Đông Ngô năm 229, một trong ba nước thời Tam Quốc.",
+    "biography": "Người củng cố thế lực Giang Đông và xưng hoàng đế Đông Ngô năm 229, một trong ba nước thời Tam Quốc.",
+    "lifespan": "182–252",
+    "sources": [
+      {
+        "title": "Tôn Quyền",
+        "url": "https://en.wikipedia.org/wiki/Sun_Quan"
+      }
+    ]
+  },
+  {
+    "id": "tu-ma-y",
+    "countryId": "china",
+    "name": "Tư Mã Ý",
+    "aliases": [],
+    "wiki": "Sima Yi",
+    "role": "Trọng thần và tướng Tào Ngụy, đặt nền tảng quyền lực cho họ Tư Mã",
+    "biography": "Trọng thần và tướng Tào Ngụy, đặt nền tảng quyền lực cho họ Tư Mã; mất trước khi nhà Tấn thành lập và được truy tôn sau này.",
+    "lifespan": "179–251",
+    "sources": [
+      {
+        "title": "Tư Mã Ý",
+        "url": "https://en.wikipedia.org/wiki/Sima_Yi"
+      }
+    ]
+  },
+  {
+    "id": "tu-ma-viem",
+    "countryId": "china",
+    "name": "Tư Mã Viêm · Tấn Vũ Đế",
+    "aliases": [
+      "Tư Mã Viêm",
+      "Tấn Vũ Đế"
+    ],
+    "wiki": "Emperor Wu of Jin",
+    "role": "Người lập Tây Tấn năm 266 theo lịch dương thường dùng (thường ghi 265 theo niên hiệu), thống nhất Tam Quốc sau khi diệt Ngô năm 280.",
+    "biography": "Người lập Tây Tấn năm 266 theo lịch dương thường dùng (thường ghi 265 theo niên hiệu), thống nhất Tam Quốc sau khi diệt Ngô năm 280.",
+    "lifespan": "236–290",
+    "sources": [
+      {
+        "title": "Tư Mã Viêm · Tấn Vũ Đế",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Wu_of_Jin"
+      }
+    ]
+  },
+  {
+    "id": "tu-ma-due",
+    "countryId": "china",
+    "name": "Tư Mã Duệ · Tấn Nguyên Đế",
+    "aliases": [
+      "Tư Mã Duệ",
+      "Tấn Nguyên Đế"
+    ],
+    "wiki": "Emperor Yuan of Jin",
+    "role": "Dựng triều đình Tấn tại Kiến Khang năm 317, xưng hoàng đế năm 318, mở đầu Đông Tấn.",
+    "biography": "Dựng triều đình Tấn tại Kiến Khang năm 317, xưng hoàng đế năm 318, mở đầu Đông Tấn.",
+    "lifespan": "276–323",
+    "sources": [
+      {
+        "title": "Tư Mã Duệ · Tấn Nguyên Đế",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Yuan_of_Jin"
+      }
+    ]
+  },
+  {
+    "id": "luu-uyen",
+    "countryId": "china",
+    "name": "Lưu Uyên",
+    "aliases": [],
+    "wiki": "Liu Yuan (Han-Zhao)",
+    "role": "Người lập nước Hán năm 304, chính thể về sau được gọi Hán–Triệu trong thời Thập Lục Quốc.",
+    "biography": "Người lập nước Hán năm 304, chính thể về sau được gọi Hán–Triệu trong thời Thập Lục Quốc.",
+    "lifespan": "252 hoặc 253–310",
+    "sources": [
+      {
+        "title": "Lưu Uyên",
+        "url": "https://en.wikipedia.org/wiki/Liu_Yuan_(Han-Zhao)"
+      }
+    ]
+  },
+  {
+    "id": "ly-hung",
+    "countryId": "china",
+    "name": "Lý Hùng",
+    "aliases": [],
+    "wiki": "Li Xiong",
+    "role": "Lập chính quyền Thành tại Thành Đô, xưng vương năm 304 và hoàng đế năm 306",
+    "biography": "Lập chính quyền Thành tại Thành Đô, xưng vương năm 304 và hoàng đế năm 306; chính thể thuộc Thành–Hán.",
+    "lifespan": "274–334",
+    "sources": [
+      {
+        "title": "Lý Hùng",
+        "url": "https://en.wikipedia.org/wiki/Li_Xiong"
+      }
+    ]
+  },
+  {
+    "id": "truong-quy",
+    "countryId": "china",
+    "name": "Trương Quỹ",
+    "aliases": [],
+    "wiki": "Zhang Gui",
+    "role": "Quan cai trị Lương Châu, đặt nền tảng cho chính quyền họ Trương được sử học gọi là Tiền Lương.",
+    "biography": "Quan cai trị Lương Châu, đặt nền tảng cho chính quyền họ Trương được sử học gọi là Tiền Lương.",
+    "lifespan": "255–314",
+    "sources": [
+      {
+        "title": "Trương Quỹ",
+        "url": "https://en.wikipedia.org/wiki/Zhang_Gui"
+      }
+    ]
+  },
+  {
+    "id": "thach-lac",
+    "countryId": "china",
+    "name": "Thạch Lặc",
+    "aliases": [],
+    "wiki": "Shi Le",
+    "role": "Người lập Hậu Triệu năm 319, một thế lực lớn ở miền bắc thời Thập Lục Quốc.",
+    "biography": "Người lập Hậu Triệu năm 319, một thế lực lớn ở miền bắc thời Thập Lục Quốc.",
+    "lifespan": "274–333",
+    "sources": [
+      {
+        "title": "Thạch Lặc",
+        "url": "https://en.wikipedia.org/wiki/Shi_Le"
+      }
+    ]
+  },
+  {
+    "id": "mo-dung-hoang",
+    "countryId": "china",
+    "name": "Mộ Dung Hoảng",
+    "aliases": [],
+    "wiki": "Murong Huang",
+    "role": "Người xưng Yên vương năm 337, khởi lập Tiền Yên của họ Mộ Dung.",
+    "biography": "Người xưng Yên vương năm 337, khởi lập Tiền Yên của họ Mộ Dung.",
+    "lifespan": "297–348",
+    "sources": [
+      {
+        "title": "Mộ Dung Hoảng",
+        "url": "https://en.wikipedia.org/wiki/Murong_Huang"
+      }
+    ]
+  },
+  {
+    "id": "phu-kien-kien-lap",
+    "countryId": "china",
+    "name": "Phù Kiện · Tiền Tần",
+    "aliases": [],
+    "wiki": "Fu Jian (317–355)",
+    "role": "Người lập Tiền Tần năm 351",
+    "biography": "Người lập Tiền Tần năm 351; phân biệt với Phù Kiên (337–385), vị vua cai trị vào thời trận Phì Thủy.",
+    "lifespan": "317–355",
+    "sources": [
+      {
+        "title": "Phù Kiện · Tiền Tần",
+        "url": "https://en.wikipedia.org/wiki/Fu_Jian_(317%E2%80%93355)"
+      }
+    ]
+  },
+  {
+    "id": "mo-dung-thuy",
+    "countryId": "china",
+    "name": "Mộ Dung Thùy",
+    "aliases": [],
+    "wiki": "Murong Chui",
+    "role": "Tướng và người lập Hậu Yên năm 384 sau khi Tiền Tần suy yếu.",
+    "biography": "Tướng và người lập Hậu Yên năm 384 sau khi Tiền Tần suy yếu.",
+    "lifespan": "326–396",
+    "sources": [
+      {
+        "title": "Mộ Dung Thùy",
+        "url": "https://en.wikipedia.org/wiki/Murong_Chui"
+      }
+    ]
+  },
+  {
+    "id": "dieu-truong",
+    "countryId": "china",
+    "name": "Diêu Trường",
+    "aliases": [],
+    "wiki": "Yao Chang",
+    "role": "Người lập Hậu Tần năm 384 trong bối cảnh Tiền Tần tan rã.",
+    "biography": "Người lập Hậu Tần năm 384 trong bối cảnh Tiền Tần tan rã.",
+    "lifespan": "331–394",
+    "sources": [
+      {
+        "title": "Diêu Trường",
+        "url": "https://en.wikipedia.org/wiki/Yao_Chang"
+      }
+    ]
+  },
+  {
+    "id": "khat-phuc-quoc-nhan",
+    "countryId": "china",
+    "name": "Khất Phục Quốc Nhân",
+    "aliases": [],
+    "wiki": "Qifu Guoren",
+    "role": "Người khởi lập Tây Tần năm 385 ở vùng đông bắc cao nguyên Thanh Tạng.",
+    "biography": "Người khởi lập Tây Tần năm 385 ở vùng đông bắc cao nguyên Thanh Tạng.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Khất Phục Quốc Nhân",
+        "url": "https://en.wikipedia.org/wiki/Qifu_Guoren"
+      }
+    ]
+  },
+  {
+    "id": "lu-quang",
+    "countryId": "china",
+    "name": "Lữ Quang",
+    "aliases": [],
+    "wiki": "Lü Guang",
+    "role": "Tướng của Tiền Tần, xây dựng chính quyền Hậu Lương ở hành lang Hà Tây từ năm 386.",
+    "biography": "Tướng của Tiền Tần, xây dựng chính quyền Hậu Lương ở hành lang Hà Tây từ năm 386.",
+    "lifespan": "337–400",
+    "sources": [
+      {
+        "title": "Lữ Quang",
+        "url": "https://en.wikipedia.org/wiki/L%C3%BC_Guang"
+      }
+    ]
+  },
+  {
+    "id": "thac-bat-o-co",
+    "countryId": "china",
+    "name": "Thốc Phát Ô Cô",
+    "aliases": [],
+    "wiki": "Tufa Wugu",
+    "role": "Người lập Nam Lương năm 397",
+    "biography": "Người lập Nam Lương năm 397; họ Thốc Phát khác với họ Thác Bạt của Bắc Ngụy.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Thốc Phát Ô Cô",
+        "url": "https://en.wikipedia.org/wiki/Tufa_Wugu"
+      }
+    ]
+  },
+  {
+    "id": "doan-nghiep",
+    "countryId": "china",
+    "name": "Đoàn Nghiệp",
+    "aliases": [],
+    "wiki": "Duan Ye",
+    "role": "Người đứng đầu Bắc Lương khi chính thể được lập năm 397",
+    "biography": "Người đứng đầu Bắc Lương khi chính thể được lập năm 397; bị Thư Cừ Mông Tốn thay thế năm 401.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Đoàn Nghiệp",
+        "url": "https://en.wikipedia.org/wiki/Duan_Ye"
+      }
+    ]
+  },
+  {
+    "id": "mo-dung-duc",
+    "countryId": "china",
+    "name": "Mộ Dung Đức",
+    "aliases": [],
+    "wiki": "Murong De",
+    "role": "Người lập Nam Yên năm 398, một chính thể ở vùng Sơn Đông thời Thập Lục Quốc.",
+    "biography": "Người lập Nam Yên năm 398, một chính thể ở vùng Sơn Đông thời Thập Lục Quốc.",
+    "lifespan": "336–405",
+    "sources": [
+      {
+        "title": "Mộ Dung Đức",
+        "url": "https://en.wikipedia.org/wiki/Murong_De"
+      }
+    ]
+  },
+  {
+    "id": "ly-cao",
+    "countryId": "china",
+    "name": "Lý Cảo",
+    "aliases": [],
+    "wiki": "Li Gao",
+    "role": "Người lập Tây Lương năm 400 tại hành lang Hà Tây.",
+    "biography": "Người lập Tây Lương năm 400 tại hành lang Hà Tây.",
+    "lifespan": "351–417",
+    "sources": [
+      {
+        "title": "Lý Cảo",
+        "url": "https://en.wikipedia.org/wiki/Li_Gao"
+      }
+    ]
+  },
+  {
+    "id": "hach-lien-bot-bot",
+    "countryId": "china",
+    "name": "Hách Liên Bột Bột",
+    "aliases": [],
+    "wiki": "Helian Bobo",
+    "role": "Người lập nước Hạ năm 407",
+    "biography": "Người lập nước Hạ năm 407; phân biệt với nhà Hạ trong truyền thống thời thượng cổ.",
+    "lifespan": "381–425",
+    "sources": [
+      {
+        "title": "Hách Liên Bột Bột",
+        "url": "https://en.wikipedia.org/wiki/Helian_Bobo"
+      }
+    ]
+  },
+  {
+    "id": "phung-bat",
+    "countryId": "china",
+    "name": "Phùng Bạt",
+    "aliases": [],
+    "wiki": "Feng Ba",
+    "role": "Người nắm quyền Bắc Yên từ năm 409 sau Cao Vân",
+    "biography": "Người nắm quyền Bắc Yên từ năm 409 sau Cao Vân; sử học có cách phân kỳ khác nhau về khởi đầu Bắc Yên.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Phùng Bạt",
+        "url": "https://en.wikipedia.org/wiki/Feng_Ba"
+      }
+    ]
+  },
+  {
+    "id": "mo-dung-hong",
+    "countryId": "china",
+    "name": "Mộ Dung Hoằng",
+    "aliases": [],
+    "wiki": "Murong Hong",
+    "role": "Người khởi lập Tây Yên năm 384",
+    "biography": "Người khởi lập Tây Yên năm 384; Tây Yên không thuộc danh sách mười sáu nước truyền thống.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Mộ Dung Hoằng",
+        "url": "https://en.wikipedia.org/wiki/Murong_Hong"
+      }
+    ]
+  },
+  {
+    "id": "nhiem-man",
+    "countryId": "china",
+    "name": "Nhiễm Mẫn",
+    "aliases": [],
+    "wiki": "Ran Min",
+    "role": "Người lập Nhiễm Ngụy năm 350 sau khủng hoảng Hậu Triệu",
+    "biography": "Người lập Nhiễm Ngụy năm 350 sau khủng hoảng Hậu Triệu; chính thể kết thúc năm 352.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Nhiễm Mẫn",
+        "url": "https://en.wikipedia.org/wiki/Ran_Min"
+      }
+    ]
+  },
+  {
+    "id": "thac-bat-y-lo",
+    "countryId": "china",
+    "name": "Thác Bạt Y Lư",
+    "aliases": [],
+    "wiki": "Tuoba Yilu",
+    "role": "Thủ lĩnh Thác Bạt, được phong Đại vương năm 315",
+    "biography": "Thủ lĩnh Thác Bạt, được phong Đại vương năm 315; một nhân vật đặt nền tảng nước Đại.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Thác Bạt Y Lư",
+        "url": "https://en.wikipedia.org/wiki/Tuoba_Yilu"
+      }
+    ]
+  },
+  {
+    "id": "dich-lieu",
+    "countryId": "china",
+    "name": "Địch Liêu",
+    "aliases": [],
+    "wiki": "Zhai Liao",
+    "role": "Người lập Địch Ngụy năm 388 tại miền bắc trong thời phân liệt.",
+    "biography": "Người lập Địch Ngụy năm 388 tại miền bắc trong thời phân liệt.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Địch Liêu",
+        "url": "https://en.wikipedia.org/wiki/Zhai_Liao"
+      }
+    ]
+  },
+  {
+    "id": "hoan-huyen",
+    "countryId": "china",
+    "name": "Hoàn Huyền",
+    "aliases": [],
+    "wiki": "Huan Xuan",
+    "role": "Người chiếm ngôi Đông Tấn và lập chính thể Hoàn Sở năm 403",
+    "biography": "Người chiếm ngôi Đông Tấn và lập chính thể Hoàn Sở năm 403; thất bại năm 404.",
+    "lifespan": "369–404",
+    "sources": [
+      {
+        "title": "Hoàn Huyền",
+        "url": "https://en.wikipedia.org/wiki/Huan_Xuan"
+      }
+    ]
+  },
+  {
+    "id": "tieu-tung",
+    "countryId": "china",
+    "name": "Tiếu Túng",
+    "aliases": [],
+    "wiki": "Qiao Zong",
+    "role": "Người đứng đầu chính quyền Tây Thục tại Thành Đô từ năm 405 đến 413.",
+    "biography": "Người đứng đầu chính quyền Tây Thục tại Thành Đô từ năm 405 đến 413.",
+    "lifespan": "Không xác định",
+    "sources": [
+      {
+        "title": "Tiếu Túng",
+        "url": "https://en.wikipedia.org/wiki/Qiao_Zong"
+      }
+    ]
+  },
+  {
+    "id": "luu-du",
+    "countryId": "china",
+    "name": "Lưu Dụ · Tống Vũ Đế",
+    "aliases": [
+      "Lưu Dụ",
+      "Tống Vũ Đế"
+    ],
+    "wiki": "Emperor Wu of Song",
+    "role": "Tướng Đông Tấn, lập nhà Lưu Tống năm 420, mở đầu chuỗi Nam triều.",
+    "biography": "Tướng Đông Tấn, lập nhà Lưu Tống năm 420, mở đầu chuỗi Nam triều.",
+    "lifespan": "363–422",
+    "sources": [
+      {
+        "title": "Lưu Dụ · Tống Vũ Đế",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Wu_of_Song"
+      }
+    ]
+  },
+  {
+    "id": "tieu-dao-thanh",
+    "countryId": "china",
+    "name": "Tiêu Đạo Thành",
+    "aliases": [],
+    "wiki": "Emperor Gao of Southern Qi",
+    "role": "Người thay Lưu Tống và lập Nam Tề năm 479.",
+    "biography": "Người thay Lưu Tống và lập Nam Tề năm 479.",
+    "lifespan": "427–482",
+    "sources": [
+      {
+        "title": "Tiêu Đạo Thành",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Gao_of_Southern_Qi"
+      }
+    ]
+  },
+  {
+    "id": "tieu-dien",
+    "countryId": "china",
+    "name": "Tiêu Diễn · Lương Vũ Đế",
+    "aliases": [],
+    "wiki": "Emperor Wu of Liang",
+    "role": "Người lập nhà Lương năm 502 ở miền nam",
+    "biography": "Người lập nhà Lương năm 502 ở miền nam; triều đại gắn với hoạt động bảo trợ Phật giáo.",
+    "lifespan": "464–549",
+    "sources": [
+      {
+        "title": "Tiêu Diễn · Lương Vũ Đế",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Wu_of_Liang"
+      }
+    ]
+  },
+  {
+    "id": "thac-bat-khue",
+    "countryId": "china",
+    "name": "Thác Bạt Khuê",
+    "aliases": [],
+    "wiki": "Emperor Daowu of Northern Wei",
+    "role": "Người lập Bắc Ngụy năm 386, mở đầu vương triều Thác Bạt ở miền bắc.",
+    "biography": "Người lập Bắc Ngụy năm 386, mở đầu vương triều Thác Bạt ở miền bắc.",
+    "lifespan": "371–409",
+    "sources": [
+      {
+        "title": "Thác Bạt Khuê",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Daowu_of_Northern_Wei"
+      }
+    ]
+  },
+  {
+    "id": "nguyen-thien",
+    "countryId": "china",
+    "name": "Nguyên Thiện Kiến · Đông Ngụy Hiếu Tĩnh Đế",
+    "aliases": [],
+    "wiki": "Emperor Xiaojing of Eastern Wei",
+    "role": "Hoàng đế duy nhất của Đông Ngụy (534–550)",
+    "biography": "Hoàng đế duy nhất của Đông Ngụy (534–550); quyền lực thực tế nằm trong tay Cao Hoan và họ Cao.",
+    "lifespan": "524–552",
+    "sources": [
+      {
+        "title": "Nguyên Thiện · Đông Ngụy Hiếu Tĩnh Đế",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Xiaojing_of_Eastern_Wei"
+      }
+    ]
+  },
+  {
+    "id": "nguyen-bao-cu",
+    "countryId": "china",
+    "name": "Nguyên Bảo Cự · Tây Ngụy Văn Đế",
+    "aliases": [],
+    "wiki": "Emperor Wen of Western Wei",
+    "role": "Hoàng đế mở đầu Tây Ngụy năm 535",
+    "biography": "Hoàng đế mở đầu Tây Ngụy năm 535; chính quyền chịu ảnh hưởng quyết định của Vũ Văn Thái.",
+    "lifespan": "507–551",
+    "sources": [
+      {
+        "title": "Nguyên Bảo Cự · Tây Ngụy Văn Đế",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Wen_of_Western_Wei"
+      }
+    ]
+  },
+  {
+    "id": "cao-duong",
+    "countryId": "china",
+    "name": "Cao Dương · Bắc Tề Văn Tuyên Đế",
+    "aliases": [],
+    "wiki": "Emperor Wenxuan of Northern Qi",
+    "role": "Người thay Đông Ngụy và lập Bắc Tề năm 550.",
+    "biography": "Người thay Đông Ngụy và lập Bắc Tề năm 550.",
+    "lifespan": "526–559",
+    "sources": [
+      {
+        "title": "Cao Dương · Bắc Tề Văn Tuyên Đế",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Wenxuan_of_Northern_Qi"
+      }
+    ]
+  },
+  {
+    "id": "vu-van-giac",
+    "countryId": "china",
+    "name": "Vũ Văn Giác",
+    "aliases": [],
+    "wiki": "Emperor Xiaomin of Northern Zhou",
+    "role": "Vị vua mở đầu Bắc Chu năm 557 sau khi chính quyền họ Vũ Văn thay Tây Ngụy.",
+    "biography": "Vị vua mở đầu Bắc Chu năm 557 sau khi chính quyền họ Vũ Văn thay Tây Ngụy.",
+    "lifespan": "542–557",
+    "sources": [
+      {
+        "title": "Vũ Văn Giác",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Xiaomin_of_Northern_Zhou"
+      }
+    ]
+  },
+  {
+    "id": "tieu-sat",
+    "countryId": "china",
+    "name": "Tiêu Sát",
+    "aliases": [],
+    "wiki": "Emperor Xuan of Western Liang",
+    "role": "Người lập Tây Lương tại Giang Lăng năm 555, được Tây Ngụy bảo trợ.",
+    "biography": "Người lập Tây Lương tại Giang Lăng năm 555, được Tây Ngụy bảo trợ.",
+    "lifespan": "519–562",
+    "sources": [
+      {
+        "title": "Tiêu Sát",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Xuan_of_Western_Liang"
+      }
+    ]
+  },
+  {
+    "id": "tuy-van-de",
+    "countryId": "china",
+    "name": "Dương Kiên · Tùy Văn Đế",
+    "aliases": [
+      "Dương Kiên",
+      "Tùy Văn Đế"
+    ],
+    "wiki": "Emperor Wen of Sui",
+    "role": "Người lập nhà Tùy năm 581 và thống nhất bắc–nam sau khi chinh phục Trần năm 589.",
+    "biography": "Người lập nhà Tùy năm 581 và thống nhất bắc–nam sau khi chinh phục Trần năm 589.",
+    "lifespan": "541–604",
+    "sources": [
+      {
+        "title": "Dương Kiên · Tùy Văn Đế",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Wen_of_Sui"
+      }
+    ]
+  },
+  {
+    "id": "duong-cao-to",
+    "countryId": "china",
+    "name": "Lý Uyên · Đường Cao Tổ",
+    "aliases": [
+      "Lý Uyên",
+      "Đường Cao Tổ"
+    ],
+    "wiki": "Emperor Gaozu of Tang",
+    "role": "Người lập nhà Đường năm 618 trong quá trình nhà Tùy sụp đổ.",
+    "biography": "Người lập nhà Đường năm 618 trong quá trình nhà Tùy sụp đổ.",
+    "lifespan": "566–635",
+    "sources": [
+      {
+        "title": "Lý Uyên · Đường Cao Tổ",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Gaozu_of_Tang"
+      }
+    ]
+  },
+  {
+    "id": "vo-tac-thien",
+    "countryId": "china",
+    "name": "Võ Tắc Thiên",
+    "aliases": [],
+    "wiki": "Wu Zetian",
+    "role": "Nữ hoàng đế lập triều Võ Chu (690–705), xen giữa hai giai đoạn của nhà Đường.",
+    "biography": "Nữ hoàng đế lập triều Võ Chu (690–705), xen giữa hai giai đoạn của nhà Đường.",
+    "lifespan": "624–705",
+    "sources": [
+      {
+        "title": "Võ Tắc Thiên",
+        "url": "https://en.wikipedia.org/wiki/Wu_Zetian"
+      }
+    ]
+  },
+  {
+    "id": "duong-huyen-tong",
+    "countryId": "china",
+    "name": "Đường Huyền Tông",
+    "aliases": [],
+    "wiki": "Emperor Xuanzong of Tang",
+    "role": "Hoàng đế Đường thời Khai Nguyên",
+    "biography": "Hoàng đế Đường thời Khai Nguyên; cuối triều xảy ra loạn An Lộc Sơn, làm thay đổi sâu sắc đế chế.",
+    "lifespan": "685–762",
+    "sources": [
+      {
+        "title": "Đường Huyền Tông",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Xuanzong_of_Tang"
+      }
+    ]
+  },
+  {
+    "id": "chu-on",
+    "countryId": "china",
+    "name": "Chu Ôn",
+    "aliases": [],
+    "wiki": "Zhu Wen",
+    "role": "Người kết thúc nhà Đường và lập Hậu Lương năm 907, mở đầu Ngũ Đại.",
+    "biography": "Người kết thúc nhà Đường và lập Hậu Lương năm 907, mở đầu Ngũ Đại.",
+    "lifespan": "852–912",
+    "sources": [
+      {
+        "title": "Chu Ôn",
+        "url": "https://en.wikipedia.org/wiki/Zhu_Wen"
+      }
+    ]
+  },
+  {
+    "id": "ly-ton-huc",
+    "countryId": "china",
+    "name": "Lý Tồn Úc",
+    "aliases": [],
+    "wiki": "Li Cunxu",
+    "role": "Người lập Hậu Đường năm 923 và đánh bại Hậu Lương.",
+    "biography": "Người lập Hậu Đường năm 923 và đánh bại Hậu Lương.",
+    "lifespan": "885–926",
+    "sources": [
+      {
+        "title": "Lý Tồn Úc",
+        "url": "https://en.wikipedia.org/wiki/Li_Cunxu"
+      }
+    ]
+  },
+  {
+    "id": "thach-kinh-duong",
+    "countryId": "china",
+    "name": "Thạch Kính Đường",
+    "aliases": [],
+    "wiki": "Shi Jingtang",
+    "role": "Người lập Hậu Tấn năm 936 với sự hỗ trợ của Khiết Đan.",
+    "biography": "Người lập Hậu Tấn năm 936 với sự hỗ trợ của Khiết Đan.",
+    "lifespan": "892–942",
+    "sources": [
+      {
+        "title": "Thạch Kính Đường",
+        "url": "https://en.wikipedia.org/wiki/Shi_Jingtang"
+      }
+    ]
+  },
+  {
+    "id": "luu-tri-vien",
+    "countryId": "china",
+    "name": "Lưu Tri Viễn",
+    "aliases": [],
+    "wiki": "Liu Zhiyuan",
+    "role": "Người lập Hậu Hán năm 947, một trong Ngũ Đại ở miền bắc.",
+    "biography": "Người lập Hậu Hán năm 947, một trong Ngũ Đại ở miền bắc.",
+    "lifespan": "895–948",
+    "sources": [
+      {
+        "title": "Lưu Tri Viễn",
+        "url": "https://en.wikipedia.org/wiki/Liu_Zhiyuan"
+      }
+    ]
+  },
+  {
+    "id": "quach-uy",
+    "countryId": "china",
+    "name": "Quách Uy",
+    "aliases": [],
+    "wiki": "Guo Wei",
+    "role": "Người lập Hậu Chu năm 951 sau khi thay Hậu Hán.",
+    "biography": "Người lập Hậu Chu năm 951 sau khi thay Hậu Hán.",
+    "lifespan": "904–954",
+    "sources": [
+      {
+        "title": "Quách Uy",
+        "url": "https://en.wikipedia.org/wiki/Guo_Wei"
+      }
+    ]
+  },
+  {
+    "id": "duong-hanh-mat",
+    "countryId": "china",
+    "name": "Dương Hành Mật",
+    "aliases": [],
+    "wiki": "Yang Xingmi",
+    "role": "Người xây dựng thế lực Hoài Nam làm nền tảng nước Ngô của họ Dương, được phong Ngô vương năm 902.",
+    "biography": "Người xây dựng thế lực Hoài Nam làm nền tảng nước Ngô của họ Dương, được phong Ngô vương năm 902.",
+    "lifespan": "852–905",
+    "sources": [
+      {
+        "title": "Dương Hành Mật",
+        "url": "https://en.wikipedia.org/wiki/Yang_Xingmi"
+      }
+    ]
+  },
+  {
+    "id": "tien-luu",
+    "countryId": "china",
+    "name": "Tiền Lưu",
+    "aliases": [],
+    "wiki": "Qian Liu",
+    "role": "Người dựng nước Ngô Việt ở vùng Chiết Giang, một chính thể thuộc Thập Quốc.",
+    "biography": "Người dựng nước Ngô Việt ở vùng Chiết Giang, một chính thể thuộc Thập Quốc.",
+    "lifespan": "852–932",
+    "sources": [
+      {
+        "title": "Tiền Lưu",
+        "url": "https://en.wikipedia.org/wiki/Qian_Liu"
+      }
+    ]
+  },
+  {
+    "id": "vuong-tham-tri",
+    "countryId": "china",
+    "name": "Vương Thẩm Tri",
+    "aliases": [],
+    "wiki": "Wang Shenzhi",
+    "role": "Người đặt nền tảng nước Mân tại Phúc Kiến, được phong Mân vương năm 909.",
+    "biography": "Người đặt nền tảng nước Mân tại Phúc Kiến, được phong Mân vương năm 909.",
+    "lifespan": "862–925",
+    "sources": [
+      {
+        "title": "Vương Thẩm Tri",
+        "url": "https://en.wikipedia.org/wiki/Wang_Shenzhi"
+      }
+    ]
+  },
+  {
+    "id": "luu-nghiem",
+    "countryId": "china",
+    "name": "Lưu Nghiễm",
+    "aliases": [],
+    "wiki": "Liu Yan (emperor)",
+    "role": "Người xưng hoàng đế tại Quảng Châu năm 917, lập Nam Hán.",
+    "biography": "Người xưng hoàng đế tại Quảng Châu năm 917, lập Nam Hán.",
+    "lifespan": "889–942",
+    "sources": [
+      {
+        "title": "Lưu Nghiễm",
+        "url": "https://en.wikipedia.org/wiki/Liu_Yan_(emperor)"
+      }
+    ]
+  },
+  {
+    "id": "ma-an",
+    "countryId": "china",
+    "name": "Mã Ân",
+    "aliases": [],
+    "wiki": "Ma Yin",
+    "role": "Người lập Mã Sở ở vùng Hồ Nam, một trong Thập Quốc.",
+    "biography": "Người lập Mã Sở ở vùng Hồ Nam, một trong Thập Quốc.",
+    "lifespan": "Khoảng 853–930",
+    "sources": [
+      {
+        "title": "Mã Ân",
+        "url": "https://en.wikipedia.org/wiki/Ma_Yin"
+      }
+    ]
+  },
+  {
+    "id": "luu-sung",
+    "countryId": "china",
+    "name": "Lưu Sùng",
+    "aliases": [],
+    "wiki": "Liu Chong",
+    "role": "Người lập Bắc Hán năm 951 tại Thái Nguyên sau khi Hậu Hán sụp đổ.",
+    "biography": "Người lập Bắc Hán năm 951 tại Thái Nguyên sau khi Hậu Hán sụp đổ.",
+    "lifespan": "Khoảng 895–954",
+    "sources": [
+      {
+        "title": "Lưu Sùng",
+        "url": "https://en.wikipedia.org/wiki/Liu_Chong"
+      }
+    ]
+  },
+  {
+    "id": "cao-quy-hung",
+    "countryId": "china",
+    "name": "Cao Quý Hưng",
+    "aliases": [],
+    "wiki": "Gao Jixing",
+    "role": "Người đứng đầu Kinh Nam, được phong Nam Bình vương năm 924.",
+    "biography": "Người đứng đầu Kinh Nam, được phong Nam Bình vương năm 924.",
+    "lifespan": "858–929",
+    "sources": [
+      {
+        "title": "Cao Quý Hưng",
+        "url": "https://en.wikipedia.org/wiki/Gao_Jixing"
+      }
+    ]
+  },
+  {
+    "id": "vuong-kien",
+    "countryId": "china",
+    "name": "Vương Kiến · Tiền Thục",
+    "aliases": [],
+    "wiki": "Wang Jian (Former Shu)",
+    "role": "Người lập Tiền Thục năm 907 tại Thành Đô",
+    "biography": "Người lập Tiền Thục năm 907 tại Thành Đô; phân biệt với vị tướng Vương Tiễn thời Tần.",
+    "lifespan": "847–918",
+    "sources": [
+      {
+        "title": "Vương Kiến · Tiền Thục",
+        "url": "https://en.wikipedia.org/wiki/Wang_Jian_(Former_Shu)"
+      }
+    ]
+  },
+  {
+    "id": "manh-tri-tuong",
+    "countryId": "china",
+    "name": "Mạnh Tri Tường",
+    "aliases": [],
+    "wiki": "Meng Zhixiang",
+    "role": "Người xưng hoàng đế năm 934 và lập Hậu Thục ở vùng Tứ Xuyên.",
+    "biography": "Người xưng hoàng đế năm 934 và lập Hậu Thục ở vùng Tứ Xuyên.",
+    "lifespan": "874–934",
+    "sources": [
+      {
+        "title": "Mạnh Tri Tường",
+        "url": "https://en.wikipedia.org/wiki/Meng_Zhixiang"
+      }
+    ]
+  },
+  {
+    "id": "ly-bien",
+    "countryId": "china",
+    "name": "Lý Biện",
+    "aliases": [],
+    "wiki": "Li Bian",
+    "role": "Người thay nước Ngô và lập Nam Đường năm 937.",
+    "biography": "Người thay nước Ngô và lập Nam Đường năm 937.",
+    "lifespan": "889–943",
+    "sources": [
+      {
+        "title": "Lý Biện",
+        "url": "https://en.wikipedia.org/wiki/Li_Bian"
+      }
+    ]
+  },
+  {
+    "id": "trieu-khuong-dan",
+    "countryId": "china",
+    "name": "Triệu Khuông Dận · Tống Thái Tổ",
+    "aliases": [
+      "Triệu Khuông Dận",
+      "Tống Thái Tổ"
+    ],
+    "wiki": "Emperor Taizu of Song",
+    "role": "Người lập nhà Tống năm 960, bắt đầu quá trình chinh phục nhiều nước thời Thập Quốc.",
+    "biography": "Người lập nhà Tống năm 960, bắt đầu quá trình chinh phục nhiều nước thời Thập Quốc.",
+    "lifespan": "927–976",
+    "sources": [
+      {
+        "title": "Triệu Khuông Dận · Tống Thái Tổ",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Taizu_of_Song"
+      }
+    ]
+  },
+  {
+    "id": "da-luat-a-bao-co",
+    "countryId": "china",
+    "name": "Da Luật A Bảo Cơ",
+    "aliases": [],
+    "wiki": "Abaoji",
+    "role": "Thủ lĩnh Khiết Đan, xưng hoàng đế năm 916 và đặt nền tảng triều Liêu.",
+    "biography": "Thủ lĩnh Khiết Đan, xưng hoàng đế năm 916 và đặt nền tảng triều Liêu.",
+    "lifespan": "872–926",
+    "sources": [
+      {
+        "title": "Da Luật A Bảo Cơ",
+        "url": "https://en.wikipedia.org/wiki/Abaoji"
+      }
+    ]
+  },
+  {
+    "id": "ly-nguyen-hao",
+    "countryId": "china",
+    "name": "Lý Nguyên Hạo",
+    "aliases": [],
+    "wiki": "Emperor Jingzong of Western Xia",
+    "role": "Người xưng hoàng đế Tây Hạ năm 1038, xây dựng vương triều của người Đảng Hạng.",
+    "biography": "Người xưng hoàng đế Tây Hạ năm 1038, xây dựng vương triều của người Đảng Hạng.",
+    "lifespan": "1003–1048",
+    "sources": [
+      {
+        "title": "Lý Nguyên Hạo",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Jingzong_of_Western_Xia"
+      }
+    ]
+  },
+  {
+    "id": "hoan-nhan-a-cot-da",
+    "countryId": "china",
+    "name": "Hoàn Nhan A Cốt Đả",
+    "aliases": [],
+    "wiki": "Emperor Taizu of Jin",
+    "role": "Thủ lĩnh Nữ Chân lập nhà Kim năm 1115, mở đầu cuộc chiến chống Liêu.",
+    "biography": "Thủ lĩnh Nữ Chân lập nhà Kim năm 1115, mở đầu cuộc chiến chống Liêu.",
+    "lifespan": "1068–1123",
+    "sources": [
+      {
+        "title": "Hoàn Nhan A Cốt Đả",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Taizu_of_Jin"
+      }
+    ]
+  },
+  {
+    "id": "trieu-cau",
+    "countryId": "china",
+    "name": "Triệu Cấu · Tống Cao Tông",
+    "aliases": [],
+    "wiki": "Emperor Gaozong of Song",
+    "role": "Dựng lại triều đình Tống ở miền nam sau biến Tĩnh Khang năm 1127, mở đầu Nam Tống.",
+    "biography": "Dựng lại triều đình Tống ở miền nam sau biến Tĩnh Khang năm 1127, mở đầu Nam Tống.",
+    "lifespan": "1107–1187",
+    "sources": [
+      {
+        "title": "Triệu Cấu · Tống Cao Tông",
+        "url": "https://en.wikipedia.org/wiki/Emperor_Gaozong_of_Song"
+      }
+    ]
+  },
+  {
+    "id": "da-luat-dai-thach",
+    "countryId": "china",
+    "name": "Da Luật Đại Thạch",
+    "aliases": [],
+    "wiki": "Yelü Dashi",
+    "role": "Quý tộc Khiết Đan xây dựng Tây Liêu tại Trung Á sau khi nhà Liêu suy vong.",
+    "biography": "Quý tộc Khiết Đan xây dựng Tây Liêu tại Trung Á sau khi nhà Liêu suy vong.",
+    "lifespan": "1087–1143",
+    "sources": [
+      {
+        "title": "Da Luật Đại Thạch",
+        "url": "https://en.wikipedia.org/wiki/Yel%C3%BC_Dashi"
+      }
+    ]
+  },
+  {
+    "id": "nguyen-thuan-de",
+    "countryId": "china",
+    "name": "Nguyên Thuận Đế",
+    "aliases": [],
+    "wiki": "Toghon Temür",
+    "role": "Hoàng đế Nguyên cuối cùng cai trị từ Đại Đô",
+    "biography": "Hoàng đế Nguyên cuối cùng cai trị từ Đại Đô; rút về phía bắc năm 1368, tiếp tục triều đình được gọi là Bắc Nguyên.",
+    "lifespan": "1320–1370",
+    "sources": [
+      {
+        "title": "Nguyên Thuận Đế",
+        "url": "https://en.wikipedia.org/wiki/Toghon_Tem%C3%BCr"
+      }
+    ]
+  },
+  {
+    "id": "hoang-quang-de",
+    "countryId": "china",
+    "name": "Hoằng Quang Đế",
+    "aliases": [],
+    "wiki": "Hongguang Emperor",
+    "role": "Vị hoàng đế đầu của Nam Minh tại Nam Kinh (1644–1645) sau khi Bắc Kinh thất thủ.",
+    "biography": "Vị hoàng đế đầu của Nam Minh tại Nam Kinh (1644–1645) sau khi Bắc Kinh thất thủ.",
+    "lifespan": "1607–1646",
+    "sources": [
+      {
+        "title": "Hoằng Quang Đế",
+        "url": "https://en.wikipedia.org/wiki/Hongguang_Emperor"
+      }
+    ]
+  },
+  {
+    "id": "no-nhi-cap",
+    "countryId": "china",
+    "name": "Nỗ Nhĩ Cáp Xích",
+    "aliases": [],
+    "wiki": "Nurhaci",
+    "role": "Người thống nhất nhiều bộ Nữ Chân và lập Hậu Kim năm 1616, đặt nền tảng cho nhà Thanh.",
+    "biography": "Người thống nhất nhiều bộ Nữ Chân và lập Hậu Kim năm 1616, đặt nền tảng cho nhà Thanh.",
+    "lifespan": "1559–1626",
+    "sources": [
+      {
+        "title": "Nỗ Nhĩ Cáp Xích",
+        "url": "https://en.wikipedia.org/wiki/Nurhaci"
+      }
+    ]
+  },
+  {
+    "id": "hoang-thai-cuc",
+    "countryId": "china",
+    "name": "Hoàng Thái Cực",
+    "aliases": [],
+    "wiki": "Hong Taiji",
+    "role": "Người kế vị Nỗ Nhĩ Cáp Xích, đổi quốc hiệu từ Kim sang Thanh và xưng hoàng đế năm 1636.",
+    "biography": "Người kế vị Nỗ Nhĩ Cáp Xích, đổi quốc hiệu từ Kim sang Thanh và xưng hoàng đế năm 1636.",
+    "lifespan": "1592–1643",
+    "sources": [
+      {
+        "title": "Hoàng Thái Cực",
+        "url": "https://en.wikipedia.org/wiki/Hong_Taiji"
+      }
+    ]
+  },
+  {
+    "id": "pho-nghi",
+    "countryId": "china",
+    "name": "Phổ Nghi",
+    "aliases": [
+      "Ái Tân Giác La Phổ Nghi",
+      "Tuyên Thống Đế"
+    ],
+    "wiki": "Puyi",
+    "role": "Hoàng đế cuối nhà Thanh, thoái vị năm 1912",
+    "biography": "Hoàng đế cuối nhà Thanh, thoái vị năm 1912; về sau đứng đầu Mãn Châu Quốc do Nhật Bản hậu thuẫn (1934–1945).",
+    "lifespan": "1906–1967",
+    "sources": [
+      {
+        "title": "Phổ Nghi",
+        "url": "https://en.wikipedia.org/wiki/Puyi"
+      }
+    ]
+  },
+  {
+    "id": "ton-trung-son",
+    "countryId": "china",
+    "name": "Tôn Trung Sơn",
+    "aliases": [],
+    "wiki": "Sun Yat-sen",
+    "role": "Nhà cách mạng và tổng thống lâm thời đầu tiên của Trung Hoa Dân quốc năm 1912",
+    "biography": "Nhà cách mạng và tổng thống lâm thời đầu tiên của Trung Hoa Dân quốc năm 1912; người tổ chức Quốc dân đảng.",
+    "lifespan": "1866–1925",
+    "sources": [
+      {
+        "title": "Tôn Trung Sơn",
+        "url": "https://en.wikipedia.org/wiki/Sun_Yat-sen"
+      }
+    ]
   }
 ]

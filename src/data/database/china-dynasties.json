@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "xia",
+    "era": "Nhà Hạ",
+    "name": "Nhà Hạ",
+    "years": "Khoảng 2070–1600 TCN",
+    "start": -2070,
+    "end": -1600,
+    "city": "erligang",
+    "summary": "Nhà Hạ được chép là triều đại đầu tiên trong truyền thống sử học Trung Quốc. Niên đại và việc đồng nhất văn hóa Nhị Lý Đầu với nhà Hạ còn được tranh luận; chưa có văn bản cùng thời xác nhận đầy đủ danh sách vua và đường biên.",
+    "source": "Nhà Hạ",
+    "peopleIds": [
+      "ha-vu"
+    ],
+    "sourceArticle": "Xia dynasty",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Xia_dynasty"
+  },
+  {
+    "id": "shang",
+    "era": "Nhà Thương",
+    "name": "Nhà Thương",
+    "years": "Khoảng 1600–1046 TCN",
+    "start": -1600,
+    "end": -1046,
+    "city": "anyang",
+    "summary": "Giáp cốt văn và di tích Ân Khư cung cấp bằng chứng trực tiếp về vương triều Thương. Trung tâm quyền lực đã di chuyển nhiều lần trước khi gắn với vùng An Dương cuối triều.",
+    "source": "Nhà Thương",
+    "peopleIds": [
+      "thanh-thang",
+      "tru-vuong"
+    ],
+    "sourceArticle": "Shang dynasty",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Shang_dynasty"
+  },
+  {
+    "id": "western-zhou",
+    "era": "Tây Chu",
+    "name": "Tây Chu",
+    "years": "Khoảng 1046–771 TCN",
+    "start": -1046,
+    "end": -771,
+    "city": "xian",
+    "summary": "Sau khi đánh bại nhà Thương, nhà Chu xây dựng mạng lưới chư hầu và quan hệ tông pháp, với trung tâm ở vùng Quan Trung. Tây Chu kết thúc khi triều đình mất kinh đô phía tây năm 771 TCN. Đông Chu tiếp nối sau cuộc dời đô, thường được trình bày qua thời Xuân Thu và Chiến Quốc.",
+    "source": "Nhà Chu",
+    "peopleIds": [
+      "co-xuong",
+      "co-phat",
+      "khuong-tu-nha"
+    ],
+    "sourceArticle": "Western Zhou",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Western_Zhou"
+  },
+  {
+    "id": "spring-autumn",
+    "era": "Thời Xuân Thu",
+    "name": "Đông Chu · Xuân Thu",
+    "years": "770–khoảng 481 TCN",
+    "start": -770,
+    "end": -481,
+    "city": "luoyang",
+    "summary": "Năm 770 TCN, triều đình Chu dời về phía đông, mở đầu Đông Chu. Trong thời Xuân Thu, quyền lực thực tế phân tán giữa các nước chư hầu và các nước lớn tranh quyền bá chủ. Nho gia cùng nhiều truyền thống tư tưởng phát triển trong bối cảnh ấy; niên đại chuyển sang Chiến Quốc có cách phân kỳ khác nhau.",
+    "source": "Xuân Thu",
+    "peopleIds": [
+      "khong-tu",
+      "ton-vu"
+    ],
+    "sourceArticle": "Spring and Autumn period",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Spring_and_Autumn_period"
+  },
+  {
+    "id": "warring-states-260",
+    "era": "Thời Chiến Quốc",
+    "name": "Đông Chu · Chiến Quốc",
+    "years": "Khoảng 481–221 TCN",
+    "start": -481,
+    "end": -221,
+    "city": "luoyang",
+    "summary": "Bảy nước lớn Tần, Hàn, Triệu, Ngụy, Sở, Yên và Tề cạnh tranh cùng những chính thể nhỏ khác. Nhà Chu kết thúc năm 256 TCN, nhưng thời Chiến Quốc kéo dài đến khi Tần thống nhất năm 221 TCN. Bản đồ chọn một mốc để thể hiện các nước cùng tồn tại.",
+    "source": "Chiến Quốc",
+    "peopleIds": [
+      "thuong-uong"
+    ],
+    "mapId": "warring-states-260",
+    "sourceArticle": "Warring States period",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Warring_States_period"
+  },
+  {
+    "id": "qin",
+    "era": "Nhà Tần",
+    "name": "Nhà Tần",
+    "years": "221–206 TCN",
+    "start": -221,
+    "end": -206,
+    "city": "xianyang",
+    "summary": "Tần Thủy Hoàng hoàn thành chinh phục các nước Chiến Quốc năm 221 TCN. Nhà Tần đặt nền móng bộ máy đế chế tập quyền, chuẩn hóa chữ viết và đo lường; triều đại sụp đổ trong các cuộc nổi dậy sau khi ông mất.",
+    "source": "Nhà Tần",
+    "peopleIds": [
+      "tan-thuy-hoang"
+    ],
+    "sourceArticle": "Qin dynasty",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Qin_dynasty"
+  },
+  {
+    "id": "chu-han-contention",
+    "era": "Hán – Sở tranh hùng",
+    "name": "Hán – Sở tranh hùng",
+    "years": "206–202 TCN",
+    "start": -206,
+    "end": -202,
+    "city": "pengcheng",
+    "cityIds": [
+      "pengcheng",
+      "nanzheng"
+    ],
+    "capital": "Không có kinh đô thống nhất · Tây Sở: Bành Thành; Hán: Nam Trịnh, sau đó Quan Trung",
+    "summary": "Sau khi nhà Tần sụp đổ năm 206 TCN, Hạng Vũ phân phong các chư hầu và giữ ngôi Tây Sở Bá vương. Lưu Bang, được phong Hán vương, cùng các lực lượng đồng minh tranh quyền với Tây Sở. Cuộc chiến kết thúc năm 202 TCN sau thất bại của Hạng Vũ; Lưu Bang xưng hoàng đế, thiết lập quyền thống trị của nhà Hán.",
+    "source": "Hán–Sở tranh hùng",
+    "sourceArticle": "Chu–Han Contention",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Chu%E2%80%93Han_Contention",
+    "peopleIds": [
+      "hang-vu",
+      "luu-bang",
+      "han-tin",
+      "tieu-ha",
+      "truong-luong"
+    ],
+    "mapId": "chu-han-206"
+  },
+  {
+    "id": "western-han",
+    "era": "Nhà Hán",
+    "name": "Tây Hán",
+    "years": "202 TCN – 9 · Hán vương từ 206 TCN",
+    "start": -202,
+    "end": 9,
+    "city": "xian",
+    "summary": "Lưu Bang được phong làm Hán vương năm 206 TCN. Sau khi thắng Hạng Vũ trong cuộc chiến Hán–Sở, ông xưng hoàng đế năm 202 TCN, mở đầu giai đoạn đế chế Tây Hán. Kinh đô đặt tại Trường An; dưới Hán Vũ Đế, quyền lực trung ương và giao lưu đường dài được mở rộng.",
+    "source": "Nhà Hán",
+    "peopleIds": [
+      "luu-bang",
+      "han-tin",
+      "tieu-ha",
+      "truong-luong",
+      "han-vu-de"
+    ],
+    "sourceArticle": "Han dynasty",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Han_dynasty"
+  },
+  {
+    "id": "xin",
+    "era": "Nhà Hán",
+    "name": "Nhà Tân",
+    "years": "9–23",
+    "start": 9,
+    "end": 23,
+    "city": "xian",
+    "summary": "Vương Mãng lên ngôi, đổi quốc hiệu thành Tân và thực hiện nhiều cải cách. Khủng hoảng chính trị, thiên tai và các cuộc nổi dậy dẫn đến sự sụp đổ của triều đại năm 23.",
+    "source": "Nhà Tân",
+    "peopleIds": [
+      "vuong-mang"
+    ],
+    "sourceArticle": "Xin dynasty",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Xin_dynasty"
+  },
+  {
+    "id": "han-restoration",
+    "era": "Nhà Hán",
+    "name": "Khôi phục nhà Hán",
+    "years": "23–25",
+    "start": 23,
+    "end": 25,
+    "city": "luoyang",
+    "summary": "Sau nhà Tân là giai đoạn cạnh tranh giữa các lực lượng phục Hán và quân khởi nghĩa. Chính quyền Canh Thủy tồn tại trong thời kỳ chuyển tiếp trước khi Lưu Tú thiết lập Đông Hán.",
+    "source": "Canh Thủy Đế",
+    "peopleIds": [
+      "han-quang-vu"
+    ],
+    "sourceArticle": "Gengshi Emperor",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Gengshi_Emperor"
+  },
+  {
+    "id": "eastern-han",
+    "era": "Nhà Hán",
+    "name": "Đông Hán",
+    "years": "25–220",
+    "start": 25,
+    "end": 220,
+    "city": "luoyang",
+    "summary": "Lưu Tú khôi phục nhà Hán với trung tâm tại Lạc Dương. Cuối triều, xung đột trong triều, khởi nghĩa và các thế lực quân sự địa phương làm suy yếu chính quyền trung ương.",
+    "source": "Nhà Hán",
+    "peopleIds": [
+      "han-quang-vu",
+      "tao-thao"
+    ],
+    "sourceArticle": "Han dynasty",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Han_dynasty"
+  },
+  {
+    "id": "three-kingdoms",
+    "era": "Tam Quốc",
+    "name": "Tam Quốc · thế chân vạc",
+    "years": "220–280 · bản đồ năm 262",
+    "start": 220,
+    "end": 280,
+    "city": "luoyang",
+    "summary": "Ngụy, Thục và Ngô là ba chính thể có kinh đô và vùng kiểm soát riêng. Bản đồ năm 262 thể hiện cả ba trước khi Thục bị diệt năm 263; không áp đường biên năm 262 cho toàn bộ sáu mươi năm phân tranh.",
+    "source": "Tam Quốc",
+    "peopleIds": [
+      "tao-thao",
+      "luu-bi",
+      "ton-quyen"
+    ],
+    "mapId": "three-kingdoms",
+    "sourceArticle": "Three Kingdoms",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Three_Kingdoms"
+  },
+  {
+    "id": "cao-wei",
+    "era": "Tam Quốc",
+    "name": "Tào Ngụy",
+    "years": "220–265",
+    "start": 220,
+    "end": 265,
+    "city": "luoyang",
+    "summary": "Tào Phi thay nhà Hán lập Ngụy tại miền bắc. Chính quyền họ Tào dần bị họ Tư Mã chi phối và được thay bằng Tây Tấn năm 265.",
+    "source": "Tào Ngụy",
+    "peopleIds": [
+      "tao-thao",
+      "tao-phi",
+      "tu-ma-y"
+    ],
+    "mapId": "three-kingdoms",
+    "sourceArticle": "Cao Wei",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Cao_Wei"
+  },
+  {
+    "id": "shu-han",
+    "era": "Tam Quốc",
+    "name": "Thục Hán",
+    "years": "221–263",
+    "start": 221,
+    "end": 263,
+    "city": "chengdu",
+    "summary": "Lưu Bị xưng đế tại Thành Đô. Thục kiểm soát vùng Tứ Xuyên và Hán Trung, rồi bị quân Ngụy chinh phục năm 263.",
+    "source": "Thục Hán",
+    "peopleIds": [
+      "luu-bi"
+    ],
+    "mapId": "three-kingdoms",
+    "sourceArticle": "Shu Han",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Shu_Han"
+  },
+  {
+    "id": "eastern-wu",
+    "era": "Tam Quốc",
+    "name": "Đông Ngô",
+    "years": "222–280",
+    "start": 222,
+    "end": 280,
+    "city": "nanjing",
+    "summary": "Chính quyền họ Tôn phát triển ở Giang Đông và lưu vực Trường Giang. Tôn Quyền xưng đế năm 229; Đông Ngô là nước cuối cùng trong Tam Quốc bị Tây Tấn thôn tính năm 280.",
+    "source": "Đông Ngô",
+    "peopleIds": [
+      "ton-quyen"
+    ],
+    "mapId": "three-kingdoms",
+    "sourceArticle": "Eastern Wu",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Eastern_Wu"
+  },
+  {
+    "id": "western-jin",
+    "era": "Nhà Tấn",
+    "name": "Tây Tấn",
+    "years": "265/266–316",
+    "start": 265,
+    "end": 316,
+    "city": "luoyang",
+    "summary": "Tư Mã Viêm lập nhà Tấn và đánh bại Đông Ngô năm 280. Loạn Bát vương cùng chiến tranh ở miền bắc làm triều đình suy yếu; Trường An thất thủ năm 316.",
+    "source": "Nhà Tấn",
+    "peopleIds": [
+      "tu-ma-y",
+      "tu-ma-viem"
+    ],
+    "sourceArticle": "Jin dynasty (266–420)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Jin_dynasty_(266%E2%80%93420)"
+  },
+  {
+    "id": "eastern-jin",
+    "era": "Nhà Tấn",
+    "name": "Đông Tấn",
+    "years": "317–420",
+    "start": 317,
+    "end": 420,
+    "city": "nanjing",
+    "summary": "Một nhánh hoàng tộc Tư Mã tái lập triều đình tại Kiến Khang. Đông Tấn tồn tại ở miền nam song song với các nước phương bắc thời Thập Lục Quốc; không phải toàn cõi đều thuộc nhà Tấn.",
+    "source": "Nhà Tấn",
+    "peopleIds": [
+      "tu-ma-due"
+    ],
+    "mapId": "sixteen-kingdoms-350",
+    "sourceArticle": "Jin dynasty (266–420)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Jin_dynasty_(266%E2%80%93420)"
+  },
+  {
+    "id": "han-zhao",
+    "era": "Thập Lục Quốc",
+    "name": "Hán – Tiền Triệu",
+    "years": "304–329",
+    "start": 304,
+    "end": 329,
+    "city": "pingyang",
+    "summary": "Lưu Uyên lập Hán; quốc hiệu chuyển thành Triệu năm 319. Đây là một thế lực quan trọng trong quá trình Tây Tấn mất miền bắc.",
+    "source": "Hán Triệu",
+    "peopleIds": [
+      "luu-uyen"
+    ],
+    "mapId": "sixteen-kingdoms-317",
+    "sourceArticle": "Han-Zhao",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Han-Zhao"
+  },
+  {
+    "id": "cheng-han",
+    "era": "Thập Lục Quốc",
+    "name": "Thành Hán",
+    "years": "304–347",
+    "start": 304,
+    "end": 347,
+    "city": "chengdu",
+    "summary": "Chính quyền họ Lý đặt trung tâm tại Thành Đô, kiểm soát vùng Tứ Xuyên trước khi bị Đông Tấn đánh bại.",
+    "source": "Thành Hán",
+    "peopleIds": [
+      "ly-hung"
+    ],
+    "mapId": "sixteen-kingdoms-317",
+    "sourceArticle": "Cheng-Han",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Cheng-Han"
+  },
+  {
+    "id": "former-liang",
+    "era": "Thập Lục Quốc",
+    "name": "Tiền Lương",
+    "years": "320–376 · họ Trương từ 301",
+    "start": 320,
+    "end": 376,
+    "city": "wuwei",
+    "summary": "Thế lực họ Trương ở hành lang Hà Tây phát triển từ chính quyền địa phương nhà Tấn. Tiền Lương bị Tiền Tần thôn tính năm 376.",
+    "source": "Tiền Lương",
+    "peopleIds": [
+      "truong-quy"
+    ],
+    "mapId": "sixteen-kingdoms-350",
+    "sourceArticle": "Former Liang",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Former_Liang"
+  },
+  {
+    "id": "later-zhao",
+    "era": "Thập Lục Quốc",
+    "name": "Hậu Triệu",
+    "years": "319–351",
+    "start": 319,
+    "end": 351,
+    "city": "ye",
+    "summary": "Thạch Lặc lập Hậu Triệu, xây dựng quyền lực ở phần lớn miền bắc. Nội chiến sau thời Thạch Hổ dẫn tới sự tan rã của chính thể.",
+    "source": "Hậu Triệu",
+    "peopleIds": [
+      "thach-lac"
+    ],
+    "mapId": "sixteen-kingdoms-350",
+    "sourceArticle": "Later Zhao",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Zhao"
+  },
+  {
+    "id": "former-yan",
+    "era": "Thập Lục Quốc",
+    "name": "Tiền Yên",
+    "years": "337–370",
+    "start": 337,
+    "end": 370,
+    "city": "longcheng",
+    "summary": "Họ Mộ Dung xây dựng nước Yên ở đông bắc, sau đó mở rộng xuống Hoa Bắc. Tiền Yên bị Tiền Tần đánh bại năm 370.",
+    "source": "Tiền Yên",
+    "peopleIds": [
+      "mo-dung-hoang"
+    ],
+    "mapId": "sixteen-kingdoms-350",
+    "sourceArticle": "Former Yan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Former_Yan"
+  },
+  {
+    "id": "former-qin",
+    "era": "Thập Lục Quốc",
+    "name": "Tiền Tần",
+    "years": "351–394",
+    "start": 351,
+    "end": 394,
+    "city": "xian",
+    "summary": "Tiền Tần thống nhất phần lớn miền bắc dưới Phù Kiên. Thất bại tại Phì Thủy năm 383 mở đường cho nhiều chính thể tách ra.",
+    "source": "Tiền Tần",
+    "peopleIds": [
+      "phu-kien-kien-lap"
+    ],
+    "mapId": "sixteen-kingdoms-376",
+    "sourceArticle": "Former Qin",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Former_Qin"
+  },
+  {
+    "id": "later-yan",
+    "era": "Thập Lục Quốc",
+    "name": "Hậu Yên",
+    "years": "384–409",
+    "start": 384,
+    "end": 409,
+    "city": "zhongshan",
+    "summary": "Mộ Dung Thù khôi phục thế lực Yên sau Phì Thủy. Lãnh thổ về sau bị phân chia trong xung đột với Bắc Ngụy và các lực lượng kế tục.",
+    "source": "Hậu Yên",
+    "peopleIds": [
+      "mo-dung-thuy"
+    ],
+    "mapId": "sixteen-kingdoms-391",
+    "sourceArticle": "Later Yan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Yan"
+  },
+  {
+    "id": "later-qin",
+    "era": "Thập Lục Quốc",
+    "name": "Hậu Tần",
+    "years": "384–417",
+    "start": 384,
+    "end": 417,
+    "city": "xian",
+    "summary": "Họ Diêu lập Hậu Tần tại vùng Quan Trung. Trường An là trung tâm chính trị và hoạt động dịch kinh trước khi quân Đông Tấn chinh phục nước này.",
+    "source": "Hậu Tần",
+    "peopleIds": [
+      "dieu-truong"
+    ],
+    "mapId": "sixteen-kingdoms-402",
+    "sourceArticle": "Later Qin",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Qin"
+  },
+  {
+    "id": "western-qin",
+    "era": "Thập Lục Quốc",
+    "name": "Tây Tần",
+    "years": "385–431 · gián đoạn 400–409",
+    "start": 385,
+    "end": 431,
+    "city": "jincheng",
+    "summary": "Chính quyền họ Khất Phục hoạt động ở vùng Cam Túc. Tây Tần có một thời gian mất độc lập trước khi được khôi phục năm 409.",
+    "source": "Tây Tần",
+    "peopleIds": [
+      "khat-phuc-quoc-nhan"
+    ],
+    "mapId": "sixteen-kingdoms-416",
+    "sourceArticle": "Western Qin",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Western_Qin"
+  },
+  {
+    "id": "later-liang",
+    "era": "Thập Lục Quốc",
+    "name": "Hậu Lương",
+    "years": "386–403",
+    "start": 386,
+    "end": 403,
+    "city": "wuwei",
+    "summary": "Lữ Quang lập Hậu Lương sau cuộc viễn chinh về phía tây. Những cuộc chia tách và cạnh tranh trong vùng Hà Tây dẫn đến sự suy yếu của nước này.",
+    "source": "Hậu Lương",
+    "peopleIds": [
+      "lu-quang"
+    ],
+    "mapId": "sixteen-kingdoms-402",
+    "sourceArticle": "Later Liang (Sixteen Kingdoms)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Liang_(Sixteen_Kingdoms)"
+  },
+  {
+    "id": "southern-liang",
+    "era": "Thập Lục Quốc",
+    "name": "Nam Lương",
+    "years": "397–414",
+    "start": 397,
+    "end": 414,
+    "city": "ledu",
+    "summary": "Họ Thốc Phát lập Nam Lương ở khu vực nay thuộc Thanh Hải và Cam Túc. Nam Lương bị Tây Tần đánh bại năm 414.",
+    "source": "Nam Lương",
+    "peopleIds": [
+      "thac-bat-o-co"
+    ],
+    "mapId": "sixteen-kingdoms-402",
+    "sourceArticle": "Southern Liang (Sixteen Kingdoms)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Southern_Liang_(Sixteen_Kingdoms)"
+  },
+  {
+    "id": "northern-liang",
+    "era": "Thập Lục Quốc",
+    "name": "Bắc Lương",
+    "years": "397–439",
+    "start": 397,
+    "end": 439,
+    "city": "zhangye",
+    "summary": "Bắc Lương là một chính thể tại hành lang Hà Tây. Bắc Ngụy chiếm trung tâm chính quyền năm 439, mốc thường dùng để kết thúc thời Thập Lục Quốc.",
+    "source": "Bắc Lương",
+    "peopleIds": [
+      "doan-nghiep"
+    ],
+    "mapId": "sixteen-kingdoms-416",
+    "sourceArticle": "Northern Liang",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Northern_Liang"
+  },
+  {
+    "id": "southern-yan",
+    "era": "Thập Lục Quốc",
+    "name": "Nam Yên",
+    "years": "398–410",
+    "start": 398,
+    "end": 410,
+    "city": "guanggu",
+    "summary": "Mộ Dung Đức lập Nam Yên tại vùng Sơn Đông. Nước này bị chiến dịch của Lưu Dụ, tướng Đông Tấn, chinh phục năm 410.",
+    "source": "Nam Yên",
+    "peopleIds": [
+      "mo-dung-duc"
+    ],
+    "mapId": "sixteen-kingdoms-402",
+    "sourceArticle": "Southern Yan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Southern_Yan"
+  },
+  {
+    "id": "western-liang",
+    "era": "Thập Lục Quốc",
+    "name": "Tây Lương · họ Lý",
+    "years": "400–421",
+    "start": 400,
+    "end": 421,
+    "city": "dunhuang",
+    "summary": "Lý Cảo lập Tây Lương ở phía tây hành lang Hà Tây. Chính thể này về sau bị Bắc Lương thôn tính.",
+    "source": "Tây Lương",
+    "peopleIds": [
+      "ly-cao"
+    ],
+    "mapId": "sixteen-kingdoms-416",
+    "sourceArticle": "Western Liang (Sixteen Kingdoms)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Western_Liang_(Sixteen_Kingdoms)"
+  },
+  {
+    "id": "xia-helian",
+    "era": "Thập Lục Quốc",
+    "name": "Hạ · họ Hách Liên",
+    "years": "407–431",
+    "start": 407,
+    "end": 431,
+    "city": "tongwan",
+    "summary": "Hách Liên Bột Bột lập nước Hạ tại vùng bắc Thiểm Tây. Nước này khác nhà Hạ cổ đại và Tây Hạ của người Đảng Hạng.",
+    "source": "Hạ (Thập lục quốc)",
+    "peopleIds": [
+      "hach-lien-bot-bot"
+    ],
+    "mapId": "sixteen-kingdoms-416",
+    "sourceArticle": "Xia (Sixteen Kingdoms)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Xia_(Sixteen_Kingdoms)"
+  },
+  {
+    "id": "northern-yan",
+    "era": "Thập Lục Quốc",
+    "name": "Bắc Yên",
+    "years": "407–436",
+    "start": 407,
+    "end": 436,
+    "city": "longcheng",
+    "summary": "Bắc Yên kế tiếp quyền lực ở vùng Liêu Tây sau Hậu Yên. Bắc Ngụy chinh phục nước này trong quá trình thống nhất miền bắc.",
+    "source": "Bắc Yên",
+    "peopleIds": [
+      "phung-bat"
+    ],
+    "mapId": "sixteen-kingdoms-416",
+    "sourceArticle": "Northern Yan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Northern_Yan"
+  },
+  {
+    "id": "western-yan",
+    "era": "Thập Lục Quốc",
+    "name": "Tây Yên",
+    "years": "384–394",
+    "start": 384,
+    "end": 394,
+    "city": "xian",
+    "summary": "Một chính thể họ Mộ Dung khác, tồn tại song song với Hậu Yên. Tây Yên không nằm trong danh sách mười sáu nước truyền thống.",
+    "source": "Tây Yên",
+    "sourceArticle": "Western Yan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Western_Yan",
+    "peopleIds": [
+      "mo-dung-hong"
+    ],
+    "mapId": "sixteen-kingdoms-391"
+  },
+  {
+    "id": "ran-wei",
+    "era": "Thập Lục Quốc",
+    "name": "Nhiễm Ngụy",
+    "years": "350–352",
+    "start": 350,
+    "end": 352,
+    "city": "ye",
+    "summary": "Nhiễm Mẫn lập chính quyền ở Nghiệp sau khủng hoảng Hậu Triệu. Đây là chính thể cùng thời nhưng không thuộc danh sách Thập Lục Quốc truyền thống.",
+    "source": "Nhiễm Ngụy",
+    "sourceArticle": "Ran Wei",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Ran_Wei",
+    "peopleIds": [
+      "nhiem-man"
+    ],
+    "mapId": "sixteen-kingdoms-350"
+  },
+  {
+    "id": "dai",
+    "era": "Thập Lục Quốc",
+    "name": "Đại · họ Thác Bạt",
+    "years": "315–376",
+    "start": 315,
+    "end": 376,
+    "city": "datong",
+    "summary": "Nước Đại của họ Thác Bạt tồn tại trước Bắc Ngụy và bị Tiền Tần đánh bại năm 376. Đại không nằm trong danh sách mười sáu nước truyền thống.",
+    "source": "Đại (Thập lục quốc)",
+    "sourceArticle": "Dai (Sixteen Kingdoms)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Dai_(Sixteen_Kingdoms)",
+    "peopleIds": [
+      "thac-bat-y-lo"
+    ],
+    "mapId": "sixteen-kingdoms-317"
+  },
+  {
+    "id": "zhai-wei",
+    "era": "Thập Lục Quốc",
+    "name": "Địch Ngụy",
+    "years": "388–392",
+    "start": 388,
+    "end": 392,
+    "city": "luoyang",
+    "summary": "Chính thể ngắn của họ Trạch tại vùng Hà Nam cùng tồn tại với các thế lực hậu Phì Thủy. Chính thể này không nằm trong danh sách mười sáu nước truyền thống.",
+    "source": "Địch Ngụy",
+    "sourceArticle": "Zhai Wei",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Zhai_Wei",
+    "peopleIds": [
+      "dich-lieu"
+    ],
+    "mapId": "sixteen-kingdoms-391"
+  },
+  {
+    "id": "huan-chu",
+    "era": "Thập Lục Quốc",
+    "name": "Hoàn Sở",
+    "years": "403–404",
+    "start": 403,
+    "end": 404,
+    "city": "nanjing",
+    "summary": "Hoàn Huyền thay Đông Tấn trong một thời gian ngắn trước khi bị lực lượng Lưu Dụ đánh bại. Quyền kiểm soát trước khi xưng đế cần được phân biệt với mốc lập nước.",
+    "source": "Hoàn Sở",
+    "sourceArticle": "Huan Chu",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Huan_Xuan",
+    "peopleIds": [
+      "hoan-huyen"
+    ]
+  },
+  {
+    "id": "western-shu",
+    "era": "Thập Lục Quốc",
+    "name": "Tây Thục · Tiêu Túng",
+    "years": "405–413",
+    "start": 405,
+    "end": 413,
+    "city": "chengdu",
+    "summary": "Chính quyền của Tiêu Túng tách khỏi Đông Tấn tại Tứ Xuyên, rồi bị quân Đông Tấn chinh phục. Tây Thục không thuộc danh sách mười sáu nước truyền thống.",
+    "source": "Tây Thục",
+    "sourceArticle": "Western Shu",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Qiao_Zong",
+    "peopleIds": [
+      "tieu-tung"
+    ]
+  },
+  {
+    "id": "sixteen-kingdoms-317",
+    "era": "Thập Lục Quốc",
+    "name": "Cục diện các nước · năm 317",
+    "years": "Mốc bản đồ: 317",
+    "start": 317,
+    "end": 317,
+    "city": "luoyang",
+    "summary": "Đây là một lát cắt thời gian của thời Thập Lục Quốc. Chỉ các nước và thế lực tồn tại ở mốc đã chọn được vẽ; danh sách mười sáu nước là tổng hợp cho cả giai đoạn 304–439, không phải mười sáu nước cùng tồn tại.",
+    "source": "Ngũ Hồ thập lục quốc",
+    "peopleIds": [
+      "tu-ma-due",
+      "thach-lac",
+      "truong-quy"
+    ],
+    "mapId": "sixteen-kingdoms-317",
+    "sourceArticle": "Sixteen Kingdoms",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Sixteen_Kingdoms"
+  },
+  {
+    "id": "sixteen-kingdoms-350",
+    "era": "Thập Lục Quốc",
+    "name": "Cục diện các nước · năm 350",
+    "years": "Mốc bản đồ: 350",
+    "start": 350,
+    "end": 350,
+    "city": "luoyang",
+    "summary": "Đây là một lát cắt thời gian của thời Thập Lục Quốc. Chỉ các nước và thế lực tồn tại ở mốc đã chọn được vẽ; danh sách mười sáu nước là tổng hợp cho cả giai đoạn 304–439, không phải mười sáu nước cùng tồn tại.",
+    "source": "Ngũ Hồ thập lục quốc",
+    "peopleIds": [
+      "nhiem-man",
+      "phu-kien-kien-lap"
+    ],
+    "mapId": "sixteen-kingdoms-350",
+    "sourceArticle": "Sixteen Kingdoms",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Sixteen_Kingdoms"
+  },
+  {
+    "id": "sixteen-kingdoms-376",
+    "era": "Thập Lục Quốc",
+    "name": "Cục diện các nước · năm 376",
+    "years": "Mốc bản đồ: 376",
+    "start": 376,
+    "end": 376,
+    "city": "luoyang",
+    "summary": "Đây là một lát cắt thời gian của thời Thập Lục Quốc. Chỉ các nước và thế lực tồn tại ở mốc đã chọn được vẽ; danh sách mười sáu nước là tổng hợp cho cả giai đoạn 304–439, không phải mười sáu nước cùng tồn tại.",
+    "source": "Ngũ Hồ thập lục quốc",
+    "peopleIds": [
+      "mo-dung-thuy",
+      "dieu-truong"
+    ],
+    "mapId": "sixteen-kingdoms-376",
+    "sourceArticle": "Sixteen Kingdoms",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Sixteen_Kingdoms"
+  },
+  {
+    "id": "sixteen-kingdoms-391",
+    "era": "Thập Lục Quốc",
+    "name": "Cục diện các nước · năm 391",
+    "years": "Mốc bản đồ: 391",
+    "start": 391,
+    "end": 391,
+    "city": "luoyang",
+    "summary": "Đây là một lát cắt thời gian của thời Thập Lục Quốc. Chỉ các nước và thế lực tồn tại ở mốc đã chọn được vẽ; danh sách mười sáu nước là tổng hợp cho cả giai đoạn 304–439, không phải mười sáu nước cùng tồn tại.",
+    "source": "Ngũ Hồ thập lục quốc",
+    "peopleIds": [
+      "mo-dung-thuy",
+      "dieu-truong",
+      "thac-bat-khue"
+    ],
+    "mapId": "sixteen-kingdoms-391",
+    "sourceArticle": "Sixteen Kingdoms",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Sixteen_Kingdoms"
+  },
+  {
+    "id": "sixteen-kingdoms-402",
+    "era": "Thập Lục Quốc",
+    "name": "Cục diện các nước · năm 402",
+    "years": "Mốc bản đồ: 402",
+    "start": 402,
+    "end": 402,
+    "city": "luoyang",
+    "summary": "Đây là một lát cắt thời gian của thời Thập Lục Quốc. Chỉ các nước và thế lực tồn tại ở mốc đã chọn được vẽ; danh sách mười sáu nước là tổng hợp cho cả giai đoạn 304–439, không phải mười sáu nước cùng tồn tại.",
+    "source": "Ngũ Hồ thập lục quốc",
+    "peopleIds": [
+      "mo-dung-duc",
+      "ly-cao",
+      "thac-bat-khue"
+    ],
+    "mapId": "sixteen-kingdoms-402",
+    "sourceArticle": "Sixteen Kingdoms",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Sixteen_Kingdoms"
+  },
+  {
+    "id": "sixteen-kingdoms-416",
+    "era": "Thập Lục Quốc",
+    "name": "Cục diện các nước · năm 416",
+    "years": "Mốc bản đồ: 416",
+    "start": 416,
+    "end": 416,
+    "city": "luoyang",
+    "summary": "Đây là một lát cắt thời gian của thời Thập Lục Quốc. Chỉ các nước và thế lực tồn tại ở mốc đã chọn được vẽ; danh sách mười sáu nước là tổng hợp cho cả giai đoạn 304–439, không phải mười sáu nước cùng tồn tại.",
+    "source": "Ngũ Hồ thập lục quốc",
+    "peopleIds": [
+      "hach-lien-bot-bot",
+      "phung-bat",
+      "luu-du"
+    ],
+    "mapId": "sixteen-kingdoms-416",
+    "sourceArticle": "Sixteen Kingdoms",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Sixteen_Kingdoms"
+  },
+  {
+    "id": "northern-southern-550",
+    "era": "Nam – Bắc triều",
+    "name": "Nam – Bắc triều · toàn cảnh",
+    "years": "420–589 · bản đồ năm 551",
+    "start": 420,
+    "end": 589,
+    "city": "nanjing",
+    "summary": "Miền nam lần lượt có Lưu Tống, Nam Tề, Lương và Trần. Miền bắc có Bắc Ngụy, Đông–Tây Ngụy, rồi Bắc Tề và Bắc Chu. Các dòng triều đại song song cần được đọc theo vùng, không nối thành một chuỗi thay thế duy nhất.",
+    "source": "Nam–Bắc triều",
+    "peopleIds": [
+      "cao-duong",
+      "nguyen-bao-cu",
+      "tieu-dien"
+    ],
+    "mapId": "northern-southern-550",
+    "sourceArticle": "Northern and Southern dynasties",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Northern_and_Southern_dynasties"
+  },
+  {
+    "id": "liu-song",
+    "era": "Nam – Bắc triều",
+    "name": "Lưu Tống",
+    "years": "420–479",
+    "start": 420,
+    "end": 479,
+    "city": "nanjing",
+    "summary": "Lưu Dụ thay Đông Tấn lập nhà Tống ở miền nam. Đây là Lưu Tống, khác nhà Tống bắt đầu năm 960.",
+    "source": "Lưu Tống",
+    "peopleIds": [
+      "luu-du"
+    ],
+    "sourceArticle": "Liu Song dynasty",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Liu_Song_dynasty"
+  },
+  {
+    "id": "southern-qi",
+    "era": "Nam – Bắc triều",
+    "name": "Nam Tề",
+    "years": "479–502",
+    "start": 479,
+    "end": 502,
+    "city": "nanjing",
+    "summary": "Họ Tiêu thay Lưu Tống, đặt triều đình tại Kiến Khang. Nam Tề là một trong bốn triều Nam triều.",
+    "source": "Nam Tề",
+    "peopleIds": [
+      "tieu-dao-thanh"
+    ],
+    "sourceArticle": "Southern Qi",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Southern_Qi"
+  },
+  {
+    "id": "liang",
+    "era": "Nam – Bắc triều",
+    "name": "Lương",
+    "years": "502–557",
+    "start": 502,
+    "end": 557,
+    "city": "nanjing",
+    "summary": "Nhà Lương của họ Tiêu tiếp nối Nam Tề. Loạn Hầu Cảnh và chiến tranh giữa các thế lực làm triều đình tan rã.",
+    "source": "Nhà Lương",
+    "peopleIds": [
+      "tieu-dien"
+    ],
+    "mapId": "northern-southern-550",
+    "sourceArticle": "Liang dynasty",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Liang_dynasty"
+  },
+  {
+    "id": "chen",
+    "era": "Nam – Bắc triều",
+    "name": "Trần · Nam triều",
+    "years": "557–589",
+    "start": 557,
+    "end": 589,
+    "city": "nanjing",
+    "summary": "Trần Bá Tiên lập nhà Trần tại miền nam. Tùy chinh phục nhà Trần năm 589; đây không phải nhà Trần của Đại Việt.",
+    "source": "Nhà Trần (Trung Quốc)",
+    "peopleIds": [
+      "tran-ba-tien"
+    ],
+    "sourceArticle": "Chen dynasty",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Chen_dynasty"
+  },
+  {
+    "id": "northern-wei",
+    "era": "Nam – Bắc triều",
+    "name": "Bắc Ngụy",
+    "years": "386–534",
+    "start": 386,
+    "end": 534,
+    "city": "datong",
+    "summary": "Họ Thác Bạt thống nhất miền bắc năm 439. Cải cách, chuyển đô và xung đột nội bộ dẫn tới sự phân chia Đông Ngụy và Tây Ngụy.",
+    "source": "Bắc Ngụy",
+    "peopleIds": [
+      "thac-bat-khue"
+    ],
+    "sourceArticle": "Northern Wei",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Northern_Wei",
+    "mapId": "sixteen-kingdoms-416"
+  },
+  {
+    "id": "eastern-wei",
+    "era": "Nam – Bắc triều",
+    "name": "Đông Ngụy",
+    "years": "534–550",
+    "start": 534,
+    "end": 550,
+    "city": "ye",
+    "summary": "Một nhánh hoàng tộc Bắc Ngụy tồn tại dưới ảnh hưởng họ Cao tại miền đông Hoa Bắc, trước khi bị Bắc Tề thay thế.",
+    "source": "Đông Ngụy",
+    "peopleIds": [
+      "nguyen-thien"
+    ],
+    "sourceArticle": "Eastern Wei",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Eastern_Wei"
+  },
+  {
+    "id": "western-wei",
+    "era": "Nam – Bắc triều",
+    "name": "Tây Ngụy",
+    "years": "535–557",
+    "start": 535,
+    "end": 557,
+    "city": "xian",
+    "summary": "Tây Ngụy đặt trung tâm ở Trường An, dưới ảnh hưởng họ Vũ Văn. Bắc Chu kế tiếp chính thể này năm 557.",
+    "source": "Tây Ngụy",
+    "peopleIds": [
+      "nguyen-bao-cu"
+    ],
+    "mapId": "northern-southern-550",
+    "sourceArticle": "Western Wei",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Western_Wei"
+  },
+  {
+    "id": "northern-qi",
+    "era": "Nam – Bắc triều",
+    "name": "Bắc Tề",
+    "years": "550–577",
+    "start": 550,
+    "end": 577,
+    "city": "ye",
+    "summary": "Họ Cao lập Bắc Tề trên nền Đông Ngụy. Chính thể này cạnh tranh với Tây Ngụy, Bắc Chu và bị Bắc Chu chinh phục.",
+    "source": "Bắc Tề",
+    "peopleIds": [
+      "cao-duong"
+    ],
+    "mapId": "northern-southern-550",
+    "sourceArticle": "Northern Qi",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Northern_Qi"
+  },
+  {
+    "id": "northern-zhou",
+    "era": "Nam – Bắc triều",
+    "name": "Bắc Chu",
+    "years": "557–581",
+    "start": 557,
+    "end": 581,
+    "city": "xian",
+    "summary": "Bắc Chu thay Tây Ngụy, đánh bại Bắc Tề năm 577. Dương Kiên thay nhà Bắc Chu, lập nhà Tùy năm 581.",
+    "source": "Bắc Chu",
+    "peopleIds": [
+      "vu-van-giac"
+    ],
+    "sourceArticle": "Northern Zhou",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Northern_Zhou"
+  },
+  {
+    "id": "western-liang-nanbei",
+    "era": "Nam – Bắc triều",
+    "name": "Tây Lương · Nam Bắc triều",
+    "years": "555–587",
+    "start": 555,
+    "end": 587,
+    "city": "jiangling",
+    "summary": "Một nhánh họ Tiêu duy trì chính quyền tại Giang Lăng dưới sự bảo trợ của các thế lực phương bắc. Chính thể này khác Tây Lương thời Thập Lục Quốc.",
+    "source": "Tây Lương (Nam-Bắc triều)",
+    "peopleIds": [
+      "tieu-sat"
+    ],
+    "sourceArticle": "Western Liang (555–587)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Western_Liang_(555%E2%80%93587)"
+  },
+  {
+    "id": "sui",
+    "era": "Nhà Tùy",
+    "name": "Nhà Tùy",
+    "years": "581–618",
+    "start": 581,
+    "end": 618,
+    "city": "xian",
+    "summary": "Dương Kiên lập nhà Tùy và thống nhất bắc–nam năm 589. Các công trình, chiến dịch quân sự và khởi nghĩa cuối triều góp phần dẫn tới sự sụp đổ.",
+    "source": "Nhà Tùy",
+    "peopleIds": [
+      "tuy-van-de"
+    ],
+    "sourceArticle": "Sui dynasty",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Sui_dynasty"
+  },
+  {
+    "id": "tang-early",
+    "era": "Nhà Đường",
+    "name": "Đường · giai đoạn đầu",
+    "years": "618–690",
+    "start": 618,
+    "end": 690,
+    "city": "xian",
+    "summary": "Nhà Đường kế tiếp Tùy, củng cố bộ máy cai trị và phát triển đô thị Trường An. Thời kỳ đầu có các triều vua Cao Tổ, Thái Tông và Cao Tông.",
+    "source": "Nhà Đường",
+    "peopleIds": [
+      "duong-cao-to",
+      "duong-thai-tong"
+    ],
+    "sourceArticle": "Tang dynasty",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Tang_dynasty"
+  },
+  {
+    "id": "wu-zhou",
+    "era": "Nhà Đường",
+    "name": "Võ Chu",
+    "years": "690–705",
+    "start": 690,
+    "end": 705,
+    "city": "luoyang",
+    "summary": "Võ Tắc Thiên xưng hoàng đế và đổi quốc hiệu thành Chu. Triều đại này xen giữa hai giai đoạn nhà Đường, khác nhà Chu cổ đại.",
+    "source": "Võ Chu",
+    "peopleIds": [
+      "vo-tac-thien"
+    ],
+    "sourceArticle": "Wu Zhou",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Wu_Zhou"
+  },
+  {
+    "id": "tang-restored",
+    "era": "Nhà Đường",
+    "name": "Đường · khôi phục",
+    "years": "705–907",
+    "start": 705,
+    "end": 907,
+    "city": "xian",
+    "summary": "Nhà Đường được khôi phục năm 705. Loạn An Sử, quyền lực tiết độ sứ và biến động cuối triều làm trung ương suy yếu trước khi nhà Đường kết thúc năm 907.",
+    "source": "Nhà Đường",
+    "peopleIds": [
+      "duong-huyen-tong",
+      "cao-bien"
+    ],
+    "sourceArticle": "Tang dynasty",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Tang_dynasty"
+  },
+  {
+    "id": "five-dynasties-935",
+    "era": "Ngũ Đại – Thập Quốc",
+    "name": "Ngũ Đại – Thập Quốc · toàn cảnh",
+    "years": "907–979 · bản đồ năm 935",
+    "start": 907,
+    "end": 979,
+    "city": "luoyang",
+    "summary": "Năm triều đại nối tiếp nhau ở miền bắc, trong khi nhiều vương quốc tồn tại tại các vùng khác. Mười nước cũng có niên đại khác nhau; bản đồ năm 935 chỉ thể hiện những chính thể đang tồn tại ở mốc ấy.",
+    "source": "Ngũ đại Thập quốc",
+    "peopleIds": [
+      "ly-ton-huc",
+      "tien-luu",
+      "manh-tri-tuong"
+    ],
+    "mapId": "five-dynasties-935",
+    "sourceArticle": "Five Dynasties and Ten Kingdoms period",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Five_Dynasties_and_Ten_Kingdoms_period"
+  },
+  {
+    "id": "later-liang-five",
+    "era": "Ngũ Đại – Thập Quốc",
+    "name": "Hậu Lương · Ngũ Đại",
+    "years": "907–923",
+    "start": 907,
+    "end": 923,
+    "city": "kaifeng",
+    "summary": "Chu Ôn thay nhà Đường, mở đầu Ngũ Đại ở miền bắc.",
+    "source": "Hậu Lương (Ngũ đại)",
+    "peopleIds": [
+      "chu-on"
+    ],
+    "sourceArticle": "Later Liang (Five Dynasties)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Liang_(Five_Dynasties)"
+  },
+  {
+    "id": "later-tang",
+    "era": "Ngũ Đại – Thập Quốc",
+    "name": "Hậu Đường",
+    "years": "923–936",
+    "start": 923,
+    "end": 936,
+    "city": "luoyang",
+    "summary": "Họ Lý gốc Sa Đà đánh bại Hậu Lương; trung tâm quyền lực đặt tại Lạc Dương.",
+    "source": "Hậu Đường",
+    "peopleIds": [
+      "ly-ton-huc"
+    ],
+    "mapId": "five-dynasties-935",
+    "sourceArticle": "Later Tang",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Tang"
+  },
+  {
+    "id": "later-jin",
+    "era": "Ngũ Đại – Thập Quốc",
+    "name": "Hậu Tấn",
+    "years": "936–947",
+    "start": 936,
+    "end": 947,
+    "city": "kaifeng",
+    "summary": "Thạch Kính Đường lập Hậu Tấn với sự hỗ trợ của Khiết Đan. Chính thể này kết thúc sau cuộc tiến quân của Liêu.",
+    "source": "Hậu Tấn",
+    "peopleIds": [
+      "thach-kinh-duong"
+    ],
+    "sourceArticle": "Later Jin (Five Dynasties)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Jin_(Five_Dynasties)"
+  },
+  {
+    "id": "later-han-five",
+    "era": "Ngũ Đại – Thập Quốc",
+    "name": "Hậu Hán · Ngũ Đại",
+    "years": "947–951",
+    "start": 947,
+    "end": 951,
+    "city": "kaifeng",
+    "summary": "Lưu Tri Viễn lập Hậu Hán sau khi Liêu rút khỏi trung nguyên. Bắc Hán là chính thể khác tiếp tục tồn tại ở Thái Nguyên.",
+    "source": "Hậu Hán (Ngũ đại)",
+    "peopleIds": [
+      "luu-tri-vien"
+    ],
+    "sourceArticle": "Later Han (Five Dynasties)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Han_(Five_Dynasties)"
+  },
+  {
+    "id": "later-zhou",
+    "era": "Ngũ Đại – Thập Quốc",
+    "name": "Hậu Chu",
+    "years": "951–960",
+    "start": 951,
+    "end": 960,
+    "city": "kaifeng",
+    "summary": "Quách Uy lập Hậu Chu. Nhà Tống thay Hậu Chu năm 960, kết thúc chuỗi Ngũ Đại ở miền bắc.",
+    "source": "Hậu Chu",
+    "peopleIds": [
+      "quach-uy"
+    ],
+    "sourceArticle": "Later Zhou",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Zhou"
+  },
+  {
+    "id": "yang-wu",
+    "era": "Ngũ Đại – Thập Quốc",
+    "name": "Ngô · Thập Quốc",
+    "years": "902–937",
+    "start": 902,
+    "end": 937,
+    "city": "yangzhou",
+    "summary": "Chính quyền họ Dương phát triển ở vùng Hoài Nam và Giang Nam, sau đó bị Nam Đường thay thế.",
+    "source": "Ngô (Thập quốc)",
+    "peopleIds": [
+      "duong-hanh-mat"
+    ],
+    "mapId": "five-dynasties-935",
+    "sourceArticle": "Yang Wu",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Yang_Wu"
+  },
+  {
+    "id": "wuyue",
+    "era": "Ngũ Đại – Thập Quốc",
+    "name": "Ngô Việt",
+    "years": "907–978",
+    "start": 907,
+    "end": 978,
+    "city": "hangzhou",
+    "summary": "Họ Tiền cai trị vùng Chiết Giang; Ngô Việt cuối cùng quy phục nhà Tống.",
+    "source": "Ngô Việt",
+    "peopleIds": [
+      "tien-luu"
+    ],
+    "mapId": "five-dynasties-935",
+    "sourceArticle": "Wuyue",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Wuyue"
+  },
+  {
+    "id": "min",
+    "era": "Ngũ Đại – Thập Quốc",
+    "name": "Mân",
+    "years": "909–945",
+    "start": 909,
+    "end": 945,
+    "city": "fuzhou",
+    "summary": "Họ Vương xây dựng chính quyền ở Phúc Kiến. Nội chiến và sự can thiệp từ các nước lân cận làm nước Mân kết thúc.",
+    "source": "Mân (Thập quốc)",
+    "peopleIds": [
+      "vuong-tham-tri"
+    ],
+    "mapId": "five-dynasties-935",
+    "sourceArticle": "Min (Ten Kingdoms)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Min_(Ten_Kingdoms)"
+  },
+  {
+    "id": "southern-han",
+    "era": "Ngũ Đại – Thập Quốc",
+    "name": "Nam Hán",
+    "years": "917–971",
+    "start": 917,
+    "end": 971,
+    "city": "guangzhou",
+    "summary": "Họ Lưu lập Nam Hán tại Lĩnh Nam với trung tâm ở Phiên Ngung. Nhà Tống chinh phục nước này năm 971.",
+    "source": "Nam Hán",
+    "peopleIds": [
+      "luu-nghiem"
+    ],
+    "mapId": "five-dynasties-935",
+    "sourceArticle": "Southern Han",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Southern_Han"
+  },
+  {
+    "id": "ma-chu",
+    "era": "Ngũ Đại – Thập Quốc",
+    "name": "Sở · Thập Quốc",
+    "years": "907–951",
+    "start": 907,
+    "end": 951,
+    "city": "changsha",
+    "summary": "Họ Mã cai trị vùng Hồ Nam. Chính quyền kết thúc trong các cuộc tranh giành và sự tiến quân của Nam Đường.",
+    "source": "Sở (Thập quốc)",
+    "peopleIds": [
+      "ma-an"
+    ],
+    "mapId": "five-dynasties-935",
+    "sourceArticle": "Ma Chu",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Ma_Chu"
+  },
+  {
+    "id": "northern-han",
+    "era": "Ngũ Đại – Thập Quốc",
+    "name": "Bắc Hán",
+    "years": "951–979",
+    "start": 951,
+    "end": 979,
+    "city": "taiyuan",
+    "summary": "Họ Lưu duy trì Bắc Hán tại Thái Nguyên, dựa vào quan hệ với Liêu. Nhà Tống chinh phục nước này năm 979.",
+    "source": "Bắc Hán",
+    "peopleIds": [
+      "luu-sung"
+    ],
+    "sourceArticle": "Northern Han",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Northern_Han"
+  },
+  {
+    "id": "jingnan",
+    "era": "Ngũ Đại – Thập Quốc",
+    "name": "Kinh Nam / Nam Bình",
+    "years": "924–963",
+    "start": 924,
+    "end": 963,
+    "city": "jiangling",
+    "summary": "Chính quyền nhỏ của họ Cao tại Giang Lăng giữ vị trí giữa nhiều thế lực và duy trì quan hệ với các triều phương bắc.",
+    "source": "Kinh Nam",
+    "peopleIds": [
+      "cao-quy-hung"
+    ],
+    "mapId": "five-dynasties-935",
+    "sourceArticle": "Jingnan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Jingnan"
+  },
+  {
+    "id": "former-shu",
+    "era": "Ngũ Đại – Thập Quốc",
+    "name": "Tiền Thục",
+    "years": "907–925",
+    "start": 907,
+    "end": 925,
+    "city": "chengdu",
+    "summary": "Vương Kiến lập nước Thục ở Tứ Xuyên; Tiền Thục bị Hậu Đường chinh phục năm 925.",
+    "source": "Tiền Thục",
+    "peopleIds": [
+      "vuong-kien"
+    ],
+    "sourceArticle": "Former Shu",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Former_Shu"
+  },
+  {
+    "id": "later-shu",
+    "era": "Ngũ Đại – Thập Quốc",
+    "name": "Hậu Thục",
+    "years": "934–965",
+    "start": 934,
+    "end": 965,
+    "city": "chengdu",
+    "summary": "Họ Mạnh khôi phục một chính quyền độc lập ở Tứ Xuyên trước khi nhà Tống chinh phục vùng này.",
+    "source": "Hậu Thục",
+    "peopleIds": [
+      "manh-tri-tuong"
+    ],
+    "mapId": "five-dynasties-935",
+    "sourceArticle": "Later Shu",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Shu"
+  },
+  {
+    "id": "southern-tang",
+    "era": "Ngũ Đại – Thập Quốc",
+    "name": "Nam Đường",
+    "years": "937–975",
+    "start": 937,
+    "end": 975,
+    "city": "nanjing",
+    "summary": "Nam Đường thay nước Ngô ở Giang Nam, để lại dấu ấn văn học và nghệ thuật trước khi bị nhà Tống chinh phục.",
+    "source": "Nam Đường",
+    "peopleIds": [
+      "ly-bien"
+    ],
+    "sourceArticle": "Southern Tang",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Southern_Tang"
+  },
+  {
+    "id": "northern-song",
+    "era": "Tống – Liêu – Hạ – Kim",
+    "name": "Bắc Tống",
+    "years": "960–1127",
+    "start": 960,
+    "end": 1127,
+    "city": "kaifeng",
+    "summary": "Triệu Khuông Dận lập nhà Tống. Bắc Tống tái thống nhất nhiều vùng nhưng cùng tồn tại với Liêu và Tây Hạ; kinh đô Khai Phong thất thủ trước quân Kim năm 1127.",
+    "source": "Nhà Tống",
+    "peopleIds": [
+      "trieu-khuong-dan"
+    ],
+    "mapId": "song-liao-xia-1100",
+    "sourceArticle": "Song dynasty",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Song_dynasty"
+  },
+  {
+    "id": "liao",
+    "era": "Tống – Liêu – Hạ – Kim",
+    "name": "Nhà Liêu",
+    "years": "907/916–1125",
+    "start": 907,
+    "end": 1125,
+    "city": "shangjing",
+    "summary": "Người Khiết Đan xây dựng nhà nước ở phía bắc; mốc 907 và 916 phản ánh các bước xác lập quyền lực và xưng đế. Liêu tồn tại song song với Ngũ Đại và Bắc Tống.",
+    "source": "Nhà Liêu",
+    "peopleIds": [
+      "da-luat-a-bao-co"
+    ],
+    "mapId": "song-liao-xia-1100",
+    "sourceArticle": "Liao dynasty",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Liao_dynasty"
+  },
+  {
+    "id": "western-xia",
+    "era": "Tống – Liêu – Hạ – Kim",
+    "name": "Tây Hạ",
+    "years": "1038–1227",
+    "start": 1038,
+    "end": 1227,
+    "city": "yinchuan",
+    "summary": "Nhà nước của người Đảng Hạng đặt trung tâm ở Hưng Khánh. Tây Hạ cạnh tranh và giao thương với Tống, Liêu, Kim trước khi bị quân Mông Cổ chinh phục.",
+    "source": "Tây Hạ",
+    "peopleIds": [
+      "ly-nguyen-hao"
+    ],
+    "mapId": "song-liao-xia-1100",
+    "sourceArticle": "Western Xia",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Western_Xia"
+  },
+  {
+    "id": "jin-jurchen",
+    "era": "Tống – Liêu – Hạ – Kim",
+    "name": "Nhà Kim · Nữ Chân",
+    "years": "1115–1234",
+    "start": 1115,
+    "end": 1234,
+    "city": "beijing",
+    "summary": "Người Nữ Chân lập nhà Kim, đánh bại Liêu rồi chiếm miền bắc của Tống. Nhà Kim khác nhà Tấn của họ Tư Mã, dù tên phiên âm tiếng Anh đều có thể là Jin.",
+    "source": "Nhà Kim",
+    "peopleIds": [
+      "hoan-nhan-a-cot-da"
+    ],
+    "mapId": "song-jin-1200",
+    "sourceArticle": "Jin dynasty (1115–1234)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Jin_dynasty_(1115%E2%80%931234)"
+  },
+  {
+    "id": "southern-song",
+    "era": "Tống – Liêu – Hạ – Kim",
+    "name": "Nam Tống",
+    "years": "1127–1279",
+    "start": 1127,
+    "end": 1279,
+    "city": "hangzhou",
+    "summary": "Triều đình Tống tái lập ở miền nam, lấy Lâm An làm trung tâm. Nam Tống cùng tồn tại với Kim rồi Nguyên trước khi kết thúc năm 1279.",
+    "source": "Nhà Tống",
+    "peopleIds": [
+      "trieu-cau"
+    ],
+    "mapId": "song-jin-1200",
+    "sourceArticle": "Song dynasty",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Song_dynasty"
+  },
+  {
+    "id": "western-liao",
+    "era": "Tống – Liêu – Hạ – Kim",
+    "name": "Tây Liêu",
+    "years": "1124–1218",
+    "start": 1124,
+    "end": 1218,
+    "city": "balasagun",
+    "summary": "Một nhánh hoàng tộc Liêu lập Tây Liêu ở Trung Á. Đây là chính thể kế tục của Khiết Đan ở phía tây, không đồng nhất với lãnh thổ Liêu tại Hoa Bắc.",
+    "source": "Tây Liêu",
+    "peopleIds": [
+      "da-luat-dai-thach"
+    ],
+    "sourceArticle": "Qara Khitai",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Qara_Khitai"
+  },
+  {
+    "id": "yuan",
+    "era": "Nhà Nguyên",
+    "name": "Nhà Nguyên",
+    "years": "1271–1368",
+    "start": 1271,
+    "end": 1368,
+    "city": "beijing",
+    "summary": "Hốt Tất Liệt đặt quốc hiệu Nguyên năm 1271; Nam Tống bị chinh phục năm 1279. Triều Nguyên tại Trung Quốc kết thúc khi quân Minh chiếm Đại Đô năm 1368.",
+    "source": "Nhà Nguyên",
+    "peopleIds": [
+      "hot-tat-liet",
+      "nguyen-thuan-de"
+    ],
+    "sourceArticle": "Yuan dynasty",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Yuan_dynasty"
+  },
+  {
+    "id": "northern-yuan",
+    "era": "Nhà Nguyên",
+    "name": "Bắc Nguyên",
+    "years": "1368–1635",
+    "start": 1368,
+    "end": 1635,
+    "city": "karakorum",
+    "summary": "Sau khi mất Đại Đô, triều đình và các thế lực kế tục nhà Nguyên tiếp tục tồn tại trên thảo nguyên Mông Cổ. Bắc Nguyên cùng thời với nhà Minh, không phải một triều kiểm soát toàn bộ đại lục.",
+    "source": "Bắc Nguyên",
+    "peopleIds": [
+      "nguyen-thuan-de"
+    ],
+    "sourceArticle": "Northern Yuan",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Northern_Yuan"
+  },
+  {
+    "id": "ming",
+    "era": "Nhà Minh",
+    "name": "Nhà Minh",
+    "years": "1368–1644",
+    "start": 1368,
+    "end": 1644,
+    "city": "nanjing",
+    "summary": "Chu Nguyên Chương lập nhà Minh với kinh đô đầu tiên ở Nam Kinh; triều đình chuyển trung tâm ra Bắc Kinh năm 1421. Khủng hoảng cuối triều dẫn tới sự sụp đổ năm 1644.",
+    "source": "Nhà Minh",
+    "peopleIds": [
+      "minh-thai-to"
+    ],
+    "sourceArticle": "Ming dynasty",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Ming_dynasty"
+  },
+  {
+    "id": "southern-ming",
+    "era": "Nhà Minh",
+    "name": "Nam Minh",
+    "years": "1644–1662",
+    "start": 1644,
+    "end": 1662,
+    "city": "nanjing",
+    "summary": "Các nhánh hoàng tộc và lực lượng trung thành tiếp tục dựng chính quyền Minh ở miền nam sau khi Bắc Kinh thất thủ. Các triều đình Nam Minh không kiểm soát cùng một lãnh thổ ổn định.",
+    "source": "Nam Minh",
+    "peopleIds": [
+      "hoang-quang-de"
+    ],
+    "sourceArticle": "Southern Ming",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Southern_Ming"
+  },
+  {
+    "id": "qing",
+    "era": "Nhà Thanh",
+    "name": "Nhà Thanh",
+    "years": "1636–1912 · vào Bắc Kinh 1644",
+    "start": 1636,
+    "end": 1912,
+    "city": "beijing",
+    "summary": "Hoàng Thái Cực đổi quốc hiệu thành Thanh năm 1636. Quân Thanh vào Bắc Kinh năm 1644 rồi tiếp tục chinh phục; triều đại kết thúc với việc hoàng đế thoái vị năm 1912.",
+    "source": "Nhà Thanh",
+    "peopleIds": [
+      "no-nhi-cap",
+      "hoang-thai-cuc",
+      "pho-nghi"
+    ],
+    "sourceArticle": "Qing dynasty",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Qing_dynasty"
+  },
+  {
+    "id": "republic",
+    "era": "Dân Quốc · Khởi lập",
+    "name": "Dân Quốc · Cách mạng và thời quân phiệt",
+    "years": "1912–1927",
+    "start": 1912,
+    "end": 1927,
+    "city": "nanjing",
+    "summary": "Trung Hoa Dân quốc ra đời năm 1912 sau Cách mạng Tân Hợi. Tôn Trung Sơn giữ chức tổng thống lâm thời trước khi chuyển quyền cho Viên Thế Khải. Sau khi Viên mất năm 1916, các thế lực quân phiệt phân tranh. Quốc dân đảng xây dựng căn cứ miền nam và tiến hành Bắc phạt từ năm 1926; giai đoạn chính quyền Nam Kinh do Tưởng Giới Thạch chi phối được trình bày ở mốc tiếp theo.",
+    "source": "Lịch sử Trung Hoa Dân Quốc",
+    "peopleIds": [
+      "ton-trung-son"
+    ],
+    "sourceArticle": "History of the Republic of China",
+    "sourceUrl": "https://en.wikipedia.org/wiki/History_of_the_Republic_of_China"
+  },
+  {
+    "id": "nationalist-nanjing",
+    "era": "Dân Quốc · Tưởng Giới Thạch",
+    "name": "Dân Quốc · Chính quyền Nam Kinh của Tưởng Giới Thạch",
+    "years": "1927–1937",
+    "start": 1927,
+    "end": 1937,
+    "city": "nanjing",
+    "capital": "Nam Kinh · Chính phủ Quốc dân",
+    "summary": "Năm 1927, chính quyền Quốc dân được thành lập tại Nam Kinh; sau Bắc phạt, Tưởng Giới Thạch trở thành nhân vật chi phối chính trị và quân sự. Thập niên Nam Kinh có các nỗ lực xây dựng nhà nước, phát triển hạ tầng và tài chính, nhưng quyền lực vẫn bị hạn chế bởi các thế lực địa phương. Xung đột Quốc–Cộng bắt đầu từ năm 1927. Nhật Bản chiếm Mãn Châu từ năm 1931, trước khi chiến tranh toàn diện bùng nổ năm 1937.",
+    "source": "Oxford · Chiang Kai-shek và thập niên Nam Kinh",
+    "sourceArticle": "Nanjing decade",
+    "sourceUrl": "https://academic.oup.com/reference/62338/reference-article-abstract/554180483",
+    "peopleIds": [
+      "tuong-gioi-thach",
+      "mao-trach-dong"
+    ]
+  },
+  {
+    "id": "war-against-japan",
+    "era": "Dân Quốc · Kháng Nhật",
+    "name": "Chiến tranh Trung–Nhật · Kháng Nhật",
+    "years": "1937–1945 · Nhật chiếm Mãn Châu từ 1931",
+    "start": 1937,
+    "end": 1945,
+    "city": "chongqing",
+    "cityIds": [
+      "chongqing",
+      "nanjing"
+    ],
+    "capital": "Trùng Khánh · trung tâm chính phủ thời chiến; Nam Kinh bị chiếm",
+    "summary": "Chiến tranh Trung–Nhật toàn diện bùng nổ năm 1937. Chính phủ Quốc dân do Tưởng Giới Thạch lãnh đạo rút sâu vào nội địa, lấy Trùng Khánh làm trung tâm thời chiến. Quân Quốc dân đảng và lực lượng cộng sản cùng kháng Nhật trong Mặt trận thống nhất, nhưng vẫn có xung đột và giữ hệ thống chỉ huy riêng. Việc chiếm đóng, thảm sát Nam Kinh và chiến tranh gây tổn thất rất lớn cho dân thường. Nhật Bản đầu hàng năm 1945; mâu thuẫn Quốc–Cộng tiếp tục dẫn tới nội chiến toàn diện.",
+    "source": "Library of Congress · Chiến tranh Trung–Nhật 1937–1945",
+    "sourceArticle": "Second Sino-Japanese War",
+    "sourceUrl": "https://guides.loc.gov/sino-japanese-war-1937-1945",
+    "peopleIds": [
+      "tuong-gioi-thach",
+      "mao-trach-dong",
+      "chu-an-lai"
+    ]
+  },
+  {
+    "id": "chinese-civil-war",
+    "era": "Dân Quốc · Nội chiến",
+    "name": "Nội chiến Trung Quốc · Quốc–Cộng",
+    "years": "1945–1949 · giao tranh trước đó từ 1927",
+    "start": 1945,
+    "end": 1949,
+    "city": "nanjing",
+    "cityIds": [
+      "nanjing",
+      "beijing",
+      "taipei"
+    ],
+    "capital": "Chính phủ Dân Quốc: Nam Kinh; cuối 1949 chuyển ra Đài Loan",
+    "summary": "Sau khi Nhật đầu hàng năm 1945, đàm phán giữa Quốc dân đảng và Đảng Cộng sản không tạo được thỏa thuận bền vững. Nội chiến quy mô lớn tái diễn từ năm 1946. Các chiến dịch Liêu–Thẩm, Hoài–Hải và Bình–Tân năm 1948–1949 làm cán cân chuyển mạnh sang lực lượng cộng sản. Mao tuyên bố thành lập CHND Trung Hoa tại Bắc Kinh tháng 10/1949; chính quyền của Tưởng Giới Thạch rút ra Đài Loan cuối năm. Mốc 1949 phản ánh thay đổi quyền kiểm soát chính tại đại lục, không phải một hiệp ước hòa bình chấm dứt mọi đối đầu.",
+    "source": "U.S. Office of the Historian · Cách mạng Trung Quốc 1949",
+    "sourceArticle": "Chinese Civil War",
+    "sourceUrl": "https://history.state.gov/milestones/1945-1952/chinese-rev",
+    "peopleIds": [
+      "tuong-gioi-thach",
+      "mao-trach-dong",
+      "chu-an-lai"
+    ]
+  },
+  {
+    "id": "peoples-republic",
+    "era": "CHND Trung Hoa · Sau 1949",
+    "name": "Mao thắng tại đại lục · CHND Trung Hoa",
+    "years": "1949–1978",
+    "start": 1949,
+    "end": 1978,
+    "city": "beijing",
+    "summary": "Sau thắng lợi của lực lượng cộng sản tại đại lục, Mao Trạch Đông tuyên bố thành lập Cộng hòa Nhân dân Trung Hoa ngày 1/10/1949 tại Bắc Kinh. Chính quyền Trung Hoa Dân quốc chuyển ra Đài Loan và tiếp tục tồn tại, không bị chấm dứt về mặt thể chế tại mốc 1949. Ở đại lục, cải cách ruộng đất, kinh tế kế hoạch, Đại nhảy vọt và Cách mạng Văn hóa làm thay đổi sâu sắc xã hội, đồng thời gây nạn đói, đàn áp và nhiều mất mát. Mao qua đời năm 1976; bước chuyển sang cải cách được trình bày từ năm 1978.",
+    "source": "Lịch sử Cộng hòa Nhân dân Trung Hoa",
+    "peopleIds": [
+      "mao-trach-dong",
+      "chu-an-lai"
+    ],
+    "sourceArticle": "History of the People's Republic of China",
+    "sourceUrl": "https://en.wikipedia.org/wiki/History_of_the_People%27s_Republic_of_China"
+  },
+  {
+    "id": "reform",
+    "era": "Trung Quốc · Cải cách",
+    "name": "Cải cách và Trung Quốc hiện đại",
+    "years": "Từ 1978 đến hiện đại",
+    "start": 1978,
+    "end": null,
+    "city": "beijing",
+    "summary": "Từ cuối năm 1978, cải cách kinh tế và mở cửa tạo thay đổi trong sản xuất, thương mại, di cư và đô thị hóa. Đây là giai đoạn của Cộng hòa Nhân dân Trung Hoa, không phải một triều đại quân chủ mới.",
+    "source": "Cải cách kinh tế Trung Quốc",
+    "peopleIds": [
+      "dang-tieu-binh"
+    ],
+    "sourceArticle": "Chinese economic reform",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Reform_and_opening_up"
+  }
+]

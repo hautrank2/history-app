@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Image } from "@/components/ui/image";
 import Link from "next/link";
-import { HomeLink } from "~/components/home-link";
 import { notFound } from "next/navigation";
 
+import { Image } from "@/components/ui/image";
+import { HomeLink } from "~/components/home-link";
 import { countriesData } from "~/data";
-import { countryPresentation } from "~/data/world";
+import { chinaOverview } from "~/data/china-overview";
 import { vietnamOverview } from "~/data/vietnam-overview";
+import { countryPresentation } from "~/data/world";
 
 import { VietnamOverview } from "./[period]/_components/vietnam-overview";
 
@@ -14,15 +15,31 @@ import "~/styles/overview-entry.css";
 
 type CountryPageProps = { params: Promise<{ country: string }> };
 export const generateStaticParams = () => Object.keys(countriesData).map((country) => ({ country }));
-export const generateMetadata = async ({ params }: CountryPageProps): Promise<Metadata> => (await params).country === "vietnam" ? {
-  title: "Lịch sử các triều đại Việt Nam",
-  description: `Khám phá lịch sử Việt Nam từ Hùng Vương đến hiện đại qua ${vietnamOverview.length} cảnh, bản đồ 2D, văn hóa và nhân vật. Tư liệu ưu tiên Wikipedia.`,
-} : { title: countriesData[(await params).country]?.name };
+export const generateMetadata = async ({
+  params,
+}: CountryPageProps): Promise<Metadata> => {
+  const { country } = await params;
+  if (country === "vietnam") {
+    return {
+      title: "Lịch sử các triều đại Việt Nam",
+      description: `Khám phá lịch sử Việt Nam từ Hùng Vương đến hiện đại qua ${vietnamOverview.length} cảnh, bản đồ 2D, văn hóa và nhân vật. Tư liệu ưu tiên Wikipedia.`,
+    };
+  }
+  if (country === "china") {
+    return {
+      title: "Lịch sử các triều đại Trung Quốc",
+      description: `Khám phá lịch sử Trung Quốc từ nhà Hạ đến hiện đại qua ${chinaOverview.length} cảnh, bản đồ 2D, văn hóa và nhân vật.`,
+    };
+  }
+  return { title: countriesData[country]?.name };
+};
 
 const CountryPage = async ({ params }: CountryPageProps) => {
   const country = countriesData[(await params).country];
   if (!country) notFound();
-  if (country.slug === "vietnam") return <VietnamOverview />;
+  if (country.slug === "vietnam" || country.slug === "china") {
+    return <VietnamOverview key={country.slug} country={country.slug} />;
+  }
   const visual = countryPresentation[country.slug];
   const featured = country.periods.find((period) => period.story);
   return <main className="atlas-page atlas-period-page">

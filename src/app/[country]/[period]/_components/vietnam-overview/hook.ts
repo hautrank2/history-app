@@ -2,12 +2,16 @@
 
 import { useEffect, useRef, useState } from "react";
 
+import { chinaSceneAliases } from "~/data/china-overview";
 import { vietnamOverview } from "~/data/vietnam-overview";
+import type { OverviewSceneModel } from "~/data/vietnam-overview";
 import { playGameSound } from "~/lib/game-audio";
 
 export type OverviewTab = "story" | "culture" | "geography" | "people" | "sources";
 
-export const useVietnamOverview = () => {
+export const useVietnamOverview = (
+  scenes: OverviewSceneModel[] = vietnamOverview,
+) => {
   const [index, setIndex] = useState(0);
   const [selectedPlace, setSelectedPlace] = useState(0);
   const [playing, setPlaying] = useState(false);
@@ -18,48 +22,91 @@ export const useVietnamOverview = () => {
   const [timelineVisible, setTimelineVisible] = useState(true);
   const [placesVisible, setPlacesVisible] = useState(false);
   const rail = useRef<HTMLDivElement>(null);
-  const scene = vietnamOverview[index];
+  const scene = scenes[index];
 
   const go = (next: number) => {
-    const safeIndex = Math.max(0, Math.min(vietnamOverview.length - 1, next));
-    setIndex(safeIndex); setSelectedPlace(0);
+    const safeIndex = Math.max(0, Math.min(scenes.length - 1, next));
+    setIndex(safeIndex);
+    setSelectedPlace(0);
     if (safeIndex !== index) playGameSound("navigate");
-    window.history.replaceState(null, "", `#${vietnamOverview[safeIndex].id}`);
+    window.history.replaceState(null, "", `#${scenes[safeIndex].id}`);
     window.dispatchEvent(new Event("atlas:scene-change"));
-    if (safeIndex === vietnamOverview.length - 1) setPlaying(false);
+    if (safeIndex === scenes.length - 1) setPlaying(false);
   };
-  const changeTab = (next: OverviewTab) => { setTab(next); setPlaying(false); };
+  const changeTab = (next: OverviewTab) => {
+    setTab(next);
+    setPlaying(false);
+  };
 
   useEffect(() => {
     const syncHash = () => {
-      const next = vietnamOverview.findIndex((item) => item.id === window.location.hash.slice(1));
-      if (next >= 0) { setIndex(next); setSelectedPlace(0); }
+      const next = scenes.findIndex(
+        (item) => item.id === (scenes === vietnamOverview
+          ? window.location.hash.slice(1)
+          : chinaSceneAliases[window.location.hash.slice(1)]
+            ?? window.location.hash.slice(1)),
+      );
+      if (next >= 0) {
+        setIndex(next);
+        setSelectedPlace(0);
+      }
     };
-    syncHash(); window.addEventListener("hashchange", syncHash);
+    syncHash();
+    window.addEventListener("hashchange", syncHash);
     return () => window.removeEventListener("hashchange", syncHash);
-  }, []);
+  }, [scenes]);
 
   useEffect(() => {
     const track = rail.current;
     const active = track?.querySelector<HTMLElement>("[aria-current='step']");
     if (!track || !active) return;
     // Move only the clipped timeline, never the document or map.
-    track.scrollTo({ left: active.offsetLeft - track.clientWidth / 2 + active.clientWidth / 2, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
+    track.scrollTo({
+      left: active.offsetLeft - track.clientWidth / 2 + active.clientWidth / 2,
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? "instant"
+        : "smooth",
+    });
   }, [index, query, timelineVisible]);
 
   useEffect(() => {
     if (!playing) return;
     const timer = window.setTimeout(() => {
       const next = index + 1;
-      if (next >= vietnamOverview.length) { setPlaying(false); return; }
-      setIndex(next); setSelectedPlace(0);
+      if (next >= scenes.length) {
+        setPlaying(false);
+        return;
+      }
+      setIndex(next);
+      setSelectedPlace(0);
       playGameSound("navigate");
-      window.history.replaceState(null, "", `#${vietnamOverview[next].id}`);
+      window.history.replaceState(null, "", `#${scenes[next].id}`);
       window.dispatchEvent(new Event("atlas:scene-change"));
-      if (next === vietnamOverview.length - 1) setPlaying(false);
+      if (next === scenes.length - 1) setPlaying(false);
     }, playbackMs);
     return () => window.clearTimeout(timer);
-  }, [index, playbackMs, playing]);
+  }, [index, playbackMs, playing, scenes]);
 
-  return { index, scene, selectedPlace, setSelectedPlace, playing, setPlaying, playbackMs, setPlaybackMs, tab, changeTab, query, setQuery, contentVisible, setContentVisible, timelineVisible, setTimelineVisible, placesVisible, setPlacesVisible, rail, go };
+  return {
+    index,
+    scene,
+    selectedPlace,
+    setSelectedPlace,
+    playing,
+    setPlaying,
+    playbackMs,
+    setPlaybackMs,
+    tab,
+    changeTab,
+    query,
+    setQuery,
+    contentVisible,
+    setContentVisible,
+    timelineVisible,
+    setTimelineVisible,
+    placesVisible,
+    setPlacesVisible,
+    rail,
+    go,
+  };
 };

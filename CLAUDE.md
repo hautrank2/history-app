@@ -19,6 +19,7 @@ Bản đồ địa hình kể lịch sử theo từng giai đoạn. Việt Nam t
 
 ## Styling
 
+- Ưu tiên Tailwind utility để styling; className ngữ nghĩa giúp dev đọc tên vị trí component cần chỉnh sửa, không bắt buộc tạo CSS riêng. Chỉ dùng CSS khi utility không phù hợp; CSS/SCSS còn cần dùng nằm trong `src/styles/`.
 - Dùng token ngữ nghĩa (`bg-card`, `text-foreground/70`, `border-border`), không hex thô trong class.
 - Dự án chỉ có một theme tối kiểu game. Màu của MapLibre nằm trong `map-style.ts` vì thư viện không đọc được token CSS.
 - Ghép class bằng `cn()` khi component nhận `className`.
@@ -35,6 +36,7 @@ Bản đồ địa hình kể lịch sử theo từng giai đoạn. Việt Nam t
 
 ## Rule bắt buộc
 
+- Đọc và tuân theo `.claude/rules/code-style.md`: format dễ đọc theo file mẫu Hồ Chí Minh, format các file vừa sửa trước khi bàn giao.
 - Đọc và tuân theo `.claude/rules/ui-locations.md`: className ngữ nghĩa và ID ổn định để chỉ vị trí trên giao diện.
 - Đọc và tuân theo `.claude/rules/history-data.md`: database JSON dùng chung, quan hệ nhân vật/sự kiện và bản đồ biển đảo.
 - Đọc và tuân theo `.claude/rules/image.md`: mọi ảnh đi qua `@/components/ui/image`; ảnh nội dung click để xem, nhiều ảnh dùng ImageGroup.

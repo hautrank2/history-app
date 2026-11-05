@@ -234,6 +234,31 @@
     }
   },
   "characters": {
+    "tan-thuy-hoang": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "luu-bi": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "duong-thai-tong": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "hot-tat-liet": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "minh-thai-to": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
     "hung-vuong": {
       "country": "vietnam",
       "era": "monarchy",
@@ -1054,12 +1079,467 @@
       "republic": {
         "country": "china",
         "era": "modern",
-        "mood": "dramatic"
+        "mood": "majestic"
       },
       "people-republic": {
         "country": "china",
         "era": "modern",
         "mood": "majestic"
+      },
+      "peoples-republic": {
+        "country": "china",
+        "era": "modern",
+        "mood": "majestic"
+      },
+      "reform": {
+        "country": "china",
+        "era": "modern",
+        "mood": "reflective"
+      },
+      "xia": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "shang": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "western-zhou": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "spring-autumn": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "warring-states-260": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "qin": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "western-han": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "xin": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "han-restoration": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "eastern-han": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "cao-wei": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "shu-han": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "eastern-wu": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "western-jin": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "eastern-jin": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "han-zhao": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "cheng-han": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "former-liang": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "later-zhao": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "former-yan": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "former-qin": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "later-yan": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "later-qin": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "western-qin": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "later-liang": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "southern-liang": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "northern-liang": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "southern-yan": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "western-liang": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "xia-helian": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "northern-yan": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "western-yan": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "ran-wei": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "dai": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "zhai-wei": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "huan-chu": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "western-shu": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "sixteen-kingdoms-317": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "sixteen-kingdoms-350": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "sixteen-kingdoms-376": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "sixteen-kingdoms-391": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "sixteen-kingdoms-402": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "sixteen-kingdoms-416": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "northern-southern-550": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "liu-song": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "southern-qi": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "liang": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "chen": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "northern-wei": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "eastern-wei": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "western-wei": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "northern-qi": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "northern-zhou": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "western-liang-nanbei": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "sui": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "tang-early": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "wu-zhou": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "tang-restored": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "five-dynasties-935": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "later-liang-five": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "later-tang": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "later-jin": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "later-han-five": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "later-zhou": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "yang-wu": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "wuyue": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "min": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "southern-han": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "ma-chu": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "northern-han": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "jingnan": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "former-shu": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "later-shu": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "southern-tang": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "northern-song": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "liao": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "western-xia": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "jin-jurchen": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "southern-song": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "western-liao": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "yuan": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "northern-yuan": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "ming": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "southern-ming": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "qing": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "chu-han-contention": {
+        "country": "china",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "nationalist-nanjing": {
+        "country": "china",
+        "era": "modern",
+        "mood": "dramatic"
+      },
+      "war-against-japan": {
+        "country": "china",
+        "era": "modern",
+        "mood": "dramatic"
+      },
+      "chinese-civil-war": {
+        "country": "china",
+        "era": "modern",
+        "mood": "dramatic"
       }
     }
   }
