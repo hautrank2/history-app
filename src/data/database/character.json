@@ -85,9 +85,9 @@
     "name": "Mã Viện",
     "aliases": [],
     "wiki": "Ma Yuan (Han dynasty)",
-    "role": "Tướng Đông Hán chỉ huy cuộc tái chinh phục",
-    "biography": "Tướng Đông Hán chỉ huy cuộc tái chinh phục.",
-    "lifespan": "Không xác định",
+    "role": "Tướng Đông Hán đàn áp khởi nghĩa Hai Bà Trưng",
+    "biography": "Tướng Đông Hán, được phong Phục Ba tướng quân. Năm 42–43, ông chỉ huy quân Hán đàn áp khởi nghĩa Hai Bà Trưng và tái lập sự cai trị của nhà Hán ở Giao Chỉ.",
+    "lifespan": "14 TCN – 49",
     "sources": [
       {
         "title": "Mã Viện",
@@ -699,8 +699,8 @@
     "aliases": [],
     "wiki": "Zhang Fu (Ming dynasty)",
     "role": "Tướng Minh chỉ huy xâm lược",
-    "biography": "Tướng Minh chỉ huy xâm lược.",
-    "lifespan": "Không xác định",
+    "biography": "Tướng nhà Minh, chỉ huy cuộc xâm lược nhà Hồ năm 1406–1407 và nhiều lần đàn áp các cuộc khởi nghĩa thời thuộc Minh ở Đại Việt.",
+    "lifespan": "1375–1449",
     "sources": [
       {
         "title": "Trương Phụ",
@@ -1069,8 +1069,8 @@
     "aliases": [],
     "wiki": "Sun Shiyi",
     "role": "Tổng chỉ huy quân Thanh can thiệp năm 1788",
-    "biography": "Tổng chỉ huy quân Thanh can thiệp năm 1788.",
-    "lifespan": "Không xác định",
+    "biography": "Tổng đốc Lưỡng Quảng, chỉ huy quân Thanh tiến vào Thăng Long cuối năm 1788. Quân Thanh bị quân Tây Sơn đánh bại đầu năm 1789 và ông phải rút về nước.",
+    "lifespan": "1720–1796",
     "sources": [
       {
         "title": "Tôn Sĩ Nghị",
@@ -3256,10 +3256,13 @@
     "id": "luu-nghiem",
     "countryId": "china",
     "name": "Lưu Nghiễm",
-    "aliases": [],
+    "aliases": [
+      "Lưu Cung",
+      "Nam Hán Cao Tổ"
+    ],
     "wiki": "Liu Yan (emperor)",
     "role": "Người xưng hoàng đế tại Quảng Châu năm 917, lập Nam Hán.",
-    "biography": "Người xưng hoàng đế tại Quảng Châu năm 917, lập Nam Hán.",
+    "biography": "Người xưng hoàng đế tại Phiên Ngung (Quảng Châu) năm 917, lập Nam Hán. Thời ông, Nam Hán chiếm Giao Châu năm 930 nhưng bị Dương Đình Nghệ đánh đuổi năm 931; năm 938, quân Nam Hán do con ông là Lưu Hoằng Tháo chỉ huy thua Ngô Quyền tại Bạch Đằng.",
     "lifespan": "889–942",
     "sources": [
       {
@@ -3559,6 +3562,1024 @@
       {
         "title": "Tôn Trung Sơn",
         "url": "https://en.wikipedia.org/wiki/Sun_Yat-sen"
+      }
+    ]
+  },
+  {
+    "id": "boudica",
+    "countryId": "england",
+    "name": "Boudica",
+    "aliases": [],
+    "wiki": "Boudica",
+    "role": "Nữ vương người Iceni lãnh đạo khởi nghĩa chống La Mã",
+    "biography": "Nữ vương của bộ tộc Iceni ở miền đông Britannia. Khoảng năm 60–61, bà lãnh đạo cuộc khởi nghĩa thiêu rụi Camulodunum, Londinium và Verulamium trước khi bị quân La Mã đánh bại.",
+    "lifespan": "? – khoảng 60/61",
+    "sources": [
+      {
+        "title": "Boudica",
+        "url": "https://en.wikipedia.org/wiki/Boudica"
+      }
+    ]
+  },
+  {
+    "id": "bede",
+    "countryId": "england",
+    "name": "Bede",
+    "aliases": [
+      "Venerable Bede"
+    ],
+    "wiki": "Bede",
+    "role": "Tu sĩ và sử gia Northumbria",
+    "biography": "Tu sĩ ở tu viện Wearmouth–Jarrow, tác giả Lịch sử Giáo hội của dân tộc Anh (731), nguồn quan trọng nhất về nước Anh thời Anglo-Saxon sơ kỳ. Ông góp phần phổ biến cách tính năm Công nguyên.",
+    "lifespan": "khoảng 673 – 735",
+    "sources": [
+      {
+        "title": "Bede",
+        "url": "https://en.wikipedia.org/wiki/Bede"
+      }
+    ]
+  },
+  {
+    "id": "offa-of-mercia",
+    "countryId": "england",
+    "name": "Offa xứ Mercia",
+    "aliases": [],
+    "wiki": "Offa of Mercia",
+    "role": "Vua Mercia, vương quốc mạnh nhất thế kỷ VIII",
+    "biography": "Vua Mercia từ năm 757 đến 796, chi phối phần lớn miền nam nước Anh. Tên ông gắn với Offa's Dyke, tuyến lũy đất dọc biên giới xứ Wales.",
+    "lifespan": "? – 796",
+    "sources": [
+      {
+        "title": "Offa xứ Mercia",
+        "url": "https://en.wikipedia.org/wiki/Offa_of_Mercia"
+      }
+    ]
+  },
+  {
+    "id": "alfred-the-great",
+    "countryId": "england",
+    "name": "Alfred Đại đế",
+    "aliases": [
+      "Alfred"
+    ],
+    "wiki": "Alfred the Great",
+    "role": "Vua Wessex chống lại người Viking",
+    "biography": "Vua Wessex từ năm 871. Ông thắng quân Viking ở Edington năm 878, xây dựng hệ thống thị trấn phòng thủ và khuyến khích dịch sách sang tiếng Anh cổ.",
+    "lifespan": "849 – 899",
+    "sources": [
+      {
+        "title": "Alfred Đại đế",
+        "url": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+      }
+    ]
+  },
+  {
+    "id": "athelstan",
+    "countryId": "england",
+    "name": "Æthelstan",
+    "aliases": [
+      "Athelstan"
+    ],
+    "wiki": "Æthelstan",
+    "role": "Vị vua đầu tiên của toàn nước Anh",
+    "biography": "Cháu nội Alfred Đại đế. Năm 927 ông chiếm York, được xem là vua đầu tiên cai trị toàn bộ nước Anh; năm 937 thắng trận Brunanburh.",
+    "lifespan": "khoảng 894 – 939",
+    "sources": [
+      {
+        "title": "Æthelstan",
+        "url": "https://en.wikipedia.org/wiki/%C3%86thelstan"
+      }
+    ]
+  },
+  {
+    "id": "edward-the-confessor",
+    "countryId": "england",
+    "name": "Edward Xưng Tội",
+    "aliases": [
+      "Edward the Confessor"
+    ],
+    "wiki": "Edward the Confessor",
+    "role": "Vua Anh cuối dòng Wessex",
+    "biography": "Vua Anh từ năm 1042 đến 1066, cho xây lại tu viện Westminster. Ông mất không có con, mở ra cuộc tranh ngôi năm 1066.",
+    "lifespan": "khoảng 1003 – 1066",
+    "sources": [
+      {
+        "title": "Edward Xưng Tội",
+        "url": "https://en.wikipedia.org/wiki/Edward_the_Confessor"
+      }
+    ]
+  },
+  {
+    "id": "harold-godwinson",
+    "countryId": "england",
+    "name": "Harold Godwinson",
+    "aliases": [
+      "Harold II"
+    ],
+    "wiki": "Harold Godwinson",
+    "role": "Vua Anglo-Saxon cuối cùng",
+    "biography": "Lên ngôi đầu năm 1066 với tên Harold II. Ông đánh bại Harald Hardrada ở Stamford Bridge rồi tử trận ở Hastings trước quân Norman.",
+    "lifespan": "khoảng 1022 – 1066",
+    "sources": [
+      {
+        "title": "Harold Godwinson",
+        "url": "https://en.wikipedia.org/wiki/Harold_Godwinson"
+      }
+    ]
+  },
+  {
+    "id": "william-the-conqueror",
+    "countryId": "england",
+    "name": "William Kẻ Chinh phục",
+    "aliases": [
+      "William I"
+    ],
+    "wiki": "William the Conqueror",
+    "role": "Công tước Normandy, vua Anh sau năm 1066",
+    "biography": "Công tước Normandy, thắng trận Hastings năm 1066 và trở thành William I của Anh. Ông cho xây nhiều lâu đài và tiến hành khảo sát Domesday năm 1086.",
+    "lifespan": "khoảng 1028 – 1087",
+    "sources": [
+      {
+        "title": "William Kẻ Chinh phục",
+        "url": "https://en.wikipedia.org/wiki/William_the_Conqueror"
+      }
+    ]
+  },
+  {
+    "id": "stephen-of-blois",
+    "countryId": "england",
+    "name": "Stephen xứ Blois",
+    "aliases": [],
+    "wiki": "Stephen, King of England",
+    "role": "Vua Anh thời Vô chính phủ",
+    "biography": "Cháu của Henry I, chiếm ngôi năm 1135 và đánh nhau với Nữ hoàng Matilda suốt gần hai mươi năm.",
+    "lifespan": "khoảng 1092 – 1154",
+    "sources": [
+      {
+        "title": "Stephen xứ Blois",
+        "url": "https://en.wikipedia.org/wiki/Stephen,_King_of_England"
+      }
+    ]
+  },
+  {
+    "id": "empress-matilda",
+    "countryId": "england",
+    "name": "Nữ hoàng Matilda",
+    "aliases": [
+      "Matilda"
+    ],
+    "wiki": "Empress Matilda",
+    "role": "Người tranh ngôi trong thời Vô chính phủ",
+    "biography": "Con gái Henry I, từng là hoàng hậu Đế quốc La Mã Thần thánh. Bà đòi ngôi Anh trước Stephen; con trai bà lên ngôi với tên Henry II.",
+    "lifespan": "1102 – 1167",
+    "sources": [
+      {
+        "title": "Nữ hoàng Matilda",
+        "url": "https://en.wikipedia.org/wiki/Empress_Matilda"
+      }
+    ]
+  },
+  {
+    "id": "henry-ii",
+    "countryId": "england",
+    "name": "Henry II",
+    "aliases": [],
+    "wiki": "Henry II of England",
+    "role": "Vua Anh đầu tiên của nhà Plantagenet",
+    "biography": "Cai trị nước Anh cùng những vùng đất rộng lớn ở Pháp. Cải cách tư pháp của ông góp phần hình thành thông luật; xung đột với Thomas Becket kết thúc bằng vụ sát hại năm 1170.",
+    "lifespan": "1133 – 1189",
+    "sources": [
+      {
+        "title": "Henry II",
+        "url": "https://en.wikipedia.org/wiki/Henry_II_of_England"
+      }
+    ]
+  },
+  {
+    "id": "richard-i",
+    "countryId": "england",
+    "name": "Richard I Tim Sư tử",
+    "aliases": [
+      "Richard the Lionheart"
+    ],
+    "wiki": "Richard I of England",
+    "role": "Vua Anh, chỉ huy Thập tự chinh thứ ba",
+    "biography": "Vua Anh từ năm 1189, dành phần lớn thời gian trị vì cho Thập tự chinh thứ ba và chiến tranh ở Pháp.",
+    "lifespan": "1157 – 1199",
+    "sources": [
+      {
+        "title": "Richard I Tim Sư tử",
+        "url": "https://en.wikipedia.org/wiki/Richard_I_of_England"
+      }
+    ]
+  },
+  {
+    "id": "king-john",
+    "countryId": "england",
+    "name": "Vua John",
+    "aliases": [],
+    "wiki": "John, King of England",
+    "role": "Vua Anh chấp thuận Magna Carta",
+    "biography": "Mất Normandy năm 1204 và bị các nam tước buộc chấp thuận Magna Carta năm 1215.",
+    "lifespan": "1166 – 1216",
+    "sources": [
+      {
+        "title": "Vua John",
+        "url": "https://en.wikipedia.org/wiki/John,_King_of_England"
+      }
+    ]
+  },
+  {
+    "id": "edward-i",
+    "countryId": "england",
+    "name": "Edward I",
+    "aliases": [],
+    "wiki": "Edward I of England",
+    "role": "Vua Anh chinh phục xứ Wales",
+    "biography": "Vua Anh từ năm 1272, chinh phục xứ Wales, xây chuỗi lâu đài ở đó và can thiệp vào Scotland. Thời ông, nghị viện được triệu tập thường xuyên hơn.",
+    "lifespan": "1239 – 1307",
+    "sources": [
+      {
+        "title": "Edward I",
+        "url": "https://en.wikipedia.org/wiki/Edward_I_of_England"
+      }
+    ]
+  },
+  {
+    "id": "edward-iii",
+    "countryId": "england",
+    "name": "Edward III",
+    "aliases": [],
+    "wiki": "Edward III of England",
+    "role": "Vua Anh mở đầu Chiến tranh Trăm Năm",
+    "biography": "Đòi ngai vàng Pháp năm 1337, thắng ở Crécy năm 1346. Thời ông trị vì có Cái Chết Đen.",
+    "lifespan": "1312 – 1377",
+    "sources": [
+      {
+        "title": "Edward III",
+        "url": "https://en.wikipedia.org/wiki/Edward_III_of_England"
+      }
+    ]
+  },
+  {
+    "id": "henry-v",
+    "countryId": "england",
+    "name": "Henry V",
+    "aliases": [],
+    "wiki": "Henry V of England",
+    "role": "Vua Anh thắng trận Agincourt",
+    "biography": "Vua nhà Lancaster thắng lớn ở Agincourt năm 1415 và được công nhận là người kế vị ngai Pháp năm 1420, nhưng mất năm 1422.",
+    "lifespan": "1386 – 1422",
+    "sources": [
+      {
+        "title": "Henry V",
+        "url": "https://en.wikipedia.org/wiki/Henry_V_of_England"
+      }
+    ]
+  },
+  {
+    "id": "richard-iii",
+    "countryId": "england",
+    "name": "Richard III",
+    "aliases": [],
+    "wiki": "Richard III of England",
+    "role": "Vua cuối cùng nhà York",
+    "biography": "Lên ngôi năm 1483 và tử trận ở Bosworth năm 1485. Hài cốt ông được tìm thấy ở Leicester năm 2012.",
+    "lifespan": "1452 – 1485",
+    "sources": [
+      {
+        "title": "Richard III",
+        "url": "https://en.wikipedia.org/wiki/Richard_III_of_England"
+      }
+    ]
+  },
+  {
+    "id": "henry-vii",
+    "countryId": "england",
+    "name": "Henry VII",
+    "aliases": [
+      "Henry Tudor"
+    ],
+    "wiki": "Henry VII of England",
+    "role": "Người lập nhà Tudor",
+    "biography": "Thắng Richard III ở Bosworth năm 1485, kết hôn với Elizabeth xứ York và củng cố vương quyền sau Chiến tranh Hoa Hồng.",
+    "lifespan": "1457 – 1509",
+    "sources": [
+      {
+        "title": "Henry VII",
+        "url": "https://en.wikipedia.org/wiki/Henry_VII_of_England"
+      }
+    ]
+  },
+  {
+    "id": "henry-viii",
+    "countryId": "england",
+    "name": "Henry VIII",
+    "aliases": [],
+    "wiki": "Henry VIII",
+    "role": "Vua Anh tách Giáo hội khỏi Rome",
+    "biography": "Kết hôn sáu lần; tách Giáo hội Anh khỏi quyền Giáo hoàng năm 1534 và giải thể các tu viện.",
+    "lifespan": "1491 – 1547",
+    "sources": [
+      {
+        "title": "Henry VIII",
+        "url": "https://en.wikipedia.org/wiki/Henry_VIII"
+      }
+    ]
+  },
+  {
+    "id": "elizabeth-i",
+    "countryId": "england",
+    "name": "Elizabeth I",
+    "aliases": [],
+    "wiki": "Elizabeth I",
+    "role": "Nữ hoàng thời Elizabeth",
+    "biography": "Trị vì 1558–1603, thiết lập lại Giáo hội Anh, đối đầu Tây Ban Nha và chứng kiến thất bại của Armada năm 1588.",
+    "lifespan": "1533 – 1603",
+    "sources": [
+      {
+        "title": "Elizabeth I",
+        "url": "https://en.wikipedia.org/wiki/Elizabeth_I"
+      }
+    ]
+  },
+  {
+    "id": "james-i",
+    "countryId": "england",
+    "name": "James I",
+    "aliases": [
+      "James VI"
+    ],
+    "wiki": "James VI and I",
+    "role": "Vua Scotland và Anh",
+    "biography": "Vua Scotland với tên James VI, trở thành vua Anh năm 1603, nối hai vương miện. Bản Kinh thánh King James (1611) mang tên ông.",
+    "lifespan": "1566 – 1625",
+    "sources": [
+      {
+        "title": "James I",
+        "url": "https://en.wikipedia.org/wiki/James_VI_and_I"
+      }
+    ]
+  },
+  {
+    "id": "charles-i",
+    "countryId": "england",
+    "name": "Charles I",
+    "aliases": [],
+    "wiki": "Charles I of England",
+    "role": "Vua Anh bị xử tử sau nội chiến",
+    "biography": "Xung đột với Nghị viện dẫn đến nội chiến từ năm 1642; ông bị xét xử và xử tử năm 1649.",
+    "lifespan": "1600 – 1649",
+    "sources": [
+      {
+        "title": "Charles I",
+        "url": "https://en.wikipedia.org/wiki/Charles_I_of_England"
+      }
+    ]
+  },
+  {
+    "id": "oliver-cromwell",
+    "countryId": "england",
+    "name": "Oliver Cromwell",
+    "aliases": [],
+    "wiki": "Oliver Cromwell",
+    "role": "Tướng quân Nghị viện, Huân tước Bảo hộ",
+    "biography": "Chỉ huy quân Nghị viện trong nội chiến, chinh phục Ireland và Scotland, rồi cai trị với tư cách Huân tước Bảo hộ từ 1653 đến 1658.",
+    "lifespan": "1599 – 1658",
+    "sources": [
+      {
+        "title": "Oliver Cromwell",
+        "url": "https://en.wikipedia.org/wiki/Oliver_Cromwell"
+      }
+    ]
+  },
+  {
+    "id": "charles-ii",
+    "countryId": "england",
+    "name": "Charles II",
+    "aliases": [],
+    "wiki": "Charles II of England",
+    "role": "Vua thời Phục hồi",
+    "biography": "Trở về làm vua năm 1660 sau thời cộng hòa. Thời ông có đại dịch hạch 1665 và Đại hỏa hoạn London 1666.",
+    "lifespan": "1630 – 1685",
+    "sources": [
+      {
+        "title": "Charles II",
+        "url": "https://en.wikipedia.org/wiki/Charles_II_of_England"
+      }
+    ]
+  },
+  {
+    "id": "william-iii",
+    "countryId": "england",
+    "name": "William III",
+    "aliases": [
+      "William of Orange"
+    ],
+    "wiki": "William III of England",
+    "role": "Vua sau Cách mạng Vinh quang",
+    "biography": "Thống đốc Hà Lan, đổ bộ vào Anh năm 1688 và cùng vợ là Mary II trị vì sau khi James II bị lật đổ.",
+    "lifespan": "1650 – 1702",
+    "sources": [
+      {
+        "title": "William III",
+        "url": "https://en.wikipedia.org/wiki/William_III_of_England"
+      }
+    ]
+  },
+  {
+    "id": "queen-anne",
+    "countryId": "england",
+    "name": "Nữ hoàng Anne",
+    "aliases": [],
+    "wiki": "Anne, Queen of Great Britain",
+    "role": "Quân chủ đầu tiên của Vương quốc Đại Anh",
+    "biography": "Thời bà trị vì có Đạo luật Liên hiệp 1707 hợp nhất Anh và Scotland. Bà là quân chủ cuối cùng nhà Stuart.",
+    "lifespan": "1665 – 1714",
+    "sources": [
+      {
+        "title": "Nữ hoàng Anne",
+        "url": "https://en.wikipedia.org/wiki/Anne,_Queen_of_Great_Britain"
+      }
+    ]
+  },
+  {
+    "id": "george-iii",
+    "countryId": "england",
+    "name": "George III",
+    "aliases": [],
+    "wiki": "George III",
+    "role": "Vua Anh thời mất thuộc địa Bắc Mỹ",
+    "biography": "Trị vì 1760–1820, giai đoạn Anh mất 13 thuộc địa Bắc Mỹ và chiến đấu với nước Pháp cách mạng và Napoléon.",
+    "lifespan": "1738 – 1820",
+    "sources": [
+      {
+        "title": "George III",
+        "url": "https://en.wikipedia.org/wiki/George_III"
+      }
+    ]
+  },
+  {
+    "id": "horatio-nelson",
+    "countryId": "england",
+    "name": "Horatio Nelson",
+    "aliases": [
+      "Nelson"
+    ],
+    "wiki": "Horatio Nelson, 1st Viscount Nelson",
+    "role": "Đô đốc hải quân Anh",
+    "biography": "Chỉ huy hạm đội Anh thắng trận Trafalgar năm 1805 và tử trận trong trận đánh. Ông cũng chỉ huy trận tấn công Copenhagen năm 1801.",
+    "lifespan": "1758 – 1805",
+    "sources": [
+      {
+        "title": "Horatio Nelson",
+        "url": "https://en.wikipedia.org/wiki/Horatio_Nelson,_1st_Viscount_Nelson"
+      }
+    ]
+  },
+  {
+    "id": "queen-victoria",
+    "countryId": "england",
+    "name": "Nữ hoàng Victoria",
+    "aliases": [
+      "Victoria"
+    ],
+    "wiki": "Queen Victoria",
+    "role": "Nữ hoàng thời Victoria",
+    "biography": "Trị vì 1837–1901, giai đoạn Anh là cường quốc công nghiệp và đế chế thuộc địa lớn; từ năm 1876 mang thêm tước Nữ hoàng Ấn Độ.",
+    "lifespan": "1819 – 1901",
+    "sources": [
+      {
+        "title": "Nữ hoàng Victoria",
+        "url": "https://en.wikipedia.org/wiki/Queen_Victoria"
+      }
+    ]
+  },
+  {
+    "id": "david-lloyd-george",
+    "countryId": "england",
+    "name": "David Lloyd George",
+    "aliases": [],
+    "wiki": "David Lloyd George",
+    "role": "Thủ tướng Anh cuối Thế chiến I",
+    "biography": "Chính khách Công đảng Tự do người xứ Wales, thủ tướng 1916–1922, dẫn dắt Anh trong giai đoạn cuối Thế chiến I.",
+    "lifespan": "1863 – 1945",
+    "sources": [
+      {
+        "title": "David Lloyd George",
+        "url": "https://en.wikipedia.org/wiki/David_Lloyd_George"
+      }
+    ]
+  },
+  {
+    "id": "winston-churchill",
+    "countryId": "england",
+    "name": "Winston Churchill",
+    "aliases": [],
+    "wiki": "Winston Churchill",
+    "role": "Thủ tướng Anh trong Thế chiến II",
+    "biography": "Thủ tướng 1940–1945 và 1951–1955. Ông lãnh đạo Anh tiếp tục chiến đấu sau khi Pháp thất thủ năm 1940; các chính sách của ông, nhất là với thuộc địa, vẫn bị tranh luận.",
+    "lifespan": "1874 – 1965",
+    "sources": [
+      {
+        "title": "Winston Churchill",
+        "url": "https://en.wikipedia.org/wiki/Winston_Churchill"
+      }
+    ]
+  },
+  {
+    "id": "clement-attlee",
+    "countryId": "england",
+    "name": "Clement Attlee",
+    "aliases": [],
+    "wiki": "Clement Attlee",
+    "role": "Thủ tướng Công đảng sau chiến tranh",
+    "biography": "Thủ tướng 1945–1951, lập Dịch vụ Y tế Quốc gia và chứng kiến Ấn Độ, Pakistan độc lập năm 1947.",
+    "lifespan": "1883 – 1967",
+    "sources": [
+      {
+        "title": "Clement Attlee",
+        "url": "https://en.wikipedia.org/wiki/Clement_Attlee"
+      }
+    ]
+  },
+  {
+    "id": "elizabeth-ii",
+    "countryId": "england",
+    "name": "Elizabeth II",
+    "aliases": [],
+    "wiki": "Elizabeth II",
+    "role": "Nữ hoàng Vương quốc Liên hiệp Anh",
+    "biography": "Trị vì từ năm 1952 đến 2022, dài nhất trong lịch sử quân chủ Anh, qua thời kỳ phi thực dân hóa và chuyển đổi xã hội.",
+    "lifespan": "1926 – 2022",
+    "sources": [
+      {
+        "title": "Elizabeth II",
+        "url": "https://en.wikipedia.org/wiki/Elizabeth_II"
+      }
+    ]
+  },
+  {
+    "id": "margaret-thatcher",
+    "countryId": "england",
+    "name": "Margaret Thatcher",
+    "aliases": [],
+    "wiki": "Margaret Thatcher",
+    "role": "Nữ thủ tướng đầu tiên của Anh",
+    "biography": "Thủ tướng 1979–1990, tư nhân hóa nhiều ngành và đối đầu công đoàn; di sản của bà gây chia rẽ sâu sắc.",
+    "lifespan": "1925 – 2013",
+    "sources": [
+      {
+        "title": "Margaret Thatcher",
+        "url": "https://en.wikipedia.org/wiki/Margaret_Thatcher"
+      }
+    ]
+  },
+  {
+    "id": "godfred",
+    "countryId": "denmark",
+    "name": "Godfred",
+    "aliases": [
+      "Gudfred"
+    ],
+    "wiki": "Gudfred",
+    "role": "Vua Đan Mạch đối đầu Charlemagne",
+    "biography": "Vua Đan Mạch đầu thế kỷ IX theo các biên niên Frank, củng cố Danevirke và tấn công vùng Frisia trước khi bị sát hại năm 810.",
+    "lifespan": "? – 810",
+    "sources": [
+      {
+        "title": "Godfred",
+        "url": "https://en.wikipedia.org/wiki/Gudfred"
+      }
+    ]
+  },
+  {
+    "id": "gorm-the-old",
+    "countryId": "denmark",
+    "name": "Gorm Già",
+    "aliases": [
+      "Gorm the Old"
+    ],
+    "wiki": "Gorm the Old",
+    "role": "Vua đầu tiên của dòng Jelling",
+    "biography": "Vua Đan Mạch đầu thế kỷ X, cha của Harald Răng Xanh. Đá Jelling nhỏ do ông dựng để tưởng nhớ hoàng hậu Thyra.",
+    "lifespan": "? – khoảng 958",
+    "sources": [
+      {
+        "title": "Gorm Già",
+        "url": "https://en.wikipedia.org/wiki/Gorm_the_Old"
+      }
+    ]
+  },
+  {
+    "id": "harald-bluetooth",
+    "countryId": "denmark",
+    "name": "Harald Răng Xanh",
+    "aliases": [
+      "Harald Gormsson"
+    ],
+    "wiki": "Harald Bluetooth",
+    "role": "Vua Đan Mạch đưa đất nước theo Kitô giáo",
+    "biography": "Con trai Gorm Già. Đá Jelling lớn ghi rằng ông giành toàn bộ Đan Mạch, Na Uy và đưa người Đan Mạch theo Kitô giáo.",
+    "lifespan": "khoảng 910 – khoảng 986",
+    "sources": [
+      {
+        "title": "Harald Răng Xanh",
+        "url": "https://en.wikipedia.org/wiki/Harald_Bluetooth"
+      }
+    ]
+  },
+  {
+    "id": "sweyn-forkbeard",
+    "countryId": "denmark",
+    "name": "Sweyn Râu Chẻ",
+    "aliases": [
+      "Sweyn Forkbeard"
+    ],
+    "wiki": "Sweyn Forkbeard",
+    "role": "Vua Đan Mạch chiếm ngôi Anh",
+    "biography": "Lật đổ cha là Harald Răng Xanh, nhiều lần tấn công nước Anh và chiếm ngôi Anh năm 1013, mất đầu năm 1014.",
+    "lifespan": "khoảng 960 – 1014",
+    "sources": [
+      {
+        "title": "Sweyn Râu Chẻ",
+        "url": "https://en.wikipedia.org/wiki/Sweyn_Forkbeard"
+      }
+    ]
+  },
+  {
+    "id": "cnut",
+    "countryId": "denmark",
+    "name": "Cnut Đại đế",
+    "aliases": [
+      "Canute",
+      "Knud"
+    ],
+    "wiki": "Cnut",
+    "role": "Vua Anh, Đan Mạch và Na Uy",
+    "biography": "Con trai Sweyn Râu Chẻ, vua Anh từ 1016, Đan Mạch từ 1018 và Na Uy từ 1028, cai trị một liên kết các vương quốc quanh Biển Bắc.",
+    "lifespan": "khoảng 990 – 1035",
+    "sources": [
+      {
+        "title": "Cnut Đại đế",
+        "url": "https://en.wikipedia.org/wiki/Cnut"
+      }
+    ]
+  },
+  {
+    "id": "valdemar-the-great",
+    "countryId": "denmark",
+    "name": "Valdemar Đại đế",
+    "aliases": [
+      "Valdemar I"
+    ],
+    "wiki": "Valdemar I of Denmark",
+    "role": "Vua thống nhất lại Đan Mạch sau nội chiến",
+    "biography": "Giành ngôi năm 1157 sau nội chiến, cùng giám mục Absalon tấn công người Wend ven Baltic và củng cố vương quyền.",
+    "lifespan": "1131 – 1182",
+    "sources": [
+      {
+        "title": "Valdemar Đại đế",
+        "url": "https://en.wikipedia.org/wiki/Valdemar_I_of_Denmark"
+      }
+    ]
+  },
+  {
+    "id": "absalon",
+    "countryId": "denmark",
+    "name": "Absalon",
+    "aliases": [],
+    "wiki": "Absalon",
+    "role": "Giám mục, chính khách, người lập Copenhagen",
+    "biography": "Giám mục Roskilde rồi Tổng giám mục Lund, cố vấn của Valdemar Đại đế. Ông xây thành tại nơi về sau là Copenhagen khoảng năm 1167.",
+    "lifespan": "khoảng 1128 – 1201",
+    "sources": [
+      {
+        "title": "Absalon",
+        "url": "https://en.wikipedia.org/wiki/Absalon"
+      }
+    ]
+  },
+  {
+    "id": "margaret-i",
+    "countryId": "denmark",
+    "name": "Margrete I",
+    "aliases": [
+      "Margaret I"
+    ],
+    "wiki": "Margaret I of Denmark",
+    "role": "Nữ hoàng lập Liên minh Kalmar",
+    "biography": "Nắm quyền ở Đan Mạch, Na Uy và Thụy Điển; năm 1397 đưa cháu trai Erik lên làm vua chung trong Liên minh Kalmar.",
+    "lifespan": "1353 – 1412",
+    "sources": [
+      {
+        "title": "Margrete I",
+        "url": "https://en.wikipedia.org/wiki/Margaret_I_of_Denmark"
+      }
+    ]
+  },
+  {
+    "id": "christian-iv",
+    "countryId": "denmark",
+    "name": "Christian IV",
+    "aliases": [],
+    "wiki": "Christian IV of Denmark",
+    "role": "Vua Đan Mạch–Na Uy, nhà xây dựng",
+    "biography": "Trị vì 1588–1648, xây Rosenborg, Sở Giao dịch Copenhagen và lập lại Oslo thành Christiania; thất bại trong Chiến tranh Ba mươi Năm.",
+    "lifespan": "1577 – 1648",
+    "sources": [
+      {
+        "title": "Christian IV",
+        "url": "https://en.wikipedia.org/wiki/Christian_IV_of_Denmark"
+      }
+    ]
+  },
+  {
+    "id": "frederick-iii-denmark",
+    "countryId": "denmark",
+    "name": "Frederick III",
+    "aliases": [],
+    "wiki": "Frederick III of Denmark",
+    "role": "Vua thiết lập chế độ chuyên chế",
+    "biography": "Sau khi Copenhagen chống được cuộc vây hãm của Thụy Điển, ông thiết lập chế độ quân chủ chuyên chế năm 1660.",
+    "lifespan": "1609 – 1670",
+    "sources": [
+      {
+        "title": "Frederick III",
+        "url": "https://en.wikipedia.org/wiki/Frederick_III_of_Denmark"
+      }
+    ]
+  },
+  {
+    "id": "hans-christian-andersen",
+    "countryId": "denmark",
+    "name": "Hans Christian Andersen",
+    "aliases": [],
+    "wiki": "Hans Christian Andersen",
+    "role": "Nhà văn truyện cổ tích",
+    "biography": "Tác giả Nàng tiên cá, Bộ quần áo mới của hoàng đế, Vịt con xấu xí; tác phẩm được dịch ra rất nhiều ngôn ngữ.",
+    "lifespan": "1805 – 1875",
+    "sources": [
+      {
+        "title": "Hans Christian Andersen",
+        "url": "https://en.wikipedia.org/wiki/Hans_Christian_Andersen"
+      }
+    ]
+  },
+  {
+    "id": "nfs-grundtvig",
+    "countryId": "denmark",
+    "name": "N. F. S. Grundtvig",
+    "aliases": [
+      "Grundtvig"
+    ],
+    "wiki": "N. F. S. Grundtvig",
+    "role": "Mục sư, nhà thơ, nhà giáo dục",
+    "biography": "Người khởi xướng tư tưởng trường dân chúng, ảnh hưởng lớn tới giáo dục và bản sắc Đan Mạch thế kỷ XIX.",
+    "lifespan": "1783 – 1872",
+    "sources": [
+      {
+        "title": "N. F. S. Grundtvig",
+        "url": "https://en.wikipedia.org/wiki/N._F._S._Grundtvig"
+      }
+    ]
+  },
+  {
+    "id": "christian-x",
+    "countryId": "denmark",
+    "name": "Christian X",
+    "aliases": [],
+    "wiki": "Christian X of Denmark",
+    "role": "Vua Đan Mạch thời bị chiếm đóng",
+    "biography": "Trị vì 1912–1947. Việc ông cưỡi ngựa dạo phố Copenhagen thời Đức chiếm đóng trở thành biểu tượng tinh thần dân tộc.",
+    "lifespan": "1870 – 1947",
+    "sources": [
+      {
+        "title": "Christian X",
+        "url": "https://en.wikipedia.org/wiki/Christian_X_of_Denmark"
+      }
+    ]
+  },
+  {
+    "id": "margrethe-ii",
+    "countryId": "denmark",
+    "name": "Margrethe II",
+    "aliases": [],
+    "wiki": "Margrethe II",
+    "role": "Nữ hoàng Đan Mạch 1972–2024",
+    "biography": "Trị vì từ năm 1972 đến khi thoái vị ngày 14/1/2024, nhường ngôi cho con trai Frederik X. Bà cũng là họa sĩ minh họa và thiết kế.",
+    "lifespan": "1940 – nay",
+    "sources": [
+      {
+        "title": "Margrethe II",
+        "url": "https://en.wikipedia.org/wiki/Margrethe_II"
+      }
+    ]
+  },
+  {
+    "id": "harald-fairhair",
+    "countryId": "norway",
+    "name": "Harald Tóc Đẹp",
+    "aliases": [
+      "Harald Hårfagre"
+    ],
+    "wiki": "Harald Fairhair",
+    "role": "Vua đầu tiên của Na Uy theo truyền thống",
+    "biography": "Theo các saga, ông thắng trận Hafrsfjord và thống nhất Na Uy; các chi tiết về đời ông chủ yếu đến từ nguồn viết muộn.",
+    "lifespan": "khoảng 850 – khoảng 932",
+    "sources": [
+      {
+        "title": "Harald Tóc Đẹp",
+        "url": "https://en.wikipedia.org/wiki/Harald_Fairhair"
+      }
+    ]
+  },
+  {
+    "id": "olaf-tryggvason",
+    "countryId": "norway",
+    "name": "Olaf Tryggvason",
+    "aliases": [],
+    "wiki": "Olaf Tryggvason",
+    "role": "Vua Na Uy truyền bá Kitô giáo",
+    "biography": "Vua Na Uy từ khoảng 995, cưỡng ép cải đạo và lập Nidaros; tử trận trên biển ở Svolder năm 1000.",
+    "lifespan": "khoảng 960 – 1000",
+    "sources": [
+      {
+        "title": "Olaf Tryggvason",
+        "url": "https://en.wikipedia.org/wiki/Olaf_Tryggvason"
+      }
+    ]
+  },
+  {
+    "id": "olaf-haraldsson",
+    "countryId": "norway",
+    "name": "Olaf Haraldsson · Thánh Olaf",
+    "aliases": [
+      "Saint Olaf",
+      "Olaf II"
+    ],
+    "wiki": "Olaf II of Norway",
+    "role": "Vua Na Uy, thánh bảo trợ",
+    "biography": "Vua Na Uy 1015–1028, củng cố Kitô giáo; bị Cnut đuổi đi và tử trận ở Stiklestad năm 1030, sau được tôn là thánh.",
+    "lifespan": "khoảng 995 – 1030",
+    "sources": [
+      {
+        "title": "Olaf Haraldsson · Thánh Olaf",
+        "url": "https://en.wikipedia.org/wiki/Olaf_II_of_Norway"
+      }
+    ]
+  },
+  {
+    "id": "harald-hardrada",
+    "countryId": "norway",
+    "name": "Harald Hardrada",
+    "aliases": [
+      "Harald III"
+    ],
+    "wiki": "Harald Hardrada",
+    "role": "Vua Na Uy tử trận ở Stamford Bridge",
+    "biography": "Từng phục vụ trong Đội cận vệ Varangian ở Constantinople, làm vua Na Uy từ 1046 và tử trận khi tranh ngôi Anh năm 1066.",
+    "lifespan": "khoảng 1015 – 1066",
+    "sources": [
+      {
+        "title": "Harald Hardrada",
+        "url": "https://en.wikipedia.org/wiki/Harald_Hardrada"
+      }
+    ]
+  },
+  {
+    "id": "sverre-sigurdsson",
+    "countryId": "norway",
+    "name": "Sverre Sigurdsson",
+    "aliases": [
+      "Sverre"
+    ],
+    "wiki": "Sverre of Norway",
+    "role": "Vua Na Uy thời nội chiến",
+    "biography": "Thủ lĩnh phe Birkebeiner, giành ngôi Na Uy và đối đầu Giáo hội; saga của ông được viết khi ông còn sống.",
+    "lifespan": "khoảng 1151 – 1202",
+    "sources": [
+      {
+        "title": "Sverre Sigurdsson",
+        "url": "https://en.wikipedia.org/wiki/Sverre_of_Norway"
+      }
+    ]
+  },
+  {
+    "id": "haakon-iv",
+    "countryId": "norway",
+    "name": "Haakon IV",
+    "aliases": [
+      "Haakon the Old"
+    ],
+    "wiki": "Haakon IV of Norway",
+    "role": "Vua thời hoàng kim Na Uy",
+    "biography": "Kết thúc nội chiến năm 1240; Iceland và Greenland chấp nhận quyền vua Na Uy dưới thời ông.",
+    "lifespan": "1204 – 1263",
+    "sources": [
+      {
+        "title": "Haakon IV",
+        "url": "https://en.wikipedia.org/wiki/Haakon_IV_of_Norway"
+      }
+    ]
+  },
+  {
+    "id": "magnus-lawmender",
+    "countryId": "norway",
+    "name": "Magnus Người sửa luật",
+    "aliases": [
+      "Magnus VI"
+    ],
+    "wiki": "Magnus VI of Norway",
+    "role": "Vua ban hành luật chung toàn quốc",
+    "biography": "Con trai Haakon IV, ban hành bộ luật chung cho toàn Na Uy năm 1274 và ký hiệp ước Perth (1266) nhượng Hebrides cho Scotland.",
+    "lifespan": "1238 – 1280",
+    "sources": [
+      {
+        "title": "Magnus Người sửa luật",
+        "url": "https://en.wikipedia.org/wiki/Magnus_VI_of_Norway"
+      }
+    ]
+  },
+  {
+    "id": "peter-tordenskjold",
+    "countryId": "norway",
+    "name": "Peter Tordenskjold",
+    "aliases": [
+      "Tordenskjold"
+    ],
+    "wiki": "Peter Tordenskjold",
+    "role": "Sĩ quan hải quân Đan Mạch–Na Uy",
+    "biography": "Sinh ở Trondheim, nổi danh với các chiến công trên biển trong Đại chiến Bắc Âu; mất trong một cuộc đấu kiếm năm 1720.",
+    "lifespan": "1690 – 1720",
+    "sources": [
+      {
+        "title": "Peter Tordenskjold",
+        "url": "https://en.wikipedia.org/wiki/Peter_Tordenskjold"
+      }
+    ]
+  },
+  {
+    "id": "henrik-ibsen",
+    "countryId": "norway",
+    "name": "Henrik Ibsen",
+    "aliases": [],
+    "wiki": "Henrik Ibsen",
+    "role": "Nhà viết kịch",
+    "biography": "Tác giả Ngôi nhà búp bê, Peer Gynt, Hedda Gabler; được xem là một trong những người đặt nền cho kịch hiện đại.",
+    "lifespan": "1828 – 1906",
+    "sources": [
+      {
+        "title": "Henrik Ibsen",
+        "url": "https://en.wikipedia.org/wiki/Henrik_Ibsen"
+      }
+    ]
+  },
+  {
+    "id": "haakon-vii",
+    "countryId": "norway",
+    "name": "Haakon VII",
+    "aliases": [],
+    "wiki": "Haakon VII",
+    "role": "Vua đầu tiên của Na Uy độc lập năm 1905",
+    "biography": "Hoàng tử Đan Mạch được bầu làm vua Na Uy năm 1905. Ông từ chối công nhận chính quyền bù nhìn năm 1940 và lưu vong ở London.",
+    "lifespan": "1872 – 1957",
+    "sources": [
+      {
+        "title": "Haakon VII",
+        "url": "https://en.wikipedia.org/wiki/Haakon_VII"
+      }
+    ]
+  },
+  {
+    "id": "roald-amundsen",
+    "countryId": "norway",
+    "name": "Roald Amundsen",
+    "aliases": [],
+    "wiki": "Roald Amundsen",
+    "role": "Nhà thám hiểm vùng cực",
+    "biography": "Dẫn đoàn đầu tiên đến Nam Cực năm 1911 và vượt Tuyến Tây Bắc (1903–1906); mất tích năm 1928 khi tham gia cứu hộ ở Bắc Cực.",
+    "lifespan": "1872 – 1928",
+    "sources": [
+      {
+        "title": "Roald Amundsen",
+        "url": "https://en.wikipedia.org/wiki/Roald_Amundsen"
+      }
+    ]
+  },
+  {
+    "id": "gro-harlem-brundtland",
+    "countryId": "norway",
+    "name": "Gro Harlem Brundtland",
+    "aliases": [],
+    "wiki": "Gro Harlem Brundtland",
+    "role": "Nữ thủ tướng đầu tiên của Na Uy",
+    "biography": "Thủ tướng nhiều nhiệm kỳ (1981, 1986–1989, 1990–1996); chủ trì báo cáo Brundtland (1987) phổ biến khái niệm phát triển bền vững.",
+    "lifespan": "1939 – nay",
+    "sources": [
+      {
+        "title": "Gro Harlem Brundtland",
+        "url": "https://en.wikipedia.org/wiki/Gro_Harlem_Brundtland"
       }
     ]
   }

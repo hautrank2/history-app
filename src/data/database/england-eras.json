@@ -1,0 +1,377 @@
+[
+  {
+    "id": "roman-britain",
+    "era": "Britannia La Mã",
+    "name": "Britannia thời La Mã",
+    "years": "43 – 410",
+    "start": 43,
+    "end": 410,
+    "capital": "Londinium · trung tâm hành chính tiêu biểu",
+    "places": [
+      { "name": "Londinium", "at": [-0.09, 51.51], "kind": "capital", "note": "Đô thị La Mã bên sông Thames, tiền thân của London; bị quân của Boudica thiêu khoảng năm 60–61." },
+      { "name": "Camulodunum · Colchester", "at": [0.9, 51.89], "kind": "heritage", "note": "Thủ phủ ban đầu của tỉnh Britannia, nơi lập khu định cư cựu binh La Mã." },
+      { "name": "Tường Hadrian", "at": [-2.33, 55.02], "kind": "heritage", "note": "Tuyến phòng thủ bắt đầu xây khoảng năm 122; vị trí đánh dấu một đoạn tiêu biểu." }
+    ],
+    "summary": "Năm 43, quân La Mã dưới thời hoàng đế Claudius đổ bộ và dần biến phần lớn đảo Anh thành tỉnh Britannia. Cuộc nổi dậy của nữ vương Boudica khoảng năm 60–61 bị dập tắt; Tường Hadrian được xây từ khoảng năm 122. Đầu thế kỷ V, chính quyền La Mã không còn duy trì quân đội và bộ máy tại đây.",
+    "culture": "Đường sá, đô thị, nhà tắm và villa La Mã tồn tại song song với cộng đồng người Briton bản địa. Phần lớn tư liệu là văn bản của người La Mã và khảo cổ học; tiếng nói của cư dân bản địa gần như không được ghi chép trực tiếp.",
+    "peopleIds": ["boudica"],
+    "sourceArticle": "Roman Britain"
+  },
+  {
+    "id": "anglo-saxon",
+    "era": "Anglo-Saxon",
+    "name": "Các vương quốc Anglo-Saxon",
+    "years": "410 – 871",
+    "start": 410,
+    "end": 871,
+    "capital": "Nhiều trung tâm vương quốc",
+    "places": [
+      { "name": "Canterbury · Kent", "at": [1.08, 51.28], "kind": "capital", "note": "Augustine đến Kent năm 597 và lập tòa giám mục tại Canterbury." },
+      { "name": "Tamworth · Mercia", "at": [-1.69, 52.63], "kind": "capital", "note": "Một trung tâm hoàng gia của Mercia, vương quốc mạnh nhất thế kỷ VIII." },
+      { "name": "Lindisfarne", "at": [-1.8, 55.67], "kind": "battle", "note": "Tu viện bị người Viking tập kích năm 793, thường được xem là mốc mở đầu thời Viking ở Anh." }
+    ],
+    "summary": "Sau khi La Mã rút đi, các nhóm Angle, Saxon và Jute từ lục địa đến định cư và lập nhiều vương quốc như Northumbria, Mercia, East Anglia, Essex, Kent, Sussex và Wessex. Cách gọi \"Thất quốc\" là quy ước của sử gia về sau, số vương quốc thực tế thay đổi theo thời gian. Kitô giáo lan rộng từ cuối thế kỷ VI; năm 793, người Viking tập kích tu viện Lindisfarne.",
+    "culture": "Tu viện là trung tâm học thuật: Bede hoàn thành Lịch sử Giáo hội của dân tộc Anh năm 731. Kho báu Sutton Hoo và thơ ca tiếng Anh cổ cho thấy một văn hóa chiến binh – quý tộc, nhưng nhiều tác phẩm chỉ còn qua bản chép muộn.",
+    "peopleIds": ["bede", "offa-of-mercia"],
+    "sourceArticle": "Heptarchy",
+    "extraSources": [{ "title": "Britannica · Viking", "url": "https://www.britannica.com/topic/Viking-people" }]
+  },
+  {
+    "id": "alfred-wessex",
+    "era": "Anglo-Saxon",
+    "name": "Wessex và Danelaw",
+    "years": "871 – 927",
+    "start": 871,
+    "end": 927,
+    "capital": "Winchester · trung tâm của Wessex",
+    "places": [
+      { "name": "Winchester", "at": [-1.31, 51.06], "kind": "capital", "note": "Trung tâm hoàng gia của Wessex dưới thời Alfred và các vua kế tiếp." },
+      { "name": "Edington", "at": [-2.11, 51.28], "kind": "battle", "note": "Năm 878, Alfred đánh bại quân Viking của Guthrum; vị trí chiến trường là ước lượng." },
+      { "name": "Jórvík · York", "at": [-1.08, 53.96], "kind": "capital", "note": "Trung tâm của vùng do người Scandinavia kiểm soát ở phía bắc." }
+    ],
+    "summary": "\"Đại quân\" Viking chinh phục phần lớn các vương quốc Anglo-Saxon trong thập niên 860–870. Alfred của Wessex thắng ở Edington năm 878 và thỏa thuận với Guthrum, chia đảo thành vùng của Wessex và vùng chịu luật lệ người Đan Mạch, về sau gọi là Danelaw. Các con cháu Alfred dần mở rộng quyền kiểm soát lên phía bắc.",
+    "culture": "Alfred cho xây hệ thống thị trấn phòng thủ (burh) và khuyến khích dịch sách Latin sang tiếng Anh cổ. Ở Danelaw, nhiều địa danh tận cùng bằng -by, -thorpe vẫn còn dấu vết ngôn ngữ Bắc Âu.",
+    "peopleIds": ["alfred-the-great"],
+    "sourceArticle": "Danelaw",
+    "extraSources": [{ "title": "Wikipedia · Alfred the Great", "url": "https://en.wikipedia.org/wiki/Alfred_the_Great" }]
+  },
+  {
+    "id": "kingdom-of-england",
+    "era": "Anglo-Saxon",
+    "name": "Vương quốc Anh thống nhất",
+    "years": "927 – 1016",
+    "start": 927,
+    "end": 1016,
+    "capital": "Winchester · trung tâm tiêu biểu",
+    "places": [
+      { "name": "Winchester", "at": [-1.31, 51.06], "kind": "capital", "note": "Triều đình còn di chuyển; Winchester chỉ là trung tâm tiêu biểu." },
+      { "name": "York", "at": [-1.08, 53.96], "kind": "capital", "note": "Æthelstan chiếm York năm 927, đặt nền cho một vương quốc Anh thống nhất." }
+    ],
+    "summary": "Năm 927, Æthelstan chiếm York và được xem là vị vua đầu tiên cai trị toàn bộ nước Anh; ông thắng liên minh Scotland – Viking ở Brunanburh năm 937. Cuối thế kỷ X, các cuộc tấn công Viking quay lại; vua Æthelred phải nộp cống (Danegeld), và năm 1013 Sweyn Râu Chẻ của Đan Mạch chiếm ngôi trong thời gian ngắn.",
+    "culture": "Cải cách tu viện thế kỷ X, tiền xu thống nhất và các bộ luật hoàng gia giúp củng cố vương quốc. Nhiều văn bản tiếng Anh cổ quan trọng được sao chép trong giai đoạn này.",
+    "peopleIds": ["athelstan"],
+    "sourceArticle": "Kingdom of England"
+  },
+  {
+    "id": "cnut-north-sea",
+    "era": "Đan Mạch trị vì & 1066",
+    "name": "Cnut và đế chế Biển Bắc",
+    "years": "1016 – 1042",
+    "start": 1016,
+    "end": 1042,
+    "capital": "London / Winchester",
+    "places": [
+      { "name": "London", "at": [-0.09, 51.51], "kind": "capital", "note": "Cnut giành ngôi Anh năm 1016 sau các trận đánh với Edmund Ironside." },
+      { "name": "Winchester", "at": [-1.31, 51.06], "kind": "capital", "note": "Cnut được chôn cất tại Winchester năm 1035." }
+    ],
+    "summary": "Cnut, con trai Sweyn Râu Chẻ, trở thành vua Anh năm 1016, rồi vua Đan Mạch (1018) và Na Uy (1028), tạo nên một liên kết các vương quốc quanh Biển Bắc. Liên kết này tan rã sau khi ông mất năm 1035; năm 1042 ngôi vua Anh trở về dòng Wessex.",
+    "culture": "Cnut duy trì luật lệ Anglo-Saxon và dựa vào Giáo hội để củng cố tính chính danh. Giao thương Biển Bắc nối nước Anh với thế giới Scandinavia.",
+    "peopleIds": ["cnut"],
+    "sourceArticle": "North Sea Empire"
+  },
+  {
+    "id": "late-anglo-saxon",
+    "era": "Đan Mạch trị vì & 1066",
+    "name": "Edward Xưng Tội và năm 1066",
+    "years": "1042 – 1066",
+    "start": 1042,
+    "end": 1066,
+    "capital": "Westminster",
+    "places": [
+      { "name": "Westminster", "at": [-0.13, 51.5], "kind": "capital", "note": "Edward cho xây lại tu viện Westminster, thánh hiến cuối năm 1065." },
+      { "name": "Stamford Bridge", "at": [-0.91, 53.99], "kind": "battle", "note": "Tháng 9/1066, Harold Godwinson đánh bại Harald Hardrada của Na Uy." },
+      { "name": "Hastings", "at": [0.49, 50.91], "kind": "battle", "note": "Ngày 14/10/1066, Harold tử trận trước quân của William xứ Normandy." }
+    ],
+    "summary": "Edward Xưng Tội mất đầu năm 1066 mà không có con. Harold Godwinson lên ngôi, nhưng phải đối đầu hai người tranh ngôi: Harald Hardrada của Na Uy bị đánh bại ở Stamford Bridge, rồi chỉ vài tuần sau Harold tử trận ở Hastings trước William xứ Normandy.",
+    "culture": "Tấm thảm Bayeux, làm sau sự kiện, là nguồn hình ảnh nổi tiếng về năm 1066 nhưng thể hiện góc nhìn phía Norman. Các biên niên Anglo-Saxon cho góc nhìn khác.",
+    "peopleIds": ["edward-the-confessor", "harold-godwinson", "harald-hardrada"],
+    "sourceArticle": "Battle of Stamford Bridge"
+  },
+  {
+    "id": "norman-conquest",
+    "era": "Norman",
+    "name": "Cuộc chinh phục Norman",
+    "years": "1066 – 1135",
+    "start": 1066,
+    "end": 1135,
+    "capital": "London / Westminster",
+    "places": [
+      { "name": "Tháp London", "at": [-0.08, 51.51], "kind": "capital", "note": "Tháp Trắng do William cho xây sau năm 1066." },
+      { "name": "Hastings", "at": [0.49, 50.91], "kind": "battle", "note": "Chiến thắng năm 1066 mở đường cho William lên ngôi ngày Giáng sinh." },
+      { "name": "Winchester", "at": [-1.31, 51.06], "kind": "heritage", "note": "Nơi lưu giữ khảo sát Domesday hoàn thành năm 1086." }
+    ],
+    "summary": "William I lên ngôi năm 1066 và thay thế phần lớn tầng lớp quý tộc Anglo-Saxon bằng người Norman. Lâu đài được xây khắp nơi; cuộc \"tàn phá phương Bắc\" năm 1069–1070 dập tắt kháng cự. Khảo sát Domesday năm 1086 ghi chép đất đai và tài sản trên phần lớn nước Anh.",
+    "culture": "Tiếng Pháp Norman trở thành ngôn ngữ của triều đình và giới quý tộc, Latin của văn bản, còn tiếng Anh tiếp tục được dân chúng sử dụng. Kiến trúc Romanesque thể hiện ở nhà thờ lớn Durham và các lâu đài đá.",
+    "peopleIds": ["william-the-conqueror"],
+    "sourceArticle": "Norman Conquest",
+    "extraSources": [{ "title": "Britannica · Norman Conquest", "url": "https://www.britannica.com/event/Norman-Conquest" }]
+  },
+  {
+    "id": "the-anarchy",
+    "era": "Norman",
+    "name": "Thời Vô chính phủ",
+    "years": "1135 – 1154",
+    "start": 1135,
+    "end": 1154,
+    "capital": "London · trung tâm tiêu biểu",
+    "places": [
+      { "name": "London", "at": [-0.09, 51.51], "kind": "capital", "note": "Stephen lên ngôi tại đây năm 1135." },
+      { "name": "Oxford", "at": [-1.26, 51.75], "kind": "battle", "note": "Matilda bị vây ở lâu đài Oxford năm 1142 và trốn thoát." }
+    ],
+    "summary": "Henry I mất năm 1135 mà không còn con trai hợp pháp. Cháu ông là Stephen xứ Blois chiếm ngôi, trong khi con gái ông là Nữ hoàng Matilda đòi quyền kế vị, dẫn đến gần hai mươi năm nội chiến. Hiệp ước năm 1153 để Stephen giữ ngôi đến khi mất, rồi trao cho con trai Matilda là Henry.",
+    "culture": "Các biên niên đương thời mô tả cảnh bất ổn và lâu đài trái phép mọc lên; mức độ tàn phá thực tế vẫn được sử gia tranh luận.",
+    "peopleIds": ["stephen-of-blois", "empress-matilda"],
+    "sourceArticle": "The Anarchy"
+  },
+  {
+    "id": "angevin",
+    "era": "Plantagenet",
+    "name": "Đế chế Angevin & Đại Hiến chương",
+    "years": "1154 – 1216",
+    "start": 1154,
+    "end": 1216,
+    "capital": "Westminster · triều đình lưu động",
+    "places": [
+      { "name": "Westminster", "at": [-0.13, 51.5], "kind": "capital", "note": "Trung tâm hành chính và tài chính ngày càng quan trọng." },
+      { "name": "Canterbury", "at": [1.08, 51.28], "kind": "heritage", "note": "Tổng giám mục Thomas Becket bị sát hại tại nhà thờ lớn năm 1170." },
+      { "name": "Runnymede", "at": [-0.56, 51.44], "kind": "heritage", "note": "Nơi vua John chấp thuận Magna Carta năm 1215." }
+    ],
+    "summary": "Henry II cai trị nước Anh cùng những vùng đất rộng lớn ở Pháp, về sau gọi là đế chế Angevin. Richard I dành phần lớn thời gian trị vì cho Thập tự chinh và chiến tranh ở Pháp. Vua John mất Normandy năm 1204; năm 1215, ông buộc phải chấp thuận Magna Carta trước sức ép của các nam tước.",
+    "culture": "Cải cách tư pháp của Henry II góp phần hình thành thông luật (common law). Magna Carta ban đầu là thỏa thuận chính trị thất bại, nhưng về sau trở thành biểu tượng giới hạn quyền lực nhà vua.",
+    "peopleIds": ["henry-ii", "richard-i", "king-john"],
+    "sourceArticle": "Angevin Empire",
+    "extraSources": [{ "title": "Britannica · Magna Carta", "url": "https://www.britannica.com/topic/Magna-Carta" }]
+  },
+  {
+    "id": "plantagenet",
+    "era": "Plantagenet",
+    "name": "Nghị viện và Chiến tranh Trăm Năm",
+    "years": "1216 – 1399",
+    "start": 1216,
+    "end": 1399,
+    "capital": "Westminster",
+    "places": [
+      { "name": "Westminster", "at": [-0.13, 51.5], "kind": "capital", "note": "Nơi các nghị viện được triệu tập ngày càng thường xuyên." },
+      { "name": "Caernarfon", "at": [-4.28, 53.14], "kind": "heritage", "note": "Lâu đài Edward I xây sau khi chinh phục xứ Wales." },
+      { "name": "Crécy", "at": [1.93, 50.25], "kind": "battle", "note": "Chiến thắng của Edward III năm 1346 trong Chiến tranh Trăm Năm." }
+    ],
+    "summary": "Nghị viện hình thành dần từ thế kỷ XIII, có đại diện các hạt và thị trấn. Edward I chinh phục xứ Wales và can thiệp vào Scotland. Edward III đòi ngai vàng Pháp, mở đầu Chiến tranh Trăm Năm năm 1337; Cái Chết Đen năm 1348–1349 giết một phần lớn dân số.",
+    "culture": "Tiếng Anh dần thay tiếng Pháp trong đời sống công. Cuối thế kỷ XIV, Geoffrey Chaucer viết Những câu chuyện Canterbury bằng tiếng Anh trung đại.",
+    "peopleIds": ["edward-i", "edward-iii"],
+    "sourceArticle": "House of Plantagenet",
+    "extraSources": [{ "title": "Wikipedia · Hundred Years' War", "url": "https://en.wikipedia.org/wiki/Hundred_Years%27_War" }]
+  },
+  {
+    "id": "lancaster",
+    "era": "Lancaster & York",
+    "name": "Nhà Lancaster",
+    "years": "1399 – 1455",
+    "start": 1399,
+    "end": 1455,
+    "capital": "Westminster",
+    "places": [
+      { "name": "Westminster", "at": [-0.13, 51.5], "kind": "capital", "note": "Henry IV phế truất Richard II năm 1399." },
+      { "name": "Agincourt", "at": [2.14, 50.46], "kind": "battle", "note": "Chiến thắng của Henry V năm 1415 ở miền bắc nước Pháp." }
+    ],
+    "summary": "Henry IV phế truất Richard II năm 1399, lập nhà Lancaster. Henry V thắng lớn ở Agincourt năm 1415 và được thừa nhận là người kế vị ngai Pháp theo hiệp ước Troyes năm 1420, nhưng mất sớm năm 1422. Dưới thời Henry VI, nước Anh mất gần hết đất ở Pháp năm 1453.",
+    "culture": "Kịch của Shakespeare về các vua Lancaster ra đời gần hai thế kỷ sau, cần phân biệt với sử liệu đương thời.",
+    "peopleIds": ["henry-v"],
+    "sourceArticle": "House of Lancaster"
+  },
+  {
+    "id": "wars-of-the-roses",
+    "era": "Lancaster & York",
+    "name": "Chiến tranh Hoa Hồng",
+    "years": "1455 – 1485",
+    "start": 1455,
+    "end": 1485,
+    "capital": "Westminster",
+    "places": [
+      { "name": "Towton", "at": [-1.27, 53.83], "kind": "battle", "note": "Trận đánh năm 1461 đưa Edward IV nhà York lên ngôi." },
+      { "name": "Bosworth", "at": [-1.42, 52.59], "kind": "battle", "note": "Richard III tử trận năm 1485; vị trí chiến trường là ước lượng." }
+    ],
+    "summary": "Hai nhánh hoàng tộc Lancaster và York tranh ngôi qua nhiều đợt xung đột. Edward IV nhà York giành ngôi năm 1461; sau khi ông mất, Richard III lên ngôi năm 1483. Năm 1485, Henry Tudor thắng ở Bosworth, Richard III tử trận.",
+    "culture": "Tên gọi \"Chiến tranh Hoa Hồng\" phổ biến từ thế kỷ XIX. Hài cốt Richard III được tìm thấy ở Leicester năm 2012.",
+    "peopleIds": ["richard-iii"],
+    "sourceArticle": "Wars of the Roses",
+    "extraSources": [{ "title": "Britannica · Wars of the Roses", "url": "https://www.britannica.com/event/Wars-of-the-Roses" }]
+  },
+  {
+    "id": "tudor",
+    "era": "Tudor",
+    "name": "Nhà Tudor & Cải cách",
+    "years": "1485 – 1558",
+    "start": 1485,
+    "end": 1558,
+    "capital": "London / Westminster",
+    "places": [
+      { "name": "Westminster", "at": [-0.13, 51.5], "kind": "capital", "note": "Trung tâm triều đình và nghị viện." },
+      { "name": "Hampton Court", "at": [-0.34, 51.4], "kind": "heritage", "note": "Cung điện mà Henry VIII tiếp quản từ Hồng y Wolsey." }
+    ],
+    "summary": "Henry VII củng cố vương quyền sau nội chiến. Henry VIII tách Giáo hội Anh khỏi quyền Giáo hoàng bằng Đạo luật Tối thượng năm 1534 và giải thể các tu viện. Dưới Edward VI và Mary I, chính sách tôn giáo đảo chiều nhiều lần.",
+    "culture": "Kinh thánh tiếng Anh và Sách Cầu nguyện chung (1549) định hình ngôn ngữ tôn giáo. Chân dung Henry VIII của Hans Holbein là hình ảnh tuyên truyền vương quyền.",
+    "peopleIds": ["henry-vii", "henry-viii"],
+    "sourceArticle": "English Reformation"
+  },
+  {
+    "id": "elizabethan",
+    "era": "Tudor",
+    "name": "Thời Elizabeth",
+    "years": "1558 – 1603",
+    "start": 1558,
+    "end": 1603,
+    "capital": "London",
+    "places": [
+      { "name": "London", "at": [-0.09, 51.51], "kind": "capital", "note": "Các nhà hát như The Globe (1599) mọc lên bên bờ nam sông Thames." },
+      { "name": "Plymouth", "at": [-4.14, 50.37], "kind": "heritage", "note": "Hạm đội Anh xuất phát đối đầu Armada Tây Ban Nha năm 1588." }
+    ],
+    "summary": "Elizabeth I thiết lập lại Giáo hội Anh theo hướng Tin Lành và trị vì 45 năm. Năm 1588, hạm đội Armada của Tây Ban Nha thất bại trong ý đồ xâm lược. Các chuyến hải hành và cướp biển được nhà nước cấp phép mở rộng tham vọng hàng hải của Anh.",
+    "culture": "Kịch nghệ thời Elizabeth với Shakespeare và Marlowe phát triển mạnh. Hình ảnh \"thời hoàng kim\" phần nào là sản phẩm của tuyên truyền và ký ức về sau.",
+    "peopleIds": ["elizabeth-i"],
+    "sourceArticle": "Elizabethan era"
+  },
+  {
+    "id": "stuart",
+    "era": "Stuart",
+    "name": "Liên minh vương miện & Nội chiến",
+    "years": "1603 – 1649",
+    "start": 1603,
+    "end": 1649,
+    "capital": "London",
+    "places": [
+      { "name": "Whitehall · London", "at": [-0.13, 51.5], "kind": "capital", "note": "Charles I bị xử tử trước Nhà Yến tiệc Whitehall năm 1649." },
+      { "name": "Naseby", "at": [-0.99, 52.4], "kind": "battle", "note": "Chiến thắng quyết định của quân Nghị viện năm 1645." }
+    ],
+    "summary": "Năm 1603, James VI của Scotland trở thành James I của Anh, nối hai vương miện. Xung đột giữa Charles I và Nghị viện về thuế, tôn giáo và quyền lực dẫn đến nội chiến từ năm 1642. Quân Nghị viện thắng; Charles I bị xét xử và xử tử năm 1649.",
+    "culture": "Bản Kinh thánh King James (1611) ảnh hưởng lâu dài tới tiếng Anh. Nội chiến diễn ra đồng thời ở Anh, Scotland và Ireland.",
+    "peopleIds": ["james-i", "charles-i"],
+    "sourceArticle": "English Civil War"
+  },
+  {
+    "id": "commonwealth",
+    "era": "Stuart",
+    "name": "Cộng hòa & thời Bảo hộ",
+    "years": "1649 – 1660",
+    "start": 1649,
+    "end": 1660,
+    "capital": "London",
+    "places": [
+      { "name": "Westminster", "at": [-0.13, 51.5], "kind": "capital", "note": "Cromwell giải tán Nghị viện Rump năm 1653." },
+      { "name": "Drogheda", "at": [-6.35, 53.72], "kind": "battle", "note": "Thành bị quân Cromwell chiếm và tàn sát năm 1649 ở Ireland." }
+    ],
+    "summary": "Sau khi xử tử Charles I, nước Anh trở thành cộng hòa. Oliver Cromwell chinh phục Ireland và Scotland, rồi từ năm 1653 cai trị với tư cách Huân tước Bảo hộ. Sau khi ông mất năm 1658, chế độ suy yếu và ngôi vua được phục hồi năm 1660.",
+    "culture": "Giới Thanh giáo đóng cửa nhà hát và hạn chế lễ hội. Chiến dịch ở Ireland để lại ký ức đặc biệt nặng nề.",
+    "peopleIds": ["oliver-cromwell"],
+    "sourceArticle": "Commonwealth of England"
+  },
+  {
+    "id": "restoration",
+    "era": "Stuart",
+    "name": "Phục hồi & Cách mạng Vinh quang",
+    "years": "1660 – 1714",
+    "start": 1660,
+    "end": 1714,
+    "capital": "London",
+    "places": [
+      { "name": "London", "at": [-0.09, 51.51], "kind": "capital", "note": "Đại hỏa hoạn năm 1666; nhà thờ St Paul được Christopher Wren xây lại." },
+      { "name": "Torbay", "at": [-3.53, 50.43], "kind": "heritage", "note": "William xứ Orange đổ bộ năm 1688." }
+    ],
+    "summary": "Charles II trở về năm 1660. Năm 1688, James II bị lật đổ khi William xứ Orange đổ bộ; Tuyên ngôn Nhân quyền 1689 giới hạn quyền nhà vua trước Nghị viện. Các Đạo luật Liên hiệp năm 1707 hợp nhất Anh và Scotland thành Vương quốc Đại Anh dưới thời nữ hoàng Anne.",
+    "culture": "Hội Hoàng gia (Royal Society) thành lập năm 1660; Isaac Newton công bố Principia năm 1687. Đại dịch hạch 1665 và Đại hỏa hoạn 1666 thay đổi London.",
+    "peopleIds": ["charles-ii", "william-iii", "queen-anne"],
+    "sourceArticle": "Glorious Revolution",
+    "extraSources": [{ "title": "Wikipedia · Acts of Union 1707", "url": "https://en.wikipedia.org/wiki/Acts_of_Union_1707" }]
+  },
+  {
+    "id": "georgian",
+    "era": "Vương quốc Liên hiệp",
+    "name": "Nhà Hanover & Cách mạng Công nghiệp",
+    "years": "1714 – 1837",
+    "start": 1714,
+    "end": 1837,
+    "capital": "London",
+    "places": [
+      { "name": "London", "at": [-0.09, 51.51], "kind": "capital", "note": "Thủ tướng và nội các dần trở thành trung tâm quyền lực điều hành." },
+      { "name": "Manchester", "at": [-2.24, 53.48], "kind": "heritage", "note": "Trung tâm ngành dệt bông trong Cách mạng Công nghiệp." }
+    ],
+    "summary": "George I nhà Hanover lên ngôi năm 1714; chức thủ tướng hình thành với Robert Walpole. Anh mất 13 thuộc địa Bắc Mỹ nhưng mở rộng đế chế ở nơi khác. Đạo luật Liên hiệp 1800 lập Vương quốc Liên hiệp Anh và Ireland từ năm 1801; hải quân Anh thắng ở Trafalgar năm 1805.",
+    "culture": "Máy hơi nước, nhà máy dệt và kênh đào làm thay đổi lao động và đô thị. Phong trào bãi bỏ buôn bán nô lệ dẫn tới đạo luật năm 1807, còn chế độ nô lệ trong đế chế bị bãi bỏ năm 1833.",
+    "peopleIds": ["george-iii", "horatio-nelson"],
+    "sourceArticle": "Georgian era",
+    "extraSources": [{ "title": "Wikipedia · Industrial Revolution", "url": "https://en.wikipedia.org/wiki/Industrial_Revolution" }]
+  },
+  {
+    "id": "victorian",
+    "era": "Vương quốc Liên hiệp",
+    "name": "Thời Victoria",
+    "years": "1837 – 1901",
+    "start": 1837,
+    "end": 1901,
+    "capital": "London",
+    "places": [
+      { "name": "London", "at": [-0.09, 51.51], "kind": "capital", "note": "Triển lãm lớn năm 1851 tại Cung điện Pha lê." },
+      { "name": "Manchester", "at": [-2.24, 53.48], "kind": "heritage", "note": "Thành phố công nghiệp tiêu biểu với nhiều tranh luận về điều kiện lao động." }
+    ],
+    "summary": "Nữ hoàng Victoria trị vì 63 năm, trong lúc Anh là cường quốc công nghiệp và đế chế thuộc địa lớn. Các đạo luật cải cách mở rộng quyền bầu cử cho nam giới; đường sắt, điện tín và báo chí nối liền đất nước. Đế chế mở rộng đi kèm chiến tranh và khai thác ở nhiều thuộc địa.",
+    "culture": "Tiểu thuyết của Charles Dickens phản ánh đời sống đô thị. Nạn đói lớn ở Ireland (1845–1852) là một phần không thể tách rời của thời kỳ này.",
+    "peopleIds": ["queen-victoria"],
+    "sourceArticle": "Victorian era"
+  },
+  {
+    "id": "world-wars",
+    "era": "Thế kỷ XX",
+    "name": "Hai cuộc thế chiến",
+    "years": "1901 – 1945",
+    "start": 1901,
+    "end": 1945,
+    "capital": "London",
+    "places": [
+      { "name": "London", "at": [-0.09, 51.51], "kind": "capital", "note": "Chịu không kích dữ dội trong chiến dịch Blitz 1940–1941." },
+      { "name": "Dover", "at": [1.31, 51.13], "kind": "heritage", "note": "Cảng đón quân rút khỏi Dunkirk năm 1940." },
+      { "name": "Dublin", "at": [-6.26, 53.35], "kind": "capital", "note": "Nhà nước Tự do Ireland thành lập năm 1922." }
+    ],
+    "summary": "Anh tham gia Thế chiến I từ năm 1914 với tổn thất rất lớn. Phụ nữ trên 30 tuổi có quyền bầu cử năm 1918, bình đẳng với nam giới năm 1928. Phần lớn Ireland tách ra năm 1922. Trong Thế chiến II, Anh dưới thời Winston Churchill tiếp tục chiến đấu sau khi Pháp thất thủ năm 1940.",
+    "culture": "Điện ảnh, phát thanh BBC (thành lập 1922) và báo chí trở thành công cụ thông tin và tuyên truyền thời chiến.",
+    "peopleIds": ["david-lloyd-george", "winston-churchill"],
+    "sourceArticle": "Military history of the United Kingdom during World War II"
+  },
+  {
+    "id": "modern-britain",
+    "era": "Thế kỷ XX",
+    "name": "Nước Anh sau 1945",
+    "years": "1945 – nay",
+    "start": 1945,
+    "end": null,
+    "capital": "London",
+    "places": [
+      { "name": "London", "at": [-0.09, 51.51], "kind": "capital", "note": "Thủ đô của Vương quốc Liên hiệp Anh và Bắc Ireland." },
+      { "name": "Edinburgh", "at": [-3.19, 55.95], "kind": "capital", "note": "Nghị viện Scotland được tái lập năm 1999." },
+      { "name": "Cardiff", "at": [-3.18, 51.48], "kind": "capital", "note": "Nơi đặt cơ quan lập pháp xứ Wales từ năm 1999." }
+    ],
+    "summary": "Chính phủ Công đảng của Clement Attlee lập Dịch vụ Y tế Quốc gia (NHS) năm 1948. Các thuộc địa lần lượt giành độc lập. Anh gia nhập Cộng đồng Kinh tế châu Âu năm 1973 và rời Liên minh châu Âu năm 2020. Elizabeth II trị vì từ 1952 đến 2022.",
+    "culture": "Di cư từ Khối Thịnh vượng chung làm xã hội Anh đa dạng hơn. Âm nhạc đại chúng thập niên 1960 lan tỏa toàn cầu.",
+    "peopleIds": ["clement-attlee", "elizabeth-ii", "margaret-thatcher"],
+    "sourceArticle": "History of the United Kingdom (1945–present)",
+    "extraSources": [{ "title": "Wikipedia · Brexit", "url": "https://en.wikipedia.org/wiki/Brexit" }]
+  }
+]

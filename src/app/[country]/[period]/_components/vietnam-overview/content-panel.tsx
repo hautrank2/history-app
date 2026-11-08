@@ -33,6 +33,7 @@ import {
 import { characterHref, getCharacter } from "~/data/characters";
 import { chinaMapIdFor, chinaSourcesFor } from "~/data/china-overview";
 import { chinaStateMaps } from "~/data/china-state-maps";
+import { europeOverviews, isEuropeCountry } from "~/data/europe-overview";
 import { historicalEvents } from "~/data/events";
 import type { HistoricalEventModel } from "~/data/events";
 import { portraitCaption, portraitFor } from "~/data/portraits";
@@ -42,6 +43,7 @@ import { geographyArticles, overviewDetails } from "~/data/vietnam-overview-deta
 import type { OverviewArticleModel } from "~/data/vietnam-overview-details";
 
 import type { OverviewTab } from "./hook";
+import type { OverviewCountryId } from "./index";
 
 const tabs = [
   { id: "story", label: "Diễn biến", icon: BookOpen },
@@ -55,7 +57,7 @@ type ReadingBlockModel =
   | { kind: "person"; person: OverviewPersonModel; }
   | { kind: "event"; event: HistoricalEventModel; };
 type ContentPanelProps = {
-  country?: "vietnam" | "china";
+  country?: OverviewCountryId;
   scene: OverviewSceneModel;
   chapter: number;
   tab: OverviewTab;
@@ -106,9 +108,12 @@ export const ContentPanel = ({
 }: ContentPanelProps) => {
   const [active, setActive] = useState(0);
   const body = useRef<HTMLDivElement>(null);
-  const sources = country === "china"
-    ? chinaSourcesFor(scene.id)
-    : scene.sources.map((title) => ({ title, url: wikiUrl(title) }));
+  const atlasCountry = country !== "vietnam";
+  const sources = isEuropeCountry(country)
+    ? europeOverviews[country].sourcesFor(scene.id)
+    : country === "china"
+      ? chinaSourcesFor(scene.id)
+      : scene.sources.map((title) => ({ title, url: wikiUrl(title) }));
   const snapshot = country === "china"
     ? chinaStateMaps[chinaMapIdFor(scene.id) ?? ""]
     : undefined;
@@ -116,7 +121,7 @@ export const ContentPanel = ({
     { ...scene.culture, sources },
     ...(overviewDetails[scene.id]?.culture ?? []),
   ];
-  const geography = country === "china" ? [
+  const geography = atlasCountry ? [
     { title: "Không gian lịch sử", text: scene.extent, sources },
     ...(snapshot ? [{
       title: snapshot.title,
@@ -159,9 +164,11 @@ export const ContentPanel = ({
     const portrait = portraitFor(person.wiki);
     return portrait ? `${person.name}: ${portraitCaption(portrait)}.` : "";
   }).filter(Boolean).join("\n\n");
-  const notes = country === "china"
-    ? "Ranh giới lịch sử và vị trí đô thành được thể hiện gần đúng theo mốc trên bản đồ. Nền địa lý hiện đại chỉ giúp định vị; chưa có số liệu diện tích và dân số được kiểm chứng cho từng cảnh."
-    : `${scene.extent} Nền địa lý hiện đại chỉ để định vị, không dùng đo diện tích hoặc suy ra phạm vi kiểm soát lịch sử. Hoàng Sa và Trường Sa thuộc lớp tham chiếu lãnh thổ Việt Nam hiện nay. Dân số có mốc năm và phạm vi riêng; số hồi dựng không phải tổng điều tra. Minh họa AI không phải chân dung xác thực.`;
+  const notes = isEuropeCountry(country)
+    ? "Bản đồ chỉ đánh dấu các trung tâm và chiến trường tiêu biểu, tọa độ ước lượng; chưa vẽ ranh giới lịch sử. Nền địa lý hiện đại chỉ giúp định vị; chưa có số liệu diện tích và dân số được kiểm chứng cho từng cảnh."
+    : atlasCountry
+      ? "Ranh giới lịch sử và vị trí đô thành được thể hiện gần đúng theo mốc trên bản đồ. Nền địa lý hiện đại chỉ giúp định vị; chưa có số liệu diện tích và dân số được kiểm chứng cho từng cảnh."
+      : `${scene.extent} Nền địa lý hiện đại chỉ để định vị, không dùng đo diện tích hoặc suy ra phạm vi kiểm soát lịch sử. Hoàng Sa và Trường Sa thuộc lớp tham chiếu lãnh thổ Việt Nam hiện nay. Dân số có mốc năm và phạm vi riêng; số hồi dựng không phải tổng điều tra. Minh họa AI không phải chân dung xác thực.`;
   const story: ReadingBlockModel[] = [
     { kind: "article", article: { title: "Bối cảnh lịch sử", text: scene.summary, sources } },
     ...(scene.conflict ? [{ kind: "article" as const, article: { ...scene.conflict, sources } }] : []),

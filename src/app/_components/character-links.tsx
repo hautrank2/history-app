@@ -7,6 +7,8 @@ const destinations = [
   { countryId: "vietnam", label: "Nhân vật Việt Nam" },
   { countryId: "england", label: "Nhân vật Anh" },
   { countryId: "china", label: "Nhân vật Trung Quốc" },
+  { countryId: "denmark", label: "Nhân vật Đan Mạch" },
+  { countryId: "norway", label: "Nhân vật Na Uy" },
   { countryId: null, label: "Tất cả nhân vật" },
 ];
 

@@ -18,5 +18,18 @@ export const CountryFlag = ({ countryId }: CountryFlagProps) => {
     {countryId === "cambodia" ? <><path fill="#032ea1" d="M0 0h30v20H0z" /><path fill="#e00025" d="M0 5h30v10H0z" /><path fill="#fff" d="M8 13h14v1H8zM9 11h12v2H9zM10 9h3v3h-3zM14 7h3v5h-3zM18 9h3v3h-3zM10 8h3v1h-3zM14 6h3v1h-3zM18 8h3v1h-3z" /></> : null}
     {countryId === "soviet-union" ? <><path fill="#cc0000" d="M0 0h30v20H0z" /><text x="3" y="11" fill="#ffd700" fontSize="10">☭</text><path d={star} fill="#ffd700" transform="translate(7 2)" /></> : null}
     {countryId === "england" ? <><path fill="#fff" d="M0 0h30v20H0z" /><path stroke="#ce1124" strokeWidth="4" d="M12 0v20M0 10h30" /></> : null}
+    {countryId === "denmark" ? (
+      <>
+        <path fill="#c8102e" d="M0 0h30v20H0z" />
+        <path stroke="#fff" strokeWidth="3" d="M11 0v20M0 10h30" />
+      </>
+    ) : null}
+    {countryId === "norway" ? (
+      <>
+        <path fill="#ba0c2f" d="M0 0h30v20H0z" />
+        <path stroke="#fff" strokeWidth="5" d="M11 0v20M0 10h30" />
+        <path stroke="#00205b" strokeWidth="2.5" d="M11 0v20M0 10h30" />
+      </>
+    ) : null}
   </svg>;
 };

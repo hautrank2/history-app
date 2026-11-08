@@ -7,12 +7,15 @@ import { Button } from "~/components/ui/button";
 import { Card } from "~/components/ui/card";
 import { chinaMapIdFor } from "~/data/china-overview";
 import { chinaStateMaps } from "~/data/china-state-maps";
-import geography from "~/data/geo/world.json";
 import type { OverviewSceneModel } from "~/data/vietnam-overview";
 
+import { mapFrames, ringPathWith } from "./map-frames";
+import type { MapFrameId } from "./map-frames";
 import { MapMarkers, PlaceIcon, placeSubtitle } from "./map-markers";
 
 type ChinaHistoryMapProps = {
+  // Khung địa lý; lược đồ ranh giới lịch sử hiện chỉ có cho Trung Quốc
+  frameId?: MapFrameId;
   scene: OverviewSceneModel;
   selectedPlace: number;
   contentVisible: boolean;
@@ -22,29 +25,8 @@ type ChinaHistoryMapProps = {
   onHidePlaces: () => void;
 };
 
-const project = ([longitude, latitude]: number[]) => [
-  (longitude - 75) * 16,
-  (55 - latitude) * 20,
-];
-const ringPath = (ring: number[][]) => `${ring.map((point, index) =>
-  `${index ? "L" : "M"}${project(point).join(",")}`,
-).join("")}Z`;
-const countries = geography.filter((country) => [
-  "China", "Mongolia", "Russia", "India", "Nepal", "Bhutan", "Pakistan",
-  "Afghanistan", "Kazakhstan", "Kyrgyzstan", "Tajikistan", "Myanmar",
-  "Thailand", "Laos", "Vietnam", "Cambodia", "Taiwan", "Japan",
-  "North Korea", "South Korea", "Philippines", "Bangladesh",
-].includes(country.name)).map((country) => {
-  const polygons = country.geometry.type === "Polygon"
-    ? [country.geometry.coordinates as number[][][]]
-    : country.geometry.coordinates as number[][][][];
-  return {
-    name: country.name,
-    path: polygons.map((polygon) => polygon.map(ringPath).join("")).join(""),
-  };
-});
-
 export const ChinaHistoryMap = ({
+  frameId = "china",
   scene,
   selectedPlace,
   contentVisible,
@@ -54,7 +36,11 @@ export const ChinaHistoryMap = ({
   onHidePlaces,
 }: ChinaHistoryMapProps) => {
   const id = useId().replaceAll(":", "");
-  const snapshot = chinaStateMaps[chinaMapIdFor(scene.id) ?? ""];
+  const { ariaLabel, countries, labels, project } = mapFrames[frameId];
+  const ringPath = ringPathWith(project);
+  const snapshot = frameId === "china"
+    ? chinaStateMaps[chinaMapIdFor(scene.id) ?? ""]
+    : undefined;
   const places = snapshot ? snapshot.states.map((state) => ({
     name: state.capital.name,
     at: state.capital.at,
@@ -131,7 +117,8 @@ export const ChinaHistoryMap = ({
     <section
       className="vo-map-panel china-history-map"
       data-map-variant="simple"
-      aria-label="Bản đồ lịch sử Trung Quốc hai chiều"
+      data-map-frame={frameId}
+      aria-label={ariaLabel}
     >
       <svg
         ref={svg}
@@ -249,8 +236,19 @@ export const ChinaHistoryMap = ({
           </g>
         ) : null}
         <g className="vo-country-labels" aria-hidden="true">
-          <text x="600" y="350">ĐÔNG Á</text>
-          <text x="980" y="650" className="vo-sea-label">THÁI BÌNH DƯƠNG</text>
+          {labels.map((label) => {
+            const [x, y] = project(label.at);
+            return (
+              <text
+                key={label.text}
+                x={x}
+                y={y}
+                className={label.sea ? "vo-sea-label" : undefined}
+              >
+                {label.text}
+              </text>
+            );
+          })}
         </g>
       </svg>
       <MapMarkers

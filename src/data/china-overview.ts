@@ -18,6 +18,7 @@ type ChinaDynastyModel = {
   source: string;
   sourceArticle: string;
   sourceUrl?: string;
+  extraSources?: OverviewSourceModel[];
   peopleIds: string[];
   mapId?: string;
 };
@@ -73,6 +74,11 @@ const cities: Record<string, ChinaCityModel> = {
   beijing: { name: "Bắc Kinh / vùng Đại Đô", at: [116.4, 39.9] },
   balasagun: { name: "Balasagun · Trung Á", at: [75.3, 42.75] },
   karakorum: { name: "Karakorum · điểm tham chiếu thảo nguyên", at: [102.83, 47.2] },
+  xuchang: { name: "Hứa Xương", at: [113.85, 34.03] },
+  huining: { name: "Hội Ninh · Thượng Kinh nhà Kim", at: [126.95, 45.52] },
+  shenyang: { name: "Thịnh Kinh / Thẩm Dương", at: [123.43, 41.8] },
+  zhaoqing: { name: "Triệu Khánh", at: [112.47, 23.05] },
+  kunming: { name: "Côn Minh", at: [102.71, 25.04] },
 };
 
 const cultureByEra: Record<string, string> = {
@@ -175,6 +181,7 @@ export const chinaSourcesFor = (sceneId: string): OverviewSourceModel[] => {
   const row = chinaDynasties.find((item) => item.id === sceneId);
   return [
     ...(row?.sourceUrl ? [{ title: row.source, url: row.sourceUrl }] : []),
+    ...(row?.extraSources ?? []),
     chinaTimelineSource,
     ...(chinaStateMaps[row?.mapId ?? ""]?.sources ?? []),
   ];

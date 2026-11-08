@@ -13,7 +13,13 @@
       "ha-vu"
     ],
     "sourceArticle": "Xia dynasty",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Xia_dynasty"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Xia_dynasty",
+    "extraSources": [
+      {
+        "title": "Britannica · Xia dynasty",
+        "url": "https://www.britannica.com/topic/Xia-dynasty"
+      }
+    ]
   },
   {
     "id": "shang",
@@ -30,7 +36,13 @@
       "tru-vuong"
     ],
     "sourceArticle": "Shang dynasty",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Shang_dynasty"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Shang_dynasty",
+    "extraSources": [
+      {
+        "title": "Britannica · Shang dynasty",
+        "url": "https://www.britannica.com/topic/Shang-dynasty"
+      }
+    ]
   },
   {
     "id": "western-zhou",
@@ -48,7 +60,13 @@
       "khuong-tu-nha"
     ],
     "sourceArticle": "Western Zhou",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Western_Zhou"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Western_Zhou",
+    "extraSources": [
+      {
+        "title": "Britannica · Zhou dynasty",
+        "url": "https://www.britannica.com/topic/Zhou-dynasty"
+      }
+    ]
   },
   {
     "id": "spring-autumn",
@@ -65,7 +83,13 @@
       "ton-vu"
     ],
     "sourceArticle": "Spring and Autumn period",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Spring_and_Autumn_period"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Spring_and_Autumn_period",
+    "extraSources": [
+      {
+        "title": "Britannica · Spring and Autumn period",
+        "url": "https://www.britannica.com/event/Spring-and-Autumn-Period"
+      }
+    ]
   },
   {
     "id": "warring-states-260",
@@ -82,7 +106,13 @@
     ],
     "mapId": "warring-states-260",
     "sourceArticle": "Warring States period",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Warring_States_period"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Warring_States_period",
+    "extraSources": [
+      {
+        "title": "Britannica · Warring States",
+        "url": "https://www.britannica.com/event/Warring-States"
+      }
+    ]
   },
   {
     "id": "qin",
@@ -98,7 +128,14 @@
       "tan-thuy-hoang"
     ],
     "sourceArticle": "Qin dynasty",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Qin_dynasty"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Qin_dynasty",
+    "extraSources": [
+      {
+        "title": "Britannica · Qin dynasty",
+        "url": "https://www.britannica.com/topic/Qin-dynasty"
+      }
+    ],
+    "mapId": "qin-210"
   },
   {
     "id": "chu-han-contention",
@@ -124,7 +161,17 @@
       "tieu-ha",
       "truong-luong"
     ],
-    "mapId": "chu-han-206"
+    "mapId": "chu-han-206",
+    "extraSources": [
+      {
+        "title": "Britannica · Qin dynasty",
+        "url": "https://www.britannica.com/topic/Qin-dynasty"
+      },
+      {
+        "title": "Britannica · Han dynasty",
+        "url": "https://www.britannica.com/topic/Han-dynasty"
+      }
+    ]
   },
   {
     "id": "western-han",
@@ -144,7 +191,14 @@
       "han-vu-de"
     ],
     "sourceArticle": "Han dynasty",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Han_dynasty"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Han_dynasty",
+    "extraSources": [
+      {
+        "title": "Britannica · Han dynasty",
+        "url": "https://www.britannica.com/topic/Han-dynasty"
+      }
+    ],
+    "mapId": "western-han-50bce"
   },
   {
     "id": "xin",
@@ -160,7 +214,13 @@
       "vuong-mang"
     ],
     "sourceArticle": "Xin dynasty",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Xin_dynasty"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Xin_dynasty",
+    "extraSources": [
+      {
+        "title": "Britannica · Wang Mang",
+        "url": "https://www.britannica.com/biography/Wang-Mang"
+      }
+    ]
   },
   {
     "id": "han-restoration",
@@ -176,7 +236,13 @@
       "han-quang-vu"
     ],
     "sourceArticle": "Gengshi Emperor",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Gengshi_Emperor"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Gengshi_Emperor",
+    "extraSources": [
+      {
+        "title": "Britannica · Han dynasty",
+        "url": "https://www.britannica.com/topic/Han-dynasty"
+      }
+    ]
   },
   {
     "id": "eastern-han",
@@ -186,14 +252,26 @@
     "start": 25,
     "end": 220,
     "city": "luoyang",
-    "summary": "Lưu Tú khôi phục nhà Hán với trung tâm tại Lạc Dương. Cuối triều, xung đột trong triều, khởi nghĩa và các thế lực quân sự địa phương làm suy yếu chính quyền trung ương.",
+    "summary": "Lưu Tú tái lập nhà Hán với kinh đô Lạc Dương. Năm 42–43, Mã Viện được cử sang đàn áp khởi nghĩa Hai Bà Trưng ở Giao Chỉ. Cuối thời Đông Hán, loạn Khăn Vàng và các quân phiệt khiến triều đình suy yếu; năm 220, Tào Phi buộc Hán Hiến Đế nhường ngôi.",
     "source": "Nhà Hán",
     "peopleIds": [
       "han-quang-vu",
-      "tao-thao"
+      "tao-thao",
+      "ma-vien"
     ],
     "sourceArticle": "Han dynasty",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Han_dynasty"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Han_dynasty",
+    "cityIds": [
+      "luoyang",
+      "xuchang"
+    ],
+    "capital": "Lạc Dương 25–190; Trường An 190–195; Hứa Xương từ 196",
+    "extraSources": [
+      {
+        "title": "Britannica · Han dynasty",
+        "url": "https://www.britannica.com/topic/Han-dynasty"
+      }
+    ]
   },
   {
     "id": "three-kingdoms",
@@ -212,7 +290,13 @@
     ],
     "mapId": "three-kingdoms",
     "sourceArticle": "Three Kingdoms",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Three_Kingdoms"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Three_Kingdoms",
+    "extraSources": [
+      {
+        "title": "Britannica · Six Dynasties",
+        "url": "https://www.britannica.com/event/Six-Dynasties"
+      }
+    ]
   },
   {
     "id": "cao-wei",
@@ -231,7 +315,13 @@
     ],
     "mapId": "three-kingdoms",
     "sourceArticle": "Cao Wei",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Cao_Wei"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Cao_Wei",
+    "extraSources": [
+      {
+        "title": "Britannica · Six Dynasties",
+        "url": "https://www.britannica.com/event/Six-Dynasties"
+      }
+    ]
   },
   {
     "id": "shu-han",
@@ -248,7 +338,13 @@
     ],
     "mapId": "three-kingdoms",
     "sourceArticle": "Shu Han",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Shu_Han"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Shu_Han",
+    "extraSources": [
+      {
+        "title": "Britannica · Six Dynasties",
+        "url": "https://www.britannica.com/event/Six-Dynasties"
+      }
+    ]
   },
   {
     "id": "eastern-wu",
@@ -265,7 +361,13 @@
     ],
     "mapId": "three-kingdoms",
     "sourceArticle": "Eastern Wu",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Eastern_Wu"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Eastern_Wu",
+    "extraSources": [
+      {
+        "title": "Britannica · Six Dynasties",
+        "url": "https://www.britannica.com/event/Six-Dynasties"
+      }
+    ]
   },
   {
     "id": "western-jin",
@@ -282,7 +384,13 @@
       "tu-ma-viem"
     ],
     "sourceArticle": "Jin dynasty (266–420)",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Jin_dynasty_(266%E2%80%93420)"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Jin_dynasty_(266%E2%80%93420)",
+    "extraSources": [
+      {
+        "title": "Britannica · Six Dynasties",
+        "url": "https://www.britannica.com/event/Six-Dynasties"
+      }
+    ]
   },
   {
     "id": "eastern-jin",
@@ -299,7 +407,13 @@
     ],
     "mapId": "sixteen-kingdoms-350",
     "sourceArticle": "Jin dynasty (266–420)",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Jin_dynasty_(266%E2%80%93420)"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Jin_dynasty_(266%E2%80%93420)",
+    "extraSources": [
+      {
+        "title": "Britannica · Six Dynasties",
+        "url": "https://www.britannica.com/event/Six-Dynasties"
+      }
+    ]
   },
   {
     "id": "han-zhao",
@@ -316,7 +430,13 @@
     ],
     "mapId": "sixteen-kingdoms-317",
     "sourceArticle": "Han-Zhao",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Han-Zhao"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Han-Zhao",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "cheng-han",
@@ -333,7 +453,13 @@
     ],
     "mapId": "sixteen-kingdoms-317",
     "sourceArticle": "Cheng-Han",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Cheng-Han"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Cheng-Han",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "former-liang",
@@ -350,7 +476,13 @@
     ],
     "mapId": "sixteen-kingdoms-350",
     "sourceArticle": "Former Liang",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Former_Liang"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Former_Liang",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "later-zhao",
@@ -367,7 +499,13 @@
     ],
     "mapId": "sixteen-kingdoms-350",
     "sourceArticle": "Later Zhao",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Zhao"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Zhao",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "former-yan",
@@ -384,7 +522,13 @@
     ],
     "mapId": "sixteen-kingdoms-350",
     "sourceArticle": "Former Yan",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Former_Yan"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Former_Yan",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "former-qin",
@@ -401,7 +545,13 @@
     ],
     "mapId": "sixteen-kingdoms-376",
     "sourceArticle": "Former Qin",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Former_Qin"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Former_Qin",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "later-yan",
@@ -418,7 +568,13 @@
     ],
     "mapId": "sixteen-kingdoms-391",
     "sourceArticle": "Later Yan",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Yan"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Yan",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "later-qin",
@@ -435,7 +591,13 @@
     ],
     "mapId": "sixteen-kingdoms-402",
     "sourceArticle": "Later Qin",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Qin"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Qin",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "western-qin",
@@ -452,7 +614,13 @@
     ],
     "mapId": "sixteen-kingdoms-416",
     "sourceArticle": "Western Qin",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Western_Qin"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Western_Qin",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "later-liang",
@@ -469,7 +637,13 @@
     ],
     "mapId": "sixteen-kingdoms-402",
     "sourceArticle": "Later Liang (Sixteen Kingdoms)",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Liang_(Sixteen_Kingdoms)"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Liang_(Sixteen_Kingdoms)",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "southern-liang",
@@ -486,7 +660,13 @@
     ],
     "mapId": "sixteen-kingdoms-402",
     "sourceArticle": "Southern Liang (Sixteen Kingdoms)",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Southern_Liang_(Sixteen_Kingdoms)"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Southern_Liang_(Sixteen_Kingdoms)",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "northern-liang",
@@ -503,7 +683,13 @@
     ],
     "mapId": "sixteen-kingdoms-416",
     "sourceArticle": "Northern Liang",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Northern_Liang"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Northern_Liang",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "southern-yan",
@@ -520,7 +706,13 @@
     ],
     "mapId": "sixteen-kingdoms-402",
     "sourceArticle": "Southern Yan",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Southern_Yan"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Southern_Yan",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "western-liang",
@@ -537,7 +729,13 @@
     ],
     "mapId": "sixteen-kingdoms-416",
     "sourceArticle": "Western Liang (Sixteen Kingdoms)",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Western_Liang_(Sixteen_Kingdoms)"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Western_Liang_(Sixteen_Kingdoms)",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "xia-helian",
@@ -554,7 +752,13 @@
     ],
     "mapId": "sixteen-kingdoms-416",
     "sourceArticle": "Xia (Sixteen Kingdoms)",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Xia_(Sixteen_Kingdoms)"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Xia_(Sixteen_Kingdoms)",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "northern-yan",
@@ -571,7 +775,13 @@
     ],
     "mapId": "sixteen-kingdoms-416",
     "sourceArticle": "Northern Yan",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Northern_Yan"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Northern_Yan",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "western-yan",
@@ -588,7 +798,13 @@
     "peopleIds": [
       "mo-dung-hong"
     ],
-    "mapId": "sixteen-kingdoms-391"
+    "mapId": "sixteen-kingdoms-391",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "ran-wei",
@@ -605,7 +821,13 @@
     "peopleIds": [
       "nhiem-man"
     ],
-    "mapId": "sixteen-kingdoms-350"
+    "mapId": "sixteen-kingdoms-350",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "dai",
@@ -622,7 +844,13 @@
     "peopleIds": [
       "thac-bat-y-lo"
     ],
-    "mapId": "sixteen-kingdoms-317"
+    "mapId": "sixteen-kingdoms-317",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "zhai-wei",
@@ -639,7 +867,13 @@
     "peopleIds": [
       "dich-lieu"
     ],
-    "mapId": "sixteen-kingdoms-391"
+    "mapId": "sixteen-kingdoms-391",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "huan-chu",
@@ -655,6 +889,12 @@
     "sourceUrl": "https://en.wikipedia.org/wiki/Huan_Xuan",
     "peopleIds": [
       "hoan-huyen"
+    ],
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
     ]
   },
   {
@@ -671,6 +911,12 @@
     "sourceUrl": "https://en.wikipedia.org/wiki/Qiao_Zong",
     "peopleIds": [
       "tieu-tung"
+    ],
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
     ]
   },
   {
@@ -690,7 +936,13 @@
     ],
     "mapId": "sixteen-kingdoms-317",
     "sourceArticle": "Sixteen Kingdoms",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Sixteen_Kingdoms"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Sixteen_Kingdoms",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "sixteen-kingdoms-350",
@@ -708,7 +960,13 @@
     ],
     "mapId": "sixteen-kingdoms-350",
     "sourceArticle": "Sixteen Kingdoms",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Sixteen_Kingdoms"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Sixteen_Kingdoms",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "sixteen-kingdoms-376",
@@ -726,7 +984,13 @@
     ],
     "mapId": "sixteen-kingdoms-376",
     "sourceArticle": "Sixteen Kingdoms",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Sixteen_Kingdoms"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Sixteen_Kingdoms",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "sixteen-kingdoms-391",
@@ -745,7 +1009,13 @@
     ],
     "mapId": "sixteen-kingdoms-391",
     "sourceArticle": "Sixteen Kingdoms",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Sixteen_Kingdoms"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Sixteen_Kingdoms",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "sixteen-kingdoms-402",
@@ -764,7 +1034,13 @@
     ],
     "mapId": "sixteen-kingdoms-402",
     "sourceArticle": "Sixteen Kingdoms",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Sixteen_Kingdoms"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Sixteen_Kingdoms",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "sixteen-kingdoms-416",
@@ -783,7 +1059,13 @@
     ],
     "mapId": "sixteen-kingdoms-416",
     "sourceArticle": "Sixteen Kingdoms",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Sixteen_Kingdoms"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Sixteen_Kingdoms",
+    "extraSources": [
+      {
+        "title": "Britannica · Sixteen Kingdoms",
+        "url": "https://www.britannica.com/topic/Sixteen-Kingdoms"
+      }
+    ]
   },
   {
     "id": "northern-southern-550",
@@ -802,7 +1084,13 @@
     ],
     "mapId": "northern-southern-550",
     "sourceArticle": "Northern and Southern dynasties",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Northern_and_Southern_dynasties"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Northern_and_Southern_dynasties",
+    "extraSources": [
+      {
+        "title": "Britannica · Six Dynasties",
+        "url": "https://www.britannica.com/event/Six-Dynasties"
+      }
+    ]
   },
   {
     "id": "liu-song",
@@ -818,7 +1106,13 @@
       "luu-du"
     ],
     "sourceArticle": "Liu Song dynasty",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Liu_Song_dynasty"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Liu_Song_dynasty",
+    "extraSources": [
+      {
+        "title": "Britannica · Six Dynasties",
+        "url": "https://www.britannica.com/event/Six-Dynasties"
+      }
+    ]
   },
   {
     "id": "southern-qi",
@@ -834,7 +1128,13 @@
       "tieu-dao-thanh"
     ],
     "sourceArticle": "Southern Qi",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Southern_Qi"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Southern_Qi",
+    "extraSources": [
+      {
+        "title": "Britannica · Six Dynasties",
+        "url": "https://www.britannica.com/event/Six-Dynasties"
+      }
+    ]
   },
   {
     "id": "liang",
@@ -851,7 +1151,13 @@
     ],
     "mapId": "northern-southern-550",
     "sourceArticle": "Liang dynasty",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Liang_dynasty"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Liang_dynasty",
+    "extraSources": [
+      {
+        "title": "Britannica · Six Dynasties",
+        "url": "https://www.britannica.com/event/Six-Dynasties"
+      }
+    ]
   },
   {
     "id": "chen",
@@ -867,7 +1173,13 @@
       "tran-ba-tien"
     ],
     "sourceArticle": "Chen dynasty",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Chen_dynasty"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Chen_dynasty",
+    "extraSources": [
+      {
+        "title": "Britannica · Six Dynasties",
+        "url": "https://www.britannica.com/event/Six-Dynasties"
+      }
+    ]
   },
   {
     "id": "northern-wei",
@@ -884,7 +1196,18 @@
     ],
     "sourceArticle": "Northern Wei",
     "sourceUrl": "https://en.wikipedia.org/wiki/Northern_Wei",
-    "mapId": "sixteen-kingdoms-416"
+    "mapId": "sixteen-kingdoms-416",
+    "cityIds": [
+      "datong",
+      "luoyang"
+    ],
+    "capital": "Bình Thành 398–494; Lạc Dương từ 494",
+    "extraSources": [
+      {
+        "title": "Britannica · Six Dynasties",
+        "url": "https://www.britannica.com/event/Six-Dynasties"
+      }
+    ]
   },
   {
     "id": "eastern-wei",
@@ -900,7 +1223,13 @@
       "nguyen-thien"
     ],
     "sourceArticle": "Eastern Wei",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Eastern_Wei"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Eastern_Wei",
+    "extraSources": [
+      {
+        "title": "Britannica · Six Dynasties",
+        "url": "https://www.britannica.com/event/Six-Dynasties"
+      }
+    ]
   },
   {
     "id": "western-wei",
@@ -917,7 +1246,13 @@
     ],
     "mapId": "northern-southern-550",
     "sourceArticle": "Western Wei",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Western_Wei"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Western_Wei",
+    "extraSources": [
+      {
+        "title": "Britannica · Six Dynasties",
+        "url": "https://www.britannica.com/event/Six-Dynasties"
+      }
+    ]
   },
   {
     "id": "northern-qi",
@@ -934,7 +1269,13 @@
     ],
     "mapId": "northern-southern-550",
     "sourceArticle": "Northern Qi",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Northern_Qi"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Northern_Qi",
+    "extraSources": [
+      {
+        "title": "Britannica · Six Dynasties",
+        "url": "https://www.britannica.com/event/Six-Dynasties"
+      }
+    ]
   },
   {
     "id": "northern-zhou",
@@ -950,7 +1291,13 @@
       "vu-van-giac"
     ],
     "sourceArticle": "Northern Zhou",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Northern_Zhou"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Northern_Zhou",
+    "extraSources": [
+      {
+        "title": "Britannica · Six Dynasties",
+        "url": "https://www.britannica.com/event/Six-Dynasties"
+      }
+    ]
   },
   {
     "id": "western-liang-nanbei",
@@ -966,7 +1313,13 @@
       "tieu-sat"
     ],
     "sourceArticle": "Western Liang (555–587)",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Western_Liang_(555%E2%80%93587)"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Western_Liang_(555%E2%80%93587)",
+    "extraSources": [
+      {
+        "title": "Britannica · Six Dynasties",
+        "url": "https://www.britannica.com/event/Six-Dynasties"
+      }
+    ]
   },
   {
     "id": "sui",
@@ -982,7 +1335,14 @@
       "tuy-van-de"
     ],
     "sourceArticle": "Sui dynasty",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Sui_dynasty"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Sui_dynasty",
+    "extraSources": [
+      {
+        "title": "Britannica · Sui dynasty",
+        "url": "https://www.britannica.com/topic/Sui-dynasty"
+      }
+    ],
+    "mapId": "sui-610"
   },
   {
     "id": "tang-early",
@@ -999,7 +1359,14 @@
       "duong-thai-tong"
     ],
     "sourceArticle": "Tang dynasty",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Tang_dynasty"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Tang_dynasty",
+    "extraSources": [
+      {
+        "title": "Britannica · Tang dynasty",
+        "url": "https://www.britannica.com/topic/Tang-dynasty"
+      }
+    ],
+    "mapId": "tang-700"
   },
   {
     "id": "wu-zhou",
@@ -1015,7 +1382,14 @@
       "vo-tac-thien"
     ],
     "sourceArticle": "Wu Zhou",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Wu_Zhou"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Wu_Zhou",
+    "extraSources": [
+      {
+        "title": "Britannica · Tang dynasty",
+        "url": "https://www.britannica.com/topic/Tang-dynasty"
+      }
+    ],
+    "mapId": "tang-700"
   },
   {
     "id": "tang-restored",
@@ -1032,7 +1406,13 @@
       "cao-bien"
     ],
     "sourceArticle": "Tang dynasty",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Tang_dynasty"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Tang_dynasty",
+    "extraSources": [
+      {
+        "title": "Britannica · Tang dynasty",
+        "url": "https://www.britannica.com/topic/Tang-dynasty"
+      }
+    ]
   },
   {
     "id": "five-dynasties-935",
@@ -1051,7 +1431,17 @@
     ],
     "mapId": "five-dynasties-935",
     "sourceArticle": "Five Dynasties and Ten Kingdoms period",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Five_Dynasties_and_Ten_Kingdoms_period"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Five_Dynasties_and_Ten_Kingdoms_period",
+    "extraSources": [
+      {
+        "title": "Britannica · Five Dynasties",
+        "url": "https://www.britannica.com/event/Five-Dynasties"
+      },
+      {
+        "title": "Britannica · Ten Kingdoms",
+        "url": "https://www.britannica.com/event/Ten-Kingdoms"
+      }
+    ]
   },
   {
     "id": "later-liang-five",
@@ -1061,13 +1451,19 @@
     "start": 907,
     "end": 923,
     "city": "kaifeng",
-    "summary": "Chu Ôn thay nhà Đường, mở đầu Ngũ Đại ở miền bắc.",
+    "summary": "Chu Ôn, vốn là tướng của Hoàng Sào rồi hàng nhà Đường, buộc Đường Ai Đế nhường ngôi năm 907 và lập Hậu Lương, đóng đô ở Biện Châu (Khai Phong). Hậu Lương liên tục giao tranh với thế lực Tấn của họ Lý gốc Sa Đà ở Hà Bắc. Chu Ôn bị con giết năm 912; Hậu Đường diệt Hậu Lương năm 923.",
     "source": "Hậu Lương (Ngũ đại)",
     "peopleIds": [
       "chu-on"
     ],
     "sourceArticle": "Later Liang (Five Dynasties)",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Liang_(Five_Dynasties)"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Liang_(Five_Dynasties)",
+    "extraSources": [
+      {
+        "title": "Britannica · Five Dynasties",
+        "url": "https://www.britannica.com/event/Five-Dynasties"
+      }
+    ]
   },
   {
     "id": "later-tang",
@@ -1077,14 +1473,20 @@
     "start": 923,
     "end": 936,
     "city": "luoyang",
-    "summary": "Họ Lý gốc Sa Đà đánh bại Hậu Lương; trung tâm quyền lực đặt tại Lạc Dương.",
+    "summary": "Lý Tồn Úc, con Lý Khắc Dụng, xưng đế năm 923, diệt Hậu Lương trong cùng năm và đặt trung tâm quyền lực tại Lạc Dương. Hậu Đường chinh phục Tiền Thục năm 925, nhưng Lý Tồn Úc bị giết trong binh biến năm 926. Thạch Kính Đường nổi dậy với sự hỗ trợ của Khiết Đan, chấm dứt Hậu Đường năm 936.",
     "source": "Hậu Đường",
     "peopleIds": [
       "ly-ton-huc"
     ],
     "mapId": "five-dynasties-935",
     "sourceArticle": "Later Tang",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Tang"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Tang",
+    "extraSources": [
+      {
+        "title": "Britannica · Five Dynasties",
+        "url": "https://www.britannica.com/event/Five-Dynasties"
+      }
+    ]
   },
   {
     "id": "later-jin",
@@ -1094,13 +1496,19 @@
     "start": 936,
     "end": 947,
     "city": "kaifeng",
-    "summary": "Thạch Kính Đường lập Hậu Tấn với sự hỗ trợ của Khiết Đan. Chính thể này kết thúc sau cuộc tiến quân của Liêu.",
+    "summary": "Thạch Kính Đường lập Hậu Tấn năm 936 với sự hỗ trợ của Khiết Đan và nhượng Yên Vân thập lục châu cho Khiết Đan. Người kế vị Thạch Trọng Quý không chịu thần phục; quân Liêu chiếm Khai Phong cuối năm 946, đầu năm 947, kết thúc Hậu Tấn.",
     "source": "Hậu Tấn",
     "peopleIds": [
       "thach-kinh-duong"
     ],
     "sourceArticle": "Later Jin (Five Dynasties)",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Jin_(Five_Dynasties)"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Jin_(Five_Dynasties)",
+    "extraSources": [
+      {
+        "title": "Britannica · Five Dynasties",
+        "url": "https://www.britannica.com/event/Five-Dynasties"
+      }
+    ]
   },
   {
     "id": "later-han-five",
@@ -1110,13 +1518,19 @@
     "start": 947,
     "end": 951,
     "city": "kaifeng",
-    "summary": "Lưu Tri Viễn lập Hậu Hán sau khi Liêu rút khỏi trung nguyên. Bắc Hán là chính thể khác tiếp tục tồn tại ở Thái Nguyên.",
+    "summary": "Lưu Tri Viễn, tướng gốc Sa Đà, xưng đế tại Thái Nguyên năm 947 rồi vào Khai Phong sau khi quân Liêu rút đi. Ông mất năm 948; người kế vị giết nhiều đại thần, khiến Quách Uy nổi dậy năm 950. Bắc Hán là chính thể khác do họ Lưu tiếp tục duy trì ở Thái Nguyên.",
     "source": "Hậu Hán (Ngũ đại)",
     "peopleIds": [
       "luu-tri-vien"
     ],
     "sourceArticle": "Later Han (Five Dynasties)",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Han_(Five_Dynasties)"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Han_(Five_Dynasties)",
+    "extraSources": [
+      {
+        "title": "Britannica · Five Dynasties",
+        "url": "https://www.britannica.com/event/Five-Dynasties"
+      }
+    ]
   },
   {
     "id": "later-zhou",
@@ -1126,13 +1540,19 @@
     "start": 951,
     "end": 960,
     "city": "kaifeng",
-    "summary": "Quách Uy lập Hậu Chu. Nhà Tống thay Hậu Chu năm 960, kết thúc chuỗi Ngũ Đại ở miền bắc.",
+    "summary": "Quách Uy lập Hậu Chu năm 951 tại Khai Phong. Người kế vị Sài Vinh (Chu Thế Tông) cải tổ quân đội, lấy vùng Hoài Nam của Nam Đường năm 958 và tiến đánh Liêu. Sau khi Sài Vinh mất, Triệu Khuông Dẫn phát động binh biến Trần Kiều năm 960 và lập nhà Tống, kết thúc Ngũ Đại.",
     "source": "Hậu Chu",
     "peopleIds": [
       "quach-uy"
     ],
     "sourceArticle": "Later Zhou",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Zhou"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Zhou",
+    "extraSources": [
+      {
+        "title": "Britannica · Five Dynasties",
+        "url": "https://www.britannica.com/event/Five-Dynasties"
+      }
+    ]
   },
   {
     "id": "yang-wu",
@@ -1142,14 +1562,20 @@
     "start": 902,
     "end": 937,
     "city": "yangzhou",
-    "summary": "Chính quyền họ Dương phát triển ở vùng Hoài Nam và Giang Nam, sau đó bị Nam Đường thay thế.",
+    "summary": "Dương Hành Mật, tiết độ sứ Hoài Nam, được nhà Đường phong Ngô vương năm 902 và đặt trung tâm tại Quảng Lăng (Dương Châu). Về sau quyền lực rơi vào tay họ Từ; năm 937, Từ Tri Cáo (Lý Biện) nhận ngôi và lập Nam Đường.",
     "source": "Ngô (Thập quốc)",
     "peopleIds": [
       "duong-hanh-mat"
     ],
     "mapId": "five-dynasties-935",
     "sourceArticle": "Yang Wu",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Yang_Wu"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Yang_Wu",
+    "extraSources": [
+      {
+        "title": "Britannica · Ten Kingdoms",
+        "url": "https://www.britannica.com/event/Ten-Kingdoms"
+      }
+    ]
   },
   {
     "id": "wuyue",
@@ -1159,14 +1585,20 @@
     "start": 907,
     "end": 978,
     "city": "hangzhou",
-    "summary": "Họ Tiền cai trị vùng Chiết Giang; Ngô Việt cuối cùng quy phục nhà Tống.",
+    "summary": "Tiền Lưu lập Ngô Việt ở vùng Chiết Giang, đóng tại Tiền Đường (Hàng Châu). Ngô Việt chú trọng đê biển, thủy lợi, thương mại đường biển và Phật giáo, đồng thời giữ quan hệ thần phục với các triều phương bắc. Năm 978, vua cuối Tiền Hoằng Thục nạp đất cho nhà Tống mà không qua chiến tranh lớn.",
     "source": "Ngô Việt",
     "peopleIds": [
       "tien-luu"
     ],
     "mapId": "five-dynasties-935",
     "sourceArticle": "Wuyue",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Wuyue"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Wuyue",
+    "extraSources": [
+      {
+        "title": "Britannica · Ten Kingdoms",
+        "url": "https://www.britannica.com/event/Ten-Kingdoms"
+      }
+    ]
   },
   {
     "id": "min",
@@ -1176,14 +1608,20 @@
     "start": 909,
     "end": 945,
     "city": "fuzhou",
-    "summary": "Họ Vương xây dựng chính quyền ở Phúc Kiến. Nội chiến và sự can thiệp từ các nước lân cận làm nước Mân kết thúc.",
+    "summary": "Vương Thẩm Tri cai trị Phúc Kiến từ Phúc Châu và được nhà Hậu Lương phong Mân vương năm 909. Năm 933, Vương Diên Quân xưng đế. Tranh chấp trong họ Vương dẫn tới nội chiến; Nam Đường và Ngô Việt chia nhau lãnh thổ Mân năm 945.",
     "source": "Mân (Thập quốc)",
     "peopleIds": [
       "vuong-tham-tri"
     ],
     "mapId": "five-dynasties-935",
     "sourceArticle": "Min (Ten Kingdoms)",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Min_(Ten_Kingdoms)"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Min_(Ten_Kingdoms)",
+    "extraSources": [
+      {
+        "title": "Britannica · Ten Kingdoms",
+        "url": "https://www.britannica.com/event/Ten-Kingdoms"
+      }
+    ]
   },
   {
     "id": "southern-han",
@@ -1193,14 +1631,20 @@
     "start": 917,
     "end": 971,
     "city": "guangzhou",
-    "summary": "Họ Lưu lập Nam Hán tại Lĩnh Nam với trung tâm ở Phiên Ngung. Nhà Tống chinh phục nước này năm 971.",
+    "summary": "Lưu Nghiễm (còn gọi Lưu Cung) xưng đế năm 917 tại Phiên Ngung, đặt quốc hiệu Đại Việt rồi đổi thành Hán năm 918. Nam Hán nhiều lần tìm cách kiểm soát Giao Châu: Dương Đình Nghệ đánh đuổi quân Nam Hán năm 931, và năm 938 Ngô Quyền đánh bại thủy quân của Lưu Hoằng Tháo trên sông Bạch Đằng. Nhà Tống chinh phục Nam Hán năm 971.",
     "source": "Nam Hán",
     "peopleIds": [
       "luu-nghiem"
     ],
     "mapId": "five-dynasties-935",
     "sourceArticle": "Southern Han",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Southern_Han"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Southern_Han",
+    "extraSources": [
+      {
+        "title": "Britannica · Ten Kingdoms",
+        "url": "https://www.britannica.com/event/Ten-Kingdoms"
+      }
+    ]
   },
   {
     "id": "ma-chu",
@@ -1210,14 +1654,20 @@
     "start": 907,
     "end": 951,
     "city": "changsha",
-    "summary": "Họ Mã cai trị vùng Hồ Nam. Chính quyền kết thúc trong các cuộc tranh giành và sự tiến quân của Nam Đường.",
+    "summary": "Mã Ân cai trị vùng Hồ Nam từ Trường Sa và được phong Sở vương năm 907. Sở phát triển buôn bán chè và giữ quan hệ thần phục với các triều phương bắc. Sau khi Mã Ân mất, các con tranh ngôi kéo dài; Nam Đường chiếm Trường Sa năm 951.",
     "source": "Sở (Thập quốc)",
     "peopleIds": [
       "ma-an"
     ],
     "mapId": "five-dynasties-935",
     "sourceArticle": "Ma Chu",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Ma_Chu"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Ma_Chu",
+    "extraSources": [
+      {
+        "title": "Britannica · Ten Kingdoms",
+        "url": "https://www.britannica.com/event/Ten-Kingdoms"
+      }
+    ]
   },
   {
     "id": "northern-han",
@@ -1227,13 +1677,19 @@
     "start": 951,
     "end": 979,
     "city": "taiyuan",
-    "summary": "Họ Lưu duy trì Bắc Hán tại Thái Nguyên, dựa vào quan hệ với Liêu. Nhà Tống chinh phục nước này năm 979.",
+    "summary": "Lưu Mân (Lưu Sùng), em Lưu Tri Viễn, lập Bắc Hán tại Thái Nguyên năm 951 sau khi Hậu Hán sụp đổ. Bắc Hán dựa vào sự bảo hộ của Liêu để chống Hậu Chu rồi nhà Tống. Năm 979, Tống Thái Tông chinh phục Bắc Hán, hoàn tất việc thôn tính các nước Thập Quốc.",
     "source": "Bắc Hán",
     "peopleIds": [
       "luu-sung"
     ],
     "sourceArticle": "Northern Han",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Northern_Han"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Northern_Han",
+    "extraSources": [
+      {
+        "title": "Britannica · Ten Kingdoms",
+        "url": "https://www.britannica.com/event/Ten-Kingdoms"
+      }
+    ]
   },
   {
     "id": "jingnan",
@@ -1243,14 +1699,20 @@
     "start": 924,
     "end": 963,
     "city": "jiangling",
-    "summary": "Chính quyền nhỏ của họ Cao tại Giang Lăng giữ vị trí giữa nhiều thế lực và duy trì quan hệ với các triều phương bắc.",
+    "summary": "Cao Quý Hưng giữ Giang Lăng và các châu lân cận, lập nên Kinh Nam (Nam Bình), nước nhỏ nhất trong Thập Quốc. Nằm giữa nhiều thế lực, Kinh Nam lần lượt thần phục các triều phương bắc và các nước phía nam để tồn tại. Năm 963, Kinh Nam quy phục nhà Tống.",
     "source": "Kinh Nam",
     "peopleIds": [
       "cao-quy-hung"
     ],
     "mapId": "five-dynasties-935",
     "sourceArticle": "Jingnan",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Jingnan"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Jingnan",
+    "extraSources": [
+      {
+        "title": "Britannica · Ten Kingdoms",
+        "url": "https://www.britannica.com/event/Ten-Kingdoms"
+      }
+    ]
   },
   {
     "id": "former-shu",
@@ -1260,13 +1722,19 @@
     "start": 907,
     "end": 925,
     "city": "chengdu",
-    "summary": "Vương Kiến lập nước Thục ở Tứ Xuyên; Tiền Thục bị Hậu Đường chinh phục năm 925.",
+    "summary": "Vương Kiến xưng đế ở Thành Đô năm 907, lập nước Thục, kiểm soát vùng Tứ Xuyên và Hán Trung. Thời Tiền Thục, Thành Đô thu hút nhiều quan lại và văn sĩ chạy loạn từ phương bắc. Dưới thời Vương Diễn, quân Hậu Đường tiến vào và chinh phục Tiền Thục năm 925.",
     "source": "Tiền Thục",
     "peopleIds": [
       "vuong-kien"
     ],
     "sourceArticle": "Former Shu",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Former_Shu"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Former_Shu",
+    "extraSources": [
+      {
+        "title": "Britannica · Ten Kingdoms",
+        "url": "https://www.britannica.com/event/Ten-Kingdoms"
+      }
+    ]
   },
   {
     "id": "later-shu",
@@ -1276,14 +1744,20 @@
     "start": 934,
     "end": 965,
     "city": "chengdu",
-    "summary": "Họ Mạnh khôi phục một chính quyền độc lập ở Tứ Xuyên trước khi nhà Tống chinh phục vùng này.",
+    "summary": "Mạnh Tri Tường, tướng Hậu Đường trấn giữ Tứ Xuyên, xưng đế năm 934 tại Thành Đô. Dưới thời Mạnh Sưởng, Hậu Thục tương đối ổn định; tuyển tập từ Hoa gian tập được biên soạn ở đây năm 940. Nhà Tống chinh phục Hậu Thục năm 965.",
     "source": "Hậu Thục",
     "peopleIds": [
       "manh-tri-tuong"
     ],
     "mapId": "five-dynasties-935",
     "sourceArticle": "Later Shu",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Shu"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Later_Shu",
+    "extraSources": [
+      {
+        "title": "Britannica · Ten Kingdoms",
+        "url": "https://www.britannica.com/event/Ten-Kingdoms"
+      }
+    ]
   },
   {
     "id": "southern-tang",
@@ -1293,13 +1767,19 @@
     "start": 937,
     "end": 975,
     "city": "nanjing",
-    "summary": "Nam Đường thay nước Ngô ở Giang Nam, để lại dấu ấn văn học và nghệ thuật trước khi bị nhà Tống chinh phục.",
+    "summary": "Lý Biện (Từ Tri Cáo) thay nước Ngô năm 937, đặt đô tại Kim Lăng (Nam Kinh). Nam Đường thôn tính Mân và Sở nhưng mất vùng Hoài Nam vào tay Hậu Chu năm 958. Vua cuối Lý Dục nổi tiếng về từ; nhà Tống chinh phục Nam Đường năm 975.",
     "source": "Nam Đường",
     "peopleIds": [
       "ly-bien"
     ],
     "sourceArticle": "Southern Tang",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Southern_Tang"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Southern_Tang",
+    "extraSources": [
+      {
+        "title": "Britannica · Ten Kingdoms",
+        "url": "https://www.britannica.com/event/Ten-Kingdoms"
+      }
+    ]
   },
   {
     "id": "northern-song",
@@ -1309,14 +1789,20 @@
     "start": 960,
     "end": 1127,
     "city": "kaifeng",
-    "summary": "Triệu Khuông Dận lập nhà Tống. Bắc Tống tái thống nhất nhiều vùng nhưng cùng tồn tại với Liêu và Tây Hạ; kinh đô Khai Phong thất thủ trước quân Kim năm 1127.",
+    "summary": "Triệu Khuông Dẫn lập nhà Tống năm 960 tại Khai Phong và dần thống nhất phần lớn Trung Hoa bản thổ, trừ vùng do Liêu và Tây Hạ nắm giữ. Năm 981, quân Tống tấn công Đại Cồ Việt và bị Lê Hoàn đánh bại; chiến tranh với nhà Lý năm 1075–1077 kết thúc sau giao tranh ở phòng tuyến sông Như Nguyệt. Năm 1127, quân Kim chiếm Khai Phong, kết thúc thời Bắc Tống.",
     "source": "Nhà Tống",
     "peopleIds": [
       "trieu-khuong-dan"
     ],
     "mapId": "song-liao-xia-1100",
     "sourceArticle": "Song dynasty",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Song_dynasty"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Song_dynasty",
+    "extraSources": [
+      {
+        "title": "Britannica · Song dynasty",
+        "url": "https://www.britannica.com/topic/Song-dynasty"
+      }
+    ]
   },
   {
     "id": "liao",
@@ -1333,7 +1819,13 @@
     ],
     "mapId": "song-liao-xia-1100",
     "sourceArticle": "Liao dynasty",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Liao_dynasty"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Liao_dynasty",
+    "extraSources": [
+      {
+        "title": "Britannica · Liao dynasty",
+        "url": "https://www.britannica.com/topic/Liao-dynasty"
+      }
+    ]
   },
   {
     "id": "western-xia",
@@ -1350,7 +1842,13 @@
     ],
     "mapId": "song-liao-xia-1100",
     "sourceArticle": "Western Xia",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Western_Xia"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Western_Xia",
+    "extraSources": [
+      {
+        "title": "Britannica · Xi Xia",
+        "url": "https://www.britannica.com/place/Xi-Xia"
+      }
+    ]
   },
   {
     "id": "jin-jurchen",
@@ -1367,7 +1865,19 @@
     ],
     "mapId": "song-jin-1200",
     "sourceArticle": "Jin dynasty (1115–1234)",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Jin_dynasty_(1115%E2%80%931234)"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Jin_dynasty_(1115%E2%80%931234)",
+    "cityIds": [
+      "huining",
+      "beijing",
+      "kaifeng"
+    ],
+    "capital": "Hội Ninh (Thượng Kinh) đến 1153; Trung Đô (Bắc Kinh) 1153–1214; Biện Kinh (Khai Phong) từ 1214",
+    "extraSources": [
+      {
+        "title": "Britannica · Song dynasty",
+        "url": "https://www.britannica.com/topic/Song-dynasty"
+      }
+    ]
   },
   {
     "id": "southern-song",
@@ -1384,7 +1894,13 @@
     ],
     "mapId": "song-jin-1200",
     "sourceArticle": "Song dynasty",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Song_dynasty"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Song_dynasty",
+    "extraSources": [
+      {
+        "title": "Britannica · Song dynasty",
+        "url": "https://www.britannica.com/topic/Song-dynasty"
+      }
+    ]
   },
   {
     "id": "western-liao",
@@ -1400,7 +1916,13 @@
       "da-luat-dai-thach"
     ],
     "sourceArticle": "Qara Khitai",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Qara_Khitai"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Qara_Khitai",
+    "extraSources": [
+      {
+        "title": "Britannica · Liao dynasty",
+        "url": "https://www.britannica.com/topic/Liao-dynasty"
+      }
+    ]
   },
   {
     "id": "yuan",
@@ -1410,14 +1932,24 @@
     "start": 1271,
     "end": 1368,
     "city": "beijing",
-    "summary": "Hốt Tất Liệt đặt quốc hiệu Nguyên năm 1271; Nam Tống bị chinh phục năm 1279. Triều Nguyên tại Trung Quốc kết thúc khi quân Minh chiếm Đại Đô năm 1368.",
+    "summary": "Hốt Tất Liệt đặt quốc hiệu Nguyên năm 1271; Nam Tống bị chinh phục năm 1279. Các cuộc tiến quân vào Đại Việt năm 1285 và 1287–1288 do Thoát Hoan chỉ huy đều thất bại; thủy quân của Ô Mã Nhi bị đánh tan tại Bạch Đằng năm 1288. Triều Nguyên tại Trung Quốc kết thúc khi quân Minh chiếm Đại Đô năm 1368.",
     "source": "Nhà Nguyên",
     "peopleIds": [
       "hot-tat-liet",
-      "nguyen-thuan-de"
+      "nguyen-thuan-de",
+      "thoat-hoan",
+      "o-ma-nhi",
+      "truong-van-ho"
     ],
     "sourceArticle": "Yuan dynasty",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Yuan_dynasty"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Yuan_dynasty",
+    "extraSources": [
+      {
+        "title": "Britannica · Yuan dynasty",
+        "url": "https://www.britannica.com/topic/Yuan-dynasty"
+      }
+    ],
+    "mapId": "yuan-1294"
   },
   {
     "id": "northern-yuan",
@@ -1433,7 +1965,13 @@
       "nguyen-thuan-de"
     ],
     "sourceArticle": "Northern Yuan",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Northern_Yuan"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Northern_Yuan",
+    "extraSources": [
+      {
+        "title": "Britannica · Yuan dynasty",
+        "url": "https://www.britannica.com/topic/Yuan-dynasty"
+      }
+    ]
   },
   {
     "id": "ming",
@@ -1443,13 +1981,27 @@
     "start": 1368,
     "end": 1644,
     "city": "nanjing",
-    "summary": "Chu Nguyên Chương lập nhà Minh với kinh đô đầu tiên ở Nam Kinh; triều đình chuyển trung tâm ra Bắc Kinh năm 1421. Khủng hoảng cuối triều dẫn tới sự sụp đổ năm 1644.",
+    "summary": "Chu Nguyên Chương lập nhà Minh với kinh đô đầu tiên ở Nam Kinh; triều đình chuyển trung tâm ra Bắc Kinh năm 1421. Năm 1406–1407, quân Minh do Trương Phụ chỉ huy đánh bại nhà Hồ và đặt ách cai trị ở Đại Việt; khởi nghĩa Lam Sơn buộc Vương Thông rút quân năm 1427. Khủng hoảng cuối triều dẫn tới sự sụp đổ năm 1644.",
     "source": "Nhà Minh",
     "peopleIds": [
-      "minh-thai-to"
+      "minh-thai-to",
+      "truong-phu",
+      "vuong-thong"
     ],
     "sourceArticle": "Ming dynasty",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Ming_dynasty"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Ming_dynasty",
+    "cityIds": [
+      "nanjing",
+      "beijing"
+    ],
+    "capital": "Nam Kinh 1368–1421; Bắc Kinh từ 1421",
+    "extraSources": [
+      {
+        "title": "Britannica · Ming dynasty",
+        "url": "https://www.britannica.com/topic/Ming-dynasty-Chinese-history"
+      }
+    ],
+    "mapId": "ming-1580"
   },
   {
     "id": "southern-ming",
@@ -1465,7 +2017,20 @@
       "hoang-quang-de"
     ],
     "sourceArticle": "Southern Ming",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Southern_Ming"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Southern_Ming",
+    "cityIds": [
+      "nanjing",
+      "fuzhou",
+      "zhaoqing",
+      "kunming"
+    ],
+    "capital": "Không cố định: Nam Kinh 1644–1645; Phúc Châu 1645–1646; Triệu Khánh từ 1646; Côn Minh thời Vĩnh Lịch",
+    "extraSources": [
+      {
+        "title": "Britannica · Ming dynasty",
+        "url": "https://www.britannica.com/topic/Ming-dynasty-Chinese-history"
+      }
+    ]
   },
   {
     "id": "qing",
@@ -1475,15 +2040,28 @@
     "start": 1636,
     "end": 1912,
     "city": "beijing",
-    "summary": "Hoàng Thái Cực đổi quốc hiệu thành Thanh năm 1636. Quân Thanh vào Bắc Kinh năm 1644 rồi tiếp tục chinh phục; triều đại kết thúc với việc hoàng đế thoái vị năm 1912.",
+    "summary": "Người Mãn lập nhà Thanh năm 1636 và vào Bắc Kinh năm 1644. Cuối năm 1788, Tôn Sĩ Nghị dẫn quân Thanh vào Thăng Long và bị quân Tây Sơn đánh bại đầu năm 1789. Thế kỷ XIX, chiến tranh với các cường quốc và khởi nghĩa trong nước làm triều đình suy yếu; Cách mạng Tân Hợi dẫn tới việc Phổ Nghi thoái vị năm 1912.",
     "source": "Nhà Thanh",
     "peopleIds": [
       "no-nhi-cap",
       "hoang-thai-cuc",
-      "pho-nghi"
+      "pho-nghi",
+      "ton-si-nghi"
     ],
     "sourceArticle": "Qing dynasty",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Qing_dynasty"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Qing_dynasty",
+    "cityIds": [
+      "shenyang",
+      "beijing"
+    ],
+    "capital": "Thịnh Kinh (Thẩm Dương) 1636–1644; Bắc Kinh 1644–1912",
+    "extraSources": [
+      {
+        "title": "Britannica · Qing dynasty",
+        "url": "https://www.britannica.com/topic/Qing-dynasty"
+      }
+    ],
+    "mapId": "qing-1820"
   },
   {
     "id": "republic",
@@ -1499,7 +2077,13 @@
       "ton-trung-son"
     ],
     "sourceArticle": "History of the Republic of China",
-    "sourceUrl": "https://en.wikipedia.org/wiki/History_of_the_Republic_of_China"
+    "sourceUrl": "https://en.wikipedia.org/wiki/History_of_the_Republic_of_China",
+    "cityIds": [
+      "nanjing",
+      "beijing",
+      "guangzhou"
+    ],
+    "capital": "Nam Kinh: chính phủ lâm thời đầu 1912; Bắc Kinh: chính phủ Bắc Dương 1912–1928; Quảng Châu: căn cứ Quốc dân đảng"
   },
   {
     "id": "nationalist-nanjing",

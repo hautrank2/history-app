@@ -2,6 +2,7 @@ import characterIllustrations from "~/data/character-illustrations.json";
 import characterArchive from "~/data/character-portraits.json";
 import chinaArchive from "~/data/china-portraits.json";
 import { findCharacter } from "~/data/characters";
+import europeArchive from "~/data/europe-portraits.json";
 import illustrations from "~/data/overview-leader-portraits.json";
 import archive from "~/data/overview-portraits.json";
 import lifeArchive from "~/data/life-portraits.json";
@@ -20,7 +21,7 @@ export type PortraitModel = {
   generated?: boolean;
   placeholder?: boolean;
 };
-const archivePortraits: Record<string, { src: string; file: string; article: string; author: string; license: string }> = { ...archive, ...lifeArchive, ...chinaArchive, ...characterArchive };
+const archivePortraits: Record<string, { src: string; file: string; article: string; author: string; license: string }> = { ...archive, ...lifeArchive, ...chinaArchive, ...europeArchive, ...characterArchive };
 const leaderIllustrations: Record<string, { src: string; position: string }> = {
   ...illustrations,
   ...characterIllustrations,

@@ -10,7 +10,14 @@ import { Card } from "~/components/ui/card";
 import { Input } from "~/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "~/components/ui/select";
 import { TooltipProvider } from "~/components/ui/tooltip";
-import { chinaEraYears, chinaMapIdFor, chinaOverview } from "~/data/china-overview";
+import {
+  chinaEraYears,
+  chinaMapIdFor,
+  chinaOverview,
+  chinaSceneAliases,
+} from "~/data/china-overview";
+import { europeOverviews, isEuropeCountry } from "~/data/europe-overview";
+import type { EuropeCountryId } from "~/data/europe-overview";
 import { vietnamOverview } from "~/data/vietnam-overview";
 
 
@@ -25,24 +32,32 @@ import "~/styles/vietnam-overview-content.css";
 const eraYears: Record<string, string> = { "Nhà Lý": "1009–1225", "Nhà Trần": "1225–1400", "Tây Sơn": "1771–1802", "Nhà Nguyễn": "1802–1945" };
 const normalize = (text: string) => text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replaceAll("đ", "d").replaceAll("Đ", "D").toLowerCase();
 
-type VietnamOverviewProps = { country?: "vietnam" | "china" };
+export type OverviewCountryId = "vietnam" | "china" | EuropeCountryId;
+type VietnamOverviewProps = { country?: OverviewCountryId };
 
 export const VietnamOverview = ({
   country = "vietnam",
 }: VietnamOverviewProps) => {
-  const scenes = country === "china" ? chinaOverview : vietnamOverview;
+  const europe = isEuropeCountry(country) ? europeOverviews[country] : undefined;
+  // Việt Nam giữ bản đồ riêng; các nước còn lại dùng bản đồ theo khung
+  const atlasMap = country !== "vietnam";
+  const scenes = europe?.scenes
+    ?? (country === "china" ? chinaOverview : vietnamOverview);
   const eras = [...new Set(scenes.map((scene) => scene.era))];
-  const yearsByEra: Record<string, string> = country === "china"
-    ? chinaEraYears
-    : eraYears;
-  const Map = country === "china" ? ChinaHistoryMap : HistoryMap;
+  const yearsByEra: Record<string, string> = europe?.eraYears
+    ?? (country === "china" ? chinaEraYears : eraYears);
+  const aliases = europe?.aliases
+    ?? (country === "china" ? chinaSceneAliases : undefined);
+  const heading = europe?.heading ?? (country === "china"
+    ? "Lịch sử Trung Quốc — từ nhà Hạ đến hiện đại"
+    : "Lịch sử Việt Nam — từ Hùng Vương đến hiện đại");
   const {
     index, scene, selectedPlace, setSelectedPlace,
     playing, setPlaying, playbackMs, setPlaybackMs,
     tab, changeTab, query, setQuery,
     contentVisible, setContentVisible, timelineVisible, setTimelineVisible,
     placesVisible, setPlacesVisible, rail, go,
-  } = useVietnamOverview(scenes);
+  } = useVietnamOverview(scenes, aliases);
   if (!scene) return null;
   const eraIndex = eras.indexOf(scene.era);
   const eraScenes = scenes.filter((item) => item.era === scene.era);
@@ -50,21 +65,39 @@ export const VietnamOverview = ({
   const allHidden = !contentVisible && !timelineVisible && !placesVisible;
 
   return <TooltipProvider delayDuration={250}><main className="atlas-page vo-page" data-country-id={country} data-scene-id={scene.id} data-content={contentVisible} data-timeline={timelineVisible} data-clean={allHidden}>
-    <h1 className="vo-sr-only">{country === "china" ? "Lịch sử Trung Quốc — từ nhà Hạ đến hiện đại" : "Lịch sử Việt Nam — từ Hùng Vương đến hiện đại"}</h1>
-    <Map
-      key={`map-${scene.id}`}
-      scene={scene}
-      selectedPlace={selectedPlace}
-      contentVisible={contentVisible}
-      timelineVisible={timelineVisible}
-      placesVisible={placesVisible}
-      onSelectPlace={(next) => {
-        setSelectedPlace(next);
-        setPlacesVisible(true);
-        setPlaying(false);
-      }}
-      onHidePlaces={() => setPlacesVisible(false)}
-    />
+    <h1 className="vo-sr-only">{heading}</h1>
+    {atlasMap ? (
+      <ChinaHistoryMap
+        key={`map-${scene.id}`}
+        frameId={country}
+        scene={scene}
+        selectedPlace={selectedPlace}
+        contentVisible={contentVisible}
+        timelineVisible={timelineVisible}
+        placesVisible={placesVisible}
+        onSelectPlace={(next) => {
+          setSelectedPlace(next);
+          setPlacesVisible(true);
+          setPlaying(false);
+        }}
+        onHidePlaces={() => setPlacesVisible(false)}
+      />
+    ) : (
+      <HistoryMap
+        key={`map-${scene.id}`}
+        scene={scene}
+        selectedPlace={selectedPlace}
+        contentVisible={contentVisible}
+        timelineVisible={timelineVisible}
+        placesVisible={placesVisible}
+        onSelectPlace={(next) => {
+          setSelectedPlace(next);
+          setPlacesVisible(true);
+          setPlaying(false);
+        }}
+        onHidePlaces={() => setPlacesVisible(false)}
+      />
+    )}
     {country !== "china" || !chinaMapIdFor(scene.id)
       ? <CountryStats scene={scene} />
       : null}
@@ -88,7 +121,7 @@ export const VietnamOverview = ({
     />
     <Card role="region" id="vo-timeline" className="vo-timeline vo-glass" data-open={timelineVisible} inert={!timelineVisible} aria-label="Dòng thời gian lịch sử">
       <div className="vo-timeline-top"><div className="vo-transport" aria-label="Điều khiển các cảnh lịch sử"><Button variant="atlas" size="atlas" type="button" aria-label="Cảnh trước" disabled={index === 0} onClick={() => { setPlaying(false); go(index - 1); }}>←</Button><Button variant="atlas" size="atlas" type="button" className="vo-play-toggle" aria-label={playing ? "Tạm dừng tự chuyển cảnh" : index === scenes.length - 1 ? "Phát lại từ đầu" : `Tự chuyển cảnh sau mỗi ${playbackMs / 1000} giây`} aria-pressed={playing} onClick={() => { if (!playing && index === scenes.length - 1) go(0); setPlaying((value) => !value); }}>{playing ? "Ⅱ" : "▶"}</Button><Button variant="atlas" size="atlas" type="button" aria-label="Cảnh tiếp theo" disabled={index === scenes.length - 1} onClick={() => { setPlaying(false); go(index + 1); }}>→</Button><span className="vo-scene-counter">{String(index + 1).padStart(2, "0")} <i>/ {scenes.length}</i></span></div>
-        {country === "china" ? (
+        {atlasMap ? (
           <Select
             value={scene.id}
             onValueChange={(id) => {
@@ -114,7 +147,7 @@ export const VietnamOverview = ({
         <div className="vo-scene-picker" aria-label={`Các cảnh của ${scene.era}`}>{eraScenes.map((item, i) => <Button variant="atlas" size="atlas" key={item.id} type="button" aria-label={`Cảnh ${i + 1}: ${item.years}`} aria-pressed={scene.id === item.id} onClick={() => { setPlaying(false); go(scenes.indexOf(item)); }}><i />{eraScenes.length > 1 ? `Cảnh ${i + 1}` : scene.era}</Button>)}</div>
         )}
         <Select value={String(playbackMs)} onValueChange={(value) => setPlaybackMs(Number(value))}><SelectTrigger className="vo-speed-trigger" aria-label="Tốc độ chuyển cảnh"><SelectValue /></SelectTrigger><SelectContent className="vo-select-content" position="popper" align="end" collisionPadding={12}>{[3000, 6000, 10000, 15000].map((duration) => <SelectItem key={duration} value={String(duration)}>{duration / 1000}s</SelectItem>)}</SelectContent></Select>
-        <label className={`vo-search ${country === "china" ? "max-[760px]:!hidden" : ""}`}><span aria-hidden="true">⌕</span><Input aria-label="Tìm thời kỳ hoặc nhân vật" type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Tìm triều đại, nhân vật…" /></label><Button variant="atlas" size="atlas" className="vo-timeline-close" type="button" aria-label="Ẩn timeline" onClick={() => setTimelineVisible(false)}>⌄</Button>
+        <label className={`vo-search ${atlasMap ? "max-[760px]:!hidden" : ""}`}><span aria-hidden="true">⌕</span><Input aria-label="Tìm thời kỳ hoặc nhân vật" type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Tìm triều đại, nhân vật…" /></label><Button variant="atlas" size="atlas" className="vo-timeline-close" type="button" aria-label="Ẩn timeline" onClick={() => setTimelineVisible(false)}>⌄</Button>
       </div>
       <div className="vo-timeline-track"><Button variant="atlas" size="atlas" type="button" className="vo-era-arrow" aria-label="Thời kỳ trước" disabled={eraIndex === 0} onClick={() => { setPlaying(false); go(scenes.findIndex((item) => item.era === eras[eraIndex - 1])); }}>‹</Button>
         <nav className="vo-era-rail" aria-label="Dòng thời gian các triều đại" ref={rail}><div className="vo-era-strip">

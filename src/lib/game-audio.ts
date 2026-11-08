@@ -35,6 +35,17 @@ const recordingBuffers = new Map<string, Promise<AudioBuffer>>();
 let recordingGeneration = 0;
 let recordingPending = false;
 let recordingSource: AudioBufferSourceNode | null = null;
+let lastPlaylistSrc = "";
+
+// Avoid repeating the song that just ended when a playlist has alternatives.
+const pickPlaylistSrc = (playlist: string[]) => {
+  const choices = playlist.length > 1
+    ? playlist.filter((src) => src !== lastPlaylistSrc)
+    : playlist;
+  const src = choices[Math.floor(Math.random() * choices.length)] ?? playlist[0];
+  lastPlaylistSrc = src;
+  return src;
+};
 
 const stopSources = () => {
   activeSources.forEach((source) => { try { source.stop(); } catch { /* A cue may have just ended. */ } });
@@ -131,7 +142,11 @@ const scheduleMusic = () => {
   }
 };
 
-const startRecording = (src: string, delay: number) => {
+const startRecording = (
+  src: string,
+  delay: number,
+  playlist?: string[],
+) => {
   const audio = context;
   if (!audio || recordingPending || recordingSource) return;
   const generation = recordingGeneration;
@@ -150,14 +165,19 @@ const startRecording = (src: string, delay: number) => {
     if (document.hidden || audio.state !== "running" || !settings.enabled || !settings.music || !settings.musicVolume || !musicGain) return;
     const source = audio.createBufferSource();
     source.buffer = decoded;
-    source.loop = true;
+    source.loop = !playlist;
     source.connect(musicGain);
     recordingSource = source;
     musicSources.add(source);
     source.onended = () => {
       musicSources.delete(source);
-      if (recordingSource === source) recordingSource = null;
       source.disconnect();
+      // stopMusic clears recordingSource first, so only a natural end chains.
+      if (recordingSource !== source) return;
+      recordingSource = null;
+      if (playlist && generation === recordingGeneration) {
+        startRecording(pickPlaylistSrc(playlist), 0, playlist);
+      }
     };
     source.start(audio.currentTime + delay);
   }).catch(() => { if (generation === recordingGeneration) recordingPending = false; });
@@ -166,6 +186,11 @@ const startRecording = (src: string, delay: number) => {
 const startMusic = (delay = 0) => {
   if (!context || !musicGain || context.state !== "running" || !settings.enabled || !settings.music || settings.musicVolume === 0 || document.hidden || musicTimer !== null) return;
   musicGain.gain.setTargetAtTime(settings.musicVolume * .5, context.currentTime + delay, .15);
+  if (currentTrack.playlist?.length) {
+    const { playlist } = currentTrack;
+    startRecording(pickPlaylistSrc(playlist), delay, playlist);
+    return;
+  }
   if (currentTrack.audioSrc) { startRecording(currentTrack.audioSrc, delay); return; }
   musicStep = 0;
   nextMusicTime = context.currentTime + .15 + delay;
@@ -181,7 +206,9 @@ export const setGameMusicPath = (pathname: string, hash = "", playback?: MusicPl
   if (playback) musicPlayback = playback;
   const next = soundtrackForPath(pathname, hash, musicPlayback);
   if (next.id === currentTrack.id) return;
-  if (next.audioSrc && next.audioSrc === currentTrack.audioSrc) {
+  const samePlaylist = Boolean(next.playlist)
+    && next.playlist === currentTrack.playlist;
+  if (samePlaylist || (next.audioSrc && next.audioSrc === currentTrack.audioSrc)) {
     currentTrack = next;
     listeners.forEach((listener) => listener());
     return;

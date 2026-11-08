@@ -1,0 +1,195 @@
+[
+  {
+    "id": "pre-viking-denmark",
+    "era": "Trước thời Viking",
+    "name": "Đan Mạch thời Đồ sắt muộn",
+    "years": "500 – 793",
+    "start": 500,
+    "end": 793,
+    "capital": "Chưa có kinh đô; nhiều trung tâm quyền lực",
+    "places": [
+      { "name": "Lejre", "at": [11.97, 55.6], "kind": "heritage", "note": "Khu sảnh lớn thời Đồ sắt muộn, gắn với truyền thuyết các vua Scylding." },
+      { "name": "Ribe", "at": [8.76, 55.33], "kind": "heritage", "note": "Khu chợ từ đầu thế kỷ VIII, một trong những đô thị sớm nhất Scandinavia." },
+      { "name": "Danevirke", "at": [9.57, 54.48], "kind": "heritage", "note": "Hệ thống tường lũy ở gốc bán đảo Jutland; các giai đoạn xây dựng sớm có từ thế kỷ VI–VIII." }
+    ],
+    "summary": "Trước thời Viking, vùng Jutland và các đảo Đan Mạch có những trung tâm quyền lực địa phương, sảnh lớn và khu chợ. Các giai đoạn đầu của Danevirke cho thấy khả năng huy động lao động quy mô lớn, nhưng chưa có bằng chứng về một vương quốc Đan Mạch thống nhất ổn định.",
+    "culture": "Phần lớn hiểu biết đến từ khảo cổ học: sảnh lớn, mộ chôn, đồ kim loại và đồng xu. Các truyền thuyết về vua Lejre được chép muộn nhiều thế kỷ, không phải sử liệu đương thời.",
+    "peopleIds": [],
+    "sourceArticle": "Danevirke"
+  },
+  {
+    "id": "viking-denmark",
+    "era": "Thời Viking",
+    "name": "Godfred, Hedeby và các cuộc tập kích",
+    "years": "793 – 958",
+    "start": 793,
+    "end": 958,
+    "capital": "Hedeby · trung tâm thương mại tiêu biểu",
+    "places": [
+      { "name": "Hedeby", "at": [9.57, 54.49], "kind": "heritage", "note": "Thương cảng lớn nối Biển Bắc và Baltic; nay thuộc Đức." },
+      { "name": "Ribe", "at": [8.76, 55.33], "kind": "heritage", "note": "Nhà truyền giáo Ansgar xây nhà thờ tại đây giữa thế kỷ IX." }
+    ],
+    "summary": "Đầu thế kỷ IX, vua Godfred đối đầu đế quốc của Charlemagne và củng cố Danevirke. Người Viking từ Đan Mạch tập kích và định cư ở Anh, vùng Frank và nhiều nơi khác; \"Đại quân\" năm 865 chinh phục phần lớn Anh. Gorm Già (mất khoảng 958) là vị vua đầu tiên của dòng Jelling.",
+    "culture": "Tàu dài, chữ rune và thương mại đường dài là dấu ấn của thời Viking. Từ \"Viking\" chỉ hoạt động đi biển – tập kích, không phải tên một dân tộc; phần lớn người Scandinavia vẫn là nông dân.",
+    "peopleIds": ["godfred", "gorm-the-old"],
+    "sourceArticle": "Viking Age",
+    "extraSources": [{ "title": "Britannica · Viking", "url": "https://www.britannica.com/topic/Viking-people" }]
+  },
+  {
+    "id": "harald-bluetooth",
+    "era": "Thời Viking",
+    "name": "Harald Răng Xanh & đá Jelling",
+    "years": "958 – 986",
+    "start": 958,
+    "end": 986,
+    "capital": "Jelling",
+    "places": [
+      { "name": "Jelling", "at": [9.42, 55.76], "kind": "capital", "note": "Gò mộ, đá rune và nhà thờ; Di sản Thế giới UNESCO." },
+      { "name": "Trelleborg", "at": [11.26, 55.39], "kind": "camp", "note": "Pháo đài vòng tròn thời Harald, khoảng năm 980." }
+    ],
+    "summary": "Harald Răng Xanh dựng đá rune lớn ở Jelling, khắc rằng ông đã giành toàn bộ Đan Mạch và Na Uy và đưa người Đan Mạch theo Kitô giáo. Ông cho xây các pháo đài vòng tròn kiểu Trelleborg. Harald bị con trai Sweyn lật đổ khoảng năm 986.",
+    "culture": "Đá Jelling lớn được gọi là \"giấy khai sinh của Đan Mạch\" với hình Chúa Kitô sớm nhất ở Scandinavia. Tên công nghệ Bluetooth lấy cảm hứng từ biệt danh của ông.",
+    "peopleIds": ["harald-bluetooth"],
+    "sourceArticle": "Jelling stones"
+  },
+  {
+    "id": "north-sea-empire",
+    "era": "Thời Viking",
+    "name": "Sweyn Râu Chẻ & đế chế Biển Bắc",
+    "years": "986 – 1042",
+    "start": 986,
+    "end": 1042,
+    "capital": "Roskilde · trung tâm tiêu biểu",
+    "places": [
+      { "name": "Roskilde", "at": [12.08, 55.64], "kind": "capital", "note": "Trung tâm hoàng gia và giám mục; nơi chôn cất nhiều vua Đan Mạch." },
+      { "name": "London", "at": [-0.09, 51.51], "kind": "capital", "note": "Cnut trở thành vua Anh năm 1016." }
+    ],
+    "summary": "Sweyn Râu Chẻ chiếm ngôi Anh năm 1013. Con trai ông là Cnut cai trị Anh từ 1016, Đan Mạch từ 1018 và Na Uy từ 1028. Sau khi Cnut và các con mất, liên kết này tan rã; năm 1042 Đan Mạch mất quyền với ngôi vua Anh.",
+    "culture": "Triều đình Cnut kết hợp truyền thống Scandinavia và Anglo-Saxon. Giáo hội và tiền xu theo kiểu Anh lan sang Đan Mạch.",
+    "peopleIds": ["sweyn-forkbeard", "cnut"],
+    "sourceArticle": "North Sea Empire"
+  },
+  {
+    "id": "medieval-denmark",
+    "era": "Trung cổ",
+    "name": "Nhà Estridsen & thời Valdemar",
+    "years": "1047 – 1375",
+    "start": 1047,
+    "end": 1375,
+    "capital": "Roskilde",
+    "places": [
+      { "name": "Lund", "at": [13.19, 55.7], "kind": "heritage", "note": "Tòa tổng giám mục cho toàn Scandinavia từ đầu thế kỷ XII; nay thuộc Thụy Điển." },
+      { "name": "Copenhagen", "at": [12.57, 55.68], "kind": "capital", "note": "Giám mục Absalon xây thành tại đây khoảng năm 1167." },
+      { "name": "Roskilde", "at": [12.08, 55.64], "kind": "capital", "note": "Trung tâm hoàng gia và giám mục." }
+    ],
+    "summary": "Sau thời nội chiến giữa thế kỷ XII, Valdemar Đại đế và giám mục Absalon thống nhất lại vương quốc và tấn công người Wend ven Baltic. Valdemar II mở rộng sang Estonia nhưng mất phần lớn đất sau năm 1227. Bộ luật Jutland năm 1241 là một trong những luật thành văn sớm của Đan Mạch.",
+    "culture": "Saxo Grammaticus viết Gesta Danorum bằng tiếng Latin khoảng năm 1200, ghi lại cả truyền thuyết như Amleth, nguồn cảm hứng xa của Hamlet. Nhà thờ gạch và tu viện lan rộng.",
+    "peopleIds": ["valdemar-the-great", "absalon"],
+    "sourceArticle": "Absalon",
+    "extraSources": [{ "title": "Wikipedia · History of Denmark", "url": "https://en.wikipedia.org/wiki/History_of_Denmark" }]
+  },
+  {
+    "id": "kalmar-union",
+    "era": "Liên minh Kalmar",
+    "name": "Liên minh Kalmar",
+    "years": "1397 – 1523",
+    "start": 1397,
+    "end": 1523,
+    "capital": "Copenhagen",
+    "places": [
+      { "name": "Kalmar", "at": [16.36, 56.66], "kind": "heritage", "note": "Nơi Erik xứ Pomerania được tôn làm vua chung năm 1397; nay thuộc Thụy Điển." },
+      { "name": "Copenhagen", "at": [12.57, 55.68], "kind": "capital", "note": "Trở thành nơi đặt triều đình thường trực từ thế kỷ XV." }
+    ],
+    "summary": "Nữ hoàng Margrete I nắm quyền ở Đan Mạch, Na Uy và Thụy Điển, rồi năm 1397 đưa cháu trai Erik lên làm vua chung trong Liên minh Kalmar. Liên minh bị chi phối bởi Đan Mạch và nhiều lần bị Thụy Điển chống đối; năm 1523 Thụy Điển tách hẳn dưới thời Gustav Vasa.",
+    "culture": "Thương nhân Liên minh Hanse kiểm soát nhiều tuyến buôn ở Baltic. Đại học Copenhagen thành lập năm 1479.",
+    "peopleIds": ["margaret-i"],
+    "sourceArticle": "Kalmar Union"
+  },
+  {
+    "id": "denmark-norway-reformation",
+    "era": "Đan Mạch–Na Uy",
+    "name": "Cải cách Tin Lành & Christian IV",
+    "years": "1523 – 1660",
+    "start": 1523,
+    "end": 1660,
+    "capital": "Copenhagen",
+    "places": [
+      { "name": "Copenhagen", "at": [12.57, 55.68], "kind": "capital", "note": "Christian IV xây Rosenborg và Sở Giao dịch." },
+      { "name": "Kronborg · Helsingør", "at": [12.62, 56.04], "kind": "heritage", "note": "Lâu đài thu thuế qua eo biển Øresund." }
+    ],
+    "summary": "Sau nội chiến Bá tước (1534–1536), Christian III đưa Đan Mạch theo Giáo hội Luther năm 1536 và biến Na Uy thành một phần của vương quốc chung. Christian IV trị vì 1588–1648, xây dựng nhiều công trình nhưng thất bại trong Chiến tranh Ba mươi Năm. Năm 1658, Đan Mạch mất Scania cho Thụy Điển.",
+    "culture": "Thuế eo biển Øresund đem lại nguồn thu lớn. Nhà thiên văn Tycho Brahe làm việc ở đảo Hven dưới sự bảo trợ của hoàng gia.",
+    "peopleIds": ["christian-iv"],
+    "sourceArticle": "Denmark–Norway"
+  },
+  {
+    "id": "danish-absolutism",
+    "era": "Đan Mạch–Na Uy",
+    "name": "Chế độ quân chủ chuyên chế",
+    "years": "1660 – 1814",
+    "start": 1660,
+    "end": 1814,
+    "capital": "Copenhagen",
+    "places": [
+      { "name": "Copenhagen", "at": [12.57, 55.68], "kind": "capital", "note": "Bị hải quân Anh bắn phá năm 1807." },
+      { "name": "Kiel", "at": [10.13, 54.32], "kind": "heritage", "note": "Hiệp ước Kiel năm 1814 buộc Đan Mạch nhượng Na Uy." }
+    ],
+    "summary": "Năm 1660, Frederick III thiết lập chế độ quân chủ chuyên chế, được ghi thành Luật Vua (Lex Regia) năm 1665. Cuối thế kỷ XVIII có cải cách ruộng đất. Trong Chiến tranh Napoléon, Anh tấn công Copenhagen năm 1801 và 1807; liên minh với Pháp khiến Đan Mạch mất Na Uy theo hiệp ước Kiel năm 1814.",
+    "culture": "Đan Mạch tham gia buôn bán nô lệ xuyên Đại Tây Dương qua các thuộc địa Tây Ấn; năm 1792 ra luật cấm có hiệu lực từ 1803. Đây là phần lịch sử cần được nhìn nhận cùng với thành tựu cải cách.",
+    "peopleIds": ["frederick-iii-denmark"],
+    "sourceArticle": "Lex Regia"
+  },
+  {
+    "id": "constitutional-denmark",
+    "era": "Quân chủ lập hiến",
+    "name": "Hiến pháp 1849 & mất Schleswig",
+    "years": "1814 – 1914",
+    "start": 1814,
+    "end": 1914,
+    "capital": "Copenhagen",
+    "places": [
+      { "name": "Copenhagen", "at": [12.57, 55.68], "kind": "capital", "note": "Hiến pháp ký ngày 5/6/1849." },
+      { "name": "Dybbøl", "at": [9.74, 54.91], "kind": "battle", "note": "Thất bại năm 1864 trước Phổ và Áo." }
+    ],
+    "summary": "Hiến pháp năm 1849 chấm dứt chế độ chuyên chế và lập nghị viện. Tranh chấp về Schleswig–Holstein dẫn đến hai cuộc chiến; năm 1864 Đan Mạch thua Phổ và Áo, mất khoảng một phần ba lãnh thổ. Sau thất bại, xã hội hướng vào phát triển nội địa, hợp tác xã và giáo dục.",
+    "culture": "Truyện cổ tích của Hans Christian Andersen và tư tưởng trường dân chúng (folk high school) của Grundtvig là dấu ấn văn hóa thế kỷ XIX.",
+    "peopleIds": ["hans-christian-andersen", "nfs-grundtvig"],
+    "sourceArticle": "Second Schleswig War",
+    "extraSources": [{ "title": "Wikipedia · Constitution of Denmark", "url": "https://en.wikipedia.org/wiki/Constitution_of_Denmark" }]
+  },
+  {
+    "id": "denmark-world-wars",
+    "era": "Thế kỷ XX",
+    "name": "Trung lập, Bắc Schleswig & chiếm đóng",
+    "years": "1914 – 1945",
+    "start": 1914,
+    "end": 1945,
+    "capital": "Copenhagen",
+    "places": [
+      { "name": "Copenhagen", "at": [12.57, 55.68], "kind": "capital", "note": "Bị Đức chiếm ngày 9/4/1940." },
+      { "name": "Sønderborg", "at": [9.79, 54.91], "kind": "heritage", "note": "Bắc Schleswig trở về Đan Mạch sau trưng cầu năm 1920." }
+    ],
+    "summary": "Đan Mạch trung lập trong Thế chiến I; phụ nữ có quyền bầu cử năm 1915. Sau trưng cầu năm 1920, Bắc Schleswig trở về Đan Mạch. Đức chiếm đóng từ năm 1940; tháng 10/1943, phần lớn người Do Thái ở Đan Mạch được giúp vượt biển sang Thụy Điển an toàn.",
+    "culture": "Kháng chiến phát triển mạnh từ năm 1943. Ký ức về hợp tác và kháng cự vẫn là đề tài tranh luận trong xã hội Đan Mạch.",
+    "peopleIds": ["christian-x"],
+    "sourceArticle": "Occupation of Denmark",
+    "extraSources": [{ "title": "Wikipedia · Rescue of the Danish Jews", "url": "https://en.wikipedia.org/wiki/Rescue_of_the_Danish_Jews" }]
+  },
+  {
+    "id": "modern-denmark",
+    "era": "Thế kỷ XX",
+    "name": "Đan Mạch hiện đại",
+    "years": "1945 – nay",
+    "start": 1945,
+    "end": null,
+    "capital": "Copenhagen",
+    "places": [
+      { "name": "Copenhagen", "at": [12.57, 55.68], "kind": "capital", "note": "Thủ đô Vương quốc Đan Mạch." },
+      { "name": "Cầu Øresund", "at": [12.85, 55.58], "kind": "heritage", "note": "Nối Copenhagen với Malmö (Thụy Điển) từ năm 2000." }
+    ],
+    "summary": "Đan Mạch là thành viên sáng lập NATO năm 1949 và gia nhập Cộng đồng châu Âu năm 1973. Nhà nước phúc lợi phát triển mạnh sau chiến tranh. Nữ hoàng Margrethe II trị vì từ 1972 đến khi thoái vị tháng 1/2024, nhường ngôi cho Frederik X.",
+    "culture": "Thiết kế, kiến trúc và điện ảnh Đan Mạch được biết đến rộng rãi. Greenland và Quần đảo Faroe có quyền tự trị trong Vương quốc.",
+    "peopleIds": ["margrethe-ii"],
+    "sourceArticle": "History of Denmark"
+  }
+]

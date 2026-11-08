@@ -149,7 +149,8 @@ assert.ok(!statesAt("sixteen-kingdoms-402").has("western-qin"),
 
 const portraits = Object.assign({}, ...[
   "overview-portraits", "life-portraits", "overview-leader-portraits",
-  "china-portraits", "character-portraits", "character-illustrations",
+  "china-portraits", "europe-portraits", "character-portraits",
+  "character-illustrations",
 ].map((name) => json(`src/data/${name}.json`)));
 for (const person of characters) {
   const src = portraits[person.wiki]?.src;

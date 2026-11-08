@@ -1043,6 +1043,91 @@
         "country": "england",
         "era": "modern",
         "mood": "reflective"
+      },
+      "roman-britain": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "ethereal"
+      },
+      "alfred-wessex": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "kingdom-of-england": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "cnut-north-sea": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "ethereal"
+      },
+      "late-anglo-saxon": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "norman-conquest": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "the-anarchy": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "angevin": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "plantagenet": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "lancaster": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "wars-of-the-roses": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "elizabethan": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "commonwealth": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "restoration": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "reflective"
+      },
+      "georgian": {
+        "country": "england",
+        "era": "modern",
+        "mood": "majestic"
+      },
+      "victorian": {
+        "country": "england",
+        "era": "modern",
+        "mood": "majestic"
+      },
+      "world-wars": {
+        "country": "england",
+        "era": "modern",
+        "mood": "dramatic"
       }
     },
     "china": {

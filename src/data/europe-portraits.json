@@ -1,0 +1,422 @@
+{
+  "Boudica": {
+    "src": "/images/europe/boudica.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Queen_Boudica_by_John_Opie.jpg",
+    "article": "https://en.wikipedia.org/wiki/Boudica",
+    "author": "John Opie",
+    "license": "Public domain"
+  },
+  "Bede": {
+    "src": "/images/europe/bede.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:E-codices_bke-0047_001v_medium_(cropped).jpg",
+    "article": "https://en.wikipedia.org/wiki/Bede",
+    "author": "e-codices · Burgerbibliothek Bern",
+    "license": "Public domain"
+  },
+  "Offa of Mercia": {
+    "src": "/images/europe/offa-of-mercia.png",
+    "file": "https://commons.wikimedia.org/wiki/File:Offa%2C_King_of_Mercia%2C_silver_penny%3B_(obverse).png",
+    "article": "https://en.wikipedia.org/wiki/Offa_of_Mercia",
+    "author": "Đồng xu thời Offa · BnF",
+    "license": "Public domain"
+  },
+  "Alfred the Great": {
+    "src": "/images/europe/alfred-the-great.png",
+    "file": "https://commons.wikimedia.org/wiki/File:Alfred_the_Great%2C_silver_penny%3B_struck_875%E2%80%93880_(obverse).png",
+    "article": "https://en.wikipedia.org/wiki/Alfred_the_Great",
+    "author": "CNG - Classical Numismatic Group",
+    "license": "CC BY-SA 2.5"
+  },
+  "Æthelstan": {
+    "src": "/images/europe/athelstan.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Athelstan_(cropped).jpg",
+    "article": "https://en.wikipedia.org/wiki/%C3%86thelstan",
+    "author": "Không rõ tác giả",
+    "license": "Public domain"
+  },
+  "Edward the Confessor": {
+    "src": "/images/europe/edward-the-confessor.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_scene1_EDWARD_REX.jpg",
+    "article": "https://en.wikipedia.org/wiki/Edward_the_Confessor",
+    "author": "Myrabella",
+    "license": "Public domain"
+  },
+  "Harold Godwinson": {
+    "src": "/images/europe/harold-godwinson.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Bayeux_tapestry_stitches_detail..jpg",
+    "article": "https://en.wikipedia.org/wiki/Harold_Godwinson",
+    "author": "Tấm thảm Bayeux · Không rõ tác giả",
+    "license": "Public domain"
+  },
+  "William the Conqueror": {
+    "src": "/images/europe/william-the-conqueror.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:William_the_Conqueror_(TFA).jpg",
+    "article": "https://en.wikipedia.org/wiki/William_the_Conqueror",
+    "author": "Myrabella",
+    "license": "Public domain"
+  },
+  "Stephen, King of England": {
+    "src": "/images/europe/stephen-of-blois.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Stepan_kral.jpg",
+    "article": "https://en.wikipedia.org/wiki/Stephen,_King_of_England",
+    "author": "Henry of Huntingdon (Historia Anglorum)",
+    "license": "Public domain"
+  },
+  "Empress Matilda": {
+    "src": "/images/europe/empress-matilda.png",
+    "file": "https://commons.wikimedia.org/wiki/File:Empress_Matilda.png",
+    "article": "https://en.wikipedia.org/wiki/Empress_Matilda",
+    "author": "Không rõ tác giả",
+    "license": "Public domain"
+  },
+  "Henry II of England": {
+    "src": "/images/europe/henry-ii.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Henry_II_Illumination.jpg",
+    "article": "https://en.wikipedia.org/wiki/Henry_II_of_England",
+    "author": "Gerald of Wales",
+    "license": "Public domain"
+  },
+  "Richard I of England": {
+    "src": "/images/europe/richard-i.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Church_of_Fontevraud_Abbey_Richard_I_effigy.jpg",
+    "article": "https://en.wikipedia.org/wiki/Richard_I_of_England",
+    "author": "Adam Bishop",
+    "license": "CC BY-SA 3.0"
+  },
+  "John, King of England": {
+    "src": "/images/europe/king-john.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Jan_tomb.jpg",
+    "article": "https://en.wikipedia.org/wiki/John,_King_of_England",
+    "author": "HISTORY OF ENGLAND by SAMUEL R. GARDINER",
+    "license": "Public domain"
+  },
+  "Edward I of England": {
+    "src": "/images/europe/edward-i.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Edward_I_-_Westminster_Abbey_Sedilia.jpg",
+    "article": "https://en.wikipedia.org/wiki/Edward_I",
+    "author": "Không rõ tác giả",
+    "license": "Public domain"
+  },
+  "Edward III of England": {
+    "src": "/images/europe/edward-iii.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Edward_III_of_England_(Order_of_the_Garter).jpg",
+    "article": "https://en.wikipedia.org/wiki/Edward_III",
+    "author": "William Bruges",
+    "license": "Public domain"
+  },
+  "Henry V of England": {
+    "src": "/images/europe/henry-v.png",
+    "file": "https://commons.wikimedia.org/wiki/File:Henry_V_Corpus_Christi_MS_213.png",
+    "article": "https://en.wikipedia.org/wiki/Henry_V_of_England",
+    "author": "Jean Galopes",
+    "license": "Public domain"
+  },
+  "Richard III of England": {
+    "src": "/images/europe/richard-iii.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Richard_III_portrait.jpg",
+    "article": "https://en.wikipedia.org/wiki/Richard_III_of_England",
+    "author": "Barthel ii",
+    "license": "Public domain"
+  },
+  "Henry VII of England": {
+    "src": "/images/europe/henry-vii.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Enrique_VII_de_Inglaterra%2C_por_un_artista_an%C3%B3nimo.jpg",
+    "article": "https://en.wikipedia.org/wiki/Henry_VII_of_England",
+    "author": "Không rõ tác giả",
+    "license": "Public domain"
+  },
+  "Henry VIII": {
+    "src": "/images/europe/henry-viii.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:After_Hans_Holbein_the_Younger_-_Portrait_of_Henry_VIII_-_Google_Art_Project.jpg",
+    "article": "https://en.wikipedia.org/wiki/Henry_VIII",
+    "author": "Workshop of Hans Holbein the Younger",
+    "license": "Public domain"
+  },
+  "Elizabeth I": {
+    "src": "/images/europe/elizabeth-i.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Darnley_stage_3.jpg",
+    "article": "https://en.wikipedia.org/wiki/Elizabeth_I",
+    "author": "Không rõ tác giả",
+    "license": "Public domain"
+  },
+  "James VI and I": {
+    "src": "/images/europe/james-i.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:JamesIEngland_(cropped_2).jpg",
+    "article": "https://en.wikipedia.org/wiki/James_VI_and_I",
+    "author": "Attributed to John de Critz",
+    "license": "Public domain"
+  },
+  "Charles I of England": {
+    "src": "/images/europe/charles-i.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:King_Charles_I_after_original_by_van_Dyck.jpg",
+    "article": "https://en.wikipedia.org/wiki/Charles_I_of_England",
+    "author": "Workshop of Anthony van Dyck",
+    "license": "Public domain"
+  },
+  "Oliver Cromwell": {
+    "src": "/images/europe/oliver-cromwell.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Oliver_Cromwell_by_Samuel_Cooper.jpg",
+    "article": "https://en.wikipedia.org/wiki/Oliver_Cromwell",
+    "author": "After Samuel Cooper",
+    "license": "Public domain"
+  },
+  "Charles II of England": {
+    "src": "/images/europe/charles-ii.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:King_Charles_II_by_John_Michael_Wright_or_studio.jpg",
+    "article": "https://en.wikipedia.org/wiki/Charles_II_of_England",
+    "author": "John Michael Wright",
+    "license": "Public domain"
+  },
+  "William III of England": {
+    "src": "/images/europe/william-iii.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:King_William_III_of_England%2C_(1650-1702).jpg",
+    "article": "https://en.wikipedia.org/wiki/William_III_of_England",
+    "author": "Godfrey Kneller",
+    "license": "Public domain"
+  },
+  "Anne, Queen of Great Britain": {
+    "src": "/images/europe/queen-anne.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Dahl%2C_Michael_-_Queen_Anne_-_NPG_6187.jpg",
+    "article": "https://en.wikipedia.org/wiki/Anne,_Queen_of_Great_Britain",
+    "author": "Michael Dahl",
+    "license": "Public domain"
+  },
+  "George III": {
+    "src": "/images/europe/george-iii.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Allan_Ramsay_-_King_George_III_in_coronation_robes_-_Google_Art_Project.jpg",
+    "article": "https://en.wikipedia.org/wiki/George_III",
+    "author": "Allan Ramsay",
+    "license": "Public domain"
+  },
+  "Horatio Nelson, 1st Viscount Nelson": {
+    "src": "/images/europe/horatio-nelson.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:HoratioNelson1.jpg",
+    "article": "https://en.wikipedia.org/wiki/Horatio_Nelson,_1st_Viscount_Nelson",
+    "author": "Lemuel Francis Abbott",
+    "license": "Public domain"
+  },
+  "Queen Victoria": {
+    "src": "/images/europe/queen-victoria.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Queen_Victoria_by_Bassano.jpg",
+    "article": "https://en.wikipedia.org/wiki/Queen_Victoria",
+    "author": "Alexander Bassano",
+    "license": "Public domain"
+  },
+  "David Lloyd George": {
+    "src": "/images/europe/david-lloyd-george.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:David_Lloyd_George.jpg",
+    "article": "https://en.wikipedia.org/wiki/David_Lloyd_George",
+    "author": "Harris & Ewing",
+    "license": "Public domain"
+  },
+  "Winston Churchill": {
+    "src": "/images/europe/winston-churchill.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Sir_Winston_Churchill_-_19086236948_(restored).jpg",
+    "article": "https://en.wikipedia.org/wiki/Winston_Churchill",
+    "author": "Không rõ tác giả",
+    "license": "Public domain"
+  },
+  "Clement Attlee": {
+    "src": "/images/europe/clement-attlee.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Person_attlee2.jpg",
+    "article": "https://en.wikipedia.org/wiki/Clement_Attlee",
+    "author": "Presumably Yousuf Karsh",
+    "license": "Public domain"
+  },
+  "Elizabeth II": {
+    "src": "/images/europe/elizabeth-ii.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Queen_Elizabeth_II_official_portrait_for_1959_tour_(retouched)_(cropped)_(3-to-4_aspect_ratio).jpg",
+    "article": "https://en.wikipedia.org/wiki/Elizabeth_II",
+    "author": "Donald McKague",
+    "license": "Public domain"
+  },
+  "Margaret Thatcher": {
+    "src": "/images/europe/margaret-thatcher.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Margaret_Thatcher_stock_portrait_(cropped).jpg",
+    "article": "https://en.wikipedia.org/wiki/Margaret_Thatcher",
+    "author": "derivative work by Begoon",
+    "license": "Copyrighted free use"
+  },
+  "Gudfred": {
+    "src": "/images/europe/godfred.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Kong_G%C3%B8trik_den_Gavmilde.jpg",
+    "article": "https://en.wikipedia.org/wiki/Gudfred",
+    "author": "Erico Olai Tormio (publisher)",
+    "license": "Public domain"
+  },
+  "Gorm the Old": {
+    "src": "/images/europe/gorm-the-old.png",
+    "file": "https://commons.wikimedia.org/wiki/File:August_Thomsen_-_Thyra_Dannebod_meddeler_Kong_Gorm_den_Gamle_Underretning_om_hans_S%C3%B8n_Knuds_D%C3%B8d.png",
+    "article": "https://en.wikipedia.org/wiki/Gorm_the_Old",
+    "author": "August Carl Vilhelm Thomsen",
+    "license": "Public domain"
+  },
+  "Harald Bluetooth": {
+    "src": "/images/europe/harald-bluetooth.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:1200_Harald_Bl%C3%A5tand_anagoria.jpg",
+    "article": "https://en.wikipedia.org/wiki/Harald_Bluetooth",
+    "author": "Anagoria",
+    "license": "CC BY 3.0"
+  },
+  "Cnut": {
+    "src": "/images/europe/cnut.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Canute_and_%C3%86lfgifu_cropped_(Canute).jpg",
+    "article": "https://en.wikipedia.org/wiki/Cnut",
+    "author": "Không rõ tác giả",
+    "license": "Public domain"
+  },
+  "Valdemar I of Denmark": {
+    "src": "/images/europe/valdemar-the-great.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Bracteate%2C_1157%2C_comemorating_wedding_of_king_Valdemar_(the_Great)_%26_queen_Sophia_(of_Minsk)_of_Denmark.jpg",
+    "article": "https://en.wikipedia.org/wiki/Valdemar_I_of_Denmark",
+    "author": "P. Hauberg (bản vẽ đồng xu)",
+    "license": "CC BY-SA 4.0"
+  },
+  "Absalon": {
+    "src": "/images/europe/absalon.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Absalons_ligsten.jpg",
+    "article": "https://en.wikipedia.org/wiki/Absalon",
+    "author": "Không rõ tác giả",
+    "license": "Public domain"
+  },
+  "Margaret I of Denmark": {
+    "src": "/images/europe/margaret-i.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Margaret_of_Denmark%2C_Norway_%26_Sweden_(1389)_effigy_2010_(2).jpg",
+    "article": "https://en.wikipedia.org/wiki/Margaret_I_of_Denmark",
+    "author": "Jacob Truedson Demitz",
+    "license": "Public domain"
+  },
+  "Christian IV of Denmark": {
+    "src": "/images/europe/christian-iv.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Christian_IV_Pieter_Isaacsz_1612.jpg",
+    "article": "https://en.wikipedia.org/wiki/Christian_IV_of_Denmark",
+    "author": "Pieter Isaacsz",
+    "license": "Public domain"
+  },
+  "Frederick III of Denmark": {
+    "src": "/images/europe/frederick-iii-denmark.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Frederik_III%2C_1663.jpg",
+    "article": "https://en.wikipedia.org/wiki/Frederick_III_of_Denmark",
+    "author": "Paul Prieur",
+    "license": "Public domain"
+  },
+  "Hans Christian Andersen": {
+    "src": "/images/europe/hans-christian-andersen.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:HCA_by_Thora_Hallager_1869_crop.jpg",
+    "article": "https://en.wikipedia.org/wiki/Hans_Christian_Andersen",
+    "author": "Thora Hallager",
+    "license": "Public domain"
+  },
+  "N. F. S. Grundtvig": {
+    "src": "/images/europe/nfs-grundtvig.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:N-f-s-grundtvig-portr%C3%A6t.jpg",
+    "article": "https://en.wikipedia.org/wiki/N._F._S._Grundtvig",
+    "author": "Christian Albrecht Jensen",
+    "license": "Public domain"
+  },
+  "Christian X of Denmark": {
+    "src": "/images/europe/christian-x.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Christian_X_of_Denmark_circa_1915.jpg",
+    "article": "https://en.wikipedia.org/wiki/Christian_X",
+    "author": "Bain News Service",
+    "license": "Public domain"
+  },
+  "Margrethe II": {
+    "src": "/images/europe/margrethe-ii.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Drottning_Margrethe_av_Danmark.jpg",
+    "article": "https://en.wikipedia.org/wiki/Margrethe_II",
+    "author": "Johannes Jansson",
+    "license": "CC BY 2.5 dk"
+  },
+  "Harald Fairhair": {
+    "src": "/images/europe/harald-fairhair.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Flateyjarbok_Haraldr_Halfdan_2.jpg",
+    "article": "https://en.wikipedia.org/wiki/Harald_Fairhair",
+    "author": "Jón Þórðarson and Magnús Þórhallsson",
+    "license": "Public domain"
+  },
+  "Olaf Tryggvason": {
+    "src": "/images/europe/olaf-tryggvason.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Olav_Tryggvasson_mynt.jpg",
+    "article": "https://en.wikipedia.org/wiki/Olaf_Tryggvason",
+    "author": "Ole Andreas Øverland (1855-1911)",
+    "license": "Public domain"
+  },
+  "Olaf II of Norway": {
+    "src": "/images/europe/olaf-haraldsson.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Olav_der_Heilige07.jpg",
+    "article": "https://en.wikipedia.org/wiki/Olaf_Haraldsson",
+    "author": "Không rõ tác giả",
+    "license": "Public domain"
+  },
+  "Harald Hardrada": {
+    "src": "/images/europe/harald-hardrada.png",
+    "file": "https://commons.wikimedia.org/wiki/File:Harold-III-Coin.png",
+    "article": "https://en.wikipedia.org/wiki/Harald_Hardrada",
+    "author": "Zeichner: C. I. Schive, Lithograf Bucher in Bergen",
+    "license": "Public domain"
+  },
+  "Sverre of Norway": {
+    "src": "/images/europe/sverre-sigurdsson.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Sverre_Sigurdsson_(Nidaros_Cathedral).jpg",
+    "article": "https://en.wikipedia.org/wiki/Sverre_of_Norway",
+    "author": "Alexander Bugge (1870–1929)",
+    "license": "Public domain"
+  },
+  "Haakon IV of Norway": {
+    "src": "/images/europe/haakon-iv.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Kong_Haakon_Haakonsson_PI_III_1.jpg",
+    "article": "https://en.wikipedia.org/wiki/Haakon_IV",
+    "author": "Drawing by Hakon Thorsen (d. before 1924)",
+    "license": "Public domain"
+  },
+  "Magnus VI of Norway": {
+    "src": "/images/europe/magnus-lawmender.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Magnus_Haakonsson_(Stavanger_cathedral).jpg",
+    "article": "https://en.wikipedia.org/wiki/Magnus_the_Lawmender",
+    "author": "Alexander Bugge (1870–1929)",
+    "license": "Public domain"
+  },
+  "Peter Tordenskjold": {
+    "src": "/images/europe/peter-tordenskjold.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Viseadmiral_Peter_Wessel_Tordenskjold_(1690_-_1720)_(3610418617).jpg",
+    "article": "https://en.wikipedia.org/wiki/Peter_Tordenskjold",
+    "author": "Balthasar Denner",
+    "license": "CC BY 2.0"
+  },
+  "Henrik Ibsen": {
+    "src": "/images/europe/henrik-ibsen.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Ibsen_by_Olrik.jpg",
+    "article": "https://en.wikipedia.org/wiki/Henrik_Ibsen",
+    "author": "Henrik Olrik",
+    "license": "Public domain"
+  },
+  "Haakon VII": {
+    "src": "/images/europe/haakon-vii.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Portrett_av_Kong_Haakon_VII_-_King_Haakon_VII%2C_1946_(6817780248)_(cropped).jpg",
+    "article": "https://en.wikipedia.org/wiki/Haakon_VII",
+    "author": "National Library of Norway",
+    "license": "No restrictions"
+  },
+  "Roald Amundsen": {
+    "src": "/images/europe/roald-amundsen.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Amundsen_in_fur_skins.jpg",
+    "article": "https://en.wikipedia.org/wiki/Roald_Amundsen",
+    "author": "Không rõ tác giả",
+    "license": "Public domain"
+  },
+  "Gro Harlem Brundtland": {
+    "src": "/images/europe/gro-harlem-brundtland.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Gro_Harlem_Brundtland_in_2025_(cropped).jpg",
+    "article": "https://en.wikipedia.org/wiki/Gro_Harlem_Brundtland",
+    "author": "Christophe Licoppe",
+    "license": "CC BY 4.0"
+  },
+  "Sweyn Forkbeard": {
+    "src": "/images/europe/sweyn-forkbeard.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Sweyn_Forkbeard_by_L._Fr%C3%B8lich_(cropped).jpg",
+    "article": "https://en.wikipedia.org/wiki/Sweyn_Forkbeard",
+    "author": "Ole Ryhl Olsson",
+    "license": "Public domain"
+  }
+}

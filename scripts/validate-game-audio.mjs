@@ -56,6 +56,7 @@ for (const layers of Object.values(effectModule.exports.effectSamples)) for (con
 const parameter = () => ({ value: 0, cancelScheduledValues(time) { assert.ok(Number.isFinite(time)); }, setValueAtTime(value, time) { assert.ok(Number.isFinite(value) && Number.isFinite(time)); }, exponentialRampToValueAtTime(value, time) { assert.ok(value > 0 && Number.isFinite(time)); }, linearRampToValueAtTime(value, time) { assert.ok(Number.isFinite(value) && Number.isFinite(time)); }, setTargetAtTime(value, time, constant) { assert.ok(Number.isFinite(value) && Number.isFinite(time) && constant > 0); } });
 const loadEngine = (saved = null, blockedStorage = false, recorded = false) => {
   const sources = [];
+  const fetched = [];
   const timers = new Map();
   const contexts = [];
   let stored = saved;
@@ -92,7 +93,8 @@ const loadEngine = (saved = null, blockedStorage = false, recorded = false) => {
       assert.equal(name, "~/data/sound-effects"); return effectModule.exports;
     },
     fetch: async (path) => {
-      assert.match(path, /^\/audio\/(sfx\/[a-z0-9-]+\.ogg|music\/[a-z0-9-]+\.m4a)$/);
+      assert.match(path, /^\/audio\/(sfx\/[a-z0-9-]+\.ogg|music\/[a-z0-9-]+\.(m4a|mp3))$/);
+      fetched.push(path);
       return { ok: recorded || path.includes("/music/"), arrayBuffer: async () => new ArrayBuffer(8) };
     },
     AudioContext: Context, document: doc, performance: { now: () => now += 100 },
@@ -102,7 +104,7 @@ const loadEngine = (saved = null, blockedStorage = false, recorded = false) => {
   });
   const api = audioModule.exports;
   const unsubscribe = api.subscribeAudioSettings(() => undefined);
-  return { api, sources, contexts, timers, doc, saved: () => stored, unsubscribe };
+  return { api, sources, fetched, contexts, timers, doc, saved: () => stored, unsubscribe };
 };
 
 const engine = loadEngine();
@@ -137,6 +139,31 @@ assert.equal(engine.contexts.length, 1, "Reuse a single context");
 assert.equal(engine.sources.filter((source) => source.loop && !source.stopped).length, 1, "Repeated gestures must not duplicate recordings");
 engine.api.setGameMusicPath("/china");
 assert.equal(engine.api.getCurrentSoundtrack().id, "china-monarchy-ethereal");
+await new Promise((resolve) => setImmediate(resolve));
+assert.equal(engine.timers.size, 0, "Monarchy China uses the selected playlist");
+const chinaSongs = soundtrackForPath("/china").playlist;
+assert.equal(chinaSongs.length, 4);
+for (const song of chinaSongs) {
+  assert.ok(existsSync(`public${song}`), song);
+  const head = readFileSync(`public${song}`).subarray(0, 3);
+  assert.ok(head.toString() === "ID3" || (head[0] === 0xff && (head[1] & 0xe0) === 0xe0), `Not an MP3: ${song}`);
+}
+const chinaSong = () => engine.sources.filter((source) => source.buffer && source.onended && !source.loop && !source.stopped);
+assert.equal(chinaSong().length, 1, "Playlist songs play once, then chain");
+assert.ok(chinaSongs.includes(engine.fetched.at(-1)));
+const chinaSourceCount = engine.sources.length;
+engine.api.setGameMusicPath("/china", "#ming");
+await new Promise((resolve) => setImmediate(resolve));
+assert.equal(engine.sources.length, chinaSourceCount, "Changing Chinese monarchy scenes must keep the song playing");
+const firstSong = engine.fetched.at(-1);
+const ending = chinaSong()[0];
+ending.stopped = true;
+ending.onended();
+await new Promise((resolve) => setImmediate(resolve));
+assert.equal(chinaSong().length, 1, "A finished song starts the next one");
+assert.notEqual(engine.fetched.at(-1), firstSong, "The next song differs from the one that ended");
+engine.api.setGameMusicPath("/china", "#reform");
+assert.equal(engine.api.getCurrentSoundtrack().playlist, undefined, "Modern China keeps its own score");
 assert.equal(engine.timers.size, 1);
 for (const scene of ["tran-bach-dang", "van-lang", "doi-moi", "chia-cat"]) {
   engine.api.setGameMusicPath("/vietnam", `#${scene}`);

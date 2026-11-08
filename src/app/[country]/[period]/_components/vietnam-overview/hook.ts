@@ -2,15 +2,18 @@
 
 import { useEffect, useRef, useState } from "react";
 
-import { chinaSceneAliases } from "~/data/china-overview";
 import { vietnamOverview } from "~/data/vietnam-overview";
 import type { OverviewSceneModel } from "~/data/vietnam-overview";
 import { playGameSound } from "~/lib/game-audio";
 
 export type OverviewTab = "story" | "culture" | "geography" | "people" | "sources";
 
+// Hằng ở cấp module để effect đồng bộ hash không chạy lại mỗi lần render
+const noAliases: Record<string, string> = {};
+
 export const useVietnamOverview = (
   scenes: OverviewSceneModel[] = vietnamOverview,
+  aliases: Record<string, string> = noAliases,
 ) => {
   const [index, setIndex] = useState(0);
   const [selectedPlace, setSelectedPlace] = useState(0);
@@ -40,11 +43,9 @@ export const useVietnamOverview = (
 
   useEffect(() => {
     const syncHash = () => {
+      const hash = window.location.hash.slice(1);
       const next = scenes.findIndex(
-        (item) => item.id === (scenes === vietnamOverview
-          ? window.location.hash.slice(1)
-          : chinaSceneAliases[window.location.hash.slice(1)]
-            ?? window.location.hash.slice(1)),
+        (item) => item.id === (aliases[hash] ?? hash),
       );
       if (next >= 0) {
         setIndex(next);
@@ -54,7 +55,7 @@ export const useVietnamOverview = (
     syncHash();
     window.addEventListener("hashchange", syncHash);
     return () => window.removeEventListener("hashchange", syncHash);
-  }, [scenes]);
+  }, [aliases, scenes]);
 
   useEffect(() => {
     const track = rail.current;

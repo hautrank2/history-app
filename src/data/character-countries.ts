@@ -8,6 +8,8 @@ export const characterCountries = [
   { id: "cambodia", name: "Campuchia" },
   { id: "soviet-union", name: "Liên Xô" },
   { id: "england", name: "Anh" },
+  { id: "denmark", name: "Đan Mạch" },
+  { id: "norway", name: "Na Uy" },
   { id: "champa", name: "Champa" },
   { id: "nanyue", name: "Nam Việt" },
 ];

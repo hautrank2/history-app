@@ -9,16 +9,39 @@ export type SoundtrackModel = {
   melody: number[]; bass: number[]; instrument: MusicInstrument;
   percussion: boolean; arpeggio: number[];
   audioSrc?: string;
+  playlist?: string[];
 };
 export type MusicPlaybackContext = { chapter?: number };
 type MusicContextModel = { country: string; era: string; mood: string };
 
-// Vietnam uses the user's selected recordings. Other scores are synthesized.
-// Era follows historical context; modern Britain still uses modern scores.
+// One shared array lets the engine keep playing while moving between
+// Chinese monarchy scenes instead of restarting on every scene change.
+const chinaMonarchyPlaylist = [
+  "/audio/music/yeu-giang-son-cang-yeu-my-nhan.mp3",
+  "/audio/music/trung-hoa-phan-doan-1.mp3",
+  "/audio/music/trung-hoa-phan-doan-5.mp3",
+  "/audio/music/trung-hoa-phan-doan-9.mp3",
+];
+
+// Vietnam and monarchy China use the user's selected recordings.
+// Other scores are synthesized; modern Britain still uses modern scores.
+const recordingFor = (row: (typeof catalog)[number]) => {
+  if (row.countryId === "vietnam") {
+    return row.eraId === "modern"
+      ? { title: "Nỗi Đau Giữa Hoà Bình Piano", audioSrc: "/audio/music/noi-dau-giua-hoa-binh.m4a" }
+      : { title: "Hào Khí Việt Nam Piano", audioSrc: "/audio/music/hao-khi-viet-nam-piano.m4a" };
+  }
+  if (row.countryId === "china" && row.eraId === "monarchy") {
+    return {
+      title: "Cổ phong Trung Hoa · 4 bài ngẫu nhiên",
+      playlist: chinaMonarchyPlaylist,
+    };
+  }
+  return {};
+};
+
 export const soundtracks: Record<string, SoundtrackModel> = Object.fromEntries(catalog.map((row) => {
-  const recording = row.countryId === "vietnam" ? row.eraId === "modern"
-    ? { title: "Nỗi Đau Giữa Hoà Bình Piano", audioSrc: "/audio/music/noi-dau-giua-hoa-binh.m4a" }
-    : { title: "Hào Khí Việt Nam Piano", audioSrc: "/audio/music/hao-khi-viet-nam-piano.m4a" } : {};
+  const recording = recordingFor(row);
   return [row.id, { ...row, ...recording } as SoundtrackModel];
 }));
 const sceneContexts: Record<string, MusicContextModel> = contexts.scenes;

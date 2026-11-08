@@ -6,6 +6,7 @@ import { Image } from "@/components/ui/image";
 import { HomeLink } from "~/components/home-link";
 import { countriesData } from "~/data";
 import { chinaOverview } from "~/data/china-overview";
+import { europeOverviews, isEuropeCountry } from "~/data/europe-overview";
 import { vietnamOverview } from "~/data/vietnam-overview";
 import { countryPresentation } from "~/data/world";
 
@@ -31,13 +32,24 @@ export const generateMetadata = async ({
       description: `Khám phá lịch sử Trung Quốc từ nhà Hạ đến hiện đại qua ${chinaOverview.length} cảnh, bản đồ 2D, văn hóa và nhân vật.`,
     };
   }
+  if (isEuropeCountry(country)) {
+    const overview = europeOverviews[country];
+    return {
+      title: `Lịch sử ${overview.name}`,
+      description: overview.description,
+    };
+  }
   return { title: countriesData[country]?.name };
 };
 
 const CountryPage = async ({ params }: CountryPageProps) => {
   const country = countriesData[(await params).country];
   if (!country) notFound();
-  if (country.slug === "vietnam" || country.slug === "china") {
+  if (
+    country.slug === "vietnam"
+    || country.slug === "china"
+    || isEuropeCountry(country.slug)
+  ) {
     return <VietnamOverview key={country.slug} country={country.slug} />;
   }
   const visual = countryPresentation[country.slug];

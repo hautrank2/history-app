@@ -1,0 +1,177 @@
+[
+  {
+    "id": "viking-norway",
+    "era": "Thời Viking",
+    "name": "Các tiểu vương & tàu Oseberg",
+    "years": "793 – 872",
+    "start": 793,
+    "end": 872,
+    "capital": "Nhiều trung tâm tiểu vương quốc",
+    "places": [
+      { "name": "Kaupang", "at": [10.1, 59.03], "kind": "heritage", "note": "Khu chợ thời Viking ở vùng Vestfold." },
+      { "name": "Oseberg", "at": [10.43, 59.32], "kind": "heritage", "note": "Mộ tàu chôn năm 834, tìm thấy năm 1904." },
+      { "name": "Avaldsnes", "at": [5.28, 59.35], "kind": "capital", "note": "Trung tâm quyền lực kiểm soát tuyến biển ven bờ tây." }
+    ],
+    "summary": "Na Uy thời kỳ đầu Viking gồm nhiều tiểu vương quốc và lãnh địa ven biển, vịnh hẹp. Người Viking từ vùng này đi biển tới quần đảo Anh, Ireland, quần đảo Bắc Đại Tây Dương; tên \"Na Uy\" (Norðvegr) gắn với \"con đường phương bắc\" dọc bờ biển.",
+    "culture": "Tàu Oseberg và Gokstad cho thấy kỹ thuật đóng tàu và nghệ thuật chạm khắc tinh xảo. Các saga kể về thời này được viết ở Iceland nhiều thế kỷ sau.",
+    "peopleIds": [],
+    "sourceArticle": "Oseberg ship",
+    "extraSources": [{ "title": "Britannica · Viking", "url": "https://www.britannica.com/topic/Viking-people" }]
+  },
+  {
+    "id": "harald-fairhair",
+    "era": "Thời Viking",
+    "name": "Harald Tóc Đẹp & cuộc thống nhất",
+    "years": "872 – 995",
+    "start": 872,
+    "end": 995,
+    "capital": "Avaldsnes · trung tâm tiêu biểu",
+    "places": [
+      { "name": "Hafrsfjord", "at": [5.63, 58.93], "kind": "battle", "note": "Trận đánh theo truyền thống đặt năm 872; niên đại thực tế còn tranh luận." },
+      { "name": "Avaldsnes", "at": [5.28, 59.35], "kind": "capital", "note": "Một nơi cư trú hoàng gia của Harald theo truyền thống saga." }
+    ],
+    "summary": "Theo truyền thống saga, Harald Tóc Đẹp thắng trận Hafrsfjord và trở thành vua đầu tiên của Na Uy thống nhất. Quyền kiểm soát thực tế của ông có lẽ chủ yếu ở vùng ven biển phía tây. Nhiều người rời Na Uy đến định cư ở Iceland từ khoảng năm 870.",
+    "culture": "Câu chuyện Harald chủ yếu đến từ các saga Iceland thế kỷ XIII như Heimskringla của Snorri Sturluson; cần phân biệt truyền thống với bằng chứng đương thời.",
+    "peopleIds": ["harald-fairhair"],
+    "sourceArticle": "Battle of Hafrsfjord"
+  },
+  {
+    "id": "christian-norway",
+    "era": "Thời Viking",
+    "name": "Các vua Olaf & Kitô hóa",
+    "years": "995 – 1066",
+    "start": 995,
+    "end": 1066,
+    "capital": "Nidaros · Trondheim",
+    "places": [
+      { "name": "Nidaros · Trondheim", "at": [10.4, 63.43], "kind": "capital", "note": "Olaf Tryggvason lập thị trấn khoảng năm 997; nơi chôn Thánh Olaf." },
+      { "name": "Stiklestad", "at": [11.56, 63.8], "kind": "battle", "note": "Olaf Haraldsson tử trận năm 1030." }
+    ],
+    "summary": "Olaf Tryggvason và Olaf Haraldsson dùng cả thuyết phục lẫn vũ lực để đưa Na Uy theo Kitô giáo. Olaf Haraldsson tử trận ở Stiklestad năm 1030 và sớm được tôn là thánh. Harald Hardrada trở thành vua năm 1046 và tử trận ở Stamford Bridge, Anh, năm 1066, thường được xem là điểm kết thúc thời Viking.",
+    "culture": "Thánh Olaf trở thành vị thánh bảo trợ của Na Uy; Nidaros là điểm hành hương lớn của Bắc Âu thời Trung cổ.",
+    "peopleIds": ["olaf-tryggvason", "olaf-haraldsson", "harald-hardrada"],
+    "sourceArticle": "Christianization of Norway",
+    "extraSources": [{ "title": "Wikipedia · Battle of Stiklestad", "url": "https://en.wikipedia.org/wiki/Battle_of_Stiklestad" }]
+  },
+  {
+    "id": "norway-civil-wars",
+    "era": "Trung cổ",
+    "name": "Thời nội chiến",
+    "years": "1130 – 1240",
+    "start": 1130,
+    "end": 1240,
+    "capital": "Bergen / Nidaros",
+    "places": [
+      { "name": "Bergen", "at": [5.32, 60.39], "kind": "capital", "note": "Đô thị lớn và trung tâm hoàng gia thế kỷ XII–XIII." },
+      { "name": "Nidaros · Trondheim", "at": [10.4, 63.43], "kind": "heritage", "note": "Tòa tổng giám mục từ năm 1152/1153." }
+    ],
+    "summary": "Từ năm 1130, luật kế vị không rõ ràng khiến nhiều phe tranh ngôi suốt hơn một thế kỷ. Sverre Sigurdsson cùng phe Birkebeiner giành ưu thế cuối thế kỷ XII và đối đầu Giáo hội. Nội chiến kết thúc năm 1240 khi Haakon IV đánh bại đối thủ cuối cùng.",
+    "culture": "Saga của vua Sverre được viết khi ông còn sống, là nguồn hiếm hoi cho góc nhìn của một vị vua về chính mình.",
+    "peopleIds": ["sverre-sigurdsson"],
+    "sourceArticle": "Civil war era in Norway"
+  },
+  {
+    "id": "norway-golden-age",
+    "era": "Trung cổ",
+    "name": "Thời hoàng kim & Cái Chết Đen",
+    "years": "1240 – 1380",
+    "start": 1240,
+    "end": 1380,
+    "capital": "Bergen",
+    "places": [
+      { "name": "Bergen · Håkonshallen", "at": [5.32, 60.4], "kind": "capital", "note": "Đại sảnh của Haakon IV, xây giữa thế kỷ XIII." },
+      { "name": "Bryggen", "at": [5.32, 60.4], "kind": "heritage", "note": "Bến cảng của thương nhân Hanse; Di sản Thế giới UNESCO." }
+    ],
+    "summary": "Dưới thời Haakon IV, Na Uy đạt tầm ảnh hưởng rộng nhất: Iceland và Greenland chấp nhận quyền vua Na Uy năm 1262–1264. Magnus \"Người sửa luật\" ban hành bộ luật chung toàn quốc năm 1274. Cái Chết Đen năm 1349 làm dân số giảm mạnh và suy yếu vương quyền.",
+    "culture": "Văn học cung đình dịch từ tiếng Pháp và các saga phát triển. Thương nhân Hanse ở Bergen kiểm soát buôn bán cá khô.",
+    "peopleIds": ["haakon-iv", "magnus-lawmender"],
+    "sourceArticle": "Haakon IV of Norway"
+  },
+  {
+    "id": "norway-union",
+    "era": "Liên minh",
+    "name": "Liên minh với Đan Mạch",
+    "years": "1380 – 1537",
+    "start": 1380,
+    "end": 1537,
+    "capital": "Không có triều đình thường trực tại Na Uy",
+    "places": [
+      { "name": "Bergen", "at": [5.32, 60.39], "kind": "heritage", "note": "Đô thị thương mại lớn nhất Na Uy thời kỳ này." },
+      { "name": "Oslo · Akershus", "at": [10.74, 59.91], "kind": "capital", "note": "Pháo đài Akershus xây khoảng năm 1300." }
+    ],
+    "summary": "Từ năm 1380, Na Uy chung vua với Đan Mạch qua Margrete I, rồi gia nhập Liên minh Kalmar năm 1397. Vua thường ở Đan Mạch; Hội đồng Vương quốc Na Uy giữ vai trò ngày càng hạn chế. Năm 1537, sau Cải cách, Na Uy mất hội đồng riêng và trở thành một phần của vương quốc Đan Mạch–Na Uy.",
+    "culture": "Tiếng Na Uy viết dần nhường chỗ cho tiếng Đan Mạch trong văn bản hành chính.",
+    "peopleIds": ["margaret-i"],
+    "sourceArticle": "Kalmar Union"
+  },
+  {
+    "id": "denmark-norway",
+    "era": "Đan Mạch–Na Uy",
+    "name": "Đan Mạch–Na Uy",
+    "years": "1537 – 1814",
+    "start": 1537,
+    "end": 1814,
+    "capital": "Copenhagen · triều đình chung",
+    "places": [
+      { "name": "Christiania · Oslo", "at": [10.75, 59.91], "kind": "capital", "note": "Christian IV xây lại thành phố sau trận hỏa hoạn năm 1624." },
+      { "name": "Kongsberg", "at": [9.65, 59.67], "kind": "heritage", "note": "Mỏ bạc mở từ năm 1623." }
+    ],
+    "summary": "Na Uy được cai trị từ Copenhagen trong gần ba thế kỷ. Christian IV lập thị trấn khai mỏ và xây lại Oslo thành Christiania. Na Uy tham gia các cuộc chiến với Thụy Điển; trong Đại chiến Bắc Âu, Tordenskjold nổi danh trên biển.",
+    "culture": "Gỗ, cá và kim loại xuất khẩu nối Na Uy với thị trường châu Âu. Nhà thờ gỗ và nghệ thuật dân gian phát triển ở nông thôn.",
+    "peopleIds": ["christian-iv", "peter-tordenskjold"],
+    "sourceArticle": "Denmark–Norway"
+  },
+  {
+    "id": "norway-1814",
+    "era": "Thế kỷ XIX",
+    "name": "Hiến pháp Eidsvoll & liên minh với Thụy Điển",
+    "years": "1814 – 1905",
+    "start": 1814,
+    "end": 1905,
+    "capital": "Christiania",
+    "places": [
+      { "name": "Eidsvoll", "at": [11.26, 60.33], "kind": "heritage", "note": "Hiến pháp được thông qua ngày 17/5/1814." },
+      { "name": "Christiania · Oslo", "at": [10.75, 59.91], "kind": "capital", "note": "Nơi họp Storting – Quốc hội Na Uy." }
+    ],
+    "summary": "Sau hiệp ước Kiel, Na Uy tuyên bố hiến pháp riêng ngày 17/5/1814. Sau cuộc chiến ngắn với Thụy Điển, Na Uy chấp nhận chung vua với Thụy Điển nhưng giữ hiến pháp và Quốc hội. Chế độ nghị viện được xác lập năm 1884.",
+    "culture": "Chủ nghĩa lãng mạn dân tộc thúc đẩy sưu tầm truyện dân gian. Kịch của Henrik Ibsen và nhạc của Edvard Grieg vang danh châu Âu.",
+    "peopleIds": ["henrik-ibsen"],
+    "sourceArticle": "Constitution of Norway",
+    "extraSources": [{ "title": "Wikipedia · Union between Sweden and Norway", "url": "https://en.wikipedia.org/wiki/Union_between_Sweden_and_Norway" }]
+  },
+  {
+    "id": "norway-independence",
+    "era": "Thế kỷ XX",
+    "name": "Độc lập & chiếm đóng",
+    "years": "1905 – 1945",
+    "start": 1905,
+    "end": 1945,
+    "capital": "Christiania / Oslo",
+    "places": [
+      { "name": "Oslo", "at": [10.75, 59.91], "kind": "capital", "note": "Đổi tên từ Christiania năm 1925." },
+      { "name": "Narvik", "at": [17.43, 68.44], "kind": "battle", "note": "Giao tranh năm 1940 quanh cảng xuất khẩu quặng sắt." }
+    ],
+    "summary": "Năm 1905, Na Uy giải thể liên minh với Thụy Điển; hoàng tử Đan Mạch Carl lên ngôi với tên Haakon VII. Phụ nữ có quyền bầu cử năm 1913. Đức xâm lược ngày 9/4/1940; nhà vua và chính phủ lưu vong ở London đến năm 1945.",
+    "culture": "Roald Amundsen đến Nam Cực năm 1911. Thời chiếm đóng, chính quyền bù nhìn Quisling và phong trào kháng chiến để lại ký ức sâu sắc.",
+    "peopleIds": ["haakon-vii", "roald-amundsen"],
+    "sourceArticle": "Dissolution of the union between Norway and Sweden",
+    "extraSources": [{ "title": "Wikipedia · German occupation of Norway", "url": "https://en.wikipedia.org/wiki/German_occupation_of_Norway" }]
+  },
+  {
+    "id": "modern-norway",
+    "era": "Thế kỷ XX",
+    "name": "Dầu mỏ & nhà nước phúc lợi",
+    "years": "1945 – nay",
+    "start": 1945,
+    "end": null,
+    "capital": "Oslo",
+    "places": [
+      { "name": "Oslo", "at": [10.75, 59.91], "kind": "capital", "note": "Thủ đô Vương quốc Na Uy." },
+      { "name": "Stavanger", "at": [5.73, 58.97], "kind": "heritage", "note": "Trung tâm ngành dầu khí sau phát hiện mỏ Ekofisk năm 1969." }
+    ],
+    "summary": "Na Uy là thành viên sáng lập NATO năm 1949. Phát hiện dầu ở Biển Bắc năm 1969 làm thay đổi kinh tế; nguồn thu được đưa vào quỹ đầu tư quốc gia. Cử tri Na Uy hai lần bác bỏ gia nhập Cộng đồng/Liên minh châu Âu trong trưng cầu năm 1972 và 1994.",
+    "culture": "Người Sámi, cư dân bản địa ở phương bắc, có Quốc hội Sámi từ năm 1989 sau nhiều thập kỷ chịu chính sách đồng hóa.",
+    "peopleIds": ["gro-harlem-brundtland"],
+    "sourceArticle": "History of Norway"
+  }
+]
