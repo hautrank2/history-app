@@ -1,14 +1,15 @@
 import { ArrowUpRight, Users } from "lucide-react";
 import Link from "next/link";
+
 import { CountryFlag } from "~/components/country-flag";
+import { listedCountries } from "~/data";
 import { characters } from "~/data/characters";
 
 const destinations = [
-  { countryId: "vietnam", label: "Nhân vật Việt Nam" },
-  { countryId: "england", label: "Nhân vật Anh" },
-  { countryId: "china", label: "Nhân vật Trung Quốc" },
-  { countryId: "denmark", label: "Nhân vật Đan Mạch" },
-  { countryId: "norway", label: "Nhân vật Na Uy" },
+  ...listedCountries.map(({ slug, name }) => ({
+    countryId: slug,
+    label: `Nhân vật ${name}`,
+  })),
   { countryId: null, label: "Tất cả nhân vật" },
 ];
 

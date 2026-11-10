@@ -274,6 +274,26 @@
     ]
   },
   {
+    "id": "late-han-196",
+    "era": "Cuối Đông Hán",
+    "name": "Tào Tháo đón Hán Hiến Đế về Hứa Xương",
+    "years": "196 · Kiến An năm thứ nhất",
+    "start": 196,
+    "end": 196,
+    "city": "xuchang",
+    "capital": "Hứa Xương · triều đình Đông Hán từ năm 196",
+    "summary": "Năm 196, Tào Tháo đón Hán Hiến Đế từ Lạc Dương và đưa triều đình về huyện Hứa (Hứa Xương ngày nay). Từ đây ông có thể ban chiếu lệnh nhân danh nhà Hán, trong khi Viên Thiệu, Viên Thuật, Lữ Bố, Lưu Biểu, Tôn Sách và nhiều thế lực khác vẫn giữ căn cứ riêng.",
+    "source": "Rafe de Crespigny · Sự hình thành Tam Quốc (189–220)",
+    "sourceArticle": "The Three Kingdoms and Western Jin I",
+    "sourceUrl": "https://eastasianhistory.org/sites/default/files/article-content/01/EAH01_01.pdf",
+    "peopleIds": [
+      "tao-thao",
+      "luu-bi",
+      "si-nhiep"
+    ],
+    "mapId": "late-han-196"
+  },
+  {
     "id": "three-kingdoms",
     "era": "Tam Quốc",
     "name": "Tam Quốc · thế chân vạc",

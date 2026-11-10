@@ -129,7 +129,7 @@ export const ContentPanel = ({
       sources: snapshot.sources,
     }, ...snapshot.states.map((state) => ({
       title: state.name,
-      text: `${state.summary} Kinh đô / trung tâm: ${state.capital.name}. Tọa độ và đường ranh trên lược đồ chỉ gần đúng.`,
+      text: `${state.summary} ${state.kind === "context" ? "Điểm tham chiếu" : "Kinh đô / trung tâm"}: ${state.center.name}. Tọa độ và đường ranh trên lược đồ chỉ gần đúng.`,
       sources: snapshot.sources,
     }))] : []),
     {

@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { HomeLink } from "~/components/home-link";
-import { CompactLink } from "~/components/compact-link";
 import type { CSSProperties } from "react";
 
+import { CompactLink } from "~/components/compact-link";
+import { HomeLink } from "~/components/home-link";
+import { NationalFlag } from "~/components/national-flag";
 import { Button } from "~/components/ui/button";
 import { Card } from "~/components/ui/card";
 import { Input } from "~/components/ui/input";
@@ -63,6 +64,8 @@ export const VietnamOverview = ({
   const eraScenes = scenes.filter((item) => item.era === scene.era);
   const filteredEras = eras.filter((era) => normalize(scenes.filter((item) => item.era === era).map((item) => `${item.era} ${item.title} ${item.people.map((person) => person.name).join(" ")}`).join(" ")).includes(normalize(query)));
   const allHidden = !contentVisible && !timelineVisible && !placesVisible;
+  const showVietnamFlag = country === "vietnam"
+    && (scene.id === "cach-mang-1945" || scene.year > 1945);
 
   return <TooltipProvider delayDuration={250}><main className="atlas-page vo-page" data-country-id={country} data-scene-id={scene.id} data-content={contentVisible} data-timeline={timelineVisible} data-clean={allHidden}>
     <h1 className="vo-sr-only">{heading}</h1>
@@ -101,7 +104,13 @@ export const VietnamOverview = ({
     {country !== "china" || !chinaMapIdFor(scene.id)
       ? <CountryStats scene={scene} />
       : null}
-    <HomeLink className="vo-back vo-glass" back /><Link className="vo-character-nav vo-glass" href="/characters">Nhân vật →</Link>
+    <HomeLink className="vo-back vo-glass" back />
+    <div className="vo-header-links absolute top-5 left-[190px] z-6 flex items-center gap-3 max-[760px]:top-2.5 max-[760px]:left-[135px]">
+      <Link className="vo-character-nav vo-glass" href="/characters">Nhân vật →</Link>
+      {showVietnamFlag ? (
+        <NationalFlag className="vo-national-flag shrink-0 rounded-sm" />
+      ) : null}
+    </div>
     <div className="vo-visibility" aria-label="Ẩn hiện các bảng trên bản đồ">
       <Button variant="atlas" size="atlas" type="button" className="vo-glass" aria-expanded={contentVisible} aria-controls="vo-content" onClick={() => setContentVisible((value) => !value)}><span>≋</span> Nội dung</Button>
       <Button variant="atlas" size="atlas" type="button" className="vo-glass" aria-expanded={placesVisible} aria-controls="vo-places" onClick={() => setPlacesVisible((value) => !value)}><span>⌖</span> Địa điểm</Button>

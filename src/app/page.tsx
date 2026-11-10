@@ -2,20 +2,20 @@ import { Image } from "@/components/ui/image";
 import Link from "next/link";
 import { HomeLink } from "~/components/home-link";
 
-import { countriesData } from "~/data";
+import { listedCountries } from "~/data";
 import { countryPresentation } from "~/data/world";
 
 import { VietnamBanner } from "./_components/vietnam-banner";
 import { CharacterLinks } from "./_components/character-links";
 
-const countryCount = String(Object.keys(countriesData).length).padStart(2, "0");
+const countryCount = String(listedCountries.length).padStart(2, "0");
 
 const HomePage = () => (
   <main className="atlas-page atlas-home">
     <header className="atlas-header"><Link href="/" className="atlas-logo"><span>H</span> HISTORY ATLAS</Link><HomeLink /><Link href="/vietnam/bach-dang-1288" className="atlas-header-link">Trải nghiệm Bạch Đằng ↗</Link></header>
     <section className="atlas-intro"><p className="atlas-eyebrow">KHÁM PHÁ DÒNG CHẢY LỊCH SỬ</p><h1>Thế giới rộng lớn.<br /><em>Chuyện xưa sống lại.</em></h1><p>Chọn một vùng đất. Bước qua những thời đại.<br />Khám phá lịch sử bằng hình ảnh và những trận chiến tương tác.</p><span className="atlas-intro-index">BỘ SƯU TẬP <b>01 — {countryCount}</b></span></section>
-    <section className="atlas-countries" aria-label="Chọn quốc gia"><VietnamBanner />{Object.values(countriesData).map((country) => {
-      if (!country || country.slug === "vietnam") return null;
+    <section className="atlas-countries" aria-label="Chọn quốc gia"><VietnamBanner />{listedCountries.map((country) => {
+      if (country.slug === "vietnam") return null;
       const visual = countryPresentation[country.slug];
       return <Link key={country.slug} href={`/${country.slug}`} className={`atlas-country atlas-country-${country.slug}`}><Image preview={false} src={visual.image} alt={`Minh họa lịch sử ${country.name}`} fill priority sizes="(max-width: 760px) 100vw, 33vw" /><div className="atlas-country-shade" /><div className="atlas-country-top"><span>{visual.numeral} / {visual.english}</span><span>{country.periods.length} GIAI ĐOẠN</span></div><div className="atlas-country-copy"><span>{visual.subtitle}</span><h2>{country.name}</h2><p>{visual.description}</p><div className="atlas-country-cta">Khám phá dòng thời gian <b>↗</b></div></div></Link>;
     })}</section>

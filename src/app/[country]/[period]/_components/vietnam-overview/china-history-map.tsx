@@ -7,7 +7,7 @@ import { Button } from "~/components/ui/button";
 import { Card } from "~/components/ui/card";
 import { chinaMapIdFor } from "~/data/china-overview";
 import { chinaStateMaps } from "~/data/china-state-maps";
-import type { OverviewSceneModel } from "~/data/vietnam-overview";
+import type { OverviewPlaceModel, OverviewSceneModel } from "~/data/vietnam-overview";
 
 import { mapFrames, ringPathWith } from "./map-frames";
 import type { MapFrameId } from "./map-frames";
@@ -41,18 +41,22 @@ export const ChinaHistoryMap = ({
   const snapshot = frameId === "china"
     ? chinaStateMaps[chinaMapIdFor(scene.id) ?? ""]
     : undefined;
-  const places = snapshot ? snapshot.states.map((state) => ({
-    name: state.capital.name,
-    at: state.capital.at,
-    kind: "capital" as const,
-    subtitle: `Kinh đô / trung tâm ${state.name}`,
-    detail: state.summary,
-  })) : scene.places;
+  const places: OverviewPlaceModel[] = snapshot
+    ? snapshot.states.map((state) => ({
+      name: state.center.name,
+      at: state.center.at,
+      kind: state.kind === "context" ? "heritage" : "capital",
+      subtitle: state.center.name,
+      detail: state.summary,
+    }))
+    : scene.places;
   const selectedState = placesVisible ? snapshot?.states[selectedPlace] : undefined;
   const svg = useRef<SVGSVGElement>(null);
   const pointerMoved = useRef(false);
   const [viewport, setViewport] = useState({ width: 1400, height: 900 });
-  const initialZoom = snapshot?.states.length && snapshot.states.length > 12 ? 2.2 : 1;
+  const denseSnapshot = snapshot && snapshot.states.length > 12;
+  const frame = snapshot?.view;
+  const initialZoom = denseSnapshot && !frame ? 2.2 : 1;
   const [zoom, setZoom] = useState(initialZoom);
   const [pan, setPan] = useState<[number, number]>([0, 0]);
   const [drag, setDrag] = useState<{
@@ -62,19 +66,42 @@ export const ChinaHistoryMap = ({
   const [historicalBorders, setHistoricalBorders] = useState(true);
   const mobile = viewport.width <= 760;
   const fitScale = mobile ? initialZoom : 1;
-  const viewHeight = mobile ? 1100 * fitScale : timelineVisible ? 1100 : 950;
+  const [west, north] = frame ? project(frame.northwest) : [0, 0];
+  const [east, south] = frame ? project(frame.southeast) : [0, 0];
+  const rightInset = !mobile && contentVisible
+    ? Math.min(400, viewport.width * 0.34) + 24
+    : 0;
+  const topInset = mobile ? 198 : 50;
+  const bottomInset = timelineVisible ? (mobile ? 148 : 180) : 22;
+  const frameScale = frame ? Math.max(0.1, Math.min(
+    (viewport.width - rightInset - 32) / (east - west),
+    (viewport.height - topInset - bottomInset) / (south - north),
+  )) : 1;
+  const viewHeight = frame
+    ? viewport.height / frameScale
+    : mobile ? 1100 * fitScale : timelineVisible ? 1100 : 950;
   const viewWidth = viewHeight * viewport.width / Math.max(1, viewport.height);
-  const centerX = 560 + (!mobile && contentVisible ? 180 : 0) + pan[0];
-  const centerY = 430 + (mobile && contentVisible ? 190 : 0) + pan[1];
+  const [mapX, mapY] = frame ? [(west + east) / 2, (north + south) / 2] : [560, 430];
+  const centerX = mapX + pan[0] + (frame
+    ? rightInset / (2 * frameScale * zoom)
+    : rightInset ? 180 : 0);
+  const mobilePanelOffset = mobile && contentVisible ? 190 : 0;
+  const centerY = mapY + pan[1] + (frame
+    ? (bottomInset - topInset + mobilePanelOffset) / (2 * frameScale * zoom)
+    : mobilePanelOffset);
   const left = centerX - viewWidth / (2 * zoom);
   const top = centerY - viewHeight / (2 * zoom);
   const currentPlace = places[selectedPlace] ?? places[0];
+  const contextCount = snapshot?.states.filter(
+    (state) => state.kind === "context",
+  ).length ?? 0;
+  const labelSize = frame ? (mobile ? 8 : 11) / frameScale : denseSnapshot ? 8 : 12;
   const selectState = (index: number) => {
     onSelectPlace(index);
     const state = snapshot?.states[index];
     if (!state) return;
     const [x, y] = project(state.labelAt);
-    setPan([x - 560, y - 430]);
+    setPan([x - mapX, y - mapY]);
   };
 
   useEffect(() => {
@@ -183,33 +210,40 @@ export const ChinaHistoryMap = ({
             data-map-year={snapshot.year}
             clipPath={`url(#${id}-land)`}
           >
-            {snapshot.states.map((state, index) => (
-              <path
-                key={state.id}
-                data-state-id={state.id}
-                d={state.rings.map(ringPath).join("")}
-                fill={state.color}
-                fillOpacity={selectedState?.id === state.id ? 0.68 : 0.36}
-                stroke={historicalBorders ? state.color : "none"}
-                strokeWidth={selectedState?.id === state.id ? 3 : 1.5}
-                strokeLinejoin="round"
-                vectorEffect="non-scaling-stroke"
-                role="button"
-                tabIndex={0}
-                aria-label={`${state.name} · năm ${snapshot.year < 0 ? `${-snapshot.year} TCN` : snapshot.year} · ${state.capital.name}`}
-                onClick={() => {
-                  if (!pointerMoved.current) selectState(index);
-                }}
-                onKeyDown={(event) => {
-                  if (event.key === "Enter" || event.key === " ") {
-                    event.preventDefault();
-                    selectState(index);
-                  }
-                }}
-              >
-                <title>{`${state.name} · ${state.summary}`}</title>
-              </path>
-            ))}
+            {snapshot.states.map((state, index) => {
+              const selected = selectedState?.id === state.id;
+              const context = state.kind === "context";
+              const baseOpacity = context ? 0.19 : 0.36;
+              return (
+                <path
+                  key={state.id}
+                  data-state-id={state.id}
+                  data-area-kind={state.kind}
+                  d={state.rings.map(ringPath).join("")}
+                  fill={state.color}
+                  fillOpacity={selected ? 0.68 : baseOpacity}
+                  stroke={historicalBorders ? state.color : "none"}
+                  strokeWidth={selected ? 3 : 1.5}
+                  strokeDasharray={context ? "4 3" : undefined}
+                  strokeLinejoin="round"
+                  vectorEffect="non-scaling-stroke"
+                  role="button"
+                  tabIndex={0}
+                  aria-label={`${state.name} · năm ${snapshot.year < 0 ? `${-snapshot.year} TCN` : snapshot.year} · ${state.center.name}`}
+                  onClick={() => {
+                    if (!pointerMoved.current) selectState(index);
+                  }}
+                  onKeyDown={(event) => {
+                    if (event.key === "Enter" || event.key === " ") {
+                      event.preventDefault();
+                      selectState(index);
+                    }
+                  }}
+                >
+                  <title>{`${state.name} · ${state.summary}`}</title>
+                </path>
+              );
+            })}
           </g>
         ) : null}
         {snapshot ? (
@@ -226,7 +260,7 @@ export const ChinaHistoryMap = ({
                   strokeWidth="3"
                   paintOrder="stroke"
                   textAnchor="middle"
-                  fontSize={snapshot.states.length > 12 ? 8 : 12}
+                  fontSize={labelSize}
                   fontWeight="600"
                 >
                   {state.name}
@@ -236,7 +270,7 @@ export const ChinaHistoryMap = ({
           </g>
         ) : null}
         <g className="vo-country-labels" aria-hidden="true">
-          {labels.map((label) => {
+          {labels.filter((label) => !frame || label.sea).map((label) => {
             const [x, y] = project(label.at);
             return (
               <text
@@ -273,10 +307,14 @@ export const ChinaHistoryMap = ({
       {snapshot ? (
         <details
           className="china-state-legend vo-glass absolute bottom-[calc(var(--vo-dock)+18px)] left-6 z-5 flex max-h-[240px] w-[310px] flex-col gap-2 overflow-hidden rounded-lg p-3 max-[760px]:top-[90px] max-[760px]:bottom-auto max-[760px]:left-3 max-[760px]:max-h-[64px] max-[760px]:gap-1 max-[760px]:p-2 max-[760px]:w-[calc(100vw-24px)]"
-          aria-label="Chú giải các nước trên bản đồ"
+          aria-label="Chú giải bản đồ lịch sử"
         >
           <summary className="china-state-legend-toggle flex cursor-pointer list-none items-center justify-between gap-2 text-xs text-primary [&::-webkit-details-marker]:hidden">
-            <span className="text-xs">Chú giải · {snapshot.states.length} nước / thế lực</span>
+            <span className="text-xs">
+              {contextCount
+                ? `Chú giải · ${snapshot.states.length - contextCount} thế lực · ${contextCount} vùng lân cận`
+                : `Chú giải · ${snapshot.states.length} nước / thế lực`}
+            </span>
             <span aria-hidden="true">⌄</span>
           </summary>
           <div
@@ -289,10 +327,16 @@ export const ChinaHistoryMap = ({
                 className="china-state-legend-item flex min-h-7 items-center gap-2 rounded px-1.5 py-1 text-left text-[11px] text-foreground hover:bg-accent focus-visible:outline-2 focus-visible:outline-ring max-[760px]:min-h-6 max-[760px]:shrink-0 max-[760px]:py-0.5"
                 type="button"
                 data-state-id={state.id}
+                data-area-kind={state.kind}
                 aria-pressed={selectedState?.id === state.id}
                 onClick={() => selectState(index)}
               >
-                <i className="size-2.5 shrink-0 rounded-sm" style={{ background: state.color }} />
+                <i
+                  className="size-2.5 shrink-0 rounded-sm"
+                  style={state.kind === "context"
+                    ? { border: `1px dashed ${state.color}` }
+                    : { background: state.color }}
+                />
                 <span className="text-[11px] font-normal leading-relaxed">{state.name}</span>
               </button>
             ))}

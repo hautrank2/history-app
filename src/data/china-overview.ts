@@ -90,6 +90,7 @@ const cultureByEra: Record<string, string> = {
   "Nhà Tần": "Chuẩn hóa chữ viết, đo lường và văn thư gắn với bộ máy tập quyền thời Tần. Hiện vật, văn bản trên thẻ tre và di tích cung điện, lăng mộ cần được gắn với niên đại và địa điểm cụ thể.",
   "Hán – Sở tranh hùng": "Sự phân phong sau nhà Tần tạo ra nhiều chính thể, thay vì một nhà nước thống nhất ngay lập tức. Những câu chuyện về Lưu Bang, Hạng Vũ và các trận đánh được truyền lại qua sử học rồi văn học; cần phân biệt sử liệu với tình tiết được kể thêm về sau.",
   "Nhà Hán": "Chữ viết, văn thư và bộ máy hành chính có vai trò lớn trong nhà nước đế chế. Sử học, đồ tùy táng và di tích đô thành giúp nghiên cứu xã hội; hiện vật cần được gắn với niên đại và địa điểm cụ thể.",
+  "Cuối Đông Hán": "Niên hiệu Kiến An bắt đầu năm 196 dưới thời Hán Hiến Đế. Triều đình ở huyện Hứa vẫn ban chiếu lệnh nhân danh nhà Hán, trong khi quyền điều quân và thu thuế ở nhiều nơi nằm trong tay các thế lực địa phương.",
   "Tam Quốc": "Sử liệu và văn học kể chuyện cần được đọc riêng. Tam quốc chí được biên soạn gần thời kỳ hơn; Tam quốc diễn nghĩa là tiểu thuyết nhiều thế kỷ sau, có những nhân vật và tình tiết được hư cấu.",
   "Nhà Tấn": "Thư pháp, thơ văn, hội họa và tư tưởng tôn giáo phát triển trong bối cảnh di cư và phân tranh. Đời sống trí thức miền nam gắn với tầng lớp thế gia và không đại diện toàn bộ cư dân.",
   "Thập Lục Quốc": "Nhiều cộng đồng cùng tham gia xây dựng các nhà nước phương bắc. Giao lưu trên các tuyến phía tây và hoạt động dịch kinh để lại dấu ấn; tên gọi một vương triều không đồng nghĩa một cộng đồng dân cư thuần nhất.",
@@ -159,7 +160,7 @@ export const chinaEraYears: Record<string, string> = Object.fromEntries(
     const end = rows.some((row) => row.end === null)
       ? "nay"
       : yearLabel(Math.max(...rows.map((row) => row.end ?? row.start)));
-    return [era, `${yearLabel(start)} – ${end}`];
+    return [era, yearLabel(start) === end ? end : `${yearLabel(start)} – ${end}`];
   }),
 );
 export const chinaPeriods = [...new Set(chinaOverview.map((scene) => scene.era))]

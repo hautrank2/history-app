@@ -119,7 +119,7 @@ for (const [id, snapshot] of Object.entries(chinaStateMaps)) {
   }
   for (const state of snapshot.states) {
     regions++;
-    assert.ok(state.name && state.summary && coordinates(state.capital.at));
+    assert.ok(state.name && state.summary && coordinates(state.center.at));
     assert.ok(coordinates(state.labelAt));
     for (const ring of state.rings) {
       assert.ok(ring.length >= 4 && ring.every(coordinates), state.id);
@@ -128,6 +128,13 @@ for (const [id, snapshot] of Object.entries(chinaStateMaps)) {
   }
 }
 const statesAt = (id) => new Set(chinaStateMaps[id].states.map((state) => state.id));
+const lateHan = chinaStateMaps["late-han-196"];
+assert.equal(lateHan.year, 196);
+assert.deepEqual(
+  Array.from(lateHan.states.filter((state) => state.kind === "context"),
+    (state) => state.id),
+  ["nanzhong", "xiongnu", "qiang", "western-regions", "xianbei", "goguryeo"],
+);
 assert.equal(chinaStateMaps["chu-han-206"].year, -206);
 assert.equal(chinaStateMaps["chu-han-206"].states.length, 19,
   "Western Chu plus eighteen enfeoffed kingdoms");

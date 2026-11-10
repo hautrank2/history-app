@@ -163,7 +163,7 @@ html:has(.vo-page), body:has(.vo-page) { height: 100%; overflow: hidden; overscr
   .vo-speed-trigger { width: 48px; font-size: 11px; gap: 3px; }
 }
 @media (prefers-reduced-motion: reduce) { .vo-page *, .vo-page *::before, .vo-page *::after { animation: none !important; scroll-behavior: auto !important; transition: none !important; } }
-.vo-character-nav { position: absolute; z-index: 6; top: 20px; left: 190px; padding: 12px; border-radius: 6px; color: var(--atlas-gold); font-size: 12px; }
+.vo-character-nav { padding: 12px; border-radius: 6px; color: var(--atlas-gold); font-size: 12px; }
 .vo-relief { opacity: .7; pointer-events: none; filter: sepia(.3) brightness(.65) saturate(.6); }
 [data-map-variant="terrain"] .vo-countries path { fill-opacity: .18; }
 [data-map-variant="terrain"] .vo-territory { fill-opacity: .45; }
@@ -187,7 +187,7 @@ html:has(.vo-page), body:has(.vo-page) { height: 100%; overflow: hidden; overscr
 .vo-country-stats { bottom: calc(var(--vo-dock) + 30px); }
 .vo-back .national-flag { flex-shrink: 0; }
 @media (max-width: 760px) {
- .vo-character-nav { left: 132px; top: 12px; padding: 10px; font-size: 11px; }
+ .vo-character-nav { padding: 8px; font-size: 11px; }
  .vo-back { gap: 6px; }
  .vo-back .national-flag { width: 21px; height: 14px; }
  .vo-islands-inset { top: 122px; left: 12px; padding: 7px 9px; gap: 4px; max-width: 190px; font-size: 11px; }
@@ -199,7 +199,6 @@ html:has(.vo-page), body:has(.vo-page) { height: 100%; overflow: hidden; overscr
 .vo-terrain-credit { position:absolute;z-index:3;bottom:7px;left:24px;font-size:11px;color:var(--atlas-muted); }
 @media(max-width:760px){
  .vo-back { top:10px;left:12px;padding:7px 10px;min-height:32px;font-size:11px; }
- .vo-character-nav { top:10px;left:135px;padding:8px;font-size:11px; }
  .vo-visibility { top:50px;left:12px;right:12px;gap:5px; }
  .vo-visibility > button { flex:1;min-height:32px;padding:0 5px;font-size:11px; }
  .vo-visibility > button > span { font-size:13px; }

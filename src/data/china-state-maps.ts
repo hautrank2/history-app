@@ -5,7 +5,8 @@ export type ChinaHistoricalStateModel = {
   id: string;
   name: string;
   color: string;
-  capital: { name: string; at: [number, number] };
+  kind: "state" | "context";
+  center: { name: string; at: [number, number] };
   labelAt: [number, number];
   rings: number[][][];
   summary: string;
@@ -15,6 +16,7 @@ export type ChinaStateMapModel = {
   year: number;
   title: string;
   note: string;
+  view?: { northwest: [number, number]; southeast: [number, number] };
   states: ChinaHistoricalStateModel[];
   sources: { title: string; url: string }[];
 };
@@ -26,23 +28,25 @@ const palette = [
   "#71a9dc", "#8ac49d", "#dfb36e", "#c193ce", "#e38f89", "#7fc8c4",
   "#b6bc73", "#c79c77", "#9b9cda", "#d3b5a5", "#79b5ad", "#c5a5cf",
   "#e2cd70", "#d78da8", "#8db5ba", "#b7a0d4", "#a2bf91", "#d89970",
-  "#b7c5e5",
+  "#b7c5e5", "#9eacb6", "#b6a88e",
 ];
 
 const state = (
   id: string,
   name: string,
   color: number,
-  capital: string,
+  center: string,
   at: [number, number],
   labelAt: [number, number],
   points: number[][],
   summary: string,
+  kind: ChinaHistoricalStateModel["kind"] = "state",
 ): ChinaHistoricalStateModel => ({
   id,
   name,
   color: palette[color % palette.length],
-  capital: { name: capital, at },
+  kind,
+  center: { name: center, at },
   labelAt,
   rings: [[...points, points[0]]],
   summary,
@@ -211,6 +215,216 @@ export const chinaStateMaps: Record<string, ChinaStateMapModel> = {
           [121.7, 29.1], [118.5, 27.4], [114.4, 26.8], [111, 28.5],
           [110.6, 30.6], [111.5, 32.2]],
         "Sở chiếm không gian rộng ở lưu vực Trường Giang và Hoài Hà. Sau khi mất Dĩnh, triều đình chuyển về Trần."),
+    ],
+  },
+  "late-han-196": {
+    year: 196,
+    title: "Cuối Đông Hán · Các thế lực cát cứ và vùng lân cận năm 196",
+    note: "Lược đồ vùng ảnh hưởng vào khoảng cuối năm 196, sau khi triều đình dời về huyện Hứa. Nét liền chỉ các thế lực cát cứ. Nét đứt đánh dấu các vùng và thế lực lân cận. Các vùng tô ghép liền nhau theo bố cục tham chiếu; mức độ kiểm soát thực tế thay đổi theo địa phương.",
+    view: { northwest: [77, 48], southeast: [131, 19] },
+    sources: [
+      {
+        title: "Rafe de Crespigny · To Establish Peace, quyển 1",
+        url: "https://openresearch-repository.anu.edu.au/items/02b981ee-26ac-4eac-b9dd-253ef04a2af2",
+      },
+      {
+        title: "Rafe de Crespigny · Generals of the South",
+        url: "https://openresearch-repository.anu.edu.au/items/3f9f4ff5-730e-4153-a5ce-e2b8a6dd6afc",
+      },
+      {
+        title: "Rafe de Crespigny · Northern Frontier",
+        url: "https://openresearch-repository.anu.edu.au/items/1a59ea73-106d-4c58-bd3f-56d475c0e513",
+      },
+      {
+        title: "Rafe de Crespigny · Some Remarks on the Western Regions in Later Han",
+        url: "https://openresearch-repository.anu.edu.au/entities/publication/77112ba8-857d-410d-a03b-337332cf8b09",
+      },
+      {
+        title: "UNESCO · Các kinh đô của Cao Câu Ly",
+        url: "https://whc.unesco.org/en/list/1135/",
+      },
+    ],
+    states: [
+      state(
+        "ma-teng", "Mã Đằng", 2, "Hữu Phù Phong · vùng Quan Trung",
+        [107.15, 34.38], [104, 37.1],
+        [[98, 39.6], [101.7, 40.1], [105.6, 39], [106.9, 37.2],
+          [108.4, 35.8], [108, 34.5], [106.4, 34.3], [105.8, 36.1],
+          [103, 36.8], [100.2, 38.3]],
+        "Thế lực quân sự ở Lương Châu và phía tây Quan Trung. Địa bàn biến động theo quan hệ với Hàn Toại và các tướng cũ của Đổng Trác.",
+      ),
+      state(
+        "han-sui", "Hàn Toại", 13, "Kim Thành · vùng Lan Châu",
+        [103.83, 36.06], [103.45, 34.9],
+        [[100.2, 38.3], [103, 36.8], [105.8, 36.1], [106.4, 34.3],
+          [105.2, 33.4], [102.8, 33.8], [101.1, 35.4]],
+        "Giữ thế lực quanh Kim Thành ở Lương Châu, cùng Mã Đằng chi phối nhiều vùng ở phía tây.",
+      ),
+      state(
+        "li-jue-guo-si", "Lý Thôi / Quách Dĩ", 7, "Trường An · vùng Tây An",
+        [108.94, 34.26], [108.6, 34.05],
+        [[106.4, 34.3], [108, 34.5], [108.4, 35.8], [110.4, 36.1],
+          [111.1, 34.8], [110.2, 33.9], [108.4, 33.6], [106.9, 33.9]],
+        "Hai tướng cũ của Đổng Trác tranh quyền ở Quan Trung. Sau khi Hán Hiến Đế rời Trường An, ảnh hưởng của họ suy giảm.",
+      ),
+      state(
+        "zhang-lu", "Trương Lỗ", 6, "Nam Trịnh · Hán Trung",
+        [107.03, 33.07], [106.8, 33],
+        [[105.2, 33.4], [106.4, 34.3], [106.9, 33.9], [108.4, 33.6],
+          [109.1, 32.7], [107.4, 32.1], [105.2, 32.3]],
+        "Nắm Hán Trung, một vùng án ngữ đường từ Quan Trung vào Ích Châu, với tổ chức tôn giáo Thiên Sư đạo.",
+      ),
+      state(
+        "liu-zhang", "Lưu Chương", 4, "Thành Đô · Ích Châu",
+        [104.07, 30.67], [104.2, 29.5],
+        [[101.5, 32.1], [102.8, 33.8], [105.2, 33.4], [105.2, 32.3],
+          [107.4, 32.1], [109.1, 32.7], [109.6, 30.7], [108.8, 28.2],
+          [106.4, 27.1], [104.4, 27.4], [102.2, 28.4]],
+        "Kế tục Lưu Yên ở Ích Châu, với trung tâm tại Thành Đô. Phạm vi ảnh hưởng về phía Nam Trung thay đổi tùy địa phương.",
+      ),
+      state(
+        "liu-biao", "Lưu Biểu", 5, "Tương Dương · Kinh Châu",
+        [112.12, 32.01], [111.8, 28.1],
+        [[108.4, 33.6], [110.2, 33.9], [112.1, 33.5], [113.6, 32.6],
+          [114.1, 31.4], [116, 30.8], [115.4, 29.1], [114.9, 27.5],
+          [115, 25.6], [113.8, 24.2], [111.8, 23.65], [110.5, 24.05],
+          [108.9, 24.7], [110.5, 25.4], [108.8, 28.2], [109.6, 30.7],
+          [109.1, 32.7]],
+        "Giữ phần lớn Kinh Châu ở trung lưu Trường Giang, với Tương Dương là trung tâm.",
+      ),
+      state(
+        "cao-cao", "Tào Tháo", 0, "Hứa Xương · triều đình Đông Hán",
+        [113.85, 34.03], [113.65, 35.65],
+        [[110.4, 36.1], [112.4, 36.5], [114.5, 36], [116.3, 36.7],
+          [118.2, 36], [117.4, 35.1], [116.1, 34.3], [116.6, 33.5],
+          [114.8, 32.5], [113.6, 32.6], [112.1, 33.5], [110.2, 33.9],
+          [111.1, 34.8]],
+        "Từ căn cứ ở Duyện Châu, Tào Tháo đưa Hán Hiến Đế và triều đình về huyện Hứa năm 196.",
+      ),
+      state(
+        "yuan-shao", "Viên Thiệu", 12, "Nghiệp Thành · Ký Châu",
+        [114.61, 36.29], [116.6, 38.15],
+        [[111.2, 39.4], [113.1, 40.4], [114.9, 39.6], [115.8, 38.6],
+          [117.2, 38.9], [119.3, 38], [122.6, 37.6], [121.7, 36.1],
+          [119.7, 35.6], [118.2, 36], [116.3, 36.7], [114.5, 36],
+          [112.4, 36.5], [110.4, 36.1], [110.8, 37.9]],
+        "Đóng ở Nghiệp Thành, lấy Ký Châu làm căn cứ và mở rộng ảnh hưởng về phía Thanh Châu.",
+      ),
+      state(
+        "gongsun-zan", "Công Tôn Toản", 3, "Dịch Kinh · vùng Bảo Định",
+        [116.1, 39], [115.9, 40.05],
+        [[114.9, 39.6], [115, 41.2], [117.2, 41.3], [118.7, 42.1],
+          [120.3, 41.1], [120.6, 40], [119.3, 38], [117.2, 38.9],
+          [115.8, 38.6]],
+        "Giữ căn cứ Dịch Kinh ở U Châu và đối đầu với Viên Thiệu cho đến khi thất bại năm 199.",
+      ),
+      state(
+        "gongsun-du", "Công Tôn Độ", 17, "Tương Bình · Liêu Đông",
+        [123.17, 41.27], [123.2, 42.1],
+        [[120.3, 41.1], [121.5, 42.9], [124.5, 43.3], [125.7, 42],
+          [125.3, 40.5], [124.2, 39.7], [121, 38.6], [120.6, 40]],
+        "Xây dựng thế lực riêng ở Liêu Đông, với trung tâm tại Tương Bình, vùng Liêu Dương ngày nay.",
+      ),
+      state(
+        "lu-bu", "Lữ Bố", 8, "Hạ Bì · Từ Châu",
+        [117.96, 34.09], [119.4, 34.05],
+        [[118.2, 36], [119.7, 35.6], [121.7, 36.1], [122.6, 35.55],
+          [122.4, 33.7], [120.35, 33.7], [119.6, 32.8], [117.8, 33],
+          [116.6, 33.5], [116.1, 34.3], [117.4, 35.1]],
+        "Chiếm Hạ Bì trong lúc Lưu Bị giao chiến với Viên Thuật, rồi nắm phần lớn căn cứ của Lưu Bị ở Từ Châu.",
+      ),
+      state(
+        "liu-bei", "Lưu Bị", 14, "Tiểu Bái · vùng Từ Châu",
+        [116.94, 34.73], [116.9, 34.75],
+        [[116.55, 34.9], [117.05, 35.08], [117.48, 34.8],
+          [117.17, 34.38], [116.58, 34.43]],
+        "Sau khi mất Hạ Bì năm 196, Lưu Bị trở về đóng ở Tiểu Bái trong một thời gian. Vùng tô chỉ đánh dấu căn cứ quanh thành.",
+      ),
+      state(
+        "yuan-shu", "Viên Thuật", 18, "Thọ Xuân · Hoài Nam",
+        [116.78, 32.57], [116.8, 32.2],
+        [[113.6, 32.6], [114.8, 32.5], [116.6, 33.5], [117.8, 33],
+          [119.6, 32.8], [120.35, 33.7], [122.4, 33.7], [123.5, 31.45],
+          [121.8, 31.65], [119.1, 32], [117.9, 31.3], [116, 30.8],
+          [114.1, 31.4]],
+        "Đóng ở Thọ Xuân, giữ vùng Hoài Nam và tranh giành ảnh hưởng ở Từ Châu với Lữ Bố và Lưu Bị.",
+      ),
+      state(
+        "sun-ce", "Tôn Sách", 1, "Hội Kê · vùng Thiệu Hưng",
+        [120.58, 30.02], [117.4, 27.3],
+        [[116, 30.8], [117.9, 31.3], [119.1, 32], [121.8, 31.65],
+          [123.5, 31.45], [123.5, 29], [122.7, 28.3], [121.25, 26.9],
+          [120.35, 25.7], [119.55, 24.4],
+          [118.3, 22.4], [115.5, 21.25], [112.6, 21.1], [113.15, 22.8],
+          [113.8, 24.2], [115, 25.6], [114.9, 27.5], [115.4, 29.1]],
+        "Đang mở rộng thế lực ở Giang Đông, chiếm Ngô quận và Hội Kê. Các chiến dịch về phía tây và phía nam tiếp tục sau năm 196.",
+      ),
+      state(
+        "shi-xie", "Sĩ Nhiếp", 10, "Long Biên · quận Giao Chỉ",
+        [106.06, 21.06], [109, 22.6],
+        [[104.1, 22.8], [105.4, 24.1], [107.7, 23.8], [108.9, 24.7],
+          [110.5, 24.05], [111.8, 23.65], [113.8, 24.2], [113.15, 22.8],
+          [112.6, 21.1], [111.3, 20.4], [110, 20.15], [107.4, 20.2],
+          [106, 19.2], [104.7, 20.2]],
+        "Thái thú Giao Chỉ cuối thời Đông Hán, có ảnh hưởng trong vùng đồng bằng sông Hồng và lân cận.",
+      ),
+      state(
+        "nanzhong", "Nam Trung", 16, "Quanh hồ Điền Trì · Vân Nam",
+        [102.68, 24.81], [103.8, 25.4],
+        [[98.5, 24.4], [99.7, 26.4], [102.2, 28.4], [104.4, 27.4],
+          [106.4, 27.1], [108.8, 28.2], [110.5, 25.4], [108.9, 24.7],
+          [107.7, 23.8], [105.4, 24.1], [104.1, 22.8], [101.2, 22.1],
+          [99.2, 22.8]],
+        "Vùng phía nam Ích Châu, gồm nhiều quận và cộng đồng địa phương ở khu vực nay thuộc Vân Nam, Quý Châu và nam Tứ Xuyên.",
+        "context",
+      ),
+      state(
+        "xiongnu", "Hung Nô", 9, "Vùng Ordos · khúc quanh Hoàng Hà",
+        [109.6, 39.6], [109.7, 39.2],
+        [[105.6, 39], [105.8, 40.7], [108.5, 41.9], [111.4, 42.3],
+          [113.8, 41.5], [113.1, 40.4], [111.2, 39.4], [110.8, 37.9],
+          [110.4, 36.1], [108.4, 35.8], [106.9, 37.2]],
+        "Vùng tham chiếu của các nhóm Nam Hung Nô quanh Ordos và dọc biên địa phía bắc Đông Hán. Các nhóm phân bố trên nhiều địa bàn.",
+        "context",
+      ),
+      state(
+        "qiang", "Khương", 20, "Vùng hồ Thanh Hải",
+        [100.2, 36.85], [97.8, 33.7],
+        [[93.1, 35.4], [95.1, 37.7], [98, 39.6], [100.2, 38.3],
+          [101.1, 35.4], [102.8, 33.8], [101.5, 32.1], [102.2, 28.4],
+          [99.7, 26.4], [97.2, 28.8], [95, 31.2]],
+        "Nhiều cộng đồng Khương sinh sống ở biên địa phía tây Đông Hán, quanh Thanh Hải, Cam Túc và vùng núi lân cận.",
+        "context",
+      ),
+      state(
+        "western-regions", "Tây Vực", 19, "Quy Tư · vùng Khố Xa",
+        [82.96, 41.72], [88, 38],
+        [[77.5, 37.7], [78.2, 41.8], [81.5, 44], [87.4, 44.4],
+          [92.4, 44], [96.1, 42.4], [96.7, 40.7], [98, 39.6],
+          [95.1, 37.7], [93.1, 35.4], [85.7, 35.8], [81.1, 36]],
+        "Tên gọi trong sử liệu nhà Hán cho các xứ ở phía tây hành lang Hà Tây. Vùng tô tập trung vào các ốc đảo quanh lòng chảo Tarim, nơi có nhiều chính thể và tuyến buôn bán.",
+        "context",
+      ),
+      state(
+        "xianbei", "Tiên Ty", 15, "Thảo nguyên phía bắc Ordos",
+        [111.5, 45], [111.4, 45.4],
+        [[95.4, 43.3], [101, 46.3], [107.7, 47.6], [114.2, 47.1],
+          [119.2, 46.4], [123, 45.1], [126.3, 44.3], [124.5, 43.3],
+          [121.5, 42.9], [120.3, 41.1], [118.7, 42.1], [117.2, 41.3],
+          [115, 41.2], [114.9, 39.6], [113.1, 40.4], [113.8, 41.5],
+          [111.4, 42.3], [108.5, 41.9], [105.8, 40.7], [105.6, 39],
+          [101.7, 40.1], [98, 39.6], [96.7, 40.7], [96.1, 42.4]],
+        "Các nhóm Tiên Ty hiện diện trên thảo nguyên phía bắc. Sau thời Đàn Thạch Hòe, quyền lực phân tán giữa nhiều thủ lĩnh.",
+        "context",
+      ),
+      state(
+        "goguryeo", "Cao Câu Ly", 11, "Quốc Nội Thành · vùng Tập An",
+        [126.18, 41.14], [127.7, 43.15],
+        [[124.5, 43.3], [126.3, 44.3], [129.4, 44.1], [130.2, 42.2],
+          [128.8, 40.8], [126.6, 40.3], [125.3, 40.5], [125.7, 42]],
+        "Vương quốc ở vùng trung lưu sông Áp Lục, phía đông Liêu Đông. Quốc Nội Thành ở vùng Tập An ngày nay là điểm định vị cho giai đoạn này.",
+        "context",
+      ),
     ],
   },
   "three-kingdoms": {
