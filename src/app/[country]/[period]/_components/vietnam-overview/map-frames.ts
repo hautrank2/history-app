@@ -1,3 +1,4 @@
+import northwestEurope from "~/data/geo/northwest-europe.json";
 import geography from "~/data/geo/world.json";
 import type { EuropeCountryId } from "~/data/europe-overview";
 
@@ -57,6 +58,14 @@ const northernEurope = [
   "Poland", "Russia", "Estonia", "Latvia", "Lithuania", "Iceland",
 ];
 
+const englandBase = [
+  ...outline(northernEurope.filter((name) => name !== "United Kingdom"
+    && !(name in northwestEurope)), englandProject),
+  ...Object.entries(northwestEurope).map(([name, rings]) => ({
+    name, path: rings.map(ringPathWith(englandProject)).join(""),
+  })),
+];
+
 export const mapFrames: Record<MapFrameId, MapFrameModel> = {
   china: {
     ariaLabel: "Bản đồ lịch sử Trung Quốc hai chiều",
@@ -75,7 +84,7 @@ export const mapFrames: Record<MapFrameId, MapFrameModel> = {
   england: {
     ariaLabel: "Bản đồ lịch sử nước Anh hai chiều",
     project: englandProject,
-    countries: outline(northernEurope, englandProject),
+    countries: englandBase,
     labels: [
       { at: [3, 55.5], text: "BIỂN BẮC", sea: true },
       { at: [-10.5, 51], text: "ĐẠI TÂY DƯƠNG", sea: true },

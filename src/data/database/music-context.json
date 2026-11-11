@@ -1049,15 +1049,70 @@
         "era": "monarchy",
         "mood": "ethereal"
       },
+      "ecgberht-wessex": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "aethelwulf-wessex": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "ethereal"
+      },
+      "great-viking-army": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "alfred-edington": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
       "alfred-wessex": {
         "country": "england",
         "era": "monarchy",
         "mood": "dramatic"
       },
+      "edward-aethelflaed": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
+      "edward-succession": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "aethelflaed-mercia": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "majestic"
+      },
       "kingdom-of-england": {
         "country": "england",
         "era": "monarchy",
         "mood": "majestic"
+      },
+      "brunanburh": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "york-after-athelstan": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "dramatic"
+      },
+      "edgar-england": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "reflective"
+      },
+      "aethelred-sweyn": {
+        "country": "england",
+        "era": "monarchy",
+        "mood": "dramatic"
       },
       "cnut-north-sea": {
         "country": "england",

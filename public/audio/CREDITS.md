@@ -28,6 +28,15 @@ Nhạc Trung Quốc thời quân chủ (từ nhà Hạ đến nhà Thanh) phát 
 
 Trung Quốc thời cận – hiện đại (từ 1912) vẫn dùng nhạc tổng hợp cho tới khi có bản thu riêng.
 
+Lịch sử Anh phát ngẫu nhiên bốn bản MP3 *The Last Kingdom (Unofficial)* do người dùng cung cấp.
+
+| Bài | Mùa | Tệp trong website |
+| --- | --- | --- |
+| Long Live the King | 3 | `long-live-the-king.mp3` |
+| Only on the Dead | 5 | `only-on-the-dead.mp3` |
+| Pull | 2 | `pull.mp3` |
+| Æthelflæd | 5 | `aethelflaed.mp3` |
+
 Các bản thu này không thuộc giấy phép CC0 của hiệu ứng Kenney. Bản quyền thuộc tác giả và người biểu diễn gốc; cần xác nhận quyền sử dụng trước khi đăng trang công khai.
 
-Danh mục vẫn giữ 25 chủ đề nhạc tổng hợp của dự án: Atlas và ba quốc gia × hai thời kỳ × bốn sắc thái. Việt Nam và Trung Quốc thời quân chủ dùng bản thu ở trên thay cho nhạc tổng hợp; Atlas và các quốc gia khác tiếp tục dùng nốt nhạc/phối khí trong `src/data/database/soundtrack.json`. Ngữ cảnh tự chọn nằm trong `music-context.json`.
+Danh mục gồm 25 chủ đề cho Atlas và ba quốc gia, với hai thời kỳ và bốn sắc thái cho mỗi quốc gia. Việt Nam và Anh phát bản thu ở cả hai thời kỳ. Trung Quốc phát bản thu ở thời quân chủ. Các ngữ cảnh còn lại dùng nhạc tổng hợp từ `src/data/database/soundtrack.json`. Ngữ cảnh tự chọn nằm trong `music-context.json`.

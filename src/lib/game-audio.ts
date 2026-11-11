@@ -187,6 +187,7 @@ const startMusic = (delay = 0) => {
   if (!context || !musicGain || context.state !== "running" || !settings.enabled || !settings.music || settings.musicVolume === 0 || document.hidden || musicTimer !== null) return;
   musicGain.gain.setTargetAtTime(settings.musicVolume * .5, context.currentTime + delay, .15);
   if (currentTrack.playlist?.length) {
+    if (recordingPending || recordingSource) return;
     const { playlist } = currentTrack;
     startRecording(pickPlaylistSrc(playlist), delay, playlist);
     return;

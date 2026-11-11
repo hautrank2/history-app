@@ -23,8 +23,14 @@ const chinaMonarchyPlaylist = [
   "/audio/music/trung-hoa-phan-doan-9.mp3",
 ];
 
-// Vietnam and monarchy China use the user's selected recordings.
-// Other scores are synthesized; modern Britain still uses modern scores.
+// Keep one playlist across England's eras so scene changes preserve playback.
+const englandPlaylist = [
+  "/audio/music/long-live-the-king.mp3",
+  "/audio/music/only-on-the-dead.mp3",
+  "/audio/music/pull.mp3",
+  "/audio/music/aethelflaed.mp3",
+];
+
 const recordingFor = (row: (typeof catalog)[number]) => {
   if (row.countryId === "vietnam") {
     return row.eraId === "modern"
@@ -35,6 +41,12 @@ const recordingFor = (row: (typeof catalog)[number]) => {
     return {
       title: "Cổ phong Trung Hoa · 4 bài ngẫu nhiên",
       playlist: chinaMonarchyPlaylist,
+    };
+  }
+  if (row.countryId === "england") {
+    return {
+      title: "Âm vang Wessex",
+      playlist: englandPlaylist,
     };
   }
   return {};

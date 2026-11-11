@@ -418,5 +418,54 @@
     "article": "https://en.wikipedia.org/wiki/Sweyn_Forkbeard",
     "author": "Ole Ryhl Olsson",
     "license": "Public domain"
+  },
+  "Ecgberht, King of Wessex": {
+    "src": "/images/europe/ecgberht.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Egbert_-_MS_Royal_14_B_V.jpg",
+    "article": "https://en.wikipedia.org/wiki/Ecgberht,_King_of_Wessex",
+    "author": "Khuyết danh · Gia phả hoàng gia thời trung cổ",
+    "license": "Public domain"
+  },
+  "Æthelwulf, King of Wessex": {
+    "src": "/images/europe/aethelwulf.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:%C3%86thelwulf_-_MS_Royal_14_B_VI.jpg",
+    "article": "https://en.wikipedia.org/wiki/%C3%86thelwulf,_King_of_Wessex",
+    "author": "Khuyết danh · Gia phả hoàng gia thời trung cổ",
+    "license": "Public domain"
+  },
+  "Æthelbald, King of Wessex": {
+    "src": "/images/europe/aethelbald.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:%C3%86thelbald_-_MS_Royal_14_B_VI.jpg",
+    "article": "https://en.wikipedia.org/wiki/%C3%86thelbald,_King_of_Wessex",
+    "author": "Khuyết danh · Gia phả hoàng gia thời trung cổ",
+    "license": "Public domain"
+  },
+  "Æthelberht, King of Wessex": {
+    "src": "/images/europe/aethelberht.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:%C3%86thelberht_-_MS_Royal_14_B_VI.jpg",
+    "article": "https://en.wikipedia.org/wiki/%C3%86thelberht,_King_of_Wessex",
+    "author": "Khuyết danh · Gia phả hoàng gia thời trung cổ",
+    "license": "Public domain"
+  },
+  "Æthelred I, King of Wessex": {
+    "src": "/images/europe/aethelred-i.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:%C3%86thelred_-_MS_Royal_14_B_VI.jpg",
+    "article": "https://en.wikipedia.org/wiki/%C3%86thelred_I_of_Wessex",
+    "author": "Khuyết danh · Gia phả hoàng gia thời trung cổ",
+    "license": "Public domain"
+  },
+  "Æthelflæd": {
+    "src": "/images/europe/aethelflaed.png",
+    "file": "https://commons.wikimedia.org/wiki/File:%C3%86thelfl%C3%A6d_as_depicted_in_the_cartulary_of_Abingdon_Abbey.png",
+    "article": "https://en.wikipedia.org/wiki/%C3%86thelfl%C3%A6d",
+    "author": "Khuyết danh · Sổ văn tự Tu viện Abingdon",
+    "license": "Public domain"
+  },
+  "Edward the Elder": {
+    "src": "/images/europe/edward-the-elder.jpg",
+    "file": "https://commons.wikimedia.org/wiki/File:Edward_the_Elder_-_MS_Royal_14_B_VI.jpg",
+    "article": "https://en.wikipedia.org/wiki/Edward_the_Elder",
+    "author": "Khuyết danh · Gia phả hoàng gia thời trung cổ",
+    "license": "Public domain"
   }
 }

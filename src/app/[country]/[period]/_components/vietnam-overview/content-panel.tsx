@@ -31,8 +31,8 @@ import {
   TooltipTrigger,
 } from "~/components/ui/tooltip";
 import { characterHref, getCharacter } from "~/data/characters";
-import { chinaMapIdFor, chinaSourcesFor } from "~/data/china-overview";
-import { chinaStateMaps } from "~/data/china-state-maps";
+import { chinaSourcesFor } from "~/data/china-overview";
+import { englandGeography, englandMeasuresFor } from "~/data/england-geography";
 import { europeOverviews, isEuropeCountry } from "~/data/europe-overview";
 import { historicalEvents } from "~/data/events";
 import type { HistoricalEventModel } from "~/data/events";
@@ -41,6 +41,7 @@ import { wikiUrl } from "~/data/vietnam-overview";
 import type { OverviewPersonModel, OverviewSceneModel } from "~/data/vietnam-overview";
 import { geographyArticles, overviewDetails } from "~/data/vietnam-overview-details";
 import type { OverviewArticleModel } from "~/data/vietnam-overview-details";
+import type { HistoricalStateMapModel } from "~/types/historical-state-map";
 
 import type { OverviewTab } from "./hook";
 import type { OverviewCountryId } from "./index";
@@ -59,6 +60,7 @@ type ReadingBlockModel =
 type ContentPanelProps = {
   country?: OverviewCountryId;
   scene: OverviewSceneModel;
+  snapshot?: HistoricalStateMapModel;
   chapter: number;
   tab: OverviewTab;
   open: boolean;
@@ -99,6 +101,7 @@ const PersonCard = ({ person }: { person: OverviewPersonModel; }) => {
 export const ContentPanel = ({
   country = "vietnam",
   scene,
+  snapshot,
   chapter,
   tab,
   open,
@@ -109,29 +112,46 @@ export const ContentPanel = ({
   const [active, setActive] = useState(0);
   const body = useRef<HTMLDivElement>(null);
   const atlasCountry = country !== "vietnam";
+  const englandDetail = country === "england" ? englandGeography[scene.id] : undefined;
+  const measures = englandDetail ? englandMeasuresFor(scene.id) : [];
   const sources = isEuropeCountry(country)
     ? europeOverviews[country].sourcesFor(scene.id)
     : country === "china"
       ? chinaSourcesFor(scene.id)
       : scene.sources.map((title) => ({ title, url: wikiUrl(title) }));
-  const snapshot = country === "china"
-    ? chinaStateMaps[chinaMapIdFor(scene.id) ?? ""]
-    : undefined;
   const culture = [
     { ...scene.culture, sources },
     ...(overviewDetails[scene.id]?.culture ?? []),
   ];
   const geography = atlasCountry ? [
-    { title: "Không gian lịch sử", text: scene.extent, sources },
+    ...(englandDetail ? [
+      { title: "Phạm vi lãnh thổ và ranh giới", text: englandDetail.extent, sources: englandDetail.sources },
+      { title: "Các nước và vùng láng giềng", text: englandDetail.neighbours, sources: englandDetail.sources },
+      ...measures.map(({ label, measure, missing }) => ({
+        title: label,
+        text: measure ? `${measure.value} · ${measure.scope}. ${measure.note}` : `Không xác định. ${missing}`,
+        sources: measure ? [measure.source] : englandDetail.sources,
+      })),
+      ...(englandDetail.flag ? [{
+        title: "Cờ ở mốc đang xem",
+        text: englandDetail.flag.label,
+        sources: [englandDetail.flag.source],
+      }] : []),
+    ] : []),
+    ...(!snapshot || country === "china"
+      ? [{ title: "Không gian lịch sử", text: scene.extent, sources }]
+      : []),
     ...(snapshot ? [{
       title: snapshot.title,
       text: snapshot.note,
       sources: snapshot.sources,
-    }, ...snapshot.states.map((state) => ({
+    }] : []),
+    ...(scene.geographySections ?? []).map((section) => ({ ...section, sources })),
+    ...(snapshot?.states.map((state) => ({
       title: state.name,
-      text: `${state.summary} ${state.kind === "context" ? "Điểm tham chiếu" : "Kinh đô / trung tâm"}: ${state.center.name}. Tọa độ và đường ranh trên lược đồ chỉ gần đúng.`,
+      text: `${state.summary} ${state.kind === "context" ? "Điểm tham chiếu" : "Kinh đô / trung tâm"}: ${state.center.name}.`,
       sources: snapshot.sources,
-    }))] : []),
+    })) ?? []),
     {
       title: "Đô thành và đường kết nối",
       text: scene.places.map((place) => `${place.name}: ${place.detail}`).join("\n\n"),
@@ -164,7 +184,9 @@ export const ContentPanel = ({
     const portrait = portraitFor(person.wiki);
     return portrait ? `${person.name}: ${portraitCaption(portrait)}.` : "";
   }).filter(Boolean).join("\n\n");
-  const notes = isEuropeCountry(country)
+  const notes = englandDetail
+    ? "Ranh giới lịch sử được giản lược theo mốc của từng lược đồ. Số liệu ghi theo năm, địa bàn và phương pháp của nguồn. Số liệu England có phạm vi riêng với các vương quốc liên hiệp, đất phụ thuộc và thuộc địa."
+    : isEuropeCountry(country) && !snapshot
     ? "Bản đồ chỉ đánh dấu các trung tâm và chiến trường tiêu biểu, tọa độ ước lượng; chưa vẽ ranh giới lịch sử. Nền địa lý hiện đại chỉ giúp định vị; chưa có số liệu diện tích và dân số được kiểm chứng cho từng cảnh."
     : atlasCountry
       ? "Ranh giới lịch sử và vị trí đô thành được thể hiện gần đúng theo mốc trên bản đồ. Nền địa lý hiện đại chỉ giúp định vị; chưa có số liệu diện tích và dân số được kiểm chứng cho từng cảnh."
@@ -172,6 +194,10 @@ export const ContentPanel = ({
   const story: ReadingBlockModel[] = [
     { kind: "article", article: { title: "Bối cảnh lịch sử", text: scene.summary, sources } },
     ...(scene.conflict ? [{ kind: "article" as const, article: { ...scene.conflict, sources } }] : []),
+    ...(scene.storySections ?? []).map((section) => ({
+      kind: "article" as const,
+      article: { ...section, sources },
+    })),
     ...events.map((event) => ({ kind: "event" as const, event })),
   ];
   const peopleBlocks: ReadingBlockModel[] = scene.people.length
@@ -233,10 +259,16 @@ export const ContentPanel = ({
           <p className="vo-scene-years">{scene.years}</p>
           <h2 className="vo-content-title">{scene.title}</h2>
           <details className="vo-facts-disclosure">
-            <summary>Quốc hiệu & kinh đô</summary>
+            <summary>{englandDetail ? "Quốc hiệu, kinh đô & số liệu" : "Quốc hiệu & kinh đô"}</summary>
             <dl className="vo-facts">
-              <div><dt>Quốc hiệu / chính quyền</dt><dd>{scene.nation}</dd></div>
+              <div><dt>Quốc hiệu / chính quyền</dt><dd>{englandDetail?.realm ?? scene.nation}</dd></div>
               <div><dt>Kinh đô / trung tâm</dt><dd>{scene.capital}</dd></div>
+              {measures.map(({ label, measure }) => (
+                <div key={label} className="vo-scene-stat">
+                  <dt>{label}</dt>
+                  <dd>{measure ? `${measure.value} · ${measure.scope}` : "Không xác định"}</dd>
+                </div>
+              ))}
             </dl>
           </details>
         </header>

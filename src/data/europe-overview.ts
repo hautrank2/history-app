@@ -29,6 +29,8 @@ type EraRowModel = {
   places: EraPlaceModel[];
   summary: string;
   culture: string;
+  storySections?: OverviewSceneModel["storySections"];
+  geographySections?: OverviewSceneModel["geographySections"];
   peopleIds: string[];
   sourceArticle: string;
   extraSources?: OverviewSourceModel[];
@@ -75,6 +77,8 @@ const toScene = (row: EraRowModel): OverviewSceneModel => ({
   extent: `Trung tâm tham chiếu: ${row.capital}. Lãnh thổ và trung tâm quyền lực thay đổi trong giai đoạn ${row.years}; nền bản đồ hiện đại chỉ giúp định vị.`,
   summary: row.summary,
   culture: { title: "Văn hóa và cách đọc tư liệu", text: row.culture },
+  storySections: row.storySections,
+  geographySections: row.geographySections,
   people: row.peopleIds.map((id) => {
     const person = getCharacter(id);
     return { id: person.id, name: person.name, role: person.role, wiki: person.wiki };

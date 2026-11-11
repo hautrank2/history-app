@@ -33,6 +33,8 @@ export type OverviewSceneModel = {
   summary: string;
   culture: { title: string; text: string };
   conflict?: { title: string; text: string };
+  storySections?: { title: string; text: string }[];
+  geographySections?: { title: string; text: string }[];
   people: OverviewPersonModel[];
   places: OverviewPlaceModel[];
   sources: string[];

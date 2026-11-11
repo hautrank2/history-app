@@ -142,29 +142,51 @@ assert.equal(engine.api.getCurrentSoundtrack().id, "china-monarchy-ethereal");
 await new Promise((resolve) => setImmediate(resolve));
 assert.equal(engine.timers.size, 0, "Monarchy China uses the selected playlist");
 const chinaSongs = soundtrackForPath("/china").playlist;
+const englandSongs = soundtrackForPath("/england").playlist;
 assert.equal(chinaSongs.length, 4);
-for (const song of chinaSongs) {
+assert.equal(new Set(englandSongs).size, 4);
+for (const song of [...chinaSongs, ...englandSongs]) {
   assert.ok(existsSync(`public${song}`), song);
   const head = readFileSync(`public${song}`).subarray(0, 3);
   assert.ok(head.toString() === "ID3" || (head[0] === 0xff && (head[1] & 0xe0) === 0xe0), `Not an MP3: ${song}`);
 }
-const chinaSong = () => engine.sources.filter((source) => source.buffer && source.onended && !source.loop && !source.stopped);
-assert.equal(chinaSong().length, 1, "Playlist songs play once, then chain");
+const playingPlaylistSongs = () => engine.sources.filter(
+  (source) => source.buffer && source.onended && !source.loop && !source.stopped,
+);
+assert.equal(playingPlaylistSongs().length, 1, "Playlist songs play once, then chain");
 assert.ok(chinaSongs.includes(engine.fetched.at(-1)));
 const chinaSourceCount = engine.sources.length;
 engine.api.setGameMusicPath("/china", "#ming");
 await new Promise((resolve) => setImmediate(resolve));
 assert.equal(engine.sources.length, chinaSourceCount, "Changing Chinese monarchy scenes must keep the song playing");
 const firstSong = engine.fetched.at(-1);
-const ending = chinaSong()[0];
+const ending = playingPlaylistSongs()[0];
 ending.stopped = true;
 ending.onended();
 await new Promise((resolve) => setImmediate(resolve));
-assert.equal(chinaSong().length, 1, "A finished song starts the next one");
+assert.equal(playingPlaylistSongs().length, 1, "A finished song starts the next one");
 assert.notEqual(engine.fetched.at(-1), firstSong, "The next song differs from the one that ended");
 engine.api.setGameMusicPath("/china", "#reform");
 assert.equal(engine.api.getCurrentSoundtrack().playlist, undefined, "Modern China keeps its own score");
 assert.equal(engine.timers.size, 1);
+engine.api.setGameMusicPath("/england", "#alfred-wessex");
+await new Promise((resolve) => setImmediate(resolve));
+assert.equal(engine.timers.size, 0, "England uses recordings");
+assert.equal(playingPlaylistSongs().length, 1);
+const englandSong = playingPlaylistSongs()[0];
+const englandSrc = engine.fetched.at(-1);
+assert.ok(englandSongs.includes(englandSrc));
+engine.api.setGameMusicPath("/england", "#modern-britain");
+await engine.api.unlockGameAudio();
+assert.equal(engine.api.getCurrentSoundtrack().playlist, englandSongs);
+assert.deepEqual(playingPlaylistSongs(), [englandSong], "Timeline changes and clicks preserve the current song");
+englandSong.stopped = true;
+englandSong.onended();
+await new Promise((resolve) => setImmediate(resolve));
+assert.equal(playingPlaylistSongs().length, 1);
+assert.ok(englandSongs.includes(engine.fetched.at(-1)));
+assert.notEqual(engine.fetched.at(-1), englandSrc, "The England playlist advances to a different song");
+
 for (const scene of ["tran-bach-dang", "van-lang", "doi-moi", "chia-cat"]) {
   engine.api.setGameMusicPath("/vietnam", `#${scene}`);
   await new Promise((resolve) => setImmediate(resolve));

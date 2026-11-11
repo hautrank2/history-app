@@ -19,11 +19,11 @@
   },
   {
     "id": "anglo-saxon",
-    "era": "Anglo-Saxon",
+    "era": "Anglo-Saxon sơ kỳ",
     "name": "Các vương quốc Anglo-Saxon",
-    "years": "410 – 871",
+    "years": "410 – 802",
     "start": 410,
-    "end": 871,
+    "end": 802,
     "capital": "Nhiều trung tâm vương quốc",
     "places": [
       { "name": "Canterbury · Kent", "at": [1.08, 51.28], "kind": "capital", "note": "Augustine đến Kent năm 597 và lập tòa giám mục tại Canterbury." },
@@ -37,44 +37,351 @@
     "extraSources": [{ "title": "Britannica · Viking", "url": "https://www.britannica.com/topic/Viking-people" }]
   },
   {
-    "id": "alfred-wessex",
-    "era": "Anglo-Saxon",
-    "name": "Wessex và Danelaw",
-    "years": "871 – 927",
+    "id": "ecgberht-wessex",
+    "era": "Wessex trỗi dậy",
+    "name": "Ecgberht và nhà Wessex",
+    "years": "802 – 839",
+    "start": 802,
+    "end": 839,
+    "capital": "Winchester · một trung tâm của Wessex",
+    "places": [
+      { "name": "Ellendun · gần Wroughton", "at": [-1.79, 51.52], "kind": "battle", "note": "Vị trí ước lượng của trận năm 825. Ecgberht thắng vua Beornwulf của Mercia, mở đường cho Wessex kiểm soát vùng đông nam." },
+      { "name": "Dore · gần Sheffield", "at": [-1.54, 53.32], "kind": "heritage", "note": "Năm 829, quân Ecgberht gặp người Northumbria tại đây. Biên niên chép họ chấp nhận uy thế của ông." }
+    ],
+    "summary": "Ecgberht (Egbert) lên ngôi Wessex năm 802. Thắng Mercia tại Ellendun năm 825, ông phái con là Æthelwulf chiếm Kent. Kent, Essex, Sussex và Surrey chuyển sang quyền Wessex. Năm 829 ông chiếm Mercia và được Northumbria thừa nhận uy thế tại Dore. Wiglaf giành lại Mercia năm 830, còn vùng đông nam vẫn thuộc Wessex.",
+    "storySections": [
+      {
+        "title": "Ecgberht, Æthelwulf và nhánh kế vị",
+        "text": "Ecgberht trị vì từ năm 802 đến 839. Con ông là Æthelwulf đã cai trị vùng đông nam dưới quyền cha trước khi kế vị. Alfred là con út của Æthelwulf, cháu nội Ecgberht. Ba anh của Alfred lần lượt giữ ngôi Wessex trước ông."
+      },
+      {
+        "title": "Từ Ellendun đến cuộc chiến ở Cornwall",
+        "text": "Quyền bá chủ ngắn hạn ở Mercia chấm dứt khi Wiglaf về ngôi năm 830. Ecgberht vẫn giữ các vùng đông nam. Năm 838, ông đánh bại liên quân Cornwall và Viking ở Hingston Down, gần biên tây Wessex."
+      }
+    ],
+    "geographySections": [
+      {
+        "title": "Thất quốc và vùng phụ thuộc",
+        "text": "Wessex ở nam và tây nam, Mercia ở Midlands, Northumbria ở bắc sông Humber, East Anglia ở miền đông. Essex ở bắc hạ lưu Thames, Kent ở cực đông nam, Sussex dọc bờ biển phía nam. Surrey ở giữa Thames và rừng Weald. Thất quốc là tên gọi quy ước. Vùng phụ thuộc và quyền chi phối của từng vua thay đổi qua các đời."
+      },
+      {
+        "title": "North Wales, Pictland và Strathclyde",
+        "text": "Ở phía tây Mercia là các vương quốc Wales. Gwynedd nằm ở tây bắc, Powys ở phía đông và miền giữa, Dyfed ở tây nam, Gwent và Glywysing ở phía nam. Biên niên ghi Ecgberht đánh người ‘North Welsh’ khoảng năm 830, sau khi Wiglaf trở lại Mercia. Trên phần đất Scotland ngày nay, Pictland nằm ở phía bắc Forth, người Gael của Dál Riata ở vùng Argyll phía tây, Strathclyde quanh sông Clyde, còn Lothian ở đông nam thuộc địa bàn Northumbria."
+      }
+    ],
+    "culture": "Biên niên sử Anglo-Saxon kể sự bành trướng của Ecgberht từ góc nhìn Wessex. Tiền xu đúc ở Kent và Mercia cung cấp thêm bằng chứng để xác định quyền cai trị đã đổi tay ra sao.",
+    "peopleIds": ["ecgberht", "aethelwulf"],
+    "sourceArticle": "Ecgberht, King of Wessex",
+    "extraSources": [
+      { "title": "Anglo-Saxon Chronicle · Ellendun, Dore và chiến dịch Wales", "url": "https://www.gutenberg.org/cache/epub/657/pg657.html" },
+      { "title": "Asser · Cuộc đời vua Alfred", "url": "https://www.gutenberg.org/files/63384/63384-h/63384-h.htm" },
+      { "title": "The Royal Family · Các vua Anglo-Saxon", "url": "https://www.royal.uk/saxon-kings" }
+    ]
+  },
+  {
+    "id": "aethelwulf-wessex",
+    "era": "Wessex trỗi dậy",
+    "name": "Æthelwulf và hai ngôi vua ở Wessex, Kent",
+    "years": "839 – 865",
+    "start": 839,
+    "end": 865,
+    "capital": "Winchester · Wessex / Canterbury · Kent",
+    "places": [
+      { "name": "Sandwich", "at": [1.34, 51.27], "kind": "battle", "note": "Năm 851, Æthelstan xứ Kent và Ealdorman Ealhhere đánh bại một hạm đội Viking ngoài khơi." },
+      { "name": "Canterbury", "at": [1.08, 51.28], "kind": "capital", "note": "Một trung tâm quan trọng của Kent và các vùng phụ thuộc phía đông nam." }
+    ],
+    "summary": "Æthelwulf kế vị cha là Ecgberht năm 839. Sau chuyến hành hương tới Roma, ông chia quyền cai trị với con trai Æthelbald. Khi Æthelwulf mất năm 858, Æthelbald giữ Wessex, Æthelberht giữ miền đông nam. Æthelberht nắm cả hai từ năm 860. Người kế vị ông khoảng năm 865–866 là Æthelred I, anh của Alfred.",
+    "storySections": [
+      { "title": "Wessex và miền đông nam chia rồi hợp", "text": "Æthelstan xứ Kent cai trị miền đông nam dưới quyền Æthelwulf và thắng trận ở Sandwich năm 851. Khi Æthelwulf đi Roma năm 855, Æthelbald nắm Wessex. Năm 858, hai phần do Æthelbald và Æthelberht cai trị. Năm 860, Æthelberht kế vị anh và nắm cả hai phần." }
+    ],
+    "culture": "Asser kể về chuyến đi Roma và việc chia quyền trong nhà Wessex. Các bản chép biên niên có chênh lệch một năm ở một số mốc kế vị. Những chênh lệch đó được thể hiện bằng năm gần đúng.",
+    "peopleIds": ["aethelwulf", "aethelbald", "aethelberht"],
+    "sourceArticle": "Æthelwulf, King of Wessex"
+  },
+  {
+    "id": "great-viking-army",
+    "era": "Viking & Alfred",
+    "name": "Đại quân Viking chiếm York",
+    "years": "865 – 871",
+    "start": 865,
+    "end": 871,
+    "capital": "York · căn cứ Viking / Winchester · Wessex",
+    "places": [
+      { "name": "York · Jórvík", "at": [-1.08, 53.96], "kind": "battle", "note": "Quân Viking chiếm York năm 866. Năm sau, hai vua tranh ngôi của Northumbria là Ælla và Osberht cùng tử trận khi tìm cách lấy lại thành." },
+      { "name": "Bamburgh · Bebbanburg", "at": [-1.71, 55.61], "kind": "heritage", "note": "Thành lũy của người Anglo-Saxon ở phía bắc Northumbria. Đây là địa danh Bebbanburg trong phim." },
+      { "name": "Thetford", "at": [0.75, 52.41], "kind": "camp", "note": "Nơi Đại quân Viking trú đông trước khi đánh bại vua Edmund của East Anglia khoảng 869–870." },
+      { "name": "Reading", "at": [-0.97, 51.45], "kind": "camp", "note": "Cứ điểm Viking khi tiến vào Wessex vào cuối năm 870, gần hợp lưu sông Thames và Kennet." },
+      { "name": "Ashdown · Berkshire Downs", "at": [-1.55, 51.54], "kind": "battle", "note": "Æthelred I và Alfred đánh bại quân Viking đầu năm 871. Vị trí chính xác của chiến trường còn tranh luận." }
+    ],
+    "summary": "Đại quân Viking đến East Anglia năm 865 rồi chiếm York năm 866. Sau khi thắng các vua Northumbria năm 867, họ tiến vào Mercia và trở lại đánh bại Edmund của East Anglia khoảng 869–870. Cuối năm 870, họ lập căn cứ ở Reading, mở đầu chiến dịch vào Wessex của vua Æthelred I và em trai Alfred.",
+    "storySections": [
+      { "title": "Từ York đến Reading và Ashdown", "text": "Năm 868, Æthelred I và Alfred đến hỗ trợ Mercia khi quân Viking đóng tại Nottingham. Sau khi hạ East Anglia, Đại quân chuyển tới Reading, nơi sông Kennet gặp Thames. Wessex thua ở Reading rồi thắng ở Ashdown đầu năm 871. Æthelred mất cùng năm và Alfred kế vị." },
+      { "title": "Ivar và vua Edmund", "text": "Abbo xứ Fleury viết về cái chết của Edmund khoảng một thế kỷ sau sự kiện. Tác phẩm gắn vụ sát hại với Hinguar, tên thường được đồng nhất với Ivar. Các chi tiết về cái chết của Edmund đến từ truyền thống kể về một vị thánh." },
+      { "title": "The Last Kingdom · Bebbanburg và Uhtred", "text": "Bebbanburg trong phim là Bamburgh ngày nay. Uhtred của Bernard Cornwell là nhân vật hư cấu lấy cảm hứng từ Uhtred the Bold. Vị bá tước Northumbria có thật sống vào đầu thế kỷ XI, hơn một thế kỷ sau khi quân Viking chiếm York năm 866." }
+    ],
+    "culture": "Các biên niên gọi đoàn quân là ‘đại quân’. Tư liệu khảo cổ từ những trại trú đông giúp xác định các điểm dừng mà văn bản chỉ nhắc vắn tắt.",
+    "peopleIds": ["aethelred-i", "alfred-the-great"],
+    "sourceArticle": "Great Heathen Army",
+    "extraSources": [
+      { "title": "Netflix · The Last Kingdom", "url": "https://media.netflix.com/en/only-on-netflix/80074249" },
+      { "title": "Cambridge University Press · Ivar và truyền thống về vua Edmund", "url": "https://doi.org/10.1017/CBO9780511560187.008" },
+      { "title": "Bamburgh Castle · Uhtred the Bold và nguồn cảm hứng của phim", "url": "https://www.bamburghcastle.com/events/follow-in-the-footsteps-of-uhtred-at-bebbanburg-11/" }
+    ]
+  },
+  {
+    "id": "alfred-edington",
+    "era": "Viking & Alfred",
+    "name": "Alfred ở Athelney và trận Edington",
+    "years": "871 – 878",
     "start": 871,
-    "end": 927,
+    "end": 878,
+    "capital": "Winchester · Wessex / Athelney · căn cứ năm 878",
+    "places": [
+      { "name": "Repton", "at": [-1.55, 52.84], "kind": "camp", "note": "Đại quân Viking trú đông năm 873–874 trước khi vua Burgred xứ Mercia bỏ ngôi." },
+      { "name": "Chippenham", "at": [-2.12, 51.46], "kind": "battle", "note": "Guthrum đột kích nơi ở của Alfred vào đầu năm 878." },
+      { "name": "Athelney", "at": [-2.93, 51.06], "kind": "camp", "note": "Alfred lập căn cứ ở vùng đầm lầy Somerset và tập hợp lực lượng phản công." },
+      { "name": "Edington", "at": [-2.11, 51.28], "kind": "battle", "note": "Địa điểm thường được gắn với trận Alfred đánh bại Guthrum vào tháng 5 năm 878." },
+      { "name": "Aller", "at": [-2.86, 51.06], "kind": "heritage", "note": "Guthrum làm lễ rửa tội tại Aller, với Alfred là cha đỡ đầu theo Asser." }
+    ],
+    "summary": "Alfred lên ngôi Wessex năm 871. Ở phía bắc, Đại quân buộc vua Burgred của Mercia rời ngôi năm 874 rồi chia đất Mercia năm 877. Đầu năm 878, Guthrum bất ngờ chiếm Chippenham. Alfred rút về vùng đầm lầy Somerset, tập hợp quân ở Athelney rồi đánh bại Guthrum tại Edington.",
+    "storySections": [
+      { "title": "Chippenham, Athelney rồi Edington", "text": "Theo Asser, Alfred tập hợp lực lượng từ Somerset, Wiltshire và Hampshire, rồi tiến đánh Guthrum tại Ethandun, thường được xác định là Edington ở Wiltshire. Quân Viking rút về cứ điểm và chấp nhận thương lượng sau khi bị vây." },
+      { "title": "Guthrum rửa tội sau trận đánh", "text": "Guthrum chịu phép rửa tại Aller và cùng Alfred đến Wedmore. Hiệp ước xác định đoạn biên Alfred–Guthrum là văn kiện về sau, được trình bày ở cảnh Danelaw và London." }
+    ],
+    "culture": "Asser viết từ triều đình Alfred. Tiền xu tìm thấy ở Watlington mang tên Alfred và Ceolwulf II, cho thấy vị thế của vua Mercia phức tạp hơn hình ảnh trong biên niên Wessex.",
+    "peopleIds": ["alfred-the-great"],
+    "sourceArticle": "Battle of Edington",
+    "extraSources": [
+      { "title": "The Royal Family · Alfred Đại đế", "url": "https://www.royal.uk/alfred-great-r-871-899" },
+      { "title": "British Museum · Kho tiền Watlington và Ceolwulf II", "url": "https://www.britishmuseum.org/sites/default/files/2019-10/British_Museum_Annual_Review%202015_16.pdf" }
+    ]
+  },
+  {
+    "id": "alfred-wessex",
+    "era": "Viking & Alfred",
+    "name": "Alfred, Danelaw và London",
+    "years": "878 – 899",
+    "start": 878,
+    "end": 899,
     "capital": "Winchester · trung tâm của Wessex",
     "places": [
       { "name": "Winchester", "at": [-1.31, 51.06], "kind": "capital", "note": "Trung tâm hoàng gia của Wessex dưới thời Alfred và các vua kế tiếp." },
-      { "name": "Edington", "at": [-2.11, 51.28], "kind": "battle", "note": "Năm 878, Alfred đánh bại quân Viking của Guthrum; vị trí chiến trường là ước lượng." },
+      { "name": "London", "at": [-0.09, 51.51], "kind": "heritage", "note": "Alfred khôi phục quyền kiểm soát London năm 886 và giao thành cho Æthelred xứ Mercia." },
       { "name": "Jórvík · York", "at": [-1.08, 53.96], "kind": "capital", "note": "Trung tâm của vùng do người Scandinavia kiểm soát ở phía bắc." }
     ],
-    "summary": "\"Đại quân\" Viking chinh phục phần lớn các vương quốc Anglo-Saxon trong thập niên 860–870. Alfred của Wessex thắng ở Edington năm 878 và thỏa thuận với Guthrum, chia đảo thành vùng của Wessex và vùng chịu luật lệ người Đan Mạch, về sau gọi là Danelaw. Các con cháu Alfred dần mở rộng quyền kiểm soát lên phía bắc.",
+    "summary": "Sau Edington năm 878, Alfred củng cố các thị trấn phòng thủ và khôi phục quyền kiểm soát London năm 886. Một hiệp ước về sau phân định địa bàn giữa Alfred và Guthrum ở miền đông. Tây Mercia do Æthelred cai quản dưới quyền bá chủ của Alfred, còn East Anglia, đông Mercia và York có các thế lực Viking khác nhau.",
+    "storySections": [
+      {
+        "title": "Các con của Alfred và Ealhswith",
+        "text": "Asser nêu tên năm người con: Æthelflæd, Edward, Æthelgifu, Ælfthryth và Æthelweard. Æthelflæd cai trị Mercia sau khi chồng mất năm 911. Edward kế vị cha năm 899. Æthelgifu đứng đầu tu viện Shaftesbury, Ælfthryth kết hôn với Bá tước Baldwin II xứ Flanders, còn Æthelweard được học chữ và sống tới đầu thế kỷ X."
+      },
+      {
+        "title": "Edington, các thành phòng thủ và London",
+        "text": "Sau chiến thắng ở Edington năm 878, Alfred tổ chức mạng lưới thành phòng thủ và củng cố việc huy động quân. Năm 886, ông khôi phục quyền kiểm soát London rồi giao thành cho Æthelred xứ Mercia. Khi Alfred mất năm 899, Edward kế vị ông."
+      }
+    ],
+    "geographySections": [
+      {
+        "title": "Biên giới Alfred–Guthrum và Danelaw",
+        "text": "Hiệp ước vào cuối thế kỷ IX xác định đoạn biên giữa hai vua: Thames → sông Lea và đầu nguồn → Bedford → sông Great Ouse → đường Watling Street. Danelaw còn gồm các vùng Viking ở đông Mercia và xa hơn về phía bắc như York. Vương quốc York và các lãnh chúa Bắc Northumbria có quyền lực riêng."
+      },
+      {
+        "title": "Các vua Wales thời Alfred",
+        "text": "Gwynedd ở phía bắc, còn Powys giáp vùng biên Mercia. Asser kể rằng một số vua Wales, trong đó có Hyfaidd xứ Dyfed và Anarawd xứ Gwynedd, tìm sự bảo hộ của Alfred. Các vua Wales vẫn cai trị lãnh địa của mình."
+      }
+    ],
     "culture": "Alfred cho xây hệ thống thị trấn phòng thủ (burh) và khuyến khích dịch sách Latin sang tiếng Anh cổ. Ở Danelaw, nhiều địa danh tận cùng bằng -by, -thorpe vẫn còn dấu vết ngôn ngữ Bắc Âu.",
-    "peopleIds": ["alfred-the-great"],
+    "peopleIds": ["alfred-the-great", "aethelflaed", "edward-the-elder"],
     "sourceArticle": "Danelaw",
-    "extraSources": [{ "title": "Wikipedia · Alfred the Great", "url": "https://en.wikipedia.org/wiki/Alfred_the_Great" }]
+    "extraSources": [
+      { "title": "Asser · Cuộc đời vua Alfred", "url": "https://www.gutenberg.org/files/63384/63384-h/63384-h.htm" },
+      { "title": "The Royal Family · Alfred Đại đế", "url": "https://www.royal.uk/alfred-great-r-871-899" },
+      { "title": "Oxford Dictionary of National Biography · Alfred và các con", "url": "https://academic.oup.com/oxford-dictionary-of-national-biography/reference/63486/reference-article-abstract/579414410" },
+      { "title": "The Royal Family · Edward the Elder", "url": "https://www.royal.uk/edward-elder-r-899-924" },
+      { "title": "Tamworth Castle · Æthelflæd", "url": "https://www.tamworthcastle.co.uk/aethelflaed" },
+      { "title": "The English Historical Review · Phạm vi Danelaw", "url": "https://doi.org/10.1093/ehr/ceaf048" }
+    ]
+  },
+  {
+    "id": "edward-succession",
+    "era": "Hậu duệ Alfred",
+    "name": "Edward và cuộc tranh ngôi của Æthelwold",
+    "years": "899 – 911",
+    "start": 899,
+    "end": 911,
+    "capital": "Winchester · Wessex",
+    "places": [
+      { "name": "Wimborne", "at": [-1.98, 50.8], "kind": "heritage", "note": "Æthelwold chiếm dinh hoàng gia tại đây sau khi Alfred mất, rồi đi tìm đồng minh ở Northumbria." },
+      { "name": "Tettenhall · vùng Wolverhampton", "at": [-2.17, 52.6], "kind": "battle", "note": "Quân Wessex và Mercia đánh bại lực lượng Viking từ Northumbria năm 910. Vị trí chiến trường chỉ được định vị gần đúng." }
+    ],
+    "summary": "Edward kế vị Alfred năm 899. Æthelwold, con của vua Æthelred I và là anh em họ của Edward, tranh ngôi với sự hỗ trợ của các lực lượng Viking. Æthelwold tử trận tại Holme năm 902. Năm 910, lực lượng Wessex và Mercia chặn cuộc đột kích từ Northumbria tại Tettenhall.",
+    "storySections": [
+      { "title": "Hai nhánh nhà Wessex", "text": "Alfred đã kế vị anh trai Æthelred I. Khi Alfred mất, Æthelwold có thể dựa vào dòng dõi cha để đòi ngai. Ông rời Wessex sau khi Edward huy động quân và tiếp tục cuộc tranh ngôi với sự giúp đỡ ở Northumbria và East Anglia." }
+    ],
+    "culture": "Biên niên Wessex kể cuộc tranh ngôi từ phía Edward. Tiền đúc mang tên Æthelwold cho thấy quyền của ông được thừa nhận trong một số địa bàn Scandinavia.",
+    "peopleIds": ["edward-the-elder", "aethelflaed"],
+    "sourceArticle": "Æthelwold's Revolt",
+    "extraSources": [{ "title": "The Royal Family · Edward the Elder", "url": "https://www.royal.uk/edward-elder-r-899-924" }]
+  },
+  {
+    "id": "aethelflaed-mercia",
+    "era": "Hậu duệ Alfred",
+    "name": "Æthelflæd cai trị Mercia",
+    "years": "911 – 918",
+    "start": 911,
+    "end": 918,
+    "capital": "Tamworth · trung tâm của Æthelflæd",
+    "places": [
+      { "name": "Tamworth", "at": [-1.69, 52.63], "kind": "capital", "note": "Æthelflæd củng cố Tamworth thành một burh năm 913 và mất tại đây năm 918." },
+      { "name": "Stafford", "at": [-2.12, 52.81], "kind": "heritage", "note": "Một trong các thành được Æthelflæd cho xây hoặc củng cố trong năm 913." },
+      { "name": "Derby", "at": [-1.48, 52.92], "kind": "battle", "note": "Quân Æthelflæd chiếm Derby từ tay các lực lượng Viking năm 917." },
+      { "name": "Tempsford", "at": [-0.29, 52.16], "kind": "battle", "note": "Quân Edward đánh cứ điểm Viking tại hợp lưu sông Ivel và Great Ouse năm 917, mở đường kiểm soát East Anglia." },
+      { "name": "Leicester", "at": [-1.13, 52.64], "kind": "heritage", "note": "Leicester chấp nhận quyền cai trị của Æthelflæd năm 918." }
+    ],
+    "summary": "Khi chồng là Æthelred mất năm 911, Æthelflæd tiếp tục cai trị Mercia với tước hiệu Lady of the Mercians. Bà củng cố các thành phòng thủ, đánh chiếm Derby năm 917 và thu phục Leicester năm 918. Edward đồng thời tiến vào vùng do các nhóm Viking nắm ở phía đông.",
+    "storySections": [
+      { "title": "Phòng thủ Mercia, rồi tiến vào Danelaw", "text": "Æthelflæd lập và củng cố các burh như Tamworth và Stafford. Các thành giúp giữ đường qua sông và đưa quân tiến về đông Mercia. Bà mất ở Tamworth tháng 6 năm 918. Con gái Ælfwynn kế tục trong thời gian ngắn." },
+      { "title": "The Last Kingdom · Æthelflæd và Edward", "text": "Hai chị em trong phim dựa trên những người cai trị có thật. Biên niên Mercia ghi tên các thành và chiến dịch của Æthelflæd, cho thấy bà chỉ huy và cai trị bằng quyền của mình sau năm 911." }
+    ],
+    "culture": "Mercian Register, được lưu trong một số bản chép Anglo-Saxon Chronicle, kể các hoạt động của Æthelflæd chi tiết hơn phần biên niên viết từ góc nhìn Wessex.",
+    "peopleIds": ["aethelflaed", "edward-the-elder"],
+    "sourceArticle": "Æthelflæd",
+    "extraSources": [{ "title": "Netflix · The Last Kingdom", "url": "https://media.netflix.com/en/only-on-netflix/80074249" }]
+  },
+  {
+    "id": "edward-aethelflaed",
+    "era": "Hậu duệ Alfred",
+    "name": "Edward tiếp quản Mercia, Æthelstan kế vị",
+    "years": "918 – 927",
+    "start": 918,
+    "end": 927,
+    "capital": "Winchester / Tamworth · trung tâm của hai chị em",
+    "places": [
+      { "name": "Tamworth", "at": [-1.69, 52.63], "kind": "heritage", "note": "Edward tiếp quản Mercia sau khi Æthelflæd mất và Ælfwynn bị gạt khỏi quyền cai trị năm 918." },
+      { "name": "Nottingham", "at": [-1.15, 52.95], "kind": "heritage", "note": "Edward kiểm soát và củng cố Nottingham trong quá trình mở rộng quyền đến phía nam Humber." },
+      { "name": "Kingston upon Thames", "at": [-0.3, 51.41], "kind": "heritage", "note": "Nơi Æthelstan đăng quang năm 925, theo truyền thống và các nguồn về lễ đăng quang." }
+    ],
+    "summary": "Sau khi Æthelflæd mất năm 918, Edward tiếp quản Mercia từ con gái bà là Ælfwynn. Đến khoảng năm 920, Edward kiểm soát phần lớn miền nam Humber, gồm East Anglia đã quy thuận sau chiến dịch năm 917. Edward mất năm 924. Con trai ông là Æthelstan kế vị và đăng quang năm 925.",
+    "storySections": [
+      { "title": "Từ Ælfwynn đến Æthelstan", "text": "Ælfwynn kế tục mẹ trong vài tháng. Biên niên Mercia ghi Edward tước quyền và đưa bà về Wessex. Sau khi Edward mất, việc kế vị diễn ra qua một thời gian chuyển tiếp. Ælfweard, người con khác của Edward, mất chỉ ít lâu sau cha. Các nguồn ghi khác nhau về việc ông có thực sự trị vì hay không." }
+    ],
+    "culture": "Nhánh biên niên của Mercia ghi các thành và chiến dịch của Æthelflæd. Những bản biên niên biên soạn từ góc nhìn Wessex chú trọng nhiều hơn đến Edward.",
+    "peopleIds": ["edward-the-elder", "aethelflaed", "athelstan"],
+    "sourceArticle": "Edward the Elder"
   },
   {
     "id": "kingdom-of-england",
-    "era": "Anglo-Saxon",
-    "name": "Vương quốc Anh thống nhất",
-    "years": "927 – 1016",
+    "era": "Hậu duệ Alfred",
+    "name": "Æthelstan chiếm York và thống nhất Anh",
+    "years": "927 – 937",
     "start": 927,
-    "end": 1016,
+    "end": 937,
     "capital": "Winchester · trung tâm tiêu biểu",
     "places": [
       { "name": "Winchester", "at": [-1.31, 51.06], "kind": "capital", "note": "Triều đình còn di chuyển; Winchester chỉ là trung tâm tiêu biểu." },
-      { "name": "York", "at": [-1.08, 53.96], "kind": "capital", "note": "Æthelstan chiếm York năm 927, đặt nền cho một vương quốc Anh thống nhất." }
+      { "name": "York", "at": [-1.08, 53.96], "kind": "capital", "note": "Æthelstan chiếm York năm 927 sau khi vua Sihtric mất." },
+      { "name": "Eamont · gần Penrith", "at": [-2.74, 54.65], "kind": "heritage", "note": "Các nhà cai trị phương bắc gặp Æthelstan ở khu vực sông Eamont năm 927." }
     ],
-    "summary": "Năm 927, Æthelstan chiếm York và được xem là vị vua đầu tiên cai trị toàn bộ nước Anh; ông thắng liên minh Scotland – Viking ở Brunanburh năm 937. Cuối thế kỷ X, các cuộc tấn công Viking quay lại; vua Æthelred phải nộp cống (Danegeld), và năm 1013 Sweyn Râu Chẻ của Đan Mạch chiếm ngôi trong thời gian ngắn.",
-    "culture": "Cải cách tu viện thế kỷ X, tiền xu thống nhất và các bộ luật hoàng gia giúp củng cố vương quốc. Nhiều văn bản tiếng Anh cổ quan trọng được sao chép trong giai đoạn này.",
+    "summary": "Năm 927, Æthelstan, con Edward và cháu nội Alfred, chiếm York sau khi vua Sihtric mất. Ông cai trị cả các vùng lõi của Wessex, Mercia, East Anglia và York. Cuộc gặp tại Eamont cho thấy ảnh hưởng của Æthelstan vượt ra ngoài vùng ông trực tiếp cai trị. Alba, Strathclyde và các vương quốc Wales vẫn có vua riêng.",
+    "geographySections": [
+      {
+        "title": "Biên giới về phía Scotland",
+        "text": "Năm 927, các vua và lãnh chúa phương bắc gặp Æthelstan tại Eamont. Alba là vùng lõi của Scotland trung cổ. Strathclyde và Bắc Northumbria là những thế lực riêng ở khoảng giữa. Hiệp ước York năm 1237 đặt nền cho phần lớn đường biên Anh–Scotland về sau, từ vùng vịnh Solway đến vùng cửa sông Tweed. Tường Hadrian nằm xa hơn về phía nam."
+      },
+      {
+        "title": "Biên giới về phía Wales",
+        "text": "Offa’s Dyke là lũy đất gắn với vua Offa của Mercia vào cuối thế kỷ VIII. Nhiều đoạn nằm gần biên giới ngày nay. Sau cuộc chinh phục của Edward I năm 1282–1283, vùng biên Welsh Marches tiếp tục do các lãnh chúa quản lý. Các đạo luật dưới thời Henry VIII vào thế kỷ XVI nhập các lãnh địa biên vào hệ thống hạt, định hình phần lớn đường biên hành chính ngày nay."
+      }
+    ],
+    "culture": "Các văn thư, luật và tiền xu cho thấy Æthelstan mở rộng việc quản trị và danh hiệu hoàng gia. Tước hiệu về quyền uy trên toàn đảo thể hiện yêu sách của triều đình.",
     "peopleIds": ["athelstan"],
-    "sourceArticle": "Kingdom of England"
+    "sourceArticle": "Kingdom of England",
+    "extraSources": [
+      { "title": "The Royal Family · Æthelstan", "url": "https://www.royal.uk/athelstan-r924-939" },
+      { "title": "English Heritage · Hiệp ước York năm 1237", "url": "https://www.english-heritage.org.uk/siteassets/home/learn/teaching-resources/teachers-kits/belsay-hall-castle-and-gardens-teachers-kit_ks1-ks3.pdf" },
+      { "title": "English Heritage · Biên giới Anh–Scotland và Tường Hadrian", "url": "https://www.english-heritage.org.uk/visit/places/housesteads-roman-fort-hadrians-wall/history/border-reivers-and-hadrians-wall/" },
+      { "title": "Cadw · Offa’s Dyke và biên giới hiện đại", "url": "https://cadw.gov.wales/sites/default/files/2025-06/Offa%27s%20Dyke%20Resource%20English%20%281%29.pdf" },
+      { "title": "Cadw · Lãnh địa biên giới Welsh Marches", "url": "https://cadw.gov.wales/visit/best-history/wales-history-map" }
+    ]
+  },
+  {
+    "id": "brunanburh",
+    "era": "Hậu duệ Alfred",
+    "name": "Æthelstan và trận Brunanburh",
+    "years": "937 – 939",
+    "start": 937,
+    "end": 939,
+    "capital": "Winchester · trung tâm tiêu biểu",
+    "places": [
+      { "name": "Bromborough · một giả thuyết", "at": [-2.98, 53.33], "kind": "heritage", "note": "Nghiên cứu địa danh đề xuất Bromborough ở Wirral là nơi diễn ra trận Brunanburh. Vị trí chiến trường vẫn còn được tranh luận." },
+      { "name": "Dublin", "at": [-6.26, 53.35], "kind": "capital", "note": "Anlaf (Óláfr), vua Viking xứ Dublin, tham gia liên minh chống Æthelstan năm 937." },
+      { "name": "Malmesbury", "at": [-2.1, 51.58], "kind": "heritage", "note": "Æthelstan được an táng tại tu viện Malmesbury sau khi mất năm 939." }
+    ],
+    "summary": "Năm 937, Æthelstan và em là Edmund đánh bại liên minh của Anlaf xứ Dublin, Constantine II của Alba và Owain xứ Strathclyde ở Brunanburh. Chiến thắng giữ được vương quốc của Æthelstan trong phần đời còn lại. Ông mất năm 939 và Edmund kế vị.",
+    "storySections": [
+      { "title": "The Last Kingdom · Seven Kings Must Die", "text": "Phim tiếp nối dùng cuộc tranh ngôi của các con Edward và liên minh do Anlaf dẫn đầu làm chất liệu. Trong lịch sử, Æthelstan đăng quang năm 925, chiếm York năm 927 và đánh Brunanburh năm 937. Các mốc này cách nhau nhiều năm." }
+    ],
+    "culture": "Anglo-Saxon Chronicle lưu một bài thơ tiếng Anh cổ kể chiến thắng. Các nhà nghiên cứu dùng địa danh, văn bản và khảo cổ để xác định vị trí chiến trường.",
+    "peopleIds": ["athelstan"],
+    "sourceArticle": "Battle of Brunanburh",
+    "extraSources": [{ "title": "Netflix · Seven Kings Must Die", "url": "https://media.netflix.com/en/only-on-netflix/81460361" }]
+  },
+  {
+    "id": "york-after-athelstan",
+    "era": "Anh sau Æthelstan",
+    "name": "York đổi chủ lần cuối",
+    "years": "939 – 954",
+    "start": 939,
+    "end": 954,
+    "capital": "York · ngôi vua tranh chấp / Winchester · triều đình Anh",
+    "places": [
+      { "name": "York", "at": [-1.08, 53.96], "kind": "capital", "note": "Ngôi vua tại York đổi chủ nhiều lần sau khi Æthelstan mất. Eadred nắm quyền tại York từ năm 954." },
+      { "name": "Stainmore · vùng Pennines", "at": [-2.17, 54.53], "kind": "heritage", "note": "Các nguồn về sau gắn cái chết của Eric Bloodaxe với vùng Stainmore năm 954. Hoàn cảnh chính xác còn bất định." }
+    ],
+    "summary": "Sau khi Æthelstan mất năm 939, các vua Scandinavia quay lại York. Edmund I lấy lại các đô thị đông Mercia và tái lập quyền ở York trong một thời gian. Dưới thời Eadred, York tiếp tục đổi chủ. Năm 954, người Northumbria loại Eric Bloodaxe và chấp nhận Eadred, chấm dứt ngôi vua Scandinavia riêng tại York.",
+    "culture": "Tiền xu đúc ở York mang tên các vua khác nhau. Chúng giúp đối chiếu những lần đổi ngôi mà các bản biên niên mô tả ngắn gọn.",
+    "peopleIds": [],
+    "sourceArticle": "Scandinavian York"
+  },
+  {
+    "id": "edgar-england",
+    "era": "Anh sau Æthelstan",
+    "name": "Edgar củng cố Vương quốc Anh",
+    "years": "954 – 978",
+    "start": 954,
+    "end": 978,
+    "capital": "Winchester · trung tâm tiêu biểu",
+    "places": [
+      { "name": "Bath", "at": [-2.36, 51.38], "kind": "heritage", "note": "Edgar cử hành lễ đăng quang tại Bath năm 973, nhiều năm sau khi lên ngôi." },
+      { "name": "Glastonbury", "at": [-2.71, 51.15], "kind": "heritage", "note": "Nơi an táng Edgar năm 975, một trung tâm của phong trào cải cách tu viện." },
+      { "name": "Corfe", "at": [-2.06, 50.64], "kind": "heritage", "note": "Địa danh gắn với vụ sát hại Edward, con trai Edgar, năm 978." }
+    ],
+    "summary": "Sau khi Eadred mất năm 955, Eadwig kế vị. Edgar nắm Mercia và vùng Danelaw từ năm 957 rồi kế vị anh năm 959. Dưới thời Edgar, tiền xu và luật lệ được củng cố trên phạm vi rộng. Khi ông mất năm 975, con trai Edward lên ngôi và bị giết ở Corfe năm 978.",
+    "culture": "Edgar bảo trợ cải cách tu viện cùng Tổng giám mục Dunstan. Lễ đăng quang ở Bath năm 973 được ghi lại khá chi tiết so với nhiều nghi thức cùng thời.",
+    "peopleIds": [],
+    "sourceArticle": "Edgar, King of England"
+  },
+  {
+    "id": "aethelred-sweyn",
+    "era": "Anh sau Æthelstan",
+    "name": "Æthelred II và cuộc xâm lược của Sweyn",
+    "years": "978 – 1016",
+    "start": 978,
+    "end": 1016,
+    "capital": "Winchester / London · trung tâm hoàng gia",
+    "places": [
+      { "name": "Maldon", "at": [0.69, 51.73], "kind": "battle", "note": "Lực lượng Viking đánh bại quân Essex do Byrhtnoth chỉ huy năm 991." },
+      { "name": "Gainsborough", "at": [-0.77, 53.4], "kind": "camp", "note": "Sweyn dùng vùng hạ lưu Trent làm căn cứ trong cuộc chinh phục năm 1013." },
+      { "name": "Bamburgh · Bebbanburg", "at": [-1.71, 55.61], "kind": "heritage", "note": "Uhtred the Bold có thật là bá tước Northumbria đầu thế kỷ XI, cùng thời với Æthelred II." }
+    ],
+    "summary": "Dưới thời Æthelred II, các đợt tấn công Viking tăng mạnh từ thập niên 980. Sau thất bại ở Maldon năm 991, triều đình trả tiền để đình chiến. Năm 1013, Sweyn Râu Chẻ buộc Æthelred chạy sang Normandy. Æthelred trở lại năm 1014 sau khi Sweyn mất. Cuộc tranh ngôi tiếp tục giữa Edmund Ironside và Cnut vào năm 1016.",
+    "culture": "Bài thơ tiếng Anh cổ Trận Maldon lưu lại cách người đương thời kể về lòng trung thành và thất bại. Khoản bạc nộp cho các lực lượng Viking được ghi trong nhiều mục biên niên.",
+    "peopleIds": ["sweyn-forkbeard", "cnut"],
+    "sourceArticle": "Æthelred the Unready"
   },
   {
     "id": "cnut-north-sea",
-    "era": "Đan Mạch trị vì & 1066",
+    "era": "Các vua Đan Mạch",
     "name": "Cnut và đế chế Biển Bắc",
     "years": "1016 – 1042",
     "start": 1016,
@@ -84,14 +391,17 @@
       { "name": "London", "at": [-0.09, 51.51], "kind": "capital", "note": "Cnut giành ngôi Anh năm 1016 sau các trận đánh với Edmund Ironside." },
       { "name": "Winchester", "at": [-1.31, 51.06], "kind": "capital", "note": "Cnut được chôn cất tại Winchester năm 1035." }
     ],
-    "summary": "Cnut, con trai Sweyn Râu Chẻ, trở thành vua Anh năm 1016, rồi vua Đan Mạch (1018) và Na Uy (1028), tạo nên một liên kết các vương quốc quanh Biển Bắc. Liên kết này tan rã sau khi ông mất năm 1035; năm 1042 ngôi vua Anh trở về dòng Wessex.",
+    "summary": "Cnut, con trai Sweyn Râu Chẻ, trở thành vua Anh năm 1016, rồi vua Đan Mạch khoảng 1018–1019 và Na Uy năm 1028. Ba vương quốc quanh Biển Bắc do cùng một vua nắm, với bộ máy cai trị riêng. Cnut mất Na Uy trong năm 1035. Sau khi ông mất cùng năm, Harold Harefoot rồi Harthacnut cai trị Anh. Năm 1042, Edward Xưng Tội đưa dòng Wessex trở lại ngai vàng.",
+    "storySections": [
+      { "title": "Ba ngai vàng quanh Biển Bắc", "text": "Ở Anh, Cnut lên ngôi sau cuộc chiến với Edmund Ironside. Tại Đan Mạch, ông kế vị anh trai Harald. Tại Na Uy, Olaf Haraldsson mất quyền năm 1028. Cnut giao Na Uy cho người cai trị thay mặt, trong đó có con trai Svein và mẹ của Svein là Ælfgifu. Magnus, con Olaf, giành lại ngôi năm 1035." }
+    ],
     "culture": "Cnut duy trì luật lệ Anglo-Saxon và dựa vào Giáo hội để củng cố tính chính danh. Giao thương Biển Bắc nối nước Anh với thế giới Scandinavia.",
     "peopleIds": ["cnut"],
     "sourceArticle": "North Sea Empire"
   },
   {
     "id": "late-anglo-saxon",
-    "era": "Đan Mạch trị vì & 1066",
+    "era": "Anglo-Saxon hậu kỳ",
     "name": "Edward Xưng Tội và năm 1066",
     "years": "1042 – 1066",
     "start": 1042,

@@ -1,25 +1,10 @@
 // SPDX-License-Identifier: CC-BY-SA-4.0
 // Manual schematic adaptations; source-map authors and licenses are credited per snapshot.
 
-export type ChinaHistoricalStateModel = {
-  id: string;
-  name: string;
-  color: string;
-  kind: "state" | "context";
-  center: { name: string; at: [number, number] };
-  labelAt: [number, number];
-  rings: number[][][];
-  summary: string;
-};
-
-export type ChinaStateMapModel = {
-  year: number;
-  title: string;
-  note: string;
-  view?: { northwest: [number, number]; southeast: [number, number] };
-  states: ChinaHistoricalStateModel[];
-  sources: { title: string; url: string }[];
-};
+import type {
+  HistoricalStateMapModel,
+  HistoricalStateModel,
+} from "~/types/historical-state-map";
 
 // These are hand-simplified teaching polygons, not georeferenced atlas data.
 // Only broad relationships and shared fronts are reconstructed from the cited
@@ -40,8 +25,8 @@ const state = (
   labelAt: [number, number],
   points: number[][],
   summary: string,
-  kind: ChinaHistoricalStateModel["kind"] = "state",
-): ChinaHistoricalStateModel => ({
+  kind: HistoricalStateModel["kind"] = "state",
+): HistoricalStateModel => ({
   id,
   name,
   color: palette[color % palette.length],
@@ -104,7 +89,7 @@ const northernWei = (points: number[][], capital = "Bình Thành") => state(
   "Chính quyền Thác Bạt. Lãnh thổ được dựng theo đúng mốc đang xem; không đồng nhất với toàn bộ miền bắc ở mọi năm.",
 );
 
-export const chinaStateMaps: Record<string, ChinaStateMapModel> = {
+export const chinaStateMaps: Record<string, HistoricalStateMapModel> = {
   "chu-han-206": {
     year: -206,
     title: "Hán–Sở · Tây Sở và 18 chư hầu năm 206 TCN",

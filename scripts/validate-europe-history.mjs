@@ -1,5 +1,8 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
+import vm from "node:vm";
+
+import ts from "typescript";
 
 const json = (path) => JSON.parse(readFileSync(path, "utf8"));
 const characters = json("src/data/database/character.json");
@@ -89,10 +92,58 @@ const englandIds = new Set(json("src/data/database/england-eras.json")
 for (const slug of ["anglo-saxon", "tudor", "stuart", "modern-britain"]) {
   assert.ok(englandIds.has(slug), `Legacy England slug ${slug}`);
 }
+const angloSaxon = json("src/data/database/england-eras.json")
+  .filter(({ start }) => start >= 410 && start < 1066);
+assert.equal(angloSaxon[0].start, 410);
+assert.equal(angloSaxon.at(-1).end, 1066);
+for (const [index, row] of angloSaxon.slice(1).entries()) {
+  assert.equal(angloSaxon[index].end, row.start, `Timeline gap or overlap at ${row.id}`);
+}
 assert.match(
   readFileSync("src/data/europe-overview.ts", "utf8"),
   /"norman-plantagenet": "norman-conquest"/,
 );
+
+const loadMapData = (path, dependencies = {}) => {
+  const loadedModule = { exports: {} };
+  const { outputText } = ts.transpileModule(readFileSync(path, "utf8"), {
+    compilerOptions: { module: ts.ModuleKind.CommonJS, esModuleInterop: true },
+  });
+  vm.runInNewContext(outputText, {
+    module: loadedModule, exports: loadedModule.exports,
+    require(name) {
+      assert.ok(Object.hasOwn(dependencies, name), `Unexpected map dependency ${name}`);
+      return dependencies[name];
+    },
+  });
+  return loadedModule.exports;
+};
+const englandGeography = loadMapData("src/data/england-geography.ts");
+const earlyEngland = loadMapData("src/data/england-state-maps.ts", {
+  "~/data/england-geography": englandGeography,
+});
+const { englandStateMaps } = loadMapData("src/data/england-territories.ts", {
+  "~/data/england-geography": englandGeography,
+  "~/data/england-state-maps": earlyEngland,
+  "~/data/geo/northwest-europe.json": json("src/data/geo/northwest-europe.json"),
+});
+assert.deepEqual(new Set(Object.keys(englandStateMaps)), englandIds);
+assert.deepEqual(new Set(Object.keys(englandGeography.englandGeography)), englandIds);
+for (const row of json("src/data/database/england-eras.json")) {
+  const map = englandStateMaps[row.id];
+  const geography = englandGeography.englandGeography[row.id];
+  assert.ok(map.year >= row.start && (row.end === null || map.year <= row.end), row.id);
+  assert.ok(map.view && map.sources.length && map.states.length, row.id);
+  assert.equal(new Set(map.states.map(({ id }) => id)).size, map.states.length, row.id);
+  assert.ok(geography.realm && geography.extent && geography.neighbours, row.id);
+  for (const entry of [geography.area, geography.population, geography.flag]) {
+    if (entry) assert.equal(new URL(entry.source.url).protocol, "https:", row.id);
+  }
+}
+const cnutRealms = englandStateMaps["cnut-north-sea"].states.filter(({ kind }) => kind === "state");
+assert.deepEqual(Array.from(cnutRealms, ({ id }) => id), ["england", "denmark", "norway"]);
+assert.equal(new Set(cnutRealms.map(({ color }) => color)).size, 1);
+assert.equal(englandGeography.englandGeography["cnut-north-sea"].flag, undefined);
 
 for (const id of ["cnut", "harald-hardrada", "margaret-i", "christian-iv"]) {
   assert.ok(characterById.has(id), `Shared Nordic character ${id}`);

@@ -3616,6 +3616,98 @@
     ]
   },
   {
+    "id": "ecgberht",
+    "countryId": "england",
+    "name": "Ecgberht (Egbert)",
+    "aliases": ["Ecgberht", "Egbert", "Ecgbeorht"],
+    "wiki": "Ecgberht, King of Wessex",
+    "role": "Vua Wessex (802–839), ông nội Alfred",
+    "biography": "Ecgberht thắng Mercia tại Ellendun năm 825 và đưa Kent, Essex, Sussex cùng Surrey vào vùng kiểm soát của Wessex. Ông chiếm Mercia năm 829, trước khi vua Wiglaf lấy lại ngôi năm 830. Con ông là Æthelwulf kế vị năm 839.",
+    "lifespan": "Không rõ năm sinh – 839",
+    "sources": [
+      {
+        "title": "The Royal Family · Egbert xứ Wessex",
+        "url": "https://www.royal.uk/egbert-king-wessex-r-802-839"
+      },
+      {
+        "title": "Cambridge University Press · Wessex mở rộng ở miền nam",
+        "url": "https://www.cambridge.org/core/books/abs/medieval-european-coinage/rise-of-wessex-in-southern-england/4376F0C0F675A77C943DFA0D73B52506"
+      }
+    ]
+  },
+  {
+    "id": "aethelwulf",
+    "countryId": "england",
+    "name": "Æthelwulf",
+    "aliases": ["Aethelwulf", "Ethelwulf"],
+    "wiki": "Æthelwulf, King of Wessex",
+    "role": "Vua nhà Wessex, con Ecgberht và cha Alfred",
+    "biography": "Được cha phái tới Kent sau chiến thắng Ellendun, Æthelwulf cai trị vùng đông nam rồi kế vị Ecgberht năm 839. Ông hành hương tới Roma năm 855. Khi trở về, quyền cai trị được chia giữa ông và con trai Æthelbald. Ông mất năm 858.",
+    "lifespan": "Không rõ năm sinh – 858",
+    "sources": [
+      {
+        "title": "Asser · Cuộc đời vua Alfred",
+        "url": "https://www.gutenberg.org/files/63384/63384-h/63384-h.htm"
+      }
+    ]
+  },
+  {
+    "id": "aethelbald",
+    "countryId": "england",
+    "name": "Æthelbald",
+    "aliases": ["Aethelbald", "Ethelbald"],
+    "wiki": "Æthelbald, King of Wessex",
+    "role": "Vua Wessex, anh của Alfred",
+    "biography": "Con của Æthelwulf. Ông nắm quyền ở Wessex vào khoảng thời gian cha hành hương đến Roma. Khi Æthelwulf mất năm 858, Æthelbald tiếp tục cai trị Wessex cho đến năm 860, còn Æthelberht giữ vùng đông nam.",
+    "lifespan": "Không rõ năm sinh – 860",
+    "sources": [
+      {
+        "title": "Asser · Cuộc đời vua Alfred",
+        "url": "https://www.gutenberg.org/files/63384/63384-h/63384-h.htm"
+      },
+      {
+        "title": "The Royal Family · Ethelbald",
+        "url": "https://www.royal.uk/ethelbald-r856-860"
+      }
+    ]
+  },
+  {
+    "id": "aethelberht",
+    "countryId": "england",
+    "name": "Æthelberht",
+    "aliases": ["Aethelberht", "Ethelbert"],
+    "wiki": "Æthelberht, King of Wessex",
+    "role": "Vua Wessex và vùng đông nam, anh của Alfred",
+    "biography": "Con của Æthelwulf, cai trị Kent và các vùng phụ thuộc ở đông nam. Ông kế vị anh mình là Æthelbald năm 860 và cai trị cả Wessex lẫn vùng đông nam đến khoảng năm 865–866.",
+    "lifespan": "Không rõ năm sinh – khoảng 865/866",
+    "sources": [
+      {
+        "title": "The Royal Family · Ethelbert",
+        "url": "https://www.royal.uk/ethelbert-r-860-866"
+      }
+    ]
+  },
+  {
+    "id": "aethelred-i",
+    "countryId": "england",
+    "name": "Æthelred I",
+    "aliases": ["Aethelred I", "Ethelred I"],
+    "wiki": "Æthelred I, King of Wessex",
+    "role": "Vua Wessex ngay trước Alfred",
+    "biography": "Con của Æthelwulf, kế vị anh mình là Æthelberht khoảng năm 865–866. Ông và em trai Alfred chống Đại quân Viking tại Ashdown năm 871. Alfred lên ngôi sau khi ông mất cùng năm.",
+    "lifespan": "Không rõ năm sinh – 871",
+    "sources": [
+      {
+        "title": "The Royal Family · Ethelred",
+        "url": "https://www.royal.uk/ethelred-r866-871"
+      },
+      {
+        "title": "Asser · Cuộc đời vua Alfred",
+        "url": "https://www.gutenberg.org/files/63384/63384-h/63384-h.htm"
+      }
+    ]
+  },
+  {
     "id": "alfred-the-great",
     "countryId": "england",
     "name": "Alfred Đại đế",
@@ -3623,13 +3715,53 @@
       "Alfred"
     ],
     "wiki": "Alfred the Great",
-    "role": "Vua Wessex chống lại người Viking",
-    "biography": "Vua Wessex từ năm 871. Ông thắng quân Viking ở Edington năm 878, xây dựng hệ thống thị trấn phòng thủ và khuyến khích dịch sách sang tiếng Anh cổ.",
+    "role": "Vua Wessex (871–899), cháu nội Ecgberht",
+    "biography": "Con của Æthelwulf, Alfred kế vị anh là Æthelred I năm 871. Ông thắng Guthrum ở Edington năm 878, củng cố các thị trấn phòng thủ và khuyến khích dịch sách sang tiếng Anh cổ. Con trai Edward kế vị ông năm 899, còn con gái Æthelflæd về sau cai trị Mercia.",
     "lifespan": "849 – 899",
     "sources": [
       {
-        "title": "Alfred Đại đế",
-        "url": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+        "title": "The Royal Family · Alfred Đại đế",
+        "url": "https://www.royal.uk/alfred-great-r-871-899"
+      },
+      {
+        "title": "Asser · Cuộc đời vua Alfred",
+        "url": "https://www.gutenberg.org/files/63384/63384-h/63384-h.htm"
+      }
+    ]
+  },
+  {
+    "id": "aethelflaed",
+    "countryId": "england",
+    "name": "Æthelflæd",
+    "aliases": ["Aethelflaed", "Ethelfleda"],
+    "wiki": "Æthelflæd",
+    "role": "Con gái Alfred, cai trị Mercia (911–918)",
+    "biography": "Con gái cả của Alfred và Ealhswith, vợ của Æthelred xứ Mercia. Sau khi chồng mất, bà cai trị với tước hiệu Lady of the Mercians. Bà xây các thành phòng thủ, chiếm Derby năm 917 và thu phục Leicester năm 918.",
+    "lifespan": "khoảng 870 – 918",
+    "sources": [
+      {
+        "title": "Tamworth Castle · Æthelflæd",
+        "url": "https://www.tamworthcastle.co.uk/aethelflaed"
+      }
+    ]
+  },
+  {
+    "id": "edward-the-elder",
+    "countryId": "england",
+    "name": "Edward the Elder",
+    "aliases": ["Edward Già", "Edward xứ Wessex"],
+    "wiki": "Edward the Elder",
+    "role": "Vua (899–924), con Alfred và cha Æthelstan",
+    "biography": "Edward kế vị Alfred năm 899. Ông phối hợp với chị là Æthelflæd tiến vào vùng Danelaw. Ông kiểm soát East Anglia sau chiến dịch năm 917 và tiếp quản Mercia năm 918. Con trai ông là Æthelstan chiếm York năm 927.",
+    "lifespan": "khoảng 874 – 924",
+    "sources": [
+      {
+        "title": "The Royal Family · Edward the Elder",
+        "url": "https://www.royal.uk/edward-elder-r-899-924"
+      },
+      {
+        "title": "Anglo-Saxon Chronicle · Những chiến dịch của Edward",
+        "url": "https://www.gutenberg.org/cache/epub/657/pg657.html"
       }
     ]
   },
@@ -3642,12 +3774,12 @@
     ],
     "wiki": "Æthelstan",
     "role": "Vị vua đầu tiên của toàn nước Anh",
-    "biography": "Cháu nội Alfred Đại đế. Năm 927 ông chiếm York, được xem là vua đầu tiên cai trị toàn bộ nước Anh; năm 937 thắng trận Brunanburh.",
+    "biography": "Con trai Edward the Elder và cháu nội Alfred Đại đế. Năm 927 ông chiếm York và được xem là vua đầu tiên cai trị nước Anh thống nhất. Năm 937, ông thắng liên minh Alba, Strathclyde và Viking tại Brunanburh.",
     "lifespan": "khoảng 894 – 939",
     "sources": [
       {
-        "title": "Æthelstan",
-        "url": "https://en.wikipedia.org/wiki/%C3%86thelstan"
+        "title": "The Royal Family · Æthelstan",
+        "url": "https://www.royal.uk/athelstan-r924-939"
       }
     ]
   },
