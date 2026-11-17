@@ -35,7 +35,14 @@ const recordingBuffers = new Map<string, Promise<AudioBuffer>>();
 let recordingGeneration = 0;
 let recordingPending = false;
 let recordingSource: AudioBufferSourceNode | null = null;
+let activeRecordingSrc = "";
 let lastPlaylistSrc = "";
+
+const setActiveRecording = (src: string) => {
+  if (activeRecordingSrc === src) return;
+  activeRecordingSrc = src;
+  listeners.forEach((listener) => listener());
+};
 
 // Avoid repeating the song that just ended when a playlist has alternatives.
 const pickPlaylistSrc = (playlist: string[]) => {
@@ -60,6 +67,7 @@ const stopMusic = (fade = 0) => {
   musicTimer = null;
   musicSources.forEach((source) => { try { source.stop((context?.currentTime ?? 0) + fade); } catch { /* The note has already ended. */ } });
   if (!fade) musicSources.clear();
+  setActiveRecording("");
 };
 
 const midiFrequency = (note: number) => 440 * 2 ** ((note - 69) / 12);
@@ -175,11 +183,13 @@ const startRecording = (
       // stopMusic clears recordingSource first, so only a natural end chains.
       if (recordingSource !== source) return;
       recordingSource = null;
+      setActiveRecording("");
       if (playlist && generation === recordingGeneration) {
         startRecording(pickPlaylistSrc(playlist), 0, playlist);
       }
     };
     source.start(audio.currentTime + delay);
+    setActiveRecording(src);
   }).catch(() => { if (generation === recordingGeneration) recordingPending = false; });
 };
 
@@ -201,6 +211,10 @@ const startMusic = (delay = 0) => {
 
 export const getCurrentSoundtrack = () => currentTrack;
 export const getServerSoundtrack = () => soundtracks.atlas;
+export const getCurrentMusicTitle = () => currentTrack.playlistTitles
+  ? currentTrack.playlistTitles[activeRecordingSrc] ?? "Chưa phát"
+  : currentTrack.title;
+export const getServerMusicTitle = () => soundtracks.atlas.title;
 export const setGameMusicPath = (pathname: string, hash = "", playback?: MusicPlaybackContext) => {
   if (pathname !== musicPath) musicPlayback = {};
   musicPath = pathname;

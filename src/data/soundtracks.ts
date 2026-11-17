@@ -10,18 +10,20 @@ export type SoundtrackModel = {
   percussion: boolean; arpeggio: number[];
   audioSrc?: string;
   playlist?: string[];
+  playlistTitles?: Readonly<Record<string, string>>;
 };
 export type MusicPlaybackContext = { chapter?: number };
 type MusicContextModel = { country: string; era: string; mood: string };
 
 // One shared array lets the engine keep playing while moving between
 // Chinese monarchy scenes instead of restarting on every scene change.
-const chinaMonarchyPlaylist = [
-  "/audio/music/yeu-giang-son-cang-yeu-my-nhan.mp3",
-  "/audio/music/trung-hoa-phan-doan-1.mp3",
-  "/audio/music/trung-hoa-phan-doan-5.mp3",
-  "/audio/music/trung-hoa-phan-doan-9.mp3",
-];
+const chinaMonarchyTitles = {
+  "/audio/music/yeu-giang-son-cang-yeu-my-nhan.mp3": "Yêu Giang Sơn Càng Yêu Mỹ Nhân",
+  "/audio/music/trung-hoa-phan-doan-1.mp3": "Bài số 1",
+  "/audio/music/trung-hoa-phan-doan-5.mp3": "Bài số 5",
+  "/audio/music/trung-hoa-phan-doan-9.mp3": "Bài số 9",
+};
+const chinaMonarchyPlaylist = Object.keys(chinaMonarchyTitles);
 
 // Keep one playlist across England's eras so scene changes preserve playback.
 const englandPlaylist = [
@@ -39,8 +41,8 @@ const recordingFor = (row: (typeof catalog)[number]) => {
   }
   if (row.countryId === "china" && row.eraId === "monarchy") {
     return {
-      title: "Cổ phong Trung Hoa · 4 bài ngẫu nhiên",
       playlist: chinaMonarchyPlaylist,
+      playlistTitles: chinaMonarchyTitles,
     };
   }
   if (row.countryId === "england") {
@@ -65,6 +67,9 @@ const resolve = (context?: MusicContextModel) => context ? soundtracks[`${contex
 
 export const soundtrackForPath = (pathname: string, hash = "", playback: MusicPlaybackContext = {}): SoundtrackModel => {
   const [, country, page] = pathname.replace(/\/$/, "").split("/");
+  if (country === "battle" && page === "three-kingdoms") {
+    return resolve(periodContexts.china[page]);
+  }
   if (country === "characters") return page ? resolve(characterContexts[page]) : soundtracks["vietnam-monarchy-reflective"];
   if (!["vietnam", "china", "england"].includes(country)) return soundtracks.atlas;
   const scene = hash.replace(/^#/, "");

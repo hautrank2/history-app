@@ -142,8 +142,16 @@ assert.equal(engine.api.getCurrentSoundtrack().id, "china-monarchy-ethereal");
 await new Promise((resolve) => setImmediate(resolve));
 assert.equal(engine.timers.size, 0, "Monarchy China uses the selected playlist");
 const chinaSongs = soundtrackForPath("/china").playlist;
+const chinaSongTitles = soundtrackForPath("/china").playlistTitles;
 const englandSongs = soundtrackForPath("/england").playlist;
 assert.equal(chinaSongs.length, 4);
+assert.equal(soundtrackForPath("/battle/three-kingdoms").playlist, chinaSongs);
+assert.deepEqual(Object.values(chinaSongTitles), [
+  "Yêu Giang Sơn Càng Yêu Mỹ Nhân",
+  "Bài số 1",
+  "Bài số 5",
+  "Bài số 9",
+]);
 assert.equal(new Set(englandSongs).size, 4);
 for (const song of [...chinaSongs, ...englandSongs]) {
   assert.ok(existsSync(`public${song}`), song);
@@ -160,12 +168,17 @@ engine.api.setGameMusicPath("/china", "#ming");
 await new Promise((resolve) => setImmediate(resolve));
 assert.equal(engine.sources.length, chinaSourceCount, "Changing Chinese monarchy scenes must keep the song playing");
 const firstSong = engine.fetched.at(-1);
+assert.equal(engine.api.getCurrentMusicTitle(), chinaSongTitles[firstSong]);
+engine.api.setGameMusicPath("/battle/three-kingdoms", "#xich-bich");
+assert.equal(engine.api.getCurrentMusicTitle(), chinaSongTitles[firstSong]);
+assert.equal(engine.sources.length, chinaSourceCount, "The same recording continues on the battle page");
 const ending = playingPlaylistSongs()[0];
 ending.stopped = true;
 ending.onended();
 await new Promise((resolve) => setImmediate(resolve));
 assert.equal(playingPlaylistSongs().length, 1, "A finished song starts the next one");
 assert.notEqual(engine.fetched.at(-1), firstSong, "The next song differs from the one that ended");
+assert.equal(engine.api.getCurrentMusicTitle(), chinaSongTitles[engine.fetched.at(-1)]);
 engine.api.setGameMusicPath("/china", "#reform");
 assert.equal(engine.api.getCurrentSoundtrack().playlist, undefined, "Modern China keeps its own score");
 assert.equal(engine.timers.size, 1);

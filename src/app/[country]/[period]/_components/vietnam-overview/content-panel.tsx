@@ -7,6 +7,7 @@ import {
   ExternalLink,
   Landmark,
   MapPin,
+  Swords,
   Users,
   X,
 } from "lucide-react";
@@ -30,6 +31,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "~/components/ui/tooltip";
+import { battleLinksFor } from "~/data/battle-links";
 import { characterHref, getCharacter } from "~/data/characters";
 import { chinaSourcesFor } from "~/data/china-overview";
 import { englandGeography, englandMeasuresFor } from "~/data/england-geography";
@@ -112,6 +114,7 @@ export const ContentPanel = ({
   const [active, setActive] = useState(0);
   const body = useRef<HTMLDivElement>(null);
   const atlasCountry = country !== "vietnam";
+  const battleLinks = tab === "story" ? battleLinksFor(country, scene.id) : [];
   const englandDetail = country === "england" ? englandGeography[scene.id] : undefined;
   const measures = englandDetail ? englandMeasuresFor(scene.id) : [];
   const sources = isEuropeCountry(country)
@@ -329,6 +332,15 @@ export const ContentPanel = ({
         >
           <ImageGroup>
             <div className="vo-reading-stream">
+              {battleLinks.length > 0 && (
+                <nav className="vo-related-battles mb-4 flex flex-wrap gap-2" aria-label="Trận đánh liên quan">
+                  {battleLinks.map(({ href, label }) => (
+                    <Link key={href} href={href} className="vo-character-nav vo-glass inline-flex items-center gap-2">
+                      <Swords size={14} aria-hidden="true" /> {label} <span aria-hidden="true">↗</span>
+                    </Link>
+                  ))}
+                </nav>
+              )}
               {blocks.map((block, index) => (
                 <section
                   className="vo-reading-section"

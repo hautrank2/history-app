@@ -4,11 +4,12 @@ import { Settings } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 
-import { getAudioSettings, getCurrentSoundtrack, getServerAudioSettings, getServerSoundtrack, playGameSound, setGameMusicPath, subscribeAudioSettings, suspendGameAudio, unlockGameAudio, updateAudioSettings } from "~/lib/game-audio";
+import { getAudioSettings, getCurrentMusicTitle, getCurrentSoundtrack, getServerAudioSettings, getServerMusicTitle, getServerSoundtrack, playGameSound, setGameMusicPath, subscribeAudioSettings, suspendGameAudio, unlockGameAudio, updateAudioSettings } from "~/lib/game-audio";
 
 export const GameAudio = () => {
   const { enabled, volume, music, musicVolume, effects } = useSyncExternalStore(subscribeAudioSettings, getAudioSettings, getServerAudioSettings);
   const soundtrack = useSyncExternalStore(subscribeAudioSettings, getCurrentSoundtrack, getServerSoundtrack);
+  const trackTitle = useSyncExternalStore(subscribeAudioSettings, getCurrentMusicTitle, getServerMusicTitle);
   const [expanded, setExpanded] = useState(false);
   const pathname = usePathname();
   const lastPath = useRef(pathname);
@@ -81,7 +82,7 @@ export const GameAudio = () => {
       <label className="game-audio-volume"><span>Âm lượng hiệu ứng <output>{Math.round(volume * 100)}%</output></span><input aria-label="Âm lượng hiệu ứng" type="range" min="0" max="100" value={Math.round(volume * 100)} onChange={(event) => updateAudioSettings({ volume: Number(event.target.value) / 100 })} onPointerUp={() => playGameSound("select")} /></label>
       <div className="game-audio-music">
         <label className="game-audio-music-toggle"><span>Nhạc nền</span><input type="checkbox" checked={music} onChange={async (event) => { updateAudioSettings({ music: event.target.checked }); await unlockGameAudio(); }} /></label>
-        <p className="game-audio-track"><strong>{soundtrack.title}</strong><span>{soundtrack.country} · {soundtrack.era} · {soundtrack.mood}</span></p>
+        <p className="game-audio-track"><strong>{trackTitle}</strong><span>{soundtrack.country} · {soundtrack.era} · {soundtrack.mood}</span></p>
         <label className="game-audio-volume"><span>Âm lượng nhạc <output>{Math.round(musicVolume * 100)}%</output></span><input aria-label="Âm lượng nhạc nền" type="range" min="0" max="100" value={Math.round(musicVolume * 100)} onChange={(event) => updateAudioSettings({ musicVolume: Number(event.target.value) / 100 })} /></label>
       </div>
       <button className="game-audio-preview" type="button" disabled={!enabled || volume === 0 || !effects.units} onClick={async () => { await unlockGameAudio(); playGameSound("march"); }}>Nghe thử hành quân</button>
