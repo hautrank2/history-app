@@ -64,6 +64,7 @@ html:has(.tk-experience) .game-audio-trigger { width: 36px; height: 36px; }
 .tk-focus-ring { fill: #efa77221; stroke: #efa772aa; stroke-width: 1.1; transform-box: fill-box; transform-origin: center; animation: tk-pulse 2.8s ease-out infinite; }
 .tk-person-marker { cursor: pointer; }
 .tk-person-marker text { font-size: 10px; font-weight: 600; pointer-events: none; }
+.tk-person-marker .tk-marker-name { paint-order: stroke; stroke: #152027; stroke-width: 3px; stroke-linejoin: round; }
 .tk-person-marker:hover circle { fill: #39464b; }
 .tk-map-mode, .tk-map-controls { position: absolute; top: calc(var(--tk-header-height) + 9px); }
 .tk-map-mode { left: 12px; display: inline-flex; align-items: center; gap: 6px; border: 1px solid #a4997460; border-radius: 5px; padding: 7px 9px; color: var(--tk-gold); background: #152029eb; font-size: 11px; pointer-events: none; }

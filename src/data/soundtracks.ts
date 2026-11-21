@@ -19,7 +19,6 @@ type MusicContextModel = { country: string; era: string; mood: string };
 // Chinese monarchy scenes instead of restarting on every scene change.
 const chinaMonarchyTitles = {
   "/audio/music/yeu-giang-son-cang-yeu-my-nhan.mp3": "Yêu Giang Sơn Càng Yêu Mỹ Nhân",
-  "/audio/music/trung-hoa-phan-doan-1.mp3": "Bài số 1",
   "/audio/music/trung-hoa-phan-doan-5.mp3": "Bài số 5",
   "/audio/music/trung-hoa-phan-doan-9.mp3": "Bài số 9",
 };
@@ -67,7 +66,17 @@ const resolve = (context?: MusicContextModel) => context ? soundtracks[`${contex
 
 export const soundtrackForPath = (pathname: string, hash = "", playback: MusicPlaybackContext = {}): SoundtrackModel => {
   const [, country, page] = pathname.replace(/\/$/, "").split("/");
-  if (country === "battle" && page === "three-kingdoms") {
+  if (country === "battle" && page === "tran-bach-dang-1288") return soundtrackForPath("/vietnam/bach-dang-1288", hash, playback);
+  if (country === "battle" && page === "tran-dien-bien-phu-1954") return resolve(sceneContexts["dien-bien-phu"]);
+  if (country === "battle" && page?.startsWith("tran-")) return resolve(periodContexts.china["three-kingdoms"]);
+  if (country === "period" && page === "loan-12-su-quan") return resolve(sceneContexts[page]);
+  if (country === "period" && page === "nha-tran") return resolve(sceneContexts[hash.replace(/^#/, "")] ?? sceneContexts["tran-dung-nuoc"]);
+  if (country === "period" && page === "khang-chien-chong-phap") return resolve(sceneContexts["dien-bien-phu"]);
+  if (country === "period") {
+    const sourceCountry = ["vietnam", "china", "england", "denmark", "norway"].find((id) => page?.startsWith(`${id}-`));
+    if (sourceCountry) return soundtrackForPath(`/${sourceCountry}`, hash || `#${page.slice(sourceCountry.length + 1)}`, playback);
+  }
+  if ((country === "period" || country === "battle") && page === "three-kingdoms") {
     return resolve(periodContexts.china[page]);
   }
   if (country === "characters") return page ? resolve(characterContexts[page]) : soundtracks["vietnam-monarchy-reflective"];

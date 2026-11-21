@@ -3619,7 +3619,11 @@
     "id": "ecgberht",
     "countryId": "england",
     "name": "Ecgberht (Egbert)",
-    "aliases": ["Ecgberht", "Egbert", "Ecgbeorht"],
+    "aliases": [
+      "Ecgberht",
+      "Egbert",
+      "Ecgbeorht"
+    ],
     "wiki": "Ecgberht, King of Wessex",
     "role": "Vua Wessex (802–839), ông nội Alfred",
     "biography": "Ecgberht thắng Mercia tại Ellendun năm 825 và đưa Kent, Essex, Sussex cùng Surrey vào vùng kiểm soát của Wessex. Ông chiếm Mercia năm 829, trước khi vua Wiglaf lấy lại ngôi năm 830. Con ông là Æthelwulf kế vị năm 839.",
@@ -3639,7 +3643,10 @@
     "id": "aethelwulf",
     "countryId": "england",
     "name": "Æthelwulf",
-    "aliases": ["Aethelwulf", "Ethelwulf"],
+    "aliases": [
+      "Aethelwulf",
+      "Ethelwulf"
+    ],
     "wiki": "Æthelwulf, King of Wessex",
     "role": "Vua nhà Wessex, con Ecgberht và cha Alfred",
     "biography": "Được cha phái tới Kent sau chiến thắng Ellendun, Æthelwulf cai trị vùng đông nam rồi kế vị Ecgberht năm 839. Ông hành hương tới Roma năm 855. Khi trở về, quyền cai trị được chia giữa ông và con trai Æthelbald. Ông mất năm 858.",
@@ -3655,7 +3662,10 @@
     "id": "aethelbald",
     "countryId": "england",
     "name": "Æthelbald",
-    "aliases": ["Aethelbald", "Ethelbald"],
+    "aliases": [
+      "Aethelbald",
+      "Ethelbald"
+    ],
     "wiki": "Æthelbald, King of Wessex",
     "role": "Vua Wessex, anh của Alfred",
     "biography": "Con của Æthelwulf. Ông nắm quyền ở Wessex vào khoảng thời gian cha hành hương đến Roma. Khi Æthelwulf mất năm 858, Æthelbald tiếp tục cai trị Wessex cho đến năm 860, còn Æthelberht giữ vùng đông nam.",
@@ -3675,7 +3685,10 @@
     "id": "aethelberht",
     "countryId": "england",
     "name": "Æthelberht",
-    "aliases": ["Aethelberht", "Ethelbert"],
+    "aliases": [
+      "Aethelberht",
+      "Ethelbert"
+    ],
     "wiki": "Æthelberht, King of Wessex",
     "role": "Vua Wessex và vùng đông nam, anh của Alfred",
     "biography": "Con của Æthelwulf, cai trị Kent và các vùng phụ thuộc ở đông nam. Ông kế vị anh mình là Æthelbald năm 860 và cai trị cả Wessex lẫn vùng đông nam đến khoảng năm 865–866.",
@@ -3691,7 +3704,10 @@
     "id": "aethelred-i",
     "countryId": "england",
     "name": "Æthelred I",
-    "aliases": ["Aethelred I", "Ethelred I"],
+    "aliases": [
+      "Aethelred I",
+      "Ethelred I"
+    ],
     "wiki": "Æthelred I, King of Wessex",
     "role": "Vua Wessex ngay trước Alfred",
     "biography": "Con của Æthelwulf, kế vị anh mình là Æthelberht khoảng năm 865–866. Ông và em trai Alfred chống Đại quân Viking tại Ashdown năm 871. Alfred lên ngôi sau khi ông mất cùng năm.",
@@ -3733,7 +3749,10 @@
     "id": "aethelflaed",
     "countryId": "england",
     "name": "Æthelflæd",
-    "aliases": ["Aethelflaed", "Ethelfleda"],
+    "aliases": [
+      "Aethelflaed",
+      "Ethelfleda"
+    ],
     "wiki": "Æthelflæd",
     "role": "Con gái Alfred, cai trị Mercia (911–918)",
     "biography": "Con gái cả của Alfred và Ealhswith, vợ của Æthelred xứ Mercia. Sau khi chồng mất, bà cai trị với tước hiệu Lady of the Mercians. Bà xây các thành phòng thủ, chiếm Derby năm 917 và thu phục Leicester năm 918.",
@@ -3749,7 +3768,10 @@
     "id": "edward-the-elder",
     "countryId": "england",
     "name": "Edward the Elder",
-    "aliases": ["Edward Già", "Edward xứ Wessex"],
+    "aliases": [
+      "Edward Già",
+      "Edward xứ Wessex"
+    ],
     "wiki": "Edward the Elder",
     "role": "Vua (899–924), con Alfred và cha Æthelstan",
     "biography": "Edward kế vị Alfred năm 899. Ông phối hợp với chị là Æthelflæd tiến vào vùng Danelaw. Ông kiểm soát East Anglia sau chiến dịch năm 917 và tiếp quản Mercia năm 918. Con trai ông là Æthelstan chiếm York năm 927.",
@@ -4712,6 +4734,694 @@
       {
         "title": "Gro Harlem Brundtland",
         "url": "https://en.wikipedia.org/wiki/Gro_Harlem_Brundtland"
+      }
+    ]
+  },
+  {
+    "id": "ton-kien",
+    "countryId": "china",
+    "name": "Tôn Kiên",
+    "aliases": [],
+    "wiki": "Sun Jian",
+    "role": "Tướng cuối Đông Hán, mở đường cho thế lực họ Tôn ở Giang Đông.",
+    "biography": "Đánh quân Đổng Trác ở Dương Nhân và tiến vào Lạc Dương. Ông tử trận trong chiến dịch đánh Lưu Biểu ở Tương Dương; niên đại thường được ghi 191 hoặc 192.",
+    "lifespan": "155–191/192",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 46",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷46"
+      }
+    ]
+  },
+  {
+    "id": "ton-sach",
+    "countryId": "china",
+    "name": "Tôn Sách",
+    "aliases": [],
+    "wiki": "Sun Ce",
+    "role": "Người gây dựng thế lực họ Tôn tại Giang Đông.",
+    "biography": "Tiếp nối lực lượng của Tôn Kiên, chinh phục nhiều quận Giang Đông. Bị tập kích và mất năm 200; Tôn Quyền kế thừa quyền lực.",
+    "lifespan": "175–200",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 46",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷46"
+      }
+    ]
+  },
+  {
+    "id": "truong-giac",
+    "countryId": "china",
+    "name": "Trương Giác",
+    "aliases": [],
+    "wiki": "Zhang Jue",
+    "role": "Thủ lĩnh khởi nghĩa Khăn Vàng.",
+    "biography": "Tổ chức Thái Bình Đạo và phát động khởi nghĩa năm 184, mất vì bệnh trong năm đó.",
+    "lifespan": "Không rõ – 184",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 1",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷01"
+      }
+    ]
+  },
+  {
+    "id": "hoang-phu-tung",
+    "countryId": "china",
+    "name": "Hoàng Phủ Tung",
+    "aliases": [],
+    "wiki": "Huangfu Song",
+    "role": "Tướng Đông Hán đàn áp Khăn Vàng.",
+    "biography": "Chỉ huy các trận Trường Xã, Quảng Tông và Hạ Khúc Dương năm 184.",
+    "lifespan": "Không rõ – 195",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 1",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷01"
+      }
+    ]
+  },
+  {
+    "id": "dong-trac",
+    "countryId": "china",
+    "name": "Đổng Trác",
+    "aliases": [],
+    "wiki": "Dong Zhuo",
+    "role": "Quyền thần khống chế triều Đông Hán.",
+    "biography": "Đưa quân vào Lạc Dương năm 189, lập Hán Hiến Đế rồi dời đô sang Trường An. Bị Lữ Bố giết trong âm mưu của Vương Doãn năm 192.",
+    "lifespan": "Không rõ – 192",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 6",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷06"
+      }
+    ]
+  },
+  {
+    "id": "vien-thieu",
+    "countryId": "china",
+    "name": "Viên Thiệu",
+    "aliases": [],
+    "wiki": "Yuan Shao",
+    "role": "Thủ lĩnh Hà Bắc và đối thủ của Tào Tháo tại Quan Độ.",
+    "biography": "Đứng đầu liên minh Quan Đông, xây dựng thế lực ở Hà Bắc. Thất bại tại Quan Độ năm 200 và mất năm 202.",
+    "lifespan": "Không rõ – 202",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 6",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷06"
+      }
+    ]
+  },
+  {
+    "id": "lu-bo",
+    "countryId": "china",
+    "name": "Lữ Bố",
+    "aliases": [],
+    "wiki": "Lü Bu",
+    "role": "Tướng và thủ lĩnh quân sự cuối Đông Hán.",
+    "biography": "Giết Đổng Trác năm 192, tranh Duyện Châu với Tào Tháo rồi chiếm Từ Châu. Bị bắt tại Hạ Bì cuối năm Kiến An thứ ba và xử tử.",
+    "lifespan": "Không rõ – 198/199",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 7",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷07"
+      }
+    ]
+  },
+  {
+    "id": "vuong-doan",
+    "countryId": "china",
+    "name": "Vương Doãn",
+    "aliases": [],
+    "wiki": "Wang Yun (Han dynasty)",
+    "role": "Đại thần tổ chức âm mưu giết Đổng Trác.",
+    "biography": "Cùng Lữ Bố loại bỏ Đổng Trác năm 192, sau đó bị quân Lý Thôi và Quách Dĩ giết khi Trường An thất thủ.",
+    "lifespan": "137–192",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 6",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷06"
+      }
+    ]
+  },
+  {
+    "id": "ly-thoi",
+    "countryId": "china",
+    "name": "Lý Thôi",
+    "aliases": [],
+    "wiki": "Li Jue (Han dynasty)",
+    "role": "Tướng cũ của Đổng Trác, khống chế triều đình tại Trường An.",
+    "biography": "Cùng Quách Dĩ chiếm Trường An năm 192 rồi giao chiến với nhau năm 195; bị giết năm 198.",
+    "lifespan": "Không rõ – 198",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 6",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷06"
+      }
+    ]
+  },
+  {
+    "id": "quach-di",
+    "countryId": "china",
+    "name": "Quách Dĩ",
+    "aliases": [],
+    "wiki": "Guo Si",
+    "role": "Tướng cũ của Đổng Trác ở Quan Trung.",
+    "biography": "Cùng Lý Thôi chiếm Trường An, sau đó hai phe đánh nhau khiến triều đình phải chạy về phía đông.",
+    "lifespan": "Không rõ – 197",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 6",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷06"
+      }
+    ]
+  },
+  {
+    "id": "han-hien-de",
+    "countryId": "china",
+    "name": "Hán Hiến Đế",
+    "aliases": [],
+    "wiki": "Emperor Xian of Han",
+    "role": "Hoàng đế cuối cùng của Đông Hán.",
+    "biography": "Lên ngôi năm 189; triều đình lần lượt bị các quân phiệt khống chế. Nhường ngôi cho Tào Phi năm 220 và mất năm 234.",
+    "lifespan": "181–234",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 1",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷01"
+      }
+    ]
+  },
+  {
+    "id": "chu-du",
+    "countryId": "china",
+    "name": "Chu Du",
+    "aliases": [],
+    "wiki": "Zhou Yu",
+    "role": "Tướng họ Tôn, chỉ huy ở Xích Bích.",
+    "biography": "Chỉ huy quân Tôn Quyền đánh Tào Tháo tại Xích Bích và giành Giang Lăng. Mất vì bệnh năm 210.",
+    "lifespan": "175–210",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 54",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷54"
+      }
+    ]
+  },
+  {
+    "id": "ha-hau-uyen",
+    "countryId": "china",
+    "name": "Hạ Hầu Uyên",
+    "aliases": [],
+    "wiki": "Xiahou Yuan",
+    "role": "Tướng Tào Tháo phòng thủ Hán Trung.",
+    "biography": "Phụ trách mặt trận phía tây; tử trận trước quân Hoàng Trung tại Định Quân Sơn năm 219.",
+    "lifespan": "Không rõ – 219",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 9",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷09"
+      }
+    ]
+  },
+  {
+    "id": "luc-ton",
+    "countryId": "china",
+    "name": "Lục Tốn",
+    "aliases": [],
+    "wiki": "Lu Xun (Three Kingdoms)",
+    "role": "Danh tướng Đông Ngô, đánh bại Lưu Bị ở Di Lăng.",
+    "biography": "Chỉ huy chiến thắng Di Lăng năm 222, sau giữ vai trò trọng yếu trong quân chính Đông Ngô. Mất năm 245 giữa tranh chấp kế vị tại triều đình.",
+    "lifespan": "183–245",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 58",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷58"
+      }
+    ]
+  },
+  {
+    "id": "tao-due",
+    "countryId": "china",
+    "name": "Tào Duệ",
+    "aliases": [],
+    "wiki": "Cao Rui",
+    "role": "Hoàng đế thứ hai của Tào Ngụy.",
+    "biography": "Kế vị Tào Phi năm 226, tổ chức phòng thủ trước các cuộc Bắc phạt. Mất năm 239, để lại triều đình cho Tào Phương và các phụ chính.",
+    "lifespan": "204/206–239",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 3",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷03"
+      }
+    ]
+  },
+  {
+    "id": "luu-thien",
+    "countryId": "china",
+    "name": "Lưu Thiện",
+    "aliases": [],
+    "wiki": "Liu Shan",
+    "role": "Hoàng đế thứ hai và cuối cùng của Thục Hán.",
+    "biography": "Kế vị Lưu Bị năm 223, dựa vào Gia Cát Lượng và các đại thần. Đầu hàng Đặng Ngải năm 263, sau được đưa về Lạc Dương.",
+    "lifespan": "207–271",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 33",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷33"
+      }
+    ]
+  },
+  {
+    "id": "truong-lieu",
+    "countryId": "china",
+    "name": "Trương Liêu",
+    "aliases": [],
+    "wiki": "Zhang Liao",
+    "role": "Danh tướng Tào Ngụy, nổi tiếng tại Hợp Phì.",
+    "biography": "Từng theo Lữ Bố; quy hàng Tào Tháo sau khi Hạ Bì thất thủ. Năm 215, cùng Lý Điển và Nhạc Tiến giữ Hợp Phì, phản kích quân Tôn Quyền ở Tiêu Diêu Tân. Mất vì bệnh năm 222.",
+    "lifespan": "169–222",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 17",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷17"
+      }
+    ]
+  },
+  {
+    "id": "hoang-trung",
+    "countryId": "china",
+    "name": "Hoàng Trung",
+    "aliases": [],
+    "wiki": "Huang Zhong",
+    "role": "Tướng Lưu Bị, lập công tại Định Quân Sơn.",
+    "biography": "Theo Lưu Bị khi các quận nam Kinh Châu quy phục, tham gia chiếm Ích Châu và giết Hạ Hầu Uyên năm 219. Mất năm 220, trước chiến dịch Di Lăng.",
+    "lifespan": "Không rõ – 220",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 36",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷36"
+      }
+    ]
+  },
+  {
+    "id": "quan-vu",
+    "countryId": "china",
+    "name": "Quan Vũ",
+    "aliases": [],
+    "wiki": "Guan Yu",
+    "role": "Tướng Lưu Bị giữ Kinh Châu.",
+    "biography": "Theo Lưu Bị từ buổi đầu, giữ Kinh Châu và đánh Phàn Thành năm 219. Bị quân Tôn Quyền bắt và giết sau khi mất Giang Lăng.",
+    "lifespan": "Không rõ – 219",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 36",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷36"
+      }
+    ]
+  },
+  {
+    "id": "truong-phi",
+    "countryId": "china",
+    "name": "Trương Phi",
+    "aliases": [],
+    "wiki": "Zhang Fei",
+    "role": "Tướng Lưu Bị, hoạt động tại Trường Bản và Ba Tây.",
+    "biography": "Theo Lưu Bị từ buổi đầu, chặn hậu ở Trường Bản và đánh bại Trương Cáp tại Ba Tây. Bị thuộc hạ sát hại ở Lãng Trung trước cuộc đông chinh năm 221.",
+    "lifespan": "Không rõ – 221",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 36",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷36"
+      }
+    ]
+  },
+  {
+    "id": "gia-cat-luong",
+    "countryId": "china",
+    "name": "Gia Cát Lượng",
+    "aliases": [],
+    "wiki": "Zhuge Liang",
+    "role": "Thừa tướng Thục Hán, chỉ huy các cuộc Bắc phạt.",
+    "biography": "Giúp Lưu Bị xây dựng thế lực, phụ chính cho Lưu Thiện từ năm 223, bình định Nam Trung và nhiều lần tiến đánh Ngụy. Đối đầu Tư Mã Ý năm 231 và 234; mất tại Ngũ Trượng Nguyên.",
+    "lifespan": "181–234",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 35",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷35"
+      }
+    ]
+  },
+  {
+    "id": "bang-thong",
+    "countryId": "china",
+    "name": "Bàng Thống",
+    "aliases": [],
+    "wiki": "Pang Tong",
+    "role": "Mưu sĩ giúp Lưu Bị đánh chiếm Ích Châu.",
+    "biography": "Cùng Lưu Bị tổ chức chiến dịch đánh Lưu Chương; trúng tên và mất khi vây Lạc Thành năm 214.",
+    "lifespan": "179–214",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 37",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷37"
+      }
+    ]
+  },
+  {
+    "id": "lu-mong",
+    "countryId": "china",
+    "name": "Lữ Mông",
+    "aliases": [],
+    "wiki": "Lü Meng",
+    "role": "Tướng Tôn Quyền chiếm Kinh Châu năm 219.",
+    "biography": "Kế nhiệm Lỗ Túc tại mặt trận Kinh Châu, đánh chiếm Giang Lăng khi Quan Vũ tiến lên Phàn Thành. Mất vì bệnh không lâu sau chiến dịch.",
+    "lifespan": "178–220",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 54",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷54"
+      }
+    ]
+  },
+  {
+    "id": "lo-tuc",
+    "countryId": "china",
+    "name": "Lỗ Túc",
+    "aliases": [],
+    "wiki": "Lu Su",
+    "role": "Mưu sĩ Đông Ngô, chủ trương liên minh với Lưu Bị.",
+    "biography": "Ủng hộ liên minh chống Tào tại Xích Bích và thương lượng với Quan Vũ trong tranh chấp Kinh Châu năm 215. Mất năm 217.",
+    "lifespan": "172–217",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 54",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷54"
+      }
+    ]
+  },
+  {
+    "id": "trieu-van",
+    "countryId": "china",
+    "name": "Triệu Vân",
+    "aliases": [],
+    "wiki": "Zhao Yun",
+    "role": "Tướng Thục Hán theo Lưu Bị.",
+    "biography": "Theo Lưu Bị, bảo vệ gia quyến tại Trường Bản và chỉ huy nghi binh tại Cơ Cốc trong lần Bắc phạt năm 228. Mất năm 229.",
+    "lifespan": "Không rõ – 229",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 36",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷36"
+      }
+    ]
+  },
+  {
+    "id": "ma-sieu",
+    "countryId": "china",
+    "name": "Mã Siêu",
+    "aliases": [],
+    "wiki": "Ma Chao",
+    "role": "Tướng Tây Lương, về sau theo Lưu Bị.",
+    "biography": "Chống Tào Tháo tại Đồng Quan năm 211, sau theo Lưu Bị ở Ích Châu và được phong Phiêu kỵ tướng quân. Mất năm 222.",
+    "lifespan": "176–222",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 36",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷36"
+      }
+    ]
+  },
+  {
+    "id": "truong-cap",
+    "countryId": "china",
+    "name": "Trương Cáp",
+    "aliases": [],
+    "wiki": "Zhang He",
+    "role": "Danh tướng Ngụy đối đầu quân Thục.",
+    "biography": "Đánh bại Mã Tắc tại Nhai Đình năm 228. Tử trận khi truy kích quân Gia Cát Lượng năm 231.",
+    "lifespan": "Không rõ – 231",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 17",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷17"
+      }
+    ]
+  },
+  {
+    "id": "ma-tac",
+    "countryId": "china",
+    "name": "Mã Tắc",
+    "aliases": [],
+    "wiki": "Ma Su",
+    "role": "Tướng Thục giữ Nhai Đình trong lần Bắc phạt đầu.",
+    "biography": "Không giữ được Nhai Đình trước Trương Cáp, khiến quân Thục phải rút. Bị xử tội sau chiến dịch năm 228.",
+    "lifespan": "190–228",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 39",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷39"
+      }
+    ]
+  },
+  {
+    "id": "khuong-duy",
+    "countryId": "china",
+    "name": "Khương Duy",
+    "aliases": [],
+    "wiki": "Jiang Wei",
+    "role": "Tướng tiếp tục Bắc phạt cuối thời Thục Hán.",
+    "biography": "Theo Gia Cát Lượng từ năm 228, tiếp tục chiến tranh với Ngụy sau khi ông mất. Chống Chung Hội tại Kiếm Các năm 263 và chết trong biến loạn Thành Đô năm 264.",
+    "lifespan": "202–264",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 44",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷44"
+      }
+    ]
+  },
+  {
+    "id": "dang-ngai",
+    "countryId": "china",
+    "name": "Đặng Ngải",
+    "aliases": [],
+    "wiki": "Deng Ai",
+    "role": "Tướng Ngụy tiến vào Thành Đô năm 263.",
+    "biography": "Nhiều lần chặn Khương Duy; vượt Âm Bình đánh Miên Trúc, buộc Lưu Thiện đầu hàng. Bị bắt rồi bị giết trong biến loạn năm 264.",
+    "lifespan": "197–264",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 28",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷28"
+      }
+    ]
+  },
+  {
+    "id": "chung-hoi",
+    "countryId": "china",
+    "name": "Chung Hội",
+    "aliases": [],
+    "wiki": "Zhong Hui",
+    "role": "Tướng Ngụy tham gia diệt Thục.",
+    "biography": "Dẫn quân qua Hán Trung đến Kiếm Các năm 263. Mưu nổi dậy cùng Khương Duy sau chiến thắng và bị quân lính giết năm 264.",
+    "lifespan": "225–264",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 28",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷28"
+      }
+    ]
+  },
+  {
+    "id": "tu-ma-su",
+    "countryId": "china",
+    "name": "Tư Mã Sư",
+    "aliases": [],
+    "wiki": "Sima Shi",
+    "role": "Người kế thừa quyền phụ chính của Tư Mã Ý.",
+    "biography": "Nắm quyền ở Ngụy sau năm 251, phế Tào Phương năm 254. Mất năm 255 sau chiến dịch ở Thọ Xuân; Tư Mã Chiêu kế quyền.",
+    "lifespan": "208–255",
+    "sources": [
+      {
+        "title": "Tấn thư",
+        "url": "https://zh.wikisource.org/wiki/晉書/卷002"
+      }
+    ]
+  },
+  {
+    "id": "tu-ma-chieu",
+    "countryId": "china",
+    "name": "Tư Mã Chiêu",
+    "aliases": [],
+    "wiki": "Sima Zhao",
+    "role": "Quyền thần Ngụy, cha Tư Mã Viêm.",
+    "biography": "Nắm thực quyền từ năm 255, dẹp chống đối và tổ chức diệt Thục năm 263. Mất năm 265, trước khi con là Tư Mã Viêm thay Ngụy lập Tấn.",
+    "lifespan": "211–265",
+    "sources": [
+      {
+        "title": "Tấn thư",
+        "url": "https://zh.wikisource.org/wiki/晉書/卷002"
+      }
+    ]
+  },
+  {
+    "id": "tao-mao",
+    "countryId": "china",
+    "name": "Tào Mao",
+    "aliases": [],
+    "wiki": "Cao Mao",
+    "role": "Hoàng đế Ngụy chống quyền thần Tư Mã Chiêu.",
+    "biography": "Được lập sau khi Tào Phương bị phế. Dẫn cận vệ đánh Tư Mã Chiêu và bị giết ở Lạc Dương năm 260.",
+    "lifespan": "241–260",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 4",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷04"
+      }
+    ]
+  },
+  {
+    "id": "tao-sang",
+    "countryId": "china",
+    "name": "Tào Sảng",
+    "aliases": [],
+    "wiki": "Cao Shuang",
+    "role": "Đại thần phụ chính của Tào Phương.",
+    "biography": "Cùng Tư Mã Ý phụ chính từ năm 239. Bị lật đổ trong chính biến Cao Bình Lăng và bị xử tử năm 249.",
+    "lifespan": "Không rõ – 249",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 9",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷09"
+      }
+    ]
+  },
+  {
+    "id": "gia-cat-khac",
+    "countryId": "china",
+    "name": "Gia Cát Khác",
+    "aliases": [],
+    "wiki": "Zhuge Ke",
+    "role": "Đại thần phụ chính Đông Ngô.",
+    "biography": "Chỉ huy thắng lợi Đông Hưng năm 252; chiến dịch Hợp Phì Tân Thành thất bại và bị Tôn Tuấn giết năm 253.",
+    "lifespan": "203–253",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 64",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷64"
+      }
+    ]
+  },
+  {
+    "id": "ton-luong",
+    "countryId": "china",
+    "name": "Tôn Lượng",
+    "aliases": [],
+    "wiki": "Sun Liang",
+    "role": "Hoàng đế Đông Ngô sau Tôn Quyền.",
+    "biography": "Kế vị năm 252 khi còn nhỏ. Bị Tôn Lâm phế năm 258 và mất năm 260.",
+    "lifespan": "243–260",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 48",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷48"
+      }
+    ]
+  },
+  {
+    "id": "ton-huu",
+    "countryId": "china",
+    "name": "Tôn Hưu",
+    "aliases": [],
+    "wiki": "Sun Xiu",
+    "role": "Hoàng đế thứ ba của Đông Ngô.",
+    "biography": "Lên ngôi năm 258 sau khi Tôn Lượng bị phế; tổ chức loại bỏ quyền thần Tôn Lâm. Mất năm 264.",
+    "lifespan": "235–264",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 48",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷48"
+      }
+    ]
+  },
+  {
+    "id": "ton-hao",
+    "countryId": "china",
+    "name": "Tôn Hạo",
+    "aliases": [],
+    "wiki": "Sun Hao",
+    "role": "Hoàng đế cuối cùng của Đông Ngô.",
+    "biography": "Kế vị năm 264; đầu hàng quân Tây Tấn tại Kiến Nghiệp năm 280, kết thúc Đông Ngô.",
+    "lifespan": "242–284",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 48",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷48"
+      }
+    ]
+  },
+  {
+    "id": "luu-bieu",
+    "countryId": "china",
+    "name": "Lưu Biểu",
+    "aliases": [],
+    "wiki": "Liu Biao",
+    "role": "Châu mục Kinh Châu cuối Đông Hán.",
+    "biography": "Xây dựng thế lực tại Kinh Châu, đặt trung tâm ở Tương Dương. Mất năm 208 trước khi quân Tào tiến vào.",
+    "lifespan": "142–208",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 6",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷06"
+      }
+    ]
+  },
+  {
+    "id": "luu-chuong",
+    "countryId": "china",
+    "name": "Lưu Chương",
+    "aliases": [],
+    "wiki": "Liu Zhang",
+    "role": "Người cai trị Ích Châu trước Lưu Bị.",
+    "biography": "Mời Lưu Bị vào Ích Châu, sau trở thành đối thủ. Đầu hàng tại Thành Đô năm 214.",
+    "lifespan": "Không rõ – 219",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 31",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷31"
+      }
+    ]
+  },
+  {
+    "id": "han-linh-de",
+    "countryId": "china",
+    "name": "Hán Linh Đế",
+    "aliases": [],
+    "wiki": "Emperor Ling of Han",
+    "role": "Hoàng đế Đông Hán thời khởi nghĩa Khăn Vàng.",
+    "biography": "Trị vì giai đoạn triều đình suy yếu và các lực lượng địa phương nổi lên. Mất năm 189, mở đầu khủng hoảng kế vị.",
+    "lifespan": "156–189",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 1",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷01"
+      }
+    ]
+  },
+  {
+    "id": "nguy-duyen",
+    "countryId": "china",
+    "name": "Ngụy Diên",
+    "aliases": [],
+    "wiki": "Wei Yan",
+    "role": "Tướng Thục trấn Hán Trung, tham gia Bắc phạt.",
+    "biography": "Theo Lưu Bị rồi Gia Cát Lượng. Sau khi Gia Cát Lượng mất, tranh chấp với Dương Nghi và bị giết trong cuộc rút quân năm 234.",
+    "lifespan": "Không rõ – 234",
+    "sources": [
+      {
+        "title": "Tam quốc chí · quyển 40",
+        "url": "https://zh.wikisource.org/wiki/三國志/卷40"
       }
     ]
   }

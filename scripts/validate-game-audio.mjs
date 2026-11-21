@@ -144,11 +144,12 @@ assert.equal(engine.timers.size, 0, "Monarchy China uses the selected playlist")
 const chinaSongs = soundtrackForPath("/china").playlist;
 const chinaSongTitles = soundtrackForPath("/china").playlistTitles;
 const englandSongs = soundtrackForPath("/england").playlist;
-assert.equal(chinaSongs.length, 4);
+assert.equal(chinaSongs.length, 3);
+assert.ok(!chinaSongs.includes("/audio/music/trung-hoa-phan-doan-1.mp3"));
 assert.equal(soundtrackForPath("/battle/three-kingdoms").playlist, chinaSongs);
+assert.equal(soundtrackForPath("/period/three-kingdoms").playlist, chinaSongs);
 assert.deepEqual(Object.values(chinaSongTitles), [
   "Yêu Giang Sơn Càng Yêu Mỹ Nhân",
-  "Bài số 1",
   "Bài số 5",
   "Bài số 9",
 ]);

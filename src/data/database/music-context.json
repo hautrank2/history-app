@@ -833,6 +833,656 @@
       "country": "vietnam",
       "era": "monarchy",
       "mood": "reflective"
+    },
+    "mao-trach-dong": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "chu-an-lai": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tuong-gioi-thach": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ha-vu": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "thanh-thang": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tru-vuong": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "co-xuong": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "co-phat": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "khuong-tu-nha": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "khong-tu": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ton-vu": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "thuong-uong": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "luu-bang": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "hang-vu": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "han-tin": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tieu-ha": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "truong-luong": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "vuong-mang": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "han-quang-vu": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tao-thao": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tao-phi": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ton-quyen": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tu-ma-y": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tu-ma-viem": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tu-ma-due": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "luu-uyen": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ly-hung": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "truong-quy": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "thach-lac": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "mo-dung-hoang": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "phu-kien-kien-lap": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "mo-dung-thuy": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "dieu-truong": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "khat-phuc-quoc-nhan": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "lu-quang": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "thac-bat-o-co": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "doan-nghiep": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "mo-dung-duc": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ly-cao": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "hach-lien-bot-bot": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "phung-bat": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "mo-dung-hong": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "nhiem-man": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "thac-bat-y-lo": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "dich-lieu": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "hoan-huyen": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tieu-tung": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "luu-du": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tieu-dao-thanh": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tieu-dien": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "thac-bat-khue": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "nguyen-thien": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "nguyen-bao-cu": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "cao-duong": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "vu-van-giac": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tieu-sat": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tuy-van-de": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "duong-cao-to": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "vo-tac-thien": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "duong-huyen-tong": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "chu-on": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ly-ton-huc": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "thach-kinh-duong": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "luu-tri-vien": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "quach-uy": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "duong-hanh-mat": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tien-luu": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "vuong-tham-tri": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "luu-nghiem": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ma-an": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "luu-sung": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "cao-quy-hung": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "vuong-kien": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "manh-tri-tuong": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ly-bien": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "trieu-khuong-dan": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "da-luat-a-bao-co": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ly-nguyen-hao": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "hoan-nhan-a-cot-da": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "trieu-cau": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "da-luat-dai-thach": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "nguyen-thuan-de": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "hoang-quang-de": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "no-nhi-cap": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "hoang-thai-cuc": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "pho-nghi": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ton-trung-son": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ton-kien": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ton-sach": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "truong-giac": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "hoang-phu-tung": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "dong-trac": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "vien-thieu": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "lu-bo": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "vuong-doan": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ly-thoi": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "quach-di": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "han-hien-de": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "chu-du": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ha-hau-uyen": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "luc-ton": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tao-due": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "luu-thien": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "truong-lieu": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "hoang-trung": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "quan-vu": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "truong-phi": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "gia-cat-luong": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "bang-thong": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "lu-mong": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "lo-tuc": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "trieu-van": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ma-sieu": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "truong-cap": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ma-tac": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "khuong-duy": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "dang-ngai": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "chung-hoi": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tu-ma-su": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tu-ma-chieu": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tao-mao": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "tao-sang": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "gia-cat-khac": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ton-luong": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ton-huu": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "ton-hao": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "luu-bieu": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "luu-chuong": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "han-linh-de": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
+    },
+    "nguy-duyen": {
+      "country": "china",
+      "era": "monarchy",
+      "mood": "reflective"
     }
   },
   "periods": {

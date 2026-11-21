@@ -3,6 +3,9 @@ import Link from "next/link";
 import { HomeLink } from "~/components/home-link";
 import { notFound } from "next/navigation";
 import { CharacterAvatar } from "~/components/character-avatar";
+import { threeKingdomsHref } from "~/data/battle-links";
+import { battleEntries } from "~/data/battles";
+import { periodForScene } from "~/data/periods";
 import { chinaOverview } from "~/data/china-overview";
 import { characters, findCharacter } from "~/data/characters";
 import { getCharacterCountry } from "~/data/character-countries";
@@ -12,6 +15,7 @@ import { portraitCaption, portraitFor } from "~/data/portraits";
 import { vietnamOverview } from "~/data/vietnam-overview";
 import { vietnamData } from "~/data/vietnam";
 import { lifeScenes } from "~/data/ho-chi-minh";
+import { people as kingdomPeople, threeKingdomsScenes } from "~/data/three-kingdoms";
 import { CharacterVisit } from "../_components/character-visit";
 import { HoChiMinhLife } from "../_components/ho-chi-minh-life";
 import "~/styles/characters.css";
@@ -33,6 +37,12 @@ const CharacterPage = async ({ params }: Props) => {
   if (!person) notFound();
   if (person.id === "ho-chi-minh") return <><CharacterVisit id={person.id} /><HoChiMinhLife /></>;
   const lifeConnections = lifeScenes.filter((scene) => scene.people.some((item) => item.characterId === person.id));
+  const kingdomConnections = threeKingdomsScenes.flatMap((scene) => {
+    const member = scene.cast.find((item) =>
+      kingdomPeople[item.person].characterId === person.id,
+    );
+    return member ? [{ scene, member }] : [];
+  });
   const portrait = portraitFor(person.wiki);
   const scenes = overviewScenes.filter(({ scene }) =>
     scene.people.some((item) => item.id === person.id)
@@ -47,8 +57,22 @@ const CharacterPage = async ({ params }: Props) => {
     <CharacterVisit id={person.id} />
     <nav className="character-breadcrumbs" aria-label="Điều hướng nhân vật"><HomeLink back /><Link href="/characters">Tất cả nhân vật</Link><Link href={`/${homeCountry}`}>Tổng quan {getCharacterCountry(homeCountry).name}</Link></nav>
     <header className="character-hero">{portrait ? <figure className="character-portrait"><CharacterAvatar name={person.name} portrait={portrait} width={360} height={440} /><figcaption>{portraitCaption(portrait)} · <a href={portrait.file} target="_blank" rel="noreferrer">Nguồn ảnh ↗</a></figcaption></figure> : null}<div><p className="character-eyebrow">NHÂN VẬT LỊCH SỬ</p><h1>{person.name}</h1><p className="character-role">{person.role}</p><dl className="character-facts"><dt>Niên đại</dt><dd>{person.lifespan}</dd>{person.aliases.length ? <><dt>Tên gọi khác</dt><dd>{person.aliases.join(" · ")}</dd></> : null}</dl><p className="character-biography">{person.biography}</p></div></header>
-    <section className="character-related-scenes"><h2>Dấu ấn trong lịch sử</h2>{scenes.length ? scenes.map(({ scene, country }) => <article className="character-scene" key={`${country}-${scene.id}`}><Link href={`/${country}#${scene.id}`}><small>{scene.years} · {scene.era}</small><h3>{scene.title} →</h3></Link><p>{scene.summary}</p><p>{scene.people.find((item) => item.id === person.id)?.role}</p>{scene.id === "tran-bach-dang" ? <Link className="character-battle-link" href="/vietnam/bach-dang-1288">Vào sa bàn Bạch Đằng 1288 →</Link> : null}</article>) : <p>Chưa có cảnh liên quan.</p>}</section>
-    {battleChapters.length ? <section className="character-battle-chapters"><h2>Chiến dịch Bạch Đằng 1288</h2><Link href="/vietnam/bach-dang-1288">Mở sa bàn chiến dịch →</Link>{battleChapters.map((chapter) => <article className="character-scene" key={chapter.title}><h3>{chapter.title}</h3><small>{chapter.date}</small><p>{chapter.text}</p></article>)}</section> : null}
+    <section className="character-related-scenes"><h2>Dấu ấn trong lịch sử</h2>{scenes.length ? scenes.map(({ scene, country }) => <article className="character-scene" key={`${country}-${scene.id}`}><Link href={battleEntries.find((battle) => battle.countryId === country && battle.sceneId === scene.id)?.href ?? periodForScene(country, scene.id)?.href ?? `/${country}#${scene.id}`}><small>{scene.years} · {scene.era}</small><h3>{scene.title} →</h3></Link><p>{scene.summary}</p><p>{scene.people.find((item) => item.id === person.id)?.role}</p>{scene.id === "tran-bach-dang" ? <Link className="character-battle-link" href="/battle/tran-bach-dang-1288">Vào sa bàn Bạch Đằng 1288 →</Link> : null}</article>) : <p>Chưa có cảnh liên quan.</p>}</section>
+    {kingdomConnections.length > 0 && (
+      <section className="character-kingdom-connections" aria-labelledby="character-kingdom-heading">
+        <h2 id="character-kingdom-heading">Trong thời kỳ Tam Quốc</h2>
+        {kingdomConnections.map(({ scene, member }) => (
+          <article className="character-scene" key={scene.id} data-event-id={scene.id}>
+            <Link href={battleEntries.find((battle) => battle.id === scene.id)?.href ?? `${threeKingdomsHref}#${scene.id}`}>
+              <small>{scene.date} · {scene.chapter}</small>
+              <h3>{scene.title} →</h3>
+            </Link>
+            <p>{member.action}</p>
+          </article>
+        ))}
+      </section>
+    )}
+    {battleChapters.length ? <section className="character-battle-chapters"><h2>Chiến dịch Bạch Đằng 1288</h2><Link href="/battle/tran-bach-dang-1288">Mở sa bàn chiến dịch →</Link>{battleChapters.map((chapter) => <article className="character-scene" key={chapter.title}><h3>{chapter.title}</h3><small>{chapter.date}</small><p>{chapter.text}</p></article>)}</section> : null}
     {events.length ? <section className="character-events"><h2>Các cuộc khởi nghĩa</h2>{events.map((event) => <article className="character-scene" key={event.id}><Link href={`/vietnam/${event.id}`}><h3>{event.title} →</h3></Link><p>{event.years} · {event.location}</p><p>Kết quả: {event.outcome}</p></article>)}</section> : null}
     {lifeConnections.length ? <section className="character-life-connections"><h2>Trong hành trình Hồ Chí Minh</h2>{lifeConnections.map((scene) => <article className="character-scene" key={scene.id}><Link href={`/characters/ho-chi-minh#${scene.id}`}><small>{scene.date} · {scene.location.name}</small><h3>{scene.title} →</h3></Link><p>{scene.people.find((item) => item.characterId === person.id)?.connection}</p></article>)}</section> : null}
     <section className="character-sources"><h2>Tư liệu</h2>{person.sources.map((source) => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.title} ↗</a>)}</section>

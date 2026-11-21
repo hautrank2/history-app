@@ -17,6 +17,7 @@ import { useRef, useState } from "react";
 import { ImageGroup } from "@/components/ui/image";
 import { CharacterAvatar } from "~/components/character-avatar";
 import { CompactLink } from "~/components/compact-link";
+import { BattleGrid } from "~/components/battle-grid";
 import { Button } from "~/components/ui/button";
 import {
   Select,
@@ -32,6 +33,9 @@ import {
   TooltipTrigger,
 } from "~/components/ui/tooltip";
 import { battleLinksFor } from "~/data/battle-links";
+import { periodForScene } from "~/data/periods";
+import { dienBienPhuSource } from "~/data/dien-bien-phu";
+import type { HistoryCardModel } from "~/types/history-card";
 import { characterHref, getCharacter } from "~/data/characters";
 import { chinaSourcesFor } from "~/data/china-overview";
 import { englandGeography, englandMeasuresFor } from "~/data/england-geography";
@@ -69,6 +73,8 @@ type ContentPanelProps = {
   onTabChange: (tab: OverviewTab) => void;
   onClose: () => void;
   onInteract: () => void;
+  detail?: { title: string; parentHref: string; parentLabel: string; kind: "period" | "battle" };
+  relatedEntries?: HistoryCardModel[];
 };
 
 const PersonCard = ({ person }: { person: OverviewPersonModel; }) => {
@@ -110,11 +116,14 @@ export const ContentPanel = ({
   onTabChange,
   onClose,
   onInteract,
+  detail,
+  relatedEntries,
 }: ContentPanelProps) => {
   const [active, setActive] = useState(0);
   const body = useRef<HTMLDivElement>(null);
   const atlasCountry = country !== "vietnam";
   const battleLinks = tab === "story" ? battleLinksFor(country, scene.id) : [];
+  const period = periodForScene(country, scene.id);
   const englandDetail = country === "england" ? englandGeography[scene.id] : undefined;
   const measures = englandDetail ? englandMeasuresFor(scene.id) : [];
   const sources = isEuropeCountry(country)
@@ -122,6 +131,7 @@ export const ContentPanel = ({
     : country === "china"
       ? chinaSourcesFor(scene.id)
       : scene.sources.map((title) => ({ title, url: wikiUrl(title) }));
+  if (detail?.kind === "battle" && scene.era === "Chiến dịch Điện Biên Phủ") sources.push(dienBienPhuSource);
   const culture = [
     { ...scene.culture, sources },
     ...(overviewDetails[scene.id]?.culture ?? []),
@@ -332,6 +342,15 @@ export const ContentPanel = ({
         >
           <ImageGroup>
             <div className="vo-reading-stream">
+              {tab === "story" && !detail && period ? (
+                <Link href={period.href} className="vo-character-nav vo-glass mb-4 inline-flex">Chi tiết giai đoạn: {period.title} ↗</Link>
+              ) : null}
+              {tab === "story" && detail ? (
+                <nav aria-label="Quốc gia và giai đoạn" className="mb-4 flex flex-wrap gap-2 text-xs text-primary">
+                  <Link href={`/${country}`}>{detail.kind === "period" ? detail.parentLabel : "Lịch sử quốc gia"}</Link><span>›</span>
+                  {detail.kind === "battle" ? <><Link href={detail.parentHref}>{detail.parentLabel}</Link><span>›</span></> : null}<span>{detail.title}</span>
+                </nav>
+              ) : null}
               {battleLinks.length > 0 && (
                 <nav className="vo-related-battles mb-4 flex flex-wrap gap-2" aria-label="Trận đánh liên quan">
                   {battleLinks.map(({ href, label }) => (
@@ -400,6 +419,12 @@ export const ContentPanel = ({
                   ) : null}
                 </section>
               ))}
+              {tab === "story" && relatedEntries?.length ? (
+                <section className="mb-5 space-y-3" aria-label="Trận đánh trong giai đoạn">
+                  <h3 className="font-display text-xl">Trận đánh trong giai đoạn</h3>
+                  <BattleGrid entries={relatedEntries} />
+                </section>
+              ) : null}
             </div>
           </ImageGroup>
         </TabsContent>

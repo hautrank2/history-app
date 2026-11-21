@@ -21,7 +21,7 @@ export type PortraitModel = {
   generated?: boolean;
   placeholder?: boolean;
 };
-const archivePortraits: Record<string, { src: string; file: string; article: string; author: string; license: string }> = { ...archive, ...lifeArchive, ...chinaArchive, ...europeArchive, ...characterArchive };
+const archivePortraits: Record<string, { src: string; file: string; article: string; author: string; license: string; placeholder?: boolean }> = { ...archive, ...lifeArchive, ...chinaArchive, ...europeArchive, ...characterArchive };
 const leaderIllustrations: Record<string, { src: string; position: string }> = {
   ...illustrations,
   ...characterIllustrations,

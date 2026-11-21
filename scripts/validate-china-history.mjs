@@ -161,7 +161,12 @@ const portraits = Object.assign({}, ...[
 ].map((name) => json(`src/data/${name}.json`)));
 for (const person of characters) {
   const src = portraits[person.wiki]?.src;
-  assert.ok(src && src !== "/images/character-avatar.svg", `Missing portrait: ${person.id}`);
+  assert.ok(src, `Missing portrait: ${person.id}`);
+  if (src === "/images/character-avatar.svg") {
+    assert.equal(portraits[person.wiki].placeholder, true,
+      `Symbolic avatars must be explicitly labeled: ${person.id}`);
+    assert.equal(portraits[person.wiki].license, "Ảnh đại diện tượng trưng");
+  }
   assert.ok(existsSync(`public${src}`) && statSync(`public${src}`).size > 100, src);
 }
 const overviewCode = ts.transpileModule(

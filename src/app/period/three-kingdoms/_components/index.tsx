@@ -14,24 +14,22 @@ import {
   Swords,
 } from "lucide-react";
 import Link from "next/link";
-import { useEffect, useRef, useState, useSyncExternalStore } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import type { CSSProperties } from "react";
 
 import { CharacterAvatar } from "~/components/character-avatar";
+import { BattleGrid } from "~/components/battle-grid";
+import { battleEntries } from "~/data/battles";
+import { CountryFlag } from "~/components/country-flag";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "~/components/ui/select";
-import { getCharacter } from "~/data/characters";
+import { characterHref, getCharacter } from "~/data/characters";
 import { portraitFor } from "~/data/portraits";
-import { factions, people, places, threeKingdomsScenes } from "~/data/three-kingdoms";
+import { factions, people, places, threeKingdomsMapSources, threeKingdomsScenes } from "~/data/three-kingdoms";
 import type { PersonId } from "~/data/three-kingdoms";
 
 import { BattleMap } from "./map";
 import "~/styles/three-kingdoms.css";
 
-const chapterStarts = threeKingdomsScenes.flatMap((scene, index) =>
-  index === 0 || threeKingdomsScenes[index - 1].chapter !== scene.chapter
-    ? [{ index, name: scene.chapter }] : [],
-);
-const lastScene = threeKingdomsScenes.length - 1;
 const subscribe = (listener: () => void) => {
   window.addEventListener("hashchange", listener);
   return () => window.removeEventListener("hashchange", listener);
@@ -46,17 +44,21 @@ const subscribeLayout = (listener: () => void) => {
 };
 const getCompactLayout = () => window.matchMedia(compactLayout).matches;
 const getServerLayout = () => false;
-const openScene = (index: number) => {
-  const { id } = threeKingdomsScenes[index];
+const setSceneHash = (id: string) => {
   if (getHash() === id) return;
   window.history.replaceState(window.history.state, "", `#${id}`);
   window.dispatchEvent(new HashChangeEvent("hashchange"));
 };
 
-export const ThreeKingdomsExperience = () => {
+export const ThreeKingdomsExperience = ({ battleId }: { battleId?: string }) => {
+  const scenes = useMemo(() => battleId ? threeKingdomsScenes.filter((scene) => scene.id === battleId) : threeKingdomsScenes, [battleId]);
+  const battle = battleEntries.find((entry) => entry.id === battleId);
+  const chapterStarts = scenes.flatMap((scene, index) => index === 0 || scenes[index - 1].chapter !== scene.chapter ? [{ index, name: scene.chapter }] : []);
+  const lastScene = scenes.length - 1;
+  const openScene = useCallback((next: number) => setSceneHash(scenes[next].id), [scenes]);
   const id = useSyncExternalStore(subscribe, getHash, getServerHash);
-  const index = Math.max(0, threeKingdomsScenes.findIndex((frame) => frame.id === id));
-  const scene = threeKingdomsScenes[index];
+  const index = Math.max(0, scenes.findIndex((frame) => frame.id === id));
+  const scene = scenes[index];
   const compact = useSyncExternalStore(subscribeLayout, getCompactLayout, getServerLayout);
   const [playing, setPlaying] = useState(false);
   const [duration, setDuration] = useState(11);
@@ -67,8 +69,26 @@ export const ThreeKingdomsExperience = () => {
   const storyOpen = storyPreference ?? !compact;
   const selected = highlight?.scene === scene.id ? highlight.person : null;
   const timeline = useRef<HTMLOListElement>(null);
-  const activeStep = useRef<HTMLButtonElement>(null);
+  const storyPanel = useRef<HTMLElement>(null);
+  const dockPanel = useRef<HTMLElement>(null);
+  const [dockHeight, setDockHeight] = useState<number | null>(null);
+  const dockInset = timelineOpen
+    ? (dockHeight ?? (compact ? 235 : 185)) + 18
+    : 20;
   const legend = [...new Set(scene.territories.map((region) => region.faction))];
+
+  useEffect(() => {
+    storyPanel.current?.scrollTo({ top: 0 });
+  }, [index]);
+
+  useEffect(() => {
+    if (!dockPanel.current) return;
+    const observer = new ResizeObserver(([entry]) => {
+      setDockHeight(entry.target.getBoundingClientRect().height);
+    });
+    observer.observe(dockPanel.current);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     if (!playing || index === lastScene) return;
@@ -77,12 +97,13 @@ export const ThreeKingdomsExperience = () => {
       openScene(index + 1);
     }, duration * 1000);
     return () => window.clearTimeout(timer);
-  }, [duration, index, playing]);
+  }, [duration, index, playing, lastScene, openScene]);
 
   useEffect(() => {
-    if (!timeline.current || !activeStep.current) return;
+    if (!timeline.current) return;
     const strip = timeline.current;
-    const button = activeStep.current;
+    const button = strip.querySelector<HTMLButtonElement>('[aria-current="step"]');
+    if (!button) return;
     const left = button.getBoundingClientRect().left - strip.getBoundingClientRect().left + strip.scrollLeft;
     const right = left + button.offsetWidth;
     if (left < strip.scrollLeft || right > strip.scrollLeft + strip.clientWidth) {
@@ -113,7 +134,7 @@ export const ThreeKingdomsExperience = () => {
   };
 
   return (
-    <main className="tk-experience" onKeyDown={(event) => {
+    <main className="tk-experience" style={{ "--tk-dock": `${dockInset}px` } as CSSProperties} onKeyDown={(event) => {
       if (event.target !== event.currentTarget) return;
       if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
         event.preventDefault();
@@ -121,11 +142,11 @@ export const ThreeKingdomsExperience = () => {
       }
     }} tabIndex={0}>
       <header className="tk-header">
-        <Link href="/battle" className="tk-back" aria-label="Danh sách trận đánh">
-          <ArrowLeft size={17} /> <span>Trận đánh</span>
+        <Link href={battleId ? "/period/three-kingdoms" : "/period"} className="tk-back" aria-label="Các thời kỳ lịch sử">
+          <ArrowLeft size={17} /> <span>{battleId ? "Tam Quốc" : "Thời kỳ"}</span>
         </Link>
         <div className="tk-title">
-          <h1>Tam Quốc <span>184–229</span></h1>
+          <h1>{battle?.title ?? "Tam Quốc"} <span>{battle?.years ?? "220–280"}</span></h1>
         </div>
         <div className="tk-panel-toggles">
           <button type="button" aria-label="Diễn biến" aria-expanded={storyOpen} aria-controls="tk-story" title="Diễn biến" onClick={() => setStoryPreference(!storyOpen)}>
@@ -139,7 +160,7 @@ export const ThreeKingdomsExperience = () => {
       <div className="tk-stage">
         <div className="tk-cartography">
           <BattleMap scene={scene} selected={selected} wide={wide} storyOpen={storyOpen}
-            timelineOpen={timelineOpen} onSelect={selectPerson}
+            timelineOpen={timelineOpen} timelineInset={dockInset} onSelect={selectPerson}
             onToggleWide={() => {
               setWide((value) => !value);
               setHighlight(null);
@@ -153,10 +174,15 @@ export const ThreeKingdomsExperience = () => {
               ))}
               {scene.battle && <span><Swords size={14} />Trận đánh</span>}
             </div>
-            <p className="tk-disclosure">Nét đứt bao vùng ảnh hưởng hoặc vùng nổi dậy ước tính. Mũi tên chỉ hướng di chuyển khái quát. Dấu † chỉ địa điểm còn tranh luận hoặc khó xác định. Dòng sông và địa hình được giản lược.</p>
+            <p className="tk-disclosure">Màu thể hiện vùng ảnh hưởng ước tính; avatar ở vùng là vị trí đại diện của thủ lĩnh. Cụm có số: bấm để chuyển nhân vật. Mũi tên chỉ hướng di chuyển khái quát. Dấu † chỉ địa điểm còn tranh luận. Biên giới và tên quốc gia hiện đại chỉ để định hướng, không phải ranh giới thời Tam Quốc.</p>
+            {threeKingdomsMapSources.map((source) => (
+              <a key={source.url} href={source.url} target="_blank" rel="noreferrer" className="tk-source px-2 pb-2">
+                Lược đồ tham khảo: {source.title} ↗
+              </a>
+            ))}
           </details>
         </div>
-        <article id="tk-story" className="tk-story" aria-labelledby="tk-scene-title" hidden={!storyOpen} tabIndex={0}>
+        <article ref={storyPanel} id="tk-story" className="tk-story" aria-labelledby="tk-scene-title" hidden={!storyOpen} tabIndex={0}>
           <div className="tk-scene-copy" key={scene.id} aria-live="polite">
             <p className="tk-scene-date">{scene.date} <span>{scene.chapter}</span></p>
             <h2 id="tk-scene-title">{scene.title}</h2>
@@ -166,7 +192,7 @@ export const ThreeKingdomsExperience = () => {
           {scene.routes && <ul className="tk-route-list" aria-label="Hướng di chuyển">
             {scene.routes.map((route) => <li key={route.label}><i style={{ color: factions[route.faction].color }}>↗</i>{route.label}</li>)}
           </ul>}
-          <h3>Nhân vật đang ở đâu?</h3>
+          <h3>Trong lúc đó</h3>
           <ul className="tk-cast">
             {scene.cast.map((member) => {
               const person = people[member.person];
@@ -186,28 +212,39 @@ export const ThreeKingdomsExperience = () => {
                         : person.name.split(" ").at(-1)?.[0]}
                     </span>
                     <span>
-                      <strong>{person.name}</strong> <small>{places[member.place].name}{member.regional ? " · vùng gần đúng" : ""}</small>
+                      <strong>{person.name}</strong>{member.deceased && <small className="tk-death-label ml-2 text-primary">† Qua đời</small>}
+                      <small className="block">{places[member.place].name}{member.regional ? " · vùng gần đúng" : ""}</small>
                       <span>{member.action}</span>
                     </span>
                   </button>
+                  <Link
+                    href={characterHref(person.characterId)}
+                    className="tk-character-link ml-11 block w-fit pb-1 text-[10px] text-muted-foreground hover:text-primary hover:underline"
+                  >
+                    Hồ sơ nhân vật ↗
+                  </Link>
                 </li>
               );
             })}
           </ul>
           <a className="tk-source" href={scene.source.url} target="_blank" rel="noreferrer">{scene.source.name} <ExternalLink size={13} /></a>
           <Link href="/china#three-kingdoms" className="tk-source">Lịch sử Trung Quốc ↗</Link>
+          {!battleId && battleEntries.find((entry) => entry.id === scene.id) ? <Link href={battleEntries.find((entry) => entry.id === scene.id)!.href} className="tk-source"><CountryFlag countryId="china" /> Chi tiết trận đánh ↗</Link> : null}
+          {battleId ? <Link href={`/period/three-kingdoms#${scene.id}`} className="tk-source">Trở về thời kỳ Tam Quốc ↗</Link> : null}
+          <Link href="/battle" className="tk-source">Danh sách trận đánh ↗</Link>
+          {!battleId ? <details className="mt-5 space-y-3"><summary className="cursor-pointer text-sm text-primary">Các trận đánh trong thời kỳ Tam Quốc</summary><BattleGrid entries={battleEntries.filter((entry) => entry.periodId === "three-kingdoms")} /></details> : null}
         </article>
-        <section id="tk-timeline" className="tk-timeline" aria-label="Dòng thời gian Tam Quốc" hidden={!timelineOpen}>
+        <section ref={dockPanel} id="tk-timeline" className="tk-timeline" aria-label="Dòng thời gian Tam Quốc" hidden={!timelineOpen}>
           <div className="tk-transport">
             <div className="tk-playback">
               <button type="button" aria-label="Cảnh trước" disabled={index === 0} onClick={() => goTo(index - 1)}><ChevronLeft size={20} /></button>
-              <button type="button" className="tk-play" onClick={togglePlayback}>
+              <button type="button" className="tk-play" onClick={togglePlayback} disabled={lastScene === 0}>
                 {index === lastScene ? <RotateCcw size={16} /> : playing ? <Pause size={16} /> : <Play size={16} />}
                 {index === lastScene ? "Phát lại" : playing ? "Tạm dừng" : "Phát diễn biến"}
               </button>
               <button type="button" aria-label="Cảnh sau" disabled={index === lastScene} onClick={() => goTo(index + 1)}><ChevronRight size={20} /></button>
             </div>
-            <span className="tk-counter" aria-label={`Cảnh ${index + 1} trên ${threeKingdomsScenes.length}`}>{index + 1} / {threeKingdomsScenes.length}</span>
+            <span className="tk-counter" aria-label={`Cảnh ${index + 1} trên ${scenes.length}`}>{index + 1} / {scenes.length}</span>
             <input className="tk-scrubber" type="range" aria-label="Chọn mốc thời gian" aria-valuetext={`${scene.date} · ${scene.title}`}
               min={0} max={lastScene} value={index} onChange={(event) => goTo(Number(event.target.value))} />
             <div className="tk-speed">
@@ -228,9 +265,9 @@ export const ThreeKingdomsExperience = () => {
             {chapterStarts.map((chapter) => <button type="button" key={chapter.name} aria-pressed={scene.chapter === chapter.name} onClick={() => goTo(chapter.index)}>{chapter.name}</button>)}
           </div>
           <ol className="tk-timeline-strip" ref={timeline}>
-            {threeKingdomsScenes.map((frame, position) => (
+            {scenes.map((frame, position) => (
               <li key={frame.id} data-event-id={frame.id}>
-                <button type="button" onClick={() => goTo(position)} aria-current={index === position ? "step" : undefined} ref={index === position ? activeStep : undefined}>
+                <button type="button" onClick={() => goTo(position)} aria-current={index === position ? "step" : undefined}>
                   <span>{frame.date}{frame.battle && <Swords size={12} aria-label="Trận đánh" />}</span>
                   <strong>{frame.title}</strong>
                 </button>

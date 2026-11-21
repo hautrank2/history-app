@@ -1,0 +1,19 @@
+{
+  "tool": "Built-in image_gen",
+  "date": "2026-11-18",
+  "note": "AI artistic reconstructions. Red Cliffs and Yiling have dedicated artwork; other land-battle cards share a representative late-Han battlefield illustration. These images are not documentary evidence.",
+  "assets": [
+    {
+      "file": "public/images/three-kingdoms-battle.png",
+      "prompt": "Use case: historical-scene. Asset type: wide cinematic background image for a Vietnamese history atlas card about the Three Kingdoms. Primary request: an atmospheric artistic reconstruction of the Battle of Red Cliffs, China, winter AD 208. Scene: broad Yangtze River under smoky dusk skies with ranks of late Han wooden warships, a few burning ships in the mid distance, cliffs and layered mountains, small armored soldiers with spears and plain battle pennants. Style: detailed painterly historical game key art, restrained realistic material, sophisticated navy and antique gold with ember orange. Composition: wide 16:9 landscape; key fleet and flames in upper two thirds; lower third dark water with subtle reflections and room for title overlay. No enormous face or portraits, no text, no logos, no watermarks, no modern ships, no Great Wall, no fantasy armor. This is an artistic illustration, not documentary evidence. Generate the image and keep a saved local output file accessible for copying into the project."
+    },
+    {
+      "file": "public/images/three-kingdoms-land-battle.png",
+      "prompt": "Use case: historical-scene. Asset type: wide cinematic illustration background for the Battle of Guandu AD 200 on a history atlas. Late Han Chinese foot soldiers and cavalry form distant ranks on a broad dusty plain; in mid distance a large grain supply camp burns beneath smoky golden dusk; earthen fortifications and plain cloth pennants, period appropriate lamellar armor and spears. Detailed painterly historical game key art in muted navy, antique gold and ember orange, realistic scale, wide 16:9 composition. Emphasize strategic landscape and tiny armies, no giant portraits. Lower third darker open terrain suitable for overlaid page title. No text, logos, watermark, modern objects or fantasy. Artistic reconstruction."
+    },
+    {
+      "file": "public/images/yiling-battle.png",
+      "prompt": "Use case: historical-scene. Asset type: wide cinematic illustration background for the Battle of Yiling/Xiaoting AD 222, Three Kingdoms China. Long lines of late Han military camps beside the Yangtze River and forested hills in Hubei, fire spreading through tent camps at the forest edge, distant lines of retreating troops and small soldiers in period lamellar armor, river and mountain ridges fading into smoky dusk. Detailed painterly historical game key art, navy and muted green shadows, antique gold light and vivid ember orange. Wide 16:9 frame, most fire and camps in top two thirds, dark ground in bottom third for title overlay. No enormous portraits, no text, no watermark, no modern objects, no fantasy. Artistic reconstruction."
+    }
+  ]
+}

@@ -23,6 +23,8 @@ import { englandStateMaps } from "~/data/england-territories";
 import { europeOverviews, isEuropeCountry } from "~/data/europe-overview";
 import type { EuropeCountryId } from "~/data/europe-overview";
 import { vietnamOverview } from "~/data/vietnam-overview";
+import type { OverviewSceneModel } from "~/data/vietnam-overview";
+import type { HistoryCardModel } from "~/types/history-card";
 
 
 import { ChinaHistoryMap } from "./china-history-map";
@@ -42,22 +44,30 @@ const normalize = (text: string) => text.normalize("NFD")
   .replaceAll("æ", "ae");
 
 export type OverviewCountryId = "vietnam" | "china" | EuropeCountryId;
-type VietnamOverviewProps = { country?: OverviewCountryId };
+type VietnamOverviewProps = {
+  country?: OverviewCountryId;
+  detailScenes?: OverviewSceneModel[];
+  detail?: { title: string; parentHref: string; parentLabel: string; kind: "period" | "battle" };
+  relatedEntries?: HistoryCardModel[];
+};
 
 export const VietnamOverview = ({
   country = "vietnam",
+  detailScenes,
+  detail,
+  relatedEntries,
 }: VietnamOverviewProps) => {
   const europe = isEuropeCountry(country) ? europeOverviews[country] : undefined;
   // Việt Nam giữ bản đồ riêng; các nước còn lại dùng bản đồ theo khung
   const atlasMap = country !== "vietnam";
-  const scenes = europe?.scenes
+  const scenes = detailScenes ?? europe?.scenes
     ?? (country === "china" ? chinaOverview : vietnamOverview);
   const eras = [...new Set(scenes.map((scene) => scene.era))];
   const yearsByEra: Record<string, string> = europe?.eraYears
     ?? (country === "china" ? chinaEraYears : eraYears);
   const aliases = europe?.aliases
     ?? (country === "china" ? chinaSceneAliases : undefined);
-  const heading = europe?.heading ?? (country === "china"
+  const heading = detail?.title ?? europe?.heading ?? (country === "china"
     ? "Lịch sử Trung Quốc — từ nhà Hạ đến hiện đại"
     : "Lịch sử Việt Nam — từ Hùng Vương đến hiện đại");
   const {
@@ -129,7 +139,9 @@ export const VietnamOverview = ({
       : null}
     <HomeLink className="vo-back vo-glass" back />
     <div className="vo-header-links absolute top-5 left-[190px] z-6 flex items-center gap-3 max-[760px]:top-2.5 max-[760px]:left-[135px]">
-      <Link className="vo-character-nav vo-glass" href="/characters">Nhân vật →</Link>
+      <Link className="vo-character-nav vo-glass" href={detail?.parentHref ?? `/period?country=${country}`}>
+        {detail?.parentLabel ?? "Các giai đoạn"} →
+      </Link>
       {showVietnamFlag ? (
         <NationalFlag className="vo-national-flag shrink-0 rounded-sm" />
       ) : null}
@@ -151,6 +163,8 @@ export const VietnamOverview = ({
       onTabChange={changeTab}
       onClose={() => setContentVisible(false)}
       onInteract={() => setPlaying(false)}
+      detail={detail}
+      relatedEntries={relatedEntries}
     />
     <Card role="region" id="vo-timeline" className="vo-timeline vo-glass" data-open={timelineVisible} inert={!timelineVisible} aria-label="Dòng thời gian lịch sử">
       <div className="vo-timeline-top"><div className="vo-transport" aria-label="Điều khiển các cảnh lịch sử"><Button variant="atlas" size="atlas" type="button" aria-label="Cảnh trước" disabled={index === 0} onClick={() => { setPlaying(false); go(index - 1); }}>←</Button><Button variant="atlas" size="atlas" type="button" className="vo-play-toggle" aria-label={playing ? "Tạm dừng tự chuyển cảnh" : index === scenes.length - 1 ? "Phát lại từ đầu" : `Tự chuyển cảnh sau mỗi ${playbackMs / 1000} giây`} aria-pressed={playing} onClick={() => { if (!playing && index === scenes.length - 1) go(0); setPlaying((value) => !value); }}>{playing ? "Ⅱ" : "▶"}</Button><Button variant="atlas" size="atlas" type="button" aria-label="Cảnh tiếp theo" disabled={index === scenes.length - 1} onClick={() => { setPlaying(false); go(index + 1); }}>→</Button><span className="vo-scene-counter">{String(index + 1).padStart(2, "0")} <i>/ {scenes.length}</i></span></div>

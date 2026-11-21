@@ -27,6 +27,7 @@ import {
   SelectValue,
 } from "~/components/ui/select";
 import { getCharacter } from "~/data/characters";
+import { dienBienPhuHref } from "~/data/battle-links";
 import {
   lifeChapters,
   lifeImageFor,
@@ -306,6 +307,7 @@ export const HoChiMinhLife = () => {
                 <ArrowRight size={15} />
               </Link>
             ) : null}
+            {scene.overviewId === "dien-bien-phu" ? <Link className="hcm-overview-link" href={dienBienPhuHref}>Chi tiết trận Điện Biên Phủ <ArrowRight size={15} /></Link> : null}
           </>
         ) : null}
         {activeTab === "people" ? (
@@ -470,7 +472,6 @@ export const HoChiMinhLife = () => {
       className="hcm-life"
       data-character-id="ho-chi-minh"
       data-scene-id={scene.id}
-      data-independent={isIndependent}
       data-reading="false"
       onKeyDown={(event) => {
         if (

@@ -1,17 +1,5 @@
 .hcm-life { height: 100svh; min-height: 680px; display: flex; flex-direction: column; overflow: hidden; background: radial-gradient(ellipse at 75% 32%, color-mix(in srgb, var(--accent) 35%, transparent), transparent 65%), var(--background); color: var(--foreground); font-family: var(--font-body), sans-serif; }
 
-/* The shared accent changes at the declaration of independence, including legacy gold tokens. */
-.hcm-life[data-independent="true"] {
-  --primary: #f05252;
-  --primary-foreground: #270d14;
-  --atlas-gold: var(--primary);
-  --arena-gold-line: color-mix(in srgb, var(--primary) 50%, transparent);
-  --arena-selected: linear-gradient(135deg, #bd2333, #ff9185 50%, #d93846);
-  --accent: color-mix(in srgb, var(--primary) 16%, var(--card));
-  --accent-foreground: var(--foreground);
-  --ring: var(--primary);
-}
-
 .hcm-life button, .hcm-life a, .hcm-cluster-popup button { -webkit-tap-highlight-color: transparent; }
 .hcm-life button { cursor: pointer; }
 .hcm-life button:disabled { cursor: default; opacity: .35; }

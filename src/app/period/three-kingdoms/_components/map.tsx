@@ -4,10 +4,13 @@ import { Crosshair, Minus, Plus, Swords } from "lucide-react";
 import { useEffect, useId, useRef, useState } from "react";
 import type { PointerEvent } from "react";
 
+import { Image } from "@/components/ui/image";
 import { mapFrames, ringPathWith } from "~/app/[country]/[period]/_components/vietnam-overview/map-frames";
-import { factions, people, places } from "~/data/three-kingdoms";
+import { portraitCaption, portraitFor, portraitPlaceholder } from "~/data/portraits";
+import { factionLeader, factions, people, places } from "~/data/three-kingdoms";
 import type { Coordinate, PersonId, ThreeKingdomsScene } from "~/data/three-kingdoms";
 import { clusterMapPoints } from "~/lib/map-clusters";
+import { territoryBorders } from "~/lib/territory-borders";
 
 const { countries, project } = mapFrames.china;
 const ringPath = ringPathWith(project);
@@ -43,8 +46,17 @@ const ridgeLines = ridges.map(linePath);
 type Position = { x: number; y: number };
 type Box = Position & { width: number; height: number };
 type MapView = { scale: number; x: number; y: number };
-const minZoom = 0.5;
 const maxZoom = 5;
+const neighborLabels: { name: string; at: Coordinate }[] = [
+  { name: "MÔNG CỔ", at: [103.5, 46] },
+  { name: "NGA", at: [115, 55] },
+  { name: "ẤN ĐỘ", at: [79, 25] },
+  { name: "MYANMAR", at: [95.5, 21] },
+  { name: "VIỆT NAM", at: [106, 17] },
+  { name: "LÀO", at: [102.5, 18] },
+  { name: "BÁN ĐẢO TRIỀU TIÊN", at: [129, 38.3] },
+  { name: "NHẬT BẢN", at: [138, 36] },
+];
 const overlaps = (a: Box, b: Box) =>
   a.x < b.x + b.width && a.x + a.width > b.x
   && a.y < b.y + b.height && a.y + a.height > b.y;
@@ -67,11 +79,15 @@ function labelPosition(text: string, at: Position, offset: number, size: number,
 
 function fitMap(scene: ThreeKingdomsScene, frame: Box, person: PersonId | null, wide: boolean): MapView {
   const selected = scene.cast.find((member) => member.person === person);
-  const points = wide ? [project([100, 40.3]), project([123, 24.4])] : [
+  const selectedRegion = scene.territories.find((region) =>
+    factionLeader(region.faction, scene.year) === person,
+  );
+  const points = wide ? [project([73, 54]), project([136, 17])] : [
     places[scene.focus].at,
     ...scene.nearby.map((place) => places[place].at),
     ...(scene.routes ?? []).flatMap((route) => route.places.map((place) => places[place].at)),
     ...(selected ? [places[selected.place].at] : []),
+    ...(!selected && selectedRegion ? [selectedRegion.label] : []),
   ].map(project);
   const xs = points.map(([x]) => x);
   const ys = points.map(([, y]) => y);
@@ -96,11 +112,12 @@ type BattleMapProps = {
   wide: boolean;
   storyOpen: boolean;
   timelineOpen: boolean;
+  timelineInset: number;
   onSelect: (person: PersonId) => void;
   onToggleWide: () => void;
 };
 
-export const BattleMap = ({ scene, selected, wide, storyOpen, timelineOpen, onSelect, onToggleWide }: BattleMapProps) => {
+export const BattleMap = ({ scene, selected, wide, storyOpen, timelineOpen, timelineInset, onSelect, onToggleWide }: BattleMapProps) => {
   const svg = useRef<SVGSVGElement>(null);
   const drag = useRef<{ x: number; y: number; dx: number; dy: number } | null>(null);
   const unique = useId().replaceAll(":", "");
@@ -109,13 +126,16 @@ export const BattleMap = ({ scene, selected, wide, storyOpen, timelineOpen, onSe
   const viewKey = `${scene.id}/${selected}/${wide}`;
   const adjustment = manual.view === viewKey ? manual : { view: viewKey, zoom: 1, x: 0, y: 0 };
   const rightInset = storyOpen && width > 810 ? Math.min(365, width * 0.35) + 15 : 0;
-  const bottomInset = timelineOpen ? 185 : 28;
+  const bottomInset = timelineOpen ? timelineInset + 8 : 28;
   const frame = { x: 8, y: 102, width: width - rightInset - 16, height: Math.max(105, height - 102 - bottomInset) };
   const base = fitMap(scene, frame, selected, wide);
+  const overview = fitMap(scene, frame, null, true);
+  const minZoom = Math.min(1, overview.scale / base.scale);
+  const center = { x: frame.x + frame.width / 2, y: frame.y + frame.height / 2 };
   const view = {
     scale: base.scale * adjustment.zoom,
-    x: width / 2 + (base.x - width / 2) * adjustment.zoom + adjustment.x,
-    y: height / 2 + (base.y - height / 2) * adjustment.zoom + adjustment.y,
+    x: center.x + (base.x - center.x) * adjustment.zoom + adjustment.x,
+    y: center.y + (base.y - center.y) * adjustment.zoom + adjustment.y,
   };
   const screen = (coordinate: Coordinate) => {
     const [x, y] = project(coordinate);
@@ -123,18 +143,38 @@ export const BattleMap = ({ scene, selected, wide, storyOpen, timelineOpen, onSe
   };
   const move = ({ x, y }: Position) => ({ transform: `translate(${x}px, ${y}px)` });
   const focus = screen(places[scene.focus].at);
+  const mapPeople = [
+    ...scene.cast.filter((member) => !member.deceased).map((member) => ({
+      ...member,
+      at: places[member.place].at,
+      location: places[member.place].name,
+    })),
+    ...scene.territories.flatMap((region) => {
+      const person = factionLeader(region.faction, scene.year);
+      if (scene.cast.some((member) => member.person === person)) return [];
+      return [{
+        person,
+        at: region.label,
+        location: factions[region.faction].name,
+        action: "Thủ lĩnh · vị trí đại diện vùng ảnh hưởng",
+        regional: true,
+      }];
+    }),
+  ];
+  // A ruler can appear in several influence polygons, but gets one marker.
+  const locatedPeople = mapPeople.filter((member, index) =>
+    mapPeople.findIndex((other) => other.person === member.person) === index,
+  );
   const markers = clusterMapPoints(
-    scene.cast.map((member, index) => ({ index, ...screen(places[member.place].at) })),
-    27,
+    locatedPeople.map((member, index) => ({ index, ...screen(member.at) })),
+    42,
   ).map((marker) => ({
     ...marker,
-    // Lift the annotation above the event icon when both use the same site.
-    y: Math.hypot(marker.x - focus.x, marker.y - focus.y) < 24 ? focus.y - 23 : marker.y,
-    members: marker.indices.map((index) => scene.cast[index]),
+    members: marker.indices.map((index) => locatedPeople[index]),
   })).filter(({ x, y }) => x > 12 && x < width - 12 && y > 12 && y < height - 12);
   const boxes: Box[] = [
     { x: focus.x - 14, y: focus.y - 14, width: 28, height: 28 },
-    ...markers.map(({ x, y }) => ({ x: x - 13, y: y - 13, width: 26, height: 26 })),
+    ...markers.map(({ x, y }) => ({ x: x - 22, y: y - 22, width: 44, height: 44 })),
   ];
   const cities = [...new Set([scene.focus, ...scene.nearby, ...scene.cast.map((member) => member.place)])]
     .map((id) => {
@@ -143,7 +183,7 @@ export const BattleMap = ({ scene, selected, wide, storyOpen, timelineOpen, onSe
       return { id, place, at, label: labelPosition(place.name, at, id === scene.focus ? 17 : 7, 12, frame, boxes) };
     });
   const names = [
-    ...scene.territories.map((region) => ({ name: factions[region.faction].name, at: region.label, kind: "faction", color: factions[region.faction].color })),
+    ...neighborLabels.map((place) => ({ ...place, kind: "neighbor", color: "#b5bfbd" })),
     ...riverPaths.map((river) => ({ ...river, at: river.label, kind: "river", color: "#83b5c2" })),
     ...landscapes.map((place) => ({ ...place, kind: "terrain", color: "#aead91" })),
   ].filter(({ at }) => {
@@ -170,12 +210,20 @@ export const BattleMap = ({ scene, selected, wide, storyOpen, timelineOpen, onSe
       if (event.ctrlKey || event.metaKey) return;
       event.preventDefault();
       const bounds = element.getBoundingClientRect();
-      const x = event.clientX - bounds.left - bounds.width / 2;
-      const y = event.clientY - bounds.top - bounds.height / 2;
+      const x = event.clientX - bounds.left - center.x;
+      const y = event.clientY - bounds.top - center.y;
       const unit = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? bounds.height : 1;
       setManual((previous) => {
         const current = previous.view === viewKey ? previous : { view: viewKey, zoom: 1, x: 0, y: 0 };
         const zoom = Math.max(minZoom, Math.min(maxZoom, current.zoom * Math.exp(-event.deltaY * unit * .0015)));
+        if (zoom <= minZoom) {
+          return {
+            view: viewKey,
+            zoom: minZoom,
+            x: overview.x - center.x - (base.x - center.x) * minZoom,
+            y: overview.y - center.y - (base.y - center.y) * minZoom,
+          };
+        }
         if (zoom === current.zoom) return previous;
         const ratio = zoom / current.zoom;
         return {
@@ -188,7 +236,7 @@ export const BattleMap = ({ scene, selected, wide, storyOpen, timelineOpen, onSe
     };
     element.addEventListener("wheel", onWheel, { passive: false });
     return () => element.removeEventListener("wheel", onWheel);
-  }, [viewKey]);
+  }, [viewKey, minZoom, center.x, center.y, base.x, base.y, overview.x, overview.y]);
 
   const startDrag = (event: PointerEvent<SVGSVGElement>) => {
     if (event.button !== 0 || (event.target as Element).closest("[role=button]")) return;
@@ -199,8 +247,19 @@ export const BattleMap = ({ scene, selected, wide, storyOpen, timelineOpen, onSe
     if (!drag.current) return;
     setManual({ ...adjustment, x: drag.current.dx + event.clientX - drag.current.x, y: drag.current.dy + event.clientY - drag.current.y });
   };
-  const zoomBy = (multiplier: number) =>
-    setManual({ ...adjustment, zoom: Math.max(minZoom, Math.min(maxZoom, adjustment.zoom * multiplier)) });
+  const zoomBy = (multiplier: number) => {
+    const zoom = Math.max(minZoom, Math.min(maxZoom, adjustment.zoom * multiplier));
+    setManual({
+      ...adjustment,
+      zoom,
+      x: zoom === minZoom
+        ? overview.x - center.x - (base.x - center.x) * zoom
+        : adjustment.x,
+      y: zoom === minZoom
+        ? overview.y - center.y - (base.y - center.y) * zoom
+        : adjustment.y,
+    });
+  };
 
   return (
     <section className="tk-map" aria-label="Bản đồ diễn biến">
@@ -230,19 +289,51 @@ export const BattleMap = ({ scene, selected, wide, storyOpen, timelineOpen, onSe
         <rect width={width} height={height} fill="#122835" />
         <g className="tk-camera" style={{ transform: `translate(${view.x}px, ${view.y}px) scale(${view.scale})` }}>
           <g clipPath={`url(#${unique}-land)`}>
-            <rect x="-1500" y="-1500" width="3500" height="3500" fill="#28332e" />
+            {countries.map((country) => (
+              <path
+                key={country.name}
+                d={country.path}
+                fill={country.name === "China" ? "#283b36" : "#202d2c"}
+              />
+            ))}
             <g key={scene.id} className="tk-territories">
               {scene.territories.map((region, index) => {
                 const faction = factions[region.faction];
                 const uprising = "uprising" in faction;
                 return <path key={index} d={ringPath(region.ring)} fill={faction.color}
-                  fillOpacity={uprising ? .34 : .21} stroke={faction.color} strokeOpacity={.62}
-                  strokeDasharray={uprising ? "2 4" : "7 4"} vectorEffect="non-scaling-stroke" strokeWidth="1.1" />;
+                  fillOpacity={uprising ? .34 : .21} />;
               })}
+              {territoryBorders(scene.territories).map((border, index) => (
+                <path
+                  key={`border-${index}`}
+                  d={linePath(border.points)}
+                  fill="none"
+                  stroke={factions[border.faction].color}
+                  strokeOpacity={0.7}
+                  strokeWidth={1.1}
+                  strokeDasharray="6 3"
+                  vectorEffect="non-scaling-stroke"
+                />
+              ))}
             </g>
             {ridgeLines.map((path, index) => <path key={index} d={path} className="tk-ridge" />)}
           </g>
           <rect x="-1500" y="-1500" width="3500" height="3500" fill={`url(#${unique}-grid)`} />
+          <g className="tk-modern-borders" aria-label="Biên giới quốc gia hiện đại để định hướng">
+            {countries.map((country) => (
+              <path
+                key={country.name}
+                data-country={country.name}
+                d={country.path}
+                fill="none"
+                stroke="#a5b8b0"
+                strokeOpacity={0.5}
+                strokeWidth={0.8}
+                strokeDasharray="3 3"
+                vectorEffect="non-scaling-stroke"
+              />
+            ))}
+          </g>
           {riverLines.map((path, index) => <path key={index} d={path} className="tk-river" />)}
         </g>
         <rect width={width} height={height} fill={`url(#${unique}-shade)`} pointerEvents="none" />
@@ -282,15 +373,17 @@ export const BattleMap = ({ scene, selected, wide, storyOpen, timelineOpen, onSe
           const active = selectedIndex >= 0;
           const member = members[Math.max(0, selectedIndex)];
           const person = people[member.person];
+          const portrait = portraitFor(person.wiki) ?? portraitPlaceholder;
           const cluster = members.length > 1;
           const label = cluster
             ? members.map(({ person }) => people[person].name).join(", ")
-            : `${person.name} · ${places[member.place].name}`;
+            : `${person.name} · ${member.location}`;
           const activate = () => onSelect(members[(selectedIndex + 1) % members.length].person);
           return (
             <g
               key={members.map(({ person }) => person).join("-")}
               className="tk-person-marker"
+              data-character-id={person.characterId}
               style={move({ x, y })}
               role="button"
               tabIndex={0}
@@ -306,27 +399,45 @@ export const BattleMap = ({ scene, selected, wide, storyOpen, timelineOpen, onSe
             >
               <title>{cluster ? label : `${label} · ${member.action}`}</title>
               <circle
-                r={cluster ? 12 : 10.5}
+                r={20}
                 fill="#18242d"
                 stroke={cluster && !active ? "#e3cdb3" : person.color}
                 strokeWidth={active ? 3 : 1.5}
                 strokeDasharray={!cluster && member.regional ? "2 2" : undefined}
               />
-              <text y="3.3" textAnchor="middle" fill={cluster && !active ? "#f3ebdc" : person.color}>
-                {cluster && !active ? members.length : person.name.split(" ").at(-1)?.[0]}
+              <foreignObject x={-18} y={-18} width={36} height={36} pointerEvents="none">
+                <div className="tk-marker-portrait h-full w-full overflow-hidden rounded-full">
+                  <Image
+                    src={portrait.src}
+                    alt=""
+                    title={portraitCaption(portrait)}
+                    preview={false}
+                    width={36}
+                    height={36}
+                    className="h-full w-full object-cover"
+                    style={{ objectPosition: portrait.position }}
+                  />
+                </div>
+              </foreignObject>
+              {cluster && <g className="tk-marker-count" pointerEvents="none">
+                <circle cx={16} cy={-15} r={8} fill="#e3cdb3" stroke="#18242d" />
+                <text x={16} y={-12} textAnchor="middle" fill="#18242d">{members.length}</text>
+              </g>}
+              <text className="tk-marker-name" y="32" textAnchor="middle" fill={person.color}>
+                {person.name}
               </text>
             </g>
           );
         })}
       </svg>
-      <div className="tk-map-mode"><Crosshair size={15} /> <span>{wide ? "Toàn cảnh Đông Á" : places[scene.focus].name}</span></div>
+      <div className="tk-map-mode"><Crosshair size={15} /> <span>{wide ? "Toàn cảnh Trung Quốc" : places[scene.focus].name}</span></div>
       <div className="tk-map-controls" aria-label="Điều khiển bản đồ">
         <button type="button" onClick={onToggleWide} aria-pressed={wide}>{wide ? "Về sự kiện" : "Toàn cảnh"}</button>
         <button type="button" aria-label="Thu nhỏ bản đồ" disabled={adjustment.zoom <= minZoom} onClick={() => zoomBy(1 / 1.25)}><Minus size={16} /></button>
         <button type="button" aria-label="Phóng to bản đồ" disabled={adjustment.zoom >= maxZoom} onClick={() => zoomBy(1.25)}><Plus size={16} /></button>
         <button type="button" aria-label="Đặt lại góc nhìn" onClick={() => setManual({ view: "", zoom: 1, x: 0, y: 0 })}><Crosshair size={16} /></button>
       </div>
-      <div className="tk-map-caption" aria-hidden="true"><span>↑ BẮC</span><span>Natural Earth</span></div>
+      <div className="tk-map-caption" aria-hidden="true"><span>↑ BẮC</span><span>Biên giới hiện đại để định hướng · Natural Earth</span></div>
     </section>
   );
 };

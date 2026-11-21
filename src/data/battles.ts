@@ -1,15 +1,28 @@
-import { threeKingdomsHref } from "~/data/battle-links";
+import { battleHref } from "~/data/battle-links";
 import { threeKingdomsScenes } from "~/data/three-kingdoms";
+import type { HistoryCardModel } from "~/types/history-card";
 
-export type BattleEntryModel = {
-  id: string;
-  title: string;
-  years: string;
-  country: string;
-  href: string;
+export type BattleEntryModel = HistoryCardModel & { periodId: string; sceneId: string };
+
+const battleTitles: Record<string, string> = {
+  "truong-xa": "Trận Trường Xã",
+  "quang-tong": "Quảng Tông và Hạ Khúc Dương",
+  "ha-bi": "Vây thành Hạ Bì",
+  "quan-do": "Trận Quan Độ",
+  "truong-ban": "Trận Trường Bản",
+  "xich-bich": "Trận Xích Bích",
+  "hop-phi": "Trận Hợp Phì",
+  "nhu-tu": "Trận Nhu Tu",
+  "dinh-quan-son": "Trận Định Quân Sơn",
+  "phan-thanh": "Vây thành Phàn Thành",
+  "di-lang": "Trận Di Lăng",
+  "nhai-dinh": "Trận Nhai Đình",
+  "tran-thuong": "Vây thành Trần Thương",
+  "ky-son": "Trận Kỳ Sơn",
+  "ngu-truong-nguyen": "Ngũ Trượng Nguyên",
+  "dong-hung": "Trận Đông Hưng",
+  "tho-xuan": "Vây thành Thọ Xuân",
 };
-
-const featuredIds = ["bach-dang-1288", "quan-do", "xich-bich", "ha-bi", "di-lang"];
 
 export const battleEntries: BattleEntryModel[] = [
   {
@@ -17,17 +30,44 @@ export const battleEntries: BattleEntryModel[] = [
     title: "Trận Bạch Đằng",
     years: "1288",
     country: "Việt Nam",
-    href: "/vietnam/bach-dang-1288",
+    countryId: "vietnam",
+    periodId: "nha-tran",
+    sceneId: "tran-bach-dang",
+    href: battleHref("bach-dang-1288"),
+    image: "/images/bach-dang-cinematic.png",
+    description: "Theo dấu thủy chiến trên sông Bạch Đằng cùng Trần Hưng Đạo.",
   },
-  ...threeKingdomsScenes.filter((scene) => scene.battle).map((scene) => ({
+  {
+    id: "dien-bien-phu-1954",
+    title: "Trận Điện Biên Phủ",
+    years: "13/3–7/5/1954",
+    country: "Việt Nam",
+    countryId: "vietnam",
+    periodId: "khang-chien-chong-phap",
+    sceneId: "dien-bien-phu",
+    href: battleHref("dien-bien-phu-1954"),
+    image: "/images/life/scenes/dienbien.jpg",
+    imageCaption: "Ảnh tư liệu họp bàn chiến cuộc Đông Xuân cuối năm 1953 · Nguồn: hochiminh.vn",
+    description: "Từ công tác chuẩn bị đến ba đợt tiến công trong chiến dịch do Võ Nguyên Giáp chỉ huy.",
+  },
+  ...threeKingdomsScenes.filter((scene) => scene.id in battleTitles).map((scene) => ({
     id: scene.id,
-    title: scene.title,
+    title: battleTitles[scene.id],
     years: scene.date,
     country: "Trung Quốc",
-    href: `${threeKingdomsHref}#${scene.id}`,
+    countryId: "china",
+    periodId: "three-kingdoms",
+    sceneId: scene.id,
+    href: battleHref(scene.id),
+    image: scene.id === "di-lang" ? "/images/yiling-battle.png"
+      : ["xich-bich", "nhu-tu", "dong-hung"].includes(scene.id)
+        ? "/images/three-kingdoms-battle.png"
+        : "/images/three-kingdoms-land-battle.png",
+    description: scene.context,
   })),
 ];
 
+const featuredIds = ["bach-dang-1288", "dien-bien-phu-1954", "xich-bich"];
 export const featuredBattles = featuredIds.flatMap((id) =>
   battleEntries.filter((battle) => battle.id === id),
 );
