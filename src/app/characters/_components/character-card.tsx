@@ -23,7 +23,7 @@ export const CharacterCard = ({ id }: CharacterCardProps) => {
 
   return (
     <Link
-      className="character-directory-card"
+      className="character-directory-card h-full"
       data-character-id={id}
       href={characterHref(id)}
     >

@@ -1,3 +1,4 @@
+import { vietnamLandPath } from "~/data/vietnam-geography";
 import northwestEurope from "~/data/geo/northwest-europe.json";
 import geography from "~/data/geo/world.json";
 import type { EuropeCountryId } from "~/data/europe-overview";
@@ -29,7 +30,9 @@ const outline = (
         : country.geometry.coordinates as number[][][][];
       return {
         name: country.name,
-        path: polygons.map((polygon) => polygon.map(ringPath).join("")).join(""),
+        path: country.name === "Vietnam"
+          ? vietnamLandPath(project)
+          : polygons.map((polygon) => polygon.map(ringPath).join("")).join(""),
       };
     });
 };

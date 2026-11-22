@@ -13,14 +13,14 @@ export const useBattlePlayback = ({ total }: UseBattlePlaybackProps) => {
   const jump = useCallback((index: number) => {
     const next = Math.max(0, Math.min(total - 1, index));
     setActive(next);
-    playGameSound(next === 6 ? "victory" : next === 5 ? "battle" : "march");
+    playGameSound(next === total - 1 ? "victory" : next === total - 2 ? "battle" : "march");
   }, [total]);
 
   useEffect(() => {
     if (!playing) return;
     const timer = window.setTimeout(() => {
       if (active >= total - 1) setPlaying(false);
-      else { setActive(Math.min(active + 1, total - 1)); playGameSound(active + 1 === 6 ? "victory" : active + 1 === 5 ? "battle" : "march"); }
+      else { setActive(Math.min(active + 1, total - 1)); playGameSound(active + 1 === total - 1 ? "victory" : active + 1 === total - 2 ? "battle" : "march"); }
     }, seconds * 1000);
     return () => window.clearTimeout(timer);
   }, [active, playing, seconds, total]);

@@ -1,0 +1,9 @@
+# Nền địa lý Việt Nam
+
+- `vietnam-detail.json`: geometry của bản ghi `ADMIN=Vietnam` trong [Natural Earth 1:10m](https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_10m_admin_0_countries.geojson). Giữ các polygon, lỗ và đảo; làm tròn tọa độ đến 5 chữ số thập phân, không nội suy thêm điểm.
+- `vietnam-rivers.json`: hai sông `Hong` và `Mekong` từ [Natural Earth 1:10m rivers](https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_10m_rivers_lake_centerlines.geojson), lọc phần trong khung 96–110°Đ, 8–26°B. Nhãn Việt hóa: Sông Hồng, Mê Kông.
+- Trích xuất ngày 21/11/2026. Dữ liệu Natural Earth thuộc [public domain](https://www.naturalearthdata.com/about/terms-of-use/). Đây là nền tham chiếu hiện đại, không dùng xác định ranh giới hoặc phạm vi kiểm soát lịch sử.
+- `vietnam-geography.ts` bổ sung ký hiệu đảo độc lập vì polygon quốc gia có thể thiếu đảo nhỏ. Phú Quốc nằm trong geometry chi tiết và có thêm ký hiệu định vị. Các nhóm điểm Hoàng Sa, Trường Sa là ký hiệu đại diện, không phải danh mục đầy đủ các đảo, không vẽ đường bao thành ranh giới biển.
+- Đối chiếu vị trí: [Hoàng Sa · Cổng thông tin Đà Nẵng](https://danang.gov.vn/vi/web/dng/w/ubnd-huyen-hoang-sa-i), [Trường Sa · Sở VHTTDL Khánh Hòa](https://svhttdl.khanhhoa.gov.vn/vi/di-tichdi-san-cap-quoc-gia/bia-chu-quyen-quan-dao-truong-sa-tai-dao-song-tu-tay-va-dao-nam-yet), [Phú Quốc · Cổng thông tin Phú Quốc](https://phuquoc.angiang.gov.vn/gioi-thieu-ve-phu-quoc-0).
+
+Bản đồ `/vietnam`, các trang thời kỳ Việt Nam, hành trình Hồ Chí Minh, khung Đông Á và Tam Quốc dùng chung lớp ký hiệu. Theo yêu cầu giao diện: không hiện nhãn biển đảo và không có khung inset cố định. Khi zoom/pan ra ngoài khung, đảo có thể nằm ngoài màn hình; nút VN trên bản đồ hành trình đưa camera về toàn cảnh Việt Nam. Sa bàn Bạch Đằng là sơ đồ chiến thuật cục bộ, không phải bản đồ toàn quốc.

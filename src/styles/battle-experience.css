@@ -1,0 +1,20 @@
+.battle-experience .battle-map-surface { position: absolute; inset: var(--tk-header-height) 0 var(--tk-dock); transition: right .2s; }
+.battle-experience[data-story-open="true"] .battle-map-surface { right: min(389px, 37vw); }
+.battle-experience .battle-map-surface :is(.bd-campaign-map, .bd-3d-stage) { width: 100%; height: 100%; border: 0; border-radius: 0; }
+.battle-experience .battle-map-surface .bd-battle-map { width: 100%; height: 100%; min-height: 0; max-height: none; border: 0; }
+.battle-experience .battle-map-surface .bd-3d-canvas { height: 100%; }
+.battle-experience .tk-map-controls button[aria-pressed="true"] { color: var(--tk-gold); background: #314148; }
+.battle-place-list { display: flex; flex-wrap: wrap; gap: 6px; }
+.battle-place-list button { padding: 5px 8px; border: 1px solid var(--tk-border); border-radius: 4px; font-size: 11px; color: var(--tk-muted); }
+.battle-place-list button[aria-pressed="true"] { border-color: var(--tk-gold); color: var(--tk-gold); }
+.battle-cast { display: grid; gap: 10px; }
+.battle-cast a { display: flex; gap: 8px; align-items: center; font-size: 12px; }
+.battle-cast img { border-radius: 50%; }
+.battle-cast small { display: block; color: var(--tk-muted); font-size: 11px; }
+.battle-experience .tk-story[hidden], .battle-experience .tk-timeline[hidden] { display: none; }
+@media (max-width: 810px) {
+  .battle-experience[data-story-open="true"] .battle-map-surface { right: 0; }
+  .battle-experience .tk-story { top: auto; bottom: calc(var(--tk-dock) + 8px); max-height: 36%; }
+  .battle-experience .tk-title h1 { font-size: clamp(15px, 3.5vw, 26px); white-space: normal; line-height: 1.1; }
+}
+@media (prefers-reduced-motion: reduce) { .battle-experience .battle-map-surface { transition: none; } }

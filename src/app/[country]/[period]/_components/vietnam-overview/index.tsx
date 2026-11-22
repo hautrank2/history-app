@@ -139,7 +139,7 @@ export const VietnamOverview = ({
       : null}
     <HomeLink className="vo-back vo-glass" back />
     <div className="vo-header-links absolute top-5 left-[190px] z-6 flex items-center gap-3 max-[760px]:top-2.5 max-[760px]:left-[135px]">
-      <Link className="vo-character-nav vo-glass" href={detail?.parentHref ?? `/period?country=${country}`}>
+      <Link className="vo-character-nav vo-glass" href={detail ? `${detail.parentHref.split("#")[0]}#${scene.id}` : `/period?country=${country}#${country}`}>
         {detail?.parentLabel ?? "Các giai đoạn"} →
       </Link>
       {showVietnamFlag ? (

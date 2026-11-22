@@ -495,7 +495,7 @@ export const HoChiMinhLife = () => {
       }}
     >
       <header className="hcm-header">
-        <HomeLink className="hcm-back" back />
+        <HomeLink className="hcm-back" section="countries" back />
         <div className="hcm-heading">
           <span className="hcm-header-portrait">
             <LifePortrait characterId="ho-chi-minh" />

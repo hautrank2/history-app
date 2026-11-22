@@ -3,6 +3,9 @@
 import { useEffect, useId, useRef, useState } from "react";
 import Link from "next/link";
 
+import { VietnamGeographyLayer, VietnamIslandLayer } from "~/components/vietnam-map-reference";
+import { vietnamLandPath } from "~/data/vietnam-geography";
+
 import geography from "~/data/geo/southeast-asia.json";
 import { Button } from "~/components/ui/button";
 import { Card } from "~/components/ui/card";
@@ -26,7 +29,7 @@ const geometryPath = (geometry: GeometryModel) => {
   const polygons = geometry.type === "Polygon" ? [geometry.coordinates as number[][][]] : geometry.coordinates as number[][][][];
   return polygons.map((polygon) => polygon.map(ringPath).join("")).join("");
 };
-const countries = geography.map((country) => ({ name: country.name, path: geometryPath(country.geometry) }));
+const countries = geography.map((country) => ({ name: country.name, path: country.name === "Vietnam" ? vietnamLandPath(project) : geometryPath(country.geometry) }));
 const vietnamPath = countries.find((country) => country.name === "Vietnam")?.path ?? "";
 const southernLatitude: Record<OverviewSceneModel["territory"], number> = { ancient: 18, north: 18, nanyue: 18, ly: 17.1, tran: 16, le: 12.9, split: 8, full: 8, partition: 8 };
 const nanyuePath = ringPath([[103.5, 23], [106, 24], [110, 25.2], [114.7, 24], [116.3, 22], [114.3, 20.5], [108, 18], [105.5, 18], [104, 20]]);
@@ -141,18 +144,22 @@ export const HistoryMap = ({ scene, selectedPlace, contentVisible, timelineVisib
           {scene.territory === "partition" ? <><text x="477" y="206" className="vo-zone-label">MIỀN BẮC</text><text x="555" y="497" className="vo-zone-label">MIỀN NAM</text></> : null}
           {scene.territory === "split" ? <><text x="470" y="212" className="vo-zone-label">ĐÀNG NGOÀI</text><text x="570" y="485" className="vo-zone-label">ĐÀNG TRONG</text></> : null}
         </g>
-        <g className="vo-rivers" aria-hidden="true"><path d="M328 104Q354 136 380 158T430 194" /><path d="M235 298Q218 350 264 398T331 474T419 550" /></g>
-        <g className="vo-vietnam-islands" aria-label="Hoàng Sa và Trường Sa thuộc lãnh thổ Việt Nam hiện nay">
-          <title>Hai quần đảo của Việt Nam · lớp tham chiếu hiện đại; không biểu thị phạm vi kiểm soát của từng triều đại</title>
-          {([{ name: "HOÀNG SA", at: [112, 16.5], islands: [[111.2, 15.8], [111.6, 16.5], [112.3, 16.9], [112.7, 16.6]] }, { name: "TRƯỜNG SA", at: [114, 10], islands: [[111.9, 8.65], [112.5, 9], [113.3, 9.6], [114.3, 10.2], [114.5, 11.4], [115.8, 10.7]] }]).map((group) => { const [x, y] = project(group.at); return <g key={group.name} className="vo-archipelago" data-territory="vietnam"><text x={x} y={y - 14}>{group.name}</text><text className="vo-island-country" x={x} y={y}>VIỆT NAM</text>{group.islands.map((at) => { const [cx, cy] = project(at); return <path key={at.join(",")} d={`M${cx - 3},${cy}l3,-2 3,2 -1,3 -4,0Z`} />; })}</g>; })}
-        </g>
+        <VietnamGeographyLayer
+          project={project}
+          unitsPerPixel={viewWidth / zoom / viewport.width}
+          places={zoom >= 1.5}
+          outline={modernBorders}
+        />
+        <VietnamIslandLayer
+          project={project}
+          unitsPerPixel={viewWidth / zoom / viewport.width}
+        />
         <g className="vo-compass" transform="translate(690 620)" aria-hidden="true"><text y="-30" textAnchor="middle">B</text><path d="M0-20L7 8 0 3-7 8Z" /><path d="M0 3V20" /></g>
       </svg>
       <MapMarkers points={scene.places.map((place) => { const [x, y] = project(place.at); return { place, x: (x - centerX + viewWidth / (2 * zoom)) / (viewWidth / zoom) * viewport.width, y: (y - centerY + viewHeight / (2 * zoom)) / (viewHeight / zoom) * viewport.height }; })} selectedPlace={selectedPlace} viewport={viewport} onSelectPlace={onSelectPlace} />
       <div className="vo-map-badge"><span><i /> KHÔNG GIAN LỊCH SỬ / 2D</span><strong>{scene.nation}</strong><small>{scene.years}</small></div>
       <Card className="vo-map-tools vo-glass" aria-label="Điều khiển bản đồ"><Button variant="atlas" size="atlas" type="button" aria-label="Phóng to bản đồ" disabled={zoom >= 8} onClick={() => setZoom((value) => Math.min(8, value + .5))}>+</Button><Button variant="atlas" size="atlas" type="button" aria-label="Thu nhỏ bản đồ" disabled={zoom <= .5} onClick={() => setZoom((value) => Math.max(.5, value - .5))}>−</Button><Button variant="atlas" size="atlas" type="button" aria-label="Đặt lại góc nhìn bản đồ" onClick={() => { setZoom(1); setPan([0, 0]); }}>↺</Button><Button variant="atlas" size="atlas" type="button" aria-label="Biên giới hiện đại" aria-pressed={modernBorders} onClick={() => setModernBorders((value) => !value)}>▱</Button></Card>
       <div className="vo-map-variants vo-glass" role="group" aria-label="Kiểu bản đồ">{terrainEnabled ? <Button className="vo-variant-terrain" variant="atlas" size="atlas" aria-pressed={variant === "terrain"} onClick={() => setVariant("terrain")}>Địa hình</Button> : null}<Button className="vo-variant-simple" variant="atlas" size="atlas" aria-pressed={variant === "simple"} onClick={() => setVariant("simple")}>Đơn giản</Button></div>
-      <aside className="vo-islands-inset vo-glass" aria-label="Lãnh thổ biển đảo Việt Nam"><strong>BIỂN ĐẢO VIỆT NAM</strong><span>✦ Hoàng Sa · Việt Nam</span><span>✦ Trường Sa · Việt Nam</span><small>Lớp tham chiếu hiện đại · đảo phóng đại để định vị</small></aside>
     <Card role="complementary" id="vo-places" className="vo-place-detail vo-glass" data-open={placesVisible} inert={!placesVisible} aria-label="Các địa điểm trong cảnh">
       <div className="vo-panel-heading"><span>⌖ ĐỊA ĐIỂM TRÊN BẢN ĐỒ</span><Button variant="atlas" size="atlas" type="button" aria-label="Ẩn địa điểm" onClick={onHidePlaces}>×</Button></div>
       {currentPlace ? <><strong>{currentPlace.name}</strong><small className="vo-place-subtitle">{placeSubtitle(currentPlace)}{currentPlace.leader ? ` · ${currentPlace.leader.name}` : ""}</small><p>{currentPlace.detail}</p>{currentPortrait ? <a className="vo-pin-credit" href={currentPortrait.file} target="_blank" rel="noreferrer" title={portraitCaption(currentPortrait)}>{currentPortrait.generated ? "Minh họa AI · Tái hiện nghệ thuật" : `Ảnh: ${currentPortrait.author} · ${currentPortrait.license}`} ↗</a> : null}</> : null}

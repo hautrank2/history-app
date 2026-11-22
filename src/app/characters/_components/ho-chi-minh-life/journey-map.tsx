@@ -6,7 +6,11 @@ import { useEffect, useEffectEvent, useId, useRef, useState } from "react";
 
 import type { ReactNode } from "react";
 
+import { VietnamGeographyLayer, VietnamIslandLayer } from "~/components/vietnam-map-reference";
+import { vietnamLandPath } from "~/data/vietnam-geography";
+
 import { getCharacter } from "~/data/characters";
+import southeastAsia from "~/data/geo/southeast-asia.json";
 import geography from "~/data/geo/world.json";
 import { lifeScenes, matchesLifeScene } from "~/data/ho-chi-minh";
 import { lifeMapLegs, lifePhase, projectLifePoint } from "~/lib/life-map-geometry";
@@ -27,7 +31,13 @@ type JourneyMapProps = {
 const project = projectLifePoint;
 const ringPath = (ring: number[][]) => `${ring.map((point, index) => `${index ? "L" : "M"}${project(point).map((value) => value.toFixed(2)).join(",")}`).join("")}Z`;
 const countryPath = (geometry: GeometryModel) => (geometry.type === "Polygon" ? [geometry.coordinates as number[][][]] : geometry.coordinates as number[][][][]).map((polygon) => polygon.map(ringPath).join("")).join("");
-const countries = geography.filter((country) => country.name !== "Antarctica").map((country) => ({ name: country.name, path: countryPath(country.geometry) }));
+const regionalGeography = new Map(southeastAsia.map((country) => [country.name, country.geometry]));
+const countries = geography.filter((country) => country.name !== "Antarctica").map((country) => ({
+  name: country.name,
+  path: country.name === "Vietnam"
+    ? vietnamLandPath(project)
+    : countryPath(regionalGeography.get(country.name) ?? country.geometry),
+}));
 const legs = lifeMapLegs(lifeScenes);
 
 const MapControl = ({ label, children, onClick, pressed, expanded, controls }: { label: string; children: ReactNode; onClick: () => void; pressed?: boolean; expanded?: boolean; controls?: string }) => <Tooltip.Root><Tooltip.Trigger asChild><button type="button" aria-label={label} aria-pressed={pressed} aria-expanded={expanded} aria-controls={controls} onClick={onClick}>{children}</button></Tooltip.Trigger><Tooltip.Portal><Tooltip.Content className="hcm-control-tooltip" side="left" sideOffset={10}>{label}<Tooltip.Arrow /></Tooltip.Content></Tooltip.Portal></Tooltip.Root>;
@@ -109,11 +119,20 @@ export const JourneyMap = ({ scene, index, state, onChange, onGo, onPerson, info
       if (drag) setView((previous) => ({ ...previous, x: Math.max(-1000, Math.min(1000, drag.originX - (event.clientX - drag.x) / viewport.width * viewWidth)), y: Math.max(-600, Math.min(600, drag.originY - (event.clientY - drag.y) / viewport.height * viewHeight)) }));
     }} onPointerUp={() => setDrag(null)} onPointerCancel={() => setDrag(null)}>
       <svg className="hcm-world-map" viewBox={`${left} ${top} ${viewWidth} ${viewHeight}`} role="group" aria-labelledby={`${id}-title ${id}-desc`}>
-        <title id={`${id}-title`}>Hành trình Hồ Chí Minh · {scene.date}</title><desc id={`${id}-desc`}>Bác ở {scene.location.name}. Tọa độ gần đúng; địa lý nền hiện đại. Đường nối các mốc không phải tuyến di chuyển thực tế. {scene.people.map((person) => `${getCharacter(person.characterId).name}: ${person.connection}`).join(" ")}</desc>
+        <title id={`${id}-title`}>{`Hành trình Hồ Chí Minh · ${scene.date}`}</title>
+        <desc id={`${id}-desc`}>{`Bác ở ${scene.location.name}. Tọa độ gần đúng; địa lý nền hiện đại. Đường nối các mốc không phải tuyến di chuyển thực tế. ${scene.people.map((person) => `${getCharacter(person.characterId).name}: ${person.connection}`).join(" ")}`}</desc>
         <defs><pattern id={`${id}-grid`} width="90" height="60" patternUnits="userSpaceOnUse"><path d="M90 0H0V60" className="hcm-map-grid" fill="none" /></pattern><radialGradient id={`${id}-glow`}><stop stopColor="var(--atlas-gold)" stopOpacity=".2" /><stop offset="1" stopColor="var(--atlas-gold)" stopOpacity="0" /></radialGradient>{(["roots", "journey", "leadership"] as const).map((phase) => <marker key={phase} id={`${id}-arrow-${phase}`} viewBox="0 -4 8 8" refX="7" refY="0" markerWidth={9 * viewWidth / viewport.width} markerHeight={9 * viewWidth / viewport.width} orient="auto" markerUnits="userSpaceOnUse"><path d="M0,-3.5L7,0L0,3.5Z" className="hcm-route-arrowhead" data-phase={phase} /></marker>)}</defs>
         <rect x="-2000" y="-2000" width="5000" height="5000" className="hcm-map-water" />
         <rect x="-2000" y="-2000" width="5000" height="5000" fill={`url(#${id}-grid)`} />
         <g className={`hcm-map-countries ${bordersVisible ? "has-borders" : ""}`}>{countries.map((country) => <path key={country.name} d={country.path} data-country={country.name} />)}</g>
+        {viewWidth < 220 ? (
+          <VietnamGeographyLayer
+            project={project}
+            unitsPerPixel={viewWidth / viewport.width}
+            places={viewWidth < 110}
+            outline={bordersVisible}
+          />
+        ) : null}
         <circle cx={focusX} cy={focusY} r={85 / view.zoom} fill={`url(#${id}-glow)`} />
         {routesVisible ? <>
           <g className="hcm-route-legs">{legs.map((leg) => <g key={leg.id} data-route-leg={leg.id} data-phase={leg.phase} data-selected={leg.to === index} data-hovered={hoveredLeg === leg.id} data-dimmed={state.q && !matchingIds.has(lifeScenes[leg.to].id) ? "true" : undefined}>
@@ -124,7 +143,10 @@ export const JourneyMap = ({ scene, index, state, onChange, onGo, onPerson, info
           </g>)}</g>
           {related.filter((person) => person.at && Math.hypot(...project(person.at).map((value, i) => value - [focusX, focusY][i])) > 5).map((person) => <path key={person.characterId} d={`M${focusX},${focusY}L${project(person.at ?? scene.location.at).join(",")}`} className="hcm-relation-line" data-relation={person.kind} />)}
         </> : null}
-        <g className="hcm-map-islands">{[[112,16.5],[114,10]].map((at, i) => { const [x, y] = project(at); return <g key={i} transform={`translate(${x},${y})`}><path d="m-2 0 2-2 2 2-2 2Z" /><title>{i === 0 ? "Hoàng Sa" : "Trường Sa"} (Việt Nam)</title></g>; })}</g>
+        <VietnamIslandLayer
+          project={project}
+          unitsPerPixel={viewWidth / viewport.width}
+        />
       </svg>
       <div className="hcm-map-markers">{clusters.filter((cluster) => cluster.x > -20 && cluster.x < viewport.width + 20 && cluster.y > 15 && cluster.y < viewport.height - 25).map((cluster) => {
         const current = cluster.indices.find((i) => points[i].sceneIndex === index);
@@ -143,6 +165,22 @@ export const JourneyMap = ({ scene, index, state, onChange, onGo, onPerson, info
         </Popover.Root>;
       })}</div>
       <div className="map-control" role="group" aria-label="Tương tác với bản đồ">
+        <MapControl
+          label="Xem toàn cảnh Việt Nam"
+          onClick={() => {
+            onChange({
+              map: "world",
+              camera: {
+                zoom: Math.min(12, Math.max(880, 340 * aspect) / Math.max(66, 60 * aspect)),
+                x: 303,
+                y: 42,
+              },
+            });
+            setExpanded(null);
+          }}
+        >
+          <span className="text-xs font-semibold">VN</span>
+        </MapControl>
         <MapControl label="Toàn hành trình" onClick={() => { onChange({ map: "world", camera: { zoom: 1, x: 0, y: 0 } }); setExpanded(null); }}><Globe2 size={18} /></MapControl>
         <MapControl label="Đến mốc đang xem" onClick={() => { onChange({ map: "focus", camera: { zoom: 1, x: 0, y: 0 } }); setExpanded(null); }}><Focus size={18} /></MapControl>
         <span className="map-control-divider" />

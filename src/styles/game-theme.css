@@ -91,8 +91,6 @@ html[data-theme="arena"] .vo-map-tools { gap: 3px; padding: 5px; }
 html[data-theme="arena"] :is(.vo-country-stats dt, .vo-map-badge > span) { color: #90c9e4; }
 html[data-theme="arena"] .vo-country-stats dd > :is(a, span) { color: #f3d797; text-shadow: 0 0 15px #d8b57418; }
 html[data-theme="arena"] .vo-country-stats { border-left: 3px solid #d8b574; }
-html[data-theme="arena"] .vo-islands-inset { border-color: #668daf66; border-left: 2px solid #84d4f0; }
-html[data-theme="arena"] .vo-islands-inset > span { color: #f3d797; }
 html[data-theme="arena"] .vo-countries path { fill: #203b51; stroke: #6689a155; }
 html[data-theme="arena"] .vo-countries path[data-country="China"] { fill: #1e3449; }
 html[data-theme="arena"] .vo-countries path[data-country="Cambodia"] { fill: #233e53; }

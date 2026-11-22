@@ -23,3 +23,23 @@ const walk = (directory) => readdirSync(directory, { withFileTypes: true }).flat
 const misplaced = walk("src").filter((path) => /\.(css|scss)$/.test(path) && !path.startsWith("src/styles/"));
 assert.deepEqual(misplaced, [], "All owned CSS/SCSS must live in src/styles");
 console.log("Map clustering and stylesheet location checks passed.");
+
+const detail = JSON.parse(readFileSync("src/data/geo/vietnam-detail.json", "utf8"));
+const insideRing = ([x, y], ring) => {
+  let inside = false;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const [xi, yi] = ring[i];
+    const [xj, yj] = ring[j];
+    if ((yi > y) !== (yj > y) && x < (xj - xi) * (y - yi) / (yj - yi) + xi) inside = !inside;
+  }
+  return inside;
+};
+assert.ok(detail.geometry.coordinates.some((polygon) => insideRing([104.01, 10.28], polygon[0])),
+  "Detailed Vietnam geometry must contain Phu Quoc, not only mainland");
+for (const polygon of detail.geometry.coordinates) {
+  for (const ring of polygon) {
+    assert.deepEqual(ring[0], ring.at(-1), "Geographic rings must stay closed");
+    assert.ok(ring.every((point) => point.length === 2 && point.every(Number.isFinite)));
+  }
+}
+console.log("Vietnam coastline, closed polygons and Phu Quoc geometry checks passed.");

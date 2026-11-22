@@ -2,10 +2,13 @@ import type { Metadata, Viewport } from "next";
 import { Be_Vietnam_Pro, Playfair_Display } from "next/font/google";
 import type { ReactNode } from "react";
 import { GameAudio } from "~/components/game-audio";
+import { ReadingThemeToggle } from "~/components/reading-theme-toggle";
+import { RootLink } from "~/components/root-link";
 
 import "~/styles/globals.css";
 import "~/styles/atlas.css";
 import "~/styles/game-theme.css";
+import "~/styles/reading-theme.css";
 
 // Cả hai font đều có bộ chữ tiếng Việt đầy đủ dấu
 const body = Be_Vietnam_Pro({
@@ -37,15 +40,34 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#071222",
-  colorScheme: "dark",
+  themeColor: "#f3ecdc",
+  colorScheme: "light dark",
 };
 
 type RootLayoutProps = { children: ReactNode };
 
 const RootLayout = ({ children }: RootLayoutProps) => (
-  <html lang="vi" data-theme="arena" data-scroll-behavior="smooth" className={`${body.variable} ${heading.variable}`}>
-    <body className="antialiased">{children}<GameAudio /></body>
+  <html
+    lang="vi"
+    data-theme="arena"
+    data-reading-mode="light"
+    data-scroll-behavior="smooth"
+    suppressHydrationWarning
+    className={`${body.variable} ${heading.variable}`}
+  >
+    <head>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `try{const mode=localStorage.getItem("history-atlas-reading-theme")==="dark"?"dark":"light";document.documentElement.dataset.readingMode=mode;document.querySelector('meta[name="theme-color"]')?.setAttribute("content",mode==="dark"?"#211e19":"#f3ecdc")}catch{}`,
+        }}
+      />
+    </head>
+    <body className="antialiased">
+      {children}
+      <RootLink />
+      <ReadingThemeToggle />
+      <GameAudio />
+    </body>
   </html>
 );
 

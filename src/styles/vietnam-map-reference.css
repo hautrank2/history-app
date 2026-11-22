@@ -1,0 +1,6 @@
+.vn-geography, .vn-islands { pointer-events: none; }
+.vn-coastline { fill: none; stroke: var(--atlas-gold); stroke-opacity: .45; stroke-width: 1; vector-effect: non-scaling-stroke; }
+.vn-river { fill: none; stroke: var(--arena-cyan, var(--atlas-muted)); stroke-opacity: .65; stroke-width: 1.2; vector-effect: non-scaling-stroke; }
+.vn-city { fill: var(--atlas-paper); }
+.vn-city-label { fill: var(--atlas-paper); paint-order: stroke; stroke: var(--background); stroke-width: 3px; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.vn-islands path { fill: var(--atlas-gold); stroke: var(--atlas-paper); stroke-width: .6; vector-effect: non-scaling-stroke; }

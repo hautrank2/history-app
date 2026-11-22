@@ -14,6 +14,28 @@ assert.equal(warlords.length, 12, "Exactly twelve historical warlords");
 assert.equal(new Set(warlords.map((row) => row.characterId)).size, 12);
 const overview = readFileSync("src/data/vietnam-overview.ts", "utf8");
 const sceneIds = new Set([...overview.matchAll(/id: "([a-z0-9-]+)", era:/g)].map((match) => match[1]));
+const battles = table("vietnam-battle");
+assert.equal(new Set(battles.map((battle) => battle.id)).size, battles.length);
+for (const battle of battles) {
+  assert.ok(sceneIds.has(battle.sceneId), `Unknown battle scene: ${battle.id}`);
+  assert.ok(battle.leaderIds.every((id) => ids.has(id)), `Unknown battle leader: ${battle.id}`);
+  assert.ok(battle.sources.length, `Missing battle source: ${battle.id}`);
+  const placeIds = new Set(battle.places.map((place) => place.id));
+  assert.equal(placeIds.size, battle.places.length, `Duplicate battle place: ${battle.id}`);
+  for (const place of battle.places) {
+    assert.ok(place.at.length === 2 && place.at.every(Number.isFinite));
+    assert.ok(place.at[0] >= -180 && place.at[0] <= 180);
+    assert.ok(place.at[1] >= -90 && place.at[1] <= 90);
+    assert.ok(place.note, `Missing geographic qualification: ${battle.id}/${place.id}`);
+  }
+  assert.ok(battle.chapters.length >= 3);
+  for (const chapter of battle.chapters) {
+    assert.ok(chapter.title && chapter.date && chapter.text);
+    assert.ok(chapter.placeIds.length && chapter.placeIds.every((id) => placeIds.has(id)),
+      `Unknown chapter place: ${battle.id}/${chapter.title}`);
+  }
+  for (const source of battle.sources) assert.equal(new URL(source.url).protocol, "https:");
+}
 for (const person of characters) {
   assert.ok(countryIds.has(person.countryId), `Unknown or missing character country: ${person.id}: ${person.countryId}`);
   assert.match(person.id, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);

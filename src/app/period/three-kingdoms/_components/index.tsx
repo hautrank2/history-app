@@ -26,6 +26,7 @@ import { characterHref, getCharacter } from "~/data/characters";
 import { portraitFor } from "~/data/portraits";
 import { factions, people, places, threeKingdomsMapSources, threeKingdomsScenes } from "~/data/three-kingdoms";
 import type { PersonId } from "~/data/three-kingdoms";
+import { threeKingdomsBattleScenes } from "~/data/three-kingdoms-battles";
 
 import { BattleMap } from "./map";
 import "~/styles/three-kingdoms.css";
@@ -51,7 +52,7 @@ const setSceneHash = (id: string) => {
 };
 
 export const ThreeKingdomsExperience = ({ battleId }: { battleId?: string }) => {
-  const scenes = useMemo(() => battleId ? threeKingdomsScenes.filter((scene) => scene.id === battleId) : threeKingdomsScenes, [battleId]);
+  const scenes = useMemo(() => battleId ? threeKingdomsBattleScenes(battleId) : threeKingdomsScenes, [battleId]);
   const battle = battleEntries.find((entry) => entry.id === battleId);
   const chapterStarts = scenes.flatMap((scene, index) => index === 0 || scenes[index - 1].chapter !== scene.chapter ? [{ index, name: scene.chapter }] : []);
   const lastScene = scenes.length - 1;
@@ -62,7 +63,7 @@ export const ThreeKingdomsExperience = ({ battleId }: { battleId?: string }) => 
   const compact = useSyncExternalStore(subscribeLayout, getCompactLayout, getServerLayout);
   const [playing, setPlaying] = useState(false);
   const [duration, setDuration] = useState(11);
-  const [wide, setWide] = useState(false);
+  const [wide, setWide] = useState(Boolean(battleId));
   const [highlight, setHighlight] = useState<{ scene: string; person: PersonId } | null>(null);
   const [storyPreference, setStoryPreference] = useState<boolean | null>(null);
   const [timelineOpen, setTimelineOpen] = useState(true);
@@ -142,7 +143,7 @@ export const ThreeKingdomsExperience = ({ battleId }: { battleId?: string }) => 
       }
     }} tabIndex={0}>
       <header className="tk-header">
-        <Link href={battleId ? "/period/three-kingdoms" : "/period"} className="tk-back" aria-label="Các thời kỳ lịch sử">
+        <Link href={battleId ? `/period/three-kingdoms#${battleId}` : "/period#china"} className="tk-back" aria-label="Các thời kỳ lịch sử">
           <ArrowLeft size={17} /> <span>{battleId ? "Tam Quốc" : "Thời kỳ"}</span>
         </Link>
         <div className="tk-title">
@@ -230,7 +231,7 @@ export const ThreeKingdomsExperience = ({ battleId }: { battleId?: string }) => 
           <a className="tk-source" href={scene.source.url} target="_blank" rel="noreferrer">{scene.source.name} <ExternalLink size={13} /></a>
           <Link href="/china#three-kingdoms" className="tk-source">Lịch sử Trung Quốc ↗</Link>
           {!battleId && battleEntries.find((entry) => entry.id === scene.id) ? <Link href={battleEntries.find((entry) => entry.id === scene.id)!.href} className="tk-source"><CountryFlag countryId="china" /> Chi tiết trận đánh ↗</Link> : null}
-          {battleId ? <Link href={`/period/three-kingdoms#${scene.id}`} className="tk-source">Trở về thời kỳ Tam Quốc ↗</Link> : null}
+          {battleId ? <Link href={`/period/three-kingdoms#${battleId}`} className="tk-source">Trở về thời kỳ Tam Quốc ↗</Link> : null}
           <Link href="/battle" className="tk-source">Danh sách trận đánh ↗</Link>
           {!battleId ? <details className="mt-5 space-y-3"><summary className="cursor-pointer text-sm text-primary">Các trận đánh trong thời kỳ Tam Quốc</summary><BattleGrid entries={battleEntries.filter((entry) => entry.periodId === "three-kingdoms")} /></details> : null}
         </article>

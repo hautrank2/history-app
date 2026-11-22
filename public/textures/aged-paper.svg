@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640">
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency=".64" numOctaves="3" stitchTiles="stitch" seed="17"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+  <filter id="pulp" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency=".025 .075" numOctaves="3" stitchTiles="stitch" seed="8"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+  <path d="M0 0h640v640H0z" filter="url(#grain)" opacity=".32"/>
+  <path d="M0 0h640v640H0z" filter="url(#pulp)" opacity=".12"/>
+  <g fill="none" stroke="#826c4c" stroke-linecap="round">
+    <path d="M37 39l2 61m0 9v23M184 248l-2 48m1 8v19M519 77l-1 40m0 8v13M581 437l2 75M91 541l35-2m9 0l15-1M346 154l37 1" opacity=".28" stroke-width=".8"/>
+    <path d="M67 189l9-2m87-92l12 1m129 253l8-2m78 106l13 2m-211 108l8-1m353-252l12 1m-98-133l9-2M48 417l15 1M327 602l10-2M445 56l12 1" opacity=".24" stroke-width=".6"/>
+    <path d="M2 329c114-4 170 3 245-1s176-3 253 0 93 0 138-2" opacity=".07" stroke-width="1.5"/>
+  </g>
+  <g fill="#76583a" opacity=".32">
+    <circle cx="151" cy="63" r="1.2"/><circle cx="477" cy="393" r="1"/>
+    <circle cx="54" cy="349" r="1.5"/><circle cx="321" cy="572" r="1.1"/>
+    <circle cx="405" cy="214" r=".8"/><circle cx="602" cy="157" r="1.3"/>
+    <circle cx="227" cy="433" r=".8"/><circle cx="369" cy="31" r=".9"/>
+  </g>
+</svg>

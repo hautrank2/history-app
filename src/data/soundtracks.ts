@@ -68,6 +68,14 @@ export const soundtrackForPath = (pathname: string, hash = "", playback: MusicPl
   const [, country, page] = pathname.replace(/\/$/, "").split("/");
   if (country === "battle" && page === "tran-bach-dang-1288") return soundtrackForPath("/vietnam/bach-dang-1288", hash, playback);
   if (country === "battle" && page === "tran-dien-bien-phu-1954") return resolve(sceneContexts["dien-bien-phu"]);
+  const vietnamBattleScenes: Record<string, string> = {
+    "tran-bach-dang-938": "ngo",
+    "tran-nhu-nguyet-1077": "ly-nhu-nguyet",
+    "tran-chi-lang-xuong-giang-1427": "lam-son",
+    "tran-rach-gam-xoai-mut-1785": "tay-son-rach-gam",
+    "tran-ngoc-hoi-dong-da-1789": "tay-son-quang-trung",
+  };
+  if (country === "battle" && vietnamBattleScenes[page]) return resolve(sceneContexts[vietnamBattleScenes[page]]);
   if (country === "battle" && page?.startsWith("tran-")) return resolve(periodContexts.china["three-kingdoms"]);
   if (country === "period" && page === "loan-12-su-quan") return resolve(sceneContexts[page]);
   if (country === "period" && page === "nha-tran") return resolve(sceneContexts[hash.replace(/^#/, "")] ?? sceneContexts["tran-dung-nuoc"]);

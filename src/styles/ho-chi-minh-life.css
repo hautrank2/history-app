@@ -107,8 +107,6 @@
 .hcm-route-past { stroke: var(--atlas-gold); stroke-width: 2; opacity: .8; filter: drop-shadow(0 0 3px color-mix(in srgb, var(--atlas-gold) 50%, transparent)); }
 .hcm-relation-line { stroke: var(--arena-cyan); stroke-width: 1.5; stroke-dasharray: 5 6; }
 .hcm-relation-line[data-relation="opponent"] { stroke: var(--enemy); }
-.hcm-map-islands { fill: var(--atlas-gold); stroke: none; }
-.hcm-map-islands text { font-size: 11px; }
 .hcm-map-markers { position: absolute; inset: 0; pointer-events: none; }
 .hcm-map-marker { position: absolute; pointer-events: auto; transform: translate(-50%, -50%); display: flex; align-items: center; flex-direction: column; color: var(--atlas-gold); z-index: 1; }
 .hcm-marker-symbol { display: flex; align-items: center; justify-content: center; width: 27px; height: 27px; border: 1px solid var(--atlas-gold); background: var(--background); border-radius: 50%; font-size: 11px; overflow: hidden; box-shadow: 0 0 0 4px color-mix(in srgb, var(--atlas-gold) 8%, transparent); }

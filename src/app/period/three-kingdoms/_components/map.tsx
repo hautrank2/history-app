@@ -9,6 +9,7 @@ import { mapFrames, ringPathWith } from "~/app/[country]/[period]/_components/vi
 import { portraitCaption, portraitFor, portraitPlaceholder } from "~/data/portraits";
 import { factionLeader, factions, people, places } from "~/data/three-kingdoms";
 import type { Coordinate, PersonId, ThreeKingdomsScene } from "~/data/three-kingdoms";
+import { VietnamIslandLayer } from "~/components/vietnam-map-reference";
 import { clusterMapPoints } from "~/lib/map-clusters";
 import { territoryBorders } from "~/lib/territory-borders";
 
@@ -170,6 +171,10 @@ export const BattleMap = ({ scene, selected, wide, storyOpen, timelineOpen, time
     42,
   ).map((marker) => ({
     ...marker,
+    anchor: { x: marker.x, y: marker.y },
+    // Keep portraits clear of the event pin, while retaining the true location.
+    ...(Math.hypot(marker.x - focus.x, marker.y - focus.y) < 50
+      ? { y: focus.y + 65 < frame.y + frame.height - 35 ? focus.y + 65 : focus.y - 65 } : {}),
     members: marker.indices.map((index) => locatedPeople[index]),
   })).filter(({ x, y }) => x > 12 && x < width - 12 && y > 12 && y < height - 12);
   const boxes: Box[] = [
@@ -358,15 +363,12 @@ export const BattleMap = ({ scene, selected, wide, storyOpen, timelineOpen, time
         ))}
         {cities.map(({ id, place, at, label }) => (
           <g key={id} data-place-id={id}>
-            {id === scene.focus ? (
-              <g className="tk-map-focus" style={move(at)}>
-                <circle r="17" className="tk-focus-ring" />
-                <circle r="10" fill="#2b211b" stroke="#faad76" strokeWidth="1.5" />
-                {scene.battle ? <Swords x={-6} y={-6} width={12} height={12} /> : <circle r="3" fill="currentColor" />}
-              </g>
-            ) : <circle className="tk-city-dot" r="3.2" style={move(at)} />}
-            {label && <text className={`tk-city-label ${id === scene.focus ? "is-focus" : ""}`} style={move(label)}>{place.name}</text>}
+            {id !== scene.focus && <circle className="tk-city-dot" r="3.2" style={move(at)} />}
+            {label && !(wide && id === scene.focus) && <text className={`tk-city-label ${id === scene.focus ? "is-focus" : ""}`} style={move(label)}>{place.name}</text>}
           </g>
+        ))}
+        {markers.filter(({ x, y, anchor }) => x !== anchor.x || y !== anchor.y).map(({ members, x, y, anchor }) => (
+          <path key={`leader-${members[0].person}`} d={`M${anchor.x},${anchor.y}L${x},${y}`} stroke="#c8bea1" strokeDasharray="3 3" fill="none" />
         ))}
         {markers.map(({ members, x, y }) => {
           const selectedIndex = members.findIndex((member) => member.person === selected);
@@ -429,6 +431,16 @@ export const BattleMap = ({ scene, selected, wide, storyOpen, timelineOpen, time
             </g>
           );
         })}
+        <g className="tk-map-focus" style={move(focus)} aria-label={`Vị trí sự kiện: ${places[scene.focus].name}`}>
+          <circle r="17" className="tk-focus-ring" />
+          <circle r="10" fill="#2b211b" stroke="#faad76" strokeWidth="1.5" />
+          {scene.battle ? <Swords x={-6} y={-6} width={12} height={12} /> : <circle r="3" fill="currentColor" />}
+          <title>{`${scene.title} · ${places[scene.focus].name}`}</title>
+        </g>
+        {wide && <text className="tk-city-label is-focus" style={move({ x: focus.x + 20, y: focus.y - 18 })}>{places[scene.focus].name}</text>}
+        <g transform={`translate(${view.x} ${view.y}) scale(${view.scale})`}>
+          <VietnamIslandLayer project={project} unitsPerPixel={1 / view.scale} />
+        </g>
       </svg>
       <div className="tk-map-mode"><Crosshair size={15} /> <span>{wide ? "Toàn cảnh Trung Quốc" : places[scene.focus].name}</span></div>
       <div className="tk-map-controls" aria-label="Điều khiển bản đồ">

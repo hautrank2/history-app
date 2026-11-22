@@ -32,7 +32,7 @@ export const StoryMap = ({ story, backHref }: StoryMapProps) => {
         <div>
           <HomeLink className="pointer-events-auto text-xs text-primary" back />
           <Link
-            href={backHref}
+            href={`${backHref}#${backHref === "/vietnam" ? "tran-bach-dang" : "intro"}`}
             className="pointer-events-auto text-xs tracking-widest text-primary uppercase hover:underline"
           >
             Dòng thời gian

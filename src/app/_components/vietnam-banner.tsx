@@ -1,4 +1,4 @@
-import { ArrowRight, Compass, Map, Route } from "lucide-react";
+import { ArrowRight, Map, Route } from "lucide-react";
 import Link from "next/link";
 
 import { Image } from "@/components/ui/image";
@@ -13,7 +13,7 @@ export const VietnamBanner = () => {
   const person = getCharacter("ho-chi-minh");
   const portrait = portraitFor(person.wiki);
 
-  return <article className="atlas-country atlas-country-vietnam atlas-vietnam-banner" data-country-id="vietnam" aria-labelledby="atlas-vietnam-title">
+  return <article className="atlas-country atlas-country-vietnam atlas-vietnam-banner h-full" data-country-id="vietnam" aria-labelledby="atlas-vietnam-title">
     <Image className="atlas-vietnam-background" src={visual.image} alt="Minh họa lịch sử Việt Nam" fill priority preview={false} />
     {portrait ? <figure className="atlas-vietnam-portrait" data-character-id={person.id}><Image src={portrait.src} alt={`Chân dung ${person.name}`} fill priority preview={false} style={{ objectPosition: portrait.position }} /></figure> : null}
     <div className="atlas-country-shade atlas-vietnam-shade" />

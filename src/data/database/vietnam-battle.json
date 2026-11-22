@@ -1,0 +1,109 @@
+[
+  {
+    "id": "bach-dang-938",
+    "title": "Bạch Đằng",
+    "years": "938",
+    "sceneId": "ngo",
+    "leaderIds": ["ngo-quyen"],
+    "sides": { "home": "Quân Ngô Quyền", "enemy": "Quân Nam Hán" },
+    "summary": "Ngô Quyền kết hợp trận địa cọc, thủy triều và phục binh trên sông Bạch Đằng.",
+    "places": [
+      { "id": "dai-la", "name": "Đại La", "at": [105.82, 21.03], "note": "Trung tâm chính trị trước khi Ngô Quyền chuẩn bị chống Nam Hán." },
+      { "id": "luong-xam", "name": "Lương Xâm", "at": [106.75, 20.82], "note": "Khu vực gắn với việc chuẩn bị trận địa theo truyền thống địa phương." },
+      { "id": "bach-dang", "name": "Cửa sông Bạch Đằng", "at": [106.8, 20.93], "note": "Khu vực quyết chiến; vị trí trận địa là định vị gần đúng." }
+    ],
+    "chapters": [
+      { "title": "Chuẩn bị chống Nam Hán", "date": "Năm 938", "text": "Ngô Quyền xử lý lực lượng Kiều Công Tiễn ở Đại La rồi tổ chức chống quân Nam Hán. Ông chọn khu vực cửa sông Bạch Đằng để chuẩn bị trận quyết chiến.", "placeIds": ["dai-la", "luong-xam"] },
+      { "title": "Bố trí trận địa cọc", "date": "Trước trận đánh", "text": "Quân Ngô Quyền bố trí cọc ở vùng cửa sông và chuẩn bị phục binh. Kế hoạch tận dụng con nước để giữ đoàn chiến thuyền đối phương trong trận địa.", "placeIds": ["luong-xam", "bach-dang"] },
+      { "title": "Nhử thuyền vào sông", "date": "Cuối năm 938", "text": "Khi nước lên, lực lượng thuyền nhẹ khiêu chiến rồi rút, dẫn thủy quân Nam Hán tiến sâu. Các cánh phục binh chờ thời điểm phản công.", "placeIds": ["bach-dang"] },
+      { "title": "Nước rút, phản công", "date": "Cuối năm 938", "text": "Khi triều xuống, bãi cọc cản thuyền Nam Hán. Quân Ngô Quyền tiến công, đánh bại đạo quân do Hoằng Tháo chỉ huy; chiến thắng mở đường cho chính quyền độc lập của nhà Ngô.", "placeIds": ["bach-dang"] }
+    ],
+    "sources": [{ "title": "Cục Văn thư và Lưu trữ nhà nước · Ngô Quyền và trận Bạch Đằng qua Mộc bản", "url": "https://luutru.gov.vn/cong-bo-gioi-thieu-tai-lieu/ngo-quyen-va-tran-thuy-chien-tren-song-bach-dang-qua-tai-lieu-moc-ban-trieu-nguyen.htm" }]
+  },
+  {
+    "id": "nhu-nguyet-1077",
+    "title": "Như Nguyệt",
+    "years": "1077",
+    "sceneId": "ly-nhu-nguyet",
+    "leaderIds": ["ly-thuong-kiet"],
+    "sides": { "home": "Quân Đại Việt", "enemy": "Quân Tống" },
+    "summary": "Theo dõi phòng tuyến sông Như Nguyệt và cuộc kháng chiến do Lý Thường Kiệt chỉ huy.",
+    "places": [
+      { "id": "thang-long", "name": "Thăng Long", "at": [105.85, 21.03], "note": "Kinh đô Đại Việt, phía nam tuyến phòng thủ." },
+      { "id": "nhu-nguyet", "name": "Phòng tuyến Như Nguyệt", "at": [105.99, 21.22], "note": "Định vị đại diện khu vực phòng tuyến trên sông Cầu, không phải ranh giới trận địa." },
+      { "id": "bo-bac", "name": "Bờ bắc sông Cầu", "at": [106.04, 21.28], "note": "Khu vực quân Tống dừng lại trước phòng tuyến Đại Việt." }
+    ],
+    "chapters": [
+      { "title": "Dựng phòng tuyến", "date": "Cuối năm 1076", "text": "Sau giai đoạn chủ động tiến công, Lý Thường Kiệt tổ chức phòng ngự ở sông Như Nguyệt. Tuyến sông che chắn đường tiến về Thăng Long.", "placeIds": ["thang-long", "nhu-nguyet"] },
+      { "title": "Quân Tống tiến đến", "date": "Đầu năm 1077", "text": "Quân Tống do Quách Quỳ chỉ huy tới bờ bắc. Các đợt tìm cách vượt sông gặp phòng tuyến và lực lượng đánh trả của Đại Việt.", "placeIds": ["bo-bac", "nhu-nguyet"] },
+      { "title": "Giữ vững bờ nam", "date": "Năm 1077", "text": "Quân Đại Việt ngăn các cuộc vượt sông, duy trì thế phòng ngự. Quân Tống bị giữ lại trong khi đường tiếp tế và sự phối hợp với thủy quân gặp khó khăn.", "placeIds": ["nhu-nguyet"] },
+      { "title": "Phản công và giảng hòa", "date": "Năm 1077", "text": "Lý Thường Kiệt tổ chức phản công và chủ động đề nghị giảng hòa. Quân Tống rút về, cuộc kháng chiến bảo vệ Đại Việt kết thúc thắng lợi.", "placeIds": ["nhu-nguyet", "bo-bac"] }
+    ],
+    "sources": [{ "title": "Bảo tàng Lịch sử Quốc gia · Kháng chiến chống Tống lần thứ hai", "url": "https://baotanglichsu.vn/vi/Articles/2002/68151/ky-niem-937-nam-cuoc-khang-chien-chong-quan-tong-lan-thu-hai-thang-loi-1077-2014.html" }]
+  },
+  {
+    "id": "chi-lang-xuong-giang-1427",
+    "title": "Chi Lăng – Xương Giang",
+    "years": "10–11/1427",
+    "sceneId": "lam-son",
+    "leaderIds": ["le-loi", "nguyen-trai"],
+    "sides": { "home": "Nghĩa quân Lam Sơn", "enemy": "Quân Minh" },
+    "summary": "Chuỗi trận chặn viện binh nhà Minh, góp phần quyết định thắng lợi của khởi nghĩa Lam Sơn.",
+    "places": [
+      { "id": "chi-lang", "name": "Ải Chi Lăng", "at": [106.58, 21.61], "note": "Khu vực phục kích đạo viện binh từ hướng Lạng Sơn." },
+      { "id": "xuong-giang", "name": "Xương Giang", "at": [106.22, 21.3], "note": "Khu vực vây đánh lực lượng viện binh còn lại." },
+      { "id": "dong-quan", "name": "Đông Quan", "at": [105.85, 21.03], "note": "Thành quân Minh còn chiếm giữ, đang bị nghĩa quân vây hãm." }
+    ],
+    "chapters": [
+      { "title": "Vây thành, chặn viện", "date": "Trước tháng 10/1427", "text": "Bộ chỉ huy Lam Sơn duy trì vây hãm Đông Quan và chuẩn bị đánh viện binh. Việc chiếm thành Xương Giang làm mất một điểm tựa của quân Minh trên đường tiến xuống.", "placeIds": ["dong-quan", "xuong-giang"] },
+      { "title": "Phục kích Chi Lăng", "date": "Tháng 10/1427", "text": "Đạo quân Liễu Thăng tiến vào hành lang Chi Lăng và bị phục kích. Liễu Thăng tử trận; đội hình viện binh bị tổn thất và mất thế chủ động.", "placeIds": ["chi-lang"] },
+      { "title": "Truy kích và cô lập", "date": "Tháng 10/1427", "text": "Nghĩa quân tiếp tục chặn đánh trên đường tiến về Xương Giang. Lực lượng viện binh còn lại không nối được với quân ở Đông Quan và bị bao vây.", "placeIds": ["chi-lang", "xuong-giang"] },
+      { "title": "Kết thúc ở Xương Giang", "date": "Đầu tháng 11/1427", "text": "Cuộc tiến công ở Xương Giang đánh bại lực lượng viện binh còn lại. Thắng lợi tạo sức ép quyết định lên Vương Thông, dẫn tới việc quân Minh rút khỏi Đại Việt.", "placeIds": ["xuong-giang", "dong-quan"] }
+    ],
+    "sources": [{ "title": "Bảo tàng Lịch sử Quốc gia · Chiến thắng Chi Lăng – Xương Giang", "url": "https://baotanglichsu.vn/vi/Articles/3097/15231/chien-thang-chi-lang-xuong-giang-8-10-djen-3-11-1427.html" }]
+  },
+  {
+    "id": "rach-gam-xoai-mut-1785",
+    "title": "Rạch Gầm – Xoài Mút",
+    "years": "20/1/1785",
+    "sceneId": "tay-son-rach-gam",
+    "leaderIds": ["nguyen-hue"],
+    "sides": { "home": "Quân Tây Sơn", "enemy": "Liên quân Xiêm – Nguyễn" },
+    "summary": "Nguyễn Huệ tổ chức trận phục kích trên sông Tiền, phối hợp thủy quân và lực lượng hai bờ.",
+    "places": [
+      { "id": "rach-gam", "name": "Rạch Gầm", "at": [106.26, 10.35], "note": "Đầu phía tây khu vực trận địa trên sông Tiền." },
+      { "id": "thoi-son", "name": "Cù lao Thới Sơn", "at": [106.32, 10.33], "note": "Cù lao giữa sông, thuận lợi cho bố trí lực lượng mai phục." },
+      { "id": "xoai-mut", "name": "Xoài Mút", "at": [106.36, 10.35], "note": "Định vị gần đúng đầu phía đông trận địa." },
+      { "id": "my-tho", "name": "Mỹ Tho", "at": [106.36, 10.36], "note": "Khu vực tập kết và tổ chức lực lượng Tây Sơn." }
+    ],
+    "chapters": [
+      { "title": "Tây Sơn vào Nam", "date": "Đầu năm 1785", "text": "Trước cuộc tiến quân của liên quân Xiêm – Nguyễn, Nguyễn Huệ đưa lực lượng vào vùng Mỹ Tho, khảo sát sông Tiền và chuẩn bị một trận quyết chiến.", "placeIds": ["my-tho"] },
+      { "title": "Chọn khúc sông phục kích", "date": "Tháng 1/1785", "text": "Đoạn sông giữa Rạch Gầm và Xoài Mút cùng cù lao Thới Sơn được chọn làm trận địa. Lực lượng thủy bộ được bố trí phối hợp ở hai bờ và trên sông.", "placeIds": ["rach-gam", "thoi-son", "xoai-mut"] },
+      { "title": "Khóa đội hình trên sông", "date": "Đêm 19 rạng 20/1/1785", "text": "Đoàn thuyền đối phương tiến vào khu vực mai phục. Quân Tây Sơn đồng loạt đánh từ các hướng, chia cắt đội hình và hạn chế đường thoát của địch.", "placeIds": ["rach-gam", "thoi-son", "xoai-mut"] },
+      { "title": "Làm chủ chiến trường", "date": "Ngày 20/1/1785", "text": "Liên quân Xiêm – Nguyễn bị đánh bại. Chiến thắng làm thất bại cuộc can thiệp quân sự của Xiêm và củng cố vị thế của phong trào Tây Sơn ở Nam Bộ.", "placeIds": ["xoai-mut", "my-tho"] }
+    ],
+    "sources": [{ "title": "Cổng thông tin Đồng Tháp · Chiến thắng Rạch Gầm – Xoài Mút", "url": "https://dongthap.gov.vn/web/cong-thong-tin-dtp/tin-tuc/chi-tiet?id=7110084" }]
+  },
+  {
+    "id": "ngoc-hoi-dong-da-1789",
+    "title": "Ngọc Hồi – Đống Đa",
+    "years": "Tết Kỷ Dậu · 1789",
+    "sceneId": "tay-son-quang-trung",
+    "leaderIds": ["nguyen-hue"],
+    "sides": { "home": "Quân Tây Sơn", "enemy": "Quân Thanh" },
+    "summary": "Từ Tam Điệp tới Thăng Long, theo dõi cuộc tiến công mùa xuân Kỷ Dậu của Quang Trung.",
+    "places": [
+      { "id": "tam-diep", "name": "Tam Điệp", "at": [105.92, 20.16], "note": "Khu vực tập kết trước khi tiến quân ra Thăng Long." },
+      { "id": "ngoc-hoi", "name": "Ngọc Hồi", "at": [105.85, 20.92], "note": "Khu vực đồn phòng ngự phía nam Thăng Long." },
+      { "id": "dong-da", "name": "Khương Thượng – Đống Đa", "at": [105.82, 21.01], "note": "Hướng tiến công vào lực lượng Thanh phía tây nam kinh thành." },
+      { "id": "thang-long", "name": "Thăng Long", "at": [105.85, 21.03], "note": "Mục tiêu của chiến dịch giải phóng kinh thành." }
+    ],
+    "chapters": [
+      { "title": "Tập kết ở Tam Điệp", "date": "Tháng 1/1789", "text": "Quang Trung đưa quân ra Bắc, tập kết tại Tam Điệp và tổ chức các hướng tiến công. Việc chuẩn bị bảo đảm cho chiến dịch diễn ra nhanh trong dịp Tết.", "placeIds": ["tam-diep"] },
+      { "title": "Tiến về Thăng Long", "date": "Tết Kỷ Dậu", "text": "Các cánh quân Tây Sơn tiến lên, đánh các vị trí tiền tiêu. Quân Thanh phải đối phó với những hướng tiến công phối hợp từ phía nam và phía tây nam.", "placeIds": ["tam-diep", "ngoc-hoi", "dong-da"] },
+      { "title": "Đột phá Ngọc Hồi, Đống Đa", "date": "Mồng 5 Tết · 30/1/1789", "text": "Quân Tây Sơn tiến công các đồn Ngọc Hồi và Khương Thượng – Đống Đa. Những vị trí phòng ngự quan trọng của quân Thanh bị đánh bại trong cuộc quyết chiến.", "placeIds": ["ngoc-hoi", "dong-da"] },
+      { "title": "Giải phóng kinh thành", "date": "Mùa xuân 1789", "text": "Quân Thanh rút chạy, quân Tây Sơn tiến vào Thăng Long. Chiến thắng kết thúc cuộc kháng chiến chống cuộc xâm lược của nhà Thanh cuối năm 1788, đầu năm 1789.", "placeIds": ["thang-long"] }
+    ],
+    "sources": [{ "title": "Viện Sử học · Chiến thắng Ngọc Hồi – Đống Đa", "url": "https://viensuhoc.vass.gov.vn/bao-ve-nen-tang-tu-tuong-cua-dang/chien-thang-ngoc-hoi-dong-da-mua-xuan-nam-ky-dau-1789-dau-an-lich-su-va-van-hoa-560605" }]
+  }
+]

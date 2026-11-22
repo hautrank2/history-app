@@ -5,6 +5,7 @@
 | `character.json` | `id` | `countryId` → `character-countries.ts`; tên, bí danh, vai trò chung, tiểu sử, niên đại, nguồn |
 | `event.json` | `id` | `leaderIds` → nhân vật; `sceneIds` → cảnh overview |
 | `warlord.json` | `characterId` | Đúng 12 sứ quân, căn cứ và tọa độ gần đúng |
+| `vietnam-battle.json` | `id` | `sceneId` → cảnh Việt Nam; `leaderIds` → nhân vật; `chapters[].placeIds` → địa điểm của trận; nguồn tư liệu theo trận |
 | `soundtrack.json` | `id` | Chủ đề nhạc theo quốc gia, thời kỳ, sắc thái; giai điệu và phối khí nguyên bản |
 | `music-context.json` | Khóa theo bảng con | Tham chiếu ID cảnh/sự kiện/nhân vật/thời kỳ → quốc gia, era, mood để tự chọn nhạc |
 | `ho-chi-minh-life.json` | `scenes[].id`, `sources[].id` | Cuộc đời 1890–1969; `people[].characterId` → nhân vật; `sourceIds` → nguồn; `overviewId` → cảnh tổng quan |

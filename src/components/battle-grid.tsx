@@ -8,12 +8,12 @@ import { CountryFlag } from "~/components/country-flag";
 type BattleGridProps = { entries: HistoryCardModel[] };
 
 export const BattleGrid = ({ entries }: BattleGridProps) => (
-  <ul className="atlas-battle-grid grid grid-cols-[repeat(auto-fit,minmax(min(100%,320px),1fr))] gap-5">
+  <ul className="atlas-battle-grid grid auto-rows-fr grid-cols-[repeat(auto-fit,minmax(min(100%,320px),1fr))] gap-5">
     {entries.map((battle) => (
-      <li key={battle.id} data-event-id={battle.id}>
+      <li className="h-full" key={battle.id} data-event-id={battle.id}>
         <Link
           href={battle.href}
-          className="atlas-battle-card group relative isolate flex min-h-72 flex-col justify-end overflow-hidden rounded-lg border border-border bg-card p-6 transition-colors hover:border-primary focus-visible:outline-2 focus-visible:outline-primary sm:min-h-80 sm:p-8"
+          className="atlas-battle-card group relative isolate flex h-full min-h-72 flex-col justify-end overflow-hidden rounded-lg border border-border bg-card p-6 transition-colors hover:border-primary focus-visible:outline-2 focus-visible:outline-primary sm:min-h-80 sm:p-8"
         >
           <Image
             src={battle.image}

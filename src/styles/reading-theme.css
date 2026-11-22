@@ -1,0 +1,639 @@
+/* Two editions of the same atlas. Keep arena selectors and map behavior intact. */
+html[data-theme][data-reading-mode]:has(.atlas-home) {
+  scroll-behavior: auto;
+}
+
+html[data-theme][data-reading-mode] {
+  --background: #f3ecdc;
+  --foreground: #30291f;
+  --card: #eae0cc;
+  --muted-foreground: #695d4c;
+  --border: #b8a486;
+  --primary: #8c3d2c;
+  --primary-foreground: #fff5e2;
+  --accent: #dfd1b8;
+  --accent-foreground: #30291f;
+  --home: #766025;
+  --enemy: #a23c32;
+  --ring: #8c3d2c;
+  --paper-water: #c4d0c5;
+  --paper-land: #ded6b9;
+  --paper-shadow: #42332018;
+  color-scheme: light;
+}
+
+html[data-theme][data-reading-mode="dark"] {
+  --background: #211e19;
+  --foreground: #eee3cf;
+  --card: #2d2820;
+  --muted-foreground: #c0b198;
+  --border: #75634b;
+  --primary: #d3ab71;
+  --primary-foreground: #241c14;
+  --accent: #433626;
+  --accent-foreground: #f3e5cd;
+  --home: #d7b96f;
+  --enemy: #e3937d;
+  --ring: #d3ab71;
+  --paper-water: #263633;
+  --paper-land: #494735;
+  --paper-shadow: #00000035;
+  color-scheme: dark;
+}
+
+html[data-theme][data-reading-mode] {
+  --card-foreground: var(--foreground);
+  --popover: var(--background);
+  --popover-foreground: var(--foreground);
+  --muted: var(--card);
+  --secondary: var(--card);
+  --secondary-foreground: var(--foreground);
+  --input: var(--border);
+  --atlas-base: var(--background);
+  --atlas-paper: var(--foreground);
+  --atlas-gold: var(--primary);
+  --atlas-muted: var(--muted-foreground);
+  --atlas-line: color-mix(in srgb, var(--border) 55%, transparent);
+  --arena-cyan: var(--primary);
+  --arena-gold-line: var(--atlas-line);
+  --arena-panel: color-mix(in srgb, var(--background) 94%, transparent);
+  --arena-button: var(--card);
+  --arena-selected: var(--primary);
+  --arena-frame-shadow: 0 5px 18px var(--paper-shadow);
+  scrollbar-color: var(--border) var(--background);
+}
+
+/* Static paper grain is painted behind content, with no animated overlay. */
+html[data-theme][data-reading-mode] body {
+  background-color: var(--background);
+  background-image:
+    url("/textures/aged-paper.webp"),
+    radial-gradient(ellipse at 0 20%, #9a692c24, transparent 42%),
+    radial-gradient(ellipse at 100% 65%, #9a692c1c, transparent 40%),
+    linear-gradient(90deg, #76532912, transparent 7%, transparent 93%, #76532912);
+  background-size: 640px 640px, 100% 100vh, 100% 100vh, 100% 100%;
+  background-repeat: repeat, no-repeat, no-repeat, no-repeat;
+  background-blend-mode: multiply;
+}
+
+html[data-theme][data-reading-mode="dark"] body {
+  background-image:
+    linear-gradient(#211e19a8, #211e19a8),
+    url("/textures/aged-paper.webp"),
+    radial-gradient(ellipse at 0 20%, #9a692c24, transparent 42%);
+  background-size: 100% 100%, 640px 640px, 100% 100vh;
+  background-repeat: no-repeat, repeat, no-repeat;
+  background-blend-mode: normal, screen, soft-light;
+}
+html[data-theme][data-reading-mode] ::selection {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+html[data-theme][data-reading-mode] ::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+html[data-theme][data-reading-mode] ::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-color: var(--background);
+}
+
+html[data-theme][data-reading-mode] .atlas-page {
+  background: transparent;
+}
+
+/* Shared directory navigation, set like the contents of a printed atlas. */
+html[data-theme][data-reading-mode] .atlas-header.atlas-site-header {
+  min-height: 92px;
+  padding-block: 16px;
+  gap: 32px;
+  background: transparent;
+}
+
+html[data-theme][data-reading-mode] .atlas-site-header .atlas-site-brand {
+  flex: none;
+  padding: 0;
+  gap: 12px;
+}
+
+.atlas-brand-copy {
+  display: grid;
+  gap: 5px;
+}
+
+.atlas-brand-copy strong {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .13em;
+}
+
+.atlas-brand-copy small {
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: .08em;
+  color: var(--muted-foreground);
+}
+
+html[data-theme][data-reading-mode] .atlas-site-header .atlas-primary-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+  padding: 4px;
+  border: 1px solid var(--atlas-line);
+  background: color-mix(in srgb, var(--card) 45%, transparent);
+}
+
+html[data-theme][data-reading-mode] .atlas-primary-nav .atlas-nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 42px;
+  padding: 10px 18px;
+  border: 1px solid transparent;
+  color: var(--muted-foreground);
+  font-size: 13px;
+  white-space: nowrap;
+  transition: color .18s, background .18s, border-color .18s;
+}
+
+html[data-theme][data-reading-mode] .atlas-primary-nav .atlas-nav-link:hover {
+  color: var(--primary);
+  background: var(--accent);
+}
+
+html[data-theme][data-reading-mode] .atlas-primary-nav .atlas-nav-link[aria-current="page"] {
+  background: var(--background);
+  border-color: var(--atlas-line);
+  color: var(--primary);
+  box-shadow: 0 2px 5px var(--paper-shadow);
+}
+
+.atlas-nav-link[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  inset: auto 18px -1px;
+  height: 2px;
+  background: var(--primary);
+}
+
+html[data-theme][data-reading-mode] .atlas-character-links {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+html[data-theme][data-reading-mode] .atlas-character-cover {
+  align-items: stretch;
+  min-height: 350px;
+  padding: 32px;
+  border-radius: 2px;
+  box-shadow: var(--arena-frame-shadow);
+}
+
+.atlas-character-background {
+  filter: sepia(.4) saturate(.65);
+}
+
+.atlas-character-shade {
+  background: linear-gradient(0deg, var(--background) 0%, color-mix(in srgb, var(--background) 96%, transparent) 28%, color-mix(in srgb, var(--background) 24%, transparent) 100%);
+}
+
+@media (max-width: 760px) {
+  html[data-theme][data-reading-mode] .atlas-header.atlas-site-header {
+    gap: 16px;
+    padding: 14px 6% 16px;
+  }
+
+  html[data-theme][data-reading-mode] .atlas-site-header .atlas-site-brand {
+    flex-basis: 100%;
+    padding-right: 80px;
+  }
+
+  .atlas-brand-copy strong {
+    font-size: 11px;
+  }
+
+  html[data-theme][data-reading-mode] .atlas-site-header .atlas-primary-nav {
+    width: 100%;
+    margin: 0;
+    gap: 3px;
+  }
+
+  html[data-theme][data-reading-mode] .atlas-primary-nav .atlas-nav-link {
+    flex: 1;
+    padding: 10px 6px;
+    gap: 7px;
+    font-size: 12px;
+  }
+
+  html[data-theme][data-reading-mode] .atlas-character-links {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  html[data-theme][data-reading-mode] .atlas-character-cover {
+    min-height: 320px;
+    padding: 26px;
+  }
+}
+
+html[data-theme][data-reading-mode] :is(.atlas-header, .bd-header) {
+  background: var(--arena-panel);
+  border-bottom: 3px double var(--border);
+  box-shadow: none;
+  padding-right: 136px;
+}
+
+html[data-theme][data-reading-mode] :is(.atlas-logo > span, .bd-brand-symbol) {
+  background: transparent;
+  color: var(--primary);
+  border-color: var(--primary);
+  text-shadow: none;
+  box-shadow: inset 0 0 0 3px var(--background);
+}
+
+html[data-theme][data-reading-mode] :is(.atlas-intro h1, .atlas-country-hero h1, .character-page h1) {
+  color: var(--foreground);
+  text-shadow: none;
+  font-weight: 400;
+}
+
+html[data-theme][data-reading-mode] .atlas-intro {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+html[data-theme][data-reading-mode] .atlas-intro::after {
+  width: 100%;
+  height: 4px;
+  margin-top: 36px;
+  background: none;
+  border-block: 1px solid var(--border);
+  box-shadow: none;
+}
+
+html[data-theme][data-reading-mode] :is(.atlas-eyebrow, .character-eyebrow) {
+  letter-spacing: .15em;
+}
+
+html[data-theme][data-reading-mode] :is(.atlas-country, .atlas-battle-card, .character-directory-card) {
+  border-radius: 2px;
+  border-color: var(--border);
+  box-shadow: 0 5px 18px var(--paper-shadow);
+}
+
+html[data-theme][data-reading-mode] :is(.atlas-country, .atlas-battle-card):hover {
+  border-color: var(--primary);
+  box-shadow: 0 8px 24px var(--paper-shadow);
+}
+
+html[data-theme][data-reading-mode] .atlas-country::after {
+  border-color: var(--atlas-line);
+}
+
+html[data-theme][data-reading-mode] :is(.atlas-country > img, .atlas-battle-background, .atlas-vietnam-portrait > img) {
+  filter: sepia(.35) saturate(.7);
+}
+
+html[data-theme][data-reading-mode] .atlas-country-shade {
+  background: linear-gradient(0deg, var(--background) 0%, color-mix(in srgb, var(--background) 96%, transparent) 25%, transparent 85%);
+}
+
+html[data-theme][data-reading-mode] .atlas-vietnam-banner .atlas-vietnam-shade {
+  background: linear-gradient(90deg, var(--background), color-mix(in srgb, var(--background) 96%, transparent) 34%, transparent 78%), linear-gradient(0deg, var(--background), transparent 65%);
+}
+
+html[data-theme][data-reading-mode] .atlas-country-top {
+  color: var(--foreground);
+  text-shadow: none;
+}
+
+html[data-theme][data-reading-mode] .atlas-country-top > span {
+  background: var(--arena-panel);
+  padding: 5px 8px;
+}
+
+html[data-theme][data-reading-mode] :is(.atlas-country-copy > p, .atlas-vietnam-description) {
+  color: var(--muted-foreground);
+  font-size: 14px;
+}
+
+html[data-theme][data-reading-mode] .atlas-country-cta {
+  color: var(--primary);
+  border-color: var(--border);
+}
+
+html[data-theme][data-reading-mode] .atlas-period-hero-shade {
+  background: linear-gradient(90deg, var(--background), color-mix(in srgb, var(--background) 65%, transparent) 60%, transparent), linear-gradient(0deg, var(--background), transparent);
+}
+
+html[data-theme][data-reading-mode] :is(.atlas-feature, .atlas-featured-period, .atlas-coming-banner, .character-scene, .character-facts) {
+  background: var(--card);
+  border-color: var(--atlas-line);
+  box-shadow: none;
+}
+
+html[data-theme][data-reading-mode] :is(.atlas-feature > a, .atlas-header-link, .atlas-outline-link) {
+  background: transparent;
+  color: var(--primary);
+  box-shadow: none;
+}
+
+html[data-theme][data-reading-mode] :is(.atlas-feature > a, .atlas-header-link, .atlas-outline-link):hover {
+  background: var(--accent);
+  box-shadow: none;
+}
+
+html[data-theme][data-reading-mode] :is(.atlas-footer, .bd-footer) {
+  background: transparent;
+  color: var(--muted-foreground);
+  border-color: var(--border);
+}
+
+html[data-theme][data-reading-mode] .character-page h2 {
+  color: var(--foreground);
+}
+
+html[data-theme][data-reading-mode] .character-directory-card .character-card-content h2 {
+  font-family: var(--font-heading), serif;
+  color: var(--foreground);
+}
+
+/* Map geometry stays intact; only the paper, ink and reading panels change. */
+html[data-theme][data-reading-mode] .vo-page {
+  --vo-map-water: var(--paper-water);
+  --vo-map-land: var(--paper-land);
+  --vo-territory: var(--home);
+  --vo-coral: var(--enemy);
+  --vo-secondary: #708f7e;
+}
+
+html[data-theme][data-reading-mode] .vo-countries path,
+html[data-theme][data-reading-mode] .vo-countries path[data-country] {
+  fill: var(--paper-land);
+  stroke: var(--border);
+}
+
+html[data-theme][data-reading-mode] .vo-grid-line {
+  stroke: var(--atlas-line);
+}
+
+html[data-theme][data-reading-mode] .vo-territory {
+  stroke: var(--primary);
+  filter: none;
+}
+
+html[data-theme][data-reading-mode] .vo-rivers {
+  stroke: #738f8b;
+}
+
+html[data-theme][data-reading-mode] .vo-country-labels text,
+html[data-theme][data-reading-mode] .vo-country-labels .vo-sea-label {
+  fill: var(--muted-foreground);
+}
+
+html[data-theme][data-reading-mode] :is(.vo-glass, .vo-map-pin, .vo-select-content, .vo-stat-tooltip, .bd-chapters, .bd-commander-tooltip) {
+  background: var(--arena-panel);
+  border-color: var(--border);
+  color: var(--foreground);
+  box-shadow: var(--arena-frame-shadow);
+  border-radius: 2px;
+}
+
+html[data-theme][data-reading-mode] .vo-page .vo-glass,
+html[data-theme][data-reading-mode] :is(.vo-cluster-popup, .vo-map-point, .vo-map-cluster, .vo-point-label) {
+  background: var(--arena-panel);
+  border-color: var(--border);
+  color: var(--foreground);
+  box-shadow: var(--arena-frame-shadow);
+}
+
+html[data-theme][data-reading-mode] :is(.vo-point-symbol, .vo-cluster-place-icon, .vo-map-directory-trigger, .vo-cluster-heading strong, .vo-cluster-heading span, .vo-cluster-close) {
+  color: var(--primary);
+}
+
+html[data-theme][data-reading-mode] .vo-page #vo-content :is(.vo-content-title, .vo-narrative h3, .vo-narrative > p, .vo-person p, .vo-person-name, .vo-uprising-card > p) {
+  color: var(--foreground);
+}
+
+html[data-theme][data-reading-mode] .vo-page #vo-content .vo-narrative > p {
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+html[data-theme][data-reading-mode] .vo-page #vo-content :is(.vo-content-label, .vo-article-sources a, .vo-person-source, .vo-person-side, .vo-person-credit, .vo-uprising-card > small, .vo-facts dt, .vo-reading-status small) {
+  color: var(--muted-foreground);
+}
+
+html[data-theme][data-reading-mode] .vo-page #vo-content :is(.vo-tabs, .vo-reading-footer, .vo-topic-trigger, .vo-content-header) {
+  background: var(--card);
+  border-color: var(--atlas-line);
+}
+
+html[data-theme][data-reading-mode] .vo-page #vo-content .vo-tabs button[aria-selected="true"] {
+  background: var(--accent);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+html[data-theme][data-reading-mode] :is(.vo-story-panel, .vo-place-detail)::before {
+  background: var(--primary);
+  box-shadow: none;
+}
+
+html[data-theme][data-reading-mode] :is(.vo-scene-copy h2, .vo-panel-heading, .vo-scene-years, .vo-content-label, .vo-country-stats dt, .vo-country-stats dd > a, .vo-country-stats dd > span, .vo-map-badge > span, .bd-chapter h3, .bd-map-top, .bd-chapter-meta) {
+  color: var(--primary);
+  text-shadow: none;
+}
+
+html[data-theme][data-reading-mode] :is(.vo-narrative > p, .vo-place-detail > p, .vo-person p, .bd-chapter > p) {
+  color: var(--foreground);
+}
+
+html[data-theme][data-reading-mode] :is(.vo-facts, .vo-timeline-top, .vo-pin-symbol, .vo-pin-rank, .vo-pin-ai, .vo-era-node b, .bd-map-info, .bd-script-heading) {
+  background: var(--card);
+  color: var(--foreground);
+  border-color: var(--border);
+}
+
+html[data-theme][data-reading-mode] :is(.vo-map-pin, .vo-map-pin.is-camp, .vo-map-pin.is-heritage) {
+  --pin-color: var(--primary);
+}
+
+html[data-theme][data-reading-mode] .vo-map-pin.is-battle {
+  --pin-color: var(--enemy);
+}
+
+html[data-theme][data-reading-mode] :is(.vo-map-pin:hover, .vo-visibility > button[aria-expanded="true"]) {
+  background: var(--accent);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+html[data-theme][data-reading-mode] :is(.vo-tabs button, .vo-reading-footer button, .vo-map-tools button, .vo-place-list > button, .bd-playback-buttons button, .bd-map-mode button, .bd-3d-tools button) {
+  background: var(--card);
+  color: var(--foreground);
+  border-color: var(--border);
+  text-shadow: none;
+  box-shadow: none;
+}
+
+html[data-theme][data-reading-mode] :is(.vo-tabs button[aria-selected="true"], .vo-tabs button[aria-selected="true"] > span, .vo-era-strip > button[aria-current="step"] strong) {
+  color: var(--primary);
+  background: var(--accent);
+  border-color: var(--primary);
+  text-shadow: none;
+}
+
+html[data-theme][data-reading-mode] .vo-era-strip > button[aria-current="step"] .vo-era-node b,
+html[data-theme][data-reading-mode] :is(.bd-playback-buttons .bd-play-button, .bd-map-mode button[aria-pressed="true"]) {
+  background: var(--primary);
+  color: var(--primary-foreground);
+  box-shadow: none;
+  border-color: var(--primary);
+}
+
+html[data-theme][data-reading-mode] .vo-timeline-progress > span {
+  background: var(--primary);
+}
+
+html[data-theme][data-reading-mode] .vo-search input {
+  color: var(--foreground);
+}
+
+html[data-theme][data-reading-mode] .vo-visibility {
+  right: 136px;
+}
+
+html[data-theme][data-reading-mode] .bd-experience {
+  --bd-gold: var(--primary);
+  --bd-text: var(--foreground);
+  --bd-muted: var(--muted-foreground);
+  background: var(--background);
+}
+
+html[data-theme][data-reading-mode] .tk-experience {
+  --tk-bg: var(--background);
+  --tk-surface: var(--card);
+  --tk-border: var(--border);
+  --tk-text: var(--foreground);
+  --tk-muted: var(--muted-foreground);
+  --tk-gold: var(--primary);
+}
+
+html[data-theme][data-reading-mode] :is(.tk-header, .tk-story, .tk-timeline, .tk-legend-float, .tk-map-mode, .tk-map-controls, .tk-speed-trigger) {
+  background: var(--arena-panel);
+  border-color: var(--border);
+  box-shadow: var(--arena-frame-shadow);
+}
+
+html[data-theme][data-reading-mode] :is(.tk-panel-toggles button[aria-expanded="true"], .tk-timeline-strip button[aria-current="step"], .tk-map-controls button:hover, .tk-playback button:not(:disabled):hover) {
+  background: var(--accent);
+}
+
+html[data-theme][data-reading-mode]:has(.tk-experience) .reading-theme-toggle {
+  top: 8px;
+  right: 58px;
+  width: 36px;
+  height: 36px;
+}
+
+html[data-theme][data-reading-mode] :is(.hcm-header, .tk-header) {
+  padding-right: 136px;
+}
+
+/* A single compact switch next to the existing audio settings. */
+.reading-theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 72px;
+  z-index: 45;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  background: var(--arena-panel);
+  color: var(--primary);
+  box-shadow: var(--arena-frame-shadow);
+}
+
+html[data-theme][data-reading-mode] :is(.reading-theme-toggle:hover, .game-audio-trigger:hover, .game-audio-trigger[aria-expanded="true"]) {
+  background: var(--accent);
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+html[data-theme][data-reading-mode] .game-audio-panel {
+  background: var(--background);
+  border-color: var(--border);
+  box-shadow: var(--arena-frame-shadow);
+}
+
+html[data-theme][data-reading-mode] .game-audio-panel :is(p, label, strong, span, legend, output),
+html[data-theme][data-reading-mode] .game-audio-preview {
+  color: var(--foreground);
+}
+
+html[data-theme][data-reading-mode] .game-audio-panel input {
+  accent-color: var(--primary);
+}
+
+html[data-theme][data-reading-mode] .game-audio-indicator {
+  background: var(--primary);
+}
+
+@media (max-width: 760px) {
+  .reading-theme-toggle {
+    top: 10px;
+    right: 54px;
+    width: 34px;
+    height: 34px;
+  }
+
+  html[data-theme][data-reading-mode] :is(.atlas-header, .bd-header, .hcm-header, .tk-header) {
+    padding-right: 102px;
+  }
+
+  html[data-theme][data-reading-mode] .atlas-header {
+    padding-right: 6%;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  html[data-theme][data-reading-mode] .atlas-logo {
+    flex-basis: 100%;
+    padding-right: 80px;
+    min-height: 34px;
+  }
+
+  html[data-theme][data-reading-mode] .atlas-header nav {
+    width: auto;
+    margin-left: auto;
+    gap: 10px;
+  }
+
+  html[data-theme][data-reading-mode] .atlas-vietnam-banner .atlas-vietnam-shade {
+    background: linear-gradient(0deg, var(--background) 49%, transparent 82%), linear-gradient(90deg, color-mix(in srgb, var(--background) 40%, transparent), transparent);
+  }
+
+  html[data-theme][data-reading-mode] .vo-visibility {
+    right: 12px;
+    top: 56px;
+  }
+
+  html[data-theme][data-reading-mode] .atlas-intro {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  html[data-theme][data-reading-mode] .atlas-intro-index {
+    position: static;
+    display: block;
+    margin-top: 24px;
+  }
+}

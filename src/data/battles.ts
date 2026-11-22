@@ -1,27 +1,16 @@
 import { battleHref } from "~/data/battle-links";
 import { threeKingdomsScenes } from "~/data/three-kingdoms";
+import { vietnamBattles, vietnamBattlePeriod } from "~/data/vietnam-battles";
 import type { HistoryCardModel } from "~/types/history-card";
 
 export type BattleEntryModel = HistoryCardModel & { periodId: string; sceneId: string };
 
 const battleTitles: Record<string, string> = {
-  "truong-xa": "Trận Trường Xã",
-  "quang-tong": "Quảng Tông và Hạ Khúc Dương",
-  "ha-bi": "Vây thành Hạ Bì",
   "quan-do": "Trận Quan Độ",
-  "truong-ban": "Trận Trường Bản",
   "xich-bich": "Trận Xích Bích",
   "hop-phi": "Trận Hợp Phì",
-  "nhu-tu": "Trận Nhu Tu",
-  "dinh-quan-son": "Trận Định Quân Sơn",
-  "phan-thanh": "Vây thành Phàn Thành",
   "di-lang": "Trận Di Lăng",
   "nhai-dinh": "Trận Nhai Đình",
-  "tran-thuong": "Vây thành Trần Thương",
-  "ky-son": "Trận Kỳ Sơn",
-  "ngu-truong-nguyen": "Ngũ Trượng Nguyên",
-  "dong-hung": "Trận Đông Hưng",
-  "tho-xuan": "Vây thành Thọ Xuân",
 };
 
 export const battleEntries: BattleEntryModel[] = [
@@ -50,6 +39,21 @@ export const battleEntries: BattleEntryModel[] = [
     imageCaption: "Ảnh tư liệu họp bàn chiến cuộc Đông Xuân cuối năm 1953 · Nguồn: hochiminh.vn",
     description: "Từ công tác chuẩn bị đến ba đợt tiến công trong chiến dịch do Võ Nguyên Giáp chỉ huy.",
   },
+  ...vietnamBattles.filter((battle) => battle.id !== "dien-bien-phu-1954").map((battle) => ({
+    id: battle.id,
+    title: `Trận ${battle.title}`,
+    years: battle.years,
+    country: "Việt Nam",
+    countryId: "vietnam",
+    periodId: vietnamBattlePeriod(battle)?.id ?? "",
+    sceneId: battle.sceneId,
+    href: battleHref(battle.id),
+    image: ["bach-dang-938", "rach-gam-xoai-mut-1785"].includes(battle.id)
+      ? "/images/bach-dang-cinematic.png"
+      : "/images/three-kingdoms-land-battle.png",
+    imageCaption: "Minh họa AI dùng chung cho chủ đề chiến trận, không phải tư liệu của trận đánh.",
+    description: battle.summary,
+  })),
   ...threeKingdomsScenes.filter((scene) => scene.id in battleTitles).map((scene) => ({
     id: scene.id,
     title: battleTitles[scene.id],
@@ -67,7 +71,7 @@ export const battleEntries: BattleEntryModel[] = [
   })),
 ];
 
-const featuredIds = ["bach-dang-1288", "dien-bien-phu-1954", "xich-bich"];
+const featuredIds = ["bach-dang-1288", "ngoc-hoi-dong-da-1789", "dien-bien-phu-1954"];
 export const featuredBattles = featuredIds.flatMap((id) =>
   battleEntries.filter((battle) => battle.id === id),
 );

@@ -2,6 +2,7 @@
 
 import { useEffect, useId, useRef, useState } from "react";
 
+import { VietnamIslandLayer } from "~/components/vietnam-map-reference";
 import { CompactLink } from "~/components/compact-link";
 import { Button } from "~/components/ui/button";
 import { Card } from "~/components/ui/card";
@@ -313,6 +314,7 @@ export const ChinaHistoryMap = ({
             );
           })}
         </g>
+        {frameId === "china" ? <VietnamIslandLayer project={project} /> : null}
       </svg>
       <MapMarkers
         showMarkers={!snapshot || placesVisible || zoom / fitScale >= 3}
