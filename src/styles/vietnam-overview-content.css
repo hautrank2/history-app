@@ -27,12 +27,14 @@ html[data-theme="arena"] .vo-cluster-popup {
 .vo-page #vo-content .vo-facts > div { padding: 0; border: 0; min-width: 0; }
 .vo-page #vo-content .vo-facts dt { color: #9db2ca; font-size: 11px; margin-bottom: 4px; }
 .vo-page #vo-content .vo-facts dd { color: var(--atlas-paper); font-size: 11px; line-height: 1.6; }
-.vo-page #vo-content .vo-tabs { display: flex; width: 100%; height: auto; flex: 0 0 auto; gap: 2px; padding: 0 16px; border-bottom: 1px solid rgb(177 207 230 / 16%); background: rgb(5 17 32 / 16%); overflow-x: auto; scrollbar-width: none; }
-.vo-page #vo-content .vo-tabs button { display: flex; align-items: center; justify-content: center; flex: 1 0 auto; gap: 5px; padding: 12px 5px 10px; font-size: 11px; line-height: 1.4; border-radius: 0; color: var(--atlas-muted); border-bottom: 2px solid transparent; }
+.vo-page #vo-content .vo-tabs { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); width: auto; height: auto; flex: 0 0 auto; gap: 4px; margin: 2px 14px 0; padding: 5px; border: 1px solid var(--atlas-line); border-radius: 12px; background: var(--card); }
+.vo-page #vo-content .vo-tabs button { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 0; height: auto; min-height: 60px; gap: 7px; padding: 9px 2px; font-size: 12px; font-weight: 600; line-height: 1.4; border: 1px solid transparent; border-radius: 8px; color: var(--atlas-muted); transition: color .18s, background .18s, box-shadow .18s; }
 .vo-page #vo-content .vo-tabs button::after { display: none; }
 .vo-page #vo-content .vo-tabs button > span { font-size: inherit; color: inherit; white-space: nowrap; }
-.vo-page #vo-content .vo-tabs button > svg { width: 13px; height: 13px; color: inherit; }
-.vo-page #vo-content .vo-tabs button[aria-selected="true"] { color: #b5eaff; border-color: #8bdbf5; background: linear-gradient(0deg, rgb(64 151 194 / 14%), transparent); }
+.vo-page #vo-content .vo-tabs button > svg { width: 18px; height: 18px; color: inherit; }
+.vo-page #vo-content .vo-tabs button:hover { background: var(--accent); color: var(--primary); }
+.vo-page #vo-content .vo-tabs button:focus-visible { outline: 2px solid var(--ring); outline-offset: -2px; }
+.vo-page #vo-content .vo-tabs button[aria-selected="true"] { color: var(--primary-foreground); border-color: var(--primary); background: var(--primary); box-shadow: 0 3px 8px var(--paper-shadow); }
 .vo-page #vo-content .vo-topic-picker { display: block; flex: 0 0 auto; padding: 10px 20px 0; margin: 0; border: 0; }
 .vo-page #vo-content .vo-topic-trigger { height: 32px; background: rgb(107 167 207 / 9%); border-color: rgb(158 194 222 / 20%); font-size: 11px; }
 .vo-page #vo-content .vo-reading-body { position: relative; flex: 1 1 0; min-height: 0; margin: 0; padding: 0 20px; overflow: auto; overscroll-behavior: contain; container-type: normal; scroll-snap-type: none; scrollbar-width: thin; scrollbar-gutter: stable; }
@@ -113,9 +115,8 @@ html[data-theme="arena"] .vo-cluster-popup {
   .vo-page #vo-content .vo-scene-years { font-size: 11px; margin: 3px 0 6px; }
   .vo-page #vo-content .vo-content-title { font-size: 22px; line-height: 1.25; }
   .vo-page #vo-content .vo-facts-disclosure { margin-top: 7px; font-size: 11px; }
-  .vo-page #vo-content .vo-tabs { padding-inline: 10px; }
-  .vo-page #vo-content .vo-tabs button { padding: 10px 5px 9px; font-size: 11px; }
-  .vo-page #vo-content .vo-tabs button > svg { display: none; }
+  .vo-page #vo-content .vo-tabs { margin-inline: 10px; gap: 3px; }
+  .vo-page #vo-content .vo-tabs button { padding: 8px 1px; min-height: 56px; font-size: 12px; gap: 5px; }
   .vo-page #vo-content .vo-reading-body { padding-inline: 16px; }
   .vo-page #vo-content .vo-narrative > p { font-size: 12px; line-height: 1.9; }
   .vo-page #vo-content .vo-topic-picker { padding: 9px 16px 0; }

@@ -285,7 +285,7 @@ export const ContentPanel = ({
             </dl>
           </details>
         </header>
-        <TabsList className="vo-tabs" variant="line" aria-label="Nội dung lịch sử">
+        <TabsList className="vo-tabs" aria-label="Nội dung lịch sử">
           {tabs.map(({ id, label, icon: Icon }) => (
             <TabsTrigger
               key={id}

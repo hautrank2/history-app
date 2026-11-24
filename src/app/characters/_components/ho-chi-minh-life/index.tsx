@@ -14,8 +14,6 @@ import {
   X,
 } from "lucide-react";
 import Link from "next/link";
-import { HomeLink } from "~/components/home-link";
-import { RootLink } from "~/components/root-link";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 import { Image, ImageGroup } from "@/components/ui/image";
@@ -496,8 +494,9 @@ export const HoChiMinhLife = () => {
       }}
     >
       <header className="hcm-header">
-        <RootLink />
-        <HomeLink className="hcm-back" section="countries" back />
+        <Link className="hcm-back" href="/characters">
+          <ArrowLeft size={16} aria-hidden="true" />Tất cả nhân vật
+        </Link>
         <div className="hcm-heading">
           <span className="hcm-header-portrait">
             <LifePortrait characterId="ho-chi-minh" />
@@ -514,7 +513,6 @@ export const HoChiMinhLife = () => {
           className="hcm-header-actions"
           aria-label="Điều hướng chuyên trang"
         >
-          <Link href="/characters">Nhân vật</Link>
           <Link href="/vietnam">
             Tổng quan Việt Nam
             <ExternalLink size={14} />
