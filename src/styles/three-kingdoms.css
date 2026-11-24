@@ -129,8 +129,8 @@ html:has(.tk-experience) .game-audio-trigger { width: 36px; height: 36px; }
 .tk-playback { display: flex; gap: 4px; }
 .tk-playback button { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 36px; min-width: 29px; border-radius: 5px; font-size: 12px; }
 .tk-playback button:not(:disabled):hover { background: #34434a; }
-.tk-playback button.tk-play { min-width: 124px; padding-inline: 8px; background: var(--tk-gold); color: #231913; font-weight: 600; }
-.tk-playback button.tk-play:hover { background: #ffdaa9; }
+.tk-playback button.tk-play { min-width: 124px; padding-inline: 8px; background: #78512f; color: #fff; font-weight: 600; }
+.tk-playback button.tk-play:hover { background: #92643c; color: #fff; }
 .tk-counter { font-size: 11px; white-space: nowrap; font-variant-numeric: tabular-nums; color: var(--tk-muted); }
 .tk-scrubber { flex: 1; min-width: 28px; accent-color: var(--tk-gold); cursor: pointer; }
 .tk-speed { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--tk-muted); }

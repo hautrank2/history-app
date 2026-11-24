@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { HomeLink } from "~/components/home-link";
+import { RootLink } from "~/components/root-link";
 import { notFound } from "next/navigation";
 import { CharacterAvatar } from "~/components/character-avatar";
 import { threeKingdomsHref } from "~/data/battle-links";
@@ -55,7 +56,7 @@ const CharacterPage = async ({ params }: Props) => {
   const index = characters.indexOf(person);
   return <main className="character-page character-profile" data-character-id={person.id}>
     <CharacterVisit id={person.id} />
-    <nav className="character-breadcrumbs" aria-label="Điều hướng nhân vật"><HomeLink back /><Link href="/characters">Tất cả nhân vật</Link><Link href={`/${homeCountry}`}>Tổng quan {getCharacterCountry(homeCountry).name}</Link></nav>
+    <header className="character-page-header"><nav className="character-breadcrumbs" aria-label="Điều hướng nhân vật"><RootLink /><HomeLink back /><Link href="/characters">Tất cả nhân vật</Link><Link href={`/${homeCountry}`}>Tổng quan {getCharacterCountry(homeCountry).name}</Link></nav></header>
     <header className="character-hero">{portrait ? <figure className="character-portrait"><CharacterAvatar name={person.name} portrait={portrait} width={360} height={440} /><figcaption>{portraitCaption(portrait)} · <a href={portrait.file} target="_blank" rel="noreferrer">Nguồn ảnh ↗</a></figcaption></figure> : null}<div><p className="character-eyebrow">NHÂN VẬT LỊCH SỬ</p><h1>{person.name}</h1><p className="character-role">{person.role}</p><dl className="character-facts"><dt>Niên đại</dt><dd>{person.lifespan}</dd>{person.aliases.length ? <><dt>Tên gọi khác</dt><dd>{person.aliases.join(" · ")}</dd></> : null}</dl><p className="character-biography">{person.biography}</p></div></header>
     <section className="character-related-scenes"><h2>Dấu ấn trong lịch sử</h2>{scenes.length ? scenes.map(({ scene, country }) => <article className="character-scene" key={`${country}-${scene.id}`}><Link href={battleEntries.find((battle) => battle.countryId === country && battle.sceneId === scene.id)?.href ?? periodForScene(country, scene.id)?.href ?? `/${country}#${scene.id}`}><small>{scene.years} · {scene.era}</small><h3>{scene.title} →</h3></Link><p>{scene.summary}</p><p>{scene.people.find((item) => item.id === person.id)?.role}</p>{scene.id === "tran-bach-dang" ? <Link className="character-battle-link" href="/battle/tran-bach-dang-1288">Vào sa bàn Bạch Đằng 1288 →</Link> : null}</article>) : <p>Chưa có cảnh liên quan.</p>}</section>
     {kingdomConnections.length > 0 && (

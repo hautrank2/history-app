@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { HomeLink } from "~/components/home-link";
+import { RootLink } from "~/components/root-link";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 import { Image, ImageGroup } from "@/components/ui/image";
@@ -495,6 +496,7 @@ export const HoChiMinhLife = () => {
       }}
     >
       <header className="hcm-header">
+        <RootLink />
         <HomeLink className="hcm-back" section="countries" back />
         <div className="hcm-heading">
           <span className="hcm-header-portrait">

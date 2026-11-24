@@ -3,6 +3,7 @@
 import "maplibre-gl/dist/maplibre-gl.css";
 import Link from "next/link";
 import { HomeLink } from "~/components/home-link";
+import { RootLink } from "~/components/root-link";
 
 import type { SideModel } from "~/types";
 
@@ -30,6 +31,7 @@ export const StoryMap = ({ story, backHref }: StoryMapProps) => {
 
       <header className="pointer-events-none absolute inset-x-0 top-0 flex items-start justify-between gap-4 bg-linear-to-b from-background to-transparent p-4 pb-12">
         <div>
+          <RootLink />
           <HomeLink className="pointer-events-auto text-xs text-primary" back />
           <Link
             href={`${backHref}#${backHref === "/vietnam" ? "tran-bach-dang" : "intro"}`}

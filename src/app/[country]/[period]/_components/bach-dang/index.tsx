@@ -5,6 +5,7 @@ import { useState } from "react";
 
 import { Image } from "@/components/ui/image";
 import { HomeLink } from "~/components/home-link";
+import { RootLink } from "~/components/root-link";
 import { NationalFlag } from "~/components/national-flag";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "~/components/ui/select";
 import { battlePortraitFor, characterHref } from "~/data/characters";
@@ -45,6 +46,7 @@ export const BachDangExperience = ({ story, battle }: BachDangExperienceProps) =
   return (
     <main className="bd-experience bd-map-first">
       <header className="bd-header">
+        <RootLink />
         <Link className="bd-brand" href="/#battles">
           <span className="bd-brand-symbol">H</span>
           <span>HISTORY ATLAS<small>DẤU ẤN NGÀN NĂM</small></span>

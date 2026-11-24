@@ -258,7 +258,7 @@ export const factionLeader = (faction: FactionId, year: number): PersonId => {
 type CastMember = { person: PersonId; place: PlaceId; action: string; regional?: boolean; deceased?: boolean };
 const cast = (person: PersonId, place: PlaceId, action: string, regional = false): CastMember => ({ person, place, action, regional });
 const death = (person: PersonId, place: PlaceId, action: string): CastMember => ({ person, place, action, deceased: true, regional: true });
-type Route = { faction: FactionId; places: [PlaceId, PlaceId, ...PlaceId[]]; label: string };
+type Route = { faction: FactionId; places: [PlaceId, PlaceId, ...PlaceId[]]; label: string; kind?: import("~/components/battle-map-symbols").BattleAction };
 const route = (faction: FactionId, label: string, ...places: Route["places"]): Route => ({ faction, places, label });
 
 const sources = {

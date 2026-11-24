@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 
 import { Image } from "@/components/ui/image";
 import { HomeLink } from "~/components/home-link";
+import { RootLink } from "~/components/root-link";
 import { countriesData, listedCountries } from "~/data";
 import { chinaOverview } from "~/data/china-overview";
 import { europeOverviews, isEuropeCountry } from "~/data/europe-overview";
@@ -56,6 +57,7 @@ const CountryPage = async ({ params }: CountryPageProps) => {
   const featured = country.periods.find((period) => period.story);
   return <main className="atlas-page atlas-period-page">
     <header className="atlas-header">
+      <RootLink />
       <Link href="/#countries" className="atlas-logo"><span>H</span> HISTORY ATLAS</Link>
       <HomeLink className="atlas-header-link" back />
       <nav aria-label="Đổi quốc gia">

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { ArrowLeft, BookOpen, ChevronLeft, ChevronRight, Clock, MapPin, Pause, Play, RotateCcw } from "lucide-react";
-import { useEffect, useRef, useState, type CSSProperties } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import { BattleMap3D } from "~/app/[country]/[period]/_components/bach-dang/map-3d";
 import { CampaignMap } from "~/app/[country]/[period]/_components/bach-dang/campaign-map";
 import { battlePlaces } from "~/app/[country]/[period]/_components/bach-dang/locations";
@@ -10,13 +10,15 @@ import { CharacterAvatar } from "~/components/character-avatar";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "~/components/ui/select";
 import { characterHref, getCharacter } from "~/data/characters";
 import { portraitFor, portraitPlaceholder } from "~/data/portraits";
-import { vietnamBattlePeriod, type VietnamBattleModel } from "~/data/vietnam-battles";
+import { bachDangBattle, vietnamBattlePeriod, type VietnamBattleModel } from "~/data/vietnam-battles";
 import { vietnamBattleTerritory } from "~/data/vietnam-battle-territories";
+import { BattleMapLegend } from "~/components/battle-map-symbols";
+import { RootLink } from "~/components/root-link";
 import type { StoryModel } from "~/types";
 import "~/styles/three-kingdoms.css";
 import "~/styles/battle-experience.css";
 
-export function BattleExperience({ story, battle }: { story: StoryModel; battle?: VietnamBattleModel }) {
+export function BattleExperience({ story: originalStory, battle }: { story: StoryModel; battle?: VietnamBattleModel }) {
   const [active, setActive] = useState(0);
   const [playing, setPlaying] = useState(false);
   const [seconds, setSeconds] = useState(11);
@@ -28,24 +30,18 @@ export function BattleExperience({ story, battle }: { story: StoryModel; battle?
   const dock = useRef<HTMLElement>(null);
   const panel = useRef<HTMLElement>(null);
   const timeline = useRef<HTMLOListElement>(null);
+  const period = battle ? vietnamBattlePeriod(battle) : undefined;
+  const campaign = useMemo(() => battle ?? bachDangBattle(originalStory), [battle, originalStory]);
+  const story: StoryModel = battle ? originalStory : { ...originalStory, chapters: campaign.chapters.map((frame) => ({
+    ...originalStory.chapters[frame.tacticalStage ?? 0], title: frame.title, date: frame.date, text: frame.text,
+  })) };
   const chapter = story.chapters[active];
   const last = story.chapters.length - 1;
-  const period = battle ? vietnamBattlePeriod(battle) : undefined;
-  const campaign: VietnamBattleModel = battle ?? {
-    id: "bach-dang-1288", title: "Bạch Đằng", years: "1288", sceneId: "tran-bach-dang",
-    leaderIds: ["tran-hung-dao"], sides: story.sides, summary: story.subtitle,
-    places: [...new Map(story.chapters.flatMap((frame) => (frame.points ?? []).map((point) => [point.label, {
-      id: point.label, name: point.label, at: point.at,
-      note: battlePlaces.find((place) => place.name.includes(point.label))?.description ?? "Địa điểm định vị gần đúng trong chiến dịch năm 1288.",
-    }] as const))).values()],
-    chapters: story.chapters.map((frame) => ({ ...frame, placeIds: (frame.points ?? []).map((point) => point.label) })),
-    sources: [{ title: "Đại Việt sử ký toàn thư · Bản kỷ, quyển V", url: "https://vi.wikisource.org/wiki/Đại_Việt_sử_ký_toàn_thư" }],
-  };
   const territory = vietnamBattleTerritory(campaign.id, (point) => point);
   const locations = campaign.places.map((place) => ({ ...place, description: place.note }));
   const currentPlaces = battle
     ? battle.places.filter((place) => battle.chapters[active].placeIds.includes(place.id)).map((place) => place.name)
-    : chapter.points?.map((point) => point.label) ?? [];
+    : campaign.places.filter((place) => campaign.chapters[active].placeIds.includes(place.id)).map((place) => place.name);
   const selectedPlace = selected ?? currentPlaces.find((name) => locations.some((place) => place.name === name)) ?? locations[0].name;
   const goTo = (next: number) => {
     setPlaying(false);
@@ -89,6 +85,7 @@ export function BattleExperience({ story, battle }: { story: StoryModel; battle?
       }
     }}>
     <header className="tk-header">
+      <RootLink />
       <Link href="/battle#battle-vietnam" className="tk-back"><ArrowLeft size={17} /><span>Trận đánh</span></Link>
       <div className="tk-title"><h1>{battle?.title ?? "Bạch Đằng"} <span>{battle?.years ?? "1288"}</span></h1></div>
       <div className="tk-panel-toggles">
@@ -99,18 +96,20 @@ export function BattleExperience({ story, battle }: { story: StoryModel; battle?
     <div className="tk-stage">
       <div className="tk-cartography">
         <div className="battle-map-surface">
-          {!battle && mapMode === "3d" ? <BattleMap3D stage={active}
+          {!battle && mapMode === "3d" ? <BattleMap3D stage={campaign.chapters[active].tacticalStage ?? active}
             selected={battlePlaces.find((place) => place.name.includes(selectedPlace))?.name ?? selectedPlace}
             onSelect={(name) => setSelected(locations.find((place) => name.includes(place.name))?.name ?? name)} />
-            : <CampaignMap battle={campaign} stage={active} selected={selectedPlace} onSelect={setSelected} />}
+            : <CampaignMap battle={campaign} stage={active} selected={selectedPlace} onSelect={setSelected}
+              leaders={chapter.characters?.map((leader) => ({ ...leader, at: chapter.points?.find((point) => point.side === leader.side)?.at }))} />}
         </div>
         {!battle && <div className="tk-map-controls" role="group" aria-label="Chế độ bản đồ">
           <button aria-pressed={mapMode === "2d"} onClick={() => setMapMode("2d")}>2D</button>
           <button aria-pressed={mapMode === "3d"} onClick={() => setMapMode("3d")}>3D</button>
         </div>}
         <details className="tk-legend-float"><summary>Chú giải</summary>
+          <BattleMapLegend />
           <div className="tk-legend"><span>{story.sides.home}</span><span>{story.sides.enemy}</span></div>
-          <p className="tk-disclosure">{territory.note} Điểm sáng: vị trí sự kiện đang xem. Đường nối chỉ thứ tự diễn biến, không phải tuyến hành quân thực tế.</p>
+          <p className="tk-disclosure">{territory.note} Điểm sáng: vị trí sự kiện đang xem. Mũi tên thể hiện hướng hành quân, tiến công, tiếp tế hoặc rút quân khái quát, không phải lộ trình chính xác. Chân dung là vị trí đại diện lực lượng.</p>
           <a className="tk-source px-2 pb-2" href={territory.source.url} target="_blank" rel="noreferrer">{territory.source.title} ↗</a>
         </details>
       </div>

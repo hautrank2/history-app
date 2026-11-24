@@ -64,9 +64,11 @@ export const createBattleScene = ({ host, pins }: CreateBattleSceneProps) => {
   const camera = new THREE.PerspectiveCamera(38, 1, .1, 100);
   camera.position.set(18, 22, 25);
   const controls = new OrbitControls(camera, renderer.domElement);
-  controls.target.set(0, 0, 0); controls.enableDamping = true; controls.enablePan = false; controls.enableZoom = false;
+  controls.target.set(0, 0, 0); controls.enableDamping = true; controls.enablePan = true; controls.enableZoom = true;
+  controls.screenSpacePanning = false;
+  controls.mouseButtons = { LEFT: THREE.MOUSE.PAN, MIDDLE: THREE.MOUSE.DOLLY, RIGHT: THREE.MOUSE.ROTATE };
   controls.minPolarAngle = .35; controls.maxPolarAngle = 1.25; controls.minDistance = 17; controls.maxDistance = 110;
-  controls.touches = { ONE: THREE.TOUCH.ROTATE, TWO: THREE.TOUCH.DOLLY_ROTATE };
+  controls.touches = { ONE: THREE.TOUCH.PAN, TWO: THREE.TOUCH.DOLLY_ROTATE };
   controls.update();
   scene.add(new THREE.HemisphereLight("#d9eafa", "#1a2d45", 2.7));
   const sun = new THREE.DirectionalLight("#ffe0a0", 4); sun.position.set(-8, 19, 9); sun.castShadow = true;

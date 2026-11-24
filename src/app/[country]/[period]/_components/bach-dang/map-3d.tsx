@@ -73,6 +73,6 @@ export const BattleMap3D = ({ stage, selected, onSelect }: BattleMap3DProps) => 
     {status === "loading" ? <div className="bd-3d-loading"><span /> Đang dựng sa bàn 3D…</div> : null}
     <span className="bd-3d-badge">3D · TOÀN CẢNH CHIẾN DỊCH</span><div className="bd-3d-tools"><button onClick={() => scene.current?.zoom(.85)} aria-label="Phóng to bản đồ">+</button><button onClick={() => scene.current?.zoom(1.18)} aria-label="Thu nhỏ bản đồ">−</button><button onClick={() => scene.current?.reset()} aria-label="Đặt lại góc nhìn">↺</button><button onClick={() => setExpanded(!expanded)} aria-label={expanded ? "Thu gọn sa bàn" : "Mở rộng sa bàn"} aria-expanded={expanded}>{expanded ? "×" : "⛶"}</button></div>
     {selectedCommander ? <div className="bd-commander-tooltip"><div><strong>{selectedCommander.name}</strong><p>{selectedCommander.role}</p><small>Chân dung tái hiện nghệ thuật</small><Link href={`/characters/${selectedCommander.id}`}>Hồ sơ nhân vật →</Link></div><button aria-label="Đóng thông tin danh tướng" onClick={() => setCommander(null)}>×</button></div> : null}</div>
-    <p className="bd-3d-hint">Kéo để xoay · + / − để thu phóng · Chọn chân dung để xem tướng</p>
+    <p className="bd-3d-hint">Cuộn để zoom · Giữ chuột trái và kéo để di chuyển · Chuột phải để xoay · Chọn chân dung để xem tướng</p>
   </div>;
 };

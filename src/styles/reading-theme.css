@@ -534,6 +534,12 @@ html[data-theme][data-reading-mode] :is(.tk-panel-toggles button[aria-expanded="
   background: var(--accent);
 }
 
+html[data-theme] .tk-playback button.tk-play { color: #fff; background: #78512f; }
+html[data-theme] .tk-playback button.tk-play:hover { color: #fff; background: #92643c; }
+
+html[data-theme][data-reading-mode="light"] :is(.battle-map-leader text, .battle-country-label) { fill: #293c45; stroke: #f4efdf; stroke-width: 3px; }
+html[data-theme][data-reading-mode="light"] .battle-map-hint { color: #596870; }
+
 html[data-theme][data-reading-mode]:has(.tk-experience) .reading-theme-toggle {
   top: 8px;
   right: 58px;

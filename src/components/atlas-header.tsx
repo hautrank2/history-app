@@ -2,6 +2,7 @@ import { BookOpen, House, Swords } from "lucide-react";
 import Link from "next/link";
 
 import { battleDirectoryHref, periodDirectoryHref } from "~/data/battle-links";
+import { RootLink } from "~/components/root-link";
 
 type AtlasHeaderProps = {
   active: "home" | "period" | "battle";
@@ -23,6 +24,7 @@ export const AtlasHeader = ({ active }: AtlasHeaderProps) => (
       </div>
     </Link>
     <nav className="atlas-primary-nav" aria-label="Điều hướng chính">
+      <RootLink />
       {navigation.map(({ id, href, label, icon: Icon }) => (
         <Link
           key={id}

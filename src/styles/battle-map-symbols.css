@@ -1,0 +1,22 @@
+.battle-route-halo { fill: none; stroke: #08121d; stroke-width: 7; stroke-opacity: .9; }
+.battle-route-line { fill: none; stroke-width: 2.8; stroke-dasharray: 9 6; stroke-linecap: round; animation: battle-route-flow 1.4s linear infinite; }
+.battle-route.is-retreat .battle-route-line { stroke-dasharray: 3 7; }
+.battle-route.is-supply .battle-route-line { stroke-dasharray: 2 4; }
+.battle-route.is-defend .battle-route-line { stroke-dasharray: 12 4 2 4; }
+.battle-symbol-legend { display: flex; flex-wrap: wrap; gap: 8px 12px; padding: 8px 9px; margin: 4px; border-radius: 4px; background: #13232c; color: #ecf2f4; font-size: 11px; }
+.battle-symbol-legend span { display: inline-flex; align-items: center; gap: 5px; }
+.battle-leader-symbol { display: inline-grid; place-items: center; width: 19px; height: 19px; border: 1px solid #f5d39a; border-radius: 50%; color: #f5d39a; font-style: normal; }
+.battle-map-leader text { fill: #fff5df; paint-order: stroke; stroke: #101b27; stroke-width: 4px; font-size: 11px; font-weight: 600; }
+.battle-map-leader:focus-visible { outline: none; }
+.battle-map-leader:hover .battle-leader-ring, .battle-map-leader:focus-visible .battle-leader-ring { stroke-width: 4; }
+.battle-map-event { color: #ffb78e; }
+.battle-map-event .battle-event-pulse { fill: #ffad8522; stroke: #ffb78e; transform-box: fill-box; transform-origin: center; animation: battle-event-pulse 2.5s ease-out infinite; }
+.battle-map-interactive { touch-action: none; cursor: grab; user-select: none; }
+.battle-map-interactive:active { cursor: grabbing; }
+.battle-map-hint { position: absolute; right: 12px; top: 12px; max-width: 46%; color: #d0dce2; font-size: 10px; pointer-events: none; text-align: right; }
+@keyframes battle-route-flow { to { stroke-dashoffset: -30; } }
+@keyframes battle-event-pulse { 0% { opacity: .9; } 100% { transform: scale(1.7); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .battle-route-line, .battle-map-event .battle-event-pulse { animation: none; }
+  .battle-route-traveler { display: none; }
+}

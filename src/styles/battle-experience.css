@@ -3,6 +3,9 @@
 .battle-experience .battle-map-surface :is(.bd-campaign-map, .bd-3d-stage) { width: 100%; height: 100%; border: 0; border-radius: 0; }
 .battle-experience .battle-map-surface .bd-battle-map { width: 100%; height: 100%; min-height: 0; max-height: none; border: 0; }
 .battle-experience .battle-map-surface .bd-3d-canvas { height: 100%; }
+.battle-experience .battle-map-surface > .bd-3d-wrapper { height: 100%; display: flex; flex-direction: column; }
+.battle-experience .battle-map-surface > .bd-3d-wrapper .bd-3d-stage { flex: 1; min-height: 0; }
+.battle-experience .battle-map-surface > .bd-3d-wrapper .bd-3d-hint { flex: none; margin: 0; padding: 6px; font-size: 10px; }
 .battle-experience .tk-map-controls button[aria-pressed="true"] { color: var(--tk-gold); background: #314148; }
 .battle-place-list { display: flex; flex-wrap: wrap; gap: 6px; }
 .battle-place-list button { padding: 5px 8px; border: 1px solid var(--tk-border); border-radius: 4px; font-size: 11px; color: var(--tk-muted); }

@@ -1,6 +1,8 @@
 "use client";
 
-import { Crosshair, Minus, Plus, Swords } from "lucide-react";
+import { Crown, Crosshair, Minus, Plus, Swords } from "lucide-react";
+import { BattleRoute } from "~/components/battle-map-symbols";
+import { battleRouteGeometry } from "~/lib/battle-route";
 import { useEffect, useId, useRef, useState } from "react";
 import type { PointerEvent } from "react";
 
@@ -169,13 +171,18 @@ export const BattleMap = ({ scene, selected, wide, storyOpen, timelineOpen, time
   const markers = clusterMapPoints(
     locatedPeople.map((member, index) => ({ index, ...screen(member.at) })),
     42,
-  ).map((marker) => ({
-    ...marker,
-    anchor: { x: marker.x, y: marker.y },
-    // Keep portraits clear of the event pin, while retaining the true location.
-    ...(Math.hypot(marker.x - focus.x, marker.y - focus.y) < 50
-      ? { y: focus.y + 65 < frame.y + frame.height - 35 ? focus.y + 65 : focus.y - 65 } : {}),
-    members: marker.indices.map((index) => locatedPeople[index]),
+  ).flatMap((cluster) => cluster.indices.map((index, position) => {
+    const member = locatedPeople[index];
+    const anchor = screen(member.at);
+    const crowded = cluster.indices.length > 1;
+    const nearFocus = Math.hypot(anchor.x - focus.x, anchor.y - focus.y) < 55;
+    const angle = -Math.PI / 2 + position * Math.PI * 2 / cluster.indices.length;
+    const radius = crowded ? Math.max(66, cluster.indices.length * 16) : nearFocus ? 65 : 0;
+    return {
+      x: crowded ? cluster.x + Math.cos(angle) * radius : anchor.x,
+      y: crowded ? cluster.y + Math.sin(angle) * radius : anchor.y + (nearFocus ? (focus.y + 90 < frame.y + frame.height ? 65 : -65) : 0),
+      anchor, members: [member],
+    };
   })).filter(({ x, y }) => x > 12 && x < width - 12 && y > 12 && y < height - 12);
   const boxes: Box[] = [
     { x: focus.x - 14, y: focus.y - 14, width: 28, height: 28 },
@@ -274,7 +281,9 @@ export const BattleMap = ({ scene, selected, wide, storyOpen, timelineOpen, time
         className="tk-map-svg"
         data-manual={manual.view === viewKey}
         onPointerDown={startDrag} onPointerMove={moveDrag}
-        onLostPointerCapture={() => { drag.current = null; }}
+        onPointerUp={(event) => { drag.current = null; if (event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.releasePointerCapture(event.pointerId); }}
+        onPointerCancel={() => { drag.current = null; }} onLostPointerCapture={() => { drag.current = null; }}
+        data-map-zoom={adjustment.zoom.toFixed(3)} data-map-pan={`${adjustment.x.toFixed(2)},${adjustment.y.toFixed(2)}`}
       >
         <defs>
           <clipPath id={`${unique}-land`}>{countries.map((country) => <path key={country.name} d={country.path} />)}</clipPath>
@@ -298,7 +307,7 @@ export const BattleMap = ({ scene, selected, wide, storyOpen, timelineOpen, time
               <path
                 key={country.name}
                 d={country.path}
-                fill={country.name === "China" ? "#283b36" : "#202d2c"}
+                fill="#a6b9c2" fillOpacity={country.name === "China" ? .16 : .1}
               />
             ))}
             <g key={scene.id} className="tk-territories">
@@ -306,7 +315,7 @@ export const BattleMap = ({ scene, selected, wide, storyOpen, timelineOpen, time
                 const faction = factions[region.faction];
                 const uprising = "uprising" in faction;
                 return <path key={index} d={ringPath(region.ring)} fill={faction.color}
-                  fillOpacity={uprising ? .34 : .21} />;
+                  fillOpacity={uprising ? .23 : .14} />;
               })}
               {territoryBorders(scene.territories).map((border, index) => (
                 <path
@@ -345,17 +354,9 @@ export const BattleMap = ({ scene, selected, wide, storyOpen, timelineOpen, time
         <g key={scene.id} aria-hidden="true">
           {scene.routes?.map((route, index) => {
             const points = route.places.map((id) => screen(places[id].at));
-            const start = points[0];
-            const end = points[points.length - 1];
-            const before = points[points.length - 2];
-            const length = Math.hypot(end.x - before.x, end.y - before.y);
-            if (length < 15) return null;
-            const inset = Math.min(13, length / 4);
-            points[points.length - 1] = { x: end.x - (end.x - before.x) * inset / length, y: end.y - (end.y - before.y) * inset / length };
-            const path = points.length === 2
-              ? `M${start.x},${start.y} Q${(start.x + end.x) / 2 + (start.y - end.y) * .14},${(start.y + end.y) / 2 + (end.x - start.x) * .14} ${points[1].x},${points[1].y}`
-              : points.map(({ x, y }, point) => `${point ? "L" : "M"}${x},${y}`).join("");
-            return <path key={index} d={path} className="tk-route" stroke={factions[route.faction].color} markerEnd={`url(#${unique}-arrow-${index})`} />;
+            const geometry = battleRouteGeometry(points, 60);
+            if (!geometry) return null;
+            return <BattleRoute key={index} {...geometry} kind={route.kind ?? "march"} label={`${factions[route.faction].name}: ${route.label}`} />;
           })}
         </g>
         {names.map(({ name, label, color, kind }, index) => label && (
@@ -421,6 +422,8 @@ export const BattleMap = ({ scene, selected, wide, storyOpen, timelineOpen, time
                   />
                 </div>
               </foreignObject>
+              <circle cx="18" cy="-19" r="9" fill="#152534" stroke={person.color} />
+              <Crown x={12} y={-25} width={12} height={12} color={person.color} />
               {cluster && <g className="tk-marker-count" pointerEvents="none">
                 <circle cx={16} cy={-15} r={8} fill="#e3cdb3" stroke="#18242d" />
                 <text x={16} y={-12} textAnchor="middle" fill="#18242d">{members.length}</text>
@@ -449,7 +452,7 @@ export const BattleMap = ({ scene, selected, wide, storyOpen, timelineOpen, time
         <button type="button" aria-label="Phóng to bản đồ" disabled={adjustment.zoom >= maxZoom} onClick={() => zoomBy(1.25)}><Plus size={16} /></button>
         <button type="button" aria-label="Đặt lại góc nhìn" onClick={() => setManual({ view: "", zoom: 1, x: 0, y: 0 })}><Crosshair size={16} /></button>
       </div>
-      <div className="tk-map-caption" aria-hidden="true"><span>↑ BẮC</span><span>Biên giới hiện đại để định hướng · Natural Earth</span></div>
+      <div className="tk-map-caption" aria-hidden="true"><span>↑ BẮC · Cuộn để zoom · Giữ và kéo để di chuyển</span><span>Biên giới hiện đại để định hướng · Natural Earth</span></div>
     </section>
   );
 };

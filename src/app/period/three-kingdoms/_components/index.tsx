@@ -27,6 +27,8 @@ import { portraitFor } from "~/data/portraits";
 import { factions, people, places, threeKingdomsMapSources, threeKingdomsScenes } from "~/data/three-kingdoms";
 import type { PersonId } from "~/data/three-kingdoms";
 import { threeKingdomsBattleScenes } from "~/data/three-kingdoms-battles";
+import { BattleMapLegend } from "~/components/battle-map-symbols";
+import { RootLink } from "~/components/root-link";
 
 import { BattleMap } from "./map";
 import "~/styles/three-kingdoms.css";
@@ -143,6 +145,7 @@ export const ThreeKingdomsExperience = ({ battleId }: { battleId?: string }) => 
       }
     }} tabIndex={0}>
       <header className="tk-header">
+        <RootLink />
         <Link href={battleId ? `/period/three-kingdoms#${battleId}` : "/period#china"} className="tk-back" aria-label="Các thời kỳ lịch sử">
           <ArrowLeft size={17} /> <span>{battleId ? "Tam Quốc" : "Thời kỳ"}</span>
         </Link>
@@ -169,6 +172,7 @@ export const ThreeKingdomsExperience = ({ battleId }: { battleId?: string }) => 
           />
           <details className="tk-legend-float">
             <summary>Chú giải</summary>
+            <BattleMapLegend />
             <div className="tk-legend">
               {legend.map((id) => (
                 <span key={id}><i style={{ "--faction": factions[id].color } as CSSProperties} />{factions[id].name}</span>

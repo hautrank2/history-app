@@ -1,4 +1,5 @@
 import { threeKingdomsScenes, type ThreeKingdomsScene } from "~/data/three-kingdoms";
+import { expandThreeKingdomsBattle, battleChronicleSource } from "~/data/three-kingdoms-battle-expansion";
 
 // Each battle has its own chronology; the period overview keeps its summary scenes.
 type BattleEvent = Pick<ThreeKingdomsScene, "title" | "date" | "story" | "focus" | "cast"> &
@@ -92,8 +93,8 @@ const events: Record<string, BattleEvent[]> = {
 export function threeKingdomsBattleScenes(battleId: string): ThreeKingdomsScene[] {
   const overview = threeKingdomsScenes.find((scene) => scene.id === battleId);
   if (!overview) return [];
-  return (events[battleId] ?? []).map((event, index) => ({
+  return expandThreeKingdomsBattle(battleId, events[battleId] ?? []).map((event, index) => ({
     ...overview, ...event, id: index === 0 ? battleId : `${battleId}-${index + 1}`,
-    chapter: overview.title, nearby: [...new Set([overview.focus, ...overview.nearby])],
+    chapter: overview.title, nearby: [...new Set([overview.focus, ...overview.nearby])], source: battleChronicleSource(battleId),
   }));
 }
