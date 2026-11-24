@@ -434,9 +434,9 @@ html[data-theme][data-reading-mode] .vo-page #vo-content :is(.vo-tabs, .vo-readi
 }
 
 html[data-theme][data-reading-mode] .vo-page #vo-content .vo-tabs button[aria-selected="true"] {
-  background: var(--accent);
+  background: var(--primary);
   border-color: var(--primary);
-  color: var(--primary);
+  color: var(--primary-foreground);
 }
 
 html[data-theme][data-reading-mode] :is(.vo-story-panel, .vo-place-detail)::before {
@@ -481,7 +481,7 @@ html[data-theme][data-reading-mode] :is(.vo-tabs button, .vo-reading-footer butt
   box-shadow: none;
 }
 
-html[data-theme][data-reading-mode] :is(.vo-tabs button[aria-selected="true"], .vo-tabs button[aria-selected="true"] > span, .vo-era-strip > button[aria-current="step"] strong) {
+html[data-theme][data-reading-mode] .vo-era-strip > button[aria-current="step"] strong {
   color: var(--primary);
   background: var(--accent);
   border-color: var(--primary);
@@ -502,10 +502,6 @@ html[data-theme][data-reading-mode] .vo-timeline-progress > span {
 
 html[data-theme][data-reading-mode] .vo-search input {
   color: var(--foreground);
-}
-
-html[data-theme][data-reading-mode] .vo-visibility {
-  right: 136px;
 }
 
 html[data-theme][data-reading-mode] .bd-experience {
@@ -621,11 +617,6 @@ html[data-theme][data-reading-mode] .game-audio-indicator {
     background: linear-gradient(0deg, var(--background) 49%, transparent 82%), linear-gradient(90deg, color-mix(in srgb, var(--background) 40%, transparent), transparent);
   }
 
-  html[data-theme][data-reading-mode] .vo-visibility {
-    right: 12px;
-    top: 56px;
-  }
-
   html[data-theme][data-reading-mode] .atlas-intro {
     padding-top: 36px;
     padding-bottom: 36px;
@@ -636,4 +627,60 @@ html[data-theme][data-reading-mode] .game-audio-indicator {
     display: block;
     margin-top: 24px;
   }
+}
+
+/* Map navigation and view controls share one header above the reading panel. */
+html[data-theme][data-reading-mode] .vo-page .vo-header {
+  position: absolute;
+  z-index: 6;
+  top: max(12px, env(safe-area-inset-top));
+  left: 24px;
+  right: 126px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 58px;
+  padding: 7px;
+  border-radius: 12px;
+}
+
+.vo-header .atlas-primary-nav { display: flex; align-items: center; gap: 3px; min-width: 0; }
+html[data-theme][data-reading-mode] .vo-header .atlas-nav-link { min-height: 40px; padding: 9px 12px; gap: 7px; border-radius: 7px; }
+.vo-header .atlas-nav-link[aria-current="page"]::after { display: none; }
+html[data-theme][data-reading-mode] .vo-header .atlas-nav-link[aria-current="page"] { background: var(--accent); color: var(--primary); }
+.vo-header .vo-parent-link { min-width: 0; max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--primary); font-size: 12px; padding: 8px 0 8px 12px; border-left: 1px solid var(--atlas-line); }
+html[data-theme][data-reading-mode] .vo-header .vo-visibility { position: static; margin-left: auto; flex-shrink: 0; gap: 4px; }
+html[data-theme][data-reading-mode] .vo-header .vo-visibility > button { min-height: 40px; padding-inline: 10px; border-radius: 7px; box-shadow: none; }
+
+@media (min-width: 901px) and (max-width: 1200px) {
+  html[data-theme][data-reading-mode] .vo-header .atlas-nav-link { padding-inline: 8px; font-size: 12px; }
+  .vo-header .vo-parent-link { max-width: 110px; }
+  html[data-theme][data-reading-mode] .vo-header .vo-visibility > button { padding-inline: 7px; }
+}
+
+@media (max-width: 900px) {
+  html[data-theme][data-reading-mode] .vo-page .vo-header { left: 12px; right: 12px; top: max(6px, env(safe-area-inset-top)); flex-wrap: wrap; gap: 6px; padding: 5px; }
+  .vo-header .atlas-primary-nav { flex: 1 1 100%; padding-right: 88px; }
+  html[data-theme][data-reading-mode] .vo-header .atlas-nav-link { flex: 1; flex-direction: column; gap: 3px; min-height: 48px; padding: 5px 3px; font-size: 11px; }
+  .vo-header .vo-parent-link { flex: 1 1 100%; max-width: none; border-left: 0; padding: 2px 7px; }
+  html[data-theme][data-reading-mode] .vo-header .vo-visibility { flex: 1 1 100%; margin: 0; }
+  html[data-theme][data-reading-mode] .vo-header .vo-visibility > button { flex: 1; min-height: 34px; padding-inline: 5px; }
+  html[data-theme][data-reading-mode] .vo-header .vo-visibility .vo-clean-view { flex: 0 0 34px; }
+  .vo-page .vo-map-badge, .vo-page .vo-country-stats { top: 150px; }
+  .vo-page #vo-content { top: 150px; }
+}
+
+@media (max-width: 760px) {
+  .vo-page #vo-content { top: auto; }
+  html[data-theme][data-reading-mode] .atlas-site-header .atlas-primary-nav { width: 100%; }
+}
+
+@media (min-width: 761px) and (max-width: 1000px) {
+  html[data-theme][data-reading-mode] .atlas-header.atlas-site-header { flex-wrap: wrap; }
+  html[data-theme][data-reading-mode] .atlas-site-header .atlas-primary-nav { width: 100%; margin-left: 0; }
+  html[data-theme][data-reading-mode] .atlas-site-header .atlas-nav-link { flex: 1; padding-inline: 10px; }
+}
+
+@media (max-width: 480px) {
+  html[data-theme][data-reading-mode] .atlas-site-header .atlas-nav-link { min-width: 0; flex-direction: column; padding: 8px 2px; gap: 5px; font-size: 11px; }
 }

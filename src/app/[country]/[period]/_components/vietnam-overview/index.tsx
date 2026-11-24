@@ -4,7 +4,7 @@ import Link from "next/link";
 import type { CSSProperties } from "react";
 
 import { CompactLink } from "~/components/compact-link";
-import { HomeLink } from "~/components/home-link";
+import { AtlasNavigation } from "~/components/atlas-header";
 import { NationalFlag } from "~/components/national-flag";
 import { Button } from "~/components/ui/button";
 import { Card } from "~/components/ui/card";
@@ -137,21 +137,21 @@ export const VietnamOverview = ({
     {!snapshot
       ? <CountryStats scene={scene} />
       : null}
-    <HomeLink className="vo-back vo-glass" back />
-    <div className="vo-header-links absolute top-5 left-[190px] z-6 flex items-center gap-3 max-[760px]:top-2.5 max-[760px]:left-[135px]">
-      <Link className="vo-character-nav vo-glass" href={detail ? `${detail.parentHref.split("#")[0]}#${scene.id}` : `/period?country=${country}#${country}`}>
-        {detail?.parentLabel ?? "Các giai đoạn"} →
-      </Link>
+    <header className="vo-header vo-glass">
+      <AtlasNavigation active={detail?.kind ?? "period"} periodHref={`/period?country=${country}#${country}`} />
+      {detail ? <Link className="vo-parent-link" href={`${detail.parentHref.split("#")[0]}#${scene.id}`} title={detail.parentLabel}>
+        {detail.parentLabel}
+      </Link> : null}
       {showVietnamFlag ? (
         <NationalFlag className="vo-national-flag shrink-0 rounded-sm" />
       ) : null}
-    </div>
     <div className="vo-visibility" aria-label="Ẩn hiện các bảng trên bản đồ">
       <Button variant="atlas" size="atlas" type="button" className="vo-glass" aria-expanded={contentVisible} aria-controls="vo-content" onClick={() => setContentVisible((value) => !value)}><span>≋</span> Nội dung</Button>
       <Button variant="atlas" size="atlas" type="button" className="vo-glass" aria-expanded={placesVisible} aria-controls="vo-places" onClick={() => setPlacesVisible((value) => !value)}><span>⌖</span> Địa điểm</Button>
       <Button variant="atlas" size="atlas" type="button" className="vo-glass" aria-expanded={timelineVisible} aria-controls="vo-timeline" onClick={() => setTimelineVisible((value) => !value)}><span>◷</span> Timeline</Button>
       <Button variant="atlas" size="atlas" type="button" className="vo-glass vo-clean-view" aria-label={allHidden ? "Hiện các bảng" : "Ẩn tất cả, chỉ xem bản đồ"} aria-pressed={allHidden} onClick={() => { setContentVisible(allHidden); setTimelineVisible(allHidden); setPlacesVisible(false); }}>{allHidden ? "▦" : "⛶"}</Button>
     </div>
+    </header>
     <ContentPanel
       key={`content-${scene.id}`}
       country={country}
