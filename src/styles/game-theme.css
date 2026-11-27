@@ -139,17 +139,6 @@ html[data-theme="arena"] .character-scene { background: var(--arena-panel); bord
 html[data-theme="arena"] .character-facts { border-left: 2px solid #e2c181; padding: 16px 20px; background: #112c4580; }
 html[data-theme="arena"] .character-breadcrumbs { border-color: var(--arena-gold-line); }
 
-/* Native cursors retain precise hotspots and avoid a JavaScript cursor overlay. */
-@media (hover: hover) and (pointer: fine) {
-  html[data-theme="arena"], html[data-theme="arena"] body { cursor: url("/cursors/arena-default.svg") 3 2, auto; }
-  html[data-theme="arena"] :is(a, button, summary, select, label[for], [role="button"], [role="tab"], [role="option"], [role="slider"], [role="combobox"]) { cursor: url("/cursors/arena-pointer.svg") 4 2, pointer; }
-  html[data-theme="arena"] :is(input:not([type="range"]), textarea, [contenteditable="true"]) { cursor: url("/cursors/arena-text.svg") 16 16, text; }
-  html[data-theme="arena"] :is(.vo-map, .maplibregl-canvas, .bd-3d-canvas canvas, .image-preview-photo) { cursor: url("/cursors/arena-grab.svg") 16 16, grab; }
-  html[data-theme="arena"] :is(.vo-map.is-dragging, .maplibregl-canvas:active, .bd-3d-canvas canvas:active, .image-preview-photo:active) { cursor: url("/cursors/arena-grabbing.svg") 16 16, grabbing; }
-  html[data-theme="arena"] :is(button:disabled, [aria-disabled="true"]) { cursor: not-allowed; }
-  html[data-theme="arena"] input[type="range"] { cursor: url("/cursors/arena-pointer.svg") 4 2, ew-resize; }
-}
-
 @media (max-width: 760px) {
   html[data-theme="arena"] .atlas-header-link { padding: 8px 10px; }
   html[data-theme="arena"] .bd-map-panel { padding-inline: 8px; }
@@ -177,9 +166,6 @@ html[data-theme="arena"] .character-breadcrumbs { border-color: var(--arena-gold
 html[data-theme="arena"] .vo-visibility { right: 78px; }
 html[data-theme="arena"] :is(.atlas-header, .bd-header) { padding-right: 82px; }
 
-@media (hover: hover) and (pointer: fine) {
- html[data-theme="arena"] { --arena-preview-cursor: url("/cursors/arena-pointer.svg") 4 2, zoom-in; }
-}
 @media (max-width: 760px) {
  .game-audio { top: 10px; right: 12px; }
  .game-audio-trigger { width: 34px; height: 34px; }
@@ -200,9 +186,5 @@ html[data-theme="arena"] :is(.atlas-header, .bd-header) { padding-right: 82px; }
 .game-audio-track strong { display: block; font-size: 12px; color: #c7eaff; font-weight: 500; }
 .game-audio-track span { display: block; font-size: 11px; color: #9db6ce; margin-top: 3px; }
 .game-audio-panel .game-audio-saved { margin-top: 12px; font-size: 11px; color: #a5b9d0; }
-@media (hover: hover) and (pointer: fine) {
- html[data-theme="arena"] .game-audio-panel label { cursor: url("/cursors/arena-pointer.svg") 4 2, pointer; }
- html[data-theme="arena"] .game-audio-panel input[type="checkbox"] { cursor: url("/cursors/arena-pointer.svg") 4 2, pointer; }
-}
 
 .game-audio-master { display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:42px;margin-top:14px;padding-bottom:10px;border-bottom:1px solid #89a9c333;color:#e7d5ac;font-size:12px; }

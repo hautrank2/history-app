@@ -245,12 +245,15 @@ assert.doesNotThrow(() => blocked.api.updateAudioSettings({ music: false }));
 const clamped = loadEngine(JSON.stringify({ enabled: true, volume: 4, musicVolume: -3 }));
 assert.equal(clamped.api.getAudioSettings().volume, 1);
 assert.equal(clamped.api.getAudioSettings().musicVolume, 0);
-for (const cursor of ["default", "pointer", "grab", "grabbing", "text"]) {
-  const path = `public/cursors/arena-${cursor}.svg`;
+for (const cursor of ["default", "pointer", "grab", "grabbing", "text", "resize", "zoom", "disabled"]) {
+  for (const suffix of ["", "-dark"]) {
+  const path = `public/cursors/arena-${cursor}${suffix}.svg`;
   assert.ok(existsSync(path));
   assert.match(readFileSync(path, "utf8"), /width="32" height="32"/);
+  assert.ok(!/script|foreignObject|#a4e8ff|#72ddff/.test(readFileSync(path, "utf8")), "Cursors use static parchment artwork");
+  }
 }
-console.log(`Validated ${Object.keys(soundtracks).length} contextual scores, effect categories, volume persistence, autoplay guard, source cleanup and five cursors.`);
+console.log(`Validated ${Object.keys(soundtracks).length} contextual scores, effect categories, volume persistence, autoplay guard, source cleanup and eight cursors in both themes.`);
 
 const samples = loadEngine(null, false, true);
 samples.api.updateAudioSettings({ enabled: true, music: false });

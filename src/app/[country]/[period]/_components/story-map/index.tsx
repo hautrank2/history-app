@@ -2,8 +2,7 @@
 
 import "maplibre-gl/dist/maplibre-gl.css";
 import Link from "next/link";
-import { HomeLink } from "~/components/home-link";
-import { RootLink } from "~/components/root-link";
+import { BackButton } from "~/components/back-button";
 
 import type { SideModel } from "~/types";
 
@@ -29,10 +28,10 @@ export const StoryMap = ({ story, backHref }: StoryMapProps) => {
       {/* maplibre-gl.css ép container thành position: relative nên phải dùng kích thước, không dùng inset */}
       <div ref={containerRef} className="size-full" />
 
-      <header className="pointer-events-none absolute inset-x-0 top-0 flex items-start justify-between gap-4 bg-linear-to-b from-background to-transparent p-4 pb-12">
+      <header className="atlas-story-header">
+      <div className="atlas-story-heading">
+        <BackButton placement="header" fallbackHref={backHref} />
         <div>
-          <RootLink />
-          <HomeLink className="pointer-events-auto text-xs text-primary" back />
           <Link
             href={`${backHref}#${backHref === "/vietnam" ? "tran-bach-dang" : "intro"}`}
             className="pointer-events-auto text-xs tracking-widest text-primary uppercase hover:underline"
@@ -58,6 +57,7 @@ export const StoryMap = ({ story, backHref }: StoryMapProps) => {
             </li>
           ) : null}
         </ul>
+      </div>
       </header>
 
       {chapter ? (

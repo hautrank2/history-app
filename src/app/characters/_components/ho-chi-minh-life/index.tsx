@@ -17,6 +17,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 import { Image, ImageGroup } from "@/components/ui/image";
+import { BackButton } from "~/components/back-button";
 import { Input } from "~/components/ui/input";
 import {
   Select,
@@ -494,8 +495,9 @@ export const HoChiMinhLife = () => {
       }}
     >
       <header className="hcm-header">
+        <BackButton placement="header" fallbackHref="/characters" />
         <Link className="hcm-back" href="/characters">
-          <ArrowLeft size={16} aria-hidden="true" />Tất cả nhân vật
+          Tất cả nhân vật
         </Link>
         <div className="hcm-heading">
           <span className="hcm-header-portrait">

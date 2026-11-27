@@ -526,7 +526,7 @@ html[data-theme][data-reading-mode] :is(.tk-header, .tk-story, .tk-timeline, .tk
   box-shadow: var(--arena-frame-shadow);
 }
 
-html[data-theme][data-reading-mode] :is(.tk-panel-toggles button[aria-expanded="true"], .tk-timeline-strip button[aria-current="step"], .tk-map-controls button:hover, .tk-playback button:not(:disabled):hover) {
+html[data-theme][data-reading-mode] :is(.tk-panel-toggles button[aria-expanded="true"], .tk-timeline-strip button:is(:hover, :focus-visible, [aria-current="step"]), .tk-map-controls button:hover, .tk-playback button:not(:disabled):hover) {
   background: var(--accent);
 }
 
@@ -635,7 +635,7 @@ html[data-theme][data-reading-mode] .game-audio-indicator {
   }
 }
 
-/* Map navigation and view controls share one header above the reading panel. */
+/* Each map keeps its own title, back action and view controls. */
 html[data-theme][data-reading-mode] .vo-page .vo-header {
   position: absolute;
   z-index: 6;
@@ -650,30 +650,25 @@ html[data-theme][data-reading-mode] .vo-page .vo-header {
   border-radius: 12px;
 }
 
-.vo-header .atlas-primary-nav { display: flex; align-items: center; gap: 3px; min-width: 0; }
-html[data-theme][data-reading-mode] .vo-header .atlas-nav-link { min-height: 40px; padding: 9px 12px; gap: 7px; border-radius: 7px; }
-.vo-header .atlas-nav-link[aria-current="page"]::after { display: none; }
-html[data-theme][data-reading-mode] .vo-header .atlas-nav-link[aria-current="page"] { background: var(--accent); color: var(--primary); }
+.vo-header .vo-header-title { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13px; color: var(--foreground); }
 .vo-header .vo-parent-link { min-width: 0; max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--primary); font-size: 12px; padding: 8px 0 8px 12px; border-left: 1px solid var(--atlas-line); }
 html[data-theme][data-reading-mode] .vo-header .vo-visibility { position: static; margin-left: auto; flex-shrink: 0; gap: 4px; }
 html[data-theme][data-reading-mode] .vo-header .vo-visibility > button { min-height: 40px; padding-inline: 10px; border-radius: 7px; box-shadow: none; }
 
 @media (min-width: 901px) and (max-width: 1200px) {
-  html[data-theme][data-reading-mode] .vo-header .atlas-nav-link { padding-inline: 8px; font-size: 12px; }
   .vo-header .vo-parent-link { max-width: 110px; }
   html[data-theme][data-reading-mode] .vo-header .vo-visibility > button { padding-inline: 7px; }
 }
 
 @media (max-width: 900px) {
   html[data-theme][data-reading-mode] .vo-page .vo-header { left: 12px; right: 12px; top: max(6px, env(safe-area-inset-top)); flex-wrap: wrap; gap: 6px; padding: 5px; }
-  .vo-header .atlas-primary-nav { flex: 1 1 100%; padding-right: 88px; }
-  html[data-theme][data-reading-mode] .vo-header .atlas-nav-link { flex: 1; flex-direction: column; gap: 3px; min-height: 48px; padding: 5px 3px; font-size: 11px; }
-  .vo-header .vo-parent-link { flex: 1 1 100%; max-width: none; border-left: 0; padding: 2px 7px; }
+  .vo-header .vo-header-title { padding-right: 88px; }
+  .vo-header .vo-parent-link { display: none; }
   html[data-theme][data-reading-mode] .vo-header .vo-visibility { flex: 1 1 100%; margin: 0; }
   html[data-theme][data-reading-mode] .vo-header .vo-visibility > button { flex: 1; min-height: 34px; padding-inline: 5px; }
   html[data-theme][data-reading-mode] .vo-header .vo-visibility .vo-clean-view { flex: 0 0 34px; }
-  .vo-page .vo-map-badge, .vo-page .vo-country-stats { top: 150px; }
-  .vo-page #vo-content { top: 150px; }
+  .vo-page .vo-map-badge, .vo-page .vo-country-stats { top: 110px; }
+  .vo-page #vo-content { top: 110px; }
 }
 
 @media (max-width: 760px) {

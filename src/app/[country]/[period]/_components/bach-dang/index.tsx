@@ -4,8 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 import { Image } from "@/components/ui/image";
-import { HomeLink } from "~/components/home-link";
-import { RootLink } from "~/components/root-link";
+import { BackButton } from "~/components/back-button";
 import { NationalFlag } from "~/components/national-flag";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "~/components/ui/select";
 import { battlePortraitFor, characterHref } from "~/data/characters";
@@ -45,14 +44,9 @@ export const BachDangExperience = ({ story, battle }: BachDangExperienceProps) =
 
   return (
     <main className="bd-experience bd-map-first">
-      <header className="bd-header">
-        <RootLink />
-        <Link className="bd-brand" href="/#battles">
-          <span className="bd-brand-symbol">H</span>
-          <span>HISTORY ATLAS<small>DẤU ẤN NGÀN NĂM</small></span>
-        </Link>
+      <header className="bd-context-header">
+        <BackButton placement="header" fallbackHref={period?.href ?? "/period/nha-tran"} />
         <nav className="bd-page-navigation" aria-label="Điều hướng lịch sử">
-          <HomeLink section="battles" />
           <Link href={`/vietnam#${battle?.sceneId ?? "tran-bach-dang"}`}><NationalFlag /> Việt Nam</Link>
           <Link href={`${period?.href ?? "/period/nha-tran"}#${battle?.sceneId ?? "tran-bach-dang"}`}>
             {period?.title ?? "Nhà Trần"}

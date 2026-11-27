@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { AtlasHeader } from "~/components/atlas-header";
+import { BackButton } from "~/components/back-button";
 import { BattleGrid } from "~/components/battle-grid";
 import { CountryFlag } from "~/components/country-flag";
 import { countriesData } from "~/data";
@@ -13,9 +13,8 @@ export default async function PeriodDirectory({ searchParams }: Props) {
   const selected = countriesData[country ?? ""];
   const groups = Object.values(countriesData).filter((item) => item && (!selected || selected.slug === item.slug));
   return <main className="atlas-page">
-    <AtlasHeader active="period" />
     <div className="atlas-periods space-y-10">
-      <div className="space-y-3"><p className="atlas-eyebrow">QUỐC GIA → GIAI ĐOẠN → TRẬN ĐÁNH</p><h1 className="font-display text-4xl sm:text-5xl">Các giai đoạn lịch sử</h1><p className="text-sm text-muted-foreground">Chọn một giai đoạn để khám phá bản đồ, nhân vật và những trận đánh liên quan.</p></div>
+      <header className="space-y-3"><BackButton placement="header" fallbackHref="/" /><p className="atlas-eyebrow">QUỐC GIA → GIAI ĐOẠN → TRẬN ĐÁNH</p><h1 className="font-display text-4xl sm:text-5xl">Các giai đoạn lịch sử</h1><p className="text-sm text-muted-foreground">Chọn một giai đoạn để khám phá bản đồ, nhân vật và những trận đánh liên quan.</p></header>
       <nav aria-label="Lọc theo quốc gia" className="flex flex-wrap gap-4 text-sm text-primary"><Link href="/period" aria-current={!selected ? "page" : undefined}>Tất cả</Link>{Object.values(countriesData).map((item) => item ? <Link key={item.slug} href={`/period?country=${item.slug}`} aria-current={selected?.slug === item.slug ? "page" : undefined}>{item.name}</Link> : null)}</nav>
       {groups.map((item) => item ? <section id={item.slug} key={item.slug} className="space-y-4"><div className="flex flex-wrap items-center justify-between gap-3"><h2 className="flex items-center gap-3 font-display text-2xl"><CountryFlag countryId={item.slug} />{item.name}</h2><Link href={`/${item.slug}`} className="text-sm text-primary">Lịch sử {item.name} ↗</Link></div><BattleGrid entries={periodEntries.filter((period) => period.countryId === item.slug)} /></section> : null)}
     </div>

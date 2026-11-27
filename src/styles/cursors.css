@@ -1,0 +1,40 @@
+/* Native cursors have precise hotspots and never add a tracking overlay. */
+@media (hover: hover) and (pointer: fine) {
+  html[data-theme][data-reading-mode] {
+    --atlas-cursor-default: url("/cursors/arena-default.svg") 3 2, auto;
+    --atlas-cursor-pointer: url("/cursors/arena-pointer.svg") 14 3, pointer;
+    --atlas-cursor-text: url("/cursors/arena-text.svg") 16 16, text;
+    --atlas-cursor-grab: url("/cursors/arena-grab.svg") 16 16, grab;
+    --atlas-cursor-grabbing: url("/cursors/arena-grabbing.svg") 16 16, grabbing;
+    --atlas-cursor-resize: url("/cursors/arena-resize.svg") 16 16, ew-resize;
+    --atlas-cursor-zoom: url("/cursors/arena-zoom.svg") 13 13, zoom-in;
+    --atlas-cursor-disabled: url("/cursors/arena-disabled.svg") 16 16, not-allowed;
+    --arena-preview-cursor: var(--atlas-cursor-zoom);
+  }
+  html[data-theme][data-reading-mode="dark"] {
+    --atlas-cursor-default: url("/cursors/arena-default-dark.svg") 3 2, auto;
+    --atlas-cursor-pointer: url("/cursors/arena-pointer-dark.svg") 14 3, pointer;
+    --atlas-cursor-text: url("/cursors/arena-text-dark.svg") 16 16, text;
+    --atlas-cursor-grab: url("/cursors/arena-grab-dark.svg") 16 16, grab;
+    --atlas-cursor-grabbing: url("/cursors/arena-grabbing-dark.svg") 16 16, grabbing;
+    --atlas-cursor-resize: url("/cursors/arena-resize-dark.svg") 16 16, ew-resize;
+    --atlas-cursor-zoom: url("/cursors/arena-zoom-dark.svg") 13 13, zoom-in;
+    --atlas-cursor-disabled: url("/cursors/arena-disabled-dark.svg") 16 16, not-allowed;
+  }
+  html[data-theme][data-reading-mode], html[data-theme][data-reading-mode] body { cursor: var(--atlas-cursor-default); }
+  html[data-theme][data-reading-mode] :is(.vo-map, .tk-map-svg, .battle-map-interactive, .hcm-map-stage, .maplibregl-canvas, .bd-3d-canvas canvas, .image-preview-photo) { cursor: var(--atlas-cursor-grab); }
+  html[data-theme][data-reading-mode] :is(.vo-map.is-dragging, .hcm-map-stage.is-dragging, .tk-map-svg:active, .battle-map-interactive:active, .maplibregl-canvas:active, .bd-3d-canvas canvas:active, .image-preview-photo:active) { cursor: var(--atlas-cursor-grabbing); }
+  html[data-theme][data-reading-mode] :is(a, button, summary, select, label[for], .game-audio-panel label, input[type="checkbox"], input[type="radio"], [role="button"], [role="tab"], [role="option"], [role="combobox"]) { cursor: var(--atlas-cursor-pointer); }
+  html[data-theme][data-reading-mode] :is(input:not([type="range"], [type="checkbox"], [type="radio"], [type="button"], [type="submit"], [type="reset"], [type="color"], [type="file"]), textarea, [contenteditable="true"]) { cursor: var(--atlas-cursor-text); }
+  html[data-theme][data-reading-mode] :is(input[type="range"], [role="slider"]) { cursor: var(--atlas-cursor-resize); }
+  html[data-theme][data-reading-mode] :is(button:disabled, input:disabled, textarea:disabled, select:disabled, [aria-disabled="true"]) { cursor: var(--atlas-cursor-disabled); }
+}
+
+/* Respect operating-system contrast colors and leave touch interaction native. */
+@media (forced-colors: active) {
+  html[data-theme][data-reading-mode] {
+    --atlas-cursor-default: auto; --atlas-cursor-pointer: pointer; --atlas-cursor-text: text;
+    --atlas-cursor-grab: grab; --atlas-cursor-grabbing: grabbing; --atlas-cursor-resize: ew-resize;
+    --atlas-cursor-zoom: zoom-in; --atlas-cursor-disabled: not-allowed;
+  }
+}

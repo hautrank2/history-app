@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  ArrowLeft,
   BookOpen,
   ChevronLeft,
   ChevronRight,
@@ -28,7 +27,7 @@ import { factions, people, places, threeKingdomsMapSources, threeKingdomsScenes 
 import type { PersonId } from "~/data/three-kingdoms";
 import { threeKingdomsBattleScenes } from "~/data/three-kingdoms-battles";
 import { BattleMapLegend } from "~/components/battle-map-symbols";
-import { RootLink } from "~/components/root-link";
+import { BackButton } from "~/components/back-button";
 
 import { BattleMap } from "./map";
 import "~/styles/three-kingdoms.css";
@@ -145,9 +144,9 @@ export const ThreeKingdomsExperience = ({ battleId }: { battleId?: string }) => 
       }
     }} tabIndex={0}>
       <header className="tk-header">
-        <RootLink />
+        <BackButton placement="header" fallbackHref={battleId ? "/period/three-kingdoms" : "/period"} />
         <Link href={battleId ? `/period/three-kingdoms#${battleId}` : "/period#china"} className="tk-back" aria-label="Các thời kỳ lịch sử">
-          <ArrowLeft size={17} /> <span>{battleId ? "Tam Quốc" : "Thời kỳ"}</span>
+          <span>{battleId ? "Tam Quốc" : "Thời kỳ"}</span>
         </Link>
         <div className="tk-title">
           <h1>{battle?.title ?? "Tam Quốc"} <span>{battle?.years ?? "220–280"}</span></h1>

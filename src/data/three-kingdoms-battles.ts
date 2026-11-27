@@ -1,5 +1,6 @@
 import { threeKingdomsScenes, type ThreeKingdomsScene } from "~/data/three-kingdoms";
 import { expandThreeKingdomsBattle, battleChronicleSource } from "~/data/three-kingdoms-battle-expansion";
+import { battleBookends } from "~/data/battle-bookends";
 
 // Each battle has its own chronology; the period overview keeps its summary scenes.
 type BattleEvent = Pick<ThreeKingdomsScene, "title" | "date" | "story" | "focus" | "cast"> &
@@ -93,8 +94,18 @@ const events: Record<string, BattleEvent[]> = {
 export function threeKingdomsBattleScenes(battleId: string): ThreeKingdomsScene[] {
   const overview = threeKingdomsScenes.find((scene) => scene.id === battleId);
   if (!overview) return [];
-  return expandThreeKingdomsBattle(battleId, events[battleId] ?? []).map((event, index) => ({
+  const chronology = expandThreeKingdomsBattle(battleId, events[battleId] ?? []).map((event, index) => ({
     ...overview, ...event, id: index === 0 ? battleId : `${battleId}-${index + 1}`,
     chapter: overview.title, nearby: [...new Set([overview.focus, ...overview.nearby])], source: battleChronicleSource(battleId),
   }));
+  if (!chronology.length) return [];
+  const bookends = battleBookends[battleId];
+  if (!bookends) return chronology;
+  return [
+    { ...chronology[0], id: `${battleId}-boi-canh`, title: "Bối cảnh & nguyên nhân", date: bookends.context.date,
+      story: bookends.context.text, phase: "context", battle: false, routes: [] },
+    ...chronology,
+    { ...chronology.at(-1)!, id: `${battleId}-he-qua`, title: "Kết quả & hệ quả", date: bookends.aftermath.date,
+      story: bookends.aftermath.text, phase: "aftermath", battle: false, routes: [] },
+  ];
 }

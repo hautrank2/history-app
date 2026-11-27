@@ -52,6 +52,7 @@ export type CameraModel = {
 };
 
 export type ChapterModel = {
+  phase?: "context" | "aftermath";
   title: string;
   date: string;
   text: string;

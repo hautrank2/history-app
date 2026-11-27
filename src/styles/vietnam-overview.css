@@ -207,6 +207,3 @@ html:has(.vo-page), body:has(.vo-page) { height: 100%; overflow: hidden; overscr
 @media(max-width:760px){
  .vo-page[data-clean="true"] .vo-map-variants { top:195px; }
 }
-.vo-back.home-link { width: auto; height: auto; gap: 7px; padding: 9px 12px; }
-.vo-back.home-link > span { display: inline; }
-@media(max-width:760px) { .vo-back.home-link { padding: 5px 9px; }.vo-back.home-link > span:first-child { display: none; }.vo-character-nav { left: 115px; } }

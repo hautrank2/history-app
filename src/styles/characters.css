@@ -12,12 +12,7 @@
 .character-directory-tabs {
   gap: 0;
 }
-.character-life-page > .atlas-site-header {
-  flex-shrink: 0;
-}
-.character-life-page .hcm-life {
-  height: calc(100svh - 92px);
-}
+.character-life-page .hcm-life { height: 100svh; }
 .character-filter {
   display: flex;
   align-items: flex-end;

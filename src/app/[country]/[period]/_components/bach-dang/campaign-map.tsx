@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useId, useMemo, useRef, useState, type PointerEvent } from "react";
-import { Crown } from "lucide-react";
+import { BookOpen, Crown, Flag, MapPin } from "lucide-react";
 import { CharacterAvatar } from "~/components/character-avatar";
 import { BattleRoute, battleActions } from "~/components/battle-map-symbols";
 import { characterHref, getCharacter } from "~/data/characters";
@@ -33,7 +33,8 @@ export const CampaignMap = ({
   leaders = [],
 }: CampaignMapProps) => {
   const id = useId().replaceAll(":", "");
-  const [wide, setWide] = useState(true);
+  const isDienBienPhu = battle.id === "dien-bien-phu-1954";
+  const [wide, setWide] = useState(!isDienBienPhu);
   const viewKey = `${battle.id}/${stage}/${wide}`;
   const [manual, setManual] = useState({ key: "", zoom: 1, x: 0, y: 0 });
   const camera = manual.key === viewKey ? manual : { key: viewKey, zoom: 1, x: 0, y: 0 };
@@ -97,7 +98,7 @@ export const CampaignMap = ({
     ?? (battle.id === "ngoc-hoi-dong-da-1789" && leader.side === "enemy" ? battle.places.find((place) => place.id === "thang-long")?.at : undefined)
     ?? eventPlaces[0]?.at ?? battle.places[0].at;
   const focusPlaces = [...eventPlaces.map((place) => place.at), ...visibleLeaders.map(leaderAt)];
-  const viewPlaces = wide ? [[98, 8], [112, 26], ...focusPlaces] : focusPlaces;
+  const viewPlaces = wide ? [[98, 8], [112, 26], ...focusPlaces] : isDienBienPhu ? battle.places.map((place) => place.at) : focusPlaces;
   const xs = viewPlaces.map((point) => point[0]);
   const ys = viewPlaces.map((point) => point[1]);
   const center = [(Math.min(...xs) + Math.max(...xs)) / 2,
@@ -131,7 +132,12 @@ export const CampaignMap = ({
   );
   const eventPoint = activePlaces[0] ?? battle.places[0];
   const [eventX, eventY] = project(eventPoint.at);
-  const EventIcon = battleActions[current.kind ?? "attack"].Icon;
+  const EventIcon = current.phase === "context" ? BookOpen : current.phase === "aftermath" ? Flag : battleActions[current.kind ?? "attack"].Icon;
+  const commandPosts = isDienBienPhu ? [
+    { person: getCharacter("vo-nguyen-giap"), place: battle.places.find((place) => place.id === (current.placeIds.includes("huoi-he") ? "huoi-he" : "muong-phang"))!,
+      label: current.placeIds.includes("huoi-he") ? "Sở chỉ huy Việt Nam · 18–30/1/1954" : "Sở chỉ huy Việt Nam · 31/1–15/5/1954" },
+    { person: getCharacter("christian-de-castries"), place: battle.places.find((place) => place.id === "muong-thanh")!, label: "Sở chỉ huy Pháp · trong chiến dịch" },
+  ] : [];
 
   return (
     <div className="bd-campaign-map relative overflow-hidden rounded-lg border border-border bg-background">
@@ -225,7 +231,7 @@ export const CampaignMap = ({
             </g>
           );
         })}
-        {visibleLeaders.map((leader, index) => {
+        {!isDienBienPhu && visibleLeaders.map((leader, index) => {
           const person = getCharacter(leader.id);
           const [leaderX, leaderY] = project(leaderAt(leader));
           const angle = -Math.PI + (index + .5) * Math.PI / Math.max(1, visibleLeaders.length);
@@ -242,12 +248,34 @@ export const CampaignMap = ({
             </a></g>
           </g>;
         })}
+        {commandPosts.map(({ person, place }, index) => {
+          const [x, y] = project(place.at);
+          return <g key={person.id} transform={`translate(${x} ${y}) scale(${1 / pixelsPerUnit})`} className="battle-command-pin"
+            data-command-place={place.id} role="button" tabIndex={0} aria-label={`${person.name} · Sở chỉ huy ${place.name}, Điện Biên, Việt Nam`}
+            onClick={() => { onSelect(place.name); setWide(false); }} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); onSelect(place.name); setWide(false); } }}>
+            <circle r="8" fill="var(--background)" stroke="var(--primary)" strokeWidth="2" />
+            <path d="M0 0V-31" stroke="var(--primary)" strokeWidth="1.5" />
+            <rect x="-12" y="-45" width="24" height="24" rx="5" fill="var(--background)" stroke="var(--primary)" />
+            <text x="0" y="-29" textAnchor="middle" fontSize="13" fontWeight="600" fill="var(--primary)">{index + 1}</text>
+            <title>{`${person.name} · ${place.name}, Điện Biên, Việt Nam. ${place.note}`}</title>
+          </g>;
+        })}
         <g className="battle-map-event" transform={`translate(${eventX} ${eventY}) scale(${1 / pixelsPerUnit})`} aria-label={`Sự kiện: ${current.title} · ${eventPoint.name}`}>
           <circle r="21" className="battle-event-pulse" /><circle r="14" fill="#302423" stroke={battleActions[current.kind ?? "attack"].color} strokeWidth="2" />
           <EventIcon x={-8} y={-8} width={16} height={16} />
           <title>{`${current.date} · ${current.title} · ${eventPoint.name}`}</title>
         </g>
       </svg>
+      {isDienBienPhu && <details className="battle-command-posts" open={size.width > 600} aria-label="Sở chỉ huy tại Điện Biên, Việt Nam">
+        <summary>Sở chỉ huy · Điện Biên, Việt Nam</summary>
+        {commandPosts.map(({ person, place, label }, index) => <button type="button" key={person.id} onClick={() => {
+          onSelect(place.name); setWide(false); setManual({ key: "", zoom: 1, x: 0, y: 0 });
+        }} aria-pressed={selected === place.name}>
+          <CharacterAvatar name={person.name} portrait={portraitFor(person.wiki) ?? portraitPlaceholder} width={32} height={32} preview={false} />
+          <span><b>{index + 1}. {person.name}</b><small><MapPin size={11} />{place.name}</small><small>{label}</small></span>
+        </button>)}
+        <small>Điểm ghim là địa điểm sở chỉ huy; tọa độ gần đúng.</small>
+      </details>}
       <span className="bd-campaign-date pointer-events-none absolute left-3 top-3 max-w-[50%] text-sm text-primary">
         {current.title} · {stage + 1}/{battle.chapters.length}
       </span>

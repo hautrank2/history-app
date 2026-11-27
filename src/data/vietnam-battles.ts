@@ -8,6 +8,7 @@ import { expandVietnamBattle } from "~/data/vietnam-battle-expansion";
 
 export type VietnamBattleChapter = {
   title: string; date: string; text: string; placeIds: string[];
+  phase?: "context" | "aftermath";
   kind?: BattleAction;
   tacticalStage?: number;
   routes?: { places: string[]; side: "home" | "enemy"; kind: BattleAction; label: string }[];
@@ -48,7 +49,11 @@ const campaigns: VietnamBattleModel[] = [
       text: scene.summary,
       placeIds: [["muong-thanh"], ["him-lam", "doc-lap"], ["a1"], ["a1", "muong-thanh"]][index],
     })),
-    sources: [dienBienPhuSource],
+    sources: [dienBienPhuSource,
+      { title: "Sở VH-TT-DL Điện Biên · Sở chỉ huy chiến dịch tại Mường Phăng", url: "https://svhttdl.dienbien.gov.vn/ditich/pages/2012/So-chi-huy-chien-dich-8547.aspx" },
+      { title: "Bảo tàng Chiến thắng Điện Biên Phủ · Di tích Mường Thanh và Mường Phăng", url: "https://btctdbp.svhttdl.dienbien.gov.vn/portal/pages/2014/Du-lich-Dien-Bien-Phu-hanh-trinh-tro-ve-coi-nguonx6d3xebyqom6.aspx" },
+      { title: "Ban Quản lý di tích Điện Biên · Hang Huổi He và quyết định ngày 26/1/1954", url: "https://bqldt.svhttdl.dienbien.gov.vn/portal/pages/2022-7-25/Di-tich-So-Chi-huy-Chien-dich-Dien-Bien-Phu-o-hangwnb6rcrb99ng.aspx" },
+    ],
   },
 ];
 export const vietnamBattles = campaigns.map(expandVietnamBattle);

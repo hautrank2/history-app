@@ -3,12 +3,14 @@ import { Be_Vietnam_Pro, Playfair_Display } from "next/font/google";
 import type { ReactNode } from "react";
 import { GameAudio } from "~/components/game-audio";
 import { ReadingThemeToggle } from "~/components/reading-theme-toggle";
+import { BackButton } from "~/components/back-button";
 
 import "~/styles/globals.css";
 import "~/styles/atlas.css";
 import "~/styles/game-theme.css";
 import "~/styles/reading-theme.css";
-import "~/styles/root-link.css";
+import "~/styles/atlas-header.css";
+import "~/styles/cursors.css";
 
 // Cả hai font đều có bộ chữ tiếng Việt đầy đủ dấu
 const body = Be_Vietnam_Pro({
@@ -64,6 +66,7 @@ const RootLayout = ({ children }: RootLayoutProps) => (
     </head>
     <body className="antialiased">
       {children}
+      <BackButton />
       <ReadingThemeToggle />
       <GameAudio />
     </body>

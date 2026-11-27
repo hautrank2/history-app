@@ -283,6 +283,7 @@ const sources = {
 };
 
 export type ThreeKingdomsScene = {
+  phase?: "context" | "aftermath";
   id: string;
   date: string;
   year: number;

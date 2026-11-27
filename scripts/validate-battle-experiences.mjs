@@ -29,6 +29,10 @@ const counts = {};
 for (const battle of [...vietnamBattles, bachDang]) {
   counts[battle.id] = battle.chapters.length;
   assert.ok(battle.chapters.length >= 8, `${battle.id}: at least eight substantive events`);
+  assert.equal(battle.chapters[0].phase, "context", `${battle.id}: starts with historical context`);
+  assert.equal(battle.chapters.at(-1).phase, "aftermath", `${battle.id}: ends with consequences`);
+  assert.equal(battle.chapters.filter((event) => event.phase).length, 2);
+  assert.ok(battle.chapters.filter((event) => event.phase).every((event) => !event.routes.length), "Editorial milestones must not invent troop movements");
   assert.equal(new Set(battle.chapters.map((event) => event.title)).size, battle.chapters.length);
   const ids = new Set(battle.places.map((place) => place.id));
   assert.equal(ids.size, battle.places.length);
@@ -43,6 +47,12 @@ for (const battle of [...vietnamBattles, bachDang]) {
   assert.equal(vietnamBattleStory(battle).chapters.length, battle.chapters.length);
 }
 assert.ok(bachDang.chapters.every((event) => event.tacticalStage >= 0 && event.tacticalStage < original.chapters.length), "Expanded Bach Dang events must retain a valid 3D tactical stage");
+const dienBien = vietnamBattles.find((battle) => battle.id === "dien-bien-phu-1954");
+assert.equal(dienBien.chapters.find((event) => event.date === "26/1/1954").placeIds.join(), "huoi-he", "January 26 decision predates the move to Muong Phang");
+for (const id of ["muong-phang", "muong-thanh", "huoi-he"]) {
+  const place = dienBien.places.find((place) => place.id === id);
+  assert.ok(place && place.at[0] > 102.9 && place.at[0] < 103.3 && place.at[1] > 21.3 && place.at[1] < 21.6, "Command posts belong to the Dien Bien area");
+}
 
 const { threeKingdomsBattleScenes } = load("src/data/three-kingdoms-battles.ts");
 const { places, people } = load("src/data/three-kingdoms.ts");
@@ -50,6 +60,9 @@ for (const id of ["quan-do", "xich-bich", "hop-phi", "di-lang", "nhai-dinh"]) {
   const events = threeKingdomsBattleScenes(id);
   counts[id] = events.length;
   assert.ok(events.length >= 8);
+  assert.equal(events[0].phase, "context");
+  assert.equal(events.at(-1).phase, "aftermath");
+  assert.ok(events.filter((event) => event.phase).every((event) => !event.battle && !event.routes.length));
   assert.equal(new Set(events.map((event) => event.id)).size, events.length);
   for (const event of events) {
     assert.ok(places[event.focus]);

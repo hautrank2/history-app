@@ -1,9 +1,8 @@
-import { ArrowLeft } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { AtlasHeader } from "~/components/atlas-header";
+import { BackButton } from "~/components/back-button";
 import { CharacterAvatar } from "~/components/character-avatar";
 import { threeKingdomsHref } from "~/data/battle-links";
 import { battleEntries } from "~/data/battles";
@@ -48,7 +47,6 @@ const CharacterPage = async ({ params }: Props) => {
   if (person.id === "ho-chi-minh") {
     return (
       <div className="character-life-page flex min-h-svh flex-col">
-        <AtlasHeader active="characters" />
         <CharacterVisit id={person.id} />
         <HoChiMinhLife />
       </div>
@@ -79,15 +77,15 @@ const CharacterPage = async ({ params }: Props) => {
 
   return (
     <>
-      <AtlasHeader active="characters" />
       <main className="character-page character-profile" data-character-id={person.id}>
         <CharacterVisit id={person.id} />
         <nav className="character-breadcrumbs" aria-label="Điều hướng nhân vật">
+          <BackButton placement="header" fallbackHref="/characters" />
           <Link
             className="character-back-link inline-flex items-center gap-2"
             href="/characters"
           >
-            <ArrowLeft size={16} aria-hidden="true" />Tất cả nhân vật
+            Tất cả nhân vật
           </Link>
           <Link href={`/${homeCountry}`}>
             Tổng quan {getCharacterCountry(homeCountry).name}

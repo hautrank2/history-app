@@ -4,7 +4,7 @@ import Link from "next/link";
 import type { CSSProperties } from "react";
 
 import { CompactLink } from "~/components/compact-link";
-import { AtlasNavigation } from "~/components/atlas-header";
+import { BackButton } from "~/components/back-button";
 import { NationalFlag } from "~/components/national-flag";
 import { Button } from "~/components/ui/button";
 import { Card } from "~/components/ui/card";
@@ -138,7 +138,8 @@ export const VietnamOverview = ({
       ? <CountryStats scene={scene} />
       : null}
     <header className="vo-header vo-glass">
-      <AtlasNavigation active={detail?.kind ?? "period"} periodHref={`/period?country=${country}#${country}`} />
+      <BackButton placement="header" fallbackHref={detail?.parentHref ?? "/"} />
+      <span className="vo-header-title" title={heading}>{detail?.title ?? heading}</span>
       {detail ? <Link className="vo-parent-link" href={`${detail.parentHref.split("#")[0]}#${scene.id}`} title={detail.parentLabel}>
         {detail.parentLabel}
       </Link> : null}

@@ -15,6 +15,16 @@
 .battle-cast img { border-radius: 50%; }
 .battle-cast small { display: block; color: var(--tk-muted); font-size: 11px; }
 .battle-experience .tk-story[hidden], .battle-experience .tk-timeline[hidden] { display: none; }
+.battle-command-posts { position: absolute; top: 90px; left: 12px; width: 248px; max-width: calc(100% - 24px); padding: 10px; display: grid; gap: 7px; border: 1px solid var(--border); border-radius: 7px; background: var(--background); color: var(--foreground); box-shadow: 0 3px 12px var(--paper-shadow); }
+.battle-command-posts > summary { font-size: 11px; color: var(--primary); cursor: pointer; }
+.battle-command-posts[open] > summary { margin-bottom: 7px; }
+.battle-command-posts > button { margin-bottom: 7px; width: 100%; }
+.battle-command-posts button { display: flex; align-items: center; gap: 8px; padding: 6px; text-align: left; border: 1px solid var(--border); border-radius: 5px; background: var(--card); font-size: 11px; }
+.battle-command-posts button:is(:hover, [aria-pressed="true"]) { background: var(--accent); border-color: var(--primary); }
+.battle-command-posts img { border-radius: 50%; }
+.battle-command-posts small { display: flex; align-items: center; gap: 3px; font-size: 10px; color: var(--muted-foreground); line-height: 1.5; }
+.battle-command-pin { cursor: pointer; }
+@media (max-width: 810px) { .battle-command-posts { top: 90px; width: 205px; padding: 7px; gap: 4px; } .battle-command-posts button { padding: 4px; } }
 @media (max-width: 810px) {
   .battle-experience[data-story-open="true"] .battle-map-surface { right: 0; }
   .battle-experience .tk-story { top: auto; bottom: calc(var(--tk-dock) + 8px); max-height: 36%; }

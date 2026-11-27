@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, BookOpen, ChevronLeft, ChevronRight, Clock, MapPin, Pause, Play, RotateCcw } from "lucide-react";
+import { BookOpen, ChevronLeft, ChevronRight, Clock, MapPin, Pause, Play, RotateCcw } from "lucide-react";
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import { BattleMap3D } from "~/app/[country]/[period]/_components/bach-dang/map-3d";
 import { CampaignMap } from "~/app/[country]/[period]/_components/bach-dang/campaign-map";
@@ -13,7 +13,7 @@ import { portraitFor, portraitPlaceholder } from "~/data/portraits";
 import { bachDangBattle, vietnamBattlePeriod, type VietnamBattleModel } from "~/data/vietnam-battles";
 import { vietnamBattleTerritory } from "~/data/vietnam-battle-territories";
 import { BattleMapLegend } from "~/components/battle-map-symbols";
-import { RootLink } from "~/components/root-link";
+import { BackButton } from "~/components/back-button";
 import type { StoryModel } from "~/types";
 import "~/styles/three-kingdoms.css";
 import "~/styles/battle-experience.css";
@@ -33,7 +33,7 @@ export function BattleExperience({ story: originalStory, battle }: { story: Stor
   const period = battle ? vietnamBattlePeriod(battle) : undefined;
   const campaign = useMemo(() => battle ?? bachDangBattle(originalStory), [battle, originalStory]);
   const story: StoryModel = battle ? originalStory : { ...originalStory, chapters: campaign.chapters.map((frame) => ({
-    ...originalStory.chapters[frame.tacticalStage ?? 0], title: frame.title, date: frame.date, text: frame.text,
+    ...originalStory.chapters[frame.tacticalStage ?? 0], title: frame.title, date: frame.date, text: frame.text, phase: frame.phase,
   })) };
   const chapter = story.chapters[active];
   const last = story.chapters.length - 1;
@@ -68,8 +68,8 @@ export function BattleExperience({ story: originalStory, battle }: { story: Stor
     const strip = timeline.current;
     const button = strip?.querySelector<HTMLButtonElement>('[aria-current="step"]');
     if (strip && button) strip.scrollTo({ left: Math.max(0, button.offsetLeft - strip.offsetLeft - strip.clientWidth / 4) });
-    window.dispatchEvent(new CustomEvent("atlas:music-context", { detail: { chapter: active } }));
-  }, [active]);
+    window.dispatchEvent(new CustomEvent("atlas:music-context", { detail: { chapter: campaign.chapters[active].tacticalStage ?? active } }));
+  }, [active, campaign]);
   useEffect(() => {
     if (!dock.current) return;
     const observer = new ResizeObserver(([entry]) => setDockHeight(entry.target.getBoundingClientRect().height));
@@ -85,13 +85,12 @@ export function BattleExperience({ story: originalStory, battle }: { story: Stor
       }
     }}>
     <header className="tk-header">
-      <RootLink />
-      <Link href="/battle#battle-vietnam" className="tk-back"><ArrowLeft size={17} /><span>Trận đánh</span></Link>
-      <div className="tk-title"><h1>{battle?.title ?? "Bạch Đằng"} <span>{battle?.years ?? "1288"}</span></h1></div>
-      <div className="tk-panel-toggles">
-        <button aria-label="Diễn biến" aria-expanded={storyOpen} aria-controls="battle-story" onClick={() => setStoryOpen(!storyOpen)}><BookOpen size={16} /><span>Diễn biến</span></button>
-        <button aria-label="Mốc thời gian" aria-expanded={timelineOpen} aria-controls="battle-timeline" onClick={() => setTimelineOpen(!timelineOpen)}><Clock size={16} /><span>Mốc thời gian</span></button>
-      </div>
+        <BackButton placement="header" fallbackHref={period?.href ?? "/period/nha-tran"} />
+        <div className="tk-title"><h1>{battle?.title ?? "Bạch Đằng"} <span>{battle?.years ?? "1288"}</span></h1></div>
+        <div className="tk-panel-toggles">
+          <button aria-label="Diễn biến" aria-expanded={storyOpen} aria-controls="battle-story" onClick={() => setStoryOpen(!storyOpen)}><BookOpen size={16} /><span>Diễn biến</span></button>
+          <button aria-label="Mốc thời gian" aria-expanded={timelineOpen} aria-controls="battle-timeline" onClick={() => setTimelineOpen(!timelineOpen)}><Clock size={16} /><span>Mốc thời gian</span></button>
+        </div>
     </header>
     <div className="tk-stage">
       <div className="tk-cartography">
@@ -115,7 +114,7 @@ export function BattleExperience({ story: originalStory, battle }: { story: Stor
       </div>
       <article id="battle-story" ref={panel} className="tk-story" hidden={!storyOpen} aria-labelledby="battle-event-title" tabIndex={0}>
         <div key={active} className="tk-scene-copy" aria-live="polite">
-          <p className="tk-scene-date">{chapter.date}<span>Sự kiện {active + 1}/{story.chapters.length}</span></p>
+          <p className="tk-scene-date">{chapter.date}<span>{chapter.phase === "context" ? "Trước trận" : chapter.phase === "aftermath" ? "Sau trận" : "Diễn biến"} · {active + 1}/{story.chapters.length}</span></p>
           <h2 id="battle-event-title">{chapter.title}</h2>
           <p className="tk-context"><MapPin size={15} />{currentPlaces.join(" · ")}</p>
           <p className="tk-narration">{chapter.text}</p>

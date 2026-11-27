@@ -1,5 +1,6 @@
 import type { VietnamBattleModel, VietnamBattleChapter } from "~/data/vietnam-battles";
 import type { BattleAction } from "~/components/battle-map-symbols";
+import { battleBookends } from "~/data/battle-bookends";
 
 type Detail = VietnamBattleChapter & { after: number; tacticalStage?: number };
 type Route = NonNullable<VietnamBattleChapter["routes"]>[number];
@@ -13,7 +14,7 @@ const extraPlaces: Record<string, VietnamBattleModel["places"]> = {
   "chi-lang-xuong-giang-1427": [p("can-tram", "Cần Trạm", [106.34, 21.43], "Định vị gần đúng trong hành lang Chi Lăng – Xương Giang; không xác định ranh giới trận địa."), p("pho-cat", "Phố Cát", [106.28, 21.38], "Định vị gần đúng trên hướng viện binh tiến xuống Xương Giang.")],
   "rach-gam-xoai-mut-1785": [p("tra-tan", "Hướng Trà Tân", [106.12, 10.39], "Điểm đại diện vùng thượng lưu nơi liên quân xuất phát; định vị khái quát theo hướng tiến quân.")],
   "ngoc-hoi-dong-da-1789": [p("phu-xuan", "Phú Xuân", [107.58, 16.46], "Nơi Nguyễn Huệ lên ngôi Quang Trung rồi tiến quân ra Bắc."), p("nghe-an", "Nghệ An", [105.68, 18.67], "Khu vực tuyển thêm quân và củng cố lực lượng."), p("ha-hoi", "Hà Hồi", [105.87, 20.87], "Định vị gần đúng đồn phía nam Thăng Long, bị hạ trước trận Ngọc Hồi."), p("cau-song-hong", "Hướng vượt sông Hồng", [105.88, 21.05], "Điểm đại diện đường rút phía bắc kinh thành; không tái dựng chính xác cầu phao năm 1789.")],
-  "dien-bien-phu-1954": [p("ban-keo", "Bản Kéo", [103.0, 21.41], "Cứ điểm phía tây bắc, ra hàng trong đợt tiến công thứ nhất."), p("san-bay", "Sân bay Mường Thanh", [103.01, 21.40], "Trục tiếp tế đường không ở trung tâm lòng chảo."), p("hong-cum", "Hồng Cúm", [103.01, 21.35], "Phân khu phía nam, nơi lực lượng Pháp tìm đường thoát sau khi trung tâm thất thủ."), p("muong-phang", "Mường Phăng", [103.16, 21.43], "Khu vực sở chỉ huy chiến dịch; tọa độ đại diện di tích.")],
+  "dien-bien-phu-1954": [p("ban-keo", "Bản Kéo", [103.0, 21.41], "Cứ điểm phía tây bắc, ra hàng trong đợt tiến công thứ nhất."), p("san-bay", "Sân bay Mường Thanh", [103.01, 21.40], "Trục tiếp tế đường không ở trung tâm lòng chảo."), p("hong-cum", "Hồng Cúm", [103.01, 21.35], "Phân khu phía nam, nơi lực lượng Pháp tìm đường thoát sau khi trung tâm thất thủ."), p("muong-phang", "Mường Phăng", [103.16, 21.43], "Sở chỉ huy chiến dịch của Võ Nguyên Giáp tại Mường Phăng, Điện Biên, Việt Nam, từ 31/1 đến 15/5/1954. Tọa độ đại diện khu di tích, không mô tả vị trí cá nhân ở từng thời điểm.")],
 };
 
 const details: Record<string, Detail[]> = {
@@ -58,7 +59,7 @@ const details: Record<string, Detail[]> = {
     d(2, "Bộ chỉ huy Thanh rời Thăng Long", "Mồng 5 Tết · 30/1/1789", "Khi các đồn trọng yếu bị đánh bại, Tôn Sĩ Nghị không giữ được bộ chỉ huy ở Thăng Long và rút chạy về phía bắc. Cuộc rút lui qua sông diễn ra trong hỗn loạn. Thế phòng thủ của quân Thanh ở kinh thành sụp đổ trước sức tiến công của Tây Sơn.", ["thang-long", "cau-song-hong"], "retreat", [r("enemy", "retreat", "Hướng quân Thanh rút qua sông", "thang-long", "cau-song-hong")]),
   ],
   "dien-bien-phu-1954": [
-    d(0, "Đổi phương châm tác chiến", "26/1/1954", "Võ Nguyên Giáp quyết định hoãn cuộc tiến công dự định và chuyển từ đánh nhanh sang đánh chắc, tiến chắc. Lực lượng phải kéo pháo ra, tổ chức lại trận địa và chuẩn bị công phu hơn. Quyết định này thay đổi nhịp chiến dịch và đặt trọng tâm vào bao vây, đánh từng cứ điểm.", ["muong-phang"], "defend"),
+    d(0, "Đổi phương châm tác chiến", "26/1/1954", "Võ Nguyên Giáp quyết định hoãn cuộc tiến công dự định và chuyển từ đánh nhanh sang đánh chắc, tiến chắc. Lực lượng phải kéo pháo ra, tổ chức lại trận địa và chuẩn bị công phu hơn. Quyết định được đưa ra tại Sở chỉ huy ở hang Huổi He, trước khi cơ quan chỉ huy chuyển đến Mường Phăng ngày 31/1.", ["huoi-he"], "defend"),
     d(0, "Mở đường, kéo pháo và bảo đảm hậu cần", "Tháng 2 – đầu tháng 3/1954", "Quân và dân xây dựng đường vận chuyển, kéo pháo vào vị trí, chuẩn bị đạn, lương và công sự. Sở chỉ huy theo dõi quá trình triển khai quanh lòng chảo. Công tác hậu cần cho phép duy trì một chiến dịch dài ngày trong điều kiện địa hình khó và vận chuyển chủ yếu dựa vào sức người.", ["muong-phang", "him-lam"], "supply", [r("home", "supply", "Trục hậu cần đại diện vào chiến trường", "muong-phang", "him-lam")]),
     d(1, "Đánh cứ điểm Độc Lập", "14–15/3/1954", "Sau Him Lam, lực lượng Việt Nam tiến công Độc Lập ở phía bắc. Pháo binh và bộ binh phối hợp đánh công sự, làm đứt thêm một bộ phận của tuyến phòng ngự ngoài. Việc mất các điểm tựa phía bắc đặt phân khu trung tâm vào thế bị uy hiếp trực tiếp hơn.", ["doc-lap"], "attack", [r("home", "attack", "Hướng phát triển đợt tiến công phía bắc", "him-lam", "doc-lap")]),
     d(1, "Bản Kéo ra hàng", "17/3/1954", "Sau những thất bại ở Him Lam và Độc Lập, cứ điểm Bản Kéo ra hàng. Phân khu phía bắc không còn giữ được vai trò che chắn ban đầu. Đợt tiến công thứ nhất kết thúc, tạo điều kiện phát triển trận địa bao vây sát hơn vào khu trung tâm.", ["ban-keo"], "attack"),
@@ -103,6 +104,15 @@ export function expandVietnamBattle(battle: VietnamBattleModel): VietnamBattleMo
   }
   const insert = (after: number) => additions.filter((detail) => detail.after === after)
     .map((detail) => ({ ...detail, tacticalStage: Math.max(0, after) }));
-  return { ...battle, places: [...battle.places, ...(extraPlaces[battle.id] ?? [])],
-    chapters: [...insert(-1), ...chapters.flatMap((chapter, index) => [chapter, ...insert(index)])] };
+  const chronology = [...insert(-1), ...chapters.flatMap((chapter, index) => [chapter, ...insert(index)])];
+  const bookends = battleBookends[battle.id];
+  const commandPlaces = battle.id === "dien-bien-phu-1954"
+    ? [p("huoi-he", "Hang Huổi He", [103.105, 21.525], "Sở chỉ huy từ 18–30/1/1954, nơi quyết định đổi phương châm tác chiến ngày 26/1. Điểm đại diện khu vực bản Huổi He, không phải tọa độ chính xác cửa hang.")]
+    : [];
+  return { ...battle, places: [...battle.places, ...(extraPlaces[battle.id] ?? []), ...commandPlaces],
+    chapters: bookends ? [
+      { ...chronology[0], ...bookends.context, title: "Bối cảnh & nguyên nhân", phase: "context", routes: [], kind: "defend" },
+      ...chronology,
+      { ...chronology.at(-1)!, ...bookends.aftermath, title: "Kết quả & hệ quả", phase: "aftermath", routes: [], kind: "defend" },
+    ] : chronology };
 }

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import { AtlasHeader } from "~/components/atlas-header";
+import { BackButton } from "~/components/back-button";
 import { BattleGrid } from "~/components/battle-grid";
 import { threeKingdomsHref } from "~/data/battle-links";
 import { battleEntries } from "~/data/battles";
@@ -13,12 +13,12 @@ export const metadata: Metadata = {
 
 const BattleDirectoryPage = () => (
   <main className="atlas-page atlas-battle-directory">
-    <AtlasHeader active="battle" />
     <div className="atlas-periods space-y-10">
-      <div className="space-y-3">
+      <header className="space-y-3">
+        <BackButton placement="header" fallbackHref="/" />
         <h1 className="font-display text-4xl sm:text-5xl">Danh sách trận đánh</h1>
         <p className="text-sm text-muted-foreground">Mỗi trận đánh là một cuộc giao chiến cụ thể. Chọn trận để xem diễn biến trên bản đồ.</p>
-      </div>
+      </header>
       <section id="battle-vietnam" className="space-y-4 scroll-mt-6" aria-labelledby="battle-vietnam-heading">
         <h2 id="battle-vietnam-heading" className="font-display text-2xl">Việt Nam</h2>
         <BattleGrid entries={battleEntries.filter((battle) => battle.country === "Việt Nam")} />
